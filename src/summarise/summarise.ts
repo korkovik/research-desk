@@ -116,7 +116,7 @@ export async function summariseAndVerify(
     // §2 rules are enforced, but not at the cost of the day's page. Logged loudly
     // so a persistent style failure is visible in `logs/run.log`.
     log?.error(
-      `publishing with ${best.checks.hard.length} unresolved style finding(s) after ` +
+      `style regeneration exhausted: ${best.checks.hard.length} hard finding(s) remain after ` +
         `${options.maxRegenerationAttempts + 1} attempts`,
     );
   }
@@ -164,7 +164,7 @@ export async function summariseAndVerify(
       return {
         status: 'ok',
         summary,
-        checks: options.checkStyle(summary),
+        checks: finalChecks(summary, options, log),
         verification: {
           verdict: 'supported',
           attempts,
@@ -215,7 +215,7 @@ export async function summariseAndVerify(
       return {
         status: 'ok',
         summary: withFallback,
-        checks: options.checkStyle(withFallback),
+        checks: finalChecks(withFallback, options, log),
         verification: {
           verdict: 'supported',
           attempts,
@@ -241,6 +241,31 @@ export async function summariseAndVerify(
     verification: { verdict: 'unsupported', attempts, rejections, resolution: 'paper-dropped' },
     detail: `${rejections.length} rejection(s)`,
   };
+}
+
+/**
+ * The style check that actually describes what is being published.
+ *
+ * The regeneration loop above checks the summary it generated; by the time we
+ * return, the example may have been replaced once or twice, or swapped for the
+ * motivation fallback, and none of those went through that loop. A hard finding
+ * introduced by a replacement would otherwise reach the page recorded but never
+ * mentioned — §2's rules are enforced, so a surviving violation has to be
+ * visible in `logs/run.log`, not only in the archive's JSON twin.
+ */
+function finalChecks(
+  summary: PaperSummary,
+  options: SummariseOptions,
+  log: SummariseOptions['log'],
+): LanguageCheckResult {
+  const result = options.checkStyle(summary);
+  if (result.hard.length > 0) {
+    log?.error(
+      `published with ${result.hard.length} unresolved style finding(s): ` +
+        result.hard.map((v) => `${v.block}/${v.rule}`).join(', '),
+    );
+  }
+  return result;
 }
 
 async function regenerateExample(

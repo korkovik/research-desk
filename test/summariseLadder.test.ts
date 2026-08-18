@@ -274,7 +274,10 @@ test('a style failure never drops a paper — it publishes the best attempt and 
     }),
   );
   assert.equal(result.status, 'ok');
-  assert.ok(errors.some((e) => e.includes('unresolved style finding')));
+  assert.ok(errors.some((e) => e.includes('style regeneration exhausted')));
+  // …and the finding is named again for what actually got published, which may
+  // be a different example from the one the regeneration loop saw.
+  assert.ok(errors.some((e) => e.includes('published with 1 unresolved style finding')));
 });
 
 test('a summarisation call that never completes drops the paper', async () => {

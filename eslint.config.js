@@ -8,7 +8,9 @@ import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   {
-    ignores: ['dist/**', 'node_modules/**', 'archive/**', 'test/fixtures/**'],
+    // `tmp/` is scratch: throwaway probes and rendered previews, gitignored and
+    // never shipped. Linting it would fail on files that belong to no tsconfig.
+    ignores: ['dist/**', 'node_modules/**', 'archive/**', 'tmp/**', 'test/fixtures/**'],
   },
   js.configs.recommended,
   ...tseslint.configs.recommendedTypeChecked,
