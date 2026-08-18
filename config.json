@@ -148,7 +148,8 @@
     "retries": 2,
     "backoffMs": [1000, 4000],
     "timeoutMs": 20000,
-    "userAgent": "ResearchDesk/0.1 (+https://github.com/tomscld/research-desk; mailto:korkat@gmail.com)"
+    "userAgent": "ResearchDesk/0.1 (personal research digest; mailto:korkat@gmail.com)",
+    "_userAgent": "The polite-pool convention wants a contact that actually reaches a person. There is no public project URL — the repository is local only (assumption A1) — so the mailto is the whole identification. Put a URL here if the archive is ever published."
   },
 
   "categories": [
