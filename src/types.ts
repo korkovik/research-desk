@@ -236,6 +236,12 @@ export interface DayDigest {
   /** §9: sources that failed or degraded, rendered into the page footer. */
   degradations: Degradation[];
   generatedAt: string;
+  /**
+   * The calendar date the page was produced, in `config.output.timezone`. The
+   * renderer shows this rather than `generatedAt`'s date part, which is UTC and
+   * can print yesterday on a run that finishes after midnight Prague time.
+   */
+  generatedOn: string;
   /** Schema version, so a later recap/translation pass can read old files safely. */
   schemaVersion: 1;
 }
@@ -248,8 +254,14 @@ export interface Shortfall {
 
 export interface Degradation {
   source: SourceName | 'semantic-scholar' | 'anthropic';
-  /** One plain-Czech sentence for the page footer. */
-  messageCs: string;
+  /**
+   * The reader-facing sentence, in `config.output.language`. It is NOT written
+   * where the degradation is raised: every word a reader sees comes from the
+   * one string table (`src/render/strings.cs.ts`) so it can be reviewed in a
+   * single pass, and so two modules cannot drift into two wordings of the same
+   * sentence.
+   */
+  message: string;
   /** The technical detail. Log only — never rendered. */
   detail: string;
 }

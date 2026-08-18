@@ -115,8 +115,8 @@ test('§9: a failing source degrades the run, the others still produce candidate
   assert.equal(result.degradations.length, 1);
   assert.equal(result.degradations[0]?.source, 'openalex');
   // The footer sentence names what the reader lost, not the API (DESIGN-NOTES D.4).
-  assert.match(result.degradations[0]?.messageCs ?? '', /nebyla dostupná/);
-  assert.ok(!(result.degradations[0]?.messageCs ?? '').includes('OpenAlex'));
+  assert.match(result.degradations[0]?.message ?? '', /nebyla dostupná/);
+  assert.ok(!(result.degradations[0]?.message ?? '').includes('OpenAlex'));
   assert.notEqual(result.degradations[0]?.detail, '');
   assert.ok(logger.lines.some((l) => l.startsWith('error')));
 });

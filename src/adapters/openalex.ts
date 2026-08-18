@@ -15,9 +15,9 @@
  */
 import { z } from 'zod';
 import type { Candidate, CategoryConfig, SourceAdapter, TopicRef } from '../types.js';
-import { isISODate } from '../util/dates.js';
+import { isISODate, localDateISO } from '../util/dates.js';
 import { fetchJson } from '../util/http.js';
-import type { AdapterDeps, AdapterRegistration } from './deps.js';
+import { nowOf, type AdapterDeps, type AdapterRegistration } from './deps.js';
 import { httpPolicy, requestOptions } from './deps.js';
 
 const OPENALEX_URL_PREFIX = 'https://openalex.org/';
@@ -245,12 +245,20 @@ export function buildWorksUrl(
   category: CategoryConfig,
   since: string,
   page: number,
+  until: string,
 ): string {
   const settings = deps.config.sources.openalex;
   // `|` is OR inside one filter term, `,` is AND between terms (§4.1).
+  //
+  // The window is bounded at BOTH ends. `from_publication_date` alone lets
+  // through records whose publication date is in the future — a live probe of
+  // the Computer Science field returned works dated 2030-01-01 and 2050-02-21,
+  // which are metadata errors rather than papers, and which the freshness
+  // factor would otherwise score as the newest work of the week.
   const filter = [
     `primary_topic.field.id:${category.openalex.fieldIds.join('|')}`,
     `from_publication_date:${since}`,
+    `to_publication_date:${until}`,
     ...CONSTANT_FILTERS,
   ].join(',');
 
@@ -294,9 +302,12 @@ export function createOpenAlexAdapter(deps: AdapterDeps): SourceAdapter {
       const headers = authHeaders(deps);
       const candidates: Candidate[] = [];
       let skipped = 0;
+      // The window's upper bound is the run's own day in the configured
+      // timezone, so a record dated in the future never counts as this week's.
+      const until = localDateISO(nowOf(deps), deps.config.output.timezone);
 
       for (let page = 1; page <= settings.maxPages; page++) {
-        const url = buildWorksUrl(deps, category, since, page);
+        const url = buildWorksUrl(deps, category, since, page, until);
         const body = await fetchJson<unknown>(url, httpPolicy(deps.config), requestOptions(deps, headers));
         const parsed = PageSchema.safeParse(body);
         if (!parsed.success) {

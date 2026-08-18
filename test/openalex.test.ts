@@ -19,6 +19,7 @@ import { isISODate } from '../src/util/dates.js';
 import { deps, jsonFixture, jsonResponse, stubFetch, testConfig, testLogger } from './helpers.js';
 
 const FIXTURE = 'openalex-works-psychology.json';
+const UNTIL = '2026-08-19';
 const SINCE = '2026-08-12';
 
 function psychology(): CategoryConfig {
@@ -171,7 +172,14 @@ test('requireApiKey turns a missing key into a hard failure (§4.1)', async () =
 });
 
 test('the query carries the category fields, the date window and §6’s hard exclusions', () => {
-  const url = buildWorksUrl(deps({ fetchImpl: stubFetch(() => jsonResponse({})).impl }), psychology(), SINCE, 1);
+  const url = buildWorksUrl(deps({ fetchImpl: stubFetch(() => jsonResponse({})).impl }), psychology(), SINCE, 1, UNTIL);
+  // A live probe returned works dated 2030 and 2050: `from_publication_date`
+  // alone is a lower bound, and a future-dated record would score as the
+  // freshest paper of the week. The window is closed at both ends.
+  assert.ok(
+    decodeURIComponent(url).includes(`to_publication_date:${UNTIL}`),
+    'the query has no upper date bound',
+  );
   const decoded = decodeURIComponent(url);
 
   assert.ok(decoded.includes('primary_topic.field.id:fields/32'));
@@ -187,7 +195,7 @@ test('the query carries the category fields, the date window and §6’s hard ex
   const health = testConfig().categories.find((c) => c.key === 'health-medicine');
   assert.ok(health);
   const multi = decodeURIComponent(
-    buildWorksUrl(deps({ fetchImpl: stubFetch(() => jsonResponse({})).impl }), health, SINCE, 1),
+    buildWorksUrl(deps({ fetchImpl: stubFetch(() => jsonResponse({})).impl }), health, SINCE, 1, UNTIL),
   );
   assert.ok(multi.includes('primary_topic.field.id:fields/27|fields/36|fields/29'));
 });

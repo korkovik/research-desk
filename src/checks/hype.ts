@@ -13,21 +13,12 @@ import {
   HYPE_EN_HARD,
   HYPE_EN_WARN,
   type CompiledEntry,
-  type LexEntry,
 } from './lexicons.cs.js';
 import { lowerForMatching, mask } from './text.js';
 import type { BlockName, Finding } from './types.js';
 
 const CS_ENTRIES: readonly CompiledEntry[] = compileEntries([...HYPE_CS_HARD, ...HYPE_CS_WARN]);
 const EN_ENTRIES: readonly CompiledEntry[] = compileEntries([...HYPE_EN_HARD, ...HYPE_EN_WARN]);
-
-/** Everything the checker knows, exposed so a test can assert the list is complete. */
-export const HYPE_ENTRIES: readonly LexEntry[] = [
-  ...HYPE_CS_HARD,
-  ...HYPE_CS_WARN,
-  ...HYPE_EN_HARD,
-  ...HYPE_EN_WARN,
-];
 
 export function checkHype(block: BlockName, text: string, config: StyleConfig): Finding[] {
   const lowered = lowerForMatching(text);

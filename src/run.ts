@@ -36,6 +36,7 @@ import { optionsFromConfig, selectForDay } from './select/select.js';
 import { checkStyle } from './checks/index.js';
 import { createSeenLookup, loadSeen, recordPublished, saveSeen } from './state/seen.js';
 import { writeDayOutputs } from './render/archive.js';
+import { stringsFor } from './render/strings.js';
 import { AnthropicLlmClient, estimateCostUsd, type LlmClient } from './summarise/client.js';
 import { summariseAndVerify } from './summarise/summarise.js';
 import type { SourceText } from './summarise/verify.js';
@@ -195,7 +196,7 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
       reason: result.reason,
       attempts: result.verification?.attempts ?? 0,
     });
-    degradations.push(degradationForDrop(result.reason));
+    degradations.push(degradationForDrop(result.reason, config));
 
     // §7.4: replace the dropped paper rather than publish short, but only from
     // the ranked remainder — never by widening the window, reaching into
@@ -215,16 +216,13 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
   }
 
   // ---- §9 publish, or refuse to ---------------------------------------------
+  // §3's shortfall gets its own notice on the page, rendered from
+  // `digest.shortfall`. It deliberately does NOT also become a `Degradation`:
+  // the footer keys its wording on the degradation's source, so a shortfall
+  // filed under `openalex` made the page tell the reader the database had been
+  // unavailable when nothing had gone wrong with it at all.
   const shortfall = shortfallOf(entries.length, config, selection.shortfallReason);
-  if (shortfall !== null) {
-    degradations.push({
-      source: 'openalex',
-      messageCs:
-        `Dnes se podařilo najít jen ${entries.length} studie, které splnily podmínky výběru. ` +
-        'Raději jich zveřejňujeme méně, než abychom doplňovali starší nebo nesouvisející články.',
-      detail: shortfall.reason,
-    });
-  }
+  if (shortfall !== null) logger.warn(`shortfall: ${shortfall.produced}/${shortfall.expected} — ${shortfall.reason}`);
 
   const usage = llm.totalUsage();
   const baseLog: Omit<RunLogLine, 'summary'> = {
@@ -277,6 +275,9 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
     shortfall,
     degradations,
     generatedAt: new Date().toISOString(),
+    // The reader's calendar day, not UTC's — a page dated 19 August must not
+    // say it was made on the 18th because the run finished at 01:30 Prague.
+    generatedOn: localDateISO(new Date(), config.output.timezone),
     schemaVersion: 1,
   };
 
@@ -349,20 +350,24 @@ function sourceTextOf(candidate: ScoredCandidate): SourceText {
   };
 }
 
-function degradationForDrop(reason: 'example_unverifiable' | 'summarisation_failed'): Degradation {
-  return reason === 'example_unverifiable'
-    ? {
-        source: 'anthropic',
-        messageCs:
-          'U jedné studie se nepodařilo ověřit, že příklad ze života opravdu vychází z její ' +
-          'vlastní práce. Raději jsme ji vynechali, než abychom příklad vymýšleli.',
-        detail: 'example failed §7.4 verification at every rung',
-      }
-    : {
-        source: 'anthropic',
-        messageCs: 'U jedné studie se dnes nepodařilo připravit text. Do vydání jsme ji proto nezařadili.',
-        detail: 'summarisation call failed after retries',
-      };
+/**
+ * Both drop reasons wear the same sentence to the reader: a study was left out
+ * because its text could not be prepared. The distinction between "the example
+ * could not be traced to the paper" and "the API would not answer" matters to
+ * whoever reads the log, and not at all to the family reading the page.
+ */
+function degradationForDrop(
+  reason: 'example_unverifiable' | 'summarisation_failed',
+  config: Config,
+): Degradation {
+  return {
+    source: 'anthropic',
+    message: stringsFor(config.output.language).degradationAnthropic,
+    detail:
+      reason === 'example_unverifiable'
+        ? 'example failed §7.4 verification at every rung'
+        : 'summarisation call failed after retries',
+  };
 }
 
 function shortfallOf(

@@ -10,8 +10,10 @@
  * been published appears in both, and publishing it twice in one digest would be
  * a visible bug on the page.
  */
-import type { Candidate, CategoryConfig, Degradation, SourceAdapter } from '../types.js';
+import type { Candidate, CategoryConfig, Degradation, SourceAdapter, SourceName } from '../types.js';
 import { HttpError } from '../util/http.js';
+import { stringsFor } from '../render/strings.js';
+import type { StringTable } from '../render/stringTable.js';
 import { arxivSource } from './arxiv.js';
 import type { AdapterDeps, AdapterRegistration } from './deps.js';
 import { openAlexSource } from './openalex.js';
@@ -39,19 +41,20 @@ export interface DiscoveryResult {
 }
 
 /**
- * §9's footer sentences, taken verbatim from DESIGN-NOTES D.4 (`DEG_OPENALEX`,
- * `DEG_ARXIV`) so the page speaks in one voice. They name what the reader lost,
- * not which API fell over — "OpenAlex" means nothing to the family reading this.
+ * §9's footer sentence for a dead source, resolved from the one string table
+ * rather than written here. The reader never learns which API fell over —
+ * "OpenAlex" means nothing to the family reading this — only what they lost.
  */
-const DEGRADATION_MESSAGES_CS: Record<string, string> = {
-  openalex:
-    'Část databáze, ze které vybíráme studie, dnes nebyla dostupná. Výběr proto vychází z menšího počtu prací než obvykle.',
-  arxiv:
-    'Server s odbornými preprinty dnes neodpovídal. Dnešní výběr proto obsahuje jen práce z recenzovaných časopisů.',
-};
-
-const GENERIC_DEGRADATION_CS =
-  'Jeden ze zdrojů, ze kterých vybíráme studie, dnes nebyl dostupný. Výběr proto vychází z menšího počtu prací než obvykle.';
+function degradationMessage(source: SourceName, strings: StringTable): string {
+  switch (source) {
+    case 'openalex':
+      return strings.degradationOpenAlex;
+    case 'arxiv':
+      return strings.degradationArxiv;
+    default:
+      return strings.degradationOpenAlex;
+  }
+}
 
 /**
  * §4.1 makes the key mandatory. A run that keeps going on a rejected key would
@@ -89,7 +92,7 @@ export async function fetchCandidates(
       if (isAuthFailure(error)) throw error;
       degradations.push({
         source: adapter.name,
-        messageCs: DEGRADATION_MESSAGES_CS[adapter.name] ?? GENERIC_DEGRADATION_CS,
+        message: degradationMessage(adapter.name, stringsFor(deps.config.output.language)),
         detail,
       });
     }

@@ -22,6 +22,7 @@ import { httpPolicy, requestOptions } from '../adapters/deps.js';
 import type { Candidate, Degradation, EnrichedCandidate } from '../types.js';
 import { fetchJson, HttpError } from '../util/http.js';
 import { Throttle } from '../util/throttle.js';
+import { stringsFor } from '../render/strings.js';
 
 const FIELDS =
   'paperId,title,abstract,tldr,externalIds,openAccessPdf,publicationDate,venue,isOpenAccess';
@@ -158,10 +159,10 @@ export async function enrichWithTldr(
       if (isFatalForEnrichment(error.status)) {
         degradation = {
           source: 'semantic-scholar',
-          // DESIGN-NOTES D.4 `DEG_TLDR`, verbatim, so the footer speaks in one
-          // voice and says what the reader lost rather than which API failed.
-          messageCs:
-            'Automatická krátká shrnutí dnes nebyla dostupná. Vysvětlení jsou proto napsaná přímo podle abstraktů prací.',
+          // Resolved from the one string table rather than written here: every
+          // word a reader sees lives in a single reviewable file, and the
+          // footer says what the reader lost, not which API failed.
+          message: stringsFor(deps.config.output.language).degradationSemanticScholar,
           detail: error.message,
         };
         deps.logger.warn(`Semantic Scholar: stopping enrichment — ${error.message}`);

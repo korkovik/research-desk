@@ -246,7 +246,7 @@ export function checkReadability(segments: readonly ConcatSegment[], config: Sty
     'R1',
     metrics.meanSentenceWords,
     r.meanSentenceWords,
-    (v) => `Věty jsou v průměru moc dlouhé (${v.toFixed(1)} slova). Rozdělte je: jedna věta, jedna myšlenka.`,
+    (v) => `Věty jsou v průměru moc dlouhé (${cs(v, 1)} slova). Rozdělte je: jedna věta, jedna myšlenka.`,
     `meanSentenceWords=${metrics.meanSentenceWords.toFixed(2)}`,
   );
 
@@ -283,7 +283,7 @@ export function checkReadability(segments: readonly ConcatSegment[], config: Sty
     'R3',
     metrics.longSentenceCount,
     r.longSentenceCount,
-    (v) => `Text má ${v} vět delších než ${r.longSentenceWords} slov. Zkraťte je.`,
+    (v) => `Počet vět delších než ${r.longSentenceWords} slov: ${v}. Zkraťte je na dvě kratší věty.`,
     `longSentenceCount=${metrics.longSentenceCount}`,
   );
 
@@ -293,7 +293,7 @@ export function checkReadability(segments: readonly ConcatSegment[], config: Sty
     'R4',
     metrics.meanSyllablesPerWord,
     r.meanSyllablesPerWord,
-    (v) => `Slova jsou v průměru moc dlouhá (${v.toFixed(2)} slabiky). Použijte kratší, běžnější výrazy.`,
+    (v) => `Slova jsou v průměru moc dlouhá (${cs(v, 2)} slabiky). Použijte kratší, běžnější výrazy.`,
     `meanSyllablesPerWord=${metrics.meanSyllablesPerWord.toFixed(3)}`,
   );
 
@@ -431,6 +431,14 @@ function longestSentence(sentences: readonly Sentence[], words: readonly number[
     }
   }
   return best;
+}
+
+/**
+ * Czech writes the decimal separator as a comma. `messageCs` goes into the
+ * regeneration prompt, so it should read as Czech rather than as a log line.
+ */
+function cs(value: number, digits: number): string {
+  return value.toFixed(digits).replace('.', ',');
 }
 
 function truncate(text: string, max = 80): string {

@@ -136,6 +136,7 @@ export interface DigestOptions {
   shortfall?: Shortfall | null;
   degradations?: Degradation[];
   generatedAt?: string;
+  generatedOn?: string;
 }
 
 export function makeDigest(options: DigestOptions = {}): DayDigest {
@@ -157,6 +158,7 @@ export function makeDigest(options: DigestOptions = {}): DayDigest {
     shortfall: options.shortfall ?? null,
     degradations: options.degradations ?? [],
     generatedAt: options.generatedAt ?? `${date}T04:12:00.000Z`,
+    generatedOn: options.generatedOn ?? date,
     schemaVersion: 1,
   };
 }
@@ -165,5 +167,5 @@ export function makeDegradation(
   source: Degradation['source'],
   detail = 'HTTP 503 after 2 retries',
 ): Degradation {
-  return { source, messageCs: 'Zdroj neodpovídal.', detail };
+  return { source, message: 'Zdroj neodpovídal.', detail };
 }

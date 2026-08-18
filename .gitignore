@@ -17,3 +17,6 @@ archive/*.html
 archive/*.json
 logs/*.log
 state/*.json
+
+# Scratch output for local previewing. Never a deliverable.
+tmp/

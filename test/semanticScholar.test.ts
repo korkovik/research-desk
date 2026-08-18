@@ -178,7 +178,7 @@ test('§9: a 429 degrades the run instead of failing it, and stops further looku
   assert.equal(enriched.length, 6, 'every candidate is returned (§9)');
   assert.ok(degradation, 'the caller must be told');
   assert.equal(degradation.source, 'semantic-scholar');
-  assert.notEqual(degradation.messageCs.trim(), '');
+  assert.notEqual(degradation.message.trim(), '');
   assert.match(degradation.detail, /429/);
   assert.match(enriched[0]?.tldr ?? '', /AlphaDev/, 'the lookup before the limit is kept');
   assert.ok(enriched.slice(2).every((c) => c.tldr === null));

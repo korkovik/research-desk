@@ -264,12 +264,14 @@ function renderFooter(
 }
 
 /**
- * `generatedAt` is an ISO instant; the page shows only its date part, in words.
+ * `generatedOn` is the run's calendar date in the configured timezone, already
+ * resolved by the orchestrator — `generatedAt`'s date part is UTC and would
+ * print yesterday for a run that finishes after midnight Prague time.
  * Falls back to the digest's own date when the instant is unparseable, so the
  * footer never reads "Invalid Date".
  */
 function generatedDateText(digest: DayDigest, dayDateText: string, strings: StringTable): string {
-  const iso = digest.generatedAt.slice(0, 10);
+  const iso = digest.generatedOn;
   return /^\d{4}-\d{2}-\d{2}$/.test(iso) ? formatDateText(iso, strings) : dayDateText;
 }
 
@@ -278,10 +280,12 @@ function generatedDateText(digest: DayDigest, dayDateText: string, strings: Stri
  * source to `SourceName` fails to compile until its Czech sentence exists —
  * §9's footer is only honest if it can name every source that can fail.
  *
- * `Degradation.messageCs` is deliberately NOT rendered. It is Czech by its very
- * field name, so a run with `output.language = "en"` would leak Czech into an
- * English page, and §2 makes the output language a config value. The pipeline's
- * own sentence stays in the JSON twin and the run log, where it is useful.
+ * `Degradation.message` is deliberately NOT rendered here. The page resolves
+ * its own wording from the string table for `config.output.language`, so an
+ * English page cannot end up carrying a Czech sentence, and so every word a
+ * reader sees lives in the one file a reviewer reads. The `message` field
+ * carries the same sentence into the JSON twin and the log, where it is
+ * convenience rather than presentation.
  */
 function degradationMessage(degradation: Degradation, strings: StringTable): string {
   switch (degradation.source) {
