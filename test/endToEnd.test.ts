@@ -294,3 +294,25 @@ test('§6: a top-up after a dropped paper still respects the diversity cap', asy
     );
   }
 });
+
+test('a run with no Anthropic key stops before it spends anything', async () => {
+  const root = makeWorkspace();
+  const log: FetchLog = { urls: [] };
+  await assert.rejects(
+    runDay({
+      repoRoot: root,
+      config: loadConfig(root),
+      secrets: NO_SECRETS,
+      logger: quiet(),
+      dryRun: true,
+      date: '2026-08-19',
+      // No `llm` injected: the real client is built, and there is no key.
+      fetchImpl: makeFetchImpl('2026-08-19', log),
+      clock: fakeClock(),
+    }),
+    /ANTHROPIC_API_KEY is not set/,
+  );
+  // The point of failing early: no OpenAlex credit and no Semantic Scholar
+  // pacing was spent finding out.
+  assert.deepEqual(log.urls, []);
+});

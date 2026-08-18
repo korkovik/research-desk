@@ -95,6 +95,12 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
     `run ${date} (${category.labelCs}), window from ${since}, publishing as "${displayName(config)}"`,
   );
 
+  // Built before the first HTTP request, not at the point of first use. Without
+  // this, a run with no Anthropic key spends its OpenAlex credits and 22 seconds
+  // of Semantic Scholar pacing before discovering it cannot write a word — and
+  // on the unkeyed allowance those credits are a meaningful fraction of the day.
+  const llm = options.llm ?? createLlmClient(options);
+
   const adapterDeps = {
     config,
     secrets: options.secrets,
@@ -145,7 +151,6 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
   if (selection.flags.explainGateWaived) logger.warn('explainability gate was waived to reach the minimum');
 
   // ---- §7 summarisation, §7.4 verification ---------------------------------
-  const llm = options.llm ?? createLlmClient(options);
   const entries: DigestEntry[] = [];
   const dropped: { id: string; reason: string; attempts: number }[] = [];
   const queue = [...selection.selected];
