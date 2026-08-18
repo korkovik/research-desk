@@ -1,0 +1,20 @@
+{
+  "id": "GT-03",
+  "label": "SUPPORTED, NEGATIVE CONTROL #1 (heavy re-wording, minimal lexical overlap)",
+  "source": {
+    "title": "Sublethal neonicotinoid exposure reduces homing success in free-flying honeybee foragers: a radio-frequency identification field experiment",
+    "abstract": "Concern about pollinator decline has focused on sublethal effects of systemic insecticides that do not kill bees outright. We fitted 960 honeybee foragers from three apiaries in southern England with 2.4 mg radio-frequency identification tags and released them 1 km from their hives. Half of the bees had been fed a single 1.5 ng dose of a neonicotinoid, a quantity consistent with residues measured in oilseed rape nectar in the same region. Antennal readers at each hive entrance logged every return. Homing success was 71% in the exposed group and 84% in the untreated control group, a difference of 13 percentage points (p = 0.002). Returning exposed bees took a median of 8 minutes longer. Colony weight and brood area were monitored for eight weeks after the experiment and no colony failed during that period. The experiment was conducted in a single season and we did not test repeated exposure.",
+    "tldr": "Bees given a field-realistic dose of a neonicotinoid were less likely to find their way home, though no colonies collapsed during the study.",
+    "venue": "Proceedings of the Royal Society B",
+    "type": "article",
+    "date": "2026-08-13"
+  },
+  "candidateExample": "Vědci přilepili skoro tisícovce dělnic malinkou vysílačku, odvezli je kilometr od úlu a pustili je. Polovina z nich předtím dostala kapku postřiku — přesně tolik, kolik ho na poli v květech řepky opravdu potkají. Zpátky domů se pak trefilo 71 ze sta ošetřených včel, kdežto z neošetřených 84 ze sta. Během následujících dvou měsíců ale žádné včelstvo neuhynulo.",
+  "isMotivationFallback": false,
+  "expected": {
+    "finalVerdict": "supported",
+    "mustFlagSpans": [],
+    "mustHaveAtLeastOneSupportedClaim": false,
+    "note": "`finalVerdict: supported` · **test note:** if this fixture fails, the verifier is doing lexical matching instead of reading. Do not \"fix\" it by loosening the thresholds — fix the prompt."
+  }
+}

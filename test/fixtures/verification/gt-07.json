@@ -1,0 +1,22 @@
+{
+  "id": "GT-07",
+  "label": "FABRICATED: invented population",
+  "source": {
+    "title": "Twelve weeks of supervised resistance training and fall risk in community-dwelling adults aged 65 to 84: a randomised controlled trial",
+    "abstract": "Falls are the leading cause of injury-related hospital admission in older adults. We randomised 288 community-dwelling adults aged 65 to 84 who had experienced at least one fall in the previous year to either twelve weeks of supervised resistance training twice weekly at a local community centre, or to a control group receiving a printed falls-prevention leaflet. Training sessions lasted 45 minutes and used adjustable ankle weights and resistance bands. Participants recorded falls in a monthly diary for twelve months after the end of the programme. The training group reported 27% fewer falls over the follow-up year (incidence rate ratio 0.73, 95% CI 0.58 to 0.92). Lower-limb strength measured by the 30-second chair-stand test improved by 2.4 repetitions in the training group and by 0.3 in the control group. Adherence was 81%. Nine participants withdrew because of joint pain. The trial was open-label and fall reporting relied on self-report.",
+    "tldr": "Twice-weekly resistance training for twelve weeks reduced falls by 27% over the following year in adults aged 65 to 84.",
+    "venue": "Age and Ageing",
+    "type": "article",
+    "date": "2026-08-11"
+  },
+  "candidateExample": "Lidé po čtyřicítce chodili dvakrát týdně na 45 minut posilovat do místního komunitního centra, kde jim dali gumové expandéry a závaží na kotníky. Během následujícího roku pak upadli o 27 procent méně často než ti, kdo dostali jen letáček o prevenci pádů. Sílu nohou si zlepšili v testu vstávání ze židle.",
+  "isMotivationFallback": false,
+  "expected": {
+    "finalVerdict": "unsupported",
+    "mustFlagSpans": [
+      "Lidé po čtyřicítce"
+    ],
+    "mustHaveAtLeastOneSupportedClaim": true,
+    "note": "`finalVerdict: unsupported` · `mustFlagSpan: \"Lidé po čtyřicítce\"` · flagged claim type `population` · the action, quantity and outcome claims should be `supported`."
+  }
+}

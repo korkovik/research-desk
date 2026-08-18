@@ -48,6 +48,18 @@ export interface Candidate {
   oaPdfUrl?: string | null;
   /** True for arXiv and for OpenAlex `type: preprint`. §4.3 requires saying so in plain words. */
   isPreprint?: boolean;
+  /**
+   * The work type exactly as the source reports it — OpenAlex `type`:
+   * `article`, `preprint`, `editorial`, `letter`, `erratum`, `paratext`, …
+   *
+   * §6's hard exclusions drop whole classes of non-article record
+   * (DESIGN-NOTES B.1 rule 7) and the credibility factor separates a journal
+   * article from conference proceedings (B.6 c1). Neither is derivable from
+   * `isPreprint`, which is a two-state flag. Absent when the source has no
+   * notion of a work type (arXiv), and the selector then falls back on
+   * `isPreprint` + `venue`.
+   */
+  sourceType?: string | null;
   isRetracted?: boolean;
   authors?: string[];
   /** Journal name, or the preprint server. */
@@ -85,6 +97,32 @@ export interface ScoreBreakdown {
   total: number;
   /** Human-readable evidence for why each factor scored as it did. */
   evidence: string[];
+  /**
+   * The six sub-scores behind `explainability` (DESIGN-NOTES B.3.1/B.3.2).
+   * B.11 requires them in `archive/YYYY-MM-DD.json` as `explainDetail`: without
+   * them a score in the archive cannot be re-derived after a lexicon change.
+   */
+  explainDetail: ExplainDetail;
+  /** B.4 — which everyday-life domains the source text touched, in list order. */
+  everydayDomains: string[];
+  /** B.10 — the key this paper competed on for §6's diversity cap. */
+  subfieldKey: string;
+}
+
+/** B.3's components. `q` is 0 or 1; every other member is in `[0, 1]`. */
+export interface ExplainDetail {
+  /** Concrete-outcome verbs (B.3.1 v). */
+  v: number;
+  /** Recognisable subject nouns (B.3.1 s). */
+  s: number;
+  /** A quantified effect is present (B.3.1 q). */
+  q: number;
+  /** Title concreteness (B.3.1 c). */
+  c: number;
+  /** Theoretical / methods-about-methods markers (B.3.2 t) — a penalty. */
+  t: number;
+  /** Jargon density (B.3.2 j) — a penalty. */
+  j: number;
 }
 
 export interface ScoredCandidate extends EnrichedCandidate {
@@ -129,7 +167,18 @@ export interface VerificationRejection {
 
 /** Result of the deterministic §2 language checks over one summary. */
 export interface LanguageCheckResult {
+  /**
+   * False only when at least one `hard` violation exists. DESIGN-NOTES A.6 is
+   * explicit that a style failure never drops a paper — `ok: false` means
+   * "regenerate this summary", never "publish four papers instead of five".
+   */
   ok: boolean;
+  /**
+   * DESIGN-NOTES A.0: `fail` if any hard finding exists; `warn` if only
+   * warn-level findings exist *and* the A.6 warn budget is exceeded; else
+   * `pass`. `ok === (status !== 'fail')`.
+   */
+  status: 'pass' | 'warn' | 'fail';
   hard: LanguageViolation[];
   soft: LanguageViolation[];
 }
@@ -142,11 +191,28 @@ export interface LanguageViolation {
     | 'untranslated-english'
     | 'sentence-length'
     | 'long-words'
+    | 'passive-voice'
     | 'unexplained-jargon'
     | 'unanchored-number'
     | 'block-length'
     | 'empty-block';
   detail: string;
+  /**
+   * The precise rule that fired, e.g. `hype:revoluč`, `readability:R2`,
+   * `jargon:no_gloss`. Stable across runs, so the log can be grepped and a
+   * regression can be attributed to one lexicon entry.
+   */
+  ruleId: string;
+  /** Char offsets into `block`'s own (NFC-normalised) text. */
+  span: { start: number; end: number };
+  /** The offending substring, quoted back verbatim in the regeneration prompt. */
+  matchedText: string;
+  /**
+   * The Czech sentence fed *verbatim* into the regeneration prompt (A.6 step 1).
+   * `detail` is the technical one-liner for the run log; this is the instruction
+   * the model reads.
+   */
+  messageCs: string;
 }
 
 /** One paper as it appears in the day's page and its JSON twin. */

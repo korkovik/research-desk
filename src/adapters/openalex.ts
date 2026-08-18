@@ -173,7 +173,9 @@ export function bareDoi(doi: string | null | undefined): string | null {
   return withoutPrefix.toLowerCase();
 }
 
-function topicRef(node: { id?: string | null; display_name?: string | null } | null | undefined): TopicRef | null {
+function topicRef(
+  node: { id?: string | null | undefined; display_name?: string | null | undefined } | null | undefined,
+): TopicRef | null {
   const id = bareOpenAlexId(node?.id);
   const name = node?.display_name ?? null;
   if (!id || !name) return null;
@@ -221,6 +223,9 @@ export function workToCandidate(raw: unknown): Candidate | null {
     isOpenAccess: work.open_access?.is_oa ?? false,
     oaPdfUrl: work.best_oa_location?.pdf_url ?? null,
     isPreprint: work.type === 'preprint',
+    // Verbatim, because `isPreprint` is two-state and §6 needs to tell an
+    // article from an editorial or an erratum.
+    sourceType: work.type ?? null,
     isRetracted: work.is_retracted ?? false,
     authors,
     venue: work.primary_location?.source?.display_name ?? null,

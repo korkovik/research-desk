@@ -27,6 +27,68 @@ const WeightsSchema = z.object({
   credibility: z.number().min(0).max(1),
 });
 
+// --- §2 style checker (DESIGN-NOTES A). Knobs only; the hype lexicon and the
+// jargon term list are corpora and live in src/checks/lexicons.cs.ts. ---
+
+/** A warn/hard pair. Every A.3.2 metric ships as one. */
+const ThresholdSchema = z.object({ warn: z.number(), hard: z.number() });
+const Share = z.number().min(0).max(1);
+
+const StyleSchema = z.object({
+  hype: z.object({
+    /** A.1.1 #36 / A.1.2 #37 — the false-positive guard window. */
+    guardWindowChars: z.number().int().min(1),
+  }),
+  english: z.object({
+    // A.2.3's five conditions and the two secondary checks.
+    minTokens: z.number().int().min(1),
+    englishScoreHard: Share,
+    czechScoreHard: Share,
+    maxCzechFunctionWords: z.number().int().min(0),
+    mixedMinTokens: z.number().int().min(1),
+    mixedEnglishScoreWarn: Share,
+    runMinTokens: z.number().int().min(1),
+    runMinEnglishFunctionWords: z.number().int().min(1),
+  }),
+  readability: z.object({
+    // A.3.2 R1..R9. Larger is worse for every metric except compositeIndexFloor.
+    meanSentenceWords: ThresholdSchema,
+    longestSentenceWords: ThresholdSchema,
+    longSentenceCount: ThresholdSchema,
+    meanSyllablesPerWord: ThresholdSchema,
+    share4Syllables: ThresholdSchema,
+    share5Syllables: ThresholdSchema,
+    passiveShare: ThresholdSchema,
+    /** R8 — the reflexive-passive detector is ~0.5 precise (A.3.4), so it never hard-fails. */
+    reflexivePassiveShareWarn: Share,
+    /** R9 — lower is worse: warn below `warn`, hard below `hard`. */
+    compositeIndexFloor: ThresholdSchema,
+    /** What "a long sentence" means for R3. A.3.2 fixes it at 25 words. */
+    longSentenceWords: z.number().int().min(1),
+    /** A.3.2's extra rule outside the table: §7.1's one-line title. */
+    nadpisMaxWords: z.number().int().min(1),
+    nadpisMaxChars: z.number().int().min(1),
+  }),
+  jargon: z.object({
+    glossMinWords: z.number().int().min(1),
+    parenGlossMaxDistanceChars: z.number().int().min(1),
+    parenGlossMinCzechWords: z.number().int().min(1),
+    dashGlossMaxGapChars: z.number().int().min(1),
+  }),
+  numbers: z.object({
+    anchorMinWords: z.number().int().min(1),
+    parenRestatementMinWords: z.number().int().min(1),
+    anchorLookaheadSentences: z.number().int().min(0),
+  }),
+  warnBudget: z.object({
+    perHundredWords: z.number().min(0),
+    maxPerPaper: z.number().int().min(0),
+  }),
+});
+
+/** The `style` slice of the config, as every check module receives it. */
+export type StyleConfig = z.infer<typeof StyleSchema>;
+
 export const ConfigSchema = z
   .object({
     output: z.object({
@@ -52,6 +114,11 @@ export const ConfigSchema = z
     ranking: z.object({
       weights: WeightsSchema,
       maxPerSubfield: z.number().int().min(1),
+      /** §6's diversity cap is hard by default; raising it to hit the target is opt-in. */
+      relaxDiversityToReachTarget: z.boolean(),
+      relaxedMaxPerSubfield: z.number().int().min(1),
+      /** DESIGN-NOTES B.1 rule 3 — the floor below which an abstract cannot carry §7.3. */
+      minAbstractChars: z.number().int().min(0),
     }),
     summarisation: z.object({
       model: z.string().min(1),
@@ -59,6 +126,7 @@ export const ConfigSchema = z
       maxTokens: z.number().int().min(1000),
       maxRegenerationAttempts: z.number().int().min(0),
     }),
+    style: StyleSchema,
     verification: z.object({
       model: z.string().min(1),
       effort: z.enum(['low', 'medium', 'high', 'xhigh', 'max']),
@@ -111,6 +179,15 @@ export const ConfigSchema = z
           'weights must respect §6 ordering: explainability > everydayRelevance > freshness > credibility',
       });
     }
+    // A "relaxed" cap below the normal one would silently tighten the constraint
+    // on exactly the days the operator asked for more room.
+    if (cfg.ranking.relaxedMaxPerSubfield < cfg.ranking.maxPerSubfield) {
+      ctx.addIssue({
+        code: 'custom',
+        path: ['ranking', 'relaxedMaxPerSubfield'],
+        message: 'relaxedMaxPerSubfield cannot be below maxPerSubfield',
+      });
+    }
     if (cfg.output.minPapersToPublish > cfg.output.papersPerDay) {
       ctx.addIssue({
         code: 'custom',
@@ -129,6 +206,36 @@ export const ConfigSchema = z
     const keys = new Set(cfg.categories.map((c) => c.key));
     if (keys.size !== cfg.categories.length) {
       ctx.addIssue({ code: 'custom', path: ['categories'], message: 'category keys must be unique' });
+    }
+    // A.3.2's table is only meaningful if `hard` is strictly worse than `warn`.
+    // A config where they are crossed would hard-fail text that never warns,
+    // which is the kind of silent inversion nobody notices for weeks.
+    const r = cfg.style.readability;
+    const ascending: Array<[string, { warn: number; hard: number }]> = [
+      ['meanSentenceWords', r.meanSentenceWords],
+      ['longestSentenceWords', r.longestSentenceWords],
+      ['longSentenceCount', r.longSentenceCount],
+      ['meanSyllablesPerWord', r.meanSyllablesPerWord],
+      ['share4Syllables', r.share4Syllables],
+      ['share5Syllables', r.share5Syllables],
+      ['passiveShare', r.passiveShare],
+    ];
+    for (const [name, t] of ascending) {
+      if (!(t.hard > t.warn)) {
+        ctx.addIssue({
+          code: 'custom',
+          path: ['style', 'readability', name],
+          message: `hard (${t.hard}) must be worse than warn (${t.warn}) — larger is worse for this metric`,
+        });
+      }
+    }
+    // R9 runs the other way: warn below 50, hard below 40.
+    if (!(r.compositeIndexFloor.hard < r.compositeIndexFloor.warn)) {
+      ctx.addIssue({
+        code: 'custom',
+        path: ['style', 'readability', 'compositeIndexFloor'],
+        message: 'composite index R9 is a floor: hard must be BELOW warn',
+      });
     }
     if (cfg.http.backoffMs.length < cfg.http.retries) {
       ctx.addIssue({

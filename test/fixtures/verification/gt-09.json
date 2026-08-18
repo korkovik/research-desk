@@ -1,0 +1,22 @@
+{
+  "id": "GT-09",
+  "label": "FABRICATED: extrapolated application the paper never mentions",
+  "source": {
+    "title": "Occurrence, size distribution and polymer composition of microplastic particles in sediment cores from three lowland rivers",
+    "abstract": "Riverbed sediment is thought to act as a long-term sink for microplastic particles, but vertical distribution data are scarce. We collected 36 sediment cores to a depth of 40 cm from three lowland rivers in central Europe during low-flow conditions in summer 2025. Particles between 20 micrometres and 5 millimetres were extracted by density separation and identified by Fourier-transform infrared spectroscopy. Concentrations ranged from 42 to 310 particles per kilogram of dry sediment, with the highest values 300 to 800 metres downstream of wastewater treatment plant outfalls. Polyethylene and polypropylene together accounted for 68% of identified particles. Concentrations in the 20 to 40 cm layer were on average 2.6 times lower than in the top 10 cm, consistent with increasing plastic input over recent decades. We did not sample the water column, and we did not assess ecological or human health effects. Fibres shorter than 20 micrometres were below the detection limit of the method used.",
+    "tldr": "Microplastic concentrations in riverbed sediment ranged from 42 to 310 particles per kilogram and were highest just downstream of wastewater treatment plants.",
+    "venue": "Water Research",
+    "type": "article",
+    "date": "2026-08-09"
+  },
+  "candidateExample": "Vědci vytáhli z řečiště tří nížinných řek 36 vzorků bahna až do hloubky 40 centimetrů a spočítali v nich úlomky plastů. Nejvíc jich bylo pár set metrů pod výpustí čistírny odpadních vod. Když si doma pustíte vodu z kohoutku, projde filtrem, který většinu takových částic zachytí, takže do sklenice se jich dostane jen zlomek.",
+  "isMotivationFallback": false,
+  "expected": {
+    "finalVerdict": "unsupported",
+    "mustFlagSpans": [
+      "Když si doma pustíte vodu z kohoutku, projde filtrem, který většinu takových částic zachytí"
+    ],
+    "mustHaveAtLeastOneSupportedClaim": true,
+    "note": "`finalVerdict: unsupported` · `mustFlagSpan: \"Když si doma pustíte vodu z kohoutku, projde filtrem, který většinu takových částic zachytí\"` · flagged claim type `application` · the first two sentences must come back `supported`. **Extra assertion:** the abstract contains the sentence `\"We did not sample the water column, and we did not assess ecological or human health effects.\"` — a well-behaved verifier will often cite it in `unsupportedReasonsCs`. Do not make that a hard requirement, but log it as a quality signal."
+  }
+}

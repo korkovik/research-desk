@@ -37,7 +37,13 @@
       "freshness": 0.18,
       "credibility": 0.14
     },
-    "maxPerSubfield": 2
+    "maxPerSubfield": 2,
+    "_maxPerSubfield": "§6 states the diversity cap as a rule, not a preference, so it is HARD: a day that cannot fill papersPerDay under the cap publishes fewer and says why (§3, §9). Raising it to reach the target is opt-in below.",
+    "relaxDiversityToReachTarget": false,
+    "relaxedMaxPerSubfield": 3,
+    "_relaxedMaxPerSubfield": "Only consulted when relaxDiversityToReachTarget is true. The cap never goes above this value; five papers from one subfield would defeat §5's breadth. A relaxed run sets the diversityRelaxed flag so the degradation reaches the page footer.",
+    "minAbstractChars": 400,
+    "_minAbstractChars": "§6 excludes papers whose abstract cannot support a §7.3 explanation. Applied only when there is no Semantic Scholar TLDR to fall back on."
   },
 
   "summarisation": {
@@ -45,6 +51,64 @@
     "effort": "high",
     "maxTokens": 8000,
     "maxRegenerationAttempts": 2
+  },
+
+  "style": {
+    "_readme": "§2's plain-language and no-hype rules, enforced by a deterministic checker (DESIGN-NOTES A). Knobs only — the hype lexicon and the jargon term list are corpora and live in src/checks/lexicons.cs.ts, where each entry can carry its false-positive guard and its justification. Every threshold below cites the A.x subsection that justifies it.",
+
+    "hype": {
+      "_readme": "A.1.1 #36 and A.1.2 #37 — how far past a hit the false-positive guard looks (průlomová bolest, zlomový okamžik).",
+      "guardWindowChars": 20
+    },
+
+    "english": {
+      "_readme": "A.2.3. A sentence is untranslated English only if ALL five conditions hold. Condition 4 (zero Czech diacritics) is the strong one.",
+      "minTokens": 5,
+      "englishScoreHard": 0.25,
+      "czechScoreHard": 0.08,
+      "maxCzechFunctionWords": 1,
+      "mixedMinTokens": 8,
+      "mixedEnglishScoreWarn": 0.3,
+      "runMinTokens": 6,
+      "runMinEnglishFunctionWords": 2
+    },
+
+    "readability": {
+      "_readme": "A.3.2 table R1–R9, computed over blocks 2–5 concatenated. R5's thresholds are provisional (Open Question OQ-2): Czech derivation makes 4-syllable words ordinary, so the intuitive 10 % is unmeetable.",
+      "meanSentenceWords": { "warn": 16, "hard": 20 },
+      "longestSentenceWords": { "warn": 25, "hard": 34 },
+      "longSentenceCount": { "warn": 1, "hard": 3 },
+      "meanSyllablesPerWord": { "warn": 2.6, "hard": 2.9 },
+      "share4Syllables": { "warn": 0.25, "hard": 0.35 },
+      "share5Syllables": { "warn": 0.06, "hard": 0.1 },
+      "passiveShare": { "warn": 0.2, "hard": 0.35 },
+      "reflexivePassiveShareWarn": 0.3,
+      "compositeIndexFloor": { "warn": 50, "hard": 40 },
+      "longSentenceWords": 25,
+      "nadpisMaxWords": 14,
+      "nadpisMaxChars": 100
+    },
+
+    "jargon": {
+      "_readme": "A.4.2. A parenthesis holding only the English original is a §2 term marker, not a gloss — hence parenGlossMinCzechWords.",
+      "glossMinWords": 4,
+      "parenGlossMaxDistanceChars": 60,
+      "parenGlossMinCzechWords": 3,
+      "dashGlossMaxGapChars": 3
+    },
+
+    "numbers": {
+      "_readme": "A.5.3. An anchor counts only when it is followed by real words, and it may sit in the next sentence.",
+      "anchorMinWords": 3,
+      "parenRestatementMinWords": 4,
+      "anchorLookaheadSentences": 1
+    },
+
+    "warnBudget": {
+      "_readme": "A.6 — at most 1 warn per 100 words of blocks 2–5, and at most 4 per paper. Exceeding either sets status=warn, which never blocks publication.",
+      "perHundredWords": 1,
+      "maxPerPaper": 4
+    }
   },
 
   "verification": {

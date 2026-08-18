@@ -35,7 +35,18 @@ export default tseslint.config(
     // Tests and one-off scripts assert against fixtures and print to stdout;
     // the unsafe-* rules fire constantly on JSON.parse results there and would
     // train us to ignore the linter rather than read it.
+    //
+    // They also need their own program: the project service resolves the nearest
+    // `tsconfig.json`, which deliberately excludes `test/` and `scripts/`, so
+    // without this every file here lints as "not found by the project service".
     files: ['test/**/*.ts', 'scripts/**/*.ts'],
+    languageOptions: {
+      parserOptions: {
+        projectService: false,
+        project: ['./tsconfig.test.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+    },
     rules: {
       '@typescript-eslint/no-unsafe-assignment': 'off',
       '@typescript-eslint/no-unsafe-member-access': 'off',
@@ -43,6 +54,13 @@ export default tseslint.config(
       '@typescript-eslint/no-unsafe-call': 'off',
       '@typescript-eslint/no-unsafe-return': 'off',
     },
+  },
+  {
+    // `node:test`'s `test()` returns a promise that the runner itself awaits.
+    // The rule is here for unattended pipeline code, not for a suite that would
+    // otherwise need `void` in front of every case.
+    files: ['test/**/*.ts'],
+    rules: { '@typescript-eslint/no-floating-promises': 'off' },
   },
   {
     // This file configures the linter and belongs to no tsconfig, so the

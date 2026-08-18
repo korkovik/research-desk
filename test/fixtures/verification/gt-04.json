@@ -1,0 +1,20 @@
+{
+  "id": "GT-04",
+  "label": "SUPPORTED, NEGATIVE CONTROL #2 (numbers restated as ratios, units converted)",
+  "source": {
+    "title": "Prospective evaluation of an automated retinal image screening tool in eleven primary-care diabetes clinics",
+    "abstract": "Diabetic retinopathy screening in rural regions is limited by the availability of ophthalmologists. We prospectively evaluated an automated image-analysis tool deployed in eleven primary-care diabetes clinics in northern Portugal. Practice nurses with two hours of training captured two fundus photographs per eye from 6,742 consecutive adult patients with type 2 diabetes. Images were analysed on the clinic computer and the result was available before the patient left the appointment. All images were also read independently by two ophthalmologists, whose consensus served as the reference standard. The tool achieved a sensitivity of 92.3% (95% CI 90.1 to 94.2) and a specificity of 87.1% (95% CI 86.0 to 88.1) for referable retinopathy. Referrals to hospital eye services fell by 41% compared with the previous twelve months, while no case of proliferative retinopathy was missed. Twenty-two patients were referred on the basis of images that the ophthalmologists judged ungradable. Deployment required no internet connection at the clinic.",
+    "tldr": "An on-device retinal screening tool used by nurses in primary care detected referable diabetic retinopathy with 92% sensitivity and cut hospital referrals by 41%.",
+    "venue": "The Lancet Digital Health",
+    "type": "article",
+    "date": "2026-08-15"
+  },
+  "candidateExample": "V jedenácti běžných ordinacích v severním Portugalsku vyfotila sestra pacientovi s cukrovkou oční pozadí a počítač přímo v ordinaci vyhodnotil snímek dřív, než pacient odešel. Ze sta lidí, kteří opravdu měli poškozenou sítnici, program zachytil zhruba 92. Do očních ambulancí pak z ordinací putovalo o 41 procent méně pacientů než rok předtím, tedy místo sta jich stačilo poslat devětapadesát. Program běžel i bez připojení k internetu.",
+  "isMotivationFallback": false,
+  "expected": {
+    "finalVerdict": "supported",
+    "mustFlagSpans": [],
+    "mustHaveAtLeastOneSupportedClaim": false,
+    "note": "`finalVerdict: supported` · **test note:** `\"místo sta jich stačilo poslat devětapadesát\"` is arithmetic on the stated 41 %, not a new number. If the verifier flags this as an invented quantity, the prompt's `quantity` rule needs the sentence \"Přepočet čísla, které zdroj uvádí, je doložený; nové číslo doložené není.\" added."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "GT-10",
+  "label": "FABRICATED: plausible-but-absent mechanism (plus a causality upgrade)",
+  "source": {
+    "title": "Residential green space and hair cortisol concentration in 2,940 adults: a cross-sectional study",
+    "abstract": "Chronic stress is associated with cardiovascular and metabolic disease, and hair cortisol concentration provides a retrospective measure of cortisol exposure over roughly the preceding three months. We analysed data from 2,940 adults aged 25 to 74 in a population cohort in Flanders. Residential green space was quantified as the proportion of vegetated land cover within a 300-metre buffer of each participant's home address, derived from 10-metre resolution satellite imagery. Hair samples of 3 cm were collected from the posterior vertex. After adjustment for age, sex, household income, educational attainment, smoking, body mass index and season of sampling, a 10 percentage point increase in green space was associated with a 4.2% lower hair cortisol concentration (95% CI 1.8% to 6.5%). The association was stronger among participants in the lowest income tertile. Because the design is cross-sectional, we cannot establish the direction of the relationship, and residential self-selection may explain part of it. We did not investigate biological mechanisms.",
+    "tldr": "Adults living in greener neighbourhoods had 4.2% lower hair cortisol per 10 percentage points of additional green space, in a cross-sectional analysis.",
+    "venue": "Environment International",
+    "type": "article",
+    "date": "2026-08-08"
+  },
+  "candidateExample": "Stromy kolem domu uvolňují do vzduchu látky zvané fytoncidy, které tlumí tvorbu stresového hormonu. Proto mají lidé, kteří bydlí v zelenější čtvrti, ve vlasech méně kortizolu — u téměř tří tisíc dospělých z Flander to bylo o 4,2 procenta méně na každých deset procent zeleně navíc v okolí do 300 metrů od domu.",
+  "isMotivationFallback": false,
+  "expected": {
+    "finalVerdict": "unsupported",
+    "mustFlagSpans": [
+      "Stromy kolem domu uvolňují do vzduchu látky zvané fytoncidy, které tlumí tvorbu stresového hormonu",
+      "Proto",
+      "Proto mají lidé"
+    ],
+    "mustHaveAtLeastOneSupportedClaim": true,
+    "note": "`finalVerdict: unsupported` · two `mustFlagSpan` values: `\"Stromy kolem domu uvolňují do vzduchu látky zvané fytoncidy, které tlumí tvorbu stresového hormonu\"` (claim type `mechanism`) and `\"Proto\"` / `\"Proto mají lidé\"` (claim type `outcome`, causal framing not supported by a cross-sectional design) · the population, setting and quantity claims should be `supported`. **Note:** GT-10 is the hardest fixture and the most valuable. The mechanism is real science, it is plausible, and a verifier reasoning from world knowledge will wave it through. If only one fixture can be run in a fast pre-commit hook, run this one."
+  }
+}

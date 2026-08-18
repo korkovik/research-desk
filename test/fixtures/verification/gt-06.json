@@ -1,0 +1,22 @@
+{
+  "id": "GT-06",
+  "label": "FABRICATED: invented setting",
+  "source": {
+    "title": "Electronic reminders and hand-hygiene compliance among nurses in three Danish hospitals: a stepped-wedge cluster randomised trial",
+    "abstract": "Hand-hygiene compliance among hospital staff remains below recommended levels despite decades of campaigns. We conducted a stepped-wedge cluster randomised trial in three Danish hospitals between January 2025 and March 2026. Twenty-four general medical and surgical wards took part; intensive care units, operating theatres and paediatric wards were excluded because their hand-hygiene protocols differ. A total of 1,204 nurses were observed. Each ward received an electronic dispenser that emitted a two-second light signal when a staff member passed a patient bed without using it. Compliance was measured by trained observers blinded to the allocation sequence, using the World Health Organization five-moments protocol. Compliance rose from 43% at baseline to 61% after twelve weeks of the intervention (adjusted odds ratio 2.04, 95% CI 1.71 to 2.43). The effect declined to 54% by week 26, suggesting habituation to the signal. Hospital-acquired infection rates were recorded but the trial was not powered to detect a change in them.",
+    "tldr": "Light-based electronic reminders raised nurses' hand-hygiene compliance from 43% to 61%, with the effect fading after six months.",
+    "venue": "BMJ Quality & Safety",
+    "type": "article",
+    "date": "2026-08-12"
+  },
+  "candidateExample": "Na jednotkách intenzivní péče a na operačních sálech ve třech dánských nemocnicích instalovali u lůžek dávkovač dezinfekce, který blikne, když kolem projde sestra a ruce si neumyje. Během tří měsíců stouplo mytí rukou ze 43 na 61 procent. Po půl roce ale sestry na blikání přestaly reagovat a čísla klesla na 54 procent.",
+  "isMotivationFallback": false,
+  "expected": {
+    "finalVerdict": "unsupported",
+    "mustFlagSpans": [
+      "Na jednotkách intenzivní péče a na operačních sálech"
+    ],
+    "mustHaveAtLeastOneSupportedClaim": true,
+    "note": "`finalVerdict: unsupported` · `mustFlagSpan: \"Na jednotkách intenzivní péče a na operačních sálech\"` · flagged claim type `setting` · at least the quantity and outcome claims must come back `supported` (the numbers are real)."
+  }
+}

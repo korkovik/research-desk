@@ -1,0 +1,23 @@
+{
+  "id": "GT-08",
+  "label": "FABRICATED: invented numeric magnitude",
+  "source": {
+    "title": "A twelve-week workplace sit-stand desk intervention and lower-back pain: a cluster randomised trial in fourteen offices",
+    "abstract": "Lower-back pain is the most common cause of sickness absence among office workers. We randomised fourteen office sites, comprising 1,073 desk-based employees, to receive either height-adjustable sit-stand desks with a 30-minute group briefing, or no change. Sitting time was measured with thigh-worn accelerometers over seven consecutive days at baseline and at twelve weeks. Lower-back pain was self-reported weekly on a 0 to 10 numerical rating scale. At twelve weeks, employees in the intervention group reported a mean pain score 0.8 points lower than the control group, a relative reduction of 12% (95% CI 5% to 19%). Objectively measured sitting time fell by 42 minutes per working day. Self-reported productivity did not change. Twenty-nine per cent of intervention participants reported using the standing position on fewer than two days per week by the end of the study. Cost per site was approximately 14,000 euros.",
+    "tldr": "Sit-stand desks reduced office workers' sitting time by 42 minutes a day and lower-back pain scores by 12%.",
+    "venue": "Occupational and Environmental Medicine",
+    "type": "article",
+    "date": "2026-08-10"
+  },
+  "candidateExample": "Ve čtrnácti kancelářích dali víc než tisícovce lidí stůl, který jde zvednout, aby se u něj dalo pracovat i vestoje. Po třech měsících je záda bolela zhruba o polovinu méně a seděli o dvě hodiny denně méně než jejich kolegové u běžných stolů.",
+  "isMotivationFallback": false,
+  "expected": {
+    "finalVerdict": "unsupported",
+    "mustFlagSpans": [
+      "zhruba o polovinu méně",
+      "o dvě hodiny denně méně"
+    ],
+    "mustHaveAtLeastOneSupportedClaim": true,
+    "note": "`finalVerdict: unsupported` · two `mustFlagSpan` values: `\"zhruba o polovinu méně\"` and `\"o dvě hodiny denně méně\"` · both flagged claim type `quantity` · the setting and population claims should be `supported`."
+  }
+}

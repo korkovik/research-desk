@@ -9,7 +9,7 @@
  * plain words, and the flag is what the renderer keys that sentence on — so it
  * is set unconditionally rather than inferred.
  */
-import { XMLParser } from 'fast-xml-parser';
+import { XMLParser, XMLValidator } from 'fast-xml-parser';
 import { z } from 'zod';
 import type { Candidate, CategoryConfig, SourceAdapter } from '../types.js';
 import { arxivStamp, isISODate } from '../util/dates.js';
@@ -200,6 +200,19 @@ export function buildQueryUrl(
 
 /** Exported so tests can parse a fixture without an HTTP round trip. */
 export function parseFeed(xml: string, urlForErrors: string): unknown[] {
+  // The parser itself is forgiving and would hand back the first few entries of
+  // a connection that died mid-feed. Half a day's candidates that look complete
+  // is worse than a source that visibly failed and degrades under §9.
+  const validity = XMLValidator.validate(xml);
+  if (validity !== true) {
+    throw new HttpError(
+      `arXiv response was not well-formed XML: ${validity.err.msg} (line ${String(validity.err.line)})`,
+      null,
+      urlForErrors,
+      xml.slice(0, 300),
+    );
+  }
+
   let document: unknown;
   try {
     document = parser.parse(xml);

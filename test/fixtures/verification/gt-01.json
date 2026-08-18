@@ -1,0 +1,20 @@
+{
+  "id": "GT-01",
+  "label": "SUPPORTED (school start times)",
+  "source": {
+    "title": "Delaying secondary school start time by 50 minutes and adolescent sleep duration: a two-year cohort study in 21 schools",
+    "abstract": "Insufficient sleep is common in adolescence and has been linked to daytime sleepiness and poor school attendance. Between September 2023 and June 2025 we followed 4,213 students aged 13 to 17 in 21 secondary schools in the Netherlands. Eleven schools moved their first lesson from 08:00 to 08:50; ten comparison schools kept their existing schedule. Sleep was measured with wrist actigraphy in a subsample of 612 students and with weekly self-report diaries in the full cohort. Students in the later-start schools slept on average 26 minutes longer per school night (95% CI 19 to 33 minutes) than students in the comparison schools. Self-reported daytime sleepiness fell by 0.6 points on a 10-point scale. Unauthorised absence fell by 1.4 percentage points. End-of-year grade point averages did not differ between the two groups. Bedtimes did not shift later, which suggests the additional sleep was not offset by students staying up. The study was not randomised and schools chose whether to change their timetable.",
+    "tldr": "Moving the school day 50 minutes later increased adolescent sleep by about 26 minutes per night without shifting bedtimes, but did not change grades.",
+    "venue": "Journal of Adolescent Health",
+    "type": "article",
+    "date": "2026-08-14"
+  },
+  "candidateExample": "Ve dvaceti jedna nizozemských středních školách posunuli začátek vyučování z osmé hodiny na 8:50. Studenti ve věku 13 až 17 let pak spali každou školní noc v průměru o 26 minut déle a méně často byli přes den ospalí. Chodit spát později kvůli tomu nezačali. Známky na konci roku se přitom nezměnily.",
+  "isMotivationFallback": false,
+  "expected": {
+    "finalVerdict": "supported",
+    "mustFlagSpans": [],
+    "mustHaveAtLeastOneSupportedClaim": false,
+    "note": "`finalVerdict: supported` · claim types present: `setting`, `population`, `action`, `quantity`, `outcome` · no unsupported claims."
+  }
+}

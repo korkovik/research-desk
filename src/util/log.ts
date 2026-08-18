@@ -42,28 +42,57 @@ function consoleSink(level: LogLevel, message: string): void {
   else console.log(line);
 }
 
+/**
+ * §9's run record. One JSON object per line — still "one line per run" as the
+ * spec requires, but greppable with `jq` and readable by a future weekly recap
+ * without a parser being written for it. The `summary` field is first so that
+ * eyeballing a `tail` still works: it is the human sentence, and everything
+ * after it is the detail behind it.
+ */
 export interface RunLogLine {
   /** ISO instant. */
-  timestamp: string;
-  date: string;
+  ts: string;
+  /** The archive date this run was for, `YYYY-MM-DD`. */
+  runId: string;
+  level: 'INFO' | 'WARN' | 'ERROR' | 'FATAL';
+  outcome: 'published' | 'published_degraded' | 'aborted';
+  summary: string;
   category: string;
-  candidates: number;
-  selected: number;
-  published: boolean;
+  categoryLabelCs: string;
+  durationMs: number;
+  candidates: {
+    fetched: Record<string, number>;
+    afterExclusions: number;
+    exclusionReasons: Record<string, number>;
+    selected: number;
+    verified: number;
+    dropped: { id: string; reason: string; attempts: number }[];
+  };
+  degradations: string[];
   errors: string[];
+  anthropic?: {
+    callsTotal: number;
+    inputTokens: number;
+    outputTokens: number;
+    cacheReadTokens: number;
+    estimatedCostUsd: number | null;
+  };
 }
 
-/** §9 — "Every run appends one line to logs/run.log". Failures included. */
+/** §9 — "Every run appends one line to logs/run.log". Failed runs included. */
 export function appendRunLog(path: string, line: RunLogLine): void {
   mkdirSync(dirname(path), { recursive: true });
-  const errors = line.errors.length === 0 ? 'none' : line.errors.map(oneLine).join(' | ');
-  const record =
-    `${line.timestamp}\t${line.date}\t${line.category}` +
-    `\tcandidates=${line.candidates}\tselected=${line.selected}` +
-    `\tpublished=${line.published ? 'yes' : 'no'}\terrors=${errors}\n`;
-  appendFileSync(path, record, 'utf8');
+  appendFileSync(path, `${JSON.stringify(line)}\n`, 'utf8');
 }
 
-function oneLine(text: string): string {
-  return text.replace(/\s+/g, ' ').trim();
+/** The human sentence that goes in `summary`, built from the same numbers. */
+export function summarise(line: Omit<RunLogLine, 'summary'>): string {
+  const parts = [
+    `${line.outcome} ${line.candidates.verified}/${line.candidates.selected} papers`,
+    `(${line.categoryLabelCs})`,
+    `from ${line.candidates.afterExclusions} candidates`,
+  ];
+  if (line.degradations.length > 0) parts.push(`degraded: ${line.degradations.join(',')}`);
+  if (line.errors.length > 0) parts.push(`errors: ${line.errors.length}`);
+  return parts.join(' ');
 }

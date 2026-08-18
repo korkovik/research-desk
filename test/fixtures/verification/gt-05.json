@@ -1,0 +1,20 @@
+{
+  "id": "GT-05",
+  "label": "SUPPORTED via labelled motivation fallback (no concrete application in paper)",
+  "source": {
+    "title": "Interfacial fluoride engineering in layered sodium-ion cathodes: a computational screening and half-cell study",
+    "abstract": "Sodium is roughly a thousand times more abundant in the Earth's crust than lithium, and sodium-ion cells are widely discussed as a cheaper route to stationary storage for household solar installations, which motivates the search for cathode materials that retain capacity over many charge cycles. Capacity fade in layered sodium transition-metal oxides is driven in part by irreversible reactions at the cathode-electrolyte interface. We screened 218 candidate fluoride surface terminations using density functional theory and selected four for synthesis. Coin half-cells were assembled and cycled at a rate of 1C. The best-performing termination retained 88% of initial capacity after 500 cycles, compared with 61% for the uncoated reference. X-ray photoelectron spectroscopy indicates the formation of a thin sodium fluoride layer during the first cycle. We did not construct full cells, and half-cell results are known to overstate cycle life because the sodium metal counter-electrode supplies an unlimited sodium reservoir.",
+    "tldr": "A fluoride surface coating improved capacity retention of a sodium-ion cathode from 61% to 88% over 500 cycles in half-cells.",
+    "venue": "Journal of Materials Chemistry A",
+    "type": "article",
+    "date": "2026-08-17"
+  },
+  "candidateExample": "sodíku je v zemské kůře asi tisíckrát víc než lithia, a sodíkové baterie se proto probírají jako levnější cesta k domácímu úložišti energie pro solární panely. Sami ale zatím testovali jen malý laboratorní článek, ne hotovou baterii.",
+  "isMotivationFallback": true,
+  "expected": {
+    "finalVerdict": "supported",
+    "mustFlagSpans": [],
+    "mustHaveAtLeastOneSupportedClaim": false,
+    "note": "`finalVerdict: supported` · claim types include `motivation` · the second sentence's limitation claim is supported by `\"We did not construct full cells\"`."
+  }
+}
