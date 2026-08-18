@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Daily run at 06:00 local time (assumption A3 — §12 suggested early morning so
+  the page is ready before the family wakes).
+
+  StartCalendarInterval, not StartInterval: it fires at a wall-clock time and,
+  unlike cron, launchd runs a missed job once the machine wakes rather than
+  skipping the day. RunAtLoad is deliberately false — loading the job while
+  testing should not fire a run and consume a day's OpenAlex allowance.
+
+  Install:
+    cp launchd/com.tomscld.research-desk.plist ~/Library/LaunchAgents/
+    launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.tomscld.research-desk.plist
+  Check:    launchctl print gui/$(id -u)/com.tomscld.research-desk
+  Run now:  launchctl kickstart -p gui/$(id -u)/com.tomscld.research-desk
+  Remove:   launchctl bootout gui/$(id -u)/com.tomscld.research-desk
+
+  The WorkingDirectory and ProgramArguments path below assume the repo is at
+  ~/claudecode-workspace/research-desk. Edit both if it moves.
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.tomscld.research-desk</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <string>exec "$HOME/claudecode-workspace/research-desk/scripts/daily-run.sh"</string>
+    </array>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key><integer>6</integer>
+        <key>Minute</key><integer>0</integer>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/research-desk.launchd.out</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/research-desk.launchd.err</string>
+
+    <!-- The job is short (a few minutes). If it is still running after 30
+         minutes something is wedged, and a stuck run must not still be holding
+         the lock when tomorrow's fires. -->
+    <key>ExitTimeOut</key>
+    <integer>1800</integer>
+
+    <key>ProcessType</key>
+    <string>Background</string>
+</dict>
+</plist>
