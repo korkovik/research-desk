@@ -227,7 +227,14 @@ export async function summariseAndVerify(
     recordRejection(report, 'motivation fallback verification failed');
   }
 
-  log?.error('example could not be verified at any rung — dropping the paper (§7.4)');
+  // The codes matter more than the count: "the verifier could not reach the API"
+  // and "the verifier found an invented setting" both end here, and the run log
+  // is where that difference has to be visible.
+  const codes = [...new Set(rejections.flatMap((r) => r.unsupportedClaims.map(firstToken)))];
+  log?.error(
+    `example could not be verified at any rung — dropping the paper (§7.4). ` +
+      `${rejections.length} rejection(s): ${codes.join(', ')}`,
+  );
   return {
     status: 'dropped',
     reason: 'example_unverifiable',
@@ -272,6 +279,11 @@ async function regenerateExample(
 
 function describeViolation(violation: { block: string; rule: string; detail: string }): string {
   return `[${violation.block}] ${violation.rule}: ${violation.detail}`;
+}
+
+/** `V4_FABRICATED_QUOTE (c2): …` → `V4_FABRICATED_QUOTE`. */
+function firstToken(detail: string): string {
+  return detail.split(/[\s(:]/u)[0] ?? detail;
 }
 
 function describeError(error: unknown): string {

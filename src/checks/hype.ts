@@ -15,7 +15,7 @@ import {
   type CompiledEntry,
   type LexEntry,
 } from './lexicons.cs.js';
-import { lowerForMatching, mask, type MaskSpan } from './text.js';
+import { lowerForMatching, mask } from './text.js';
 import type { BlockName, Finding } from './types.js';
 
 const CS_ENTRIES: readonly CompiledEntry[] = compileEntries([...HYPE_CS_HARD, ...HYPE_CS_WARN]);
@@ -40,8 +40,8 @@ export function checkHype(block: BlockName, text: string, config: StyleConfig): 
   const withParensMasked = mask(lowered, { parens: true });
 
   const raw: Finding[] = [
-    ...run(CS_ENTRIES, block, text, lowered, lowered, [], config),
-    ...run(EN_ENTRIES, block, text, lowered, withParensMasked.text, withParensMasked.spans, config),
+    ...run(CS_ENTRIES, block, text, lowered, lowered, config),
+    ...run(EN_ENTRIES, block, text, lowered, withParensMasked.text, config),
   ];
 
   return resolveSeverity(raw);
@@ -53,10 +53,8 @@ function run(
   original: string,
   lowered: string,
   haystack: string,
-  masked: readonly MaskSpan[],
   config: StyleConfig,
 ): Finding[] {
-  void masked;
   const out: Finding[] = [];
   for (const entry of entries) {
     // A caseSensitive entry matches the original text; everything else matches

@@ -55,6 +55,12 @@ export interface RunOptions {
   llm?: LlmClient;
   fetchImpl?: typeof fetch | undefined;
   now?: (() => Date) | undefined;
+  /**
+   * Injected by tests so the §4.2 throttle runs in simulated time. Production
+   * leaves it unset and really waits 1.1 s between Semantic Scholar requests —
+   * that gap is the point, and nothing in the pipeline may shorten it.
+   */
+  clock?: { readonly now: () => number; readonly sleep: (ms: number) => Promise<void> } | undefined;
 }
 
 export interface RunResult {
@@ -114,20 +120,24 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
   // request per second on, then again once those have their TLDRs, because a
   // TLDR changes what the explainability heuristic can see.
   const selectOptions = optionsFromConfig(config, date, isSeen);
-  const shortlisting = selectForDay(
-    discovery.candidates.map(toUnenriched),
-    { ...selectOptions, papersPerDay: config.shortlist.size, maxPerSubfield: config.shortlist.size },
+  const shortlisting = selectForDay(discovery.candidates.map(toUnenriched), selectOptions);
+  // `ranked`, not `selected`: the shortlist is "the twenty worth spending
+  // Semantic Scholar's one-request-per-second on", and it must not be narrowed
+  // by the explainability gate or the diversity cap here. A TLDR is exactly the
+  // evidence the gate reads, so gating before enrichment would discard
+  // candidates for lacking the very thing enrichment was about to give them.
+  const shortlist = shortlisting.ranked.slice(0, config.shortlist.size);
+  logger.info(
+    `shortlist: ${shortlist.length} of ${shortlisting.ranked.length} candidates that survived §6's exclusions`,
   );
-  const shortlist = shortlisting.selected.slice(0, config.shortlist.size);
-  logger.info(`shortlist: ${shortlist.length} of ${shortlisting.ranked.length} ranked candidates`);
 
-  const enrichment = await enrichWithTldr(shortlist, adapterDeps);
+  const enrichment = await enrichWithTldr(shortlist, { ...adapterDeps, clock: options.clock });
   if (enrichment.degradation) degradations.push(enrichment.degradation);
 
   const selection = selectForDay(enrichment.enriched, selectOptions);
   logger.info(
     `selection: ${selection.selected.length} selected, ${selection.remainder.length} in reserve, ` +
-      `exclusions ${JSON.stringify(selection.exclusionCounts)}`,
+      `exclusions ${JSON.stringify(shortlisting.exclusionCounts)}`,
   );
   if (selection.flags.diversityRelaxed) logger.warn('diversity cap was relaxed to reach the target');
   if (selection.flags.explainGateWaived) logger.warn('explainability gate was waived to reach the minimum');
@@ -227,8 +237,10 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
     durationMs: Date.now() - started,
     candidates: {
       fetched,
-      afterExclusions: selection.ranked.length,
-      exclusionReasons: selection.exclusionCounts,
+      afterExclusions: shortlisting.ranked.length,
+      // From the FIRST pass. The second one only ever sees the shortlist, so
+      // its counts would report a handful of exclusions that already happened.
+      exclusionReasons: shortlisting.exclusionCounts,
       selected: selection.selected.length,
       verified: entries.length,
       dropped,

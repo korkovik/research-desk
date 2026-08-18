@@ -216,7 +216,9 @@ export function checkNumberAnchors(block: BlockName, text: string, config: Style
 
   for (const num of findNumbers(text)) {
     const verdict = classify(text, num);
-    if (!verdict.alwaysAnchored && verdict.exemption === 'exempt') continue;
+    // `alwaysAnchored` already forces `exemption: 'none'`, so this one test
+    // covers A.5.2's table and its "always hard" last row at once.
+    if (verdict.exemption === 'exempt') continue;
     if (isAnchored(sentences, num, config)) continue;
 
     const severity = verdict.alwaysAnchored ? 'hard' : verdict.exemption === 'sample' ? 'warn' : 'hard';

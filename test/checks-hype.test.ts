@@ -17,9 +17,19 @@ const hard = (text: string) => checkHype('podrobneVysvetleni', text, config).fil
 const all = (text: string) => checkHype('podrobneVysvetleni', text, config);
 
 describe('RISK-VOICE-01 — the shipped lexicon matches A.1', () => {
-  it('ships 35 Czech hard entries and 18 Czech warn entries (A.1.2 totals)', () => {
-    assert.equal(HYPE_CS_HARD.length, 35, 'A.1.1 numbers 36 rows but flags #19 as a duplicate: ship 35');
+  it('ships 35 Czech hard rows and 18 Czech warn rows (A.1\'s totals)', () => {
+    // A.1.1 numbers its table 1..36 and flags #19 as a duplicate of #3
+    // ("ship 35 hard entries"). Several rows list two or three phrases on one
+    // line, and one regex per phrase is clearer than one with three
+    // alternations — so the count that must equal 35 is DISTINCT ROWS.
+    const hardRows = new Set(HYPE_CS_HARD.map((e) => e.row).filter((r) => r?.startsWith('A.1.1')));
+    assert.equal(hardRows.size, 35);
     assert.equal(HYPE_CS_WARN.length, 18);
+    assert.equal(new Set(HYPE_CS_WARN.map((e) => e.row)).size, 18);
+    // The one hard entry that is not an A.1.1 row is A.1.2 #37's guarded half:
+    // `průlom` is hard UNLESS followed by bolest|infekc|krvácen|dávk.
+    const strays = HYPE_CS_HARD.filter((e) => !e.row?.startsWith('A.1.1')).map((e) => e.id);
+    assert.deepEqual(strays, ['průlom-hyped']);
   });
 
   it('ships A.1.3\'s English leak list in full', () => {

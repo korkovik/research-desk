@@ -140,7 +140,7 @@ export const HYPE_POSITIVE: ReadonlyArray<{ text: string; expectMatch: string }>
   { text: 'Pro obor to byl zlomový okamžik.', expectMatch: 'zlomový okamžik' },
   { text: 'Tahle metoda mění pravidla hry v celém oboru.', expectMatch: 'mění pravidla hry' },
   { text: 'Vědci hledali svatý grál mezi bateriemi.', expectMatch: 'svatý grál' },
-  { text: 'Poprvé v historii se podařilo změřit celý cyklus.', expectMatch: 'poprvé v historii' },
+  { text: 'Poprvé v historii se podařilo změřit celý cyklus.', expectMatch: 'Poprvé v historii' },
   { text: 'The team reports a groundbreaking method for water cleaning.', expectMatch: 'groundbreaking' },
 ];
 

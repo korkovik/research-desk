@@ -37,9 +37,3 @@ export interface Finding {
   /** Czech, fed verbatim into the regeneration prompt (A.6). */
   messageCs: string;
 }
-
-/** A block's identity and text, as handed to a single check. */
-export interface BlockText {
-  name: BlockName;
-  text: string;
-}

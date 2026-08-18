@@ -29,8 +29,7 @@ export const MASK_CHAR = '￼';
 const SEPARATOR_CLASS = '[\\s\\u00A0\\u2010\\u2011\\u2012\\u2013\\u2014\\u2212-]+';
 const SEPARATOR_SPLIT = /[\s\u00A0\u2010\u2011\u2012\u2013\u2014\u2212-]+/u;
 
-/** The Czech letters that carry a diacritic. Used by A.2.3's `D` counter. */
-export const CZECH_DIACRITIC_LETTERS = 'áčďéěíňóřšťúůýžĎŇŘŠŤŽÁČÉĚÍÓÚŮÝ';
+/** The Czech letters that carry a diacritic — A.2.3's `D` counter. */
 const DIACRITIC_RE = /[áčďéěíňóřšťúůýžÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]/u;
 
 /** Does this token carry at least one Czech diacritic? (A.2.3 counter `D`.) */
@@ -148,7 +147,7 @@ export interface MaskSpan {
   text: string;
 }
 
-export interface MaskedText {
+interface MaskedText {
   /** Same length as the input, masked spans replaced by `MASK_CHAR` runs. */
   text: string;
   spans: MaskSpan[];
@@ -179,12 +178,11 @@ export interface MaskOptions {
  * before the bare-DOI pattern can chew off half of it.
  */
 export function mask(text: string, options: MaskOptions = {}): MaskedText {
-  const chars = [...text];
-  // Work on code units, not code points: offsets in this project are string
-  // indices throughout, so an emoji in a title must not shift them.
+  // Offsets in this project are string indices (code units) throughout, so the
+  // replacement is done by index, never by iterating code points — an emoji in
+  // a title must not shift anything.
   let out = text;
   const spans: MaskSpan[] = [];
-  void chars;
 
   const apply = (re: RegExp, kind: MaskKind): void => {
     re.lastIndex = 0;
@@ -263,11 +261,6 @@ export function findTitleEchoes(text: string, sourceTitle: string): Array<{ kind
     cursor = best + bestLen;
   }
   return found;
-}
-
-/** True when the char range overlaps any masked span. */
-export function isMasked(spans: readonly MaskSpan[], start: number, end: number): boolean {
-  return spans.some((s) => start < s.end && end > s.start);
 }
 
 // ---------------------------------------------------------------------------

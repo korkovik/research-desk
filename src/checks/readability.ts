@@ -45,6 +45,22 @@ const PARTICIPLE_STOPLIST = new Set([
 const PARTICIPLE_MIN_CHARS = 5;
 
 /**
+ * **Refinement beyond A.3.3, and the reason for it.** `PART_END` includes a bare
+ * `t`, so `je důležitý pro pozornost` matches with `pozornost` as the participle
+ * candidate: nine characters, not in the stop list, ends in `t`. A.3.3 names
+ * `je důležitý` as a case that must NOT match, so the pattern as written does
+ * not meet its own requirement.
+ *
+ * Czech `-ost` / `-ostí` is a noun-forming suffix (pozornost, možnost, radost);
+ * no passive participle ends that way — they end in -án/-en/-ěn/-nut/-t. So
+ * excluding it costs no recall and removes a whole class of false positive.
+ * Words like `je součást` still slip through; A.3.3's own precision estimate of
+ * ~0.9 is honest about that, and R7 is a share metric with a 0.20/0.35
+ * threshold, so a stray match cannot flip a 25-sentence paper across the line.
+ */
+const NOUN_SUFFIX_RE = /(?:ost|ostí)$/u;
+
+/**
  * A.3.4's reflexive-passive pattern. **Expected precision ~0.5** — Czech
  * reflexive passive is formally identical to true reflexives (`dítě se učí`),
  * reciprocals (`potkali se`) and lexical reflexives (`smát se`), and the clitic
@@ -132,6 +148,7 @@ export function findPeriphrasticPassive(sentence: string): { text: string; parti
     // A.3.3: "practically, require the participle candidate to be ≥ 5 characters".
     if (participle.length < PARTICIPLE_MIN_CHARS) continue;
     if (PARTICIPLE_STOPLIST.has(participle.toLowerCase())) continue;
+    if (NOUN_SUFFIX_RE.test(participle.toLowerCase())) continue;
     return { text: m[0], participle };
   }
   return null;
