@@ -1,0 +1,148 @@
+{
+  "_readme": "Every value a future change would plausibly touch lives here (§8). Nothing in src/ hardcodes a category, a weight, a path, a count or a language. Edit this file, not the code. `npm run resolve:categories` re-resolves the OpenAlex field IDs against the live API and rewrites them in place.",
+
+  "output": {
+    "language": "cs",
+    "siteName": null,
+    "_siteName": "TODO — the Czech-facing name is an open decision (§12). While it is null the pages render the working name below, and the run log says so on every run so it cannot be forgotten.",
+    "workingName": "Research Desk",
+    "tagline": null,
+    "papersPerDay": 5,
+    "minPapersToPublish": 3,
+    "timezone": "Europe/Prague"
+  },
+
+  "paths": {
+    "archiveDir": "archive",
+    "indexFile": "index.html",
+    "seenState": "state/seen.json",
+    "runLog": "logs/run.log"
+  },
+
+  "windows": {
+    "freshnessDays": 7,
+    "dedupDays": 180
+  },
+
+  "shortlist": {
+    "_readme": "Semantic Scholar is one request per second (§4.2), so only the shortlist is enriched — never the full candidate set.",
+    "size": 20
+  },
+
+  "ranking": {
+    "_readme": "Weights sum to 1. The ORDER of importance is fixed by §6 and must not be reordered; the magnitudes are tunable.",
+    "weights": {
+      "explainability": 0.4,
+      "everydayRelevance": 0.28,
+      "freshness": 0.18,
+      "credibility": 0.14
+    },
+    "maxPerSubfield": 2
+  },
+
+  "summarisation": {
+    "model": "claude-opus-5",
+    "effort": "high",
+    "maxTokens": 8000,
+    "maxRegenerationAttempts": 2
+  },
+
+  "verification": {
+    "_readme": "§7.4 / §11 step 8. A fabricated example is the worst failure this project can produce, so the verifier runs as a separate call that sees only the source text and the candidate example, and the code independently checks that every quote it cites really occurs in the source.",
+    "model": "claude-opus-5",
+    "effort": "high",
+    "maxTokens": 4000,
+    "maxExampleAttempts": 2,
+    "dropPaperIfMotivationFallbackAlsoFails": true
+  },
+
+  "sources": {
+    "openalex": {
+      "baseUrl": "https://api.openalex.org",
+      "perPage": 50,
+      "maxPages": 2,
+      "mailto": "korkat@gmail.com",
+      "_apiKey": "Read from OPENALEX_API_KEY in .env.local — never stored here.",
+      "requireApiKey": false,
+      "_requireApiKey": "Set true once the key exists, so an unattended run fails loudly instead of silently dropping to the 100/day unkeyed allowance."
+    },
+    "semanticScholar": {
+      "baseUrl": "https://api.semanticscholar.org/graph/v1",
+      "throttleMs": 1100,
+      "_throttleMs": "§4.2 — 1 request/second. 1100 ms, sequential, never parallel; kept even when a key is present."
+    },
+    "arxiv": {
+      "baseUrl": "https://export.arxiv.org/api/query",
+      "maxResults": 50
+    }
+  },
+
+  "http": {
+    "_readme": "§9 — retry twice with backoff, then continue without that source.",
+    "retries": 2,
+    "backoffMs": [1000, 4000],
+    "timeoutMs": 20000,
+    "userAgent": "ResearchDesk/0.1 (+https://github.com/tomscld/research-desk; mailto:korkat@gmail.com)"
+  },
+
+  "categories": [
+    {
+      "weekday": 1,
+      "key": "ai-computing",
+      "labelCs": "Umělá inteligence a počítače",
+      "openalex": { "fieldIds": ["fields/17"], "fieldNames": ["Computer Science"] },
+      "arxiv": { "categories": ["cs.AI", "cs.LG"] }
+    },
+    {
+      "weekday": 2,
+      "key": "health-medicine",
+      "labelCs": "Zdraví a medicína",
+      "openalex": {
+        "fieldIds": ["fields/27", "fields/36", "fields/29"],
+        "fieldNames": ["Medicine", "Health Professions", "Nursing"]
+      }
+    },
+    {
+      "weekday": 3,
+      "key": "nature-climate",
+      "labelCs": "Příroda a klima",
+      "openalex": {
+        "fieldIds": ["fields/23", "fields/19"],
+        "fieldNames": ["Environmental Science", "Earth and Planetary Sciences"]
+      }
+    },
+    {
+      "weekday": 4,
+      "key": "psychology-behaviour",
+      "labelCs": "Psychologie a chování",
+      "openalex": { "fieldIds": ["fields/32"], "fieldNames": ["Psychology"] }
+    },
+    {
+      "weekday": 5,
+      "key": "society-economy-education",
+      "labelCs": "Společnost, ekonomika a vzdělávání",
+      "openalex": {
+        "fieldIds": ["fields/33", "fields/20"],
+        "fieldNames": ["Social Sciences", "Economics, Econometrics and Finance"]
+      }
+    },
+    {
+      "weekday": 6,
+      "key": "physics-space-engineering",
+      "labelCs": "Fyzika, vesmír a technika",
+      "openalex": {
+        "fieldIds": ["fields/31", "fields/22"],
+        "fieldNames": ["Physics and Astronomy", "Engineering"]
+      }
+    },
+    {
+      "weekday": 7,
+      "key": "biology-food-agriculture",
+      "labelCs": "Biologie, jídlo a zemědělství",
+      "openalex": {
+        "fieldIds": ["fields/11"],
+        "fieldNames": ["Agricultural and Biological Sciences"]
+      }
+    }
+  ]
+}

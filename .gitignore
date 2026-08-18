@@ -1,0 +1,19 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.DS_Store
+
+# Deny everything env-shaped, then re-admit the documentation file. A narrower
+# pattern lets copies through: a backup like .env.local.bak holds the same key
+# as the original, and no secret may reach git.
+.env*
+!.env.example
+
+# Run output. The archive is the product, but it is machine-generated and
+# rebuilt from state/ + the APIs; committing it would make every daily run a
+# repository change. state/seen.json is the one piece of generated data that
+# MUST survive a fresh checkout, so it is committed deliberately (see below).
+archive/*.html
+archive/*.json
+logs/*.log
+state/*.json
