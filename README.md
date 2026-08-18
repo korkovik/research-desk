@@ -28,9 +28,10 @@ anything here.
 
 ```bash
 npm install
-cp .env.example /dev/null          # do NOT copy it — see the note at its top
-$EDITOR .env.local                 # add OPENALEX_API_KEY and ANTHROPIC_API_KEY
-npm run check                      # typecheck + lint + tests
+$EDITOR .env.local     # uncomment and fill OPENALEX_API_KEY and ANTHROPIC_API_KEY
+                       # (.env.local already exists; .env.example is documentation,
+                       #  do NOT copy it — see the note at its top)
+npm run check          # typecheck + lint + tests
 npm run run:dry                    # a full run that writes nothing
 npm run run:daily                  # a real run
 ```
@@ -81,12 +82,11 @@ billed as output and dominate the bill. **The upper end of that range exceeds a
 $20 monthly cap**, so if the cap is a hard one, pull these levers in this order —
 each is a one-line change in `config.json`:
 
-1. `verification.challengePass: false` — drops the second adversarial pass.
-   Saves roughly a quarter of the output tokens. Costs the most in safety, so
-   it is listed first only because it is the largest single saving; consider it
-   the last one you actually want to pull.
-2. `summarisation.effort` and `verification.effort` from `high` to `medium` —
-   roughly halves thinking tokens. This is the lever to pull first.
+1. `summarisation.effort` and `verification.effort` from `high` to `medium` —
+   roughly halves thinking tokens, and costs the least of the three.
+2. `verification.challengePass: false` — removes the adversarial second pass.
+   About a quarter of the output tokens, but it is the §7.4 defence you are
+   trimming, so pull it after (1) and not before.
 3. `summarisation.model` / `verification.model` to `claude-sonnet-5`
    ($3 / $15) — about 40 % cheaper, at some quality cost on the Czech.
 
