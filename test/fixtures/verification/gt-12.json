@@ -1,6 +1,6 @@
 {
-  "id": "GT-02",
-  "label": "SUPPORTED (heat pumps)",
+  "id": "GT-12",
+  "label": "FABRICATED: wrong referent for a number, plus a causality upgrade (the original GT-02 text)",
   "source": {
     "title": "Field performance of air-source heat pumps in 312 detached houses during two heating seasons north of 55 degrees latitude",
     "abstract": "Air-source heat pumps are promoted as a replacement for direct electric heating in northern Europe, but manufacturer coefficients of performance are measured under laboratory conditions. We instrumented 312 owner-occupied detached houses in Finland and Estonia and recorded electricity consumption, indoor temperature and outdoor temperature at 15-minute intervals across the 2024/25 and 2025/26 heating seasons. All houses had previously been heated by direct electric resistance heating. The median seasonal coefficient of performance was 2.7 (interquartile range 2.3 to 3.1), falling to 1.9 when the outdoor temperature dropped below minus 15 degrees Celsius. Supplementary resistance heating was activated in 18% of houses, on a median of 6 days per season and never on more than 10 days. Median annual heating electricity consumption fell by 31% compared with the two seasons before installation. Households in the lowest income quintile were over-represented among those reporting that they lowered indoor temperature set points, which may inflate the measured saving.",
@@ -9,12 +9,15 @@
     "type": "article",
     "date": "2026-08-16"
   },
-  "candidateExample": "V 312 rodinných domech ve Finsku a Estonsku vyměnili přímotopy za tepelné čerpadlo a dvě topné sezony měřili spotřebu elektřiny každou čtvrthodinu. Spotřeba elektřiny na vytápění klesla typicky o 31 procent — tedy zhruba o třetinu toho, co se v těch domech dřív protopilo. Když venku klesla teplota pod minus 15 stupňů, čerpadlo pracovalo méně účinně. V 18 procentech domů se navíc musel zapnout ještě elektrický dotop, nejvýše deset dní za sezonu.",
+  "candidateExample": "V 312 rodinných domech ve Finsku a Estonsku vyměnili přímotopy za tepelné čerpadlo a dvě topné sezony měřili spotřebu elektřiny každou čtvrthodinu. Spotřeba elektřiny na vytápění klesla typicky o 31 procent, tedy zhruba o třetinu účtu. Když ale venku klesla teplota pod minus 15 stupňů, čerpadlo si muselo pomáhat elektrickým dotopem. Stalo se to v 18 procentech domů, nejvýše deset dní za sezonu.",
   "isMotivationFallback": false,
   "expected": {
-    "finalVerdict": "supported",
-    "mustFlagSpans": [],
-    "mustHaveAtLeastOneSupportedClaim": false,
-    "note": "`finalVerdict: supported`. | Corrected 2026-08-19: the original Czech contained claims the abstract does not support, which the verifier caught on the first calibration run. The original text is preserved as a fabricated fixture."
+    "finalVerdict": "unsupported",
+    "mustFlagSpans": [
+      "tedy zhruba o třetinu účtu",
+      "Když ale venku klesla teplota pod minus 15 stupňů, čerpadlo si muselo pomáhat elektrickým dotopem"
+    ],
+    "mustHaveAtLeastOneSupportedClaim": true,
+    "note": "The 31 % is a fall in heating ELECTRICITY CONSUMPTION, not in the household bill; and the abstract reports both the low-temperature efficiency drop and the supplementary heating without linking one to the other. Found by the verifier during calibration."
   }
 }

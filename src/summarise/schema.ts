@@ -142,7 +142,10 @@ export const VerificationSchema = z.object({
     .enum(['supported', 'unsupported'])
     .describe('Tvůj celkový názor. Program si závěr počítá sám — tohle je jen pro záznam.'),
   unsupportedReasonsCs: z
-    .array(z.string().max(160))
+    // 160 characters was the design's figure; a single Czech sentence naming
+    // what is missing routinely runs longer, and truncating the reason degrades
+    // the regeneration prompt it feeds.
+    .array(z.string().max(400))
     .max(10)
     .describe('Česky, stručně: co konkrétně ve zdroji chybí. Prázdné pole, když je vše doložené.'),
 });

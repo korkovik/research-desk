@@ -107,34 +107,60 @@ test('"quote the study to support everything" is rejected as too weak', () => {
   assert.ok(report.failures.some((f) => f.code === 'V3_QUOTE_TOO_WEAK'));
 });
 
-test('a real but unrelated quote does not support a claim', () => {
+test('one paraphrased claim does NOT sink a genuinely supported example', () => {
+  // The negative control that matters: a lay re-wording shares no word stem with
+  // its own source sentence ("worker bees" for "honeybee foragers"). A per-claim
+  // relevance rule would reject good writing for being good writing.
+  const claims = structuredClone(GOOD_CLAIMS);
+  claims[0]!.claimText = 'The pupils were roughly halfway through their teens';
+  const report = adjudicate(payload(claims), EXAMPLE, SOURCE);
+  assert.equal(report.verdict, 'supported');
+});
+
+test('a verifier whose quotes are unrelated to MOST claims is rejected (V7)', () => {
+  const unrelated = 'End-of-year grade point averages did not differ between the two groups';
   const claims = structuredClone(GOOD_CLAIMS);
   claims[0]!.claimText = 'The intervention was carried out in Portuguese hospitals';
-  claims[0]!.sourceQuote = 'End-of-year grade point averages did not differ between the two groups';
+  claims[0]!.sourceQuote = unrelated;
+  claims[1]!.claimText = 'Nurses washed their hands more often';
+  claims[1]!.sourceQuote = unrelated;
   const report = adjudicate(payload(claims), EXAMPLE, SOURCE);
   assert.equal(report.verdict, 'unsupported');
   assert.ok(report.failures.some((f) => f.code === 'V7_QUOTE_IRRELEVANT'));
 });
 
-test('a quantity claim backed by a real quote containing no number is rejected', () => {
-  // The quote below IS in the abstract, so this isolates the quantity rule from
-  // the fabrication rule: a number claim needs a quoted number.
+test('stem matching survives plurals, inflection and bare numbers', () => {
+  // Each of these was a real false positive found by running the golden set.
   const claims = structuredClone(GOOD_CLAIMS);
-  claims[1]!.claimText = 'Students slept longer per school night';
-  claims[1]!.sourceQuote = 'Students in the later-start schools slept on average 26 minutes longer';
-  const withNumber = adjudicate(payload(claims), EXAMPLE, SOURCE);
-  assert.equal(withNumber.verdict, 'supported');
+  claims[0]!.claimText = 'The schools moved lessons later';
+  claims[0]!.sourceQuote = 'Eleven schools moved their first lesson from 08:00 to 08:50';
+  claims[1]!.claimText = 'Sleep rose by 26 minutes';
+  claims[1]!.sourceQuote = 'slept on average 26 minutes longer per school night';
+  assert.equal(adjudicate(payload(claims), EXAMPLE, SOURCE).verdict, 'supported');
+});
 
-  claims[1]!.sourceQuote = 'Eleven schools moved their first lesson from 08:00 to 08:50';
-  claims[1]!.claimText = 'Schools moved the first lesson later';
-  const withoutMatchingNumber = adjudicate(payload(claims), EXAMPLE, SOURCE);
-  // Still supported — 08:50 is a number. Now a quote with no digits at all:
+test('a claim stating a magnitude needs a quote that states one', () => {
+  const claims = structuredClone(GOOD_CLAIMS);
+  claims[0]!.claimType = 'quantity';
+  claims[0]!.claimText = 'Sleep increased by 26 minutes in 21 schools';
+  claims[0]!.sourceQuote = 'we followed 4,213 students aged 13 to 17 in 21 secondary schools in the Netherlands';
+  claims[1]!.claimType = 'quantity';
+  claims[1]!.claimText = 'Sleep increased by 45 minutes';
   claims[1]!.sourceQuote = 'End-of-year grade point averages did not differ between the two groups';
-  claims[1]!.claimText = 'Grade point averages did not differ';
-  const noDigits = adjudicate(payload(claims), EXAMPLE, SOURCE);
-  assert.equal(withoutMatchingNumber.verdict, 'supported');
-  assert.equal(noDigits.verdict, 'unsupported');
-  assert.ok(noDigits.failures.some((f) => f.code === 'V7_QUOTE_IRRELEVANT'));
+  const report = adjudicate(payload(claims), EXAMPLE, SOURCE);
+  assert.equal(report.verdict, 'unsupported');
+});
+
+test('a claim TYPED as a quantity but carrying no number is not punished for it', () => {
+  // Found by the golden set: "The dose matched what bees meet in the field" was
+  // typed `quantity` and quoted with a qualitative sentence. That is a
+  // classification quibble, not a fabrication.
+  const claims = structuredClone(GOOD_CLAIMS);
+  claims[1]!.claimType = 'quantity';
+  claims[1]!.claimText = 'Students slept longer than the comparison group';
+  claims[1]!.sourceQuote =
+    'Students in the later-start schools slept on average 26 minutes longer per school night';
+  assert.equal(adjudicate(payload(claims), EXAMPLE, SOURCE).verdict, 'supported');
 });
 
 test('RISK-VERIFY: skipping the fabricated sentence is caught by span coverage (V6)', () => {

@@ -62,6 +62,7 @@ export type FailureCode =
   | 'V5_SPAN_NOT_IN_EXAMPLE'
   | 'V6_COVERAGE_TOO_LOW'
   | 'V7_QUOTE_IRRELEVANT'
+  | 'V7_MAGNITUDE_UNSUPPORTED'
   | 'V8_VENUE_CANNOT_SUPPORT_MECHANISM'
   | 'DECOMPOSITION_TOO_COARSE'
   | 'EXAMPLE_TOO_ELABORATE'
@@ -109,13 +110,32 @@ const ENGLISH_STOPWORDS = new Set([
   'while', 'study', 'studies', 'paper', 'results', 'result',
 ]);
 
-/** Content-word stems, truncated to 5 characters (DESIGN-NOTES C.3.3). */
+/**
+ * Content-word stems for the relevance rule (DESIGN-NOTES C.3.3).
+ *
+ * The design's version truncated to 5 characters, which turned out to fail on
+ * exactly the material the negative-control fixtures exist to protect: `cell`
+ * against `cells`, `tag` against `tags`, and the number `54` dropped for being
+ * shorter than three characters. Numbers are the strongest relevance signal
+ * there is, so they are always kept; English inflection is stripped before
+ * truncation; and the prefix is 4 characters, because the point is a cheap
+ * relatedness signal, not a stemmer.
+ */
 function contentStems(text: string): Set<string> {
   const stems = new Set<string>();
   for (const raw of text.toLowerCase().split(/[^\p{L}\p{N}]+/u)) {
-    if (raw.length < 3) continue;
-    if (ENGLISH_STOPWORDS.has(raw)) continue;
-    stems.add(raw.slice(0, 5));
+    if (raw === '') continue;
+    if (/^\p{N}/u.test(raw)) {
+      stems.add(raw);
+      continue;
+    }
+    if (raw.length < 3 || ENGLISH_STOPWORDS.has(raw)) continue;
+    const base = raw
+      .replace(/(ies)$/u, 'y')
+      .replace(/(sses|shes|ches|xes)$/u, '')
+      .replace(/(ing|ed|es|s)$/u, '');
+    const stem = base.length >= 3 ? base : raw;
+    stems.add(stem.slice(0, 4));
   }
   return stems;
 }
@@ -167,6 +187,8 @@ export function adjudicate(
 
   let fabricatedQuote = false;
   let coveredChars = 0;
+  let supportedClaims = 0;
+  const irrelevantQuotes: { id: string; detail: string }[] = [];
 
   for (const claim of claims) {
     // V5 — the span must really come from the example. A span the verifier
@@ -215,22 +237,41 @@ export function adjudicate(
       continue;
     }
 
-    // V7 — the quote must be about the claim. Cheap stem overlap, but it catches
-    // a verifier pasting a real but unrelated sentence from the abstract.
-    const shared = intersects(contentStems(claim.claimText), contentStems(quote));
-    if (!shared) {
-      add('V7_QUOTE_IRRELEVANT', claim.id, truncate(quote));
-      continue;
+    // V7 — the quote should be about the claim. Deliberately NOT a per-claim
+    // rejection: the check it is doing is lexical, and a genuinely supported
+    // example re-worded for a lay reader ("worker bees" for "honeybee
+    // foragers") shares no stem with its own source sentence. Sinking such an
+    // example would make the pipeline reject good writing for being good
+    // writing. What V7 is actually for is the verifier that pastes a real but
+    // unrelated sentence for claim after claim, so it is judged in aggregate
+    // below. V4 — the quote must exist at all — remains the per-claim rule.
+    supportedClaims += 1;
+    const claimHasNumber = /\p{N}/u.test(claim.claimText) || MAGNITUDE_WORDS.test(claim.claimText);
+    const quoteHasNumber = /\p{N}/u.test(quote) || MAGNITUDE_WORDS.test(quote);
+    if (!intersects(contentStems(claim.claimText), contentStems(quote))) {
+      irrelevantQuotes.push({ id: claim.id, detail: truncate(quote) });
     }
-    if (claim.claimType === 'quantity' && !/\p{N}/u.test(quote) && !MAGNITUDE_WORDS.test(quote)) {
-      add('V7_QUOTE_IRRELEVANT', claim.id, `quantity claim quoted without a number: ${truncate(quote)}`);
-      continue;
+
+    // A claim that states a magnitude, backed by a quote that states none, is
+    // not a paraphrase — it is an invented number. That one IS per-claim, and
+    // it is the rule that catches the commonest fabrication in the golden set.
+    // The bar is deliberately low (the quote must contain *a* number, not the
+    // same number) so that a lay restatement — "41 % fewer" as "59 of every
+    // 100" — is not punished for doing exactly what §7.3 asks for.
+    if (claimHasNumber && !quoteHasNumber) {
+      add('V7_MAGNITUDE_UNSUPPORTED', claim.id, `no number in the quote: ${truncate(quote)}`);
     }
 
     // V8 — a venue string names a journal. It cannot explain a mechanism.
     if (claim.claimType === 'mechanism' && claim.quoteField === 'venue') {
       add('V8_VENUE_CANNOT_SUPPORT_MECHANISM', claim.id, truncate(quote));
     }
+  }
+
+  // V7, judged in aggregate. One re-worded claim is normal; a verifier whose
+  // quotes are unrelated to most of what it is supporting is not verifying.
+  if (irrelevantQuotes.length >= 2 && irrelevantQuotes.length * 2 > supportedClaims) {
+    for (const miss of irrelevantQuotes) add('V7_QUOTE_IRRELEVANT', miss.id, miss.detail);
   }
 
   // V6 — the anti-omission rule. A lazy verifier decomposes only the true parts
