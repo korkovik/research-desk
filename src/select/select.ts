@@ -21,7 +21,6 @@ import type { EnrichedCandidate, ScoredCandidate } from '../types.js';
 import { admitWithinCap, selectWithDiversity, type SelectionFlags } from './diversity.js';
 import {
   applyExclusions,
-  emptyExclusionCounts,
   type Exclusion,
   type ExclusionCounts,
   type SeenLookup,
@@ -334,21 +333,5 @@ export function rankingRecord(
     rank: result.ranked.indexOf(paper) + 1,
     diversityRelaxed: result.flags.diversityRelaxed,
     weightsVersion: result.weightsVersion,
-  };
-}
-
-/** An empty result, for a run whose discovery step returned nothing (§9). */
-export function emptySelection(options: SelectOptions): SelectionResult {
-  return {
-    selected: [],
-    ranked: [],
-    remainder: [],
-    exclusionCounts: emptyExclusionCounts(),
-    excluded: [],
-    flags: { diversityRelaxed: false, explainGateWaived: false },
-    shortfall: options.papersPerDay,
-    shortfallReason: 'candidate-shortage',
-    belowMinimum: true,
-    weightsVersion: weightsVersion(options.weights, options.freshnessDays),
   };
 }

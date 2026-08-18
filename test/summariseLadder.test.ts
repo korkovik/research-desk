@@ -90,7 +90,7 @@ function unsupportedPayload(example: string) {
   };
 }
 
-const noStyleFindings = (): LanguageCheckResult => ({ ok: true, hard: [], soft: [] });
+const noStyleFindings = (): LanguageCheckResult => ({ ok: true, status: 'pass', hard: [], soft: [] });
 
 function options(overrides: Partial<SummariseOptions> = {}): SummariseOptions {
   return {
@@ -246,7 +246,18 @@ test('a style failure never drops a paper — it publishes the best attempt and 
   const errors: string[] = [];
   const failing = (): LanguageCheckResult => ({
     ok: false,
-    hard: [{ block: 'nadpis', rule: 'hype', detail: 'slovo „revoluční"' }],
+    status: 'fail',
+    hard: [
+      {
+        block: 'nadpis',
+        rule: 'hype',
+        ruleId: 'hype:revoluč',
+        span: { start: 0, end: 10 },
+        matchedText: 'revoluční',
+        detail: 'slovo „revoluční" je zakázané (§2)',
+        messageCs: 'Slovo „revoluční" je zakázané. Napište, co konkrétně se změnilo.',
+      },
+    ],
     soft: [],
   });
   const llm = new StubLlm({

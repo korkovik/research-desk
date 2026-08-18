@@ -133,6 +133,7 @@ export const ConfigSchema = z
       maxTokens: z.number().int().min(500),
       maxExampleAttempts: z.number().int().min(1),
       dropPaperIfMotivationFallbackAlsoFails: z.boolean(),
+      challengePass: z.boolean(),
     }),
     sources: z.object({
       openalex: z.object({

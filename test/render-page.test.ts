@@ -167,6 +167,15 @@ test('a paper without a DOI renders the defined alternative, not an empty link',
   assert.equal(html.includes(stringsCs.refOpenAccessPdf), false);
 });
 
+test('a DOI field holding something that is not a DOI does not become a dead link', () => {
+  const html = renderDayPage(
+    makeDigest({ entries: [makeEntry({ candidate: { doi: 'n/a' } })] }),
+    config,
+  );
+  assert.ok(html.includes(stringsCs.refDoiMissing));
+  assert.equal(html.includes('doi.org/n/a'), false);
+});
+
 test('a javascript: URL from a source record never becomes a link', () => {
   const html = renderDayPage(
     makeDigest({
@@ -189,7 +198,7 @@ test('§3 shortfall notice renders when present and is absent when not', () => {
   const full = renderDayPage(makeDigest({ entryCount: 5 }), config);
 
   assert.ok(short.includes(stringsCs.shortfallHeading));
-  assert.ok(short.includes('jen 3 z obvyklých 5 studií'));
+  assert.ok(short.includes('jen 3 studie'));
   // The pipeline's own reason string is for the log, not for the reader.
   assert.equal(short.includes('only 3 candidates survived filtering'), false);
   assert.equal(full.includes(stringsCs.shortfallHeading), false);

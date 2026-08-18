@@ -158,8 +158,10 @@ export async function enrichWithTldr(
       if (isFatalForEnrichment(error.status)) {
         degradation = {
           source: 'semantic-scholar',
+          // DESIGN-NOTES D.4 `DEG_TLDR`, verbatim, so the footer speaks in one
+          // voice and says what the reader lost rather than which API failed.
           messageCs:
-            'Doplňkový zdroj Semantic Scholar dnes odpovídal jen omezeně, u části článků proto vycházíme z původního abstraktu.',
+            'Automatická krátká shrnutí dnes nebyla dostupná. Vysvětlení jsou proto napsaná přímo podle abstraktů prací.',
           detail: error.message,
         };
         deps.logger.warn(`Semantic Scholar: stopping enrichment — ${error.message}`);
@@ -206,20 +208,21 @@ export function applyPaper(candidate: Candidate, paper: z.infer<typeof PaperSche
         : `no tldr; falling back to the ${abstractSource === 'source' ? 'source' : 'Semantic Scholar'} abstract (§4.2)`
       : undefined;
 
+  // §7.6 renders the DOI, the venue and the OA PDF link. S2 fills in whichever
+  // of them the discovery source did not have, and overwrites none of them.
+  const gaps: Partial<Candidate> = {};
   const s2Doi = nonEmpty(paper.externalIds?.DOI);
   const s2Pdf = nonEmpty(paper.openAccessPdf?.url);
   const s2Venue = nonEmpty(paper.venue);
+  if (!nonEmpty(candidate.doi) && s2Doi) gaps.doi = s2Doi.toLowerCase();
+  if (!nonEmpty(candidate.oaPdfUrl) && s2Pdf) gaps.oaPdfUrl = s2Pdf;
+  if (!nonEmpty(candidate.venue) && s2Venue) gaps.venue = s2Venue;
+  if (candidate.isOpenAccess !== true && paper.isOpenAccess === true) gaps.isOpenAccess = true;
 
   return {
     ...candidate,
+    ...gaps,
     abstract,
-    // §7.6 renders these; whichever source has them, the reader gets the link.
-    ...(candidate.doi ? {} : s2Doi ? { doi: s2Doi.toLowerCase() } : {}),
-    ...(nonEmpty(candidate.oaPdfUrl) || !s2Pdf ? {} : { oaPdfUrl: s2Pdf }),
-    ...(nonEmpty(candidate.venue) || !s2Venue ? {} : { venue: s2Venue }),
-    ...(candidate.isOpenAccess === true || paper.isOpenAccess !== true
-      ? {}
-      : { isOpenAccess: true }),
     tldr,
     abstractSource,
     ...(note === undefined ? {} : { enrichmentNote: note }),

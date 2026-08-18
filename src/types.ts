@@ -277,7 +277,14 @@ export interface CategoryConfig {
     fieldIds: string[];
     fieldNames: string[];
   };
-  arxiv?: {
-    categories: string[];
-  };
+  /**
+   * Absent on days that do not use arXiv. Spelled `| undefined` rather than
+   * merely optional because `exactOptionalPropertyTypes` treats those as
+   * different types, and the Zod-parsed config supplies an explicit undefined.
+   */
+  arxiv?:
+    | {
+        categories: string[];
+      }
+    | undefined;
 }

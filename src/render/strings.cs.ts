@@ -23,6 +23,11 @@
  * they double as query configuration), and the site name (also `config.json`,
  * §12 open decision).
  *
+ * This IS the one strings file DESIGN-NOTES D.6 asks for; it lives here rather
+ * than at `src/i18n/cs.json` because TypeScript can then make a missing key a
+ * compile error, which JSON cannot. The degradation and shortfall wordings D.6
+ * drafted are carried over verbatim, with the two changes D.6 itself suggested.
+ *
  * HOUSE RULES FOR ANY TEXT ADDED HERE
  * - Plain words. A 15-year-old must read it comfortably (§2).
  * - No hype: never "revoluční", "průlom", "převratný", "zázračný" (§2).
@@ -123,11 +128,15 @@ export const stringsCs: StringTable = {
   // day has fewer papers than usual (§3).
   shortfallHeading: 'Dnes je studií méně',
 
-  // EN: "Today we only managed to prepare {produced} of the usual {expected}
-  // studies. We would rather publish fewer than add older or unrelated work."
-  // Shown in the body of the day page, never hidden (§3).
+  // EN: "Today we only found {produced} studies that met the selection
+  // conditions. We would rather publish fewer of them than pad the issue with
+  // older or unrelated articles." Shown in the body of the day page, never
+  // hidden (§3). Wording taken from DESIGN-NOTES D.6 (DEG_SHORTFALL).
+  // PLURALS: {produced} is only ever 3 or 4 today (§9's minimum is 3, the
+  // target is 5) and Czech takes "studie" for both. If the minimum ever drops
+  // to 1 or 2, this sentence needs "studii" / "studie" forms.
   shortfallNotice:
-    'Dnes se podařilo připravit jen {produced} z obvyklých {expected} studií. Raději zveřejníme méně studií, než abychom doplňovali starší nebo nesouvisející práce.',
+    'Dnes se podařilo najít jen {produced} studie, které splnily podmínky výběru. Raději jich zveřejňujeme méně, než abychom doplňovali starší nebo nesouvisející články.',
 
   // ---- The reference block of each paper (§7.6) ------------------------
 
@@ -190,43 +199,50 @@ export const stringsCs: StringTable = {
 
   // ---- Footer: what went wrong today (§9) ------------------------------
 
-  // EN: "What did not work today" — heading of the footer section listing
-  // sources that failed during the run.
-  degradationHeading: 'Co dnes nefungovalo',
+  // EN: "A note on today's issue" — heading of the footer section listing what
+  // failed during the run. Deliberately calm rather than alarming: §9 says fail
+  // visibly, not loudly. Wording from DESIGN-NOTES D.6.
+  degradationHeading: 'Poznámka k dnešnímu vydání',
 
-  // EN: "Some sources did not respond today. It may have affected which
-  // studies were chosen:" — introduces the list below.
-  degradationIntro: 'Některé zdroje dnes neodpovídaly. Mohlo to ovlivnit, které studie se vybraly:',
-
-  // EN: the OpenAlex catalogue was unreachable — the pool of papers to choose
-  // from was smaller than usual.
+  // EN: "Part of the database we choose studies from was unavailable today. The
+  // selection therefore comes from a smaller number of works than usual."
+  // Wording from DESIGN-NOTES D.6 (DEG_OPENALEX).
   degradationOpenAlex:
-    'Databáze studií OpenAlex dnes neodpovídala, takže jsme vybírali z menšího počtu prací než obvykle.',
+    'Část databáze, ze které vybíráme studie, dnes nebyla dostupná. Výběr proto vychází z menšího počtu prací než obvykle.',
 
-  // EN: arXiv (the preprint server) was unreachable — the newest work may be
-  // missing.
+  // EN: "The server where researchers publish work before review did not
+  // respond today. Today's selection therefore contains only work from
+  // peer-reviewed journals." DESIGN-NOTES D.6 (DEG_ARXIV), using the plainer
+  // alternative it suggests, because a reader does not know the word "preprint"
+  // from a footer alone.
   degradationArxiv:
-    'Server arXiv s předběžnými verzemi studií dnes neodpovídal, takže tu nemusí být ty nejčerstvější práce.',
+    'Server, kde vědci zveřejňují práce ještě před recenzí, dnes neodpovídal. Dnešní výběr proto obsahuje jen práce z recenzovaných časopisů.',
 
-  // EN: Semantic Scholar (which supplies a ready-made one-sentence summary)
-  // was unreachable — the explanations were written from the authors'
-  // abstracts alone.
+  // EN: "Automatic short summaries were unavailable today. The explanations are
+  // therefore written straight from the papers' abstracts, that is from the
+  // summaries the authors wrote themselves." DESIGN-NOTES D.6 (DEG_TLDR), with
+  // "abstrakt" glossed per §2's jargon rule.
   degradationSemanticScholar:
-    'Služba Semantic Scholar, která pomáhá se stručným shrnutím, dnes neodpovídala. Vysvětlení proto vycházejí jen z abstraktů, tedy ze shrnutí od samotných autorů.',
+    'Automatická krátká shrnutí dnes nebyla dostupná. Vysvětlení jsou proto napsaná přímo podle abstraktů, tedy podle shrnutí od samotných autorů.',
 
-  // EN: the language model that writes the explanations partly failed — some
-  // texts may be shorter or simpler than usual.
+  // EN: "For some studies we could not prepare the text today. We left them out
+  // of the issue rather than publishing something half-finished."
+  // DESIGN-NOTES D.6 (DEG_ANTHROPIC), reworded from "one study" because this
+  // notice covers however many papers were affected.
   degradationAnthropic:
-    'Program, který vysvětlení píše, dnes částečně selhával. Některé texty proto mohou být kratší nebo stručnější než obvykle.',
+    'U některých studií se dnes nepodařilo připravit text. Do vydání jsme je proto nezařadili.',
 
   // EN: "This page was created on {date}." Last line of every day page.
   footerGenerated: 'Tato stránka vznikla {date}.',
 
-  // EN: "The studies are chosen and explained by a computer program from
-  // publicly available records. If something matters to you, open the original
-  // study and check it." Honesty note in the footer (§2).
+  // EN: "These pages are prepared by a computer program from publicly available
+  // records of research. If something matters to you, open the original study
+  // and check it for yourself." Honesty note in the footer (§2).
+  // REVIEWER: an earlier draft read "Studie vybírá a vysvětluje počítačový
+  // program…", where "studie" can be read as the subject and the sentence flips
+  // meaning. Please watch for the same trap if you rewrite this.
   footerHowItWorks:
-    'Studie vybírá a vysvětluje počítačový program z veřejně dostupných záznamů. Když je pro vás něco důležité, otevřete si původní studii a ověřte si to.',
+    'Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.',
 
   // ---- Dates ----------------------------------------------------------
 

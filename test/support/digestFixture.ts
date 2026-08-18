@@ -96,6 +96,9 @@ export function makeCandidate(options: CandidateOptions = {}): ScoredCandidate {
       credibility: 0.6,
       total: options.score ?? 0.76,
       evidence: ['concrete everyday effect', 'published two days ago'],
+      explainDetail: { v: 0.8, s: 0.7, q: 1, c: 0.6, t: 0.1, j: 0.2 },
+      everydayDomains: ['sleep', 'transport'],
+      subfieldKey: options.subfieldId ?? 'subfields/3206',
     },
   };
 }

@@ -12,6 +12,7 @@ import {
   normaliseTitle,
 } from '../src/adapters/registry.js';
 import type { Candidate, CategoryConfig } from '../src/types.js';
+import { HttpError } from '../src/util/http.js';
 import { deps, jsonResponse, stubFetch, testConfig, testLogger } from './helpers.js';
 
 const SINCE = '2026-08-12';
@@ -113,9 +114,24 @@ test('§9: a failing source degrades the run, the others still produce candidate
   );
   assert.equal(result.degradations.length, 1);
   assert.equal(result.degradations[0]?.source, 'openalex');
-  assert.match(result.degradations[0]?.messageCs ?? '', /OpenAlex/);
+  // The footer sentence names what the reader lost, not the API (DESIGN-NOTES D.4).
+  assert.match(result.degradations[0]?.messageCs ?? '', /nebyla dostupná/);
+  assert.ok(!(result.degradations[0]?.messageCs ?? '').includes('OpenAlex'));
   assert.notEqual(result.degradations[0]?.detail, '');
   assert.ok(logger.lines.some((l) => l.startsWith('error')));
+});
+
+test('§4.1: a rejected API key aborts the run instead of degrading it', async () => {
+  const stub = stubFetch(() => jsonResponse({ error: 'Invalid or missing API key' }, 401));
+  const d = deps({
+    fetchImpl: stub.impl,
+    secrets: { openAlexApiKey: 'wrong', semanticScholarApiKey: null, anthropicApiKey: null },
+  });
+
+  await assert.rejects(
+    () => fetchCandidates(category('psychology-behaviour'), SINCE, d),
+    (error: unknown) => error instanceof HttpError && error.status === 401,
+  );
 });
 
 test('the same paper from two sources is merged on DOI, richest record leading', () => {

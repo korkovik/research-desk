@@ -53,6 +53,7 @@ import {
   TITLE_MAX_WORDS,
   TITLE_METHOD_SUBTITLE,
   weightedHitCount,
+  type TermHit,
 } from './lexicons.js';
 import { subfieldKey } from './diversity.js';
 
@@ -275,7 +276,7 @@ export function explainabilityOf(candidate: EnrichedCandidate): ExplainabilityRe
   );
   evidence.push(
     q === 1
-      ? `quantified effect (q 1): ${quantified.map((p2) => p2.label).join(', ')}`
+      ? `quantified effect (q 1): ${quantified.map((entry) => entry.label).join(', ')}`
       : 'quantified effect (q 0): the abstract states no number',
   );
   evidence.push(
@@ -299,7 +300,7 @@ export function explainabilityOf(candidate: EnrichedCandidate): ExplainabilityRe
   };
 }
 
-function describeHits(hits: readonly { term: string; inTitle: boolean }[]): string {
+function describeHits(hits: readonly TermHit[]): string {
   return hits.map((h) => (h.inTitle ? `${h.term} (title, ×2)` : h.term)).join(', ');
 }
 

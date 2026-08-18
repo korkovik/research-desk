@@ -99,9 +99,13 @@ function guardPasses(entry: CompiledEntry, lowered: string, end: number, config:
 }
 
 /**
- * A.1.4. Where a hard entry and a warn entry match the same span — `zlomov` is
- * both, and so is `průlom` — the hard one wins and the warn one is dropped, so
- * one word never spends two lines of the regeneration prompt.
+ * A.1.4. Two reductions at one offset:
+ *
+ *  - hard beats warn. `zlomov` and `průlom` are each entered twice — once
+ *    guarded and hard, once bare and warn — so exactly one of the pair survives.
+ *  - the longest hard match beats a shorter one inside it. `zlomový okamžik`
+ *    (#22) and guarded `zlomov` (#36) both fire on the same words; the reader of
+ *    the regeneration prompt needs one instruction, not two.
  */
 function resolveSeverity(findings: readonly Finding[]): Finding[] {
   const byStart = new Map<number, Finding[]>();
@@ -113,7 +117,9 @@ function resolveSeverity(findings: readonly Finding[]): Finding[] {
   const kept: Finding[] = [];
   for (const bucket of byStart.values()) {
     const hard = bucket.filter((f) => f.severity === 'hard');
-    kept.push(...(hard.length > 0 ? hard : bucket));
+    const tier = hard.length > 0 ? hard : bucket;
+    const longest = tier.reduce((a, b) => (b.span.end > a.span.end ? b : a));
+    kept.push(longest);
   }
   return kept.sort((a, b) => a.span.start - b.span.start);
 }

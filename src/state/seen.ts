@@ -1,82 +1,90 @@
 /**
  * `state/seen.json` — every paper this project has ever published, with the day
- * it appeared (§8). It exists to keep the promise that "a paper never appears
- * twice within 180 days".
+ * it appeared (§8). It exists to keep one promise: "a paper never appears twice
+ * within 180 days".
  *
- * Two deliberate decisions:
+ * This module owns the FILE and the WINDOW. It does not own the matching rules:
+ * DESIGN-NOTES B.7 puts identifier normalisation and the fuzzy-title rule in
+ * `src/select/identity.ts`, next to the selector that specifies them, and
+ * `src/select/exclude.ts` consumes the answer through an injected `SeenLookup`.
+ * Re-implementing "what counts as the same paper" here would give the project
+ * two definitions that could drift apart, and the drift would show up as a
+ * paper republished a week later — the one bug a reader notices unaided.
  *
- * NOTHING IS EVER PRUNED. Entries outside the dedup window stop *matching*,
- * but they stay in the file. The file is a few hundred kilobytes after years of
- * daily runs, and it is the only single place that answers "did we already run
- * this paper, and when" without re-reading every archived JSON twin. Deleting
- * old rows would trade that record for disk space we do not need.
+ * NOTHING IS PRUNED. Entries outside the dedup window stop *matching*, but they
+ * stay in the file. DESIGN-NOTES B.7 specifies dropping rows older than 400
+ * days on write; this implementation deliberately does not, because the file
+ * stays small for years (a few hundred kilobytes) and the row list is the only
+ * single place that answers "did we ever run this paper, and when" without
+ * re-reading every archived JSON twin. **This is a live disagreement with B.7
+ * and needs Tom's call** — if pruning wins, it belongs in `saveSeen`, and
+ * TEST-SCENARIOS RISK-SELECT-05's "not deleted unless a documented pruning
+ * policy exists" is then satisfied by B.7 itself.
  *
- * MATCHING IS ON NORMALISED KEYS, NOT ON RAW STRINGS. The same paper reaches us
- * as `10.1234/ABC`, `https://doi.org/10.1234/abc` and `doi:10.1234/abc`
- * depending on which source found it, and OpenAlex IDs arrive both bare and as
- * full URLs. A dedup check that compared raw strings would silently re-publish
- * the same study a week later, which is the failure a reader notices first.
+ * Write timing is the caller's job, not this module's: DESIGN-NOTES D.3 puts
+ * the `seen.json` write *after* the page and twin have been renamed into place,
+ * so a run that dies mid-render does not burn its candidates.
  */
 import { existsSync, readFileSync } from 'node:fs';
 import { z } from 'zod';
-import type { DigestEntry } from '../types.js';
+import type { Candidate, DigestEntry } from '../types.js';
+import type { SeenLookup, SeenMatchKind } from '../select/exclude.js';
+import {
+  TITLE_SIMILARITY_THRESHOLD,
+  candidateIdentity,
+  isWithinDedupWindow,
+  normaliseDoi,
+  normaliseOpenAlexId,
+  trigramJaccard,
+} from '../select/identity.js';
 import { atomicWriteJson } from '../util/atomicWrite.js';
-import { daysBetween, isISODate } from '../util/dates.js';
+import { isISODate } from '../util/dates.js';
 
+/** One published paper, in the shape DESIGN-NOTES B.7 fixes. */
 export interface SeenEntry {
-  /** Source-prefixed candidate id (`openalex:W123`, `arxiv:2608.16889`). */
-  id: string;
   /** Normalised OpenAlex work id (`W123`), or null when the source had none. */
-  openAlexId: string | null;
-  /** Bare lower-case DOI (`10.1234/abc`), or null. */
+  openalexId: string | null;
+  /** Normalised DOI, or null. */
   doi: string | null;
-  /** §8 — "the date it appeared". The FIRST day this paper was published here. */
-  date: string;
-  /**
-   * The most recent day it was published. Equal to `date` unless a paper
-   * legitimately came round again after the dedup window expired; the window
-   * is measured from this, so a re-run paper blocks for another 180 days.
-   */
-  lastPublished: string;
+  /** arXiv id with the `arXiv:` prefix and any `vN` suffix stripped, or null. */
+  arxivId: string | null;
+  /** Diacritic-free, punctuation-free title, for the preprint/journal duplicate. */
+  titleKey: string;
+  /** §8 — "the date it appeared", `YYYY-MM-DD`. The dedup window is measured from here. */
+  publishedOn: string;
+  /** The day's category key, so a later recap can group without re-reading the twins. */
+  category: string | null;
 }
 
 export interface SeenState {
-  schemaVersion: 1;
+  version: 1;
   entries: SeenEntry[];
-}
-
-/** Whatever a caller can offer for matching. A `Candidate` satisfies this as-is. */
-export interface DedupKeys {
-  id?: string | undefined;
-  doi?: string | null | undefined;
-  openAlexId?: string | null | undefined;
 }
 
 const IsoDate = z.string().refine(isISODate, { message: 'expected a YYYY-MM-DD date' });
 
 const SeenEntrySchema = z.object({
-  id: z.string().min(1),
-  openAlexId: z.string().nullable().default(null),
+  openalexId: z.string().nullable().default(null),
   doi: z.string().nullable().default(null),
-  date: IsoDate,
-  // Absent in files written before this field existed: such a row has only ever
-  // been published once, so its last appearance is its first.
-  lastPublished: IsoDate.optional(),
+  arxivId: z.string().nullable().default(null),
+  titleKey: z.string().default(''),
+  publishedOn: IsoDate,
+  category: z.string().nullable().default(null),
 });
 
 const SeenStateSchema = z.object({
-  schemaVersion: z.literal(1).default(1),
+  version: z.literal(1).default(1),
   entries: z.array(SeenEntrySchema).default([]),
 });
 
 export function emptySeenState(): SeenState {
-  return { schemaVersion: 1, entries: [] };
+  return { version: 1, entries: [] };
 }
 
 /**
  * A missing file is the first run and starts empty. A *malformed* file throws:
  * silently starting from scratch would re-publish every paper of the last six
- * months, and the reader would see the repetition long before Tom saw the log.
+ * months, and the reader would see the repetition long before Tom read the log.
  */
 export function loadSeen(path: string): SeenState {
   if (!existsSync(path)) return emptySeenState();
@@ -91,14 +99,14 @@ export function loadSeen(path: string): SeenState {
     const lines = parsed.error.issues.map((i) => `  ${i.path.join('.') || '(root)'}: ${i.message}`);
     throw new Error(`${path} is not a valid dedup state:\n${lines.join('\n')}`);
   }
+  // Re-normalised on the way in, so a row hand-edited into the file — or written
+  // by an older build — still matches by the current rules.
   return {
-    schemaVersion: 1,
+    version: 1,
     entries: parsed.data.entries.map((entry) => ({
-      id: entry.id,
-      openAlexId: normaliseOpenAlexId(entry.openAlexId),
+      ...entry,
+      openalexId: normaliseOpenAlexId(entry.openalexId),
       doi: normaliseDoi(entry.doi),
-      date: entry.date,
-      lastPublished: entry.lastPublished ?? entry.date,
     })),
   };
 }
@@ -108,101 +116,123 @@ export function saveSeen(path: string, state: SeenState): void {
 }
 
 /**
- * `10.1234/ABC`, `https://doi.org/10.1234/abc`, `doi:10.1234/abc` and
- * `  10.1234/abc  ` all collapse to `10.1234/abc`. Anything that is not
- * recognisably a DOI becomes null rather than a key that could collide with
- * another paper's junk value.
+ * Which key recognised this paper, or null if it is new to us.
+ *
+ * Identifier matches are searched before title matches, so a paper that matches
+ * both is reported by the key that cannot be wrong. B.7's trigram threshold is
+ * a judgement call, and the run log counts `EXCL_SEEN_TITLE` separately for
+ * exactly that reason.
+ *
+ * The window is INCLUSIVE at the boundary (`isWithinDedupWindow`): a paper
+ * published exactly `dedupDays` ago still blocks, and the day after that it is
+ * eligible again. "Never twice within 180 days" covers the 180th day.
  */
-export function normaliseDoi(value: string | null | undefined): string | null {
-  if (!value) return null;
-  let doi = value.trim().toLowerCase();
-  doi = doi.replace(/^https?:\/\/(dx\.)?doi\.org\//, '');
-  doi = doi.replace(/^doi:\s*/, '');
-  doi = doi.trim();
-  // Every DOI is `10.<registrant>/<suffix>`; nothing else is safe to match on.
-  return /^10\.\d{4,9}\/\S+$/.test(doi) ? doi : null;
+export function seenMatch(
+  state: SeenState,
+  candidate: Candidate,
+  today: string,
+  dedupDays: number,
+): SeenMatchKind | null {
+  const identity = candidateIdentity(candidate);
+  const inWindow = state.entries.filter((entry) =>
+    isWithinDedupWindow(entry.publishedOn, today, dedupDays),
+  );
+
+  for (const entry of inWindow) {
+    if (identity.openAlexId !== null && entry.openalexId === identity.openAlexId) {
+      return 'openalex-id';
+    }
+    if (identity.doi !== null && entry.doi === identity.doi) return 'doi';
+    if (identity.arxivId !== null && entry.arxivId === identity.arxivId) return 'arxiv-id';
+  }
+
+  for (const entry of inWindow) {
+    if (titleKeysAreSamePaper(identity.titleKey, entry.titleKey)) return 'title';
+  }
+  return null;
 }
 
-/** `https://openalex.org/w123`, `W123`, `w123` → `W123`. */
-export function normaliseOpenAlexId(value: string | null | undefined): string | null {
-  if (!value) return null;
-  const id = value
-    .trim()
-    .replace(/^https?:\/\/(api\.)?openalex\.org\/(works\/)?/i, '')
-    .toUpperCase();
-  return /^W\d+$/.test(id) ? id : null;
-}
-
-/**
- * §8 — has this paper appeared within the last `dedupDays` days?
- *
- * The window is INCLUSIVE at the boundary: a paper published exactly
- * `dedupDays` days ago still blocks, and the day after that it is free again.
- * "Never twice within 180 days" reads as covering the 180th day itself.
- *
- * Matching is `openAlexId` OR `doi` OR the source-prefixed candidate id. The
- * third key is not in §8's wording, but an arXiv-only preprint often has
- * neither a DOI nor an OpenAlex id, and without it such a paper could be
- * published twice in the same week.
- */
+/** §8's question in its plainest form. */
 export function isSeen(
   state: SeenState,
-  candidate: DedupKeys,
+  candidate: Candidate,
   today: string,
   dedupDays: number,
 ): boolean {
-  const doi = normaliseDoi(candidate.doi);
-  const openAlexId = normaliseOpenAlexId(candidate.openAlexId);
-  const id = candidate.id?.trim() ?? '';
-  if (!doi && !openAlexId && id === '') return false;
+  return seenMatch(state, candidate, today, dedupDays) !== null;
+}
 
-  for (const entry of state.entries) {
-    const matches =
-      (openAlexId !== null && entry.openAlexId === openAlexId) ||
-      (doi !== null && entry.doi === doi) ||
-      (id !== '' && entry.id === id);
-    if (!matches) continue;
-    if (daysBetween(entry.lastPublished, today) <= dedupDays) return true;
-  }
-  return false;
+/**
+ * The lookup `src/select/exclude.ts` asks for. Binding the state, the run date
+ * and the window here is what lets the selector stay free of the filesystem and
+ * of the clock.
+ */
+export function createSeenLookup(
+  state: SeenState,
+  today: string,
+  dedupDays: number,
+): SeenLookup {
+  return (candidate) => seenMatch(state, candidate, today, dedupDays);
 }
 
 /**
  * Folds the day's published papers into the state. Pure — returns a new state,
  * so a caller can record, render and only then save, and a failed run leaves
- * `seen.json` untouched.
+ * `seen.json` untouched (D.3).
  *
- * A paper already in the file is updated in place rather than appended, so a
- * hundred runs cannot grow a hundred rows for the same study.
+ * A paper already recorded moves its `publishedOn` forward instead of gaining a
+ * second row, so a hundred runs cannot grow a hundred rows for one study. The
+ * per-day record of exactly what appeared when is the archive's JSON twins
+ * (§8); this file answers "how recently", which is all the window needs.
  */
 export function recordPublished(
   state: SeenState,
   entries: readonly DigestEntry[],
   date: string,
+  category: string | null = null,
 ): SeenState {
   if (!isISODate(date)) throw new Error(`recordPublished needs a YYYY-MM-DD date, got ${date}`);
   const next: SeenEntry[] = state.entries.map((entry) => ({ ...entry }));
 
   for (const entry of entries) {
-    const candidate = entry.candidate;
-    const doi = normaliseDoi(candidate.doi);
-    const openAlexId = normaliseOpenAlexId(candidate.openAlexId);
-    const id = candidate.id.trim();
+    const identity = candidateIdentity(entry.candidate);
     const existing = next.find(
       (row) =>
-        (openAlexId !== null && row.openAlexId === openAlexId) ||
-        (doi !== null && row.doi === doi) ||
-        (id !== '' && row.id === id),
+        (identity.openAlexId !== null && row.openalexId === identity.openAlexId) ||
+        (identity.doi !== null && row.doi === identity.doi) ||
+        (identity.arxivId !== null && row.arxivId === identity.arxivId) ||
+        titleKeysAreSamePaper(identity.titleKey, row.titleKey),
     );
     if (existing) {
-      // Keep the earliest appearance as the historical record; move the window.
-      existing.lastPublished = date > existing.lastPublished ? date : existing.lastPublished;
-      existing.openAlexId ??= openAlexId;
-      existing.doi ??= doi;
+      if (date > existing.publishedOn) existing.publishedOn = date;
+      // A paper first seen without a DOI often has one by the time it comes
+      // round again; filling the gap makes the next match cheaper and surer.
+      existing.openalexId ??= identity.openAlexId;
+      existing.doi ??= identity.doi;
+      existing.arxivId ??= identity.arxivId;
+      if (existing.titleKey === '') existing.titleKey = identity.titleKey;
+      if (existing.category === null) existing.category = category;
       continue;
     }
-    next.push({ id, openAlexId, doi, date, lastPublished: date });
+    next.push({
+      openalexId: identity.openAlexId,
+      doi: identity.doi,
+      arxivId: identity.arxivId,
+      titleKey: identity.titleKey,
+      publishedOn: date,
+      category,
+    });
   }
 
-  return { schemaVersion: 1, entries: next };
+  return { version: 1, entries: next };
 }
+
+/** B.7's title rule, guarded so two papers with no usable title never collide. */
+function titleKeysAreSamePaper(a: string, b: string): boolean {
+  if (a === '' || b === '') return false;
+  return trigramJaccard(a, b) >= TITLE_SIMILARITY_THRESHOLD;
+}
+
+// Re-exported so the renderer and the tests have one obvious place to reach for
+// identifier normalisation without importing the selector directly.
+export { normaliseDoi, normaliseOpenAlexId };

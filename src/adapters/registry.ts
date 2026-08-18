@@ -38,11 +38,29 @@ export interface DiscoveryResult {
   degradations: Degradation[];
 }
 
-/** For §9's footer: how a source is named to a Czech reader. */
-const SOURCE_LABELS: Record<string, string> = {
-  openalex: 'OpenAlex',
-  arxiv: 'arXiv',
+/**
+ * §9's footer sentences, taken verbatim from DESIGN-NOTES D.4 (`DEG_OPENALEX`,
+ * `DEG_ARXIV`) so the page speaks in one voice. They name what the reader lost,
+ * not which API fell over — "OpenAlex" means nothing to the family reading this.
+ */
+const DEGRADATION_MESSAGES_CS: Record<string, string> = {
+  openalex:
+    'Část databáze, ze které vybíráme studie, dnes nebyla dostupná. Výběr proto vychází z menšího počtu prací než obvykle.',
+  arxiv:
+    'Server s odbornými preprinty dnes neodpovídal. Dnešní výběr proto obsahuje jen práce z recenzovaných časopisů.',
 };
+
+const GENERIC_DEGRADATION_CS =
+  'Jeden ze zdrojů, ze kterých vybíráme studie, dnes nebyl dostupný. Výběr proto vychází z menšího počtu prací než obvykle.';
+
+/**
+ * §4.1 makes the key mandatory. A run that keeps going on a rejected key would
+ * publish a thinner page every morning and never say why, so an authentication
+ * failure is not a degradation — it takes the run down (DESIGN-NOTES D.2).
+ */
+function isAuthFailure(error: unknown): boolean {
+  return error instanceof HttpError && (error.status === 401 || error.status === 403);
+}
 
 /**
  * Runs every adapter for the day and merges the results.
@@ -66,12 +84,12 @@ export async function fetchCandidates(
     try {
       lists.push(await adapter.fetch(category, since));
     } catch (error) {
-      const label = SOURCE_LABELS[adapter.name] ?? adapter.name;
       const detail = error instanceof HttpError ? error.message : (error as Error).message;
       deps.logger.error(`${adapter.name}: fetch failed — ${detail}`);
+      if (isAuthFailure(error)) throw error;
       degradations.push({
         source: adapter.name,
-        messageCs: `Zdroj ${label} se dnes nepodařilo načíst, výběr proto vychází jen z ostatních zdrojů.`,
+        messageCs: DEGRADATION_MESSAGES_CS[adapter.name] ?? GENERIC_DEGRADATION_CS,
         detail,
       });
     }
@@ -202,7 +220,10 @@ export function mergeCandidates(lists: readonly (readonly Candidate[])[]): Candi
         if (existing) {
           const combined = mergeDuplicates(existing, candidate);
           merged[at] = combined;
+          // Index the keys this record contributed, so a third source matching
+          // either spelling still lands on the same slot.
           if (combined.doi) byDoi.set(combined.doi, at);
+          if (titleKey !== '' && !byTitle.has(titleKey)) byTitle.set(titleKey, at);
           continue;
         }
       }

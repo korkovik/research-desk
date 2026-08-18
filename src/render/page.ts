@@ -18,6 +18,7 @@ import type { Config } from '../config.js';
 import { displayName } from '../config.js';
 import type { DayDigest, Degradation, DigestEntry } from '../types.js';
 import { normaliseDoi, normaliseOpenAlexId } from '../state/seen.js';
+
 import {
   escapeHtml,
   externalLink,
@@ -29,6 +30,9 @@ import {
 import { renderDocument } from './layout.js';
 import { stringsFor } from './strings.js';
 import type { StringTable } from './stringTable.js';
+
+/** Every real DOI is `10.<registrant>/<suffix>`; anything else cannot resolve. */
+const RESOLVABLE_DOI = /^10\.\d{4,9}\/\S+$/;
 
 export function renderDayPage(digest: DayDigest, config: Config): string {
   // §2 — the page's language is the configured one, not the one baked into the
@@ -188,8 +192,12 @@ function renderReferences(entry: DigestEntry, strings: StringTable): string {
     ),
   );
 
+  // The normaliser of B.7 is built for MATCHING, so it keeps whatever a source
+  // called a DOI. A link, unlike a dedup key, has to resolve, so the shape is
+  // checked again here — `https://doi.org/n/a` would be worse than saying we
+  // have no DOI.
   const doi = normaliseDoi(candidate.doi);
-  const doiLink = doi === null ? null : externalLink(doiUrl(doi), doi);
+  const doiLink = doi !== null && RESOLVABLE_DOI.test(doi) ? externalLink(doiUrl(doi), doi) : null;
   rows.push(row(strings.refDoi, doiLink ?? escapeHtml(strings.refDoiMissing)));
 
   const openAlexId = normaliseOpenAlexId(candidate.openAlexId);
@@ -242,7 +250,6 @@ function renderFooter(
       .join('\n');
     parts.push(
       `<h2>${escapeHtml(strings.degradationHeading)}</h2>`,
-      `<p>${escapeHtml(strings.degradationIntro)}</p>`,
       `<ul class="degradations">\n${items}\n</ul>`,
     );
   }

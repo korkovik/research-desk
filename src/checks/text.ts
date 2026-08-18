@@ -3,7 +3,7 @@
  * A.2.2, A.3.1).
  *
  * Why this file exists at all: JavaScript's `\w`, `\b` and `\W` are ASCII-only.
- * `/\brevoluč\w*/` does not match `revoluční`, and `\b` fires *inside*
+ * A pattern written as `\brevoluč\w+` does not match `revoluční`, and `\b` fires *inside*
  * `přelomový` — silently, with no error, producing a checker that looks like it
  * works. A.0.1 therefore fixes the shape of every pattern in the checker:
  *
@@ -27,7 +27,7 @@ export const MASK_CHAR = '￼';
 
 /** All the dash-ish characters a model emits where a plain hyphen belongs. */
 const SEPARATOR_CLASS = '[\\s\\u00A0\\u2010\\u2011\\u2012\\u2013\\u2014\\u2212-]+';
-const SEPARATOR_SPLIT = /[\s ‐‑‒–—−-]+/u;
+const SEPARATOR_SPLIT = /[\s\u00A0\u2010\u2011\u2012\u2013\u2014\u2212-]+/u;
 
 /** The Czech letters that carry a diacritic. Used by A.2.3's `D` counter. */
 export const CZECH_DIACRITIC_LETTERS = 'áčďéěíňóřšťúůýžĎŇŘŠŤŽÁČÉĚÍÓÚŮÝ';
@@ -393,13 +393,14 @@ function isRealBoundary(text: string, runStart: number, runEnd: number, run: str
   //     text does not read as a `d.m.yyyy` date starting at those digits.
   if (run === '.') {
     const digitMatch = /(\p{N}{1,4})$/u.exec(text.slice(Math.max(0, runStart - 4), runStart));
-    if (digitMatch) {
+    const digits = digitMatch?.[1];
+    if (digits !== undefined) {
       const nextWord = /^\s*([\p{L}]+)/u.exec(text.slice(runEnd, runEnd + 40));
       if (!nextWord || nextWord[1] === undefined) return false; // `1. 5. 2026`
       const word = nextWord[1];
       if (!/^\p{Lu}/u.test(word)) return false;
       if (MONTHS.has(lowerForMatching(word))) return false;
-      const digitsStart = runStart - digitMatch[1].length;
+      const digitsStart = runStart - digits.length;
       if (/^\p{N}{1,2}\.\s?\p{N}{1,2}\.\s?(?:\p{N}{4})?/u.test(text.slice(digitsStart))) return false;
     }
   }

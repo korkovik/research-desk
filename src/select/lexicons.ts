@@ -704,7 +704,7 @@ function finalWordPattern(word: string): string {
 }
 
 /** Compiles one term into the bounded, separator-tolerant form of A.0.1. */
-export function compileTerm(term: string): RegExp {
+function compileTerm(term: string): RegExp {
   const words = term.split(/[\s\u2010-\u2015\u2212-]+/u).filter((w) => w !== '');
   if (words.length === 0) throw new Error(`empty lexicon term: ${JSON.stringify(term)}`);
   const last = words[words.length - 1] as string;

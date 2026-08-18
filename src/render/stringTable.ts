@@ -75,7 +75,6 @@ export interface StringTable {
 
   // ---- §9 footer ------------------------------------------------------
   readonly degradationHeading: string;
-  readonly degradationIntro: string;
   readonly degradationOpenAlex: string;
   readonly degradationArxiv: string;
   readonly degradationSemanticScholar: string;

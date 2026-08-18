@@ -117,7 +117,9 @@
     "effort": "high",
     "maxTokens": 4000,
     "maxExampleAttempts": 2,
-    "dropPaperIfMotivationFallbackAlsoFails": true
+    "dropPaperIfMotivationFallbackAlsoFails": true,
+    "challengePass": true,
+    "_challengePass": "A second, adversarial verification of anything the first pass approved. One extra call per accepted paper — about a quarter of the run's output tokens. It is on by default because §7.4 says the failure it guards against is worse than shipping fewer papers; turn it off first if the spend cap bites."
   },
 
   "sources": {
