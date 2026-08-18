@@ -17,6 +17,7 @@ import { createLogger } from '../src/util/log.js';
 import { runDay } from '../src/run.js';
 import type { DayDigest } from '../src/types.js';
 import { HonestLlm, makeFetchImpl, makeWorkspace, type FetchLog } from './support/pipelineHarness.js';
+import type { LlmClient, LlmRequest, LlmResult } from '../src/summarise/client.js';
 
 const NO_SECRETS = { openAlexApiKey: null, semanticScholarApiKey: null, anthropicApiKey: null };
 const quiet = () => createLogger(() => {});
@@ -225,6 +226,71 @@ test('§6: the day\'s five are not all from one subfield', async () => {
     assert.ok(
       count <= config.ranking.maxPerSubfield,
       `${count} papers from ${key}, cap is ${config.ranking.maxPerSubfield}`,
+    );
+  }
+});
+
+test('§6: a top-up after a dropped paper still respects the diversity cap', async () => {
+  const root = makeWorkspace();
+  const config = loadConfig(root);
+
+  // A model that refuses to verify the first few papers it is asked about, so
+  // the run has to reach into the ranked remainder for replacements. Composed
+  // around HonestLlm rather than subclassing it — the generic signature of
+  // `complete` does not survive an override.
+  const honest = new HonestLlm();
+  let verifications = 0;
+  const refuseFirstFew: LlmClient = {
+    complete<T>(request: LlmRequest<T>): Promise<LlmResult<T>> {
+      if (request.label.startsWith('verify-example')) {
+        verifications += 1;
+        if (verifications <= 6) {
+          return Promise.resolve({
+            value: {
+              claims: [
+                {
+                  id: 'c1',
+                  claimText: 'Nothing here is in the source',
+                  claimType: 'other',
+                  exampleSpan: 'Představte si běžný týden ve škole.',
+                  verdict: 'unsupported',
+                  sourceQuote: null,
+                  quoteField: null,
+                },
+              ],
+              modelOverallVerdict: 'unsupported',
+              unsupportedReasonsCs: ['Ve zdroji to není.'],
+            } as T,
+            usage: honest.totalUsage(),
+          });
+        }
+      }
+      return honest.complete(request);
+    },
+    totalUsage: () => honest.totalUsage(),
+  };
+
+  const result = await runDay({
+    repoRoot: root,
+    config,
+    secrets: NO_SECRETS,
+    logger: quiet(),
+    dryRun: true,
+    date: '2026-08-19',
+    llm: refuseFirstFew,
+    fetchImpl: makeFetchImpl('2026-08-19', { urls: [] }),
+    clock: fakeClock(),
+  });
+
+  const counts = new Map<string, number>();
+  for (const entry of result.digest?.entries ?? []) {
+    const key = entry.candidate.score.subfieldKey;
+    counts.set(key, (counts.get(key) ?? 0) + 1);
+  }
+  for (const [key, count] of counts) {
+    assert.ok(
+      count <= config.ranking.maxPerSubfield,
+      `a top-up pushed ${key} to ${count}, over the cap of ${config.ranking.maxPerSubfield}`,
     );
   }
 });

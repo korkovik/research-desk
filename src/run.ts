@@ -33,6 +33,7 @@ import type { Secrets } from './env.js';
 import { fetchCandidates } from './adapters/registry.js';
 import { enrichWithTldr } from './enrich/semanticScholar.js';
 import { optionsFromConfig, selectForDay } from './select/select.js';
+import { admitWithinCap } from './select/diversity.js';
 import { checkStyle } from './checks/index.js';
 import { createSeenLookup, loadSeen, recordPublished, saveSeen } from './state/seen.js';
 import { writeDayOutputs } from './render/archive.js';
@@ -200,18 +201,34 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
 
     // §7.4: replace the dropped paper rather than publish short, but only from
     // the ranked remainder — never by widening the window, reaching into
-    // another category, or lowering a bar. Bounded, because a systematic
-    // failure would otherwise chew through the whole remainder at two API
-    // calls a paper.
-    if (topUps < MAX_TOP_UPS) {
-      const replacement = reserve.shift();
-      if (replacement !== undefined) {
-        topUps += 1;
-        logger.warn(`topping up with ${replacement.id} after dropping ${candidate.id}`);
-        queue.push(replacement);
-      }
-    } else {
+    // another category, or lowering a bar. §6's diversity cap is one of those
+    // bars: a replacement must still fit under it, or a day that dropped two
+    // papers could quietly publish three from one subfield. Bounded at two,
+    // because a systematic failure would otherwise chew through the whole
+    // remainder at two API calls a paper.
+    if (topUps >= MAX_TOP_UPS) {
       logger.warn('top-up budget spent — publishing short rather than reaching further');
+      continue;
+    }
+    const cap = selection.flags.diversityRelaxed
+      ? config.ranking.relaxedMaxPerSubfield
+      : config.ranking.maxPerSubfield;
+    const committed = [...entries.map((e) => e.candidate), ...queue];
+    const replacementIndex = reserve.findIndex(
+      (paper) => admitWithinCap([paper], committed, 1, cap).length === 1,
+    );
+    if (replacementIndex === -1) {
+      logger.warn(
+        `nothing in the ranked remainder fits under the ${cap}-per-subfield cap — ` +
+          'publishing short rather than breaking §6',
+      );
+      continue;
+    }
+    const [replacement] = reserve.splice(replacementIndex, 1);
+    if (replacement !== undefined) {
+      topUps += 1;
+      logger.warn(`topping up with ${replacement.id} after dropping ${candidate.id}`);
+      queue.push(replacement);
     }
   }
 
