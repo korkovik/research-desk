@@ -20,9 +20,15 @@ import { makeDegradation, makeDigest, makeEntry } from './support/digestFixture.
 
 const config = testConfig();
 
-/** The six §7 blocks, in the order the spec fixes. */
+/**
+ * The block headings the page renders, in the order §7 fixes.
+ *
+ * Five, not six: block 1 is the plain-language headline and carries no label.
+ * It had a small "Nadpis" kicker until the first real page was looked at on a
+ * phone, where a label reading "Headline" above a headline was the one element
+ * that told the reader nothing.
+ */
 const BLOCK_HEADINGS = [
-  stringsCs.blockTitle,
   stringsCs.blockWhatItIsAbout,
   stringsCs.blockDetail,
   stringsCs.blockExample,

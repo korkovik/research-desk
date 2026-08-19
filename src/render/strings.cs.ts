@@ -55,8 +55,10 @@ export const stringsCs: StringTable = {
 
   // EN: lead paragraph on the index page only, explaining what the reader is
   // looking at.
-  indexIntro:
-    'Každý den vybíráme několik nových vědeckých studií a vysvětlujeme je běžnými slovy. Níže jsou všechna dosavadní vydání, od nejnovějšího.',
+  // Shortened after seeing it rendered: it repeated "vědeckých studií" and
+  // "běžnými slovy" from siteIntro directly above it, so the reader met the
+  // same sentence twice.
+  indexIntro: 'Každý den vybíráme několik nových studií. Níže jsou všechna dosavadní vydání, od nejnovějšího.',
 
   // EN: heading above the list of archived days on the index page.
   indexDaysHeading: 'Všechna vydání',
@@ -85,7 +87,6 @@ export const stringsCs: StringTable = {
 
   // EN: block 1 heading — "Headline". Small label above the plain-language
   // title of the paper.
-  blockTitle: 'Nadpis',
 
   // EN: block 2 heading — "What it is about". Two or three sentences on the
   // question and the finding.

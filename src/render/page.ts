@@ -133,10 +133,11 @@ function renderPaper(
       n: String(position),
       total: String(total),
     })}</p>`,
-    // Block 1 — the plain-language headline. Its label is a small kicker: a
-    // reader does not need the word "Nadpis" shouted at them, but the six
-    // blocks stay explicit and checkable.
-    `<p class="block-label">${escapeHtml(strings.blockTitle)}</p>`,
+    // Block 1 — the plain-language headline, with no label above it. It carried
+    // a small "Nadpis" kicker until the first real page was looked at on a
+    // phone, where it was the one element that told the reader nothing: a label
+    // reading "Headline" above a headline. The six blocks stay explicit and
+    // checkable in the data; the reader does not need the scaffolding.
     `<h2>${escapeHtml(summary.nadpis)}</h2>`,
   ];
 

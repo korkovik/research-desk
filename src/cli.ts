@@ -10,6 +10,7 @@ import { loadConfig } from './config.js';
 import { loadEnvFile, readSecrets } from './env.js';
 import { createLogger } from './util/log.js';
 import { regenerateIndex } from './render/index.js';
+import { rerenderArchive } from './render/archive.js';
 import { runDay } from './run.js';
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -24,6 +25,9 @@ const USAGE = `research-desk <command>
                                         works before an Anthropic key exists and
                                         is how you check what a day would pick.
   reindex                               rebuild index.html from the archive's JSON twins
+  rerender                              rebuild every archived page AND the index from
+                                        the JSON twins. Free — no API calls. Run it after
+                                        a change to the renderer or to the Czech strings.
   help
 
 Credentials come from .env.local in the repository root; see .env.example.
@@ -54,6 +58,12 @@ async function main(): Promise<number> {
 
   const config = loadConfig(repoRoot);
   const secrets = readSecrets();
+
+  if (command === 'rerender') {
+    const result = rerenderArchive({ config, repoRoot, logger });
+    logger.info(`rebuilt ${result.pages} page(s) and ${result.index}`);
+    return 0;
+  }
 
   if (command === 'reindex') {
     const result = regenerateIndex({ config, repoRoot, logger });

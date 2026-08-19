@@ -70,8 +70,8 @@ test('every {placeholder} is one the renderer knows how to fill', () => {
   }
 });
 
-test('the six §7 block headings are the ones the spec names', () => {
-  assert.equal(stringsCs.blockTitle, 'Nadpis');
+test('the §7 block headings are the ones the spec names', () => {
+  // Block 1 has no heading: the headline is its own label.
   assert.equal(stringsCs.blockWhatItIsAbout, 'O co jde');
   assert.equal(stringsCs.blockDetail, 'Podrobné vysvětlení');
   assert.equal(stringsCs.blockExample, 'Příklad ze života');

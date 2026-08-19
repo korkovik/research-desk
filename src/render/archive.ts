@@ -12,6 +12,7 @@
  * Both writes are atomic (`src/util/atomicWrite.ts`), so a run killed mid-write
  * leaves yesterday's page intact rather than a truncated one.
  */
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import type { Config } from '../config.js';
 import type { DayDigest } from '../types.js';
@@ -107,6 +108,52 @@ export function assertNoRemoteResources(html: string, path: string): void {
     throw new Error(`${path} carries a remote URL in an attribute: ${remote[0]} — §8 forbids it`);
   }
 }
+
+/**
+ * Rebuilds every archived day's HTML from its JSON twin, then the index.
+ *
+ * This is what §8's "machine copy" is for: "so the archive is reprocessable
+ * later — for a weekly recap, an English translation pass, or a search feature
+ * — without re-scraping". A change to the renderer or to the Czech strings
+ * would otherwise only reach pages generated after it, and catching up would
+ * mean paying for the papers again. Costs nothing and touches no API.
+ */
+export function rerenderArchive(options: {
+  readonly config: Config;
+  readonly repoRoot: string;
+  readonly logger: Logger;
+}): { pages: number; index: string } {
+  const { config, repoRoot, logger } = options;
+  const archiveDir = resolve(repoRoot, config.paths.archiveDir);
+  const files = existsSync(archiveDir)
+    ? readdirSync(archiveDir)
+        .filter((name) => TWIN_FILE.test(name))
+        .sort()
+    : [];
+
+  let pages = 0;
+  for (const file of files) {
+    const raw: unknown = JSON.parse(readFileSync(join(archiveDir, file), 'utf8'));
+    const digest = raw as DayDigest;
+    if (!isISODate(digest.date)) {
+      logger.warn(`rerender: ${file} has no usable date, skipping`);
+      continue;
+    }
+    const { htmlPath } = dayOutputPaths(config, repoRoot, digest.date);
+    const html = renderDayPage(digest, config);
+    // The same gate the original write passed. A renderer change that started
+    // pulling something in must not reach the archive by the back door.
+    assertNoRemoteResources(html, htmlPath);
+    atomicWriteFile(htmlPath, html);
+    pages += 1;
+  }
+
+  const index = regenerateIndex({ config, repoRoot, logger });
+  logger.info(`rerender: ${pages} page(s) rebuilt from their JSON twins, index lists ${index.days}`);
+  return { pages, index: index.path };
+}
+
+const TWIN_FILE = /^\d{4}-\d{2}-\d{2}\.json$/;
 
 export function writeDayOutputs(options: WriteDayOptions): WriteDayResult {
   const { digest, config, repoRoot, logger } = options;

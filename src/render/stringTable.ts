@@ -37,7 +37,6 @@ export interface StringTable {
   readonly paperCounter: string;
 
   // ---- The six §7 blocks, in the spec's order -------------------------
-  readonly blockTitle: string;
   readonly blockWhatItIsAbout: string;
   readonly blockDetail: string;
   readonly blockExample: string;

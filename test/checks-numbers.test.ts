@@ -126,3 +126,56 @@ describe('RISK-VOICE-09 — negative controls', () => {
     });
   }
 });
+
+/**
+ * Regression guard for the anchor-detector fix.
+ *
+ * Every string in the first group is verbatim from `archive/2026-08-19.json` —
+ * the first page this project ever produced from real papers. All seven were
+ * hard-flagged as unanchored numbers, all seven were wrong, and between them
+ * they cost four of five papers their full three-attempt regeneration budget.
+ * The second group is the other half of the trade: loosen too far and §7.3
+ * stops meaning anything, so these must keep failing.
+ */
+describe('A.5 anchor detection, calibrated against real generated Czech', () => {
+  const hardCount = (text: string): number =>
+    checkNumberAnchors('podrobneVysvetleni', text, config).filter((f) => f.severity === 'hard').length;
+
+  const REAL_FALSE_POSITIVES: [string, string][] = [
+    // The check was flagging §7.3's own anchor vocabulary — polovina, třetina,
+    // čtvrtina and pětina are the words a plain-language anchor is made of.
+    ['a restated fifth', 'Když srážky stouply o desetinu, vody v řece přibylo o 20,47 %, tedy asi o pětinu.'],
+    ['a restated half', 'Oxid uhelnatý klesl o 54 %, tedy asi na polovinu.'],
+    ['a restated quarter', 'Ozon jako jediný přibyl, a to o 23 %, tedy zhruba o čtvrtinu.'],
+    // A raw count of things, with an adjective between the number and the noun.
+    ['a count of provinces', 'Data sbírali za rok 2022 ve všech 81 tureckých provinciích.'],
+    // A comparison to a named reference point.
+    ['a comparison to WHO guidance', 'Průměr vyšel 27 mikrogramů — tedy 5,4krát víc, než doporučuje Světová zdravotnická organizace.'],
+    // An em-dash gloss, which the jargon check already accepted and this one did not.
+    ['a dash gloss', 'Rozdíly ve znečištění vysvětlily zhruba 41 % rozdílů mezi provinciemi — zbytek má jiné příčiny.'],
+    // A rate denominator, which is the whole reason the figure means anything.
+    ['a rate denominator', 'Podle výpočtu se s každým nárůstem pojí asi 3,2 úmrtí navíc na sto tisíc obyvatel.'],
+  ];
+
+  for (const [what, text] of REAL_FALSE_POSITIVES) {
+    it(`does not hard-flag ${what} (real output, 2026-08-19)`, () => {
+      assert.equal(hardCount(text), 0, text);
+    });
+  }
+
+  const MUST_STILL_FAIL: [string, string][] = [
+    ['a bare percentage', 'Riziko se u sledované skupiny snížilo o 12 %.'],
+    ['two bare percentages', 'Výnos stoupl o 37 % a spotřeba vody klesla o 18 %.'],
+    ['a bare multiplier', 'Riziko bylo 3,4krát vyšší.'],
+    ['bare percentage points', 'Podíl se zvýšil o 6 procentních bodů.'],
+    // The narrow test for the anchor-self exemption: no earlier number, no
+    // anchor marker, so this spelled-out magnitude is asserting, not restating.
+    ['a bare spelled-out magnitude', 'Zasaženy byly dvě třetiny.'],
+  ];
+
+  for (const [what, text] of MUST_STILL_FAIL) {
+    it(`still hard-flags ${what}`, () => {
+      assert.ok(hardCount(text) > 0, text);
+    });
+  }
+});

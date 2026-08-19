@@ -50,7 +50,7 @@ const DATE_MONTH_RE =
 const AGE_DURATION_RE =
   /^\s?(?:let|letý|leté|letých|letém|měsíc\p{L}*|týdn\p{L}*|týden|dní|dnů|dnech|hodin\p{L}*|minut\p{L}*|sekund\p{L}*)(?!\p{L})/u;
 const SAMPLE_COUNT_RE =
-  /^\s?(?:lidí|osob\p{L}*|účastník\p{L}*|pacient\p{L}*|studentů|dětí|domácností|škol|zvířat|myší|včel|vzorků|domů)(?!\p{L})/u;
+  /^\s?(?:\p{L}+\s+){0,2}(?:lidí|osob\p{L}*|účastník\p{L}*|pacient\p{L}*|studentů|dětí|domácností|škol\p{L}*|zvířat|myší|včel|vzorků|domů|provinci\p{L}*|zemí|měst\p{L}*|obcí|stát\p{L}*|region\p{L}*|nemocnic\p{L}*|úmrtí|případ\p{L}*)(?!\p{L})/u;
 /** Matched against the lower-cased tail, hence `°c`. */
 const TEMPERATURE_RE = /^\s?°\s?c(?!\p{L})/u;
 
@@ -93,6 +93,23 @@ const ANCHOR_LITERALS = [
 const ANCHOR_PATTERNS = [
   /(?<!\p{L})každ\p{L}+\s+\p{L}+\s+z(?!\p{L})/u,
   /(?<!\p{L})z\s+(?:deseti|dvaceti|padesáti|sta|stovky|tisíce)(?!\p{L})/u,
+  // A comparison to a named reference point. "5,4krát víc, než doporučuje
+  // Světová zdravotnická organizace" is about as good an anchor as a lay reader
+  // gets: the number is given something to be relative to.
+  /(?<!\p{L})než(?!\p{L})/u,
+];
+
+/**
+ * Anchors that are complete in themselves, so unlike `ANCHOR_PATTERNS` they are
+ * not required to be followed by further words.
+ *
+ * A rate denominator is the case: in "3,2 úmrtí navíc na sto tisíc obyvatel"
+ * the denominator IS what makes 3,2 mean anything, and it usually ends the
+ * sentence, so demanding three more words after it would reject the very
+ * construction that does the anchoring.
+ */
+const SELF_SUFFICIENT_ANCHOR_PATTERNS = [
+  /(?<!\p{L})na\s+(?:sto|tisíc|deset|dvacet|padesát|milion)\p{L}*/u,
 ];
 
 export interface NumberMatch {
@@ -131,11 +148,44 @@ export interface NumberVerdict {
   alwaysAnchored: boolean;
 }
 
+/**
+ * True when the text before this point, within the same sentence, carries both
+ * a digit and an anchor marker — i.e. this spelled-out magnitude is restating a
+ * number rather than asserting a new one.
+ */
+function restatesAnEarlierNumber(lowered: string, at: number): boolean {
+  const breakAt = Math.max(
+    lowered.lastIndexOf('.', at - 1),
+    lowered.lastIndexOf('!', at - 1),
+    lowered.lastIndexOf('?', at - 1),
+  );
+  const before = lowered.slice(breakAt + 1, at);
+  if (!/\p{N}/u.test(before)) return false;
+  return ANCHOR_LITERALS.some((literal) => before.includes(literal));
+}
+
 /** A.5.2's exemption table, applied to one number in its context. */
 export function classify(text: string, num: NumberMatch): NumberVerdict {
   const lowered = lowerForMatching(text);
   const after = lowered.slice(num.end, num.end + 24);
   const body = lowered.slice(num.start, num.end).trim();
+
+  // A.5.2's last exemption row — specified and, until now, never implemented:
+  // "numbers appearing inside a matched anchor phrase are not re-checked".
+  //
+  // It matters because §7.3's anchor vocabulary IS spelled-out magnitudes:
+  // polovina, třetina, čtvrtina, pětina. So "…o 20,47 %, tedy asi o pětinu"
+  // had the checker demanding an anchor for the anchor the model correctly
+  // supplied — seven of seven surviving findings on the first real page were
+  // this or one of three near neighbours.
+  //
+  // The test is deliberately narrow: a word-magnitude is the anchor only when,
+  // earlier in the same sentence, there is BOTH a digit and an anchor marker.
+  // That is the shape of a restatement. A bare "Zasaženy byly dvě třetiny" has
+  // neither and is still flagged.
+  if (num.kind === 'word-magnitude' && restatesAnEarlierNumber(lowered, num.start)) {
+    return { exemption: 'exempt', alwaysAnchored: false };
+  }
 
   const alwaysAnchored =
     num.kind === 'word-magnitude' || ALWAYS_ANCHORED_RE.test(lowered.slice(num.start, num.end));
@@ -195,6 +245,9 @@ export function isAnchored(sentences: readonly Sentence[], num: NumberMatch, con
       const rest = scope.slice(m.index + m[0].length);
       if (countableWords(rest).length >= config.numbers.anchorMinWords) return true;
     }
+    for (const pattern of SELF_SUFFICIENT_ANCHOR_PATTERNS) {
+      if (pattern.test(lowered)) return true;
+    }
   }
 
   // A.5.3's second, independent way: the number is immediately followed by a
@@ -204,6 +257,13 @@ export function isAnchored(sentences: readonly Sentence[], num: NumberMatch, con
     const tail = ownSentence.text.slice(num.end - ownSentence.start);
     const paren = /^\s{0,2}\(([^()]{0,200})\)/u.exec(tail);
     if (paren && countableWords(paren[1] ?? '').length >= config.numbers.parenRestatementMinWords) return true;
+
+    // A dash gloss, which A.4.2 already accepts for jargon and A.5.3 never
+    // spelled out for numbers: "…vysvětlily zhruba 41 % rozdílů — zbytek má
+    // jiné příčiny." An em or en dash is deliberate "here comes the
+    // explanation" punctuation; a comma is not, and is not accepted here.
+    const dash = /[—–]\s*(.+)$/u.exec(tail);
+    if (dash && countableWords(dash[1] ?? '').length >= config.numbers.anchorMinWords) return true;
   }
 
   return false;
