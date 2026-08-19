@@ -121,7 +121,17 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
 
   // ---- §3.3–3.4 dedup, ranking, selection -----------------------------------
   const seenPath = resolve(repoRoot, config.paths.seenState);
-  const seenState = loadSeen(seenPath);
+  let seenState;
+  try {
+    seenState = loadSeen(seenPath);
+  } catch (error) {
+    // Refusing to start is right — silently beginning with an empty state would
+    // republish six months of papers. But §9 wants a line for every run, and
+    // this one would otherwise leave the file Tom checks completely silent.
+    logger.error(`could not read ${seenPath}: ${(error as Error).message}`);
+    writeStartupFailureLog(options, date, category, started, logger);
+    return { outcome: 'aborted', date, digest: null, exitCode: 2 };
+  }
   const isSeen = createSeenLookup(seenState, date, config.windows.dedupDays);
 
   // §4.2: enrich only the shortlist. Ranking runs twice — once on the raw
@@ -386,6 +396,42 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
     digest,
     exitCode: 0,
   };
+}
+
+/**
+ * The run-log line for a failure that happens before there is anything to
+ * report — a corrupt state file, a filesystem that will not answer. Its numbers
+ * are all zero because nothing was counted; the point is that the file is never
+ * silent about a run that happened.
+ */
+function writeStartupFailureLog(
+  options: RunOptions,
+  date: string,
+  category: { key: string; labelCs: string },
+  started: number,
+  logger: Logger,
+): void {
+  const line: Omit<RunLogLine, 'summary'> = {
+    ts: new Date(started).toISOString(),
+    runId: date,
+    level: 'FATAL',
+    outcome: 'aborted',
+    category: category.key,
+    categoryLabelCs: category.labelCs,
+    durationMs: Date.now() - started,
+    candidates: {
+      fetched: {},
+      afterExclusions: 0,
+      exclusionReasons: {},
+      selected: 0,
+      verified: 0,
+      dropped: [],
+    },
+    degradations: [],
+    warnings: logger.warnings(),
+    errors: logger.errors(),
+  };
+  writeRunLog(options, { ...line, summary: summariseRunLog(line) });
 }
 
 function writeRunLog(options: RunOptions, line: RunLogLine): void {

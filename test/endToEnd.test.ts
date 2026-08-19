@@ -16,6 +16,7 @@ import { loadConfig } from '../src/config.js';
 import { createLogger } from '../src/util/log.js';
 import { runDay } from '../src/run.js';
 import { assertNoRemoteResources } from '../src/render/archive.js';
+import { passesExplainabilityGate } from '../src/select/score.js';
 import type { DayDigest } from '../src/types.js';
 import { HonestLlm, makeFetchImpl, makeWorkspace, type FetchLog } from './support/pipelineHarness.js';
 import type { LlmClient, LlmRequest, LlmResult } from '../src/summarise/client.js';
@@ -288,6 +289,13 @@ test('§6: a top-up after a dropped paper still respects the diversity cap', asy
   for (const entry of result.digest?.entries ?? []) {
     const key = entry.candidate.score.subfieldKey;
     counts.set(key, (counts.get(key) ?? 0) + 1);
+    // The other half of the same rule: the ranked remainder contains the papers
+    // the explainability gate turned away, and a slot coming free is not a
+    // reason to admit one.
+    assert.ok(
+      passesExplainabilityGate(entry.candidate, config.ranking.explainabilityGate),
+      `${entry.candidate.id} was published below the explainability gate`,
+    );
   }
   for (const [key, count] of counts) {
     assert.ok(
@@ -354,11 +362,28 @@ test('a page that would load something off the machine is refused at write time'
     /forbids/,
   );
   assert.throws(
-    () => assertNoRemoteResources('<p>see https://example.org/paper</p>', 'page.html'),
-    /outside a link/,
+    () => assertNoRemoteResources('<div style="background-image:url(https://x/y.png)"></div>', 'p.html'),
+    /forbids/,
   );
-  // …but a link the reader clicks is required by §7.6 and must pass.
+  // A URL in running text is not a resource — see the prose test below.
+  assert.doesNotThrow(() => assertNoRemoteResources('<p>see https://example.org/paper</p>', 'p.html'));
+  // …and a link the reader clicks is required by §7.6 and must pass.
   assert.doesNotThrow(() =>
     assertNoRemoteResources('<a href="https://doi.org/10.1/2">10.1/2</a>', 'page.html'),
+  );
+});
+
+test('a URL in prose does not abort the day — it loads nothing (§8 vs §7.6)', () => {
+  // Abstracts carry data-availability statements and summaries restate them.
+  // The scan looks at markup and at the stylesheet, never at running text.
+  const page =
+    '<style>body{color:#111}</style>' +
+    '<p>Data jsou veřejně dostupná na https://osf.io/ab12c a autoři je zpřístupnili všem.</p>';
+  assert.doesNotThrow(() => assertNoRemoteResources(page, 'page.html'));
+
+  // …while a real sub-resource in an attribute still stops the write.
+  assert.throws(
+    () => assertNoRemoteResources('<div style="background:url(https://x/y.png)"></div>', 'p.html'),
+    /forbids/,
   );
 });

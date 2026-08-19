@@ -16,7 +16,7 @@
 import { z } from 'zod';
 import type { Candidate, CategoryConfig, SourceAdapter, TopicRef } from '../types.js';
 import { isISODate, localDateISO } from '../util/dates.js';
-import { fetchJson } from '../util/http.js';
+import { fetchJson, HttpError } from '../util/http.js';
 import { nowOf, type AdapterDeps, type AdapterRegistration } from './deps.js';
 import { httpPolicy, requestOptions } from './deps.js';
 
@@ -284,8 +284,15 @@ function authHeaders(deps: AdapterDeps): Record<string, string> {
   const key = deps.secrets.openAlexApiKey;
   if (key) return { Authorization: `Bearer ${key}` };
   if (deps.config.sources.openalex.requireApiKey) {
-    throw new Error(
+    // Thrown as a 401 rather than a plain Error on purpose. The registry
+    // catches everything an adapter throws and turns it into a degradation —
+    // which would make `requireApiKey: true` do the silent thing it exists to
+    // prevent (A5). Only auth failures are re-thrown, so this is how a missing
+    // key takes the run down instead of quietly shrinking the page.
+    throw new HttpError(
       'OPENALEX_API_KEY is not set and sources.openalex.requireApiKey is true (§4.1)',
+      401,
+      deps.config.sources.openalex.baseUrl,
     );
   }
   deps.logger.warn(

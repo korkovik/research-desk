@@ -154,8 +154,17 @@ const MAX_CLAIMS = 12;
 const SHORT_EXAMPLE_WORDS = 15;
 const MIN_SPAN_COVERAGE = 0.7;
 
-/** Claim types where an unrelated quote is a fabrication signal, not a re-wording. */
-const HARD_RELEVANCE_TYPES = new Set<string>(['setting', 'application', 'mechanism']);
+/**
+ * Claim types where an unrelated quote is a fabrication signal rather than a
+ * lay re-wording.
+ *
+ * `other` is in the set for a different reason than the rest: the claim type is
+ * a field the MODEL chooses, so a rule keyed on it can be sidestepped by
+ * relabelling — an invented setting typed `other` fell straight back into the
+ * lenient path and passed. It appears zero times across the twelve recorded
+ * calibration responses, so closing the hatch costs nothing.
+ */
+const HARD_RELEVANCE_TYPES = new Set<string>(['setting', 'application', 'mechanism', 'other']);
 
 export function adjudicate(
   payload: VerificationPayload,

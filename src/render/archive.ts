@@ -60,26 +60,51 @@ export function dayOutputPaths(config: Config, repoRoot: string, date: string): 
 /**
  * Refuses to write a page that would fetch anything off the machine.
  *
- * A hyperlink the reader may click is required by §7.6; a sub-resource the
- * document loads is forbidden by §8. The check is that distinction: strip every
- * anchor, then nothing remote may remain.
+ * The distinction being enforced: a sub-resource the document LOADS is
+ * forbidden by §8; a hyperlink the reader may CLICK is required by §7.6.
+ *
+ * The subtlety is that a page's text is not markup. Summaries restate what
+ * abstracts say, and abstracts carry data-availability statements — a sentence
+ * ending "...available at https://osf.io/ab12c" reaches the page as an escaped
+ * text node that loads nothing. A naive scan of the whole document rejects it,
+ * and because this runs at write time that would abort the entire edition,
+ * after the full Claude spend, over a sentence. So the scan looks at the two
+ * places a request can actually come from — tags with their attributes, and the
+ * stylesheet — and never at running text.
  */
 export function assertNoRemoteResources(html: string, path: string): void {
-  const forbidden: [RegExp, string][] = [
+  // The stylesheet is a text node, so it has to be lifted out before text nodes
+  // are stripped, or the CSS rules below would be checking an empty string.
+  const css = [...html.matchAll(/<style\b[^>]*>([\s\S]*?)<\/style>/gi)]
+    .map((m) => m[1] ?? '')
+    .join('\n');
+  const markup = html.replace(/>[^<]*</g, '><');
+
+  const cssRules: [RegExp, string][] = [
+    [/@import/i, '@import'],
+    [/url\(\s*['"]?(?!data:)/i, 'a CSS url()'],
+  ];
+  for (const [pattern, what] of cssRules) {
+    if (pattern.test(css)) throw new Error(`${path} would load ${what} — §8 forbids it`);
+  }
+
+  const markupRules: [RegExp, string][] = [
     [/<link\b/i, '<link>'],
     [/<script\b[^>]*\bsrc=/i, '<script src>'],
     [/<(img|iframe|video|audio|object|embed|source|base)\b/i, 'a remote-capable element'],
-    [/@import/i, '@import'],
-    [/url\(\s*['"]?(?!data:)/i, 'a CSS url()'],
     [/localStorage|sessionStorage|indexedDB/, 'a storage API'],
+    [/\son[a-z]+\s*=/i, 'an inline event handler'],
   ];
-  for (const [pattern, what] of forbidden) {
-    if (pattern.test(html)) throw new Error(`${path} would load ${what} — §8 forbids it`);
+  for (const [pattern, what] of markupRules) {
+    if (pattern.test(markup)) throw new Error(`${path} would load or run ${what} — §8 forbids it`);
   }
-  const withoutAnchors = html.replace(/<a\b[^>]*>[\s\S]*?<\/a>/gi, '').replace(/<a\b[^>]*>/gi, '');
+
+  // Whatever remote URLs survive in markup after the anchors are removed are in
+  // attributes, which is the only place left that can issue a request.
+  const withoutAnchors = markup.replace(/<a\b[^>]*>/gi, '').replace(/<\/a>/gi, '');
   const remote = /https?:\/\//.exec(withoutAnchors);
   if (remote) {
-    throw new Error(`${path} carries a remote URL outside a link: ${remote[0]} — §8 forbids it`);
+    throw new Error(`${path} carries a remote URL in an attribute: ${remote[0]} — §8 forbids it`);
   }
 }
 
