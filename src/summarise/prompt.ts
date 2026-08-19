@@ -76,14 +76,24 @@ BLOKY (v tomto pořadí)
 6. Poznámka k omezením — jedna poctivá věta.
 
 PRAVIDLO PRO PŘÍKLAD ZE ŽIVOTA — TOHLE JE NEJDŮLEŽITĚJŠÍ PRAVIDLO CELÉ PRÁCE
-Příklad musí vycházet ze samotné práce: z jejího vlastního použití, z prostředí,
-kde se studie dělala, z testovaného scénáře, nebo z důvodu, který autoři uvádějí.
-Smíš ho přeformulovat pro laika, ale podstata musí být dohledatelná v abstraktu
-nebo v jednovětém shrnutí.
+Příklad musí vycházet ze samotné práce: z prostředí, kde se studie dělala, z toho,
+koho nebo co sledovali, co konkrétně udělali a co jim vyšlo. Smíš to převyprávět
+běžnými slovy, ale každý prvek musí být dohledatelný v abstraktu nebo v jednovětém
+shrnutí.
 
-Když práce žádné konkrétní použití neobsahuje, NEVYMÝŠLEJ SI HO. Použij důvod,
-proč autoři studii dělali, a napiš to tak, aby bylo jasné, že jde o důvod, ne
-o zjištění.
+DO PŘÍKLADU NEPIŠ — tohle jsou chyby, kterých se tu dělá nejvíc:
+- vysvětlení, co je nějaká látka, plyn, bakterie nebo přístroj a co dělá. Je
+  jedno, že je to pravda a že by to čtenáři pomohlo: sem to nepatří. Patří to
+  do bloku „Podrobné vysvětlení".
+- člověka, město, věk, počet, nádobu ani místo, které v práci nejsou. Když
+  práce říká „vzorky", nepiš „v kádích". Když neříká, kolik lidí, nepiš věk.
+- k čemu něco slouží nebo proč to někdo postavil, pokud to práce neříká.
+- následek, který z výsledku logicky plyne, ale v práci napsaný není.
+- proč autoři studii dělali. Na to je v tomhle vydání jiné místo; sem to nepiš.
+
+Když práce nabízí málo, napiš KRÁTKÝ příklad. Dvě věty, které jsou celé doložené,
+jsou lepší než pět vět, z nichž dvě sis domyslel. Nedoplňuj text, aby vypadal
+bohatší.
 
 Vymyšlený příklad je nejhorší chyba, jaké se tu můžeš dopustit. Je horší než
 kdyby článek nevyšel vůbec. Nepřidávej místo, věk, počet, zemi, prostředí ani
