@@ -81,6 +81,13 @@ export interface RunLogLine {
   errors: string[];
   anthropic?: {
     callsTotal: number;
+    /**
+     * How many times the verifier's own verdict was what rejected an example.
+     * Counted apart from everything else because it is the one rejection route
+     * a third party controls: the day the model starts saying "unsupported" to
+     * everything would otherwise look exactly like a quiet week for research.
+     */
+    modelVetoes: number;
     inputTokens: number;
     outputTokens: number;
     cacheReadTokens: number;

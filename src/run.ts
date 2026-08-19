@@ -28,6 +28,7 @@ import type {
   EnrichedCandidate,
   ScoredCandidate,
   Shortfall,
+  VerificationOutcome,
 } from './types.js';
 import { categoryForWeekday, displayName, type Config } from './config.js';
 import type { Secrets } from './env.js';
@@ -190,6 +191,7 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
   // ---- §7 summarisation, §7.4 verification ---------------------------------
   const entries: DigestEntry[] = [];
   const dropped: { id: string; reason: string; attempts: number }[] = [];
+  const droppedVerifications: (VerificationOutcome | null)[] = [];
   const queue = [...selection.selected];
   const reserve = [...selection.remainder];
   let topUps = 0;
@@ -255,6 +257,7 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
       reason: result.reason,
       attempts: result.verification?.attempts ?? 0,
     });
+    droppedVerifications.push(result.verification);
     degradations.push(degradationForDrop(result.reason, config));
 
     // §7.4: replace the dropped paper rather than publish short, but only from
@@ -331,6 +334,7 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
     errors: logger.errors(),
     anthropic: {
       callsTotal: llm.callCount(),
+      modelVetoes: countModelVetoes(entries, droppedVerifications),
       inputTokens: usage.inputTokens,
       outputTokens: usage.outputTokens,
       cacheReadTokens: usage.cacheReadTokens,
@@ -424,6 +428,22 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
  * are all zero because nothing was counted; the point is that the file is never
  * silent about a run that happened.
  */
+/**
+ * DESIGN-NOTES C.3.5 wants the gap between what the model concluded and what the
+ * code concluded tracked as a drift signal. The veto is the sharp end of it.
+ */
+function countModelVetoes(
+  entries: readonly DigestEntry[],
+  droppedVerifications: readonly (VerificationOutcome | null)[],
+): number {
+  const all = [...entries.map((e) => e.verification), ...droppedVerifications];
+  return all
+    .filter((v): v is VerificationOutcome => v !== null)
+    .flatMap((v) => v.rejections)
+    .flatMap((r) => r.unsupportedClaims)
+    .filter((claim) => claim.startsWith('MODEL_VETO')).length;
+}
+
 function writeStartupFailureLog(
   options: RunOptions,
   date: string,

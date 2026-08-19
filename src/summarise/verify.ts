@@ -316,8 +316,9 @@ export function adjudicate(
     // whose English text faithfully describes the abstract while their spans
     // point at invented Czech — and pass. Numbers are the part of an invented
     // sentence that survives translation, so they are where that split shows.
+    const accounted = numbersIn(`${claim.claimText} ${quote}`);
     for (const value of numbersIn(claim.exampleSpan)) {
-      if (!numbersIn(`${claim.claimText} ${quote}`).has(value)) {
+      if (!isAccountedFor(value, accounted)) {
         add('V9_UNACCOUNTED_NUMBER', claim.id, `${value} appears in the Czech but in nothing supporting it`);
       }
     }
@@ -391,6 +392,31 @@ function numbersIn(text: string): Set<string> {
     }
   }
   return out;
+}
+
+/**
+ * Whether a number in the Czech is answered by one in the claim or the quote.
+ *
+ * Not equality, because §7.3 asks the writer to round for a lay reader: a source
+ * reporting 92.3 % becomes "about 92" in the example, and a verifier that
+ * restates the source's precise figure rather than the rounded one would
+ * otherwise sink a genuinely supported paper. The tolerance is deliberately
+ * tiny — a rounding, or one part in a hundred — so it cannot reach an invented
+ * figure. Nothing in a fabricated example lands within 1 % of a real one by
+ * accident; "a thousand crowns" is not a rounding of anything in an abstract.
+ */
+function isAccountedFor(value: string, accounted: ReadonlySet<string>): boolean {
+  if (accounted.has(value)) return true;
+  const target = Number(value);
+  if (!Number.isFinite(target)) return false;
+  for (const candidate of accounted) {
+    const other = Number(candidate);
+    if (!Number.isFinite(other)) continue;
+    if (Math.round(other) === target || Math.round(target) === other) return true;
+    const scale = Math.max(Math.abs(target), Math.abs(other));
+    if (scale > 0 && Math.abs(target - other) / scale <= 0.01) return true;
+  }
+  return false;
 }
 
 function intersects(a: Set<string>, b: Set<string>): boolean {

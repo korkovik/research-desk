@@ -249,3 +249,24 @@ test('quote matching survives curly quotes, dashes and collapsed whitespace', ()
   const report = adjudicate(payload(claims), EXAMPLE, SOURCE);
   assert.equal(report.verdict, 'supported');
 });
+
+test('V9 accepts a lay rounding but not an invented figure', () => {
+  // §7.3 asks the writer to round for the reader, so a source reporting 92.3 %
+  // becomes "about 92" — and a verifier restating the precise figure must not
+  // sink the paper for it. Found by measuring the rule against the calibration
+  // set rather than by reasoning about it.
+  const rounded = structuredClone(GOOD_CLAIMS);
+  rounded[1]!.exampleSpan = 'Studenti pak spali každou školní noc v průměru o 26 minut déle.';
+  rounded[1]!.claimText = 'Students slept 26.4 minutes longer per school night';
+  rounded[1]!.sourceQuote = 'slept on average 26 minutes longer per school night';
+  assert.equal(adjudicate(payload(rounded), EXAMPLE, SOURCE).verdict, 'supported');
+
+  // The tolerance is a rounding, not a licence: an invented magnitude is
+  // nowhere near a real one.
+  const invented = structuredClone(GOOD_CLAIMS);
+  invented[1]!.exampleSpan = 'Studenti pak spali každou školní noc v průměru o 26 minut déle.';
+  invented[1]!.claimText = 'Students slept 90 minutes longer per school night';
+  invented[1]!.sourceQuote = 'End-of-year grade point averages did not differ between the two groups';
+  const report = adjudicate(payload(invented), EXAMPLE, SOURCE);
+  assert.equal(report.verdict, 'unsupported');
+});
