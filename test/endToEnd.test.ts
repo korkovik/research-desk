@@ -18,7 +18,13 @@ import { runDay } from '../src/run.js';
 import { assertNoRemoteResources } from '../src/render/archive.js';
 import { passesExplainabilityGate } from '../src/select/score.js';
 import type { DayDigest } from '../src/types.js';
-import { HonestLlm, makeFetchImpl, makeWorkspace, type FetchLog } from './support/pipelineHarness.js';
+import {
+  HonestLlm,
+  makeFetchImpl,
+  makeWorkspace,
+  type FetchLog,
+  type FixtureName,
+} from './support/pipelineHarness.js';
 import type { LlmClient, LlmRequest, LlmResult } from '../src/summarise/client.js';
 
 const NO_SECRETS = { openAlexApiKey: null, semanticScholarApiKey: null, anthropicApiKey: null };
@@ -40,7 +46,7 @@ function fakeClock(): { now: () => number; sleep: (ms: number) => Promise<void> 
   };
 }
 
-function runOn(root: string, date: string, workCount = 25) {
+function runOn(root: string, date: string, workCount = 25, fixture: FixtureName = 'psychology') {
   const log: FetchLog = { urls: [] };
   return {
     log,
@@ -52,7 +58,7 @@ function runOn(root: string, date: string, workCount = 25) {
       dryRun: false,
       date,
       llm: new HonestLlm(),
-      fetchImpl: makeFetchImpl(date, log, workCount),
+      fetchImpl: makeFetchImpl(date, log, workCount, fixture),
       clock: fakeClock(),
     }),
   };
@@ -406,4 +412,29 @@ test('§8: a second run for a day already published is refused, not silently rep
   // …and the refusal is still a run, so it leaves a line in the log §9 requires.
   const lines = readFileSync(join(root, 'logs', 'run.log'), 'utf8').trim().split('\n');
   assert.equal(lines.length, 2);
+});
+
+test('a healthy day publishes the full five with no shortfall and no degradation', async () => {
+  // The psychology fixture contains two real duplicate pairs, so once they are
+  // collapsed it cannot fill five slots — which means no test on it can guard
+  // the ordinary, everything-worked path. This one runs on the climate capture:
+  // 40 records, 40 distinct titles, 14 subfields.
+  const root = makeWorkspace();
+  const config = loadConfig(root);
+  const result = await runOn(root, '2026-08-19', 40, 'climate').promise;
+
+  assert.equal(result.outcome, 'published', 'a healthy day should not be degraded');
+  assert.equal(result.digest?.entries.length, config.output.papersPerDay);
+  assert.equal(result.digest?.shortfall, null);
+  assert.deepEqual(result.digest?.degradations, []);
+
+  // …and §6's constraint still holds on a real, varied pool.
+  const counts = new Map<string, number>();
+  for (const entry of result.digest?.entries ?? []) {
+    const key = entry.candidate.score.subfieldKey;
+    counts.set(key, (counts.get(key) ?? 0) + 1);
+  }
+  for (const [key, count] of counts) {
+    assert.ok(count <= config.ranking.maxPerSubfield, `${count} papers from ${key}`);
+  }
 });

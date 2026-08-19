@@ -37,9 +37,23 @@ interface OpenAlexWork {
  * failing on §6's seven-day rule for a reason that has nothing to do with the
  * code under test.
  */
-export function openAlexFixture(runDate: string, count: number): string {
+export type FixtureName = 'psychology' | 'climate';
+
+/**
+ * `psychology` is the original capture and contains two real duplicate pairs —
+ * one Zenodo deposit under consecutive DOIs, twice — which is why it is worth
+ * keeping: it is the fixture that proves the within-day same-paper collapse.
+ * It leaves too few distinct records for a full five-paper day, so `climate`
+ * (40 records, 40 distinct titles, 14 subfields) is the one to use when the
+ * test is about the no-shortfall path.
+ */
+export function openAlexFixture(
+  runDate: string,
+  count: number,
+  fixture: FixtureName = 'psychology',
+): string {
   const raw: unknown = JSON.parse(
-    readFileSync(join(REPO, 'test/fixtures/openalex-works-psychology.json'), 'utf8'),
+    readFileSync(join(REPO, `test/fixtures/openalex-works-${fixture}.json`), 'utf8'),
   );
   const parsed = raw as { results: OpenAlexWork[]; meta: Record<string, unknown> };
   const results = parsed.results.slice(0, count).map((work, index) => ({
@@ -66,12 +80,19 @@ export interface FetchLog {
  * case for very recent papers and exercises §4.2's "do not skip the paper for
  * this reason alone" path.
  */
-export function makeFetchImpl(runDate: string, log: FetchLog, workCount = 25): typeof fetch {
+export function makeFetchImpl(
+  runDate: string,
+  log: FetchLog,
+  workCount = 25,
+  fixture: FixtureName = 'psychology',
+): typeof fetch {
   return (input: string | URL | Request): Promise<Response> => {
     const url = typeof input === 'string' ? input : input instanceof URL ? input.href : input.url;
     log.urls.push(url);
     if (url.includes('api.openalex.org')) {
-      return Promise.resolve(new Response(openAlexFixture(runDate, workCount), { status: 200 }));
+      return Promise.resolve(
+        new Response(openAlexFixture(runDate, workCount, fixture), { status: 200 }),
+      );
     }
     if (url.includes('semanticscholar.org')) {
       return Promise.resolve(new Response(JSON.stringify({ error: 'not found' }), { status: 404 }));

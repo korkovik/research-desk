@@ -307,25 +307,31 @@ export function adjudicate(
       add('V7_MAGNITUDE_UNSUPPORTED', claim.id, `no number in the quote: ${truncate(quote)}`);
     }
 
-    // V9 — every number in the Czech text this claim points at must appear in
-    // what the claim says about it, or in the quote supporting it.
-    //
-    // This is the one rule that connects the two halves of a claim. Everything
-    // else checks the span against the example and the quote against the
-    // source, so a verifier can decompose a fabricated example into claims
-    // whose English text faithfully describes the abstract while their spans
-    // point at invented Czech — and pass. Numbers are the part of an invented
-    // sentence that survives translation, so they are where that split shows.
-    const accounted = numbersIn(`${claim.claimText} ${quote}`);
-    for (const value of numbersIn(claim.exampleSpan)) {
-      if (!isAccountedFor(value, accounted)) {
-        add('V9_UNACCOUNTED_NUMBER', claim.id, `${value} appears in the Czech but in nothing supporting it`);
-      }
-    }
-
     // V8 — a venue string names a journal. It cannot explain a mechanism.
     if (claim.claimType === 'mechanism' && claim.quoteField === 'venue') {
       add('V8_VENUE_CANNOT_SUPPORT_MECHANISM', claim.id, truncate(quote));
+    }
+  }
+
+  // V9 — every magnitude asserted in the Czech must appear in something
+  // supporting it: some claim's text, or some quote.
+  //
+  // This is the one rule connecting the two halves of a claim. Everything else
+  // checks a span against the example and a quote against the source, so a
+  // verifier can decompose a fabricated example into claims whose English text
+  // faithfully describes the abstract while their spans point at invented
+  // Czech — and pass every rule. A magnitude is the part of an invented
+  // sentence that survives the language boundary, so it is where that split
+  // shows.
+  //
+  // Judged over the WHOLE example rather than per claim, for two reasons found
+  // by testing it: per claim, a wide span made one claim answerable for a
+  // figure belonging to its neighbour; and it could be evaded by ending a span
+  // one word before the number, which V6 barely noticed.
+  const accounted = numbersIn(claims.map((c) => `${c.claimText} ${c.sourceQuote ?? ''}`).join(' '));
+  for (const value of magnitudesIn(example)) {
+    if (!isAccountedFor(value, accounted)) {
+      add('V9_UNACCOUNTED_NUMBER', null, `${value} is asserted in the Czech but appears in nothing supporting it`);
     }
   }
 
@@ -382,7 +388,9 @@ export function adjudicate(
  */
 function numbersIn(text: string): Set<string> {
   const out = new Set<string>();
-  for (const match of text.matchAll(/\d+(?:[.,]\d+)?/gu)) {
+  // Not preceded by a letter, so the 19 in COVID-19, the 2.5 in PM2.5 and the 3
+  // in omega-3 are names rather than numbers.
+  for (const match of text.matchAll(/(?<!\p{L})\d+(?:[.,]\d+)?/gu)) {
     const token = match[0].replace(',', '.');
     if (token.includes('.')) {
       const [whole = '0', fraction = ''] = token.split('.');
@@ -393,6 +401,64 @@ function numbersIn(text: string): Set<string> {
   }
   return out;
 }
+
+/**
+ * The numbers in the Czech text that actually assert a magnitude.
+ *
+ * A bare integer is usually not one. §7 is full of numbers that are context or
+ * lay arithmetic rather than claims: a year, a digit inside a name, and above
+ * all §7.3's mandated anchor — "o 12 % — tedy zhruba jeden člověk z osmi", where
+ * the eight is derived from the twelve and appears in no source. Checking those
+ * rejects exactly the writing the spec asks for. What a fabricated example
+ * asserts, and what every attack payload used, is a number wearing a unit.
+ */
+function magnitudesIn(text: string): Set<string> {
+  const out = new Set<string>();
+  const pattern = new RegExp(
+    String.raw`(?<!\p{L})(\d+(?:[.,]\d+)?)\s*(%|‰|×|°|` +
+      MAGNITUDE_UNITS.join('|') +
+      String.raw`)(?!\p{L})`,
+    'giu',
+  );
+  for (const match of text.matchAll(pattern)) {
+    const token = (match[1] ?? '').replace(',', '.');
+    if (token.includes('.')) {
+      const [whole = '0', fraction = ''] = token.split('.');
+      out.add(`${String(Number(whole))}.${fraction.replace(/0+$/u, '') || '0'}`);
+    } else {
+      out.add(String(Number(token)));
+    }
+  }
+  return out;
+}
+
+/** Czech unit words that turn a number into an assertion about size. */
+const MAGNITUDE_UNITS = [
+  'procent\\p{L}*',
+  'promile',
+  'krát',
+  'násob\\p{L}*',
+  'minut\\p{L}*',
+  'hodin\\p{L}*',
+  'sekund\\p{L}*',
+  'dn[ůí]',
+  'dní',
+  'týdn\\p{L}*',
+  'měsíc\\p{L}*',
+  'rok\\p{L}*',
+  'let',
+  'korun',
+  'stup[nň]\\p{L}*',
+  'kilogram\\p{L}*',
+  'gram\\p{L}*',
+  'kilometr\\p{L}*',
+  'metr\\p{L}*',
+  'litr\\p{L}*',
+  'tun\\p{L}*',
+  'miliard\\p{L}*',
+  'milion\\p{L}*',
+  'tisíc\\p{L}*',
+];
 
 /**
  * Whether a number in the Czech is answered by one in the claim or the quote.
