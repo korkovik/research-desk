@@ -410,17 +410,19 @@ function numbersIn(text: string): Set<string> {
  * all §7.3's mandated anchor — "o 12 % — tedy zhruba jeden člověk z osmi", where
  * the eight is derived from the twelve and appears in no source. Checking those
  * rejects exactly the writing the spec asks for. What a fabricated example
- * asserts, and what every attack payload used, is a number wearing a unit.
+ * asserts is a number wearing a unit.
+ *
+ * Which makes the breadth of the unit list load-bearing, and it is easy to get
+ * wrong in ways that are invisible until measured. Two that were: a trailing
+ * "not a letter" guard on the whole alternation silently killed `°C` — the
+ * degree sign matched and the C failed the guard — which is the single worst
+ * unit to miss for a digest whose Wednesday is climate and Saturday is physics.
+ * And SI prefixes were enumerated rather than composed, so `gram` was known and
+ * `miligramů` was not.
  */
 function magnitudesIn(text: string): Set<string> {
   const out = new Set<string>();
-  const pattern = new RegExp(
-    String.raw`(?<!\p{L})(\d+(?:[.,]\d+)?)\s*(%|‰|×|°|` +
-      MAGNITUDE_UNITS.join('|') +
-      String.raw`)(?!\p{L})`,
-    'giu',
-  );
-  for (const match of text.matchAll(pattern)) {
+  for (const match of text.matchAll(MAGNITUDE_PATTERN)) {
     const token = (match[1] ?? '').replace(',', '.');
     if (token.includes('.')) {
       const [whole = '0', fraction = ''] = token.split('.');
@@ -432,33 +434,50 @@ function magnitudesIn(text: string): Set<string> {
   return out;
 }
 
-/** Czech unit words that turn a number into an assertion about size. */
-const MAGNITUDE_UNITS = [
-  'procent\\p{L}*',
-  'promile',
-  'krát',
-  'násob\\p{L}*',
-  'minut\\p{L}*',
-  'hodin\\p{L}*',
-  'sekund\\p{L}*',
-  'dn[ůí]',
-  'dní',
-  'týdn\\p{L}*',
-  'měsíc\\p{L}*',
-  'rok\\p{L}*',
-  'let',
-  'korun',
-  'stup[nň]\\p{L}*',
-  'kilogram\\p{L}*',
-  'gram\\p{L}*',
-  'kilometr\\p{L}*',
-  'metr\\p{L}*',
-  'litr\\p{L}*',
-  'tun\\p{L}*',
-  'miliard\\p{L}*',
-  'milion\\p{L}*',
-  'tisíc\\p{L}*',
-];
+/** SI prefixes, composed onto the bases below rather than spelled out per unit. */
+const SI_PREFIXES = '(?:nano|mikro|mili|centi|deci|deka|hekto|kilo|mega|giga|tera)?';
+
+/**
+ * Czech unit words, one entry per base. The categories of §5 decide what belongs
+ * here: energy and physics on Saturday, climate on Wednesday, medicine on
+ * Tuesday, money on Friday.
+ */
+const UNIT_BASES = [
+  // proportion and multiplication
+  'procent', 'promile', 'krát', 'násob', 'bod[uů]', 'p\\.\\s?b\\.',
+  // time
+  'sekund', 'minut', 'hodin', 'dn[ůí]', 'dní', 'týdn', 'měsíc', 'rok', 'roků', 'let',
+  // mass, volume, length, area
+  'gram', 'tun', 'litr', 'metr', 'míl', 'hektar', 'ar[uů]',
+  // energy, power, electricity, mechanics
+  'watt', 'watthodin', 'joul', 'kalori', 'volt', 'ampér', 'ohm', 'hertz', 'newton',
+  'pascal', 'bar', 'decibel', 'kelvin', 'stup[nň]',
+  // money
+  'korun', 'eur', 'dolar', 'centů',
+  // clinical and environmental
+  'tep[uů]', 'úder[uů]', 'případ', 'úmrtí', 'obyvatel',
+] as const;
+
+/**
+ * Symbols and abbreviations. Kept apart from the word list because they take a
+ * different boundary rule: `°C` and `km/h` end in letters that a "not a letter"
+ * guard would reject, while `procent` needs that guard so it does not match
+ * inside a longer word.
+ */
+const UNIT_SYMBOLS = [
+  '%', '‰', '×', '°\\s?[CF]', '°', '€', '\\$', 'Kč',
+  'km/h', 'm/s', 'kWh', 'MWh', 'kW', 'MW', 'GW', 'kJ', 'MJ',
+  'ppm', 'ppb', 'dB', 'Hz', 'kHz', 'MHz', 'GHz',
+  'mg', 'µg', 'μg', 'kg', 'mm', 'cm', 'km', 'ml', 'dl', 'hl', 'ha', 'm2', 'm3', 'km2',
+] as const;
+
+const MAGNITUDE_PATTERN = new RegExp(
+  String.raw`(?<!\p{L})(\d+(?:[.,]\d+)?)\s*(?:` +
+    `(?:${UNIT_SYMBOLS.join('|')})` +
+    String.raw`|(?:${SI_PREFIXES}(?:${UNIT_BASES.join('|')})\p{L}*)(?!\p{L})` +
+    ')',
+  'giu',
+);
 
 /**
  * Whether a number in the Czech is answered by one in the claim or the quote.

@@ -270,3 +270,50 @@ test('V9 accepts a lay rounding but not an invented figure', () => {
   const report = adjudicate(payload(invented), EXAMPLE, SOURCE);
   assert.equal(report.verdict, 'unsupported');
 });
+
+test('V9 sees the units the seven categories actually produce', () => {
+  // Found by measurement, not by reading: a trailing "not a letter" guard on the
+  // whole alternation silently killed °C — the degree sign matched and the C
+  // failed the guard — which is the worst single unit to miss for a digest whose
+  // Wednesday is climate and Saturday is physics. And SI prefixes were spelled
+  // out one at a time, so `gram` was known and `miligramů` was not.
+  const claims = structuredClone(GOOD_CLAIMS);
+  claims[0]!.claimType = 'outcome';
+  claims[0]!.claimText = 'Students slept longer';
+  claims[1]!.claimText = 'Students slept longer';
+  claims[1]!.sourceQuote = 'slept on average 26 minutes longer per school night';
+
+  for (const invented of [
+    'Venku bylo o 10 °C tepleji.',
+    'Spotřeba klesla o 40 kWh.',
+    'Do vody se dostalo 5 miligramů látky.',
+    'Hluk stoupl o 12 decibelů.',
+    'Rodina ušetřila 900 eur.',
+    'Tlak spadl o 2 bary.',
+    'Naměřili 300 ppm.',
+  ]) {
+    claims[0]!.exampleSpan = invented;
+    claims[1]!.exampleSpan = invented;
+    const report = adjudicate(payload(claims), invented, SOURCE);
+    assert.equal(report.verdict, 'unsupported', `V9 did not see the magnitude in: ${invented}`);
+    assert.ok(report.failures.some((f) => f.code === 'V9_UNACCOUNTED_NUMBER'), invented);
+  }
+
+  // …and the things that are not magnitudes stay invisible to it.
+  for (const innocent of [
+    'Studie se týkala covidu-19 a proběhla v roce 2023.',
+    'Postihlo to zhruba 1 z 8 lidí.',
+    'Z každých 100 lidí jich bylo méně.',
+  ]) {
+    claims[0]!.exampleSpan = innocent;
+    claims[1]!.exampleSpan = innocent;
+    claims[0]!.claimText = 'The study concerned respiratory illness';
+    claims[0]!.sourceQuote = 'we followed 4,213 students aged 13 to 17 in 21 secondary schools';
+    const report = adjudicate(payload(claims), innocent, SOURCE);
+    assert.equal(
+      report.failures.some((f) => f.code === 'V9_UNACCOUNTED_NUMBER'),
+      false,
+      `V9 wrongly flagged: ${innocent}`,
+    );
+  }
+});
