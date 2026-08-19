@@ -133,10 +133,15 @@ function renderPaper(
       n: String(position),
       total: String(total),
     })}</p>`,
-    // The summary paragraph is the paper's opening and needs no heading of its
+    // The summary paragraph is the paper's opening and has no heading of its
     // own — it replaced a headline plus a two-sentence preamble that were two
     // ways of saying the same thing before the reader reached anything new.
-    `<div class="summary">${paragraphsHtml(summary.souhrn)}</div>`,
+    //
+    // Its first sentence is emphasised, which is typography rather than a
+    // second block: on a phone the paragraph fills the screen, and without
+    // something for the eye to land on the reader cannot tell what the paper is
+    // about without reading all of it. One rule in the stylesheet reverts it.
+    `<div class="summary">${leadingSentenceHtml(summary.souhrn)}</div>`,
   ];
 
   // §4.3 — a preprint says so in plain words, next to the title where nobody
@@ -296,6 +301,22 @@ function degradationMessage(degradation: Degradation, strings: StringTable): str
  * sentence — which is what the generator is told to lead with. Falls back to a
  * clipped opening when the paragraph has no sentence break near the start.
  */
+/**
+ * The summary paragraph with its opening sentence marked up for emphasis.
+ *
+ * Falls back to the plain paragraph when there is no sentence break in the
+ * first 180 characters — an unbroken opening is exactly the case where an
+ * arbitrary cut would read worse than none.
+ */
+function leadingSentenceHtml(souhrn: string): string {
+  const trimmed = souhrn.trim();
+  const match = /^[\s\S]{20,180}?[.!?](?=\s)/u.exec(trimmed);
+  if (!match) return paragraphsHtml(trimmed);
+  const lead = match[0];
+  const rest = trimmed.slice(lead.length).trim();
+  return `<p><span class="lead">${escapeHtml(lead)}</span> ${escapeHtml(rest)}</p>`;
+}
+
 export function paperTitles(entries: readonly DigestEntry[]): string[] {
   return entries.map((entry) => entry.summary.souhrn);
 }

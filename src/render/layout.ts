@@ -104,6 +104,7 @@ export function renderDocument(options: DocumentOptions): string {
 <title>${escapeHtml(options.title)}</title>
 <style>
 ${STYLESHEET}
+  .summary .lead { font-weight: 600; }
 </style>
 </head>
 <body>

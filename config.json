@@ -51,7 +51,8 @@
     "model": "claude-opus-5",
     "effort": "high",
     "maxTokens": 16000,
-    "maxRegenerationAttempts": 2
+    "maxRegenerationAttempts": 2,
+    "_effort": "Measured on 19 Aug: dropping this to medium saved 12% (\u00240.623 to \u00240.545 for five papers) and doubled the style findings that survived the regeneration budget, from 4 to 8, while pushing regeneration attempts from 9 to 13. The extra regenerations eat most of the saving and the output is worse. Left at high."
   },
 
   "style": {
