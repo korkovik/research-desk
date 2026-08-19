@@ -15,23 +15,31 @@ export interface Logger {
   info(message: string): void;
   warn(message: string): void;
   error(message: string): void;
-  /** Everything warn-or-worse said this run, for the run-log line. */
-  problems(): string[];
+  /**
+   * Kept apart on purpose. A run reports "no key set" and "the site name is
+   * still a TODO" as warnings every morning; folding those in with real errors
+   * would put `errors: 2` on every healthy day's log line, and a number that is
+   * never zero is a number nobody reads.
+   */
+  warnings(): string[];
+  errors(): string[];
 }
 
 export function createLogger(sink: (level: LogLevel, message: string) => void = consoleSink): Logger {
-  const problems: string[] = [];
+  const warnings: string[] = [];
+  const errors: string[] = [];
   return {
     info: (m) => sink('info', m),
     warn: (m) => {
-      problems.push(m);
+      warnings.push(m);
       sink('warn', m);
     },
     error: (m) => {
-      problems.push(m);
+      errors.push(m);
       sink('error', m);
     },
-    problems: () => [...problems],
+    warnings: () => [...warnings],
+    errors: () => [...errors],
   };
 }
 
@@ -69,6 +77,7 @@ export interface RunLogLine {
     dropped: { id: string; reason: string; attempts: number }[];
   };
   degradations: string[];
+  warnings: string[];
   errors: string[];
   anthropic?: {
     callsTotal: number;
@@ -94,5 +103,6 @@ export function summarise(line: Omit<RunLogLine, 'summary'>): string {
   ];
   if (line.degradations.length > 0) parts.push(`degraded: ${line.degradations.join(',')}`);
   if (line.errors.length > 0) parts.push(`errors: ${line.errors.length}`);
+  else if (line.warnings.length > 0) parts.push(`warnings: ${line.warnings.length}`);
   return parts.join(' ');
 }

@@ -268,6 +268,7 @@ test('§6: a top-up after a dropped paper still respects the diversity cap', asy
       return honest.complete(request);
     },
     totalUsage: () => honest.totalUsage(),
+    callCount: () => honest.callCount(),
   };
 
   const result = await runDay({

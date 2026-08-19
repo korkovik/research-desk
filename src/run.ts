@@ -266,9 +266,10 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
       dropped,
     },
     degradations: degradations.map((d) => d.source),
-    errors: logger.problems(),
+    warnings: logger.warnings(),
+    errors: logger.errors(),
     anthropic: {
-      callsTotal: 0,
+      callsTotal: llm.callCount(),
       inputTokens: usage.inputTokens,
       outputTokens: usage.outputTokens,
       cacheReadTokens: usage.cacheReadTokens,

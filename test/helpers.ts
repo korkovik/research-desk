@@ -42,7 +42,8 @@ export function testLogger(): RecordingLogger {
     info: (m) => lines.push(`info ${m}`),
     warn: (m) => lines.push(`warn ${m}`),
     error: (m) => lines.push(`error ${m}`),
-    problems: () => lines.filter((l) => !l.startsWith('info ')),
+    warnings: () => lines.filter((l) => l.startsWith('warn ')),
+    errors: () => lines.filter((l) => l.startsWith('error ')),
   };
 }
 

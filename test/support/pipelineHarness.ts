@@ -172,6 +172,10 @@ export class HonestLlm implements LlmClient {
   totalUsage(): LlmUsage {
     return NO_USAGE;
   }
+
+  callCount(): number {
+    return this.calls.length;
+  }
 }
 
 /**

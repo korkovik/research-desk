@@ -43,6 +43,10 @@ export class StubLlm implements LlmClient {
   totalUsage(): LlmUsage {
     return NO_USAGE;
   }
+
+  callCount(): number {
+    return this.calls.length;
+  }
 }
 
 /** Returns a different value on each successive call, last one repeating. */

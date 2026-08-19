@@ -65,8 +65,9 @@ own. Put Research Desk's key in
 
 Two Claude calls per paper — one to write the six blocks, one to check that the
 "Příklad ze života" is really traceable to the paper — plus an optional
-adversarial third, plus whatever regeneration the checks demand. Typically
-**12–17 calls a day** for five papers.
+adversarial third, plus whatever regeneration the checks demand. A clean run makes
+**exactly 15 calls** for five papers — measured, not estimated: five to write, five
+to verify, five to challenge — and more whenever a block has to be regenerated.
 
 Measured prompt sizes and estimated tokens, at `claude-opus-5`
 ($5 / $25 per million tokens in / out), `effort: high`, challenge pass on:

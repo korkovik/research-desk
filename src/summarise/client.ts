@@ -53,6 +53,8 @@ export interface LlmClient {
   complete<T>(request: LlmRequest<T>): Promise<LlmResult<T>>;
   /** Everything spent this run, for the cost line in the run log. */
   totalUsage(): LlmUsage;
+  /** How many calls this run made, including retries and regenerations. */
+  callCount(): number;
 }
 
 export class LlmError extends Error {
@@ -108,12 +110,14 @@ export function estimateCostUsd(usage: LlmUsage, model: string): number | null {
 export class AnthropicLlmClient implements LlmClient {
   private readonly sdk: Anthropic;
   private spent: LlmUsage = ZERO;
+  private calls = 0;
 
   constructor(apiKey: string, sdk?: Anthropic) {
     this.sdk = sdk ?? new Anthropic({ apiKey });
   }
 
   async complete<T>(request: LlmRequest<T>): Promise<LlmResult<T>> {
+    this.calls += 1;
     try {
       const response = await this.sdk.messages.parse({
         model: request.model,
@@ -169,5 +173,9 @@ export class AnthropicLlmClient implements LlmClient {
 
   totalUsage(): LlmUsage {
     return this.spent;
+  }
+
+  callCount(): number {
+    return this.calls;
   }
 }
