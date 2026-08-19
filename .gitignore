@@ -20,6 +20,12 @@ dist/
 # Mac mini's backup to include it.
 archive/*.html
 archive/*.json
+# The index is generated from the twins by `research-desk rerender`, so it is
+# output like the pages it links to. Tracking it while ignoring them left a
+# fresh clone with an index full of dead links — the two have to agree, and
+# assumption A12 already decided which way: the repository is the code, the
+# archive is what the code makes.
+/index.html
 logs/*.log
 state/*.json
 
