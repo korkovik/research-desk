@@ -438,3 +438,30 @@ test('a healthy day publishes the full five with no shortfall and no degradation
     assert.ok(count <= config.ranking.maxPerSubfield, `${count} papers from ${key}`);
   }
 });
+
+test('--discover-only stops after selection, writes nothing, needs no Anthropic key', async () => {
+  const root = makeWorkspace();
+  const log: FetchLog = { urls: [] };
+  const result = await runDay({
+    repoRoot: root,
+    config: loadConfig(root),
+    secrets: NO_SECRETS, // no Anthropic key at all
+    logger: quiet(),
+    dryRun: false,
+    date: '2026-08-19',
+    discoverOnly: true,
+    fetchImpl: makeFetchImpl('2026-08-19', log, 40, 'climate'),
+    clock: fakeClock(),
+  });
+
+  // It reached the sources, so selection really ran…
+  assert.ok(log.urls.some((u) => u.includes('api.openalex.org')));
+  // …and it stopped before anything that costs Claude tokens or writes a file.
+  assert.equal(result.outcome, 'aborted');
+  assert.equal(result.exitCode, 0, 'discover-only is not a failure');
+  assert.equal(result.digest, null);
+  assert.equal(existsSync(join(root, 'archive', '2026-08-19.html')), false);
+  assert.equal(existsSync(join(root, 'state', 'seen.json')), false);
+  // The run is still on the record.
+  assert.ok(readFileSync(join(root, 'logs', 'run.log'), 'utf8').includes('discover-only'));
+});

@@ -58,6 +58,16 @@ export interface RunOptions {
   date?: string;
   /** Republish a date that already has a page. See the guard in `runDay`. */
   force?: boolean;
+  /**
+   * Stop after selection (§3 steps 1–4) and write nothing.
+   *
+   * Everything up to this point costs source-API quota and no Claude tokens, so
+   * this is how you see which five papers a day would pick — to tune the §6
+   * weights, or to check a category is finding the right corner of the
+   * literature — without paying to summarise them. It is also the only part of
+   * the pipeline that can run at all before an Anthropic key exists.
+   */
+  discoverOnly?: boolean;
   /** Injected by tests. */
   llm?: LlmClient;
   fetchImpl?: typeof fetch | undefined;
@@ -104,7 +114,7 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
   // this, a run with no Anthropic key spends its OpenAlex credits and 22 seconds
   // of Semantic Scholar pacing before discovering it cannot write a word — and
   // on the unkeyed allowance those credits are a meaningful fraction of the day.
-  const llm = options.llm ?? createLlmClient(options);
+  const llm = options.discoverOnly === true ? null : (options.llm ?? createLlmClient(options));
 
   // A second run for a date that already published is refused.
   //
@@ -187,6 +197,31 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
   );
   if (selection.flags.diversityRelaxed) logger.warn('diversity cap was relaxed to reach the target');
   if (selection.flags.explainGateWaived) logger.warn('explainability gate was waived to reach the minimum');
+
+  if (llm === null) {
+    logger.info(
+      `discover-only: ${selection.selected.length} paper(s) would be summarised — ` +
+        selection.selected
+          .map((c) => `\n  ${c.score.total.toFixed(3)}  ${c.id}  ${c.title.slice(0, 88)}`)
+          .join(''),
+    );
+    const line = {
+      ...startupLogBase(date, category, started, logger),
+      level: 'INFO' as const,
+      outcome: 'aborted' as const,
+      candidates: {
+        fetched,
+        afterExclusions: shortlisting.ranked.length,
+        exclusionReasons: shortlisting.exclusionCounts,
+        selected: selection.selected.length,
+        verified: 0,
+        dropped: [],
+      },
+      degradations: degradations.map((d) => d.source),
+    };
+    writeRunLog(options, { ...line, summary: `discover-only ${summariseRunLog(line)}` });
+    return { outcome: 'aborted', date, digest: null, exitCode: 0 };
+  }
 
   // ---- §7 summarisation, §7.4 verification ---------------------------------
   const entries: DigestEntry[] = [];
@@ -444,14 +479,13 @@ function countModelVetoes(
     .filter((claim) => claim.startsWith('MODEL_VETO')).length;
 }
 
-function writeStartupFailureLog(
-  options: RunOptions,
+function startupLogBase(
   date: string,
   category: { key: string; labelCs: string },
   started: number,
   logger: Logger,
-): void {
-  const line: Omit<RunLogLine, 'summary'> = {
+): Omit<RunLogLine, 'summary'> {
+  return {
     ts: new Date(started).toISOString(),
     runId: date,
     level: 'FATAL',
@@ -471,6 +505,16 @@ function writeStartupFailureLog(
     warnings: logger.warnings(),
     errors: logger.errors(),
   };
+}
+
+function writeStartupFailureLog(
+  options: RunOptions,
+  date: string,
+  category: { key: string; labelCs: string },
+  started: number,
+  logger: Logger,
+): void {
+  const line = startupLogBase(date, category, started, logger);
   writeRunLog(options, { ...line, summary: summariseRunLog(line) });
 }
 

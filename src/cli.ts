@@ -16,9 +16,13 @@ const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
 const USAGE = `research-desk <command>
 
-  run [--dry-run] [--date YYYY-MM-DD] [--force]
+  run [--dry-run] [--date YYYY-MM-DD] [--force] [--discover-only]
                                         one daily run (§3). --force republishes a
                                         date that already has a page.
+                                        --discover-only stops after selection and
+                                        writes nothing: no Claude calls, so it
+                                        works before an Anthropic key exists and
+                                        is how you check what a day would pick.
   reindex                               rebuild index.html from the archive's JSON twins
   help
 
@@ -64,6 +68,7 @@ async function main(): Promise<number> {
 
   const dryRun = argv.includes('--dry-run');
   const force = argv.includes('--force');
+  const discoverOnly = argv.includes('--discover-only');
   const dateIndex = argv.indexOf('--date');
   const date = dateIndex >= 0 ? argv[dateIndex + 1] : undefined;
   if (dateIndex >= 0 && date === undefined) {
@@ -85,6 +90,7 @@ async function main(): Promise<number> {
     logger,
     dryRun,
     force,
+    discoverOnly,
     ...(date === undefined ? {} : { date }),
   });
   logger.info(`run ${result.date}: ${result.outcome}`);
