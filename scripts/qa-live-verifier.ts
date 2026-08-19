@@ -33,7 +33,8 @@ if (secrets.anthropicApiKey === null) {
 const config = loadConfig(repoRoot);
 const withChallenge = process.argv.includes('--challenge');
 const llm = new AnthropicLlmClient(secrets.anthropicApiKey);
-const fixtures = loadFixtures();
+const only = process.argv.filter((a) => /^GT-\d+$/i.test(a)).map((a) => a.toUpperCase());
+const fixtures = loadFixtures().filter((f) => only.length === 0 || only.includes(f.id));
 
 console.log(
   `Golden set: ${fixtures.length} fixtures, model ${config.verification.model}, ` +

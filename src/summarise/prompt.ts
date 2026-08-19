@@ -236,8 +236,8 @@ export function promptPackFor(language: string): PromptPack {
 //     example is usually right, which is exactly how one gets through.
 // ---------------------------------------------------------------------------
 
-export const VERIFIER_PROMPT_VERSION = 'verifier.system.v1';
-export const CHALLENGE_PROMPT_VERSION = 'verifier.challenge.v1';
+export const VERIFIER_PROMPT_VERSION = 'verifier.system.v2';
+export const CHALLENGE_PROMPT_VERSION = 'verifier.challenge.v2';
 
 const VERIFIER_PREAMBLE = `Jsi ověřovatel faktů. Tvým jediným úkolem je zjistit, zda je každý prvek
 předloženého českého textu doložen ve zdrojovém anglickém textu.
@@ -260,6 +260,19 @@ Zakázané způsoby uvažování — pokud je použiješ, děláš chybu:
 - Vysvětlení příčiny („protože…", „díky tomu, že…"), které zdroj neuvádí.
 
 Pokud musíš cokoliv domýšlet, aby tvrzení sedělo, je NEDOLOŽENÉ.
+
+CO NAOPAK DOLOŽENÉ JE — tohle neodmítej:
+- Přepočet čísla, které ve zdroji opravdu je, do jiného běžného tvaru:
+  „41 %" jako „z každých sta zhruba čtyřicet jedna", „o 12 % méně" jako
+  „zhruba jeden z osmi", „26 minut" jako „necelou půlhodinu", „2,7" jako
+  „skoro trojnásobek". Zaokrouhlení, podíl a jiná jednotka téhož údaje jsou
+  v pořádku — text je psaný pro čtenáře bez vzdělání v oboru a takhle se
+  psát má.
+- Běžné slovo místo odborného, když znamená totéž: „vysílačka" pro
+  „radio-frequency identification tag", „včely dělnice" pro „honeybee
+  foragers".
+Platí to jen pro údaj, který ve zdroji je. Nové číslo, které ze zdroje
+nevyplývá, zůstává NEDOLOŽENÉ.
 
 JAZYK:
 - Pole \`claimText\` piš ANGLICKY.

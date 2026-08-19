@@ -61,6 +61,8 @@ export interface Grade {
   problems: string[];
   coverage: number;
   fabricatedQuote: boolean;
+  /** Which code-side rules fired, so a failure names itself without a re-run. */
+  failures: string[];
 }
 
 /**
@@ -95,6 +97,7 @@ export function grade(fixture: Fixture, payload: VerificationPayload): Grade {
   }
 
   return {
+    failures: report.failures.map((f) => `${f.code}${f.claimId ? `(${f.claimId})` : ''}`),
     id: fixture.id,
     label: fixture.label,
     expected: fixture.expected.finalVerdict,
@@ -127,6 +130,7 @@ export function report(grades: Grade[]): number {
         `model=${g.modelVerdict.padEnd(11)} coverage=${(g.coverage * 100).toFixed(0)}%  ${g.label}`,
     );
     for (const problem of g.problems) console.log(`        - ${problem}`);
+    if (g.failures.length > 0) console.log(`        rules: ${[...new Set(g.failures)].join(', ')}`);
     if (g.pass) passed += 1;
   }
   const fabricated = grades.filter((g) => g.expected === 'unsupported' && g.actual === 'supported');
