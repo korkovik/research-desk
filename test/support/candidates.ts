@@ -98,9 +98,38 @@ export interface CandidateSpec extends Partial<EnrichedCandidate> {
   ageDays?: number;
   /** Shorthand for `subfield: { id, name: id }`. */
   subfieldId?: string;
+  /**
+   * Keeps `title` exactly as given, without the uniquifying tag. For the tests
+   * that are ABOUT titles — dedup against `seen.json`, near-duplicate matching —
+   * where the tag would be the thing under test rather than scaffolding.
+   */
+  verbatimTitle?: boolean;
 }
 
 let sequence = 0;
+
+/**
+ * A tag that makes two generated titles genuinely different papers.
+ *
+ * The obvious approach — one fixed word plus a serial — does not work: title
+ * similarity is trigram Jaccard, and two titles differing only in four digits
+ * still score above the 0.90 threshold, so every candidate collapsed into one.
+ * Each digit is mapped to a distinct syllable instead, so consecutive serials
+ * share almost no trigrams. The syllables carry none of the concrete-outcome
+ * verbs or subject nouns the explainability score reads, so scores are unmoved.
+ */
+const SYLLABLES = ['zoxq', 'kirv', 'vumj', 'peld', 'gawb', 'tynf', 'qufh', 'hibz', 'mosk', 'redw'];
+
+function uniqueTag(n: number): string {
+  // Scrambled before encoding: consecutive serials would otherwise differ in a
+  // single digit, hence a single syllable, and against a 70-character title
+  // that still leaves the two above the 0.90 similarity threshold.
+  const scrambled = String(((n * 7919) % 10000) + 10000).slice(1);
+  return scrambled
+    .split('')
+    .map((digit) => SYLLABLES[Number(digit)] ?? 'zzzz')
+    .join('');
+}
 
 /** Resets the id counter so a test's ids are predictable. Call it in `beforeEach`. */
 export function resetCandidateSequence(): void {
@@ -108,14 +137,25 @@ export function resetCandidateSequence(): void {
 }
 
 export function makeCandidate(spec: CandidateSpec = {}): EnrichedCandidate {
-  const { ageDays, subfieldId, ...overrides } = spec;
+  const { ageDays, subfieldId, title: titleOverride, verbatimTitle, ...overrides } = spec;
   sequence += 1;
   const serial = String(1000 + sequence);
   const date = shiftISODate(TEST_TODAY, -(ageDays ?? 1));
 
   const base: EnrichedCandidate = {
     id: `openalex:W${serial}`,
-    title: DEFAULT_TITLE,
+    // Distinct per candidate, because the selector now collapses two records in
+    // one day's pool that are the same paper (trigram Jaccard >= 0.90 on the
+    // title). A factory that minted the same title every time was handing every
+    // test five copies of one study, which is not what a real pool looks like.
+    // The suffix is deliberately meaningless: it carries none of the
+    // concrete-outcome verbs or subject nouns the explainability score reads,
+    // so scores are unchanged, and it is long enough to drop the similarity
+    // well below the threshold.
+    title:
+      verbatimTitle === true && titleOverride !== undefined
+        ? titleOverride
+        : `${titleOverride ?? DEFAULT_TITLE} [${uniqueTag(sequence)}]`,
     abstract: DEFAULT_ABSTRACT,
     date,
     url: `https://example.org/works/${serial}`,

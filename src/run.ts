@@ -18,6 +18,7 @@
  *   is not touched, so a reader opening it sees yesterday's five papers. The
  *   absence of today's entry is the signal.
  */
+import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import type {
   Candidate,
@@ -37,7 +38,7 @@ import { admitWithinCap } from './select/diversity.js';
 import { passesExplainabilityGate } from './select/score.js';
 import { checkStyle } from './checks/index.js';
 import { createSeenLookup, loadSeen, recordPublished, saveSeen } from './state/seen.js';
-import { writeDayOutputs } from './render/archive.js';
+import { dayOutputPaths, writeDayOutputs } from './render/archive.js';
 import { stringsFor } from './render/strings.js';
 import { AnthropicLlmClient, estimateCostUsd, type LlmClient } from './summarise/client.js';
 import { summariseAndVerify } from './summarise/summarise.js';
@@ -54,6 +55,8 @@ export interface RunOptions {
   dryRun: boolean;
   /** Overrides the run date; otherwise the configured timezone's today. */
   date?: string;
+  /** Republish a date that already has a page. See the guard in `runDay`. */
+  force?: boolean;
   /** Injected by tests. */
   llm?: LlmClient;
   fetchImpl?: typeof fetch | undefined;
@@ -101,6 +104,23 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
   // of Semantic Scholar pacing before discovering it cannot write a word — and
   // on the unkeyed allowance those credits are a meaningful fraction of the day.
   const llm = options.llm ?? createLlmClient(options);
+
+  // A second run for a date that already published is refused.
+  //
+  // The first run recorded its five papers in `seen.json`, so a second one
+  // excludes them, picks five DIFFERENT papers, and overwrites the day's page —
+  // quietly replacing a good edition with a thinner one and burning five more
+  // papers from the pool. That happens if a missed launchd job fires on wake,
+  // or if anyone runs the command twice. Refusing is the safe default; `--force`
+  // is there for a deliberate republish.
+  if (!options.dryRun && options.force !== true && existsSync(dayOutputPaths(config, repoRoot, date).jsonPath)) {
+    logger.error(
+      `${date} has already been published. A second run would pick different papers and ` +
+        'replace the page — use --force if that is really what you want.',
+    );
+    writeStartupFailureLog(options, date, category, started, logger);
+    return { outcome: 'aborted', date, digest: null, exitCode: 1 };
+  }
 
   const adapterDeps = {
     config,

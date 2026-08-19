@@ -41,7 +41,7 @@ function payload(claims: VerificationPayload['claims']): VerificationPayload {
 const GOOD_CLAIMS: VerificationPayload['claims'] = [
   {
     id: 'c1',
-    claimText: 'The study took place in 21 secondary schools in the Netherlands',
+    claimText: 'In 21 secondary schools in the Netherlands the first lesson moved to 08:50',
     claimType: 'setting',
     exampleSpan: 'Ve dvaceti jedna nizozemských středních školách posunuli začátek vyučování na 8:50.',
     verdict: 'supported',
@@ -111,10 +111,22 @@ test('one paraphrased claim does NOT sink a genuinely supported example', () => 
   // The negative control that matters: a lay re-wording shares no word stem with
   // its own source sentence ("worker bees" for "honeybee foragers"). Judging
   // every claim individually would reject good writing for being good writing.
+  //
+  // The paraphrased claim is given a number-free span on purpose: V9 requires a
+  // number in the Czech to be accounted for by whatever supports it, so a
+  // paraphrase may drop the wording but not the figures.
+  const extra = 'Známky se přitom nezměnily.';
   const claims = structuredClone(GOOD_CLAIMS);
-  claims[0]!.claimType = 'population';
-  claims[0]!.claimText = 'The pupils were roughly halfway through their teens';
-  const report = adjudicate(payload(claims), EXAMPLE, SOURCE);
+  claims.push({
+    id: 'c3',
+    claimText: 'Grades were unchanged between the groups',
+    claimType: 'outcome',
+    exampleSpan: extra,
+    verdict: 'supported',
+    sourceQuote: 'End-of-year grade point averages did not differ between the two groups',
+    quoteField: 'abstract',
+  });
+  const report = adjudicate(payload(claims), `${EXAMPLE} ${extra}`, SOURCE);
   assert.equal(report.verdict, 'supported');
 });
 

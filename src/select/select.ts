@@ -18,6 +18,7 @@
 import { createHash } from 'node:crypto';
 import type { Config } from '../config.js';
 import type { EnrichedCandidate, ScoredCandidate } from '../types.js';
+import { titleKey, titlesAreSamePaper } from './identity.js';
 import { admitWithinCap, selectWithDiversity, type SelectionFlags } from './diversity.js';
 import {
   applyExclusions,
@@ -225,9 +226,32 @@ export function selectForDay(
     weights: options.weights,
     freshnessDays: options.freshnessDays,
   };
-  const ranked: ScoredCandidate[] = survivors
+  const scored: ScoredCandidate[] = survivors
     .map((candidate) => ({ ...candidate, score: scoreCandidate(candidate, scoreOptions) }))
     .sort(compareRanked);
+
+  // 2b — collapse the same paper appearing twice in TODAY's pool.
+  //
+  // B.7's title matching runs against `seen.json`, which catches a repeat
+  // across days and does nothing about a repeat within one. That gap is not
+  // theoretical: two records in the captured OpenAlex fixture are one Zenodo
+  // deposit under consecutive DOIs with identical titles, and without this the
+  // reader gets the same study twice and we pay to summarise it twice.
+  //
+  // `mergeCandidates` cannot do it — it deliberately refuses to merge two
+  // records that both carry a DOI, because across sources that usually means an
+  // erratum or a reprint rather than the same record. Here, after ranking, the
+  // higher-scoring one simply wins.
+  const ranked: ScoredCandidate[] = [];
+  const duplicates: ScoredCandidate[] = [];
+  for (const candidate of scored) {
+    const twin = ranked.find((kept) => titlesAreSamePaper(titleKey(kept.title), titleKey(candidate.title)));
+    if (twin === undefined) ranked.push(candidate);
+    else duplicates.push(candidate);
+  }
+  if (duplicates.length > 0) {
+    counts.EXCL_SAME_PAPER_TWICE = (counts.EXCL_SAME_PAPER_TWICE ?? 0) + duplicates.length;
+  }
 
   // 3 — B.2's gate. An unexplainable paper stays in `ranked` (it may still be
   // needed at step 7) but cannot win a slot on the strength of the other three

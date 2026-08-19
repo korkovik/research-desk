@@ -66,7 +66,9 @@ export type FailureCode =
   | 'V8_VENUE_CANNOT_SUPPORT_MECHANISM'
   | 'DECOMPOSITION_TOO_COARSE'
   | 'EXAMPLE_TOO_ELABORATE'
-  | 'CHALLENGE_REJECTED';
+  | 'CHALLENGE_REJECTED'
+  | 'MODEL_VETO'
+  | 'V9_UNACCOUNTED_NUMBER';
 
 export interface VerifyReport {
   verdict: 'supported' | 'unsupported';
@@ -140,7 +142,18 @@ function contentStems(text: string): Set<string> {
   return stems;
 }
 
-const MAGNITUDE_WORDS = /\b(half|third|quarter|twice|double|doubled|triple|tripled|fold|times|percent|percentage)\b/iu;
+const MAGNITUDE_WORDS =
+  /\b(half|halved|third|quarter|twice|double|doubled|triple|tripled|times|percent|percentage)\b|\p{L}*fold\b/iu;
+
+/**
+ * A digit that is not part of a name.
+ *
+ * `\p{N}` alone matches the 2 in CO2, the 2.5 in PM2.5, the 19 in COVID-19 and
+ * the 3 in omega-3 — every one of which is a word this project's subject matter
+ * uses constantly, and none of which is a magnitude. Requiring the digit not to
+ * follow a letter is what separates "12 %" from "CO2".
+ */
+const STANDALONE_DIGIT = /(?<!\p{L})\p{N}/u;
 
 // ---------------------------------------------------------------------------
 // The rules the code enforces regardless of what the model concluded.
@@ -274,8 +287,8 @@ export function adjudicate(
     // So they are judged per claim. GT-06 (an invented intensive-care setting
     // backed by a real sentence about day shifts) is the case this catches.
     supportedClaims += 1;
-    const claimHasNumber = /\p{N}/u.test(claim.claimText) || MAGNITUDE_WORDS.test(claim.claimText);
-    const quoteHasNumber = /\p{N}/u.test(quote) || MAGNITUDE_WORDS.test(quote);
+    const claimHasNumber = STANDALONE_DIGIT.test(claim.claimText) || MAGNITUDE_WORDS.test(claim.claimText);
+    const quoteHasNumber = STANDALONE_DIGIT.test(quote) || MAGNITUDE_WORDS.test(quote);
     if (!intersects(contentStems(claim.claimText), contentStems(quote))) {
       if (HARD_RELEVANCE_TYPES.has(claim.claimType)) {
         add('V7_QUOTE_IRRELEVANT', claim.id, `${claim.claimType} claim, unrelated quote: ${truncate(quote)}`);
@@ -292,6 +305,21 @@ export function adjudicate(
     // 100" — is not punished for doing exactly what §7.3 asks for.
     if (claimHasNumber && !quoteHasNumber) {
       add('V7_MAGNITUDE_UNSUPPORTED', claim.id, `no number in the quote: ${truncate(quote)}`);
+    }
+
+    // V9 — every number in the Czech text this claim points at must appear in
+    // what the claim says about it, or in the quote supporting it.
+    //
+    // This is the one rule that connects the two halves of a claim. Everything
+    // else checks the span against the example and the quote against the
+    // source, so a verifier can decompose a fabricated example into claims
+    // whose English text faithfully describes the abstract while their spans
+    // point at invented Czech — and pass. Numbers are the part of an invented
+    // sentence that survives translation, so they are where that split shows.
+    for (const value of numbersIn(claim.exampleSpan)) {
+      if (!numbersIn(`${claim.claimText} ${quote}`).has(value)) {
+        add('V9_UNACCOUNTED_NUMBER', claim.id, `${value} appears in the Czech but in nothing supporting it`);
+      }
     }
 
     // V8 — a venue string names a journal. It cannot explain a mechanism.
@@ -321,8 +349,21 @@ export function adjudicate(
     add('V6_COVERAGE_TOO_LOW', null, `spans cover ${(coverage * 100).toFixed(0)}% of the example`);
   }
 
+  // The model's overall verdict cannot make a failing example pass — that is
+  // what "advisory" means, and the eight rules above are the reason. But it CAN
+  // veto: the whole-example failures are exactly the ones that do not localise
+  // to a single claim — a causality upgrade, an over-generalised scope, an
+  // implied conclusion — and a verifier that says "unsupported" and explains
+  // why, while marking each individual claim supported, is telling us something
+  // no per-claim rule can see. Overruling that into publication was the
+  // opposite of failing closed.
+  const vetoed = payload.modelOverallVerdict === 'unsupported';
+  if (vetoed && failures.length === 0) {
+    add('MODEL_VETO', null, payload.unsupportedReasonsCs.join(' | ') || 'no reason given');
+  }
+
   return {
-    verdict: failures.length === 0 ? 'supported' : 'unsupported',
+    verdict: failures.length === 0 && !vetoed ? 'supported' : 'unsupported',
     modelVerdict: payload.modelOverallVerdict,
     failures,
     reasonsCs: payload.unsupportedReasonsCs,
@@ -330,6 +371,26 @@ export function adjudicate(
     claims,
     coverage,
   };
+}
+
+/**
+ * Numbers, normalised so the same quantity compares equal across languages and
+ * formats: `08:50` and `8:50` agree, and Czech's decimal comma matches English's
+ * point. Without that, three of the sixty-six supported claims in the
+ * calibration set would fail on punctuation alone.
+ */
+function numbersIn(text: string): Set<string> {
+  const out = new Set<string>();
+  for (const match of text.matchAll(/\d+(?:[.,]\d+)?/gu)) {
+    const token = match[0].replace(',', '.');
+    if (token.includes('.')) {
+      const [whole = '0', fraction = ''] = token.split('.');
+      out.add(`${String(Number(whole))}.${fraction.replace(/0+$/u, '') || '0'}`);
+    } else {
+      out.add(String(Number(token)));
+    }
+  }
+  return out;
 }
 
 function intersects(a: Set<string>, b: Set<string>): boolean {

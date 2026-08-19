@@ -20,7 +20,7 @@ import { z } from 'zod';
 import type { AdapterDeps } from '../adapters/deps.js';
 import { httpPolicy, requestOptions } from '../adapters/deps.js';
 import type { Candidate, Degradation, EnrichedCandidate } from '../types.js';
-import { fetchJson, HttpError } from '../util/http.js';
+import { fetchJson, HttpError, type HttpPolicy } from '../util/http.js';
 import { Throttle } from '../util/throttle.js';
 import { stringsFor } from '../render/strings.js';
 
@@ -104,6 +104,23 @@ function isFatalForEnrichment(status: number | null): boolean {
   return status === null || status === 429 || status >= 500;
 }
 
+/**
+ * The shared HTTP policy, with its backoff raised to the §4.2 pacing floor.
+ *
+ * `Throttle` spaces the START of each lookup, and it cannot see the retries a
+ * single lookup makes inside itself. With the default backoff of [1000, 4000],
+ * a lookup that retried once had already spent more than 1.1 s by the time the
+ * next `take()` was called, so that one returned immediately — and two real
+ * requests landed 263 ms apart, measured. Against an endpoint that is already
+ * rate-limiting us, retrying faster than the documented pace is the one thing
+ * guaranteed to make it worse.
+ */
+function pacedPolicy(config: EnrichDeps['config']): HttpPolicy {
+  const floor = config.sources.semanticScholar.throttleMs;
+  const base = httpPolicy(config);
+  return { ...base, backoffMs: base.backoffMs.map((ms) => Math.max(ms, floor)) };
+}
+
 export async function enrichWithTldr(
   candidates: readonly Candidate[],
   deps: EnrichDeps,
@@ -143,12 +160,18 @@ export async function enrichWithTldr(
       continue;
     }
 
+    // The gap is taken inside the request path (`beforeAttempt`), not here: a
+    // lookup can issue two or three real requests, and §4.2's limit is on
+    // requests. Taking it once per lookup let a retry jump the queue.
     const url = paperUrl(settings.baseUrl, id);
-    await throttle.take();
 
     let raw: unknown;
     try {
-      raw = await fetchJson<unknown>(url, httpPolicy(deps.config), requestOptions(deps, headers));
+      raw = await fetchJson<unknown>(url, pacedPolicy(deps.config), {
+        ...requestOptions(deps, headers),
+        // Every attempt, not every lookup — see `pacedPolicy` and §4.2.
+        beforeAttempt: () => throttle.take(),
+      });
     } catch (error) {
       if (!(error instanceof HttpError)) throw error;
       if (error.status === 404) {

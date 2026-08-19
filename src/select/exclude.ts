@@ -26,6 +26,11 @@ export const EXCLUSION_REASONS = [
   'EXCL_SEEN',
   'EXCL_SEEN_TITLE',
   'EXCL_TYPE',
+  // Not produced by `applyExclusions` — the selector adds it after ranking,
+  // when two records in the SAME day's pool turn out to be one paper. It lives
+  // in this list so the run log reports every reason a candidate was dropped in
+  // one place.
+  'EXCL_SAME_PAPER_TWICE',
 ] as const;
 
 export type ExclusionReason = (typeof EXCLUSION_REASONS)[number];
@@ -106,6 +111,7 @@ export function emptyExclusionCounts(): ExclusionCounts {
     EXCL_STALE: 0,
     EXCL_SEEN: 0,
     EXCL_SEEN_TITLE: 0,
+    EXCL_SAME_PAPER_TWICE: 0,
     EXCL_TYPE: 0,
   };
 }

@@ -35,6 +35,14 @@ export interface RequestOptions {
   fetchImpl?: typeof fetch;
   /** Injected in tests, so retry tests do not actually sleep. */
   sleepImpl?: (ms: number) => Promise<void>;
+  /**
+   * Awaited before EVERY attempt, including retries. Semantic Scholar's one
+   * request per second (§4.2) is a limit on requests, not on logical lookups —
+   * pacing the caller instead let a lookup's own retry land a few hundred
+   * milliseconds after the previous request, which is exactly the wrong thing
+   * to do to an endpoint that is already rate-limiting.
+   */
+  beforeAttempt?: () => Promise<void>;
 }
 
 const defaultSleep = (ms: number): Promise<void> => new Promise((r) => setTimeout(r, ms));
@@ -61,6 +69,7 @@ export async function fetchText(
   let lastError: HttpError | null = null;
 
   for (let attempt = 1; attempt <= attempts; attempt++) {
+    if (options.beforeAttempt) await options.beforeAttempt();
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), policy.timeoutMs);
     try {

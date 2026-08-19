@@ -16,7 +16,9 @@ const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
 const USAGE = `research-desk <command>
 
-  run [--dry-run] [--date YYYY-MM-DD]   one daily run (§3)
+  run [--dry-run] [--date YYYY-MM-DD] [--force]
+                                        one daily run (§3). --force republishes a
+                                        date that already has a page.
   reindex                               rebuild index.html from the archive's JSON twins
   help
 
@@ -61,6 +63,7 @@ async function main(): Promise<number> {
   }
 
   const dryRun = argv.includes('--dry-run');
+  const force = argv.includes('--force');
   const dateIndex = argv.indexOf('--date');
   const date = dateIndex >= 0 ? argv[dateIndex + 1] : undefined;
   if (dateIndex >= 0 && date === undefined) {
@@ -81,6 +84,7 @@ async function main(): Promise<number> {
     secrets,
     logger,
     dryRun,
+    force,
     ...(date === undefined ? {} : { date }),
   });
   logger.info(`run ${result.date}: ${result.outcome}`);

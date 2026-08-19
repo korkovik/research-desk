@@ -277,3 +277,29 @@ test('lookup keys and URLs are built safely', () => {
   assert.ok(!url.includes(' '), 'a space in a DOI must not break the path');
   assert.ok(!url.includes('#'), 'a # in a DOI must not truncate the request');
 });
+
+test('QA-S2-01: §4.2 paces every REQUEST, not every lookup — retries included', async () => {
+  const clock = virtualClock();
+  const stamps: number[] = [];
+  let call = 0;
+  // The first lookup 500s once and succeeds on its retry. Without pacing inside
+  // the request path, that retry lands a few hundred milliseconds after the
+  // previous request, because the throttle believes the lookup's gap has
+  // already been spent — measured at 263 ms against the live API.
+  const stub = stubFetch(() => {
+    stamps.push(clock.now());
+    call += 1;
+    if (call === 2) return new Response('upstream error', { status: 500 });
+    return jsonResponse(withTldr);
+  });
+
+  await enrichWithTldr(
+    [candidate({ doi: '10.1/a' }), candidate({ doi: '10.1/b' }), candidate({ doi: '10.1/c' })],
+    enrichDeps({ fetchImpl: stub.impl, clock }),
+  );
+
+  assert.ok(stamps.length >= 4, `expected a retry, saw ${stamps.length} requests`);
+  const gaps = stamps.slice(1).map((t, i) => t - (stamps[i] ?? 0));
+  const min = Math.min(...gaps);
+  assert.ok(min >= 1100, `two requests were ${min}ms apart; §4.2 requires 1100ms`);
+});

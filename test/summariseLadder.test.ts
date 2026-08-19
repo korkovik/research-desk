@@ -27,9 +27,9 @@ const SOURCE: SourceText = {
   date: '2026-08-11',
 };
 
-const GOOD_EXAMPLE =
-  'Lidé ve věku 65 až 84 let chodili dvakrát týdně posilovat do místního komunitního centra. ' +
-  'Během následujícího roku upadli o 27 procent méně často.';
+const GOOD_EXAMPLE_A = 'Lidé ve věku 65 až 84 let chodili dvakrát týdně posilovat do místního komunitního centra.';
+const GOOD_EXAMPLE_B = 'Během následujícího roku upadli o 27 procent méně často.';
+const GOOD_EXAMPLE = `${GOOD_EXAMPLE_A} ${GOOD_EXAMPLE_B}`;
 const BAD_EXAMPLE =
   'Lidé po čtyřicítce chodili dvakrát týdně posilovat do místního fitness centra v Brně.';
 
@@ -44,25 +44,36 @@ function summaryWith(example: string): Omit<PaperSummary, 'prikladJeMotivace'> {
   };
 }
 
-/** Claims that pass every code-side rule, for whichever example is on trial. */
+/**
+ * Claims that pass every code-side rule.
+ *
+ * The spans are per sentence, not the whole example, because that is what a
+ * verifier following its own instructions produces — and because V9 requires
+ * every number inside a span to be accounted for by the claim about it. A stub
+ * with loose spans would be asserting that the pipeline tolerates a verifier
+ * that does not decompose, which is not something we want to be true.
+ */
 function supportedPayload(example: string) {
+  const [first = example, second = example] = example.includes(GOOD_EXAMPLE_B)
+    ? [GOOD_EXAMPLE_A, GOOD_EXAMPLE_B]
+    : [example, example];
   return {
     claims: [
       {
         id: 'c1',
         claimText: 'Adults aged 65 to 84 trained twice weekly at a community centre',
         claimType: 'population' as const,
-        exampleSpan: example,
+        exampleSpan: first,
         verdict: 'supported' as const,
         sourceQuote:
-          'twelve weeks of supervised resistance training twice weekly at a local community centre',
+          'adults aged 65 to 84 to twelve weeks of supervised resistance training twice weekly at a local community centre',
         quoteField: 'abstract' as const,
       },
       {
         id: 'c2',
-        claimText: 'The training group reported 27% fewer falls',
+        claimText: 'The training group reported 27% fewer falls over the following year',
         claimType: 'quantity' as const,
-        exampleSpan: example.slice(0, Math.max(8, Math.floor(example.length / 2))),
+        exampleSpan: second,
         verdict: 'supported' as const,
         sourceQuote: 'The training group reported 27% fewer falls over the follow-up year',
         quoteField: 'abstract' as const,

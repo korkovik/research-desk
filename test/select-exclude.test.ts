@@ -203,6 +203,9 @@ describe('RISK-SELECT-04 — B.1 rules 5 and 6: the dedup state', () => {
 
   test('B.1 rule 6: a reworded title of a seen paper is EXCL_SEEN_TITLE, not EXCL_SEEN', () => {
     const candidate = makeCandidate({
+      // Verbatim: this test is ABOUT the title, so the factory's uniquifying
+      // tag would be the thing under test rather than scaffolding.
+      verbatimTitle: true,
       title: 'Delaying school start times increases adolescent sleep: two-year cohort study in 21 schools',
       openAlexId: 'W900003',
       doi: '10.1234/brand.new',
@@ -320,6 +323,9 @@ describe('B.1 — every drop is counted for the run log (§9)', () => {
       EXCL_STALE: 1,
       EXCL_SEEN: 0,
       EXCL_SEEN_TITLE: 0,
+      // Not produced here — the selector adds it after ranking, when two
+      // records in the same day's pool turn out to be one paper.
+      EXCL_SAME_PAPER_TWICE: 0,
       EXCL_TYPE: 1,
     });
     assert.equal(outcome.survivors.length + outcome.excluded.length, candidates.length);

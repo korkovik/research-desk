@@ -387,3 +387,23 @@ test('a URL in prose does not abort the day — it loads nothing (§8 vs §7.6)'
     /forbids/,
   );
 });
+
+test('§8: a second run for a day already published is refused, not silently replaced', async () => {
+  const root = makeWorkspace();
+  const first = await runOn(root, '2026-08-19').promise;
+  assert.notEqual(first.outcome, 'aborted');
+  const pageBefore = readFileSync(join(root, 'archive', '2026-08-19.html'), 'utf8');
+  const seenBefore = readFileSync(join(root, 'state', 'seen.json'), 'utf8');
+
+  // The first run recorded its papers, so a second would exclude them, pick
+  // different ones, and overwrite a good edition with a thinner one.
+  const second = await runOn(root, '2026-08-19').promise;
+  assert.equal(second.outcome, 'aborted');
+  assert.equal(second.exitCode, 1);
+  assert.equal(readFileSync(join(root, 'archive', '2026-08-19.html'), 'utf8'), pageBefore);
+  assert.equal(readFileSync(join(root, 'state', 'seen.json'), 'utf8'), seenBefore);
+
+  // …and the refusal is still a run, so it leaves a line in the log §9 requires.
+  const lines = readFileSync(join(root, 'logs', 'run.log'), 'utf8').trim().split('\n');
+  assert.equal(lines.length, 2);
+});
