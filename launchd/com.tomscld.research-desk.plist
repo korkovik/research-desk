@@ -44,11 +44,14 @@
     <key>StandardErrorPath</key>
     <string>/tmp/research-desk.launchd.err</string>
 
-    <!-- The job is short (a few minutes). If it is still running after 30
-         minutes something is wedged, and a stuck run must not still be holding
-         the lock when tomorrow's fires. -->
+    <!-- How long launchd waits after SIGTERM before SIGKILL. It is NOT a run
+         timeout — launchd has no such thing, so nothing here caps wall-clock.
+         What bounds a run is the 20-second per-request HTTP timeout with two
+         retries, and anthropic.maxCallsPerRun in config.json. A normal run is
+         a few minutes; the slowest part is the mandatory 1.1-second gap between
+         Semantic Scholar requests. -->
     <key>ExitTimeOut</key>
-    <integer>1800</integer>
+    <integer>60</integer>
 
     <key>ProcessType</key>
     <string>Background</string>
