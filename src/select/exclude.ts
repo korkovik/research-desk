@@ -74,6 +74,14 @@ export interface ExclusionOptions {
   readonly freshnessDays: number;
   /** `config.ranking.minAbstractChars`. B.1 rule 3. */
   readonly minAbstractChars: number;
+  /**
+   * Set on the shortlisting pass, which runs BEFORE Semantic Scholar
+   * enrichment. Rules 2 and 3 both accept a TLDR as a substitute for a thin or
+   * missing abstract, and at that point no candidate has one yet — so applying
+   * them there drops exactly the papers enrichment was about to rescue. They
+   * are re-applied in full on the real pass, which is where they belong.
+   */
+  readonly deferAbstractRules?: boolean | undefined;
   readonly isSeen: SeenLookup;
 }
 
@@ -171,12 +179,12 @@ function excludeOne(
   // this rule can only fire when both are missing. The ordering matters: this
   // check must run *after* Semantic Scholar enrichment, or a paywalled abstract
   // with a perfectly good TLDR is dropped for no reason.
-  if (abstract === '' && tldr === '') {
+  if (options.deferAbstractRules !== true && abstract === '' && tldr === '') {
     return { reason: 'EXCL_NO_ABSTRACT', detail: 'no abstract and no TLDR' };
   }
 
   // 3 — too thin to carry §7.3's 150–250 word explanation.
-  if (abstract.length < options.minAbstractChars && tldr === '') {
+  if (options.deferAbstractRules !== true && abstract.length < options.minAbstractChars && tldr === '') {
     return {
       reason: 'EXCL_ABSTRACT_TOO_THIN',
       detail: `abstract is ${String(abstract.length)} chars (minimum ${String(options.minAbstractChars)}) and there is no TLDR`,

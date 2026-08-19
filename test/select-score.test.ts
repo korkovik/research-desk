@@ -6,7 +6,7 @@ import assert from 'node:assert/strict';
 import { beforeEach, describe, test } from 'node:test';
 import {
   credibilityOf,
-  EXPLAINABILITY_GATE,
+  DEFAULT_EXPLAINABILITY_GATE,
   everydayRelevanceOf,
   explainabilityOf,
   extractSampleSize,
@@ -71,7 +71,7 @@ describe('B.3.2 worked example — the formula must keep producing 0.83', () => 
   test('it clears B.2’s 0.35 gate comfortably, as B.3.2 says it does', () => {
     const scored = { score: scoreCandidate(worked(), scoreOptions) };
     assert.ok(passesExplainabilityGate(scored));
-    assert.ok(scored.score.explainability > EXPLAINABILITY_GATE + 0.4);
+    assert.ok(scored.score.explainability > DEFAULT_EXPLAINABILITY_GATE + 0.4);
   });
 
   test('the evidence names the verb, the subjects and the number it found', () => {

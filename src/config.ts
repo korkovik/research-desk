@@ -95,7 +95,6 @@ export const ConfigSchema = z
       language: z.string().min(2),
       siteName: z.string().min(1).nullable(),
       workingName: z.string().min(1),
-      tagline: z.string().min(1).nullable(),
       papersPerDay: z.number().int().min(1),
       minPapersToPublish: z.number().int().min(1),
       timezone: z.string().min(1),
@@ -113,6 +112,7 @@ export const ConfigSchema = z
     shortlist: z.object({ size: z.number().int().min(1) }),
     ranking: z.object({
       weights: WeightsSchema,
+      explainabilityGate: z.number().min(0).max(1),
       maxPerSubfield: z.number().int().min(1),
       /** §6's diversity cap is hard by default; raising it to hit the target is opt-in. */
       relaxDiversityToReachTarget: z.boolean(),
@@ -127,12 +127,14 @@ export const ConfigSchema = z
       maxRegenerationAttempts: z.number().int().min(0),
     }),
     style: StyleSchema,
+    anthropic: z.object({
+      maxCallsPerRun: z.number().int().min(1),
+    }),
     verification: z.object({
       model: z.string().min(1),
       effort: z.enum(['low', 'medium', 'high', 'xhigh', 'max']),
       maxTokens: z.number().int().min(500),
       maxExampleAttempts: z.number().int().min(1),
-      dropPaperIfMotivationFallbackAlsoFails: z.boolean(),
       challengePass: z.boolean(),
     }),
     sources: z.object({

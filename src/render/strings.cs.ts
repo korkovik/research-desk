@@ -232,6 +232,18 @@ export const stringsCs: StringTable = {
   degradationAnthropic:
     'U některých studií se dnes nepodařilo připravit text. Do vydání jsme je proto nezařadili.',
 
+  // EN: "Part of one text was left in English." Shown when §2's
+  // untranslated-English check still failed after the regeneration budget was
+  // spent. D.6 drafted this with "we are sorry, we will fix it" on the end;
+  // that is a promise an unattended pipeline cannot keep, so it is dropped.
+  degradationTranslation:
+    'V jednom z dnešních textů zůstala část v angličtině. Program ji nedokázal přeložit.',
+
+  // EN: "We had to close today's edition before we had gone through every study
+  // we found." Shown when the run hit its per-run call ceiling (D.6 DEG_BUDGET).
+  degradationBudget:
+    'Dnešní vydání jsme museli uzavřít dřív, než jsme prošli všechny nalezené studie.',
+
   // EN: "This page was created on {date}." Last line of every day page.
   footerGenerated: 'Tato stránka vznikla {date}.',
 

@@ -15,6 +15,7 @@ import { join } from 'node:path';
 import { loadConfig } from '../src/config.js';
 import { createLogger } from '../src/util/log.js';
 import { runDay } from '../src/run.js';
+import { assertNoRemoteResources } from '../src/render/archive.js';
 import type { DayDigest } from '../src/types.js';
 import { HonestLlm, makeFetchImpl, makeWorkspace, type FetchLog } from './support/pipelineHarness.js';
 import type { LlmClient, LlmRequest, LlmResult } from '../src/summarise/client.js';
@@ -316,4 +317,48 @@ test('a run with no Anthropic key stops before it spends anything', async () => 
   // The point of failing early: no OpenAlex credit and no Semantic Scholar
   // pacing was spent finding out.
   assert.deepEqual(log.urls, []);
+});
+
+test('§9: the per-run call budget stops the day rather than spending on', async () => {
+  const root = makeWorkspace();
+  const config = loadConfig(root);
+  const tight = { ...config, anthropic: { maxCallsPerRun: 4 } };
+
+  const result = await runDay({
+    repoRoot: root,
+    config: tight,
+    secrets: NO_SECRETS,
+    logger: quiet(),
+    dryRun: true,
+    date: '2026-08-19',
+    llm: new HonestLlm(),
+    fetchImpl: makeFetchImpl('2026-08-19', { urls: [] }),
+    clock: fakeClock(),
+  });
+
+  // Three calls per paper, so a budget of four buys one paper and stops. That
+  // is below the minimum, so the day publishes nothing — and says why.
+  assert.equal(result.outcome, 'aborted');
+  assert.ok((result.digest?.entries.length ?? 0) < config.output.papersPerDay);
+});
+
+test('a page that would load something off the machine is refused at write time', () => {
+  // §11 step 9 is an acceptance check, so it is enforced where the file is
+  // written, not only in the test suite.
+  assert.throws(
+    () => assertNoRemoteResources('<p>ok</p><link rel="stylesheet" href="/x.css">', 'page.html'),
+    /forbids/,
+  );
+  assert.throws(
+    () => assertNoRemoteResources('<style>body{background:url(https://x/y.png)}</style>', 'page.html'),
+    /forbids/,
+  );
+  assert.throws(
+    () => assertNoRemoteResources('<p>see https://example.org/paper</p>', 'page.html'),
+    /outside a link/,
+  );
+  // …but a link the reader clicks is required by §7.6 and must pass.
+  assert.doesNotThrow(() =>
+    assertNoRemoteResources('<a href="https://doi.org/10.1/2">10.1/2</a>', 'page.html'),
+  );
 });

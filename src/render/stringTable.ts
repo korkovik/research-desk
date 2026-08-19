@@ -79,6 +79,8 @@ export interface StringTable {
   readonly degradationArxiv: string;
   readonly degradationSemanticScholar: string;
   readonly degradationAnthropic: string;
+  readonly degradationTranslation: string;
+  readonly degradationBudget: string;
   /** Placeholder: {date}. */
   readonly footerGenerated: string;
   readonly footerHowItWorks: string;

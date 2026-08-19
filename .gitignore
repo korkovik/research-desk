@@ -9,10 +9,15 @@ dist/
 .env*
 !.env.example
 
-# Run output. The archive is the product, but it is machine-generated and
-# rebuilt from state/ + the APIs; committing it would make every daily run a
-# repository change. state/seen.json is the one piece of generated data that
-# MUST survive a fresh checkout, so it is committed deliberately (see below).
+# Run output. The archive is the product, but it is machine-generated, and
+# committing it would make every daily run a repository change. The repository
+# is the code; the archive is what the code makes.
+#
+# state/seen.json is ignored too, and that is the one to think about: it is the
+# only record of what has already been published, so losing it means published
+# papers can reappear. It is not in git because a daily-changing file does not
+# belong in a code repository — it is on disk, and assumption A1 asks for the
+# Mac mini's backup to include it.
 archive/*.html
 archive/*.json
 logs/*.log

@@ -61,6 +61,8 @@ export interface SelectOptions {
   readonly papersPerDay: number;
   /** `config.output.minPapersToPublish`. Independent of `papersPerDay` (§9). */
   readonly minPapersToPublish: number;
+  /** `config.ranking.explainabilityGate`. B.2's eligibility floor. */
+  readonly explainabilityGate: number;
   /** `config.ranking.maxPerSubfield`. */
   readonly maxPerSubfield: number;
   /** `config.ranking.relaxDiversityToReachTarget`. */
@@ -71,6 +73,8 @@ export interface SelectOptions {
   readonly freshnessDays: number;
   /** `config.ranking.minAbstractChars`. */
   readonly minAbstractChars: number;
+  /** See `ExcludeOptions.deferAbstractRules`. Only the shortlisting pass sets it. */
+  readonly deferAbstractRules?: boolean | undefined;
   /** Injected §8 dedup state. Owned by `src/state/seen.ts`. */
   readonly isSeen: SeenLookup;
 }
@@ -91,6 +95,7 @@ export function optionsFromConfig(
   return {
     today,
     weights: config.ranking.weights,
+    explainabilityGate: config.ranking.explainabilityGate,
     papersPerDay: config.output.papersPerDay,
     minPapersToPublish: config.output.minPapersToPublish,
     maxPerSubfield: config.ranking.maxPerSubfield,
@@ -227,7 +232,7 @@ export function selectForDay(
   // 3 — B.2's gate. An unexplainable paper stays in `ranked` (it may still be
   // needed at step 7) but cannot win a slot on the strength of the other three
   // factors, which outweigh explainability 0.60 to 0.40 if left unchecked.
-  const eligible = ranked.filter(passesExplainabilityGate);
+  const eligible = ranked.filter((paper) => passesExplainabilityGate(paper, options.explainabilityGate));
   const ungated = ranked.filter((paper) => !passesExplainabilityGate(paper));
 
   // 4 and 5 — greedy fill under the diversity cap, then the opt-in relax pass.

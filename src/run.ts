@@ -129,7 +129,13 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
   // request per second on, then again once those have their TLDRs, because a
   // TLDR changes what the explainability heuristic can see.
   const selectOptions = optionsFromConfig(config, date, isSeen);
-  const shortlisting = selectForDay(discovery.candidates.map(toUnenriched), selectOptions);
+  const shortlisting = selectForDay(discovery.candidates.map(toUnenriched), {
+    ...selectOptions,
+    // Nothing has a TLDR yet, and both abstract rules accept one as a
+    // substitute — so judging them here would drop the papers enrichment is
+    // about to rescue. They run in full on the pass below.
+    deferAbstractRules: true,
+  });
   // `ranked`, not `selected`: the shortlist is "the twenty worth spending
   // Semantic Scholar's one-request-per-second on", and it must not be narrowed
   // by the explainability gate or the diversity cap here. A TLDR is exactly the
@@ -159,6 +165,22 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
   let topUps = 0;
 
   while (queue.length > 0 && entries.length < config.output.papersPerDay) {
+    // A hard ceiling on the day's spend. Each paper costs at least three calls
+    // and a pathological one costs many more, so without this a single bad
+    // morning could quietly cost several times a normal one — and the whole
+    // point of an unattended job is that nobody is watching when it does.
+    if (llm.callCount() >= config.anthropic.maxCallsPerRun) {
+      logger.error(
+        `call budget of ${config.anthropic.maxCallsPerRun} spent — publishing ` +
+          `${entries.length} paper(s) rather than spending more`,
+      );
+      degradations.push({
+        source: 'budget',
+        message: stringsFor(config.output.language).degradationBudget,
+        detail: `hit maxCallsPerRun (${config.anthropic.maxCallsPerRun})`,
+      });
+      break;
+    }
     const candidate = queue.shift();
     if (candidate === undefined) break;
     const result = await summariseAndVerify(
@@ -228,7 +250,8 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
     // worth a slot; that does not stop being true because a slot came free.
     const replacementIndex = reserve.findIndex(
       (paper) =>
-        passesExplainabilityGate(paper) && admitWithinCap([paper], committed, 1, cap).length === 1,
+        passesExplainabilityGate(paper, config.ranking.explainabilityGate) &&
+        admitWithinCap([paper], committed, 1, cap).length === 1,
     );
     if (replacementIndex === -1) {
       logger.warn(
@@ -297,6 +320,24 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
     return { outcome: 'aborted', date, digest: null, exitCode: 1 };
   }
 
+  // §2's rules never drop a paper, so a hard untranslated-English finding can
+  // survive the regeneration budget and reach the page. That is a visible
+  // defect in what the reader is looking at, so it is said out loud rather than
+  // left in a log (D.6 `DEG_TRANSLATION`). Other style findings get no footer
+  // note: a clumsy sentence is not a reason to make a reader distrust the text.
+  if (entries.some((e) => e.checks.hard.some((v) => v.rule === 'untranslated-english'))) {
+    degradations.push({
+      source: 'translation',
+      message: stringsFor(config.output.language).degradationTranslation,
+      detail: 'an untranslated-English finding survived the style regeneration budget',
+    });
+  }
+
+  // §9's footer lists one sentence per thing that went wrong, not one per
+  // occurrence: two papers dropped for the same reason is one sentence, and the
+  // Czech is already plural. The JSON twin keeps every record, with its detail.
+  const footerDegradations = dedupeBySource(degradations);
+
   const digest: DayDigest = {
     date,
     categoryKey: category.key,
@@ -304,7 +345,7 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
     language: config.output.language,
     entries,
     shortfall,
-    degradations,
+    degradations: footerDegradations,
     generatedAt: new Date().toISOString(),
     // The reader's calendar day, not UTC's — a page dated 19 August must not
     // say it was made on the 18th because the run finished at 01:30 Prague.
@@ -315,10 +356,20 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
   if (options.dryRun) {
     logger.info('dry run: nothing written');
   } else {
-    writeDayOutputs({ digest, config, repoRoot, logger });
-    // D.3's ordering: `seen.json` is written only after the page exists. A run
-    // that dies before publishing must not burn its candidates.
-    saveSeen(seenPath, recordPublished(seenState, entries, date, category.key));
+    try {
+      writeDayOutputs({ digest, config, repoRoot, logger });
+      // D.3's ordering: `seen.json` is written only after the page exists. A run
+      // that dies before publishing must not burn its candidates.
+      saveSeen(seenPath, recordPublished(seenState, entries, date, category.key));
+    } catch (error) {
+      // A full disk or a failed rename is the one failure that would otherwise
+      // leave `logs/run.log` silent — and that file is the only place Tom looks
+      // when the page is wrong. §9 wants one line per run, this run included.
+      logger.error(`could not commit the day's output: ${(error as Error).message}`);
+      const failed = { ...baseLog, level: 'FATAL' as const, outcome: 'aborted' as const };
+      writeRunLog(options, { ...failed, errors: logger.errors(), summary: summariseRunLog(failed) });
+      return { outcome: 'aborted', date, digest: null, exitCode: 2 };
+    }
   }
 
   const degraded = degradations.length > 0 || shortfall !== null;
@@ -399,6 +450,20 @@ function degradationForDrop(
         ? 'example failed §7.4 verification at every rung'
         : 'summarisation call failed after retries',
   };
+}
+
+/** One entry per source, keeping the first message and joining the details. */
+function dedupeBySource(all: readonly Degradation[]): Degradation[] {
+  const bySource = new Map<string, Degradation>();
+  for (const degradation of all) {
+    const existing = bySource.get(degradation.source);
+    if (existing === undefined) {
+      bySource.set(degradation.source, { ...degradation });
+      continue;
+    }
+    existing.detail = `${existing.detail}; ${degradation.detail}`;
+  }
+  return [...bySource.values()];
 }
 
 function shortfallOf(

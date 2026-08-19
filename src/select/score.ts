@@ -64,7 +64,7 @@ import { subfieldKey } from './diversity.js';
  * (§6 factor 1) would be a statement about a number rather than about which
  * papers can win.
  */
-export const EXPLAINABILITY_GATE = 0.35;
+export const DEFAULT_EXPLAINABILITY_GATE = 0.35;
 
 /** The §6 factor weights. Structurally identical to `Config['ranking']['weights']`. */
 export interface RankingWeights {
@@ -81,6 +81,12 @@ export interface ScoreOptions {
   readonly weights: RankingWeights;
   /** From `config.windows.freshnessDays`. */
   readonly freshnessDays: number;
+  /**
+   * From `config.ranking.explainabilityGate`. Optional so the many unit tests
+   * that only care about the arithmetic need not supply it; the pipeline always
+   * does, via `optionsFromConfig`.
+   */
+  readonly explainabilityGate?: number | undefined;
 }
 
 // ---------------------------------------------------------------------------
@@ -311,8 +317,11 @@ function describeHits(hits: readonly TermHit[]): string {
  * shortfall path, the run log and the footer note all need to say "this paper
  * was ranked but not eligible", and they must all mean the same thing by it.
  */
-export function passesExplainabilityGate(paper: { readonly score: ScoreBreakdown }): boolean {
-  return paper.score.explainability >= EXPLAINABILITY_GATE;
+export function passesExplainabilityGate(
+  paper: { readonly score: ScoreBreakdown },
+  gate: number = DEFAULT_EXPLAINABILITY_GATE,
+): boolean {
+  return paper.score.explainability >= gate;
 }
 
 // ---------------------------------------------------------------------------
@@ -534,7 +543,7 @@ export function scoreCandidate(
     w.freshness * fresh.value +
     w.credibility * credible.value;
 
-  const gate = explain.value >= EXPLAINABILITY_GATE;
+  const gate = explain.value >= (options.explainabilityGate ?? DEFAULT_EXPLAINABILITY_GATE);
 
   return {
     explainability: round(explain.value, 4),
@@ -548,8 +557,8 @@ export function scoreCandidate(
     evidence: [
       `total ${total.toFixed(4)} = ${w.explainability.toFixed(2)}×explainability + ${w.everydayRelevance.toFixed(2)}×everyday + ${w.freshness.toFixed(2)}×freshness + ${w.credibility.toFixed(2)}×credibility`,
       gate
-        ? `passes the ${EXPLAINABILITY_GATE.toFixed(2)} explainability gate (B.2)`
-        : `BELOW the ${EXPLAINABILITY_GATE.toFixed(2)} explainability gate (B.2) — not eligible for the top five`,
+        ? `passes the ${(options.explainabilityGate ?? DEFAULT_EXPLAINABILITY_GATE).toFixed(2)} explainability gate (B.2)`
+        : `BELOW the ${(options.explainabilityGate ?? DEFAULT_EXPLAINABILITY_GATE).toFixed(2)} explainability gate (B.2) — not eligible for the top five`,
       ...explain.evidence,
       ...everyday.evidence,
       ...fresh.evidence,

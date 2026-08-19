@@ -57,6 +57,32 @@ export function dayOutputPaths(config: Config, repoRoot: string, date: string): 
   };
 }
 
+/**
+ * Refuses to write a page that would fetch anything off the machine.
+ *
+ * A hyperlink the reader may click is required by §7.6; a sub-resource the
+ * document loads is forbidden by §8. The check is that distinction: strip every
+ * anchor, then nothing remote may remain.
+ */
+export function assertNoRemoteResources(html: string, path: string): void {
+  const forbidden: [RegExp, string][] = [
+    [/<link\b/i, '<link>'],
+    [/<script\b[^>]*\bsrc=/i, '<script src>'],
+    [/<(img|iframe|video|audio|object|embed|source|base)\b/i, 'a remote-capable element'],
+    [/@import/i, '@import'],
+    [/url\(\s*['"]?(?!data:)/i, 'a CSS url()'],
+    [/localStorage|sessionStorage|indexedDB/, 'a storage API'],
+  ];
+  for (const [pattern, what] of forbidden) {
+    if (pattern.test(html)) throw new Error(`${path} would load ${what} — §8 forbids it`);
+  }
+  const withoutAnchors = html.replace(/<a\b[^>]*>[\s\S]*?<\/a>/gi, '').replace(/<a\b[^>]*>/gi, '');
+  const remote = /https?:\/\//.exec(withoutAnchors);
+  if (remote) {
+    throw new Error(`${path} carries a remote URL outside a link: ${remote[0]} — §8 forbids it`);
+  }
+}
+
 export function writeDayOutputs(options: WriteDayOptions): WriteDayResult {
   const { digest, config, repoRoot, logger } = options;
   const { htmlPath, jsonPath } = dayOutputPaths(config, repoRoot, digest.date);
@@ -64,7 +90,13 @@ export function writeDayOutputs(options: WriteDayOptions): WriteDayResult {
   // Re-running the same day overwrites that day's two files. It never creates a
   // second variant, so the archive has exactly one page per date and the index
   // cannot list a day twice.
-  atomicWriteFile(htmlPath, renderDayPage(digest, config));
+  const html = renderDayPage(digest, config);
+  // §8's self-contained rule is an acceptance check (§11 step 9), so it is
+  // enforced where the file is written rather than only in the test suite. A
+  // renderer change that started pulling in a font would otherwise ship, and
+  // the family would meet it as a page that does not load on a slow train.
+  assertNoRemoteResources(html, htmlPath);
+  atomicWriteFile(htmlPath, html);
   atomicWriteJson(jsonPath, digest);
   logger.info(`archive: wrote ${htmlPath} and ${jsonPath} (${digest.entries.length} papers)`);
 

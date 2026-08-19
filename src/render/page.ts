@@ -297,6 +297,10 @@ function degradationMessage(degradation: Degradation, strings: StringTable): str
       return strings.degradationSemanticScholar;
     case 'anthropic':
       return strings.degradationAnthropic;
+    case 'translation':
+      return strings.degradationTranslation;
+    case 'budget':
+      return strings.degradationBudget;
   }
 }
 

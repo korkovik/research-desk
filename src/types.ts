@@ -253,7 +253,13 @@ export interface Shortfall {
 }
 
 export interface Degradation {
-  source: SourceName | 'semantic-scholar' | 'anthropic';
+  /**
+   * What went wrong, as a code. Mostly a source name, because mostly a source
+   * is what failed; `translation` is the exception — §2's untranslated-English
+   * rule surviving the regeneration budget is a defect in the text rather than
+   * in anything upstream, and D.6 gives it its own footer sentence.
+   */
+  source: SourceName | 'semantic-scholar' | 'anthropic' | 'translation' | 'budget';
   /**
    * The reader-facing sentence, in `config.output.language`. It is NOT written
    * where the degradation is raised: every word a reader sees comes from the

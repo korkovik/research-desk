@@ -6,7 +6,6 @@
     "siteName": null,
     "_siteName": "TODO — the Czech-facing name is an open decision (§12). While it is null the pages render the working name below, and the run log says so on every run so it cannot be forgotten.",
     "workingName": "Research Desk",
-    "tagline": null,
     "papersPerDay": 5,
     "minPapersToPublish": 3,
     "timezone": "Europe/Prague"
@@ -37,6 +36,8 @@
       "freshness": 0.18,
       "credibility": 0.14
     },
+    "explainabilityGate": 0.35,
+    "_explainabilityGate": "§6 puts explainability first, but a weighted sum alone cannot enforce that — the other three factors total 0.60 against its 0.40. A candidate below this score is not eligible for the top five at all; it is admitted only to avoid dropping below minPapersToPublish. This is the number that decides what the project is for.",
     "maxPerSubfield": 2,
     "_maxPerSubfield": "§6 states the diversity cap as a rule, not a preference, so it is HARD: a day that cannot fill papersPerDay under the cap publishes fewer and says why (§3, §9). Raising it to reach the target is opt-in below.",
     "relaxDiversityToReachTarget": false,
@@ -111,13 +112,18 @@
     }
   },
 
+  "anthropic": {
+    "_readme": "A hard ceiling on Claude calls per run. A clean five-paper run makes exactly 15 (five to write, five to verify, five to challenge); regenerations and §7.4 top-ups add more. The cap exists because the failure it guards against is a bad day quietly costing several times a good one — see the cost note in README.md.",
+    "maxCallsPerRun": 60
+  },
+
   "verification": {
     "_readme": "§7.4 / §11 step 8. A fabricated example is the worst failure this project can produce, so the verifier runs as a separate call that sees only the source text and the candidate example, and the code independently checks that every quote it cites really occurs in the source.",
     "model": "claude-opus-5",
     "effort": "high",
     "maxTokens": 4000,
     "maxExampleAttempts": 2,
-    "dropPaperIfMotivationFallbackAlsoFails": true,
+    "_maxExampleAttempts": "Free-form retries before the labelled motivation fallback. There is deliberately no switch for what happens when even the fallback fails: §7.4 makes publishing an unverified example the worst outcome available, so the paper is always dropped. A knob that could turn that off would be a knob for shipping a fabrication.",
     "challengePass": true,
     "_challengePass": "A second, adversarial verification of anything the first pass approved. One extra call per accepted paper — about a quarter of the run's output tokens. It is on by default because §7.4 says the failure it guards against is worse than shipping fewer papers; turn it off first if the spend cap bites."
   },
