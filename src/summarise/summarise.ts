@@ -77,10 +77,17 @@ export async function summariseAndVerify(
       });
       payload = result.value;
     } catch (error) {
-      // DESIGN-NOTES C.6: a summarisation call that will not complete drops the
-      // paper. The alternative — publishing five blocks and an empty sixth — is
-      // not something §7 permits.
       log?.error(`summarisation failed on attempt ${attempt}: ${describeError(error)}`);
+      // A call that fails while trying to IMPROVE an attempt we already have is
+      // not a reason to lose the paper. §2's rules never drop a paper (A.6), so
+      // a bad night at the API must not turn a style blemish into a shortfall —
+      // stop regenerating and publish what we have.
+      if (best !== null) {
+        log?.warn('regeneration unavailable — publishing the best attempt so far');
+        break;
+      }
+      // Nothing usable yet. DESIGN-NOTES C.6: drop the paper rather than
+      // publish five blocks and an empty sixth.
       if (attempt > options.maxRegenerationAttempts) {
         return {
           status: 'dropped',
@@ -287,7 +294,7 @@ async function regenerateExample(
   try {
     const result = await llm.complete({
       system: prompts.summariserSystem,
-      user: `${prompts.renderMotivationUser(source)}\n\n${corrections}\n\nNapiš nový „Příklad ze života".`,
+      user: prompts.renderExampleRetryUser(source, corrections),
       schema: ExampleSchema,
       model: options.model,
       maxTokens: options.maxTokens,

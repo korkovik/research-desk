@@ -154,6 +154,9 @@ const MAX_CLAIMS = 12;
 const SHORT_EXAMPLE_WORDS = 15;
 const MIN_SPAN_COVERAGE = 0.7;
 
+/** Claim types where an unrelated quote is a fabrication signal, not a re-wording. */
+const HARD_RELEVANCE_TYPES = new Set<string>(['setting', 'application', 'mechanism']);
+
 export function adjudicate(
   payload: VerificationPayload,
   example: string,
@@ -186,16 +189,25 @@ export function adjudicate(
   };
 
   let fabricatedQuote = false;
-  let coveredChars = 0;
   let supportedClaims = 0;
+  // One flag per character of the example, so overlapping spans cannot be
+  // counted twice. Summing span lengths instead let three claims that all
+  // decompose the SAME sentence report full coverage while a second,
+  // fabricated sentence went unexamined — the precise omission V6 exists to
+  // make visible.
+  const covered = new Array<boolean>(normalisedExample.length).fill(false);
   const irrelevantQuotes: { id: string; detail: string }[] = [];
 
   for (const claim of claims) {
     // V5 — the span must really come from the example. A span the verifier
     // paraphrased means it was not reading the text in front of it.
     const normalisedSpan = normaliseForQuoteMatch(claim.exampleSpan);
-    if (normalisedSpan.length > 0 && normalisedExample.includes(normalisedSpan)) {
-      coveredChars += normalisedSpan.replace(/\s/gu, '').length;
+    const at = normalisedSpan.length > 0 ? normalisedExample.indexOf(normalisedSpan) : -1;
+    if (at >= 0) {
+      // The first occurrence, deliberately: a span that appears twice is
+      // evidence for one of them, and claiming both would be the same
+      // double-count in another guise.
+      for (let i = at; i < at + normalisedSpan.length; i++) covered[i] = true;
     } else {
       add('V5_SPAN_NOT_IN_EXAMPLE', claim.id, truncate(claim.exampleSpan));
     }
@@ -237,19 +249,30 @@ export function adjudicate(
       continue;
     }
 
-    // V7 — the quote should be about the claim. Deliberately NOT a per-claim
-    // rejection: the check it is doing is lexical, and a genuinely supported
-    // example re-worded for a lay reader ("worker bees" for "honeybee
-    // foragers") shares no stem with its own source sentence. Sinking such an
-    // example would make the pipeline reject good writing for being good
-    // writing. What V7 is actually for is the verifier that pastes a real but
-    // unrelated sentence for claim after claim, so it is judged in aggregate
-    // below. V4 — the quote must exist at all — remains the per-claim rule.
+    // V7 — the quote should be about the claim.
+    //
+    // Split by claim type, because the two failure modes pull in opposite
+    // directions. A lay re-wording legitimately shares no stem with its source
+    // ("worker bees" for "honeybee foragers"), so judging every claim
+    // individually would reject good writing for being good writing — those
+    // are aggregated below.
+    //
+    // But WHERE a study happened, WHAT it is claimed to apply to, and WHY it
+    // works are the three things a fabricated example invents, and all three
+    // name something concrete that a genuine supporting sentence must also
+    // name. For those, an unrelated quote is not paraphrase; it is a real
+    // sentence borrowed to cover an invented claim, and V4 alone cannot see it.
+    // So they are judged per claim. GT-06 (an invented intensive-care setting
+    // backed by a real sentence about day shifts) is the case this catches.
     supportedClaims += 1;
     const claimHasNumber = /\p{N}/u.test(claim.claimText) || MAGNITUDE_WORDS.test(claim.claimText);
     const quoteHasNumber = /\p{N}/u.test(quote) || MAGNITUDE_WORDS.test(quote);
     if (!intersects(contentStems(claim.claimText), contentStems(quote))) {
-      irrelevantQuotes.push({ id: claim.id, detail: truncate(quote) });
+      if (HARD_RELEVANCE_TYPES.has(claim.claimType)) {
+        add('V7_QUOTE_IRRELEVANT', claim.id, `${claim.claimType} claim, unrelated quote: ${truncate(quote)}`);
+      } else {
+        irrelevantQuotes.push({ id: claim.id, detail: truncate(quote) });
+      }
     }
 
     // A claim that states a magnitude, backed by a quote that states none, is
@@ -277,8 +300,14 @@ export function adjudicate(
   // V6 — the anti-omission rule. A lazy verifier decomposes only the true parts
   // of an example and silently skips the fabricated sentence; requiring the
   // spans to cover most of the text makes that skip mechanically visible.
-  const exampleChars = normalisedExample.replace(/\s/gu, '').length;
-  const coverage = exampleChars === 0 ? 0 : Math.min(1, coveredChars / exampleChars);
+  let exampleChars = 0;
+  let coveredChars = 0;
+  for (let i = 0; i < normalisedExample.length; i++) {
+    if (/\s/u.test(normalisedExample[i] ?? '')) continue;
+    exampleChars += 1;
+    if (covered[i] === true) coveredChars += 1;
+  }
+  const coverage = exampleChars === 0 ? 0 : coveredChars / exampleChars;
   if (coverage < MIN_SPAN_COVERAGE) {
     add('V6_COVERAGE_TOO_LOW', null, `spans cover ${(coverage * 100).toFixed(0)}% of the example`);
   }

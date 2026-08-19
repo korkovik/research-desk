@@ -109,12 +109,27 @@ test('"quote the study to support everything" is rejected as too weak', () => {
 
 test('one paraphrased claim does NOT sink a genuinely supported example', () => {
   // The negative control that matters: a lay re-wording shares no word stem with
-  // its own source sentence ("worker bees" for "honeybee foragers"). A per-claim
-  // relevance rule would reject good writing for being good writing.
+  // its own source sentence ("worker bees" for "honeybee foragers"). Judging
+  // every claim individually would reject good writing for being good writing.
   const claims = structuredClone(GOOD_CLAIMS);
+  claims[0]!.claimType = 'population';
   claims[0]!.claimText = 'The pupils were roughly halfway through their teens';
   const report = adjudicate(payload(claims), EXAMPLE, SOURCE);
   assert.equal(report.verdict, 'supported');
+});
+
+test('a SETTING claim backed by an unrelated quote is rejected on its own (V7)', () => {
+  // Where a study happened is one of the three things a fabricated example
+  // invents, and a genuine supporting sentence for it names the same place. An
+  // unrelated but real quote here is a borrowed sentence covering an invented
+  // claim — which V4 alone cannot see, because the quote really is in the source.
+  const claims = structuredClone(GOOD_CLAIMS);
+  claims[0]!.claimType = 'setting';
+  claims[0]!.claimText = 'The trial ran in intensive care units and operating theatres';
+  claims[0]!.sourceQuote = 'End-of-year grade point averages did not differ between the two groups';
+  const report = adjudicate(payload(claims), EXAMPLE, SOURCE);
+  assert.equal(report.verdict, 'unsupported');
+  assert.ok(report.failures.some((f) => f.code === 'V7_QUOTE_IRRELEVANT'));
 });
 
 test('a verifier whose quotes are unrelated to MOST claims is rejected (V7)', () => {

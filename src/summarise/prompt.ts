@@ -22,6 +22,15 @@ export interface PromptPack {
   renderSummariserUser(source: SourceText, extra: SummaryContext): string;
   motivationSystem: string;
   renderMotivationUser(source: SourceText): string;
+  /**
+   * The example-only retry (DESIGN-NOTES C.5.5). It must NOT reuse the
+   * motivation prompt: that one ends by asking for the authors' reason for
+   * doing the study, and a model that follows it returns a motivation, which
+   * then gets stored as an ordinary example and rendered WITHOUT §7.4's
+   * mandatory "Autoři to zmiňují jako důvod…" label. A motivation presented as
+   * a finding is exactly what A19 forbids.
+   */
+  renderExampleRetryUser(source: SourceText, corrections: string): string;
   /** Appended to a regeneration call: what was wrong last time. */
   renderCorrections(hardFindings: string[], rejectedSpans: string[]): string;
 }
@@ -141,10 +150,28 @@ export const CS_PROMPTS: PromptPack = {
     return `${renderSource(source)}\n\nNapiš 1 až 3 věty o důvodu, proč studie vznikla.`;
   },
 
+  renderExampleRetryUser(source, corrections) {
+    return [
+      renderSource(source),
+      '',
+      corrections,
+      '',
+      'Napiš nový „Příklad ze života". Nic jiného nepiš.',
+    ].join('\n');
+  },
+
   // DESIGN-NOTES C.5.5. The verifier's raw output is never shown to the generator
   // — only the rejected spans and the Czech reasons. Handing over the full claim
   // analysis would teach the generator to write for the verifier rather than for
   // the reader, and the two are not the same target.
+  //
+  // One deliberate departure from C.5.5: its fragment ends by telling the model
+  // that if the paper has no concrete example it may write the authors' stated
+  // reason instead. That is right as an outcome and wrong here — a motivation
+  // returned through this path is stored as an ordinary example and rendered
+  // without §7.4's mandatory label, which is precisely what A19 forbids. The
+  // pipeline has a separate, labelled rung for the motivation fallback, so this
+  // one asks for a shorter example rather than a different kind of text.
   renderCorrections(hardFindings, rejectedSpans) {
     const parts: string[] = [];
     if (hardFindings.length > 0) {
@@ -167,8 +194,8 @@ export const CS_PROMPTS: PromptPack = {
         'použití, které autoři sami uvádějí.',
         '',
         'Nedoplňuj místo, věk, počet, číslo ani praktické využití, které v práci nejsou.',
-        'Pokud práce žádný konkrétní příklad neobsahuje, napiš jednu větu o tom, co autoři',
-        'uvádějí jako důvod, proč studii dělali — nic si nevymýšlej.',
+        'Když toho práce nabízí málo, napiš raději kratší příklad. Nikdy nedoplňuj nic,',
+        'co v ní není.',
       );
     }
     return parts.join('\n');

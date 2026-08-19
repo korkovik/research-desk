@@ -34,6 +34,7 @@ import { fetchCandidates } from './adapters/registry.js';
 import { enrichWithTldr } from './enrich/semanticScholar.js';
 import { optionsFromConfig, selectForDay } from './select/select.js';
 import { admitWithinCap } from './select/diversity.js';
+import { passesExplainabilityGate } from './select/score.js';
 import { checkStyle } from './checks/index.js';
 import { createSeenLookup, loadSeen, recordPublished, saveSeen } from './state/seen.js';
 import { writeDayOutputs } from './render/archive.js';
@@ -219,13 +220,20 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
       ? config.ranking.relaxedMaxPerSubfield
       : config.ranking.maxPerSubfield;
     const committed = [...entries.map((e) => e.candidate), ...queue];
+    // The remainder is what ranking did NOT select, which by definition includes
+    // the papers the explainability gate and the diversity cap turned away. A
+    // replacement has to clear both again, or the §7.4 top-up becomes the way
+    // §6's rules get broken — quietly, and only on the days a drop already made
+    // the day fragile. §7's whole premise is that an unexplainable paper is not
+    // worth a slot; that does not stop being true because a slot came free.
     const replacementIndex = reserve.findIndex(
-      (paper) => admitWithinCap([paper], committed, 1, cap).length === 1,
+      (paper) =>
+        passesExplainabilityGate(paper) && admitWithinCap([paper], committed, 1, cap).length === 1,
     );
     if (replacementIndex === -1) {
       logger.warn(
-        `nothing in the ranked remainder fits under the ${cap}-per-subfield cap — ` +
-          'publishing short rather than breaking §6',
+        `nothing in the ranked remainder clears the explainability gate and the ` +
+          `${cap}-per-subfield cap — publishing short rather than breaking §6`,
       );
       continue;
     }

@@ -12,6 +12,7 @@ import { summariseAndVerify, type SummariseOptions } from '../src/summarise/summ
 import type { SourceText } from '../src/summarise/verify.js';
 import type { LanguageCheckResult, PaperSummary } from '../src/types.js';
 import { StubLlm, sequence } from './support/stubLlm.js';
+import { CS_PROMPTS } from '../src/summarise/prompt.js';
 
 const SOURCE: SourceText = {
   title: 'Twelve weeks of supervised resistance training and fall risk in adults aged 65 to 84',
@@ -289,4 +290,22 @@ test('a summarisation call that never completes drops the paper', async () => {
   const result = await summariseAndVerify(llm, SOURCE, { isPreprint: false, categoryLabel: 'Zdraví a medicína' }, options());
   assert.equal(result.status, 'dropped');
   assert.equal(result.reason, 'summarisation_failed');
+});
+
+test('the example-retry prompt never asks for a motivation (§7.4 label, A19)', () => {
+  const source: SourceText = { ...SOURCE };
+  const corrections = CS_PROMPTS.renderCorrections(['důvod'], ['Lidé po čtyřicítce']);
+  const retry = CS_PROMPTS.renderExampleRetryUser(source, corrections);
+
+  // A motivation returned through the free-form example path is stored with
+  // `prikladJeMotivace: false` and rendered WITHOUT the label §7.4 makes
+  // mandatory. The labelled fallback is a separate rung; this prompt must not
+  // invite the model onto it by accident.
+  assert.equal(/Napiš 1 až 3 věty o důvodu/.test(retry), false);
+  assert.equal(/napiš jednu větu o tom, co autoři/.test(retry), false);
+  assert.ok(retry.includes('Napiš nový „Příklad ze života"'));
+  assert.ok(retry.includes('Lidé po čtyřicítce'), 'the rejected span must reach the generator');
+
+  // …and the motivation prompt still does ask for one.
+  assert.ok(/Napiš 1 až 3 věty o důvodu/.test(CS_PROMPTS.renderMotivationUser(source)));
 });
