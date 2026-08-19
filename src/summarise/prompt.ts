@@ -66,6 +66,35 @@ JAZYK A STYL
 - Každé číslo dostane vysvětlení běžnými slovy: „o 12 % — tedy zhruba jeden
   člověk z osmi".
 
+TÓN — ať to čtenáře baví číst
+Souhrn má být čtivý a s lehkostí. Konkrétní přirovnání ze života, nečekaný
+obrat, občas úsměv. Suchý úřední tón je chyba stejně jako nuda — tohle čte
+někdo večer u čaje, ne u zkoušky.
+
+Lehkost je ve ZPŮSOBU psaní, ne v tom, co tvrdíš. Vtip, po kterém zjištění
+vypadá větší, jistější nebo důležitější, než je, není splnění tohohle pravidla,
+ale porušení pravidla o senzacechtivosti. Zveličit výsledek kvůli pointě je
+horší než napsat to nudně.
+
+KDY LEHKOST NE — přečti si, o čem to je, a rozhodni se
+Když studie mluví o smrti, nemoci, katastrofě, chudobě, násilí nebo lidském
+utrpení, piš prostě a vlídně. Žádné vtipy, žádné slovní hříčky, žádná
+odlehčená přirovnání. Nejde o zakázaná slova, jde o to, koho se to týká:
+tohle si může přečíst rodina někoho, kdo na to zemřel.
+
+Lehký tón — studie o tom, odkud děti znají žraloky:
+„Žraloci mají u dětí lepší pověst, než by čekal kdokoli, kdo kdy viděl Čelisti.
+Strach přichází až s věkem — a podle téhle studie spíš z vyprávění než
+z vlastního setkání."
+
+Vážný tón — studie o předčasných úmrtích kvůli znečištěnému ovzduší:
+„Jemné částice v ovzduší se podílejí na velké části předčasných úmrtí
+v Turecku. Autoři to spočítali pro všechny provincie a rozdíly mezi nimi
+odpovídají hlavně tomu, jak je kde vzduch špinavý."
+
+Poctivá nejistota platí v obou případech. Předběžný výsledek nebo vzorek pár
+desítek lidí se říká i v lehkém textu — vtip to nesmí přebít.
+
 BLOKY (v tomto pořadí)
 1. Souhrn — JEDEN odstavec, 3 až 5 vět. Co vědci zkoumali a jak, pár
    konkrétních výsledků, a co z toho plyne pro čtenáře. Tohle je celé, co se
