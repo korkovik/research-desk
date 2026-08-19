@@ -73,10 +73,10 @@ describe('RISK-VOICE-02 — must pass', () => {
   for (const control of NEGATIVE_CONTROLS) {
     it(`negative control produces no English finding: ${control.name}`, () => {
       for (const block of [
-        control.summary.nadpis,
-        control.summary.oCoJde,
+        control.summary.souhrn,
+        control.summary.souhrn,
         control.summary.podrobneVysvetleni,
-        control.summary.prikladZeZivota,
+        control.summary.souhrn,
         control.summary.procJeToDulezite,
         control.summary.poznamkaKOmezenim,
       ]) {
@@ -128,7 +128,7 @@ describe('A.2.3 — secondary checks', () => {
 describe('A.2.1 step 4 — title echo', () => {
   it('warns when a block repeats ≥ 8 characters of the paper\'s own title', () => {
     const title = 'Sleep duration and arithmetic performance in adolescents';
-    const findings = checkEnglish('nadpis', 'Nadpis opisuje arithmetic performance z originálu.', config, {
+    const findings = checkEnglish('souhrn', 'Nadpis opisuje arithmetic performance z originálu.', config, {
       sourceTitle: title,
     });
     const echo = findings.find((f) => f.rule === 'english_sentence:title_echo');
@@ -138,7 +138,7 @@ describe('A.2.1 step 4 — title echo', () => {
 
   it('is silent when no source title is supplied', () => {
     assert.deepEqual(
-      checkEnglish('nadpis', 'Nadpis opisuje arithmetic performance z originálu.', config).map((f) => f.rule),
+      checkEnglish('souhrn', 'Nadpis opisuje arithmetic performance z originálu.', config).map((f) => f.rule),
       [],
     );
   });

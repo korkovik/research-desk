@@ -139,6 +139,15 @@ export function rerenderArchive(options: {
       logger.warn(`rerender: ${file} has no usable date, skipping`);
       continue;
     }
+    // Editions written before the summary paragraph replaced the headline and
+    // the "O co jde" block cannot be re-rendered by the current renderer, and a
+    // half-rendered page is worse than the one already on disk. Their existing
+    // HTML stays exactly as it is, and they still list on the index, which
+    // reads both shapes.
+    if (digest.entries.some((entry) => typeof entry.summary?.souhrn !== 'string')) {
+      logger.warn(`rerender: ${file} predates the summary-paragraph format — leaving its page alone`);
+      continue;
+    }
     const { htmlPath } = dayOutputPaths(config, repoRoot, digest.date);
     const html = renderDayPage(digest, config);
     // The same gate the original write passed. A renderer change that started

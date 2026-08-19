@@ -295,32 +295,6 @@ export function checkNumberAnchors(block: BlockName, text: string, config: Style
   return findings;
 }
 
-/**
- * A.5.4 — §7.2 says block 2 has "no numbers yet". A year is the one exception:
- * "studie z roku 2025" is a date, not a quantitative claim, and rewriting it
- * costs the reader clarity for nothing.
- */
-export function checkBlock2NumeralBan(text: string): Finding[] {
-  const findings: Finding[] = [];
-  for (const num of findNumbers(text)) {
-    // A.5.4 grants exactly one exemption here, the year — not the whole A.5.2
-    // table. A sample size or a percentage in block 2 is precisely what §7.2
-    // forbids, so it stays hard.
-    if (YEAR_RE.test(num.text.trim())) continue;
-    findings.push({
-      check: 'number_anchor',
-      severity: 'hard',
-      block: 'oCoJde',
-      span: { start: num.start, end: num.end },
-      matchedText: num.text,
-      rule: 'number_anchor:numbers_in_block2',
-      messageCs:
-        `V bloku „O co jde“ nesmí být čísla (§7.2) — najde se tu „${num.text.trim()}“. ` +
-        `Napište to slovy, nebo číslo přesuňte do podrobného vysvětlení.`,
-    });
-  }
-  return findings;
-}
 
 export function unanchoredMessageCs(matched: string): string {
   return (

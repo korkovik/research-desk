@@ -26,12 +26,12 @@ import { NEGATIVE_CONTROLS, styleConfig, summaryWith, CONTROL_LEDOVEC } from './
 const config = styleConfig();
 
 describe('A.0 — block scope', () => {
-  it('readability skips the nadpis and the reference block', () => {
-    assert.deepEqual(BLOCK_SCOPE.readability, ['oCoJde', 'podrobneVysvetleni', 'prikladZeZivota', 'procJeToDulezite']);
+  it('readability covers the summary, the detail and the why — not the reference block', () => {
+    assert.deepEqual(BLOCK_SCOPE.readability, ['souhrn', 'podrobneVysvetleni', 'procJeToDulezite']);
   });
 
-  it('number_anchor never looks at the nadpis or the limitation note', () => {
-    assert.deepEqual(BLOCK_SCOPE.numberAnchor, ['podrobneVysvetleni', 'prikladZeZivota', 'procJeToDulezite']);
+  it('number_anchor covers every block that can carry a figure', () => {
+    assert.deepEqual(BLOCK_SCOPE.numberAnchor, ['souhrn', 'podrobneVysvetleni', 'procJeToDulezite']);
   });
 
   it('hype and english cover the limitation note; jargon does not', () => {
@@ -68,12 +68,10 @@ describe('the negative controls pass the whole checker', () => {
 
 describe('the checker genuinely fails on bad output', () => {
   const bad = summaryWith({
-    nadpis: 'Revoluční průlom, který navždy změní medicínu',
-    oCoJde: 'Vědci udělali zásadní zlom. Riziko kleslo o 12 %.',
+    souhrn: 'Vědci udělali zásadní zlom. Riziko kleslo o 12 %.',
     podrobneVysvetleni:
       'Byla použita metaanalýza a p-hodnota byla nízká. The results were replicated in a second cohort of patients. ' +
       'Riziko kleslo o 12 % a to je vše.',
-    prikladZeZivota: 'Představte si pacienta, kterému se sníží riziko.',
     procJeToDulezite: 'Je to zázrak.',
     poznamkaKOmezenim: 'Šlo o malou studii.',
   });
@@ -92,7 +90,7 @@ describe('the checker genuinely fails on bad output', () => {
   });
 
   it('every violation carries a span that really points at its matched text', () => {
-    const blocks: Record<string, string> = { ...bad } as unknown as Record<string, string>;
+    const blocks: Record<string, string> = { ...bad };
     for (const v of [...result.hard, ...result.soft]) {
       if (v.block === 'all') continue;
       const text = blocks[v.block];

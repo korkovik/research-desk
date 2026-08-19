@@ -5,8 +5,8 @@
  */
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
-import { checkBlock2NumeralBan, checkNumberAnchors, classify, findNumbers } from '../src/checks/numbers.js';
-import { NEGATIVE_CONTROLS, styleConfig } from './helpers/style-fixtures.js';
+import { checkNumberAnchors, classify, findNumbers } from '../src/checks/numbers.js';
+import { styleConfig } from './helpers/style-fixtures.js';
 
 const config = styleConfig();
 const check = (text: string) => checkNumberAnchors('podrobneVysvetleni', text, config);
@@ -85,47 +85,12 @@ describe('A.5.2 — the exemption list, asserted explicitly so it cannot swallow
 });
 
 describe('RISK-VOICE-10 / A.5.4 — block 2 numeral ban (§7.2 "No numbers yet")', () => {
-  it('any numeral in block 2 is hard', () => {
-    const findings = checkBlock2NumeralBan('Riziko kleslo o 12 procent.');
-    assert.equal(findings.length, 1, JSON.stringify(findings));
-    const [f] = findings;
-    assert.ok(f);
-    assert.equal(f.severity, 'hard');
-    assert.equal(f.rule, 'number_anchor:numbers_in_block2');
-    assert.equal(f.block, 'oCoJde');
-    assert.equal(f.matchedText, '12 procent');
-  });
 
-  it('a sample count is hard in block 2 too, even though A.5.2 warns on it elsewhere', () => {
-    assert.equal(checkBlock2NumeralBan('Zapojilo se 240 dětí.').length, 1);
-  });
 
-  it('a year is the single A.5.4 exemption', () => {
-    assert.deepEqual(checkBlock2NumeralBan('Studie vyšla v roce 2024.'), []);
-  });
 
-  it('an anchored number is still banned — §7.2 says no numbers, not "anchored numbers"', () => {
-    assert.equal(checkBlock2NumeralBan('Riziko kleslo o 12 %, tedy zhruba u jednoho z osmi lidí.').length, 1);
-  });
 
-  it('clean block 2 text passes (the two-fixture pair of RISK-VOICE-10)', () => {
-    assert.deepEqual(checkBlock2NumeralBan('Vědci chtěli vědět, jestli dřívější večerka pomůže dětem ve škole.'), []);
-  });
 });
 
-describe('RISK-VOICE-09 — negative controls', () => {
-  for (const control of NEGATIVE_CONTROLS) {
-    it(`every number in the control is anchored or exempt: ${control.name}`, () => {
-      const findings = [
-        ...check(control.summary.podrobneVysvetleni),
-        ...check(control.summary.prikladZeZivota),
-        ...check(control.summary.procJeToDulezite),
-        ...checkBlock2NumeralBan(control.summary.oCoJde),
-      ];
-      assert.deepEqual(findings.map((f) => `${f.rule}: ${f.matchedText}`), []);
-    });
-  }
-});
 
 /**
  * Regression guard for the anchor-detector fix.

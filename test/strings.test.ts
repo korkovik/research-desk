@@ -70,20 +70,16 @@ test('every {placeholder} is one the renderer knows how to fill', () => {
   }
 });
 
-test('the §7 block headings are the ones the spec names', () => {
-  // Block 1 has no heading: the headline is its own label.
-  assert.equal(stringsCs.blockWhatItIsAbout, 'O co jde');
+test('the block headings are the ones the page still renders', () => {
+  // The summary paragraph opens each paper and carries no heading of its own.
+  // "O co jde" and "Příklad ze života" went with the blocks they labelled.
   assert.equal(stringsCs.blockDetail, 'Podrobné vysvětlení');
-  assert.equal(stringsCs.blockExample, 'Příklad ze života');
   assert.equal(stringsCs.blockWhyItMatters, 'Proč je to důležité');
   assert.equal(stringsCs.blockReferences, 'Chci vědět víc');
 });
 
-test('the wordings §4.3 and §7.4 mandate are present verbatim', () => {
+test('the wording §4.3 mandates is present verbatim', () => {
   assert.ok(stringsCs.preprintNotice.includes('zatím neprošlo recenzním řízením'));
-  assert.ok(
-    stringsCs.exampleIsMotivation.includes('Autoři to zmiňují jako důvod, proč studii dělali'),
-  );
 });
 
 test('the language is chosen by config, and an unavailable one fails loudly', () => {

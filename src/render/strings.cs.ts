@@ -83,22 +83,9 @@ export const stringsCs: StringTable = {
   // ("Study 1 of 5"). {n} is the number of this paper, {total} the day's count.
   paperCounter: 'Studie {n} z {total}',
 
-  // ---- The six blocks each paper is made of (§7), in order -------------
-
-  // EN: block 1 heading — "Headline". Small label above the plain-language
-  // title of the paper.
-
-  // EN: block 2 heading — "What it is about". Two or three sentences on the
-  // question and the finding.
-  blockWhatItIsAbout: 'O co jde',
-
   // EN: block 3 heading — "Detailed explanation". The longer text with the
   // numbers in it.
   blockDetail: 'Podrobné vysvětlení',
-
-  // EN: block 4 heading — "An example from everyday life". The centrepiece of
-  // each paper.
-  blockExample: 'Příklad ze života',
 
   // EN: block 5 heading — "Why it matters".
   blockWhyItMatters: 'Proč je to důležité',
@@ -106,22 +93,6 @@ export const stringsCs: StringTable = {
   // EN: block 6 heading — "I want to know more". The references: authors,
   // journal, date, links, limitations.
   blockReferences: 'Chci vědět víc',
-
-  // ---- Notices --------------------------------------------------------
-
-  // EN: "The authors mention this as the reason they did the study." Shown
-  // above the example whenever the example is the authors' stated motivation
-  // rather than something the study actually found. Spec wording (§7.4) — it
-  // must stay clear that this is not a result.
-  exampleIsMotivation: 'Autoři to zmiňují jako důvod, proč studii dělali.',
-
-  // EN: "This is our comparison, to help you picture the size of it — not
-  // something the study measured." Shown above block 4 when the example is the
-  // writer's own everyday framing rather than a statement about the research.
-  // Without this line a reader could repeat an invented scene as a finding,
-  // which is the one failure §7.4 exists to prevent.
-  exampleIsIllustration:
-    'Tohle je naše přirovnání, abyste si to uměli představit — ne něco, co studie měřila.',
 
   // EN: "This is an early version of the study, a so-called preprint. It has
   // not been through peer review yet – independent experts have not checked

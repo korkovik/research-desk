@@ -9,7 +9,6 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 import {
-  checkNadpis,
   checkReadability,
   computeMetrics,
   findPeriphrasticPassive,
@@ -71,9 +70,9 @@ describe('RISK-VOICE-04 — the checks genuinely pass', () => {
     it(`plain Czech produces no readability finding: ${control.name}`, () => {
       const result = checkReadability(
         [
-          { block: 'oCoJde', text: control.summary.oCoJde },
+          { block: 'souhrn', text: control.summary.souhrn },
           { block: 'podrobneVysvetleni', text: control.summary.podrobneVysvetleni },
-          { block: 'prikladZeZivota', text: control.summary.prikladZeZivota },
+          { block: 'souhrn', text: control.summary.souhrn },
           { block: 'procJeToDulezite', text: control.summary.procJeToDulezite },
         ],
         config,
@@ -136,26 +135,9 @@ describe('A.3.4 — reflexive passive is warn-only and admittedly unreliable', (
 });
 
 describe('A.3.2 — the nadpis rule outside the table (§7.1)', () => {
-  it('accepts a short one-line title', () => {
-    assert.deepEqual(checkNadpis('Ledovec nad městem taje rychleji, když fouká teplý vítr', config), []);
-  });
 
-  it('rejects a title over 14 words', () => {
-    const long = 'Vědci z Norska zjistili, že ledovec nad malým severním městem taje mnohem rychleji, než se dosud myslelo';
-    const rules = checkNadpis(long, config).map((f) => f.rule);
-    assert.ok(rules.includes('readability:nadpis_words'), rules.join(', '));
-  });
 
-  it('rejects a title over 100 characters, the 390 px phone width of §11 step 9', () => {
-    const wide = `${'Ledovec taje rychleji '.repeat(6)}dnes`;
-    const rules = checkNadpis(wide, config).map((f) => f.rule);
-    assert.ok(rules.includes('readability:nadpis_chars'), rules.join(', '));
-  });
 
-  it('rejects a two-sentence title', () => {
-    const rules = checkNadpis('Ledovec taje rychleji. Vítr za to může.', config).map((f) => f.rule);
-    assert.ok(rules.includes('readability:nadpis_sentences'), rules.join(', '));
-  });
 });
 
 describe('A.3.5 — composite index', () => {

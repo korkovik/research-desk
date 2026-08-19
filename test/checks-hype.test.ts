@@ -75,10 +75,10 @@ describe('RISK-VOICE-01 — negatives: 0/10 false positives', () => {
   for (const control of NEGATIVE_CONTROLS) {
     it(`negative control passes the hype check: ${control.name}`, () => {
       for (const block of [
-        control.summary.nadpis,
-        control.summary.oCoJde,
+        control.summary.souhrn,
+        control.summary.souhrn,
         control.summary.podrobneVysvetleni,
-        control.summary.prikladZeZivota,
+        control.summary.souhrn,
         control.summary.procJeToDulezite,
         control.summary.poznamkaKOmezenim,
       ]) {

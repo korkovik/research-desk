@@ -20,28 +20,20 @@ import type {
 } from '../../src/types.js';
 
 export interface SummaryOptions {
-  nadpis?: string;
-  oCoJde?: string;
+  souhrn?: string;
   podrobneVysvetleni?: string;
-  prikladZeZivota?: string;
-  prikladJeMotivace?: boolean;
   procJeToDulezite?: string;
   poznamkaKOmezenim?: string;
 }
 
 export function makeSummary(options: SummaryOptions = {}): PaperSummary {
   return {
-    nadpis: options.nadpis ?? 'Krátký spánek zhoršuje pozornost řidičů',
-    oCoJde:
-      options.oCoJde ??
+    souhrn:
+      options.souhrn ??
       'Vědci sledovali, jak se řidiči chovají po krátké noci. Zjistili, že déle reagují na náhlé překážky.',
     podrobneVysvetleni:
       options.podrobneVysvetleni ??
       'Do studie se přihlásilo dvě stě řidičů, kteří jezdili na trenažéru. Polovina z nich spala jen pět hodin.',
-    prikladZeZivota:
-      options.prikladZeZivota ?? 'Na trenažéru měli řidiči zabrzdit, když jim do cesty vběhlo dítě.',
-    prikladTyp: 'ze-studie',
-    prikladJeMotivace: options.prikladJeMotivace ?? false,
     procJeToDulezite:
       options.procJeToDulezite ?? 'Krátký spánek před cestou zvyšuje riziko nehody.',
     poznamkaKOmezenim:
@@ -147,7 +139,7 @@ export function makeDigest(options: DigestOptions = {}): DayDigest {
     Array.from({ length: options.entryCount ?? 5 }, (_, i) =>
       makeEntry({
         candidate: { index: i + 1 },
-        summary: { nadpis: `Plain-language title ${i + 1}` },
+        summary: { souhrn: `Plain-language title ${i + 1}` },
       }),
     );
   return {

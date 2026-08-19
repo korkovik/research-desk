@@ -24,8 +24,8 @@ import type { LanguageCheckResult, LanguageViolation, PaperSummary } from '../ty
 import { checkEnglish } from './english.js';
 import { checkHype } from './hype.js';
 import { checkJargon, type JargonBlock } from './jargon.js';
-import { checkBlock2NumeralBan, checkNumberAnchors } from './numbers.js';
-import { checkNadpis, checkReadability, type ConcatSegment, type ReadabilityMetrics } from './readability.js';
+import { checkNumberAnchors } from './numbers.js';
+import { checkReadability, type ConcatSegment, type ReadabilityMetrics } from './readability.js';
 import { countableWords, toNfc } from './text.js';
 import type { BlockName, Finding } from './types.js';
 
@@ -64,25 +64,22 @@ export interface StyleReport {
  * `PaperSummary`, whose only block-6 member is the free-text limitation note.
  */
 export const BLOCK_SCOPE = {
-  hype: ['nadpis', 'oCoJde', 'podrobneVysvetleni', 'prikladZeZivota', 'procJeToDulezite', 'poznamkaKOmezenim'],
-  english: ['nadpis', 'oCoJde', 'podrobneVysvetleni', 'prikladZeZivota', 'procJeToDulezite', 'poznamkaKOmezenim'],
-  readability: ['oCoJde', 'podrobneVysvetleni', 'prikladZeZivota', 'procJeToDulezite'],
-  jargon: ['nadpis', 'oCoJde', 'podrobneVysvetleni', 'prikladZeZivota', 'procJeToDulezite'],
-  numberAnchor: ['podrobneVysvetleni', 'prikladZeZivota', 'procJeToDulezite'],
+  hype: ['souhrn', 'podrobneVysvetleni', 'procJeToDulezite', 'poznamkaKOmezenim'],
+  english: ['souhrn', 'podrobneVysvetleni', 'procJeToDulezite', 'poznamkaKOmezenim'],
+  readability: ['souhrn', 'podrobneVysvetleni', 'procJeToDulezite'],
+  jargon: ['souhrn', 'podrobneVysvetleni', 'procJeToDulezite'],
+  // §7.3's rule is about the block where numbers live. The summary paragraph
+  // carries a few results now, so it is in scope too.
+  numberAnchor: ['souhrn', 'podrobneVysvetleni', 'procJeToDulezite'],
 } as const satisfies Record<string, readonly (keyof PaperSummary)[]>;
 
-type TextBlock = Extract<
-  keyof PaperSummary,
-  'nadpis' | 'oCoJde' | 'podrobneVysvetleni' | 'prikladZeZivota' | 'procJeToDulezite' | 'poznamkaKOmezenim'
->;
+type TextBlock = keyof PaperSummary;
 
 /** NFC once (A.0.1); every offset in every finding is into these strings. */
 function normalisedBlocks(summary: PaperSummary): Record<TextBlock, string> {
   return {
-    nadpis: toNfc(summary.nadpis),
-    oCoJde: toNfc(summary.oCoJde),
+    souhrn: toNfc(summary.souhrn),
     podrobneVysvetleni: toNfc(summary.podrobneVysvetleni),
-    prikladZeZivota: toNfc(summary.prikladZeZivota),
     procJeToDulezite: toNfc(summary.procJeToDulezite),
     poznamkaKOmezenim: toNfc(summary.poznamkaKOmezenim),
   };
@@ -110,13 +107,13 @@ export function analyseStyle(summary: PaperSummary, config: StyleConfig, context
   const segments: ConcatSegment[] = BLOCK_SCOPE.readability.map((name) => ({ block: name, text: text[name] }));
   const readability = checkReadability(segments, config);
   findings.push(...readability.findings);
-  findings.push(...checkNadpis(text.nadpis, config));
 
   for (const block of BLOCK_SCOPE.numberAnchor) {
     findings.push(...checkNumberAnchors(block, text[block], config));
   }
-  // A.5.4 — §7.2's "no numbers yet" in block 2.
-  findings.push(...checkBlock2NumeralBan(text.oCoJde));
+  // A.5.4's "no numbers in block 2" is gone with block 2: the summary paragraph
+  // is explicitly asked to carry a few results, so numbers belong in it — and
+  // they are anchored there like everywhere else.
 
   const wordCount = BLOCK_SCOPE.readability.reduce((sum, name) => sum + countableWords(text[name]).length, 0);
 
@@ -208,10 +205,8 @@ function toViolation(finding: Finding): LanguageViolation {
 }
 
 const BLOCK_ORDER: readonly BlockName[] = [
-  'nadpis',
-  'oCoJde',
+  'souhrn',
   'podrobneVysvetleni',
-  'prikladZeZivota',
   'procJeToDulezite',
   'poznamkaKOmezenim',
   'all',

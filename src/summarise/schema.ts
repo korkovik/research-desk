@@ -13,49 +13,32 @@ import { z } from 'zod';
 
 /** §7 — the six output blocks, as the summariser returns them. */
 export const SummarySchema = z.object({
-  nadpis: z
+  souhrn: z
     .string()
-    .min(10)
-    .max(140)
-    .describe('§7.1 Nadpis: přepsaný titulek běžnými slovy, jedna řádka, nejvýše 14 slov.'),
-  oCoJde: z
-    .string()
-    .min(40)
-    .describe('§7.2 O co jde: 2–3 věty. Na co se vědci ptali a co zjistili. ŽÁDNÁ čísla.'),
+    .min(120)
+    .describe(
+      'Jeden odstavec, 3 až 5 vět. Co vědci zkoumali a jak, pár konkrétních ' +
+        'výsledků, a co z toho plyne pro čtenáře. Žádný samostatný titulek — ' +
+        'tohle je celé shrnutí studie. Piš rovnou o věci, nezačínej frází ' +
+        'typu „Tato studie zkoumá".',
+    ),
   podrobneVysvetleni: z
     .string()
     .min(200)
     .describe(
-      '§7.3 Podrobné vysvětlení: 150–250 slov. Jak to dělali, co vyšlo, co to znamená. ' +
-        'Čísla jsou povolená, ale u každého čísla musí být vysvětlení běžnými slovy ' +
+      '150–250 slov. Jak to dělali, co vyšlo, co to znamená. Čísla jsou ' +
+        'povolená, ale u každého musí být vysvětlení běžnými slovy ' +
         '(„o 12 % — tedy zhruba jeden člověk z osmi").',
-    ),
-  prikladZeZivota: z
-    .string()
-    .min(40)
-    .describe(
-      '§7.4 Příklad ze života. Buď to, co studie opravdu dělala nebo měřila, ' +
-        'nebo běžná situace, na které si to čtenář představí. Který z těch dvou ' +
-        'to je, uveď v poli prikladTyp.',
-    ),
-  prikladTyp: z
-    .enum(['ze-studie', 'ilustrace'])
-    .describe(
-      '„ze-studie" = příklad popisuje, co studie opravdu dělala, měřila nebo ' +
-        'zjistila; každý prvek musí být v abstraktu. „ilustrace" = běžná situace, ' +
-        'kterou sis vymyslel ty, aby si to čtenář uměl představit — v takovém ' +
-        'případě NESMÍ tvrdit nic o studii: žádné její číslo, výsledek, místo ' +
-        'ani koho sledovala.',
     ),
   procJeToDulezite: z
     .string()
     .min(30)
-    .describe('§7.5 Proč je to důležité: 1–2 věty pro běžného čtenáře.'),
+    .describe('1–2 věty pro běžného čtenáře: proč by ho to mělo zajímat.'),
   poznamkaKOmezenim: z
     .string()
     .min(20)
     .describe(
-      '§7.6 Jedna poctivá věta o omezeních: velikost vzorku, preprint bez recenze, ' +
+      'Jedna poctivá věta o omezeních: velikost vzorku, preprint bez recenze, ' +
         'sporná oblast. Pokud je výsledek předběžný, řekni to.',
     ),
 });

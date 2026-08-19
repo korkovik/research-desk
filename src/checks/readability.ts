@@ -371,53 +371,6 @@ export function checkReadability(segments: readonly ConcatSegment[], config: Sty
   return { metrics, findings };
 }
 
-/**
- * A.3.2's rule outside the table: §7.1 says the plain-language title is "one
- * line". 14 words and 100 characters is what fits on two lines at 390 px — the
- * phone width §11 step 9 names.
- */
-export function checkNadpis(text: string, config: StyleConfig): Finding[] {
-  const r = config.readability;
-  const findings: Finding[] = [];
-  const words = countableWords(text).length;
-  const trimmed = text.trim();
-
-  if (words > r.nadpisMaxWords) {
-    findings.push({
-      check: 'readability',
-      severity: 'hard',
-      block: 'nadpis',
-      span: { start: 0, end: text.length },
-      matchedText: trimmed,
-      rule: 'readability:nadpis_words',
-      messageCs: `Nadpis má ${words} slov, povoleno je nejvýš ${r.nadpisMaxWords}. Zkraťte ho na jednu krátkou větu.`,
-    });
-  }
-  if (trimmed.length > r.nadpisMaxChars) {
-    findings.push({
-      check: 'readability',
-      severity: 'hard',
-      block: 'nadpis',
-      span: { start: 0, end: text.length },
-      matchedText: trimmed,
-      rule: 'readability:nadpis_chars',
-      messageCs:
-        `Nadpis má ${trimmed.length} znaků, povoleno je nejvýš ${r.nadpisMaxChars}, aby se vešel na displej telefonu. Zkraťte ho.`,
-    });
-  }
-  if (splitSentences(trimmed).length > 1) {
-    findings.push({
-      check: 'readability',
-      severity: 'hard',
-      block: 'nadpis',
-      span: { start: 0, end: text.length },
-      matchedText: trimmed,
-      rule: 'readability:nadpis_sentences',
-      messageCs: 'Nadpis musí být jedna věta na jeden řádek (§7.1). Nechte jen tu podstatnou.',
-    });
-  }
-  return findings;
-}
 
 function longestSentence(sentences: readonly Sentence[], words: readonly number[]): Sentence | null {
   let best: Sentence | null = null;

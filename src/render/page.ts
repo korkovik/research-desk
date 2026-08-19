@@ -133,12 +133,10 @@ function renderPaper(
       n: String(position),
       total: String(total),
     })}</p>`,
-    // Block 1 — the plain-language headline, with no label above it. It carried
-    // a small "Nadpis" kicker until the first real page was looked at on a
-    // phone, where it was the one element that told the reader nothing: a label
-    // reading "Headline" above a headline. The six blocks stay explicit and
-    // checkable in the data; the reader does not need the scaffolding.
-    `<h2>${escapeHtml(summary.nadpis)}</h2>`,
+    // The summary paragraph is the paper's opening and needs no heading of its
+    // own — it replaced a headline plus a two-sentence preamble that were two
+    // ways of saying the same thing before the reader reached anything new.
+    `<div class="summary">${paragraphsHtml(summary.souhrn)}</div>`,
   ];
 
   // §4.3 — a preprint says so in plain words, next to the title where nobody
@@ -148,27 +146,8 @@ function renderPaper(
   }
 
   parts.push(
-    `<h3>${escapeHtml(strings.blockWhatItIsAbout)}</h3>`,
-    paragraphsHtml(summary.oCoJde),
     `<h3>${escapeHtml(strings.blockDetail)}</h3>`,
     paragraphsHtml(summary.podrobneVysvetleni),
-    `<h3>${escapeHtml(strings.blockExample)}</h3>`,
-  );
-
-  // §7.4 — when the example is only the authors' stated motivation, the label
-  // is mandatory: without it the reader takes a reason for doing the study as
-  // something the study found.
-  if (summary.prikladJeMotivace) {
-    parts.push(`<p class="motivation">${escapeHtml(strings.exampleIsMotivation)}</p>`);
-  } else if (summary.prikladTyp === 'ilustrace') {
-    // An illustration is the writer's own framing, not something the study
-    // found. Saying so is what makes it safe to publish: the failure worth
-    // preventing is a reader repeating an invented scene as "research shows".
-    parts.push(`<p class="motivation">${escapeHtml(strings.exampleIsIllustration)}</p>`);
-  }
-
-  parts.push(
-    paragraphsHtml(summary.prikladZeZivota),
     `<h3>${escapeHtml(strings.blockWhyItMatters)}</h3>`,
     paragraphsHtml(summary.procJeToDulezite),
     `<h3>${escapeHtml(strings.blockReferences)}</h3>`,
@@ -310,7 +289,15 @@ function degradationMessage(degradation: Degradation, strings: StringTable): str
   }
 }
 
-/** Exposed for the index, which previews a day by its papers' plain-language titles. */
+/**
+ * Exposed for the index, which previews a day by its papers.
+ *
+ * There is no headline field any more, so the preview is the summary's first
+ * sentence — which is what the generator is told to lead with. Falls back to a
+ * clipped opening when the paragraph has no sentence break near the start.
+ */
 export function paperTitles(entries: readonly DigestEntry[]): string[] {
-  return entries.map((entry) => entry.summary.nadpis);
+  return entries.map((entry) => entry.summary.souhrn);
 }
+
+

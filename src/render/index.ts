@@ -43,7 +43,10 @@ const TwinSchema = z.object({
   date: z.string().optional(),
   categoryLabel: z.string(),
   entries: z
-    .array(z.object({ summary: z.object({ nadpis: z.string() }) }))
+    // `souhrn` for anything written since the restructure, `nadpis` for the
+    // editions that predate it. Reading both is what keeps the older days on
+    // the index instead of quietly dropping them.
+    .array(z.object({ summary: z.object({ souhrn: z.string().optional(), nadpis: z.string().optional() }) }))
     .default([]),
 });
 
@@ -77,7 +80,9 @@ export function readArchivedDays(archiveDir: string, logger: Logger): ArchivedDa
     days.push({
       date,
       categoryLabel: parsed.data.categoryLabel,
-      titles: parsed.data.entries.map((entry) => entry.summary.nadpis),
+      titles: parsed.data.entries.map((entry) =>
+        previewOf(entry.summary.souhrn ?? entry.summary.nadpis ?? ''),
+      ),
     });
   }
 
@@ -85,6 +90,20 @@ export function readArchivedDays(archiveDir: string, logger: Logger): ArchivedDa
   // re-rendered later must not jump to the top of the list.
   days.sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
   return days;
+}
+
+/**
+ * What the index shows for one paper.
+ *
+ * There is no headline field any more, so the preview is the summary's first
+ * sentence — which is what the generator is told to lead with. An old edition's
+ * `nadpis` is already one line and passes through unchanged.
+ */
+function previewOf(text: string): string {
+  const trimmed = text.trim();
+  const match = /^[\s\S]{20,180}?[.!?](?=\s|$)/u.exec(trimmed);
+  if (match) return match[0].trim();
+  return trimmed.length > 160 ? `${trimmed.slice(0, 157).trimEnd()}…` : trimmed;
 }
 
 export function renderIndexPage(days: readonly ArchivedDay[], config: Config): string {

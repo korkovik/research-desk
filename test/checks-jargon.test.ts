@@ -114,7 +114,7 @@ describe('A.4.1 — first occurrence only, in output order', () => {
   it('only the first occurrence per paper needs a gloss, across blocks', () => {
     const findings = checkJargon(
       [
-        { name: 'oCoJde', text: 'Použili placebo, tedy tabletku bez účinné látky.' },
+        { name: 'souhrn', text: 'Použili placebo, tedy tabletku bez účinné látky.' },
         { name: 'podrobneVysvetleni', text: 'Druhá skupina dostala placebo po celý měsíc.' },
       ],
       config,
@@ -125,13 +125,13 @@ describe('A.4.1 — first occurrence only, in output order', () => {
   it('the finding lands on the FIRST block that used the term', () => {
     const findings = checkJargon(
       [
-        { name: 'oCoJde', text: 'Skupina dostala placebo.' },
+        { name: 'souhrn', text: 'Skupina dostala placebo.' },
         { name: 'podrobneVysvetleni', text: 'Placebo dostávali čtyři týdny.' },
       ],
       config,
     );
     assert.equal(findings.length, 1);
-    assert.equal(findings[0]?.block, 'oCoJde');
+    assert.equal(findings[0]?.block, 'souhrn');
   });
 
   it('the longest match at an offset wins, so `medián příjmu` (warn) beats `medián` (hard)', () => {
@@ -158,10 +158,10 @@ describe('RISK-VOICE-03 — negative controls', () => {
     it(`produces no jargon finding: ${control.name}`, () => {
       const findings = checkJargon(
         [
-          { name: 'nadpis', text: control.summary.nadpis },
-          { name: 'oCoJde', text: control.summary.oCoJde },
+          { name: 'souhrn', text: control.summary.souhrn },
+          { name: 'souhrn', text: control.summary.souhrn },
           { name: 'podrobneVysvetleni', text: control.summary.podrobneVysvetleni },
-          { name: 'prikladZeZivota', text: control.summary.prikladZeZivota },
+          { name: 'souhrn', text: control.summary.souhrn },
           { name: 'procJeToDulezite', text: control.summary.procJeToDulezite },
         ],
         config,

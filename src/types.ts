@@ -129,31 +129,31 @@ export interface ScoredCandidate extends EnrichedCandidate {
   score: ScoreBreakdown;
 }
 
-/** The six output blocks of §7, in the spec's order. */
+/**
+ * What one paper says on the page.
+ *
+ * Reduced from §7's six blocks after Tom read the first real editions. `nadpis`
+ * and `oCoJde` are now one paragraph — a headline plus a two-sentence preamble
+ * was two ways of saying the same thing before the reader reached anything new.
+ * And §7.4's "Příklad ze života" is gone: "Proč je to důležité" already answers
+ * the reader's question, and the example was the block that could not be written
+ * without either inventing something or retreating to the authors' motivation.
+ *
+ * Dropping it removes the §7.4 verification ladder from the run, which was the
+ * dominant cost. The ladder itself is kept in `src/summarise/verify.ts`, tested
+ * and unwired, because it is the piece worth having back if the block returns.
+ */
 export interface PaperSummary {
-  /** §7.1 — plain-language headline, one line. */
-  nadpis: string;
-  /** §7.2 — 2–3 sentences, no numbers. */
-  oCoJde: string;
-  /** §7.3 — 150–250 words, numbers allowed but each anchored in plain language. */
-  podrobneVysvetleni: string;
-  /** §7.4 — the everyday example. Must be traceable to the source text. */
-  prikladZeZivota: string;
   /**
-   * Which kind of example block 4 carries.
-   *
-   * `ze-studie` is a statement about what the research did or found, and is
-   * verified against the source exactly as before. `ilustrace` is the writer's
-   * own everyday framing, shown to the reader as such — it is still checked for
-   * any assertion it makes ABOUT the study, but it is not required to be
-   * traceable as a whole, because it is not claiming to be a finding.
+   * One paragraph: what the study did, some of what it found, and what that
+   * means for the reader. This is the whole summary view for a paper.
    */
-  prikladTyp: 'ze-studie' | 'ilustrace';
-  /** True when §7.4's fallback was used: the example is the authors' stated motivation. */
-  prikladJeMotivace: boolean;
-  /** §7.5 — 1–2 sentences. */
+  souhrn: string;
+  /** The long explanation, 150–250 words. Numbers allowed, each anchored (§7.3). */
+  podrobneVysvetleni: string;
+  /** The "so what", 1–2 sentences (§7.5). */
   procJeToDulezite: string;
-  /** §7.6 — one honest line on limitations. The rest of the block is rendered from `Candidate`. */
+  /** One honest line on limitations (§7.6). */
   poznamkaKOmezenim: string;
 }
 
@@ -229,7 +229,12 @@ export interface LanguageViolation {
 export interface DigestEntry {
   candidate: ScoredCandidate;
   summary: PaperSummary;
-  verification: VerificationOutcome;
+  /**
+   * Null when nothing needed verifying. Since §7.4's example block was removed
+   * a normal run does no verification at all — the field stays so an archive
+   * written before the change still parses, and so the ladder can be rewired.
+   */
+  verification: VerificationOutcome | null;
   checks: LanguageCheckResult;
 }
 

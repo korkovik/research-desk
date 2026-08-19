@@ -131,13 +131,10 @@ export class HonestLlm implements LlmClient {
 
     if (request.label.startsWith('summarise')) {
       return this.ok<T>({
-        nadpis: 'Vědci sledovali, jak spolu souvisí spánek a nálada u studentů',
-        oCoJde:
+        souhrn:
           'Vědci chtěli zjistit, jestli lidé, kteří spí méně, bývají také podrážděnější. ' +
           'Sledovali proto skupinu studentů několik týdnů. Ukázalo se, že souvislost tam je.',
         podrobneVysvetleni: PODROBNE,
-        prikladZeZivota: PRIKLAD,
-        prikladTyp: 'ze-studie',
         procJeToDulezite:
           'Spánek je jedna z mála věcí, které si člověk může sám nastavit. ' +
           'Když se ukáže, že pomáhá i náladě, stojí za to mu dát přednost.',

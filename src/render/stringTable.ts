@@ -37,16 +37,12 @@ export interface StringTable {
   readonly paperCounter: string;
 
   // ---- The six §7 blocks, in the spec's order -------------------------
-  readonly blockWhatItIsAbout: string;
   readonly blockDetail: string;
-  readonly blockExample: string;
   readonly blockWhyItMatters: string;
   readonly blockReferences: string;
 
   // ---- Notices --------------------------------------------------------
   /** §7.4 fallback label: the example is the authors' motivation, not a finding. */
-  readonly exampleIsMotivation: string;
-  readonly exampleIsIllustration: string;
   /** §4.3: a preprint has not been peer reviewed, said in plain words. */
   readonly preprintNotice: string;
   /** §3 shortfall heading. */

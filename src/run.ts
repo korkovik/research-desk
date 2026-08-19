@@ -28,7 +28,6 @@ import type {
   EnrichedCandidate,
   ScoredCandidate,
   Shortfall,
-  VerificationOutcome,
 } from './types.js';
 import { categoryForWeekday, displayName, type Config } from './config.js';
 import type { Secrets } from './env.js';
@@ -42,7 +41,7 @@ import { createSeenLookup, loadSeen, recordPublished, saveSeen } from './state/s
 import { dayOutputPaths, writeDayOutputs } from './render/archive.js';
 import { stringsFor } from './render/strings.js';
 import { AnthropicLlmClient, estimateCostUsd, type LlmClient } from './summarise/client.js';
-import { summariseAndVerify } from './summarise/summarise.js';
+import { summarise } from './summarise/summarise.js';
 import type { SourceText } from './summarise/verify.js';
 import { localDateISO, localWeekday, shiftISODate } from './util/dates.js';
 import { appendRunLog, summarise as summariseRunLog, type Logger, type RunLogLine } from './util/log.js';
@@ -226,7 +225,6 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
   // ---- §7 summarisation, §7.4 verification ---------------------------------
   const entries: DigestEntry[] = [];
   const dropped: { id: string; reason: string; attempts: number }[] = [];
-  const droppedVerifications: (VerificationOutcome | null)[] = [];
   const queue = [...selection.selected];
   const reserve = [...selection.remainder];
   let topUps = 0;
@@ -250,7 +248,7 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
     }
     const candidate = queue.shift();
     if (candidate === undefined) break;
-    const result = await summariseAndVerify(
+    const result = await summarise(
       llm,
       sourceTextOf(candidate),
       { isPreprint: candidate.isPreprint === true, categoryLabel: category.labelCs },
@@ -260,19 +258,11 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
         effort: config.summarisation.effort,
         maxTokens: config.summarisation.maxTokens,
         maxRegenerationAttempts: config.summarisation.maxRegenerationAttempts,
-        maxExampleAttempts: config.verification.maxExampleAttempts,
-        verification: {
-          model: config.verification.model,
-          effort: config.verification.effort,
-          maxTokens: config.verification.maxTokens,
-          challengePass: config.verification.challengePass,
-          onWarn: (message) => logger.warn(`${candidate.id}: ${message}`),
-        },
         checkStyle: (summary) => checkStyle(summary, config.style, { sourceTitle: candidate.title }),
         log: {
-          info: (m) => logger.info(`${candidate.id}: ${m}`),
-          warn: (m) => logger.warn(`${candidate.id}: ${m}`),
-          error: (m) => logger.error(`${candidate.id}: ${m}`),
+          info: (m: string) => logger.info(`${candidate.id}: ${m}`),
+          warn: (m: string) => logger.warn(`${candidate.id}: ${m}`),
+          error: (m: string) => logger.error(`${candidate.id}: ${m}`),
         },
       },
     );
@@ -281,18 +271,14 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
       entries.push({
         candidate,
         summary: result.summary,
-        verification: result.verification,
+        // Nothing to verify: §7.4's example block is no longer part of the page.
+        verification: null,
         checks: result.checks,
       });
       continue;
     }
 
-    dropped.push({
-      id: candidate.id,
-      reason: result.reason,
-      attempts: result.verification?.attempts ?? 0,
-    });
-    droppedVerifications.push(result.verification);
+    dropped.push({ id: candidate.id, reason: result.reason, attempts: 0 });
     degradations.push(degradationForDrop(result.reason, config));
 
     // §7.4: replace the dropped paper rather than publish short, but only from
@@ -369,7 +355,7 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
     errors: logger.errors(),
     anthropic: {
       callsTotal: llm.callCount(),
-      modelVetoes: countModelVetoes(entries, droppedVerifications),
+      modelVetoes: 0,
       inputTokens: usage.inputTokens,
       outputTokens: usage.outputTokens,
       cacheReadTokens: usage.cacheReadTokens,
@@ -463,21 +449,6 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
  * are all zero because nothing was counted; the point is that the file is never
  * silent about a run that happened.
  */
-/**
- * DESIGN-NOTES C.3.5 wants the gap between what the model concluded and what the
- * code concluded tracked as a drift signal. The veto is the sharp end of it.
- */
-function countModelVetoes(
-  entries: readonly DigestEntry[],
-  droppedVerifications: readonly (VerificationOutcome | null)[],
-): number {
-  const all = [...entries.map((e) => e.verification), ...droppedVerifications];
-  return all
-    .filter((v): v is VerificationOutcome => v !== null)
-    .flatMap((v) => v.rejections)
-    .flatMap((r) => r.unsupportedClaims)
-    .filter((claim) => claim.startsWith('MODEL_VETO')).length;
-}
 
 function startupLogBase(
   date: string,

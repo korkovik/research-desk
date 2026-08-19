@@ -25,12 +25,8 @@ export function styleConfig(): StyleConfig {
 /** A summary with every block empty, so a test can fill only what it exercises. */
 export function emptySummary(): PaperSummary {
   return {
-    nadpis: '',
-    oCoJde: '',
+    souhrn: '',
     podrobneVysvetleni: '',
-    prikladZeZivota: '',
-    prikladTyp: 'ze-studie',
-    prikladJeMotivace: false,
     procJeToDulezite: '',
     poznamkaKOmezenim: '',
   };
@@ -45,8 +41,7 @@ export function summaryWith(overrides: Partial<PaperSummary>): PaperSummary {
 // nowhere, but is the passage the geological-fault test sits next to.
 // ---------------------------------------------------------------------------
 export const CONTROL_LEDOVEC: PaperSummary = {
-  nadpis: 'Ledovec nad městem taje rychleji, když fouká teplý vítr',
-  oCoJde:
+  souhrn:
     'Vědci v Norsku chtěli vědět, proč led na malém ledovci ubývá rychleji než dřív. ' +
     'Celé léto ho měřili přímo na místě. Ukázalo se, že za tím stojí hlavně vítr, ne slunce.',
   podrobneVysvetleni:
@@ -57,11 +52,6 @@ export const CONTROL_LEDOVEC: PaperSummary = {
     'Teplý vítr totiž odnáší od ledu chladnou vrstvu vzduchu a led pak taje i v noci. Vědci proto navrhují měřit vítr ' +
     'stejně pečlivě jako teplotu. Dosud se sledovala hlavně teplota, protože se snáz měří. Autoři sami píšou, ' +
     'že měřili jeden ledovec a jedno léto. Než z toho půjde dělat obecné závěry, bude potřeba víc míst a víc let.',
-  prikladZeZivota:
-    'Z ledovce teče voda do řeky, ze které pije celé město. Když led zmizí dřív, řeka na konci léta vysychá. ' +
-    'Vodárna v Tromsø už dnes hledá, kde vezme vodu, až ledovec zeslábne.',
-  prikladTyp: 'ze-studie',
-  prikladJeMotivace: false,
   procJeToDulezite:
     'Kdo plánuje zásoby vody na léto, potřebuje vědět, kdy led roztaje. Vítr do těch výpočtů zatím skoro nikdo nepočítal.',
   poznamkaKOmezenim: 'Jde o měření na jednom ledovci během jednoho léta, takže výsledek nemusí platit jinde.',
@@ -73,8 +63,7 @@ export const CONTROL_LEDOVEC: PaperSummary = {
 // plain sentence per §2.
 // ---------------------------------------------------------------------------
 export const CONTROL_SPANEK: PaperSummary = {
-  nadpis: 'Když děti chodí spát dřív, lépe se jim ráno počítá',
-  oCoJde:
+  souhrn:
     'Vědci chtěli vědět, jestli dřívější večerka pomůže dětem soustředit se ve škole. ' +
     'Zkusili to na jedné základní škole během podzimu. Ukázalo se, že rozdíl je vidět už po několika týdnech.',
   podrobneVysvetleni:
@@ -86,11 +75,6 @@ export const CONTROL_SPANEK: PaperSummary = {
     'v hlavě několik čísel najednou. U čtení se nic takového nestalo. Autoři upozorňují, že šlo o jedinou školu ' +
     'a o jeden podzim, takže jde zatím o první náznak. Také připomínají, že rodiče věděli, do které skupiny ' +
     'jejich dítě patří, a mohli test nevědomky ovlivnit.',
-  prikladZeZivota:
-    'Představte si dítě, které píše ráno pětiminutovku z počtů. Podle této studie mu hodina spánku navíc ' +
-    'ušetří asi jednu chybu z osmi. Rodičům to dává hmatatelný důvod, proč večer zhasnout dřív.',
-  prikladTyp: 'ze-studie',
-  prikladJeMotivace: false,
   procJeToDulezite:
     'Večerka je jedna z mála věcí, které rodina opravdu řídí sama. Studie ukazuje, že i malý posun se ve škole projeví.',
   poznamkaKOmezenim: 'Šlo o jednu školu a 240 dětí, tedy o malý vzorek, a rodiče o rozdělení do skupin věděli.',
@@ -102,8 +86,7 @@ export const CONTROL_SPANEK: PaperSummary = {
 // English original in parentheses on first use — the shape §2 actually asks for.
 // ---------------------------------------------------------------------------
 export const CONTROL_POCITACE: PaperSummary = {
-  nadpis: 'Počítač pozná nemocný list dřív než sadař',
-  oCoJde:
+  souhrn:
     'Vědci zkoušeli, jestli program v mobilu pozná na fotce nemocný jabloňový list. ' +
     'Sbírali snímky přímo v sadech na jihu Moravy. Zajímalo je hlavně to, jestli program obstojí i za deště.',
   podrobneVysvetleni:
@@ -114,11 +97,6 @@ export const CONTROL_POCITACE: PaperSummary = {
     'devět listů z deseti. Sadaři na stejných fotkách trefili osm listů z deseti, ale byli pomalejší. ' +
     'Za deště a v protisvětle se program pletl mnohem častěji. Autoři proto radí fotit za sucha a ze stínu. ' +
     'Píšou také, že testovali jen dvě odrůdy jabloní a jedinou chorobu. U jiných odrůd může program dopadnout hůř.',
-  prikladZeZivota:
-    'Sadař projde řadu stromů s mobilem v ruce a fotí listy, které mu přijdou divné. Program mu na místě řekne, ' +
-    'na kterých stromech se choroba už usadila. Postřik pak jde tam, kde je opravdu potřeba.',
-  prikladTyp: 'ze-studie',
-  prikladJeMotivace: false,
   procJeToDulezite:
     'Postřik na celý sad stojí peníze a zatěžuje půdu. Když sadař ví, kde je choroba, může postřikovat jen část sadu.',
   poznamkaKOmezenim: 'Program se učil na dvou odrůdách jabloní a jedné chorobě, u jiných může selhat.',

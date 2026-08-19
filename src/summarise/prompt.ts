@@ -67,51 +67,22 @@ JAZYK A STYL
   člověk z osmi".
 
 BLOKY (v tomto pořadí)
-1. Nadpis — přepsaný titulek běžnými slovy. Ne titulek práce. Jedna řádka.
-2. O co jde — 2 až 3 věty: na co se ptali a co zjistili. Bez čísel.
-3. Podrobné vysvětlení — 150 až 250 slov: jak to dělali, co vyšlo, co to
-   znamená. Čísla ano, ale každé s vysvětlením.
-4. Příklad ze života — konkrétní ukázka.
-5. Proč je to důležité — 1 až 2 věty pro běžného čtenáře.
-6. Poznámka k omezením — jedna poctivá věta.
+1. Souhrn — JEDEN odstavec, 3 až 5 vět. Co vědci zkoumali a jak, pár
+   konkrétních výsledků, a co z toho plyne pro čtenáře. Tohle je celé, co se
+   o studii dozví ten, kdo čte jen začátek — musí to stát samo o sobě.
+   Nepiš samostatný titulek a nezačínej frází typu „Tato studie zkoumá".
+   Začni rovnou tím, co se zjistilo.
+2. Podrobné vysvětlení — 150 až 250 slov: jak to dělali, co vyšlo, co to
+   znamená. Čísla ano, ale každé s vysvětlením běžnými slovy.
+3. Proč je to důležité — 1 až 2 věty pro běžného čtenáře.
+4. Poznámka k omezením — jedna poctivá věta.
 
-PŘÍKLAD ZE ŽIVOTA — DVĚ MOŽNOSTI, VYBER JEDNU
-Blok 4 má čtenáři pomoct si zjištění představit. Můžeš to udělat dvěma způsoby
-a musíš říct, který jsi použil (pole prikladTyp).
-
-1) „ze-studie" — popíšeš, co studie opravdu dělala, měřila nebo zjistila.
-   Tohle je lepší volba, kdykoliv práce nabízí něco konkrétního: kde se měřilo,
-   koho nebo co sledovali, co udělali, co jim vyšlo. Převyprávěj to běžnými
-   slovy, ale KAŽDÝ prvek musí být dohledatelný v abstraktu nebo v jednovětém
-   shrnutí. Nepřidávej člověka, město, věk, počet, nádobu ani místo, které tam
-   nejsou. Když práce říká „vzorky", nepiš „v kádích".
-
-2) „ilustrace" — běžná situace, kterou si vymyslíš ty, aby si to čtenář uměl
-   představit. Začni ji tak, aby bylo jasné, že jde o tvoje přirovnání, ne
-   o zjištění — třeba „Představte si to takto:" nebo „Je to podobné, jako když".
-   V ilustraci NESMÍŠ tvrdit nic o studii: žádné její číslo, žádný její
-   výsledek, žádné místo, kde se dělala, ani koho sledovala. Ilustrace vysvětluje
-   VELIKOST nebo POVAHU zjištění obecnou situací, kterou čtenář zná.
-
-   Špatně: „Představte si, že vaše dítě usne o 26 minut dřív." — to je číslo
-   ze studie vydávané za ilustraci.
-   Dobře: „Představte si to takto: je to rozdíl mezi tím, jestli si po obědě
-   stihnete kávu, nebo ne."
-
-DO ŽÁDNÉHO Z NICH NEPIŠ:
-- vysvětlení, co je nějaká látka, plyn, bakterie nebo přístroj a co dělá.
-  I když je to pravda a čtenáři by to pomohlo — patří to do bloku „Podrobné
-  vysvětlení", ne sem.
-- k čemu něco slouží nebo proč to někdo postavil, pokud to práce neříká.
-- následek, který ze zjištění logicky plyne, ale v práci napsaný není.
-- proč autoři studii dělali. Na to je jinde v tomhle vydání místo.
-
-Když práce nabízí málo, napiš KRÁTKÝ příklad. Dvě věty, které jsou celé v pořádku,
-jsou lepší než pět vět, z nichž dvě sis domyslel.
-
-Vymyšlený příklad je nejhorší chyba, jaké se tu můžeš dopustit. Je horší než
-kdyby článek nevyšel vůbec. Nepřidávej místo, věk, počet, zemi, prostředí ani
-následek, který ve zdroji není. Když si nejsi jistý, napiš méně.`;
+CO NEPSAT NIKAM
+- Vymyšlený příklad, scénu nebo osobu. Když práce nic konkrétního nenabízí,
+  napiš míň — ne něco, co si domyslíš.
+- Číslo, místo, věk nebo počet, který ve zdroji není.
+- Následek, který ze zjištění logicky plyne, ale v práci napsaný není.
+`;
 
 // DESIGN-NOTES C.5.6. The §7.4 label itself is NOT generated — it is prepended by
 // the renderer, so a model that forgets the instruction cannot lose the labelling

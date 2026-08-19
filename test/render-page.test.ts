@@ -28,13 +28,7 @@ const config = testConfig();
  * phone, where a label reading "Headline" above a headline was the one element
  * that told the reader nothing.
  */
-const BLOCK_HEADINGS = [
-  stringsCs.blockWhatItIsAbout,
-  stringsCs.blockDetail,
-  stringsCs.blockExample,
-  stringsCs.blockWhyItMatters,
-  stringsCs.blockReferences,
-];
+const BLOCK_HEADINGS = [stringsCs.blockDetail, stringsCs.blockWhyItMatters, stringsCs.blockReferences];
 
 function articles(html: string): string[] {
   return html.split('<article').slice(1);
@@ -72,7 +66,7 @@ test('the only absolute URLs on the page are reference-block links the reader cl
   assert.ok(anchorHrefs(html).includes('../index.html'));
 });
 
-test('all six §7 blocks appear, in the spec order, for every paper', () => {
+test('every block heading appears, in order, for every paper', () => {
   const html = renderDayPage(makeDigest({ entryCount: 5 }), config);
   const segments = articles(html);
   assert.equal(segments.length, 5);
@@ -91,8 +85,9 @@ test('hostile summary text renders as visible text, never as markup', () => {
     entries: [
       makeEntry({
         summary: {
-          nadpis: '<script>alert(1)</script> & spánek',
-          oCoJde: 'Uvozovky "takto" a apostrof \'takto\', plus <div> bez konce.',
+          souhrn:
+            '<script>alert(1)</script> Uvozovky "takto" a apostrof \'takto\', plus <div> bez konce.',
+          procJeToDulezite: 'Nedostatek spánku &amp; spánek dohromady.',
           poznamkaKOmezenim: 'Vzorek < 30 lidí & jen jedno město.',
         },
         candidate: { authors: ['<b>Jana</b> Nováková & spol.'] },
@@ -104,33 +99,11 @@ test('hostile summary text renders as visible text, never as markup', () => {
   assert.equal(/<script/i.test(html), false, 'a <script> tag reached the document');
   assert.equal(html.includes('<div> bez konce'), false, 'an unbalanced <div> reached the document');
   assert.ok(html.includes('&lt;script&gt;alert(1)&lt;/script&gt;'));
-  assert.ok(html.includes('&amp; spánek'));
+  assert.ok(html.includes('&amp;amp; spánek'));
   assert.ok(html.includes('&quot;takto&quot;'));
   assert.ok(html.includes('&#39;takto&#39;'));
   assert.ok(html.includes('&lt;b&gt;Jana&lt;/b&gt; Nováková &amp; spol.'));
   assert.ok(html.includes('Vzorek &lt; 30 lidí &amp; jen jedno město.'));
-});
-
-test('§7.4 motivation label appears when and only when prikladJeMotivace is true', () => {
-  const withLabel = renderDayPage(
-    makeDigest({ entries: [makeEntry({ summary: { prikladJeMotivace: true } })] }),
-    config,
-  );
-  const withoutLabel = renderDayPage(
-    makeDigest({ entries: [makeEntry({ summary: { prikladJeMotivace: false } })] }),
-    config,
-  );
-  assert.ok(withLabel.includes(stringsCs.exampleIsMotivation));
-  assert.equal(withoutLabel.includes(stringsCs.exampleIsMotivation), false);
-
-  // The label has to sit with the example, not somewhere further down the page.
-  const segment = articles(withLabel)[0] ?? '';
-  assert.ok(
-    segment.indexOf(stringsCs.blockExample) < segment.indexOf(stringsCs.exampleIsMotivation),
-  );
-  assert.ok(
-    segment.indexOf(stringsCs.exampleIsMotivation) < segment.indexOf(stringsCs.blockWhyItMatters),
-  );
 });
 
 test('§4.3 preprint notice appears when and only when the paper is a preprint', () => {
@@ -241,8 +214,8 @@ test('the page names the day and the category, and declares the configured langu
 test('papers render in the digest order, numbered for a phone reader', () => {
   const digest = makeDigest({
     entries: [
-      makeEntry({ candidate: { index: 1 }, summary: { nadpis: 'První studie' } }),
-      makeEntry({ candidate: { index: 2 }, summary: { nadpis: 'Druhá studie' } }),
+      makeEntry({ candidate: { index: 1 }, summary: { souhrn: 'První studie' } }),
+      makeEntry({ candidate: { index: 2 }, summary: { souhrn: 'Druhá studie' } }),
     ],
   });
   const html = renderDayPage(digest, config);

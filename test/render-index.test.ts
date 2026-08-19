@@ -31,7 +31,7 @@ function seedArchive(dir: string, dates: readonly string[] = DATES): void {
         date,
         categoryLabel: index % 2 === 0 ? 'Psychologie a chování' : 'Příroda a klima',
         entries: Array.from({ length: 5 }, (_, i) =>
-          makeEntry({ candidate: { index: i + 1 }, summary: { nadpis: `${date} — studie ${i + 1}` } }),
+          makeEntry({ candidate: { index: i + 1 }, summary: { souhrn: `${date} — studie ${i + 1}` } }),
         ),
       }),
       config,
@@ -82,7 +82,7 @@ test('a day with four papers previews four titles', (t) => {
     digest: makeDigest({
       date: '2026-08-18',
       entries: Array.from({ length: 4 }, (_, i) =>
-        makeEntry({ candidate: { index: i + 1 }, summary: { nadpis: `Studie ${i + 1}` } }),
+        makeEntry({ candidate: { index: i + 1 }, summary: { souhrn: `Studie ${i + 1}` } }),
       ),
     }),
     config,

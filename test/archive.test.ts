@@ -20,7 +20,7 @@ test('a day writes its page and its JSON twin, and the twin round-trips exactly'
     date: '2026-08-19',
     shortfall: { expected: 5, produced: 2, reason: 'diversity cap' },
     degradations: [makeDegradation('openalex')],
-    entries: [makeEntry({ summary: { prikladJeMotivace: true } }), makeEntry({ candidate: { index: 2 } })],
+    entries: [makeEntry(), makeEntry({ candidate: { index: 2 } })],
   });
 
   const result = writeDayOutputs({ digest, config, repoRoot: dir, logger });
@@ -54,17 +54,16 @@ test('the JSON twin carries paper ids, DOIs, scores and all six text blocks (§8
     assert.equal(typeof entry.candidate.score.total, 'number');
     assert.ok(Array.isArray(entry.candidate.score.evidence));
     for (const block of [
-      entry.summary.nadpis,
-      entry.summary.oCoJde,
+      entry.summary.souhrn,
+      entry.summary.souhrn,
       entry.summary.podrobneVysvetleni,
-      entry.summary.prikladZeZivota,
+      entry.summary.souhrn,
       entry.summary.procJeToDulezite,
       entry.summary.poznamkaKOmezenim,
     ]) {
       assert.equal(typeof block, 'string');
       assert.notEqual(block.trim(), '');
     }
-    assert.equal(typeof entry.summary.prikladJeMotivace, 'boolean');
   }
 });
 
@@ -81,10 +80,10 @@ test('the six rendered blocks are the same strings the twin stores', (t) => {
 
   for (const entry of twin.entries) {
     for (const block of [
-      entry.summary.nadpis,
-      entry.summary.oCoJde,
+      entry.summary.souhrn,
+      entry.summary.souhrn,
       entry.summary.podrobneVysvetleni,
-      entry.summary.prikladZeZivota,
+      entry.summary.souhrn,
       entry.summary.procJeToDulezite,
       entry.summary.poznamkaKOmezenim,
     ]) {

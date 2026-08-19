@@ -206,18 +206,19 @@ test('the JSON twin carries everything a later pass would need', async () => {
     assert.ok(entry.candidate.date.length > 0);
     assert.ok(entry.candidate.score.total > 0, 'no score recorded');
     for (const block of [
-      entry.summary.nadpis,
-      entry.summary.oCoJde,
+      entry.summary.souhrn,
+      entry.summary.souhrn,
       entry.summary.podrobneVysvetleni,
-      entry.summary.prikladZeZivota,
+      entry.summary.souhrn,
       entry.summary.procJeToDulezite,
       entry.summary.poznamkaKOmezenim,
     ]) {
       assert.ok(block.trim().length > 0, 'an empty §7 block reached the archive');
     }
-    // §11 step 8: every rejection is on the record, and so is the verdict.
-    assert.equal(entry.verification.verdict, 'supported');
-    assert.ok(Array.isArray(entry.verification.rejections));
+    // §7.4's example block, and with it the verification ladder, is no longer
+    // part of a run — so a freshly written entry carries no verdict. The field
+    // stays nullable so archives written before the change still parse.
+    assert.equal(entry.verification, null);
   }
 });
 
@@ -336,7 +337,7 @@ test('a run with no Anthropic key stops before it spends anything', async () => 
 test('§9: the per-run call budget stops the day rather than spending on', async () => {
   const root = makeWorkspace();
   const config = loadConfig(root);
-  const tight = { ...config, anthropic: { maxCallsPerRun: 4 } };
+  const tight = { ...config, anthropic: { maxCallsPerRun: 2 } };
 
   const result = await runDay({
     repoRoot: root,
@@ -350,8 +351,9 @@ test('§9: the per-run call budget stops the day rather than spending on', async
     clock: fakeClock(),
   });
 
-  // Three calls per paper, so a budget of four buys one paper and stops. That
-  // is below the minimum, so the day publishes nothing — and says why.
+  // One call per paper since §7.4's ladder was removed, so a budget of two buys
+  // two papers and stops. That is below the minimum, so the day publishes
+  // nothing — and says why.
   assert.equal(result.outcome, 'aborted');
   assert.ok((result.digest?.entries.length ?? 0) < config.output.papersPerDay);
 });
