@@ -50,7 +50,7 @@
   "summarisation": {
     "model": "claude-opus-5",
     "effort": "high",
-    "maxTokens": 8000,
+    "maxTokens": 16000,
     "maxRegenerationAttempts": 2
   },
 
@@ -121,7 +121,7 @@
     "_readme": "§7.4 / §11 step 8. A fabricated example is the worst failure this project can produce, so the verifier runs as a separate call that sees only the source text and the candidate example, and the code independently checks that every quote it cites really occurs in the source.",
     "model": "claude-opus-5",
     "effort": "high",
-    "maxTokens": 4000,
+    "maxTokens": 12000,
     "maxExampleAttempts": 2,
     "_maxExampleAttempts": "Free-form retries before the labelled motivation fallback. There is deliberately no switch for what happens when even the fallback fails: §7.4 makes publishing an unverified example the worst outcome available, so the paper is always dropped. A knob that could turn that off would be a knob for shipping a fabrication.",
     "challengePass": true,

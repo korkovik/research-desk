@@ -119,7 +119,15 @@ export class AnthropicLlmClient implements LlmClient {
   async complete<T>(request: LlmRequest<T>): Promise<LlmResult<T>> {
     this.calls += 1;
     try {
-      const response = await this.sdk.messages.parse({
+      // `messages.create`, not `messages.parse`. The SDK's parse helper decodes
+      // the JSON before returning, so it throws on a truncated body and
+      // `stop_reason` is never reachable — a response cut off mid-string by
+      // `max_tokens` surfaced as "Unterminated string in JSON at position 1841"
+      // and took the whole run down with it. Reading the raw message first lets
+      // the two stop reasons that have a real explanation be named as
+      // themselves, and lets the tokens we did spend be counted before the
+      // throw. Observed live, 19 August; see docs/HANDOVER.md §3c.
+      const response = await this.sdk.messages.create({
         model: request.model,
         max_tokens: request.maxTokens,
         output_config: {
@@ -132,22 +140,9 @@ export class AnthropicLlmClient implements LlmClient {
         messages: [{ role: 'user', content: request.user }],
       });
 
-      // A refusal arrives as HTTP 200 with stop_reason "refusal" and no usable
-      // content. Reading .parsed_output without checking would hand the
-      // pipeline `null` and look like a parse failure three layers away.
-      if (response.stop_reason === 'refusal') {
-        throw new LlmError(
-          `model refused the ${request.label} request (${response.stop_details?.category ?? 'no category'})`,
-          request.label,
-        );
-      }
-      if (response.stop_reason === 'max_tokens') {
-        throw new LlmError(
-          `${request.label} response hit max_tokens (${request.maxTokens}) and is incomplete`,
-          request.label,
-        );
-      }
-
+      // Bill first. A call that is about to be rejected still cost what it
+      // cost, and a cost line that omits the expensive failures is the one
+      // number nobody would think to distrust.
       const usage: LlmUsage = {
         inputTokens: response.usage.input_tokens,
         outputTokens: response.usage.output_tokens,
@@ -156,9 +151,40 @@ export class AnthropicLlmClient implements LlmClient {
       };
       this.spent = addUsage(this.spent, usage);
 
-      const parsed = response.parsed_output;
-      if (parsed === null || parsed === undefined) {
+      // A refusal arrives as HTTP 200 with stop_reason "refusal" and no usable
+      // content. Reading the output without checking would hand the pipeline
+      // `null` and look like a parse failure three layers away.
+      if (response.stop_reason === 'refusal') {
+        throw new LlmError(
+          `model refused the ${request.label} request (${response.stop_details?.category ?? 'no category'})`,
+          request.label,
+        );
+      }
+      if (response.stop_reason === 'max_tokens') {
+        throw new LlmError(
+          `${request.label} response hit max_tokens (${request.maxTokens}) and is incomplete — ` +
+            `raise the matching maxTokens in config.json (thinking tokens count towards it)`,
+          request.label,
+        );
+      }
+
+      const text = response.content
+        .filter((block): block is Extract<typeof block, { type: 'text' }> => block.type === 'text')
+        .map((block) => block.text)
+        .join('');
+      if (text.trim() === '') {
         throw new LlmError(`${request.label} produced no parseable structured output`, request.label);
+      }
+
+      let parsed: T;
+      try {
+        parsed = request.schema.parse(JSON.parse(text));
+      } catch (error) {
+        throw new LlmError(
+          `${request.label} returned output that does not match its schema: ${(error as Error).message}`,
+          request.label,
+          error,
+        );
       }
       return { value: parsed, usage };
     } catch (error) {
