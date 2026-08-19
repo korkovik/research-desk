@@ -14,7 +14,8 @@ import {
   findPeriphrasticPassive,
   hasReflexivePassive,
 } from '../src/checks/readability.js';
-import { NEGATIVE_CONTROLS, styleConfig } from './helpers/style-fixtures.js';
+import { NEGATIVE_CONTROLS, styleConfig, summaryWith } from './helpers/style-fixtures.js';
+import { analyseStyle } from '../src/checks/index.js';
 
 const config = styleConfig();
 
@@ -50,11 +51,28 @@ describe('RISK-VOICE-04 — the checks genuinely fire', () => {
     }
   });
 
-  it('R3 fires warn, because this fixture has two long sentences and hard needs > 3', () => {
+  it('R3 counts long sentences against the amended 30-word bar', () => {
+    // A32 raised what counts as a long sentence from 25 words to 30, so this
+    // academic fixture now has one rather than two — below the warn level of
+    // three, which is the point of the amendment.
+    assert.equal(findings.metrics.longSentenceCount, 1);
+    assert.equal(rules.some((r) => r.startsWith('readability:R3')), false, rules.join(', '));
+  });
+
+  it('R3 can still warn — the amendment raised the bar, it did not remove it', () => {
     // The direction matters more than the level: R3 must be able to warn on a
     // text that is not yet a hard reject, which is what a warn budget is for.
-    assert.equal(findings.metrics.longSentenceCount, 2);
-    assert.ok(rules.includes('readability:R3:warn'), rules.join(', '));
+    const long =
+      'Vědci z několika evropských pracovišť se rozhodli podrobně prozkoumat, jak se během ' +
+      'posledních desetiletí měnilo chování hmyzu v okolí zemědělské krajiny, a proto ' +
+      'shromáždili velké množství pozorování z mnoha různých míst. ';
+    const summary = summaryWith({ podrobneVysvetleni: long.repeat(4) });
+    const result = analyseStyle(summary, config);
+    assert.ok(result.metrics.longSentenceCount >= 4, String(result.metrics.longSentenceCount));
+    assert.ok(
+      result.findings.some((f) => f.rule.startsWith('readability:R3')),
+      result.findings.map((f) => f.rule).join(', '),
+    );
   });
 
   it('R9 composite index falls below the hard floor', () => {

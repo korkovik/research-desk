@@ -86,7 +86,7 @@
       "passiveShare": { "warn": 0.2, "hard": 0.35 },
       "reflexivePassiveShareWarn": 0.3,
       "compositeIndexFloor": { "warn": 50, "hard": 40 },
-      "longSentenceWords": 25,
+      "longSentenceWords": 30,
       "nadpisMaxWords": 14,
       "nadpisMaxChars": 100
     },
