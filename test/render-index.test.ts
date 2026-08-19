@@ -176,10 +176,46 @@ test('the index is self-contained and declares the configured language', (t) => 
 test('a day title containing markup is escaped in the index preview', () => {
   const config = testConfig();
   const html = renderIndexPage(
-    [{ date: '2026-08-19', categoryLabel: 'Psychologie & chování', titles: ['<script>x</script>'] }],
+    [{ date: '2026-08-19', categoryLabel: 'Psychologie & chování', categoryKey: 'psychology-behaviour', titles: ['<script>x</script>'] }],
     config,
   );
   assert.equal(/<script/i.test(html), false);
   assert.ok(html.includes('&lt;script&gt;x&lt;/script&gt;'));
   assert.ok(html.includes('Psychologie &amp; chování'));
+});
+
+test('the index filters by category with no script anywhere on the page', () => {
+  const config = testConfig();
+  const html = renderIndexPage(
+    [
+      { date: '2026-08-19', categoryLabel: 'Příroda a klima', categoryKey: 'nature-climate', titles: ['A'] },
+      { date: '2026-08-18', categoryLabel: 'Zdraví a medicína', categoryKey: 'health-medicine', titles: ['B'] },
+    ],
+    config,
+  );
+
+  // §8 forbids loading a script and layout.ts refuses to emit one, so the whole
+  // filter is :checked plus a sibling selector.
+  assert.equal(/<script/i.test(html), false);
+
+  // A chip for every category in the rotation, not only the ones with editions:
+  // a missing chip reads as a missing feature, an empty one reads as "not yet".
+  for (const category of config.categories) {
+    assert.ok(html.includes(`id="cat-${category.key}"`), `no chip for ${category.key}`);
+    assert.ok(
+      html.includes(`#cat-${category.key}:checked ~ .days .day:not([data-cat="${category.key}"])`),
+      `no filter rule for ${category.key}`,
+    );
+  }
+
+  // The two days present are tagged, and the six empty categories explain
+  // themselves rather than showing a blank page.
+  assert.ok(html.includes('data-cat="nature-climate"'));
+  assert.ok(html.includes('data-cat="health-medicine"'));
+  assert.ok(html.includes('class="cat-empty" data-cat="psychology-behaviour"'));
+  assert.equal(html.includes('class="cat-empty" data-cat="nature-climate"'), false);
+
+  // The radios must stay focusable — clipped, never display:none — or the chips
+  // stop working from a keyboard.
+  assert.equal(/\.cat-input\s*\{[^}]*display:\s*none/.test(html), false);
 });

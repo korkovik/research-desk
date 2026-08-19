@@ -28,6 +28,8 @@ export interface ArchivedDay {
   /** `YYYY-MM-DD`, taken from the filename — it is what the link resolves to. */
   date: string;
   categoryLabel: string;
+  /** The rotation key (`nature-climate`, …). What the index filter groups on. */
+  categoryKey: string;
   /** The day's plain-language titles (§7.1), in publication order. */
   titles: string[];
 }
@@ -42,6 +44,7 @@ const DAY_FILE = /^(\d{4}-\d{2}-\d{2})\.json$/;
 const TwinSchema = z.object({
   date: z.string().optional(),
   categoryLabel: z.string(),
+  categoryKey: z.string().optional(),
   entries: z
     // `souhrn` for anything written since the restructure, `nadpis` for the
     // editions that predate it. Reading both is what keeps the older days on
@@ -80,6 +83,7 @@ export function readArchivedDays(archiveDir: string, logger: Logger): ArchivedDa
     days.push({
       date,
       categoryLabel: parsed.data.categoryLabel,
+      categoryKey: parsed.data.categoryKey ?? '',
       titles: parsed.data.entries.map((entry) =>
         previewOf(entry.summary.souhrn ?? entry.summary.nadpis ?? ''),
       ),
@@ -119,7 +123,7 @@ export function renderIndexPage(days: readonly ArchivedDay[], config: Config): s
 </header>`,
     `<main>
 <h2>${escapeHtml(strings.indexDaysHeading)}</h2>
-${days.length === 0 ? renderEmpty(strings) : renderDays(days, strings, config)}
+${days.length === 0 ? renderEmpty(strings) : renderFilter(days, strings, config) + '\n' + renderDays(days, strings, config)}
 </main>`,
     `<footer>
 <p>${escapeHtml(strings.footerHowItWorks)}</p>
@@ -137,6 +141,65 @@ function renderEmpty(strings: StringTable): string {
   return `<p class="empty">${escapeHtml(strings.indexEmpty)}</p>`;
 }
 
+/**
+ * Category chips, as radio inputs a stylesheet rule reacts to.
+ *
+ * No JavaScript: `layout.ts` refuses to emit a script and §8 refuses to load
+ * one, so the filter is `:checked` plus a sibling selector. The inputs are
+ * visually hidden but focusable, and each chip is a `<label>` bound to one, so
+ * the whole thing works from a keyboard and from a screen reader.
+ *
+ * Chips are the seven rotation categories, not the days present — a category
+ * with nothing in it yet still gets a chip and an explanation, because a
+ * missing chip reads as a missing feature while an empty one reads as "not yet".
+ */
+function renderFilter(
+  days: readonly ArchivedDay[],
+  strings: StringTable,
+  config: Config,
+): string {
+  const counts = new Map<string, number>();
+  for (const day of days) counts.set(day.categoryKey, (counts.get(day.categoryKey) ?? 0) + 1);
+
+  const inputs = [`<input type="radio" name="cat" id="cat-all" class="cat-input" checked>`];
+  const chips = [`<label class="chip" for="cat-all">${escapeHtml(strings.filterAll)}</label>`];
+  const empties: string[] = [];
+
+  for (const category of config.categories) {
+    const id = `cat-${category.key}`;
+    inputs.push(`<input type="radio" name="cat" id="${escapeHtml(id)}" class="cat-input">`);
+    const count = counts.get(category.key) ?? 0;
+    chips.push(
+      `<label class="chip" for="${escapeHtml(id)}">${escapeHtml(category.labelCs)}` +
+        (count === 0 ? '' : ` <span class="chip-count">${String(count)}</span>`) +
+        `</label>`,
+    );
+    if (count === 0) {
+      empties.push(
+        `<p class="cat-empty" data-cat="${escapeHtml(category.key)}">` +
+          `${escapeHtml(strings.filterEmpty.replace(/\{category\}/g, category.labelCs))}</p>`,
+      );
+    }
+  }
+
+  // One pair of rules per category, generated because the categories are config.
+  const rules = config.categories
+    .map(
+      (c) =>
+        `#cat-${c.key}:checked ~ .days .day:not([data-cat="${c.key}"]) { display: none; }\n` +
+        `#cat-${c.key}:checked ~ .cat-empty[data-cat="${c.key}"] { display: block; }\n` +
+        `#cat-${c.key}:checked ~ .chips label[for="cat-${c.key}"] { background: #1a1a1a; border-color: #1a1a1a; color: #fbfaf7; }`,
+    )
+    .join('\n');
+
+  return [
+    inputs.join('\n'),
+    `<style>\n#cat-all:checked ~ .chips label[for="cat-all"] { background: #1a1a1a; border-color: #1a1a1a; color: #fbfaf7; }\n${rules}\n</style>`,
+    `<nav class="chips" aria-label="${escapeHtml(strings.filterHeading)}">\n${chips.join('\n')}\n</nav>`,
+    ...empties,
+  ].join('\n');
+}
+
 function renderDays(
   days: readonly ArchivedDay[],
   strings: StringTable,
@@ -150,7 +213,7 @@ function renderDays(
         : `<ul class="day-titles">\n${day.titles
             .map((title) => `<li>${escapeHtml(title)}</li>`)
             .join('\n')}\n</ul>`;
-    return `<li class="day">
+    return `<li class="day" data-cat="${escapeHtml(day.categoryKey)}">
 <p class="day-date"><a href="${href}"><time datetime="${escapeHtml(day.date)}">${escapeHtml(
       formatDateText(day.date, strings),
     )}</time></a></p>

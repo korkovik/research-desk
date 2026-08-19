@@ -25,6 +25,10 @@ export interface StringTable {
   readonly indexIntro: string;
   /** Heading above the list of archived days. */
   readonly indexDaysHeading: string;
+  readonly filterHeading: string;
+  readonly filterAll: string;
+  /** Interpolates {category}. */
+  readonly filterEmpty: string;
   /** Shown instead of the list when nothing has been archived yet. */
   readonly indexEmpty: string;
   /** Link text from an index entry to that day's full page. */

@@ -63,6 +63,17 @@ export const stringsCs: StringTable = {
   // EN: heading above the list of archived days on the index page.
   indexDaysHeading: 'Všechna vydání',
 
+  // EN: "Choose a topic" — label for the category filter on the index.
+  filterHeading: 'Vyberte téma',
+
+  // EN: "Everything" — the filter chip that shows all editions.
+  filterAll: 'Vše',
+
+  // EN: "{category} has not had its turn yet. Each topic comes round once a
+  // week." Shown when a chip is selected and no edition exists for it yet —
+  // which is every topic but one until the rotation has run a full week.
+  filterEmpty: 'Téma {category} zatím nebylo na řadě. Každé téma přijde jednou za týden.',
+
   // EN: shown on the index page instead of the list when no day has been
   // published yet (first run, or the archive was emptied).
   indexEmpty: 'Zatím tu není žádné vydání. První se objeví po prvním ranním běhu programu.',
