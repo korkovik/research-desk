@@ -139,6 +139,16 @@ export interface PaperSummary {
   podrobneVysvetleni: string;
   /** §7.4 — the everyday example. Must be traceable to the source text. */
   prikladZeZivota: string;
+  /**
+   * Which kind of example block 4 carries.
+   *
+   * `ze-studie` is a statement about what the research did or found, and is
+   * verified against the source exactly as before. `ilustrace` is the writer's
+   * own everyday framing, shown to the reader as such — it is still checked for
+   * any assertion it makes ABOUT the study, but it is not required to be
+   * traceable as a whole, because it is not claiming to be a finding.
+   */
+  prikladTyp: 'ze-studie' | 'ilustrace';
   /** True when §7.4's fallback was used: the example is the authors' stated motivation. */
   prikladJeMotivace: boolean;
   /** §7.5 — 1–2 sentences. */

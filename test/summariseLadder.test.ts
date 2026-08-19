@@ -39,6 +39,7 @@ function summaryWith(example: string): Omit<PaperSummary, 'prikladJeMotivace'> {
     oCoJde: 'Vědci zkoušeli, jestli pravidelné posilování pomůže starším lidem méně padat. Pomohlo.',
     podrobneVysvetleni: 'x'.repeat(220),
     prikladZeZivota: example,
+    prikladTyp: 'ze-studie',
     procJeToDulezite: 'Pády jsou u starších lidí nejčastější příčinou úrazu, kvůli kterému skončí v nemocnici.',
     poznamkaKOmezenim: 'Účastníci si pády zapisovali sami a studie nebyla zaslepená.',
   };

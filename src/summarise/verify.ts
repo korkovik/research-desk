@@ -24,7 +24,12 @@
  */
 import type { LlmClient } from './client.js';
 import { VerificationSchema, type ClaimPayload, type VerificationPayload } from './schema.js';
-import { VERIFIER_SYSTEM_PROMPT, renderVerifierUserMessage, CHALLENGE_SYSTEM_PROMPT } from './prompt.js';
+import {
+  VERIFIER_SYSTEM_PROMPT,
+  ILLUSTRATION_VERIFIER_SYSTEM_PROMPT,
+  renderVerifierUserMessage,
+  CHALLENGE_SYSTEM_PROMPT,
+} from './prompt.js';
 
 /** The only text a claim may be checked against (DESIGN-NOTES C.1.1). */
 export interface SourceText {
@@ -49,6 +54,18 @@ export interface VerifyOptions {
   maxTokens: number;
   /** DESIGN-NOTES C.3.4 — a second, adversarial pass over anything that passed. */
   challengePass: boolean;
+  /**
+   * `study` is the original contract: the whole example claims to describe the
+   * research, so every part of it must be traceable to the source.
+   *
+   * `illustration` is for a block the writer has openly marked as their own
+   * everyday framing. It is not claiming to be a finding, so it is not required
+   * to be traceable as a whole — but any assertion it makes ABOUT the study is
+   * still checked exactly as before. That is the line that matters: a teacher
+   * repeating "research shows…" is the failure worth preventing, and an
+   * illustration smuggling in the study's number would produce precisely that.
+   */
+  mode?: 'study' | 'illustration';
   /** Called when the challenge pass could not run. See the note in `verifyExample`. */
   onWarn?: (message: string) => void;
 }
@@ -183,6 +200,7 @@ export function adjudicate(
   payload: VerificationPayload,
   example: string,
   source: SourceText,
+  mode: 'study' | 'illustration' = 'study',
 ): Omit<VerifyReport, 'challengeRan'> {
   const failures: VerifyReport['failures'] = [];
   const add = (code: FailureCode, claimId: string | null, detail: string): void => {
@@ -195,10 +213,13 @@ export function adjudicate(
   // V1 — decomposition sanity. Both directions are rubber-stamp signals: too few
   // claims means the example was waved through as one lump; too many means the
   // example has grown detail a two-sentence lay illustration should not contain.
+  //
+  // Neither applies to an illustration: it is expected to assert little or
+  // nothing about the study, so a short claim list is the right answer there.
   if (claims.length > MAX_CLAIMS) {
     add('EXAMPLE_TOO_ELABORATE', null, `${claims.length} claims for a lay example`);
   }
-  if (claims.length < MIN_CLAIMS && exampleWords > SHORT_EXAMPLE_WORDS) {
+  if (mode === 'study' && claims.length < MIN_CLAIMS && exampleWords > SHORT_EXAMPLE_WORDS) {
     add('DECOMPOSITION_TOO_COARSE', null, `${claims.length} claim(s) for ${exampleWords} words`);
   }
 
@@ -352,7 +373,11 @@ export function adjudicate(
     if (covered[i] === true) coveredChars += 1;
   }
   const coverage = exampleChars === 0 ? 0 : coveredChars / exampleChars;
-  if (coverage < MIN_SPAN_COVERAGE) {
+  // V6 is the anti-omission rule for text that claims to describe the study.
+  // An illustration is mostly the writer's own scene by design, so most of it
+  // SHOULD decompose to nothing — demanding 70% coverage would reject every
+  // illustration for being one.
+  if (mode === 'study' && coverage < MIN_SPAN_COVERAGE) {
     add('V6_COVERAGE_TOO_LOW', null, `spans cover ${(coverage * 100).toFixed(0)}% of the example`);
   }
 
@@ -530,8 +555,9 @@ export async function verifyExample(
   source: SourceText,
   options: VerifyOptions,
 ): Promise<VerifyReport> {
+  const mode = options.mode ?? 'study';
   const first = await llm.complete({
-    system: VERIFIER_SYSTEM_PROMPT,
+    system: mode === 'illustration' ? ILLUSTRATION_VERIFIER_SYSTEM_PROMPT : VERIFIER_SYSTEM_PROMPT,
     user: renderVerifierUserMessage(source, example),
     schema: VerificationSchema,
     model: options.model,
@@ -541,7 +567,7 @@ export async function verifyExample(
     label: 'verify-example',
   });
 
-  const report = adjudicate(first.value, example, source);
+  const report = adjudicate(first.value, example, source, mode);
   if (report.verdict === 'unsupported' || !options.challengePass) {
     return { ...report, challengeRan: false };
   }
@@ -568,7 +594,7 @@ export async function verifyExample(
       cacheSystem: true,
       label: 'verify-example-challenge',
     });
-    challengeReport = adjudicate(challenge.value, example, source);
+    challengeReport = adjudicate(challenge.value, example, source, mode);
   } catch (error) {
     options.onWarn?.(
       `challenge pass unavailable, accepting the primary verdict: ${(error as Error).message}`,

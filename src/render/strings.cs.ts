@@ -115,6 +115,14 @@ export const stringsCs: StringTable = {
   // must stay clear that this is not a result.
   exampleIsMotivation: 'Autoři to zmiňují jako důvod, proč studii dělali.',
 
+  // EN: "This is our comparison, to help you picture the size of it — not
+  // something the study measured." Shown above block 4 when the example is the
+  // writer's own everyday framing rather than a statement about the research.
+  // Without this line a reader could repeat an invented scene as a finding,
+  // which is the one failure §7.4 exists to prevent.
+  exampleIsIllustration:
+    'Tohle je naše přirovnání, abyste si to uměli představit — ne něco, co studie měřila.',
+
   // EN: "This is an early version of the study, a so-called preprint. It has
   // not been through peer review yet – independent experts have not checked
   // the results." Shown on every paper that is a preprint. Spec wording (§4.3)

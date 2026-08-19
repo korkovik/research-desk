@@ -133,9 +133,18 @@ export async function summariseAndVerify(
   const rejections: VerificationRejection[] = [];
   let attempts = 0;
 
-  const runVerification = async (example: string): Promise<VerifyReport | null> => {
+  const runVerification = async (
+    example: string,
+    kind: 'ze-studie' | 'ilustrace',
+  ): Promise<VerifyReport | null> => {
     try {
-      return await verifyExample(llm, example, source, options.verification);
+      // An illustration is checked only for what it asserts about the study;
+      // it is not required to be traceable as a whole, because it is not
+      // claiming to be a finding. See VerifyOptions.mode.
+      return await verifyExample(llm, example, source, {
+        ...options.verification,
+        mode: kind === 'ilustrace' ? 'illustration' : 'study',
+      });
     } catch (error) {
       // Fail closed. "The verifier was unreachable" must never read as "the
       // example is fine" — that would turn an outage into a published
@@ -165,7 +174,7 @@ export async function summariseAndVerify(
 
   // Free-form example attempts.
   for (let attempt = 1; attempt <= options.maxExampleAttempts; attempt++) {
-    const report = await runVerification(summary.prikladZeZivota);
+    const report = await runVerification(summary.prikladZeZivota, summary.prikladTyp);
     if (report !== null && report.verdict === 'supported') {
       attempts += 1;
       return {
@@ -185,7 +194,7 @@ export async function summariseAndVerify(
 
     const regenerated = await regenerateExample(llm, source, prompts, report, options, attempt);
     if (regenerated === null) break;
-    summary = { ...summary, prikladZeZivota: regenerated };
+    summary = { ...summary, prikladZeZivota: regenerated.text, prikladTyp: regenerated.kind };
   }
 
   // §7.4's labelled fallback: the authors' stated motivation. It gets the same
@@ -211,12 +220,13 @@ export async function summariseAndVerify(
       break;
     }
 
-    const report = await runVerification(motivation);
+    const report = await runVerification(motivation, 'ze-studie');
     if (report !== null && report.verdict === 'supported') {
       attempts += 1;
       const withFallback: PaperSummary = {
         ...summary,
         prikladZeZivota: motivation,
+        prikladTyp: 'ze-studie',
         prikladJeMotivace: true,
       };
       return {
@@ -282,7 +292,7 @@ async function regenerateExample(
   report: VerifyReport | null,
   options: SummariseOptions,
   attempt: number,
-): Promise<string | null> {
+): Promise<{ text: string; kind: 'ze-studie' | 'ilustrace' } | null> {
   // The generator, unlike the verifier, IS told why it was rejected — that is
   // the whole point of a regeneration. The verifier stays stateless so it cannot
   // negotiate with itself across attempts (DESIGN-NOTES C.1.2).
@@ -302,7 +312,7 @@ async function regenerateExample(
       cacheSystem: true,
       label: `regenerate-example-${attempt}`,
     });
-    return result.value.prikladZeZivota;
+    return { text: result.value.prikladZeZivota, kind: result.value.prikladTyp };
   } catch (error) {
     options.log?.error(`example regeneration failed: ${describeError(error)}`);
     return null;

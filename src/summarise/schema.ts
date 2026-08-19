@@ -34,9 +34,18 @@ export const SummarySchema = z.object({
     .string()
     .min(40)
     .describe(
-      '§7.4 Příklad ze života: konkrétní ukázka z běžného života. Musí vycházet ' +
-        'PŘÍMO z práce — z jejího vlastního použití, prostředí, testovaného scénáře ' +
-        'nebo uvedené motivace. Nikdy si nevymýšlej scénář, který práce neuvádí.',
+      '§7.4 Příklad ze života. Buď to, co studie opravdu dělala nebo měřila, ' +
+        'nebo běžná situace, na které si to čtenář představí. Který z těch dvou ' +
+        'to je, uveď v poli prikladTyp.',
+    ),
+  prikladTyp: z
+    .enum(['ze-studie', 'ilustrace'])
+    .describe(
+      '„ze-studie" = příklad popisuje, co studie opravdu dělala, měřila nebo ' +
+        'zjistila; každý prvek musí být v abstraktu. „ilustrace" = běžná situace, ' +
+        'kterou sis vymyslel ty, aby si to čtenář uměl představit — v takovém ' +
+        'případě NESMÍ tvrdit nic o studii: žádné její číslo, výsledek, místo ' +
+        'ani koho sledovala.',
     ),
   procJeToDulezite: z
     .string()
@@ -66,9 +75,15 @@ export const ExampleSchema = z.object({
     .string()
     .min(40)
     .describe(
-      'Nový §7.4 Příklad ze života. Musí vycházet PŘÍMO z předloženého zdroje — ' +
-        'z použití, prostředí, testovaného scénáře nebo uvedené motivace. ' +
-        'Nepřidávej místo, věk, počet ani následek, který ve zdroji není.',
+      'Nový §7.4 Příklad ze života. Buď to, co studie opravdu dělala nebo měřila ' +
+        '(pak musí být každý prvek ve zdroji), nebo tvoje vlastní přirovnání, ' +
+        'které o studii netvrdí nic. Který to je, uveď v prikladTyp.',
+    ),
+  prikladTyp: z
+    .enum(['ze-studie', 'ilustrace'])
+    .describe(
+      'Když se předchozí pokus nepodařilo doložit, přirovnání („ilustrace") je ' +
+        'často lepší volba než další pokus popsat studii.',
     ),
 });
 
@@ -137,7 +152,10 @@ export const ClaimSchema = z.object({
 export type ClaimPayload = z.infer<typeof ClaimSchema>;
 
 export const VerificationSchema = z.object({
-  claims: z.array(ClaimSchema).min(1).max(15),
+  // Zero is allowed because of illustration mode: an everyday framing that
+  // asserts nothing about the study has no claims to decompose, and that is the
+  // correct answer rather than a malformed one.
+  claims: z.array(ClaimSchema).max(15),
   modelOverallVerdict: z
     .enum(['supported', 'unsupported'])
     .describe('Tvůj celkový názor. Program si závěr počítá sám — tohle je jen pro záznam.'),

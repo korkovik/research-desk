@@ -160,6 +160,11 @@ function renderPaper(
   // something the study found.
   if (summary.prikladJeMotivace) {
     parts.push(`<p class="motivation">${escapeHtml(strings.exampleIsMotivation)}</p>`);
+  } else if (summary.prikladTyp === 'ilustrace') {
+    // An illustration is the writer's own framing, not something the study
+    // found. Saying so is what makes it safe to publish: the failure worth
+    // preventing is a reader repeating an invented scene as "research shows".
+    parts.push(`<p class="motivation">${escapeHtml(strings.exampleIsIllustration)}</p>`);
   }
 
   parts.push(

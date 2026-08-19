@@ -9,7 +9,7 @@
  *
  * Scenario IDs refer to docs/TEST-SCENARIOS.md.
  */
-import { test } from 'node:test';
+import { describe, it, test } from 'node:test';
 import assert from 'node:assert/strict';
 import { adjudicate, normaliseForQuoteMatch } from '../src/summarise/verify.js';
 import type { VerificationPayload } from '../src/summarise/schema.js';
@@ -316,4 +316,54 @@ test('V9 sees the units the seven categories actually produce', () => {
       `V9 wrongly flagged: ${innocent}`,
     );
   }
+});
+
+describe('illustration mode — the line that keeps the guard worth having', () => {
+  it('accepts an illustration that asserts nothing about the study', () => {
+    // The writer's own framing, openly labelled as such on the page. It claims
+    // to be a comparison, not a finding, so there is nothing to trace — and the
+    // verifier returning no claims at all is the correct answer, not a failure.
+    const empty = { claims: [], modelOverallVerdict: 'supported' as const, unsupportedReasonsCs: [] };
+    const illustration =
+      'Představte si to takto: je to rozdíl mezi tím, jestli si po obědě stihnete kávu, nebo ne.';
+    assert.equal(adjudicate(empty, illustration, SOURCE, 'illustration').verdict, 'supported');
+  });
+
+  it('still rejects an illustration that smuggles in the study’s number', () => {
+    // The failure worth preventing is a reader repeating an invented scene as
+    // "research shows". Framing something as a comparison does not license
+    // borrowing the study's figures for it.
+    const smuggled = {
+      claims: [
+        {
+          id: 'c1',
+          claimText: 'Children fell asleep 45 minutes earlier',
+          claimType: 'quantity' as const,
+          exampleSpan: 'vaše dítě usne o 45 minut dřív',
+          verdict: 'supported' as const,
+          sourceQuote: 'End-of-year grade point averages did not differ between the two groups',
+          quoteField: 'abstract' as const,
+        },
+      ],
+      modelOverallVerdict: 'supported' as const,
+      unsupportedReasonsCs: [],
+    };
+    const text = 'Představte si to takto: vaše dítě usne o 45 minut dřív.';
+    const report = adjudicate(smuggled, text, SOURCE, 'illustration');
+    assert.equal(report.verdict, 'unsupported');
+  });
+
+  it('does not let illustration mode weaken the study-mode contract', () => {
+    // Same payload, same text, judged as a statement about the research: the
+    // coverage and decomposition rules that illustration mode relaxes are still
+    // in force here.
+    const thin = {
+      claims: [],
+      modelOverallVerdict: 'supported' as const,
+      unsupportedReasonsCs: [],
+    };
+    const asStudy = adjudicate(thin, EXAMPLE, SOURCE, 'study');
+    assert.equal(asStudy.verdict, 'unsupported');
+    assert.ok(asStudy.failures.some((f) => f.code === 'V6_COVERAGE_TOO_LOW'));
+  });
 });

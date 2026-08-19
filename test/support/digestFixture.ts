@@ -40,6 +40,7 @@ export function makeSummary(options: SummaryOptions = {}): PaperSummary {
       'Do studie se přihlásilo dvě stě řidičů, kteří jezdili na trenažéru. Polovina z nich spala jen pět hodin.',
     prikladZeZivota:
       options.prikladZeZivota ?? 'Na trenažéru měli řidiči zabrzdit, když jim do cesty vběhlo dítě.',
+    prikladTyp: 'ze-studie',
     prikladJeMotivace: options.prikladJeMotivace ?? false,
     procJeToDulezite:
       options.procJeToDulezite ?? 'Krátký spánek před cestou zvyšuje riziko nehody.',

@@ -29,6 +29,7 @@ export function emptySummary(): PaperSummary {
     oCoJde: '',
     podrobneVysvetleni: '',
     prikladZeZivota: '',
+    prikladTyp: 'ze-studie',
     prikladJeMotivace: false,
     procJeToDulezite: '',
     poznamkaKOmezenim: '',
@@ -59,6 +60,7 @@ export const CONTROL_LEDOVEC: PaperSummary = {
   prikladZeZivota:
     'Z ledovce teče voda do řeky, ze které pije celé město. Když led zmizí dřív, řeka na konci léta vysychá. ' +
     'Vodárna v Tromsø už dnes hledá, kde vezme vodu, až ledovec zeslábne.',
+  prikladTyp: 'ze-studie',
   prikladJeMotivace: false,
   procJeToDulezite:
     'Kdo plánuje zásoby vody na léto, potřebuje vědět, kdy led roztaje. Vítr do těch výpočtů zatím skoro nikdo nepočítal.',
@@ -87,6 +89,7 @@ export const CONTROL_SPANEK: PaperSummary = {
   prikladZeZivota:
     'Představte si dítě, které píše ráno pětiminutovku z počtů. Podle této studie mu hodina spánku navíc ' +
     'ušetří asi jednu chybu z osmi. Rodičům to dává hmatatelný důvod, proč večer zhasnout dřív.',
+  prikladTyp: 'ze-studie',
   prikladJeMotivace: false,
   procJeToDulezite:
     'Večerka je jedna z mála věcí, které rodina opravdu řídí sama. Studie ukazuje, že i malý posun se ve škole projeví.',
@@ -114,6 +117,7 @@ export const CONTROL_POCITACE: PaperSummary = {
   prikladZeZivota:
     'Sadař projde řadu stromů s mobilem v ruce a fotí listy, které mu přijdou divné. Program mu na místě řekne, ' +
     'na kterých stromech se choroba už usadila. Postřik pak jde tam, kde je opravdu potřeba.',
+  prikladTyp: 'ze-studie',
   prikladJeMotivace: false,
   procJeToDulezite:
     'Postřik na celý sad stojí peníze a zatěžuje půdu. Když sadař ví, kde je choroba, může postřikovat jen část sadu.',

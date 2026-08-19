@@ -46,6 +46,7 @@ export interface StringTable {
   // ---- Notices --------------------------------------------------------
   /** §7.4 fallback label: the example is the authors' motivation, not a finding. */
   readonly exampleIsMotivation: string;
+  readonly exampleIsIllustration: string;
   /** §4.3: a preprint has not been peer reviewed, said in plain words. */
   readonly preprintNotice: string;
   /** §3 shortfall heading. */

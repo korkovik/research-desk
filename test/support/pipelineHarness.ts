@@ -137,6 +137,7 @@ export class HonestLlm implements LlmClient {
           'Sledovali proto skupinu studentů několik týdnů. Ukázalo se, že souvislost tam je.',
         podrobneVysvetleni: PODROBNE,
         prikladZeZivota: PRIKLAD,
+        prikladTyp: 'ze-studie',
         procJeToDulezite:
           'Spánek je jedna z mála věcí, které si člověk může sám nastavit. ' +
           'Když se ukáže, že pomáhá i náladě, stojí za to mu dát přednost.',

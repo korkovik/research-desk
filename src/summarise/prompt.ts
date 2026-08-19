@@ -75,25 +75,39 @@ BLOKY (v tomto pořadí)
 5. Proč je to důležité — 1 až 2 věty pro běžného čtenáře.
 6. Poznámka k omezením — jedna poctivá věta.
 
-PRAVIDLO PRO PŘÍKLAD ZE ŽIVOTA — TOHLE JE NEJDŮLEŽITĚJŠÍ PRAVIDLO CELÉ PRÁCE
-Příklad musí vycházet ze samotné práce: z prostředí, kde se studie dělala, z toho,
-koho nebo co sledovali, co konkrétně udělali a co jim vyšlo. Smíš to převyprávět
-běžnými slovy, ale každý prvek musí být dohledatelný v abstraktu nebo v jednovětém
-shrnutí.
+PŘÍKLAD ZE ŽIVOTA — DVĚ MOŽNOSTI, VYBER JEDNU
+Blok 4 má čtenáři pomoct si zjištění představit. Můžeš to udělat dvěma způsoby
+a musíš říct, který jsi použil (pole prikladTyp).
 
-DO PŘÍKLADU NEPIŠ — tohle jsou chyby, kterých se tu dělá nejvíc:
-- vysvětlení, co je nějaká látka, plyn, bakterie nebo přístroj a co dělá. Je
-  jedno, že je to pravda a že by to čtenáři pomohlo: sem to nepatří. Patří to
-  do bloku „Podrobné vysvětlení".
-- člověka, město, věk, počet, nádobu ani místo, které v práci nejsou. Když
-  práce říká „vzorky", nepiš „v kádích". Když neříká, kolik lidí, nepiš věk.
+1) „ze-studie" — popíšeš, co studie opravdu dělala, měřila nebo zjistila.
+   Tohle je lepší volba, kdykoliv práce nabízí něco konkrétního: kde se měřilo,
+   koho nebo co sledovali, co udělali, co jim vyšlo. Převyprávěj to běžnými
+   slovy, ale KAŽDÝ prvek musí být dohledatelný v abstraktu nebo v jednovětém
+   shrnutí. Nepřidávej člověka, město, věk, počet, nádobu ani místo, které tam
+   nejsou. Když práce říká „vzorky", nepiš „v kádích".
+
+2) „ilustrace" — běžná situace, kterou si vymyslíš ty, aby si to čtenář uměl
+   představit. Začni ji tak, aby bylo jasné, že jde o tvoje přirovnání, ne
+   o zjištění — třeba „Představte si to takto:" nebo „Je to podobné, jako když".
+   V ilustraci NESMÍŠ tvrdit nic o studii: žádné její číslo, žádný její
+   výsledek, žádné místo, kde se dělala, ani koho sledovala. Ilustrace vysvětluje
+   VELIKOST nebo POVAHU zjištění obecnou situací, kterou čtenář zná.
+
+   Špatně: „Představte si, že vaše dítě usne o 26 minut dřív." — to je číslo
+   ze studie vydávané za ilustraci.
+   Dobře: „Představte si to takto: je to rozdíl mezi tím, jestli si po obědě
+   stihnete kávu, nebo ne."
+
+DO ŽÁDNÉHO Z NICH NEPIŠ:
+- vysvětlení, co je nějaká látka, plyn, bakterie nebo přístroj a co dělá.
+  I když je to pravda a čtenáři by to pomohlo — patří to do bloku „Podrobné
+  vysvětlení", ne sem.
 - k čemu něco slouží nebo proč to někdo postavil, pokud to práce neříká.
-- následek, který z výsledku logicky plyne, ale v práci napsaný není.
-- proč autoři studii dělali. Na to je v tomhle vydání jiné místo; sem to nepiš.
+- následek, který ze zjištění logicky plyne, ale v práci napsaný není.
+- proč autoři studii dělali. Na to je jinde v tomhle vydání místo.
 
-Když práce nabízí málo, napiš KRÁTKÝ příklad. Dvě věty, které jsou celé doložené,
-jsou lepší než pět vět, z nichž dvě sis domyslel. Nedoplňuj text, aby vypadal
-bohatší.
+Když práce nabízí málo, napiš KRÁTKÝ příklad. Dvě věty, které jsou celé v pořádku,
+jsou lepší než pět vět, z nichž dvě sis domyslel.
 
 Vymyšlený příklad je nejhorší chyba, jaké se tu můžeš dopustit. Je horší než
 kdyby článek nevyšel vůbec. Nepřidávej místo, věk, počet, zemi, prostředí ani
@@ -328,6 +342,47 @@ Odpověz pouze strukturovaným výstupem. Nepiš žádný další komentář.`;
 
 export const VERIFIER_SYSTEM_PROMPT = VERIFIER_PREAMBLE + VERIFIER_PROCEDURE;
 export const CHALLENGE_SYSTEM_PROMPT = VERIFIER_PREAMBLE + CHALLENGE_PROCEDURE;
+
+/**
+ * The verifier for a block the writer has openly marked as their own everyday
+ * framing rather than a statement about the research.
+ *
+ * It is deliberately NOT a softer version of the same check. It asks a narrower
+ * question — does this text assert anything about the study? — and applies the
+ * original standard to whatever it finds. An illustration that says nothing
+ * about the study has nothing to verify and passes with no claims; one that
+ * slips in the study's number is caught exactly as before, which is the whole
+ * point of keeping a verifier here at all.
+ */
+export const ILLUSTRATION_VERIFIER_SYSTEM_PROMPT = `Jsi ověřovatel faktů. Dostaneš anglický zdroj vědecké práce a český text,
+který je označený jako PŘIROVNÁNÍ — autor jím čtenáři přibližuje, jak velké
+nebo jaké to zjištění je. Není to popis studie a netváří se tak.
+
+Tvůj úkol je proto úzký: najdi v tom textu KAŽDÉ tvrzení o té studii a jen ta
+ověř. Tvrzení o studii je:
+- číslo, které má pocházet ze studie (kolik procent, kolik minut, kolik lidí),
+- výsledek nebo účinek, který studie údajně zjistila,
+- místo, kde se studie dělala,
+- koho nebo co studie sledovala,
+- co studie udělala nebo měřila.
+
+Běžná situace ze života, kterou si autor vymyslel jako přirovnání, NENÍ tvrzení
+o studii. Nerozkládej ji na tvrzení a nic u ní neověřuj. „Je to rozdíl mezi tím,
+jestli si po obědě stihnete kávu, nebo ne" není tvrzení o studii — nic o ní
+neříká. Ale „vaše dítě usne o 26 minut dřív" tvrzením o studii JE, protože to
+číslo z ní pochází.
+
+Když text neobsahuje žádné tvrzení o studii, vrať prázdný seznam tvrzení
+a modelOverallVerdict „supported". To je správná odpověď, ne chyba.
+
+Když nějaké obsahuje, platí pro ně přesně to, co jindy: doložené smíš označit jen
+tehdy, když zkopíruješ doslovný úsek zdroje, který to vyslovuje. Citace kopíruj
+v angličtině, přesně tak, jak jsou ve zdroji. Výchozí verdikt je NEDOLOŽENÉ.
+
+Pole \`claimText\` piš ANGLICKY, \`exampleSpan\` ČESKY doslovně z textu,
+\`unsupportedReasonsCs\` ČESKY.
+
+Odpověz pouze strukturovaným výstupem.`;
 
 /** Rendered as the literal string when a field is absent, so no header dangles. */
 const ABSENT = '(není k dispozici)';
