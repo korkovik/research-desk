@@ -32,6 +32,10 @@ on:
         description: 'Run only the stall check, not the digest'
         type: boolean
         default: false
+      watchdog_date:
+        description: 'Date for the stall check (default: today in Prague). Only for testing that it still detects a missing edition.'
+        type: string
+        default: ''
 
 permissions:
   contents: write
@@ -136,7 +140,10 @@ jobs:
             }
             const a = line.anthropic ?? {};
             const usd = a.estimatedCostUsd;
-            const money = typeof usd === "number" ? "$" + usd.toFixed(3) : "unknown";
+            // A skipped run has no anthropic block at all. Its cost is not unknown,
+            // it is zero, and saying "unknown" reads as data we lost.
+            const money = typeof usd === "number" ? "$" + usd.toFixed(3)
+              : line.outcome === "skipped" ? "$0.000 (nothing ran)" : "unknown";
             const md = [
               "### " + (line.ts ?? "").slice(0, 10) + " — " + line.outcome,
               "",
@@ -262,7 +269,8 @@ jobs:
         name: Is today's edition committed and served?
         run: |
           set -uo pipefail
-          day=$(TZ=Europe/Prague date +%F)
+          day="${{ inputs.watchdog_date }}"
+          [ -z "$day" ] && day=$(TZ=Europe/Prague date +%F)
           echo "day=$day" >> "$GITHUB_OUTPUT"
 
           committed=no
