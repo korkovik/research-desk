@@ -97,7 +97,20 @@ for every later run, which is worse than a red X.
 **Knowing it broke, without a daily email.** A good day sends nothing. A bad day
 opens (or comments on) one dated issue labelled `run-failure`, which GitHub
 notifies on, turns the badge above red, and leaves a red X in the Actions tab.
-The site itself also shows its newest edition's date, so a stall is visible.
+
+A benign skip is *not* a failure. Every firing after the first finds the day
+already published, so the run passes `--skip-if-published` and the guard says
+so calmly and exits 0. Reporting that as a failure would send a notification on
+a morning when everything worked, and a red signal that usually means "probably
+fine" is worse than no signal at all.
+
+**The run that never happens.** A third cron at 11:00 UTC checks the two things
+that must be true for there to be anything to read: today's edition is committed,
+and the live Pages origin actually serves it. Both firings delayed out of their
+window, a disabled schedule, or a failed Pages deploy would otherwise leave a
+green tick and a site quietly frozen on an old edition — the worst failure this
+project has, because silence reads as success. Either check failing opens an
+issue and fails the run.
 
 Run it by hand from the Actions tab → **daily digest** → *Run workflow*, with
 `force` ticked to replace an edition already published today.
