@@ -1,0 +1,842 @@
+{
+  "date": "2026-08-20",
+  "categoryKey": "psychology-behaviour",
+  "categoryLabel": "Psychologie a chování",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7203700736",
+        "title": "Sleep disturbances and sleep duration as predictors of working life expectancy among adults aged 50 years and older in Finland",
+        "abstract": "Objectives To examine the associations of sleep disturbances and sleep duration with working life expectancy (WLE; the estimated number of years an individual is expected to be in the workforce) from age 50 to 68. Methods Data of individuals ≥50 years were drawn from two cohort studies: the Finnish Public Sector (FPS) study involving public sector employees in 2000–2016 (n=70 339, 80% women) and the Health and Social Support (HeSSup) study in 1998–2013 initially representing the general working age population in Finland (n=6071, 54% women). Participants reported sleep disturbances (none, moderate, severe, only in FPS) and usual sleep duration (short: <7 hours, mid-range: 7–8.5 hours, long: ≥9 hours). WLE from age 50 to 68 was estimated using multistate life table models. Results Reporting no sleep disturbances predicted a WLE of 13.4 years (95% CI 13.4 to 13.5), moderate sleep disturbances a WLE of 13.0 years (95% CI 13.0 to 13.1) and severe sleep disturbances a WLE of 12.8 years (95% CI 12.7 to 12.8) at 50 years of age. Short sleep duration predicted a WLE of 13.2 years (95% CI 13.1 to 13.2), mid-range sleep duration a WLE of 13.2 years (95% CI 13.1 to 13.2) and long sleep duration a WLE of 12.4 years (95% CI 12.3 to 12.6). The findings on sleep duration were more pronounced in HeSSup. Conclusions Severe sleep disturbances and long sleep duration were associated with a reduction of approximately 8–9 months in WLE compared with no disturbances or mid-range sleep duration. To promote older adults’ participation in working life, supporting sleep of recommended length and good quality may be required.",
+        "date": "2026-08-18",
+        "url": "https://doi.org/10.1136/oemed-2025-110766",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1136/oemed-2025-110766",
+        "openAlexId": "W7203700736",
+        "subfield": {
+          "id": "subfields/3205",
+          "name": "Experimental and Cognitive Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T10316",
+          "name": "Sleep and related disorders"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Saana Myllyntausta",
+          "Katriina Heikkilä",
+          "Jaana Pentti",
+          "Holendro Singh Chungkham",
+          "Sakari Suominen",
+          "Mika Kivimäki",
+          "Jussi Vahtera",
+          "Paola Zaninotto",
+          "Jenni Ervasti",
+          "Sari Stenholm"
+        ],
+        "venue": "Occupational and Environmental Medicine",
+        "indexedDate": "2026-08-19",
+        "referencedWorksCount": 37,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8725,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.8571,
+          "credibility": 0.895,
+          "total": 0.8993,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 1,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0
+          },
+          "everydayDomains": [
+            "sleep",
+            "health",
+            "work",
+            "family"
+          ],
+          "subfieldKey": "subfields/3205",
+          "evidence": [
+            "total 0.8993 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.87 = P 0.87 − 0.45×t 0.00 − 0.15×j 0.00",
+            "outcome verbs (v 0.75): reduction, predicted, associated with",
+            "recognisable subjects (s 1.00): participants, adults (title, ×2), women, older adults, employees",
+            "quantified effect (q 1): percentage, 95% CI, sample size",
+            "title concreteness (c 0.80): −0.2 title is 20 words",
+            "everyday relevance 0.97: 4 domain(s) — sleep, health, work, family",
+            "everyday terms (5): sleep, sleep duration, health, employee, older adults",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-19)",
+            "credibility 0.90 = 0.40×c1 1.00 + 0.25×c2 1.00 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Occupational and Environmental Medicine",
+            "c2 1.00: n = 703398",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1136/oemed-2025-110766)"
+      },
+      "summary": {
+        "souhrn": "Lidé, kteří po padesátce spí špatně nebo naopak hodně dlouho, odcházejí z pracovního života o něco dřív. Finští vědci k tomu využili dva dlouhodobé výzkumy: jeden se zaměstnanci veřejného sektoru, kde čtyři z pěti účastníků byly ženy, a druhý s menším vzorkem z běžné pracující populace. Sledovali, kolik let člověk ještě stráví v zaměstnání mezi padesátkou a osmašedesáti lety. Kdo neměl potíže se spánkem, odpracoval v průměru 13,4 roku z těchto osmnácti. U lidí s těžkými potížemi to bylo 12,8 roku a u těch, kdo spali devět a více hodin, 12,4 roku — tedy zhruba o osm až devět měsíců méně.",
+        "podrobneVysvetleni": "Data pocházela ze dvou finských výzkumů. První sledoval zaměstnance veřejného sektoru v letech 2000 až 2016. Šlo o 70 339 lidí, z nichž čtyři z pěti byly ženy. Druhý zahrnul 6 071 lidí z běžné pracující populace v letech 1998 až 2013; žen tu byla zhruba polovina. Účastníci sami uváděli, zda mají potíže se spánkem — žádné, mírné, nebo těžké. Také uvedli, kolik obvykle spí. Krátký spánek znamenal méně než sedm hodin, střední sedm až osm a půl hodiny, dlouhý devět hodin a více. Vědci pak spočítali takzvanou očekávanou délku pracovního života (working life expectancy). Je to odhad, kolik let člověk ještě stráví v zaměstnání. Použili k tomu model, který sleduje přechody mezi stavy: práce, nemoc, důchod, úmrtí. Období sledovali od padesátky do osmašedesáti let. Výsledky vyšly takto: bez potíží se spánkem 13,4 roku v práci, mírné potíže 13,0 roku, těžké potíže 12,8 roku. Podle délky spánku dopadl krátký i střední spánek stejně, tedy 13,2 roku. Dlouhý spánek znamenal jen 12,4 roku. Rozdíl mezi krajními skupinami dělá zhruba osm až devět měsíců odpracovaného času. U menšího souboru z běžné populace byly rozdíly podle délky spánku ještě výraznější. Studie ale neukazuje, že spánek je přímou příčinou. Dlouhý spánek může být spíš příznakem nemoci, která člověka z práce nakonec vyřadí.",
+        "procJeToDulezite": "Kvalita a délka spánku po padesátce souvisí s tím, jak dlouho člověk vydrží pracovat, takže se týká i plánování důchodu a péče o vlastní zdraví. Pro zaměstnavatele i lékaře je to důvod brát potíže se spánkem u starších pracovníků vážně.",
+        "poznamkaKOmezenim": "Spánek si účastníci hodnotili sami, data pocházejí jen z Finska a v prvním souboru výrazně převažovaly ženy; studie navíc ukazuje jen souvislost, ne to, že by spánek délku pracovního života přímo způsoboval."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 940,
+              "end": 944
+            },
+            "matchedText": "13,2",
+            "messageCs": "Číslo „13,2“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „13,2 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[940,944]: 13,2"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 458,
+              "end": 593
+            },
+            "matchedText": "U lidí s těžkými potížemi to bylo 12,8 roku a u těch, kdo spali devět a více hodin, 12,4 roku — tedy zhruba o osm až devět měsíců méně.",
+            "messageCs": "Tato věta má 30 slov a je moc dlouhá: „U lidí s těžkými potížemi to bylo 12,8 roku a u těch, kdo spali devět a více ho…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[458,593]: U lidí s těžkými potížemi to bylo 12,8 roku a u těch, kdo spali devět a více hodin, 12,4 roku — tedy zhruba o osm až devět měsíců méně."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 115,
+              "end": 121
+            },
+            "matchedText": "70 339",
+            "messageCs": "Číslo „70 339“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „70 339 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[115,121]: 70 339"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 174,
+              "end": 179
+            },
+            "matchedText": "6 071",
+            "messageCs": "Číslo „6 071“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „6 071 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[174,179]: 6 071"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203673563",
+        "title": "Validation and Reliability Assessment of the Japanese Version of the Salzburg Stress Eating Scale in an Adult Population",
+        "abstract": "Abstract Recent studies have explored the impact of stress on eating behavior, necessitating a clear understanding of eating patterns during periods of heightened stress. They revealed that individuals either increased, decreased, or maintained an unchanged food intake under stress. To implement effective interventions in stressful situations, it is crucial to assess an individual's eating behavior patterns, including changes in dietary intake. This study assessed the validity and reliability of the Japanese version of the Salzburg Stress Eating Scale (SSES‐J), which measures stress‐induced changes in eating behavior. Study 1 comprised an online survey administered to 763 Japanese participants. The survey collected data on the SSES‐J, stress perception, eating behavior, height, and weight. The participant cohort was divided into two groups. In Group 1 ( n = 382), exploratory factor analysis confirmed that the SSES‐J had a one‐factor structure. Confirmatory factor analysis was subsequently conducted in Group 2 ( n = 381), and a satisfactory fit was obtained after accounting for error correlations between similar items. Study 2 investigated the validity of the SSES‐J, examining its correlations with eating behavior‐related variables and depression in a sample of 653 Japanese students and adults. Study 3 extended this validation by examining the scale's associations with eating disorder‐related constructs in a sample of 414 Japanese students and adults. Across the studies, the SSES‐J was found to have a consistent single‐factor structure and high reliability and validity.",
+        "date": "2026-08-18",
+        "url": "https://doi.org/10.1111/jpr.70052",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1111/jpr.70052",
+        "openAlexId": "W7203673563",
+        "subfield": {
+          "id": "subfields/3203",
+          "name": "Clinical Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T10263",
+          "name": "Eating Disorders and Behaviors"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Xiaofeng Wang",
+          "Noriko Aizawa",
+          "Yanyuan Wang",
+          "Mika Omori"
+        ],
+        "venue": "Japanese Psychological Research",
+        "indexedDate": "2026-08-19",
+        "referencedWorksCount": 33,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9125,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.6664,
+          "total": 0.8926,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0
+          },
+          "everydayDomains": [
+            "food",
+            "school",
+            "screens",
+            "health",
+            "mind"
+          ],
+          "subfieldKey": "subfields/3203",
+          "evidence": [
+            "total 0.8926 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.91 = P 0.91 − 0.45×t 0.00 − 0.15×j 0.00",
+            "outcome verbs (v 0.75): increased, extended, decreased",
+            "recognisable subjects (s 1.00): participants, students, adults (title, ×2)",
+            "quantified effect (q 1): sample size",
+            "title concreteness (c 1.00): no penalty",
+            "everyday relevance 1.00: 5 domain(s) — food, school, screens, health, mind",
+            "everyday terms (8): food, dietary, eating, student, students, online, depression, stress",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-19)",
+            "credibility 0.67 = 0.40×c1 1.00 + 0.25×c2 0.65 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Japanese Psychological Research",
+            "c2 0.65: n = 382",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1111/jpr.70052)"
+      },
+      "summary": {
+        "souhrn": "Někdo ve stresu jí víc, někdo míň a někdo pořád stejně — a japonští psychologové teď ověřili dotazník, který tyhle tři typy dokáže rozlišit. Přeložili do japonštiny Salcburskou škálu stresového jedení (Salzburg Stress Eating Scale) a otestovali ji ve třech samostatných šetřeních na dohromady zhruba dvou tisících lidí, studentů i dospělých. Ukázalo se, že dotazník měří jedinou vlastnost, tedy směr, kterým se chuť k jídlu ve stresu posouvá, a že jeho výsledky drží pohromadě a souvisejí s dalšími mírami jídelního chování, s depresivními příznaky i s projevy blízkými poruchám příjmu potravy. Pro praxi to znamená nástroj, kterým lze u konkrétního člověka zjistit, jestli mu náročné období chuť k jídlu spíš rozjede, nebo utlumí — a podle toho zvolit pomoc.",
+        "podrobneVysvetleni": "V první části vyplnilo online dotazník 763 japonských účastníků, kteří kromě samotné škály uvedli i míru vnímaného stresu, své jídelní zvyklosti, výšku a váhu. Tenhle soubor autoři rozdělili na dvě zhruba stejně velké části: v první skupině (382 lidí) hledali, kolik různých vlastností dotazník vlastně měří, a vyšlo jim, že jen jednu. V druhé skupině (381 lidí) pak tenhle nález ověřovali a model odpovídal datům dobře poté, co vzali v úvahu, že některé otázky se ptají na velmi podobnou věc. Druhé šetření se 653 studenty a dospělými porovnávalo výsledky škály s dalšími dotazníky o jídelním chování a s mírou depresivních příznaků. Třetí šetření, kterého se zúčastnilo 414 studentů a dospělých, přidalo srovnání s projevy typickými pro poruchy příjmu potravy. Ve všech třech případech se potvrdilo totéž: dotazník měří jednu jedinou věc, dává při opakování podobné výsledky a souvisí s tím, s čím by souviset měl. Praktický přínos je v tom, že „stresové jedení\" není jeden jev. Rady typu „ve stresu se přejídáme\" platí jen pro část lidí; jiní naopak jídlo vynechávají a hubnou, což může být stejně rizikové. Dotazník umožňuje tyhle skupiny od sebe odlišit dřív, než se z toho stane problém.",
+        "procJeToDulezite": "Náročná období — zkouškové, práce, potíže v rodině — mění lidem chuť k jídlu, ale u každého jinak, a spolehlivý způsob, jak ten směr rozpoznat, pomáhá zvolit smysluplnou podporu místo obecných rad.",
+        "poznamkaKOmezenim": "Jde o ověření dotazníku na japonských účastnících, převážně studentech a dospělých z online šetření, takže jeho použitelnost v jiném jazykovém a kulturním prostředí, včetně českého, je třeba ověřit samostatně."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 342,
+              "end": 594
+            },
+            "matchedText": "Ukázalo se, že dotazník měří jedinou vlastnost, tedy směr, kterým se chuť k jídlu ve stresu posouvá, a že jeho výsledky drží pohromadě a souvisejí s dalšími mírami jídelního chování, s depresivními příznaky i s projevy blízkými poruchám příjmu potravy.",
+            "messageCs": "Tato věta má 40 slov a je moc dlouhá: „Ukázalo se, že dotazník měří jedinou vlastnost, tedy směr, kterým se chuť k jíd…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[342,594]: Ukázalo se, že dotazník měří jedinou vlastnost, tedy směr, kterým se chuť k jídlu ve stresu posouvá, a že jeho výsledky drží pohromadě a souvisejí s dalšími mírami jídelního chování, s depresivními příznaky i s projevy blízkými poruchám příjmu potravy."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 511,
+              "end": 514
+            },
+            "matchedText": "653",
+            "messageCs": "Číslo „653“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „653 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[511,514]: 653"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=24.21",
+            "messageCs": "Věty jsou v průměru moc dlouhé (24,2 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=24.21"
+          }
+        ],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 242,
+              "end": 245
+            },
+            "matchedText": "382",
+            "messageCs": "Číslo „382“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „382 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[242,245]: 382"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 353,
+              "end": 356
+            },
+            "matchedText": "381",
+            "messageCs": "Číslo „381“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „381 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[353,356]: 381"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 672,
+              "end": 675
+            },
+            "matchedText": "414",
+            "messageCs": "Číslo „414“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „414 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[672,675]: 414"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=47.8",
+            "messageCs": "Text se celkově čte těžko (index 48 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=47.8"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203728511",
+        "title": "Does cognitive behavioral therapy change the daily activity patterns of adults with depression? A secondary analysis of the CBT+ trial",
+        "abstract": "This secondary analysis explored pre- to post-intervention changes in accelerometer-derived activity and sleep data from adults with major depressive disorder (MDD). The CBT+ trial comprised two 8-week Cognitive Behavioral Therapy (CBT) arms: ActiveCBT (n = 13; 30 min of moderate-intensity exercise before each CBT session) and CalmCBT (n = 12; 30 min of quiet rest before each session). Pre- and post-intervention acceleromtetry data were included in mean-centered linear models for sleep (time in bed; TIB), activity and sedentary time. There were no significant between-group effects, but there was a significant average within-person decrease of 47.2 mins/day of sedentary time across all participants (95% CI: −82.0 to −14.4 min/day; p = .007), a significant increase of 36.5 mins/day of sleep duration-TIB (4.2 to 68.8 min/day; p = .028), and a non-significant increase of 12.3 mins/day of total physical activity (−34.5 to 59.1 min/day; p = .589). Overall, CBT was associated with beneficial changes in daily activity patterns. The findings of reduced sedentary time and increased TIB indicate possible additional health benefits of CBT for adults with depression, although replication in larger sample sizes is needed. Future work should explore whether these behavioral improvements can be sustained beyond the intervention period.",
+        "date": "2026-08-18",
+        "url": "https://doi.org/10.1080/16506073.2026.2720134",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1080/16506073.2026.2720134",
+        "openAlexId": "W7203728511",
+        "subfield": {
+          "id": "subfields/3205",
+          "name": "Experimental and Cognitive Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T10316",
+          "name": "Sleep and related disorders"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Madeleine L Connolly",
+          "Siming Sun",
+          "Shania J.E. Kelly",
+          "Jeni E. Lansing",
+          "Thomas A. Murray",
+          "Emily B.K. Thomas",
+          "Nathaniel G. Wade",
+          "Jacob D. Meyer"
+        ],
+        "venue": "Cognitive Behaviour Therapy",
+        "indexedDate": "2026-08-19",
+        "referencedWorksCount": 19,
+        "tldr": "Overall, CBT was associated with beneficial changes in daily activity patterns, and reduced sedentary time and increased TIB indicate possible additional health benefits of CBT for adults with depression, although replication in larger sample sizes is needed.",
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.845,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.5746,
+          "total": 0.8527,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.75,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.35
+          },
+          "everydayDomains": [
+            "sleep",
+            "health",
+            "body",
+            "work"
+          ],
+          "subfieldKey": "subfields/3205",
+          "evidence": [
+            "total 0.8527 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.85 = P 0.90 − 0.45×t 0.00 − 0.15×j 0.35",
+            "outcome verbs (v 1.00): reduced, increased, increases, improvement, decreases, associated with",
+            "recognisable subjects (s 0.75): participants, adults (title, ×2)",
+            "quantified effect (q 1): percentage, p-value, 95% CI, sample size, increase/decrease of n",
+            "title concreteness (c 0.80): −0.2 title is 20 words",
+            "jargon density (j 0.35): 7/200 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 4 domain(s) — sleep, health, body, work",
+            "everyday terms (9): sleep, sleep duration, health, depression, therapy, exercise, physical activity, sedentary, work",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-19)",
+            "credibility 0.57 = 0.40×c1 1.00 + 0.25×c2 0.28 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Cognitive Behaviour Therapy",
+            "c2 0.28: n = 13",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        }
+      },
+      "summary": {
+        "souhrn": "Kognitivně behaviorální terapie (CBT), tedy psychoterapie zaměřená na změnu myšlenkových vzorců a chování, se u dospělých s depresí zřejmě projeví i na tom, jak tráví den. Vědci nechali 25 lidí s depresí nosit pohybové čidlo (akcelerometr) před osmitýdenní terapií a po ní. Účastníci po terapii proseděli a proleželi v průměru o 47 minut denně méně a v posteli strávili zhruba o 36 minut denně víc. Nezáleželo přitom na tom, zda si před sezením zacvičili, nebo si jen v klidu odpočinuli. Studie je ale malá a jde spíš o první náznak než o potvrzený závěr.",
+        "podrobneVysvetleni": "Šlo o takzvanou sekundární analýzu, tedy nové pročítání dat z už proběhlého pokusu zvaného CBT+. Autoři v něm rozdělili účastníky do dvou skupin po osmi týdnech terapie. Jedna skupina (13 lidí) si před každým sezením 30 minut cvičila se střední intenzitou, druhá (12 lidí) si stejnou dobu jen v klidu odpočívala. Všichni před začátkem i po skončení nosili pohybové čidlo, které zaznamenávalo pohyb, sezení a čas strávený v posteli.\n\nMezi oběma skupinami se žádný rozdíl neprokázal. Cvičení před terapií tedy podle těchto dat nic navíc nepřineslo. Zajímavější je jiný pohled. Vědci spočítali, jak se změnil průměrný účastník bez ohledu na skupinu. Sedavého času ubylo v průměru o 47 minut denně. Skutečná hodnota se přitom nejspíš pohybuje někde mezi čtvrthodinou a hodinou a dvaceti minutami. Času stráveného v posteli naopak přibylo asi o 36 minut denně, tedy něco přes půl hodiny.\n\nCelkového pohybu přibylo jen o 12 minut denně, a to je rozdíl tak malý, že ho autoři nepovažují za průkazný — mohla ho způsobit náhoda. Lidé tedy po terapii spíš přestali sedět a víc odpočívali v posteli, než že by začali sportovat. Autoři z toho vyvozují, že psychoterapie může mít vedle úlevy od depresivních příznaků i vedlejší přínos pro tělesné zdraví.",
+        "procJeToDulezite": "Dlouhé sezení a nedostatek spánku škodí zdraví a lidé s depresí je mívají oba — pokud terapie zlepší i tohle, její přínos sahá dál než jen k náladě.",
+        "poznamkaKOmezenim": "Studie sledovala jen 25 lidí, neměla srovnávací skupinu bez terapie a autoři sami píší, že výsledky je nutné ověřit na větším vzorku."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "warn",
+        "hard": [],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 10,
+              "end": 19
+            },
+            "matchedText": " behavior",
+            "messageCs": "Text opisuje původní název článku („ behavior“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[10,19]:  behavior"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 185,
+              "end": 187
+            },
+            "matchedText": "13",
+            "messageCs": "Číslo „13“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „13 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[185,187]: 13"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 264,
+              "end": 266
+            },
+            "matchedText": "12",
+            "messageCs": "Číslo „12“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „12 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[264,266]: 12"
+          },
+          {
+            "block": "procJeToDulezite",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 148
+            },
+            "matchedText": "Dlouhé sezení a nedostatek spánku škodí zdraví a lidé s depresí je mívají oba — pokud terapie zlepší i tohle, její přínos sahá dál než jen k náladě.",
+            "messageCs": "Tato věta má 27 slov a je moc dlouhá: „Dlouhé sezení a nedostatek spánku škodí zdraví a lidé s depresí je mívají oba —…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ procJeToDulezite[0,148]: Dlouhé sezení a nedostatek spánku škodí zdraví a lidé s depresí je mívají oba — pokud terapie zlepší i tohle, její přínos sahá dál než jen k náladě."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=16.05",
+            "messageCs": "Věty jsou v průměru moc dlouhé (16,1 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=16.05"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203687373",
+        "title": "Predicting Sports Betting Intentions Among Adolescents: Gender-Specific Pathways in the Reasoned Action Approach",
+        "abstract": "Abstract Sports betting among adolescents is a growing public health concern, yet the social-cognitive mechanisms driving sports betting intentions in legally underage populations remain largely underexplored. This study applied the Reasoned Action Approach (RAA) to sports betting intentions in a large sample of secondary school students ( N = 1,215; age range 13–19). Structural equation modeling was used to examine the extent to which sports betting-specific attitudes (instrumental and affective), perceived norms (injunctive and descriptive), and perceived behavioral control (capacity and autonomy) predicted sports betting intention, and whether these relationships were invariant across gender. The model explained 38.0% of variance in sports betting intention. Instrumental attitude and descriptive norms emerged as significant predictors. Multi-group analysis confirmed metric invariance across gender. The pattern of RAA predictors was consistent across groups, although structural paths were not fully invariant, with household income emerging as a gender-specific predictor of sports betting intention among female adolescents. Because both instrumental attitude and descriptive norms are strongly shaped by the commercial and media-driven normalization of sports betting, findings suggest that prevention efforts should target cognitive outcome evaluations and perceived peer betting norms, and that these pathways are relevant for both male and female adolescents.",
+        "date": "2026-08-18",
+        "url": "https://doi.org/10.1007/s10899-026-10548-6",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1007/s10899-026-10548-6",
+        "openAlexId": "W7203687373",
+        "subfield": {
+          "id": "subfields/3203",
+          "name": "Clinical Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T11705",
+          "name": "Gambling Behavior and Treatments"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1007/s10899-026-10548-6",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Aaleks Kasemi",
+          "Eva Grosemans",
+          "Anders Nilsson",
+          "Rozane De Cock",
+          "Bieke Zaman"
+        ],
+        "venue": "Journal of Gambling Studies",
+        "indexedDate": "2026-08-19",
+        "referencedWorksCount": 57,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7222,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.8378,
+          "total": 0.8404,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 1,
+            "q": 1,
+            "c": 0.6,
+            "t": 0,
+            "j": 0.1523
+          },
+          "everydayDomains": [
+            "school",
+            "health",
+            "money",
+            "transport"
+          ],
+          "subfieldKey": "subfields/3203",
+          "evidence": [
+            "total 0.8404 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.72 = P 0.74 − 0.45×t 0.00 − 0.15×j 0.15",
+            "outcome verbs (v 0.50): prevention, predicted",
+            "recognisable subjects (s 1.00): adolescents (title, ×2), students, households, schools",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.60): −0.4 method-word subtitle",
+            "jargon density (j 0.15): 3/197 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 4 domain(s) — school, health, money, transport",
+            "everyday terms (7): school, schools, student, students, health, income, driving",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-19)",
+            "credibility 0.84 = 0.40×c1 1.00 + 0.25×c2 0.77 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Journal of Gambling Studies",
+            "c2 0.77: n = 1215",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no tldr; falling back to the source abstract (§4.2)"
+      },
+      "summary": {
+        "souhrn": "Mezi středoškoláky roste sázení na sport, ačkoliv na ně většina z nich ještě nemá věk. Výzkumníci se zeptali 1215 studentů středních škol ve věku 13 až 19 let, co si o sázení myslí a zda mají v úmyslu sázet. Zjistili, že úmysl sázet nejlépe předpovídají dvě věci: přesvědčení, že se sázení vyplatí, a dojem, že sázejí i ostatní vrstevníci. Tyto dva faktory spolu s dalšími vysvětlily zhruba 38 procent rozdílů mezi studenty, tedy o dost víc než třetinu. U dívek navíc hrál roli i příjem domácnosti, u chlapců ne. Autoři z toho vyvozují, že prevence by se měla zaměřit právě na tato dvě přesvědčení, u chlapců i u dívek stejně.",
+        "podrobneVysvetleni": "Vědci použili model, kterému se říká přístup zdůvodněného jednání (Reasoned Action Approach). Je to způsob, jak předpovědět chování z toho, co si člověk myslí. Ptali se na tři skupiny věcí. Za prvé na postoje, tedy zda student sázení vidí jako užitečné a zda mu přijde příjemné. Za druhé na vnímané normy, tedy zda si myslí, že to od něj okolí čeká a zda má pocit, že to dělají i ostatní. Za třetí na pocit kontroly, tedy zda by to zvládl a zda je to jeho vlastní rozhodnutí. Odpovědi pak zpracovali statistickým modelem, který hledá, které z těchto věcí s úmyslem sázet souvisejí nejtěsněji. Z celé té sady vyšly jako spolehlivé předpovědi jen dvě: přesvědčení, že sázení něco přinese, a dojem, že sázejí i vrstevníci. Ostatní faktory, včetně toho, jak příjemné sázení studentům připadá, se v modelu neprosadily. Model dohromady vysvětlil 38 procent rozdílů v úmyslu sázet, což je na výzkum lidského chování slušné, ale zbývající zhruba dvě třetiny jsou dány něčím jiným. Chlapci i dívky přitom fungovali podobně, jen u dívek se navíc ukázala souvislost s příjmem domácnosti. Autoři upozorňují, že obě klíčová přesvědčení silně formuje reklama a to, jak běžnou věcí sázení v médiích působí.",
+        "procJeToDulezite": "Sázení se dnes k mladým lidem dostává přes reklamu u sportovních přenosů dřív, než na ně vůbec mají věk. Studie ukazuje, na co ve výchovné debatě mířit: na očekávaný zisk a na dojem, že „sází přece každý“.",
+        "poznamkaKOmezenim": "Studie měřila jen úmysl sázet, ne skutečné chování, a vychází z jednorázového dotazníku, takže neukazuje, co je příčina a co následek."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 146,
+              "end": 148
+            },
+            "matchedText": "13",
+            "messageCs": "Číslo „13“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „13 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[146,148]: 13"
+          }
+        ],
+        "soft": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=17.15",
+            "messageCs": "Věty jsou v průměru moc dlouhé (17,1 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=17.15"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203660755",
+        "title": "Education about gender development predicts support for transgender youth’s gender identity autonomy",
+        "abstract": "Most adults have limited understanding of child development, yet their perceptions of development influence their decisions about whether to support children’s autonomy—such as support for autonomy-limiting anti-transgender legislation. This work found that adult participants believe gender develops later for transgender youth than cisgender youth, predicting lower support for children’s autonomy to determine their gender identity, and greater support for anti-transgender legislation (Study 1; N = 200). However, learning about similarities in the development of transgender children and cisgender children decreased this tendency. This predicted greater support for children’s autonomy in determining their gender identity, which was associated with reduced support for anti-transgender legislation in a large, nationally representative sample (Study 2; N = 1552), and increased donations to an organization supporting the rights of transgender youth (Study 3; N = 174). Results highlight the importance of adults’ beliefs about gender development in transgender youth to understand their support for the autonomy and rights of transgender youth. This study found adults believed transgender youth develop gender identity later relative to cisgender youth. This belief was linked to support for gender autonomy-limiting policies. An intervention regarding gender development reduced this belief, and increased support for gender autonomy.",
+        "date": "2026-08-18",
+        "url": "https://doi.org/10.1038/s44271-026-00510-y",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1038/s44271-026-00510-y",
+        "openAlexId": "W7203660755",
+        "subfield": {
+          "id": "subfields/3207",
+          "name": "Social Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T10156",
+          "name": "LGBTQ Health, Identity, and Policy"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://www.nature.com/articles/s44271-026-00510-y.pdf",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Jessica J. Glazier",
+          "Analia F. Albuja"
+        ],
+        "venue": "Communications Psychology",
+        "indexedDate": "2026-08-19",
+        "referencedWorksCount": 60,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8909,
+          "everydayRelevance": 0.6333,
+          "freshness": 0.8571,
+          "credibility": 0.8444,
+          "total": 0.8062,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.75,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.3109
+          },
+          "everydayDomains": [
+            "work",
+            "family"
+          ],
+          "subfieldKey": "subfields/3207",
+          "evidence": [
+            "total 0.8062 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.89 = P 0.94 − 0.45×t 0.00 − 0.15×j 0.31",
+            "outcome verbs (v 1.00): reduced, increased, lowers, predicted, predicts (title, ×2), decreased, associated with, linked to",
+            "recognisable subjects (s 0.75): participants, children, adults",
+            "quantified effect (q 1): sample size",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.31): 6/193 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.63: 2 domain(s) — work, family",
+            "everyday terms (3): work, child, children",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-19)",
+            "credibility 0.84 = 0.40×c1 1.00 + 0.25×c2 0.80 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Communications Psychology",
+            "c2 0.80: n = 1552",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no tldr; falling back to the source abstract (§4.2)"
+      },
+      "summary": {
+        "souhrn": "Dospělí často předpokládají, že transgender děti si svou genderovou identitu uvědomují později než děti cisgender, tedy ty, jejichž identita odpovídá pohlaví zapsanému při narození. Autoři nové práce ukázali, že tahle představa má následky. Kdo věřil v pozdější vývoj, méně podporoval právo dětí rozhodnout o vlastní genderové identitě a spíš schvaloval zákony, které trans dětem takové rozhodnutí omezují. Když ale účastníci dostali informace o tom, v čem je vývoj obou skupin dětí podobný, jejich odhady se sblížily. Ve třech studiích to souviselo s větší podporou dětské samostatnosti v této otázce a v jedné z nich i s vyššími dary organizaci, která hájí práva trans dětí.",
+        "podrobneVysvetleni": "Výzkum měl tři části. V první se dvě stovky dospělých vyjadřovaly k tomu, kdy si děti uvědomují svůj gender. U trans dětí uváděli lidé pozdější věk než u dětí cisgender. Čím pozdější věk účastník odhadoval, tím méně podporoval právo dítěte určit si vlastní genderovou identitu. Zároveň častěji souhlasil se zákony, které trans dětem takové rozhodnutí berou.\n\nDruhá studie byla podstatně větší. Zapojilo se 1552 lidí, tedy zhruba půldruhého tisíce, vybraných tak, aby vzorek odpovídal složení populace. Část z nich se dozvěděla, v čem je vývoj genderové identity u trans a cisgender dětí podobný. Po tomto krátkém poučení lidé méně věřili, že u trans dětí přichází vývoj později. Souviselo to s větší podporou práva dětí rozhodnout o vlastní identitě. A ta zase s menší podporou zákonů, které tuhle možnost omezují.\n\nTřetí studie měla 174 účastníků a přidala praktický test. Lidé po stejném poučení věnovali vyšší částky organizaci hájící práva trans dětí. Nešlo tedy jen o odpovědi v dotazníku.\n\nAutoři z toho vyvozují, že za postoji dospělých k právům trans dětí stojí i obyčejná neznalost dětského vývoje. Přesvědčení o tom, kdy se identita utváří, není neutrální detail. Promítá se do toho, jaké zákony lidé podporují.",
+        "procJeToDulezite": "Ukazuje to, že postoje k právům dětí nestojí jen na hodnotách, ale i na tom, co lidé o vývoji dětí vědí nebo si myslí, že vědí. Pro rodiče i učitele je to připomínka, že představa „na to je ještě brzy\" může být sama o sobě omylem.",
+        "poznamkaKOmezenim": "Studie měří hlavně deklarované postoje krátce po poučení, u dvou ze tří vzorků jde o pouhé stovky lidí a abstrakt neuvádí, jak velká změna postojů to byla ani jak dlouho vydržela."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "warn",
+        "hard": [],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 31,
+              "end": 44
+            },
+            "matchedText": " transgender ",
+            "messageCs": "Text opisuje původní název článku („ transgender “). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[31,44]:  transgender "
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 67,
+              "end": 75
+            },
+            "matchedText": " identit",
+            "messageCs": "Text opisuje původní název článku („ identit“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[67,75]:  identit"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 131,
+              "end": 139
+            },
+            "matchedText": " identit",
+            "messageCs": "Text opisuje původní název článku („ identit“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[131,139]:  identit"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 326,
+              "end": 334
+            },
+            "matchedText": " identit",
+            "messageCs": "Text opisuje původní název článku („ identit“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[326,334]:  identit"
+          },
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 519,
+              "end": 676
+            },
+            "matchedText": "Ve třech studiích to souviselo s větší podporou dětské samostatnosti v této otázce a v jedné z nich i s vyššími dary organizaci, která hájí práva trans dětí.",
+            "messageCs": "Tato věta má 28 slov a je moc dlouhá: „Ve třech studiích to souviselo s větší podporou dětské samostatnosti v této otá…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[519,676]: Ve třech studiích to souviselo s větší podporou dětské samostatnosti v této otázce a v jedné z nich i s vyššími dary organizaci, která hájí práva trans dětí."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 552,
+              "end": 562
+            },
+            "matchedText": " identity ",
+            "messageCs": "Text opisuje původní název článku („ identity “). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[552,562]:  identity "
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 575,
+              "end": 583
+            },
+            "matchedText": "gender d",
+            "messageCs": "Text opisuje původní název článku („gender d“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[575,583]: gender d"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 740,
+              "end": 748
+            },
+            "matchedText": " identit",
+            "messageCs": "Text opisuje původní název článku („ identit“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[740,748]:  identit"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 834,
+              "end": 837
+            },
+            "matchedText": "174",
+            "messageCs": "Číslo „174“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „174 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[834,837]: 174"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 1133,
+              "end": 1141
+            },
+            "matchedText": " identit",
+            "messageCs": "Text opisuje původní název článku („ identit“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[1133,1141]:  identit"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-08-20T07:28:07.435Z",
+  "generatedOn": "2026-08-20",
+  "schemaVersion": 1
+}

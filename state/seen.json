@@ -376,6 +376,46 @@
       "titleKey": "systematicevaluationofsampromptingstrategiesforagriculturallandextractionwithgeosam",
       "publishedOn": "2026-08-12",
       "category": "nature-climate"
+    },
+    {
+      "openalexId": "W7203700736",
+      "doi": "10.1136/oemed-2025-110766",
+      "arxivId": null,
+      "titleKey": "sleepdisturbancesandsleepdurationaspredictorsofworkinglifeexpectancyamongadultsaged50yearsandolderinfinland",
+      "publishedOn": "2026-08-20",
+      "category": "psychology-behaviour"
+    },
+    {
+      "openalexId": "W7203673563",
+      "doi": "10.1111/jpr.70052",
+      "arxivId": null,
+      "titleKey": "validationandreliabilityassessmentofthejapaneseversionofthesalzburgstresseatingscaleinanadultpopulation",
+      "publishedOn": "2026-08-20",
+      "category": "psychology-behaviour"
+    },
+    {
+      "openalexId": "W7203728511",
+      "doi": "10.1080/16506073.2026.2720134",
+      "arxivId": null,
+      "titleKey": "doescognitivebehavioraltherapychangethedailyactivitypatternsofadultswithdepressionasecondaryanalysisofthecbttrial",
+      "publishedOn": "2026-08-20",
+      "category": "psychology-behaviour"
+    },
+    {
+      "openalexId": "W7203687373",
+      "doi": "10.1007/s10899-026-10548-6",
+      "arxivId": null,
+      "titleKey": "predictingsportsbettingintentionsamongadolescentsgenderspecificpathwaysinthereasonedactionapproach",
+      "publishedOn": "2026-08-20",
+      "category": "psychology-behaviour"
+    },
+    {
+      "openalexId": "W7203660755",
+      "doi": "10.1038/s44271-026-00510-y",
+      "arxivId": null,
+      "titleKey": "educationaboutgenderdevelopmentpredictssupportfortransgenderyouthsgenderidentityautonomy",
+      "publishedOn": "2026-08-20",
+      "category": "psychology-behaviour"
     }
   ]
 }

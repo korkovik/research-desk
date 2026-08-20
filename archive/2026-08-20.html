@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Psychologie a chování – 20. srpna 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Psychologie a chování</h1>
+<p class="dateline"><time datetime="2026-08-20">20. srpna 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 5</p>
+<div class="summary"><p><span class="lead">Lidé, kteří po padesátce spí špatně nebo naopak hodně dlouho, odcházejí z pracovního života o něco dřív.</span> Finští vědci k tomu využili dva dlouhodobé výzkumy: jeden se zaměstnanci veřejného sektoru, kde čtyři z pěti účastníků byly ženy, a druhý s menším vzorkem z běžné pracující populace. Sledovali, kolik let člověk ještě stráví v zaměstnání mezi padesátkou a osmašedesáti lety. Kdo neměl potíže se spánkem, odpracoval v průměru 13,4 roku z těchto osmnácti. U lidí s těžkými potížemi to bylo 12,8 roku a u těch, kdo spali devět a více hodin, 12,4 roku — tedy zhruba o osm až devět měsíců méně.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Data pocházela ze dvou finských výzkumů. První sledoval zaměstnance veřejného sektoru v letech 2000 až 2016. Šlo o 70 339 lidí, z nichž čtyři z pěti byly ženy. Druhý zahrnul 6 071 lidí z běžné pracující populace v letech 1998 až 2013; žen tu byla zhruba polovina. Účastníci sami uváděli, zda mají potíže se spánkem — žádné, mírné, nebo těžké. Také uvedli, kolik obvykle spí. Krátký spánek znamenal méně než sedm hodin, střední sedm až osm a půl hodiny, dlouhý devět hodin a více. Vědci pak spočítali takzvanou očekávanou délku pracovního života (working life expectancy). Je to odhad, kolik let člověk ještě stráví v zaměstnání. Použili k tomu model, který sleduje přechody mezi stavy: práce, nemoc, důchod, úmrtí. Období sledovali od padesátky do osmašedesáti let. Výsledky vyšly takto: bez potíží se spánkem 13,4 roku v práci, mírné potíže 13,0 roku, těžké potíže 12,8 roku. Podle délky spánku dopadl krátký i střední spánek stejně, tedy 13,2 roku. Dlouhý spánek znamenal jen 12,4 roku. Rozdíl mezi krajními skupinami dělá zhruba osm až devět měsíců odpracovaného času. U menšího souboru z běžné populace byly rozdíly podle délky spánku ještě výraznější. Studie ale neukazuje, že spánek je přímou příčinou. Dlouhý spánek může být spíš příznakem nemoci, která člověka z práce nakonec vyřadí.</p>
+<h3>Proč je to důležité</h3>
+<p>Kvalita a délka spánku po padesátce souvisí s tím, jak dlouho člověk vydrží pracovat, takže se týká i plánování důchodu a péče o vlastní zdraví. Pro zaměstnavatele i lékaře je to důvod brát potíže se spánkem u starších pracovníků vážně.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Saana Myllyntausta, Katriina Heikkilä, Jaana Pentti, Holendro Singh Chungkham, Sakari Suominen, Mika Kivimäki a další</dd>
+<dt>Časopis</dt>
+<dd>Occupational and Environmental Medicine</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-18">18. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1136/oemed-2025-110766" rel="noreferrer">10.1136/oemed-2025-110766</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7203700736" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1136/oemed-2025-110766" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Spánek si účastníci hodnotili sami, data pocházejí jen z Finska a v prvním souboru výrazně převažovaly ženy; studie navíc ukazuje jen souvislost, ne to, že by spánek délku pracovního života přímo způsoboval.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 5</p>
+<div class="summary"><p><span class="lead">Někdo ve stresu jí víc, někdo míň a někdo pořád stejně — a japonští psychologové teď ověřili dotazník, který tyhle tři typy dokáže rozlišit.</span> Přeložili do japonštiny Salcburskou škálu stresového jedení (Salzburg Stress Eating Scale) a otestovali ji ve třech samostatných šetřeních na dohromady zhruba dvou tisících lidí, studentů i dospělých. Ukázalo se, že dotazník měří jedinou vlastnost, tedy směr, kterým se chuť k jídlu ve stresu posouvá, a že jeho výsledky drží pohromadě a souvisejí s dalšími mírami jídelního chování, s depresivními příznaky i s projevy blízkými poruchám příjmu potravy. Pro praxi to znamená nástroj, kterým lze u konkrétního člověka zjistit, jestli mu náročné období chuť k jídlu spíš rozjede, nebo utlumí — a podle toho zvolit pomoc.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>V první části vyplnilo online dotazník 763 japonských účastníků, kteří kromě samotné škály uvedli i míru vnímaného stresu, své jídelní zvyklosti, výšku a váhu. Tenhle soubor autoři rozdělili na dvě zhruba stejně velké části: v první skupině (382 lidí) hledali, kolik různých vlastností dotazník vlastně měří, a vyšlo jim, že jen jednu. V druhé skupině (381 lidí) pak tenhle nález ověřovali a model odpovídal datům dobře poté, co vzali v úvahu, že některé otázky se ptají na velmi podobnou věc. Druhé šetření se 653 studenty a dospělými porovnávalo výsledky škály s dalšími dotazníky o jídelním chování a s mírou depresivních příznaků. Třetí šetření, kterého se zúčastnilo 414 studentů a dospělých, přidalo srovnání s projevy typickými pro poruchy příjmu potravy. Ve všech třech případech se potvrdilo totéž: dotazník měří jednu jedinou věc, dává při opakování podobné výsledky a souvisí s tím, s čím by souviset měl. Praktický přínos je v tom, že „stresové jedení&quot; není jeden jev. Rady typu „ve stresu se přejídáme&quot; platí jen pro část lidí; jiní naopak jídlo vynechávají a hubnou, což může být stejně rizikové. Dotazník umožňuje tyhle skupiny od sebe odlišit dřív, než se z toho stane problém.</p>
+<h3>Proč je to důležité</h3>
+<p>Náročná období — zkouškové, práce, potíže v rodině — mění lidem chuť k jídlu, ale u každého jinak, a spolehlivý způsob, jak ten směr rozpoznat, pomáhá zvolit smysluplnou podporu místo obecných rad.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Xiaofeng Wang, Noriko Aizawa, Yanyuan Wang, Mika Omori</dd>
+<dt>Časopis</dt>
+<dd>Japanese Psychological Research</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-18">18. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1111/jpr.70052" rel="noreferrer">10.1111/jpr.70052</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7203673563" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1111/jpr.70052" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o ověření dotazníku na japonských účastnících, převážně studentech a dospělých z online šetření, takže jeho použitelnost v jiném jazykovém a kulturním prostředí, včetně českého, je třeba ověřit samostatně.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 5</p>
+<div class="summary"><p><span class="lead">Kognitivně behaviorální terapie (CBT), tedy psychoterapie zaměřená na změnu myšlenkových vzorců a chování, se u dospělých s depresí zřejmě projeví i na tom, jak tráví den.</span> Vědci nechali 25 lidí s depresí nosit pohybové čidlo (akcelerometr) před osmitýdenní terapií a po ní. Účastníci po terapii proseděli a proleželi v průměru o 47 minut denně méně a v posteli strávili zhruba o 36 minut denně víc. Nezáleželo přitom na tom, zda si před sezením zacvičili, nebo si jen v klidu odpočinuli. Studie je ale malá a jde spíš o první náznak než o potvrzený závěr.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Šlo o takzvanou sekundární analýzu, tedy nové pročítání dat z už proběhlého pokusu zvaného CBT+. Autoři v něm rozdělili účastníky do dvou skupin po osmi týdnech terapie. Jedna skupina (13 lidí) si před každým sezením 30 minut cvičila se střední intenzitou, druhá (12 lidí) si stejnou dobu jen v klidu odpočívala. Všichni před začátkem i po skončení nosili pohybové čidlo, které zaznamenávalo pohyb, sezení a čas strávený v posteli.</p>
+<p>Mezi oběma skupinami se žádný rozdíl neprokázal. Cvičení před terapií tedy podle těchto dat nic navíc nepřineslo. Zajímavější je jiný pohled. Vědci spočítali, jak se změnil průměrný účastník bez ohledu na skupinu. Sedavého času ubylo v průměru o 47 minut denně. Skutečná hodnota se přitom nejspíš pohybuje někde mezi čtvrthodinou a hodinou a dvaceti minutami. Času stráveného v posteli naopak přibylo asi o 36 minut denně, tedy něco přes půl hodiny.</p>
+<p>Celkového pohybu přibylo jen o 12 minut denně, a to je rozdíl tak malý, že ho autoři nepovažují za průkazný — mohla ho způsobit náhoda. Lidé tedy po terapii spíš přestali sedět a víc odpočívali v posteli, než že by začali sportovat. Autoři z toho vyvozují, že psychoterapie může mít vedle úlevy od depresivních příznaků i vedlejší přínos pro tělesné zdraví.</p>
+<h3>Proč je to důležité</h3>
+<p>Dlouhé sezení a nedostatek spánku škodí zdraví a lidé s depresí je mívají oba — pokud terapie zlepší i tohle, její přínos sahá dál než jen k náladě.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Madeleine L Connolly, Siming Sun, Shania J.E. Kelly, Jeni E. Lansing, Thomas A. Murray, Emily B.K. Thomas a další</dd>
+<dt>Časopis</dt>
+<dd>Cognitive Behaviour Therapy</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-18">18. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1080/16506073.2026.2720134" rel="noreferrer">10.1080/16506073.2026.2720134</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7203728511" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1080/16506073.2026.2720134" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Studie sledovala jen 25 lidí, neměla srovnávací skupinu bez terapie a autoři sami píší, že výsledky je nutné ověřit na větším vzorku.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-4">
+<p class="paper-counter">Studie 4 z 5</p>
+<div class="summary"><p><span class="lead">Mezi středoškoláky roste sázení na sport, ačkoliv na ně většina z nich ještě nemá věk.</span> Výzkumníci se zeptali 1215 studentů středních škol ve věku 13 až 19 let, co si o sázení myslí a zda mají v úmyslu sázet. Zjistili, že úmysl sázet nejlépe předpovídají dvě věci: přesvědčení, že se sázení vyplatí, a dojem, že sázejí i ostatní vrstevníci. Tyto dva faktory spolu s dalšími vysvětlily zhruba 38 procent rozdílů mezi studenty, tedy o dost víc než třetinu. U dívek navíc hrál roli i příjem domácnosti, u chlapců ne. Autoři z toho vyvozují, že prevence by se měla zaměřit právě na tato dvě přesvědčení, u chlapců i u dívek stejně.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Vědci použili model, kterému se říká přístup zdůvodněného jednání (Reasoned Action Approach). Je to způsob, jak předpovědět chování z toho, co si člověk myslí. Ptali se na tři skupiny věcí. Za prvé na postoje, tedy zda student sázení vidí jako užitečné a zda mu přijde příjemné. Za druhé na vnímané normy, tedy zda si myslí, že to od něj okolí čeká a zda má pocit, že to dělají i ostatní. Za třetí na pocit kontroly, tedy zda by to zvládl a zda je to jeho vlastní rozhodnutí. Odpovědi pak zpracovali statistickým modelem, který hledá, které z těchto věcí s úmyslem sázet souvisejí nejtěsněji. Z celé té sady vyšly jako spolehlivé předpovědi jen dvě: přesvědčení, že sázení něco přinese, a dojem, že sázejí i vrstevníci. Ostatní faktory, včetně toho, jak příjemné sázení studentům připadá, se v modelu neprosadily. Model dohromady vysvětlil 38 procent rozdílů v úmyslu sázet, což je na výzkum lidského chování slušné, ale zbývající zhruba dvě třetiny jsou dány něčím jiným. Chlapci i dívky přitom fungovali podobně, jen u dívek se navíc ukázala souvislost s příjmem domácnosti. Autoři upozorňují, že obě klíčová přesvědčení silně formuje reklama a to, jak běžnou věcí sázení v médiích působí.</p>
+<h3>Proč je to důležité</h3>
+<p>Sázení se dnes k mladým lidem dostává přes reklamu u sportovních přenosů dřív, než na ně vůbec mají věk. Studie ukazuje, na co ve výchovné debatě mířit: na očekávaný zisk a na dojem, že „sází přece každý“.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Aaleks Kasemi, Eva Grosemans, Anders Nilsson, Rozane De Cock, Bieke Zaman</dd>
+<dt>Časopis</dt>
+<dd>Journal of Gambling Studies</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-18">18. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1007/s10899-026-10548-6" rel="noreferrer">10.1007/s10899-026-10548-6</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7203687373" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://doi.org/10.1007/s10899-026-10548-6" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1007/s10899-026-10548-6" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Studie měřila jen úmysl sázet, ne skutečné chování, a vychází z jednorázového dotazníku, takže neukazuje, co je příčina a co následek.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-5">
+<p class="paper-counter">Studie 5 z 5</p>
+<div class="summary"><p><span class="lead">Dospělí často předpokládají, že transgender děti si svou genderovou identitu uvědomují později než děti cisgender, tedy ty, jejichž identita odpovídá pohlaví zapsanému při narození.</span> Autoři nové práce ukázali, že tahle představa má následky. Kdo věřil v pozdější vývoj, méně podporoval právo dětí rozhodnout o vlastní genderové identitě a spíš schvaloval zákony, které trans dětem takové rozhodnutí omezují. Když ale účastníci dostali informace o tom, v čem je vývoj obou skupin dětí podobný, jejich odhady se sblížily. Ve třech studiích to souviselo s větší podporou dětské samostatnosti v této otázce a v jedné z nich i s vyššími dary organizaci, která hájí práva trans dětí.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Výzkum měl tři části. V první se dvě stovky dospělých vyjadřovaly k tomu, kdy si děti uvědomují svůj gender. U trans dětí uváděli lidé pozdější věk než u dětí cisgender. Čím pozdější věk účastník odhadoval, tím méně podporoval právo dítěte určit si vlastní genderovou identitu. Zároveň častěji souhlasil se zákony, které trans dětem takové rozhodnutí berou.</p>
+<p>Druhá studie byla podstatně větší. Zapojilo se 1552 lidí, tedy zhruba půldruhého tisíce, vybraných tak, aby vzorek odpovídal složení populace. Část z nich se dozvěděla, v čem je vývoj genderové identity u trans a cisgender dětí podobný. Po tomto krátkém poučení lidé méně věřili, že u trans dětí přichází vývoj později. Souviselo to s větší podporou práva dětí rozhodnout o vlastní identitě. A ta zase s menší podporou zákonů, které tuhle možnost omezují.</p>
+<p>Třetí studie měla 174 účastníků a přidala praktický test. Lidé po stejném poučení věnovali vyšší částky organizaci hájící práva trans dětí. Nešlo tedy jen o odpovědi v dotazníku.</p>
+<p>Autoři z toho vyvozují, že za postoji dospělých k právům trans dětí stojí i obyčejná neznalost dětského vývoje. Přesvědčení o tom, kdy se identita utváří, není neutrální detail. Promítá se do toho, jaké zákony lidé podporují.</p>
+<h3>Proč je to důležité</h3>
+<p>Ukazuje to, že postoje k právům dětí nestojí jen na hodnotách, ale i na tom, co lidé o vývoji dětí vědí nebo si myslí, že vědí. Pro rodiče i učitele je to připomínka, že představa „na to je ještě brzy&quot; může být sama o sobě omylem.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Jessica J. Glazier, Analia F. Albuja</dd>
+<dt>Časopis</dt>
+<dd>Communications Psychology</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-18">18. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1038/s44271-026-00510-y" rel="noreferrer">10.1038/s44271-026-00510-y</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7203660755" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://www.nature.com/articles/s44271-026-00510-y.pdf" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1038/s44271-026-00510-y" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Studie měří hlavně deklarované postoje krátce po poučení, u dvou ze tří vzorků jde o pouhé stovky lidí a abstrakt neuvádí, jak velká změna postojů to byla ani jak dlouho vydržela.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 20. srpna 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>
