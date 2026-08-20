@@ -31,3 +31,8 @@ state/*.json
 
 # Scratch output for local previewing. Never a deliverable.
 tmp/
+
+# Internal working notes. Kept out of the public repo pending Tom's review;
+# they hold spend figures, candid product assessments and personal detail.
+# To publish: remove this rule and `git add docs/`.
+docs/
