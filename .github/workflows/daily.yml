@@ -18,10 +18,18 @@ on:
     # firing is genuinely free.
     - cron: '0 4 * * *'   # 06:00 Prague while CEST (UTC+2)
     - cron: '0 5 * * *'   # 06:00 Prague while CET  (UTC+1)
+    # Long after both firings have had their chance: did a page actually appear,
+    # and is it actually being served? A run that skips is green, and a green
+    # skip that produced nothing is the one failure nobody would notice.
+    - cron: '0 11 * * *'  # 13:00 / 12:00 Prague
   workflow_dispatch:
     inputs:
       force:
         description: 'Republish today even if an edition already exists'
+        type: boolean
+        default: false
+      run_watchdog:
+        description: 'Run only the stall check, not the digest'
         type: boolean
         default: false
 
@@ -39,6 +47,8 @@ concurrency:
 
 jobs:
   digest:
+    # The 11:00 firing is the stall check, not a digest attempt.
+    if: github.event.schedule != '0 11 * * *' && inputs.run_watchdog != true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -96,7 +106,12 @@ jobs:
           if [ "${{ inputs.force }}" = "true" ]; then
             npx tsx src/cli.ts run --force
           else
-            npm run run:daily
+            # --skip-if-published makes "today is already published" a calm exit 0
+            # instead of exit 1. The guard still refuses to overwrite the page —
+            # it just stops reporting a benign no-op as a failed run, which would
+            # otherwise send a failure notification on a morning when nothing was
+            # wrong, and teach the reader to ignore the ones that matter.
+            npx tsx src/cli.ts run --skip-if-published
           fi
 
       # §9 wants a line per run, and the brief wants real spend reported per run.
@@ -220,3 +235,101 @@ jobs:
                 title, body, labels: ['run-failure'],
               });
             }
+
+  # ---------------------------------------------------------------------------
+  # The stall check.
+  #
+  # Every other signal here is about a run that went wrong. This one is about a
+  # run that never happened, or happened and never reached the reader: both
+  # firings delayed out of their window, the schedule disabled, Pages failing to
+  # deploy. Those all leave a green tick and a site quietly frozen on an old
+  # edition, which is the worst failure this project has — Tom reads it daily
+  # and would assume silence meant success.
+  #
+  # It checks the two things that have to be true for him to have something to
+  # read: the edition is committed, and the live origin actually serves it.
+  # ---------------------------------------------------------------------------
+  watchdog:
+    if: github.event.schedule == '0 11 * * *' || inputs.run_watchdog == true
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - id: probe
+        name: Is today's edition committed and served?
+        run: |
+          set -uo pipefail
+          day=$(TZ=Europe/Prague date +%F)
+          echo "day=$day" >> "$GITHUB_OUTPUT"
+
+          committed=no
+          [ -f "archive/$day.json" ] && committed=yes
+
+          url="https://korkovik.github.io/research-desk/archive/$day.html"
+          code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 "$url" || echo "000")
+          served=no
+          [ "$code" = "200" ] && served=yes
+
+          echo "day=$day committed=$committed served=$served (HTTP $code)"
+          echo "committed=$committed" >> "$GITHUB_OUTPUT"
+          echo "served=$served" >> "$GITHUB_OUTPUT"
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+
+          {
+            echo "### Stall check — $day"
+            echo ""
+            echo "| | |"
+            echo "|---|---|"
+            echo "| Edition committed | $committed |"
+            echo "| Served from Pages | $served (HTTP $code) |"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Raise a stall
+        if: steps.probe.outputs.committed != 'yes' || steps.probe.outputs.served != 'yes'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const day = '${{ steps.probe.outputs.day }}';
+            const committed = '${{ steps.probe.outputs.committed }}';
+            const served = '${{ steps.probe.outputs.served }}';
+            const code = '${{ steps.probe.outputs.code }}';
+            const title = `No edition published for ${day}`;
+            const url = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const body = [
+              `The stall check ran hours after both scheduled firings and did not`,
+              `find a complete edition for **${day}**.`,
+              ``,
+              `| | |`,
+              `|---|---|`,
+              `| Edition committed to \`archive/\` | ${committed} |`,
+              `| Served from the Pages origin | ${served} (HTTP ${code}) |`,
+              ``,
+              committed === 'yes'
+                ? `The page exists in the repository but the site is not serving it, so`
+                + ` this is a Pages deployment problem rather than a pipeline one.`
+                : `No page was produced. Either both firings were delayed past their`
+                + ` window, the schedule is disabled, or the digest run failed —`
+                + ` check for a separate "Daily digest failed" issue.`,
+              ``,
+              `Log: ${url}`,
+            ].join('\n');
+            const open = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'run-failure',
+            });
+            const match = open.data.find(i => i.title === title);
+            if (match) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: match.number, body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title, body, labels: ['run-failure'],
+              });
+            }
+            core.setFailed(`No complete edition for ${day}.`);

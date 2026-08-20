@@ -63,7 +63,7 @@ export interface RunLogLine {
   /** The archive date this run was for, `YYYY-MM-DD`. */
   runId: string;
   level: 'INFO' | 'WARN' | 'ERROR' | 'FATAL';
-  outcome: 'published' | 'published_degraded' | 'aborted';
+  outcome: 'published' | 'published_degraded' | 'aborted' | 'skipped';
   summary: string;
   category: string;
   categoryLabelCs: string;

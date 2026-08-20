@@ -58,6 +58,18 @@ export interface RunOptions {
   /** Republish a date that already has a page. See the guard in `runDay`. */
   force?: boolean;
   /**
+   * Treat "this date already published" as nothing-to-do rather than an error.
+   *
+   * The guard below exists so a repeated run cannot silently replace a good
+   * edition, and refusing with a non-zero exit is right when a person typed the
+   * command. A scheduler is different: under a schedule the same day being
+   * already published is the *expected* outcome for every firing after the
+   * first, and reporting it as a failure trains the reader to ignore failures.
+   * With this set the guard still refuses to republish — it just says so
+   * calmly and exits 0.
+   */
+  skipIfPublished?: boolean;
+  /**
    * Stop after selection (§3 steps 1–4) and write nothing.
    *
    * Everything up to this point costs source-API quota and no Claude tokens, so
@@ -80,7 +92,7 @@ export interface RunOptions {
 }
 
 export interface RunResult {
-  outcome: 'published' | 'published_degraded' | 'aborted';
+  outcome: 'published' | 'published_degraded' | 'aborted' | 'skipped';
   date: string;
   digest: DayDigest | null;
   /** 0 published, 1 expected abort, 2 unexpected. Mirrors DESIGN-NOTES D.8. */
@@ -124,6 +136,11 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
   // or if anyone runs the command twice. Refusing is the safe default; `--force`
   // is there for a deliberate republish.
   if (!options.dryRun && options.force !== true && existsSync(dayOutputPaths(config, repoRoot, date).jsonPath)) {
+    if (options.skipIfPublished === true) {
+      logger.info(`${date} is already published — nothing to do.`);
+      writeSkippedLog(options, date, category, started, logger);
+      return { outcome: 'skipped', date, digest: null, exitCode: 0 };
+    }
     logger.error(
       `${date} has already been published. A second run would pick different papers and ` +
         'replace the page — use --force if that is really what you want.',
@@ -487,6 +504,24 @@ function writeStartupFailureLog(
 ): void {
   const line = startupLogBase(date, category, started, logger);
   writeRunLog(options, { ...line, summary: summariseRunLog(line) });
+}
+
+/**
+ * §9 wants a line per run, and the Actions spend step reads the newest one. A
+ * skip that wrote nothing would leave the previous run's line newest, so the
+ * job summary would report yesterday's calls and cost for a morning on which
+ * nothing ran. Writing an explicit zero-cost line keeps that reporting honest.
+ */
+function writeSkippedLog(
+  options: RunOptions,
+  date: string,
+  category: { key: string; labelCs: string },
+  started: number,
+  logger: Logger,
+): void {
+  const base = startupLogBase(date, category, started, logger);
+  const line = { ...base, level: 'INFO' as const, outcome: 'skipped' as const };
+  writeRunLog(options, { ...line, summary: `skipped — ${date} was already published` });
 }
 
 function writeRunLog(options: RunOptions, line: RunLogLine): void {

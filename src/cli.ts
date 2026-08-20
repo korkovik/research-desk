@@ -18,6 +18,7 @@ const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const USAGE = `research-desk <command>
 
   run [--dry-run] [--date YYYY-MM-DD] [--force] [--discover-only]
+      [--skip-if-published]
                                         one daily run (§3). --force republishes a
                                         date that already has a page.
                                         --discover-only stops after selection and
@@ -79,6 +80,7 @@ async function main(): Promise<number> {
   const dryRun = argv.includes('--dry-run');
   const force = argv.includes('--force');
   const discoverOnly = argv.includes('--discover-only');
+  const skipIfPublished = argv.includes('--skip-if-published');
   const dateIndex = argv.indexOf('--date');
   const date = dateIndex >= 0 ? argv[dateIndex + 1] : undefined;
   if (dateIndex >= 0 && date === undefined) {
@@ -101,6 +103,7 @@ async function main(): Promise<number> {
     dryRun,
     force,
     discoverOnly,
+    skipIfPublished,
     ...(date === undefined ? {} : { date }),
   });
   logger.info(`run ${result.date}: ${result.outcome}`);

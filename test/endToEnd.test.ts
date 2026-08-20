@@ -467,3 +467,73 @@ test('--discover-only stops after selection, writes nothing, needs no Anthropic 
   // The run is still on the record.
   assert.ok(readFileSync(join(root, 'logs', 'run.log'), 'utf8').includes('discover-only'));
 });
+
+/**
+ * A benign skip must not look like a failure.
+ *
+ * The republish guard (A28) is right to refuse a second run for a day that
+ * already published, and right to exit non-zero when a person typed the
+ * command. Under a scheduler it is different: every firing after the first
+ * finds the day already published, so reporting that as a failure sends a
+ * failure notification on a morning when everything worked. A red signal that
+ * usually means "probably fine" is worse than no signal, so the scheduler
+ * passes `--skip-if-published` and the guard says so calmly instead.
+ *
+ * What must NOT change is the refusal itself: the existing page has to survive.
+ */
+test('--skip-if-published turns the republish guard into a clean no-op', async () => {
+  const root = makeWorkspace();
+  const first = await runOn(root, '2026-08-19').promise;
+  assert.ok(first.outcome.startsWith('published'), 'precondition: the day publishes');
+
+  const pagePath = join(root, 'archive', '2026-08-19.html');
+  const pageBefore = readFileSync(pagePath, 'utf8');
+  const seenBefore = readFileSync(join(root, 'state', 'seen.json'), 'utf8');
+
+  const second = await runDay({
+    repoRoot: root,
+    config: loadConfig(root),
+    secrets: NO_SECRETS,
+    logger: quiet(),
+    dryRun: false,
+    date: '2026-08-19',
+    skipIfPublished: true,
+    llm: new HonestLlm(),
+    fetchImpl: makeFetchImpl('2026-08-19', { urls: [] }),
+    clock: fakeClock(),
+  });
+
+  // Benign: the scheduler sees success.
+  assert.equal(second.outcome, 'skipped');
+  assert.equal(second.exitCode, 0);
+
+  // But the guard still guarded: the good edition is untouched, and no second
+  // set of papers was burned out of the pool.
+  assert.equal(readFileSync(pagePath, 'utf8'), pageBefore);
+  assert.equal(readFileSync(join(root, 'state', 'seen.json'), 'utf8'), seenBefore);
+
+  // And the skip is recorded, so the Actions spend step reports today rather
+  // than reading a stale line from the previous run.
+  const log = readFileSync(join(root, 'logs', 'run.log'), 'utf8').trim().split('\n');
+  const last = JSON.parse(log[log.length - 1]!) as { outcome: string; runId: string };
+  assert.equal(last.outcome, 'skipped');
+  assert.equal(last.runId, '2026-08-19');
+});
+
+test('without --skip-if-published the guard still fails loudly', async () => {
+  const root = makeWorkspace();
+  await runOn(root, '2026-08-19').promise;
+  const second = await runDay({
+    repoRoot: root,
+    config: loadConfig(root),
+    secrets: NO_SECRETS,
+    logger: quiet(),
+    dryRun: false,
+    date: '2026-08-19',
+    llm: new HonestLlm(),
+    fetchImpl: makeFetchImpl('2026-08-19', { urls: [] }),
+    clock: fakeClock(),
+  });
+  assert.equal(second.outcome, 'aborted');
+  assert.equal(second.exitCode, 1);
+});
