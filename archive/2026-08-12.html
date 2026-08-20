@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Příroda a klima – 12. srpna 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Příroda a klima</h1>
+<p class="dateline"><time datetime="2026-08-12">12. srpna 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<section class="notice" aria-labelledby="shortfall">
+<h2 id="shortfall">Dnes je studií méně</h2>
+<p>Dnes se podařilo najít jen 3 studie, které splnily podmínky výběru. Raději jich zveřejňujeme méně, než abychom doplňovali starší nebo nesouvisející články.</p>
+</section>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 3</p>
+<div class="summary"><p><span class="lead">V alpínských porostech na náhorní plošině Qinghai-Xizang (Tibetská náhorní plošina) vede mezi rostlinami jedna strategie: vydržet.</span> Vědci změřili vlastnosti rostlin na více než pěti stech plochách ve zhruba dvou a půl stovkách lokalit a porovnali je s klimatem, půdou, produktivitou i mírou narušení, třeba pastvou. Na loukách a v křovinách, které limituje voda, rozhodovalo hlavně klima a častěji se prosadily rychle rostoucí druhy. Ve stepích a polopouštích, kde chybí spíš teplo, vážila víc půda a odolné rostliny převládaly ještě výrazněji. Pastva a jiná narušení působila na louky a stepi opačným směrem, což je vodítko pro odhad toho, jak se tyto porosty promění s oteplováním.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Vědci vycházejí z Grimova rozdělení rostlinných strategií, zkráceně CSR. Konkurent (competitor) roste rychle. Přeroste sousedy tam, kde je dost vody i živin. Vytrvalec odolný vůči stresu (stress-tolerator) roste pomalu. Zato snese chlad, sucho i chudou půdu. Ruderál (ruderal) rychle obsadí místo, které něco poškodilo — sešlap, pastvu, sesuv. Tým změřil vlastnosti rostlin na více než pěti stech plochách. Ty se rozkládaly ve zhruba dvou a půl stovkách lokalit napříč náhorní plošinou. K tomu přidal údaje o poloze, klimatu, půdě, narušení a produktivitě.</p>
+<p>Ve všech typech porostů převládala odolnost vůči stresu. Podíl zbylých dvou strategií se ale měnil podle prostředí. Na loukách a v křovinách, kde rostliny limituje voda, rozhodovalo hlavně klima. Přibývalo tam rychle rostoucích a ruderálních druhů. Ve stepích a polopouštích, kde chybí spíš teplo, vážila víc půda a odolné druhy převládaly ještě silněji. Za tím vším stojí jeden základní kompromis: buď rostlina investuje do rychlého růstu, nebo do přežití. Narušení, například pastva, působilo na louky a stepi opačně. Kde ubývalo odolných druhů, přibývalo konkurentů a ruderálů, a naopak.</p>
+<p>Zajímavé je i to, jak se společenstva skládají. Na většině míst prostředí vybírá rostliny s podobnou strategií, čemuž se říká filtrování stanovištěm. Podél některých gradientů se to ale obrací a vedle sebe rostou druhy spíše odlišné. U ruderálů se navíc tento trend liší od obou zbylých strategií.</p>
+<h3>Proč je to důležité</h3>
+<p>Alpínské louky a stepi jsou pastvinami pro miliony zvířat a zároveň patří k nejcitlivějším místům na oteplování. Studie ukazuje, které porosty se pravděpodobně promění nejdřív a co k tomu přispívá víc: podnebí, půda, nebo pastva.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Qi Li, Xin Chen, Liang Zhao, Fuquan He, Dongdong Chen, Yukun Zhang a další</dd>
+<dt>Časopis</dt>
+<dd>Communications Biology</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-17">17. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1038/s42003-026-10796-7" rel="noreferrer">10.1038/s42003-026-10796-7</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7203605366" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1038/s42003-026-10796-7" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jednorázové měření z jednoho regionu, které ukazuje souvislosti, nikoli prokázané příčiny; budoucí vývoj porostů z něj lze jen odhadovat.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 3</p>
+<div class="summary"><p><span class="lead">Pojem „jádrový mikrobiom&quot; (core microbiome) se v půdní vědě používá čím dál volněji.</span> Mikrobiom je soubor bakterií, hub a dalších drobných organismů, kteří někde společně žijí — třeba v hrsti půdy. Autoři prošli novější odborné práce a přidali vlastní srovnání půd z polí s energetickými plodinami. Ukázalo se, že seznam „jádrových&quot; mikrobů se mění podle toho, jaká pravidla výběru si vědci nastaví. Navrhují proto název šetřit pro organismy, u nichž je stálost skutečně doložená, a ostatní označovat jako „vysvětlující výběr taxonů&quot;, tedy skupin mikrobů vybraných pro daný účel.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Pojem vznikl při výzkumu mikrobů žijících na těle hostitele nebo v něm. Tam dává smysl: dá se říct, kde tělo končí a jaké jsou hranice v čase i prostoru. Jádrem se pak myslí ti mikrobi, které najdeme u všech jedinců. V půdě a v okolí kořenů rostlin ale takové ostré hranice nejsou. Z pojmu se proto stal statistický výběr. Badatel si nastaví hranici, kolik vzorků musí mikrob obsadit a jak hojný musí být. Co projde sítem, to nazve jádrem. Autoři shrnuli nedávné práce a k tomu porovnali půdní vzorky z několika polí s energetickými plodinami. Zjistili, že seznam „jádrových&quot; mikrobů silně závisí na zvolených pravidlech. Stačí posunout hranici a v jádru je jiná společnost. Často se tam navíc dostanou mikrobi vybraní proto, že dobře vysvětlují nějaký sledovaný jev — ne proto, že by byli všude. Autoři upozorňují ještě na jednu věc. Mnoho studií vymezí jádro podle druhů, ale jeho význam pak vykládá funkčně. Tedy podle toho, co mikrobi v půdě dělají. V pestré půdě se přitom druhy mohou střídat, zatímco funkce zůstává. Rozkládat organickou hmotu nebo vázat dusík umí víc různých mikrobů. Doporučení zní: název „jádrový mikrobiom&quot; používat jen tam, kde je stálost doložená a spojená s konkrétní funkcí. Zbytku říkat „vysvětlující výběr taxonů&quot; (explanatory subsets of taxa). Srovnávání jednotlivých studií to podle autorů zpřesní.</p>
+<h3>Proč je to důležité</h3>
+<p>Půdní mikrobi rozhodují o úrodnosti půdy i o tom, jak se rostlinám daří. Když si pod stejným slovem každý představuje něco jiného, výsledky se špatně srovnávají a doporučení pro zemědělskou praxi stojí na vratkém základě.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Jae‐Jin Lee, Bolívar Aponte Rolón, Phillip De Lorimier, Jean‐Michel Ané, Gian Maria Niccolò Benucci, Alyssa A. Carrell a další</dd>
+<dt>Časopis</dt>
+<dd>New Phytologist</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-17">17. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1111/nph.71509" rel="noreferrer">10.1111/nph.71509</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7203650741" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://doi.org/10.1111/nph.71509" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1111/nph.71509" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o přehledový a názorový text s doprovodným srovnáním několika polních lokalit, ne o nový experiment, a jiní badatelé mohou dosavadní používání pojmu obhajovat.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 3</p>
+<div class="summary"><p><span class="lead">Vyznačit na leteckém snímku hranice zemědělských polí umí dnes umělá inteligence sama — otázka je, jak jí říct, co má hledat.</span> Tým vytvořil zásuvný modul GeoSAM do mapového programu QGIS, který nabízí pět způsobů zadání pro model Segment Anything (zkráceně SAM, program od Meta AI, který v obrázku odděluje jednotlivé objekty): kliknutí bodem, orámování, slovní popis a dvě varianty, kde objekty nejdřív najde automatický detektor. Nejpřesnější bylo prosté kliknutí do pole (skóre 0,98 z 1), jenže to nikdo nezvládne udělat u tisíců pozemků; slovní zadání dosáhlo 0,94, přičemž obecné anglické „farm plot“ (zemědělský pozemek) fungovalo lépe než názvy konkrétních plodin. Samotné orámování bylo skoro k ničemu (0,54), ale když k němu autoři přidali slovní popis, vyskočilo na 0,92. A na snímcích s rozlišením 25 centimetrů na pixel klesla přesnost plně automatického postupu na 88,6 % oproti 97 % u dronových snímků s rozlišením 8 centimetrů.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Autoři testovali pět způsobů, jak modelu SAM zadat úkol „najdi zemědělské pozemky“ na leteckých snímcích s rozlišením 25 centimetrů na obrazový bod (tedy jeden pixel odpovídá čtverci o straně 25 cm). Výsledky porovnávali takzvaným F1 skóre — číslem mezi 0 a 1, které dohromady měří, kolik polí program našel a kolik z toho, co označil, byla skutečně pole; 1 znamená dokonalou shodu s ručně vyznačenou skutečností.</p>
+<p>Ručně zadaný bod uvnitř pozemku vedl k nejlepšímu výsledku 0,9785, tedy zhruba 98 procentům dokonalosti. Jenže každý pozemek musí někdo odklikat, takže pro velká území je to nepoužitelné. Textové zadání dalo 0,9406 a zajímavé je, že obecná slova fungovala lépe než přesné názvy plodin — model si zjevně poradí spíš s představou „pole“ než „pšenice“. Samotné orámování skončilo na 0,5417, tedy zhruba na úrovni náhody v tom smyslu, že skoro polovina práce byla špatně; po přidání textového popisu se zvedlo na 0,9220, což je zlepšení asi o 70 procent. Plně automatické varianty, kde pozemky nejdřív najde detektor, skončily na 0,8861 (bod) a 0,8785 (rámeček s textem).</p>
+<p>Druhé zjištění se týká kvality snímků: stejný automatický postup dosáhl 97,05 % na dronových snímcích s rozlišením 8 centimetrů, ale jen 88,62 % na leteckých s 25 centimetry. Detail vstupních dat tedy rozhoduje víc než jemné ladění zadání.</p>
+<h3>Proč je to důležité</h3>
+<p>Mapování zemědělské půdy stojí za dotacemi, územním plánováním i sledováním, jak ubývá orné půdy — a tahle práce ukazuje, kdy se vyplatí nechat počítač pracovat samostatně a kdy je levnější pár kliknutí navíc. Zároveň je to srozumitelná ukázka toho, že úspěch umělé inteligence často závisí spíš na kvalitě podkladů a formulaci zadání než na modelu samotném.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Jeongbae Jeon, Sangwan Lee, Solhee Kim, 김태곤</dd>
+<dt>Časopis</dt>
+<dd>Geocarto International</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-17">17. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1080/10106049.2026.2717446" rel="noreferrer">10.1080/10106049.2026.2717446</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7203627670" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1080/10106049.2026.2717446" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o srovnání provedené na snímcích jedné oblasti a dvou rozlišení, takže v jiné krajině, u jiných typů pozemků nebo v jiném ročním období mohou čísla vypadat jinak.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 19. srpna 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>

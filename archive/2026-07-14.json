@@ -1,0 +1,801 @@
+{
+  "date": "2026-07-14",
+  "categoryKey": "health-medicine",
+  "categoryLabel": "Zdraví a medicína",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7203582932",
+        "title": "Clinical and Laboratory Predictors of Disease Severity and Length of Stay in Patients with Hyponatremia",
+        "abstract": "Abstract Background: Hyponatremia is one of the most common electrolyte abnormalities in hospitalized patients and is associated with increased mortality. Aims: The study aimed to determine the prevalence of hyponatremia, risk factors and aetiology in elderly people. Subjects and Methods: A cross-sectional study was conducted in hospital settings between March 2023 and November 2024 in 69 male and female participants with hyponatremia. Patients’ blood samples were tested for predicted factors (creatinine, blood sugar and hypervolemia). Statistical analysis was performed and P &lt; 0.05 was considered statistically significant. Results: The mean age of the participants was 66.10 years, with 36 (52.2%) male and 33 (47.8%) female patients, while the mean age of severe hyponatremia patients was 59.5 years ( P = 0.04). Hyponatremic patients displayed a depressed serum sodium level (117.35 mEq/L), creatinine level of 0.94 mg/dL and blood sugar level of 140.29 mg/dL. Mean hospital stay duration was 5.96 days, 37 (47.8%) patients had mild hyponatremia, 24 (34.8%) patients had moderate hyponatremia and 8 (17.4%) patients had severe hyponatremia. Patients with severe hyponatremia had significantly higher blood sugar levels, 174.25 mg/dL ( P &lt; 0.001), with no significant correlation with creatinine. A significant association was observed between aetiology and severity of hyponatremia, particularly for the syndrome of inappropriate antidiuretic hormone secretion (SIADH) and cardiac causes. Severe hyponatremia (β =0.08, P = 0.83), serum creatinine (β =0.68, P = 0.58) and cirrhosis (β = −0.04, P = 0.73) were not significantly associated with length of hospital stay. Conclusion: Aetiological factors, especially the SIADH and cardiac causes, demonstrated a significant association with hyponatremia severity. Multivariable logistic regression did not identify any independent predictors of severe hyponatremia.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.4103/npmj.npmj_116_26",
+        "licence": "cc-by-nc-sa",
+        "source": "openalex",
+        "doi": "10.4103/npmj.npmj_116_26",
+        "openAlexId": "W7203582932",
+        "subfield": {
+          "id": "subfields/2740",
+          "name": "Pulmonary and Respiratory Medicine"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T11967",
+          "name": "Electrolyte and hormonal disorders"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Yogesh Chavan",
+          "V. C. Patil"
+        ],
+        "venue": "Nigerian Postgraduate Medical Journal",
+        "indexedDate": "2026-08-17",
+        "referencedWorksCount": 12,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9945,
+          "everydayRelevance": 1,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.9621,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.0369
+          },
+          "everydayDomains": [
+            "food",
+            "health",
+            "family"
+          ],
+          "subfieldKey": "subfields/2740",
+          "evidence": [
+            "total 0.9621 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.99 = P 1.00 − 0.45×t 0.00 − 0.15×j 0.04",
+            "outcome verbs (v 1.00): increased, predicted, causes, associated with",
+            "recognisable subjects (s 1.00): participants, patients (title, ×2), subjects, elderly, hospitals",
+            "quantified effect (q 1): percentage, p-value",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.04): 1/271 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — food, health, family",
+            "everyday terms (8): sugar, sodium, patient, patients, disease, mortality, hospital, elderly",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-17)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Nigerian Postgraduate Medical Journal",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-sa",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.4103/npmj.npmj_116_26)"
+      },
+      "summary": {
+        "souhrn": "Nízká hladina sodíku v krvi (hyponatrémie) patří u lidí v nemocnici k nejčastějším poruchám a bývá spojená s vyšší úmrtností. Lékaři proto sledovali 69 pacientů s touto poruchou a hledali, co předpoví těžký průběh. Pacienti s nejtěžší formou měli výrazně vyšší cukr v krvi: v průměru 174 mg/dl proti 140 mg/dl v celém souboru. Nejčastěji za jejich stavem stálo srdeční onemocnění nebo takzvaný SIADH — stav, kdy tělo kvůli hormonu zadržuje příliš vody. Žádný jednotlivý ukazatel z krve ale těžký průběh spolehlivě nepředpověděl a u tak malého počtu pacientů jde zatím jen o náznak.",
+        "podrobneVysvetleni": "Studie proběhla v nemocnici v Nigérii od března 2023 do listopadu 2024. Byla průřezová (cross-sectional) — vědci se na pacienty podívali jako na jediný snímek, nesledovali je dlouhodobě. Zapojilo se 69 lidí s nízkým sodíkem, 36 mužů a 33 žen. Průměrný věk byl 66 let, šlo tedy hlavně o starší lidi. Z krve se měřil sodík, kreatinin (látka, podle které se posuzuje funkce ledvin) a cukr.\n\nZhruba polovina pacientů měla lehkou formu, asi třetina střední a osm lidí těžkou. V nemocnici strávili v průměru necelých šest dní.\n\nPacienti s těžkou formou byli o něco mladší, v průměru 59,5 roku — tedy asi o šest let méně než celý soubor. Měli také vyšší cukr v krvi: 174 mg/dl proti 140 mg/dl u celku. U kreatininu se žádný rozdíl neukázal.\n\nJasná souvislost se objevila mezi tíží stavu a jeho příčinou. Nejtěžší průběh měli lidé se srdečními chorobami a se SIADH.\n\nPotom vědci počítali, co samostatně předpovídá délku pobytu v nemocnici. Nevyšlo nic. Ani těžká forma, ani kreatinin, ani jaterní cirhóza dobu hospitalizace neovlivnily. Znamená to, že podle jednoho čísla z laboratoře se průběh odhadnout nedá. Podstatnější je zjistit, proč sodík klesl.",
+        "procJeToDulezite": "Nízký sodík v krvi je v nemocnicích velmi častý a může být nebezpečný. Studie připomíná, že důležitější než jedno číslo v nálezu je najít příčinu, která za poklesem stojí.",
+        "poznamkaKOmezenim": "Šlo o 69 pacientů z jediné nemocnice a o jednorázové měření bez dlouhodobého sledování, takže výsledky jsou předběžné a nemusí platit jinde."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 284,
+              "end": 287
+            },
+            "matchedText": "174",
+            "messageCs": "Číslo „174“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „174 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[284,287]: 174"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 300,
+              "end": 303
+            },
+            "matchedText": "140",
+            "messageCs": "Číslo „140“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „140 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[300,303]: 140"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:prurezovy",
+            "span": {
+              "start": 77,
+              "end": 86
+            },
+            "matchedText": "průřezová",
+            "messageCs": "Termín „průřezová studie“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:prurezovy @ podrobneVysvetleni[77,86]: průřezová"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 436,
+              "end": 443
+            },
+            "matchedText": "třetina",
+            "messageCs": "Číslo „třetina“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „třetina — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[436,443]: třetina"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 660,
+              "end": 663
+            },
+            "matchedText": "174",
+            "messageCs": "Číslo „174“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „174 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[660,663]: 174"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 676,
+              "end": 679
+            },
+            "matchedText": "140",
+            "messageCs": "Číslo „140“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „140 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[676,679]: 140"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 149,
+              "end": 151
+            },
+            "matchedText": "69",
+            "messageCs": "Číslo „69“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „69 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[149,151]: 69"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 1065,
+              "end": 1074
+            },
+            "matchedText": " laborato",
+            "messageCs": "Text opisuje původní název článku („ laborato“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[1065,1074]:  laborato"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203631816",
+        "title": "Chronic psychosocial stress: A primary driver of sleep apnea onset in rats and humans",
+        "abstract": "Poor sleep quality and chronic psychosocial stress are interrelated risk factors for hypertension, metabolic disease, and neuropsychiatric disorders. Sleep apnea (SA) is a respiratory disorder that disrupts sleep, affecting ~1 billion adults worldwide. However, the origins of SA remain incompletely understood. Clinically, activation of the stress pathways is often considered a consequence of SA rather than a causal factor. Here, we combined preclinical experiments with Mendelian randomization (MR) analysis to show that chronic psychosocial stress is a primary driver of SA onset. In adult rats, 3 wk of social isolation (SI; single housing) activated the stress response, augmented apneas during natural sleep, and increased the ventilatory responses to O 2 and CO 2 challenges. In supine anesthetized rats, obstructive apneas with O 2 desaturations were 5 times more frequent in SI males than in controls, with no effect in females. SI-related anomalies in airway motor control contribute to the problem. SI also induced increased blood pressure and augmented fat gain, especially in males. In humans, MR analysis using genome-wide association studies of multiple stress-related neurological disorders from European cohorts (~100,000 to 1,096,458 participants) revealed significant effects of loneliness on the risk of SA, independent of adiposity. Together, these results challenge the conventional view of stress as merely a consequence of SA and instead position it as a possible cause. These results open the door to a paradigm shift, recognizing psychosocial stress as a risk factor paves the way for alternative avenues in basic mechanistic research, as well as in preventive and therapeutic strategies.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1073/pnas.2527702123",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1073/pnas.2527702123",
+        "openAlexId": "W7203631816",
+        "subfield": {
+          "id": "subfields/2737",
+          "name": "Physiology"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T10234",
+          "name": "Obstructive Sleep Apnea Research"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1073/pnas.2527702123",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Marianne Gagnon",
+          "Stéphanie Fournier",
+          "Émilie Gobeil",
+          "Marie-Pier Bouchard",
+          "Loralie Mei Guay",
+          "François Marcouiller",
+          "Vincent Joseph",
+          "Natalie J. Michael",
+          "Benoît J. Arsenault",
+          "Richard Kinkead"
+        ],
+        "venue": "Proceedings of the National Academy of Sciences",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 90,
+        "tldr": "These results challenge the conventional view of stress as merely a consequence of SA and instead position it as a possible cause, and open the door to a paradigm shift in basic mechanistic research, as well as in preventive and therapeutic strategies.",
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8133,
+          "everydayRelevance": 1,
+          "freshness": 1,
+          "credibility": 0.895,
+          "total": 0.9106,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.0781
+          },
+          "everydayDomains": [
+            "food",
+            "sleep",
+            "health",
+            "transport",
+            "housing",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2737",
+          "evidence": [
+            "total 0.9106 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.81 = P 0.82 − 0.45×t 0.00 − 0.15×j 0.08",
+            "outcome verbs (v 0.50): increased, causes",
+            "recognisable subjects (s 1.00): participants, adults, drivers (title, ×2), rats (title, ×2)",
+            "quantified effect (q 1): times higher/lower",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.08): 2/256 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 6 domain(s) — food, sleep, health, transport, housing, mind",
+            "everyday terms (9): fat, sleep, sleep quality, disease, blood pressure, driver, housing, stress, loneliness",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.90 = 0.40×c1 1.00 + 0.25×c2 1.00 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Proceedings of the National Academy of Sciences",
+            "c2 1.00: n = 1096458",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        }
+      },
+      "summary": {
+        "souhrn": "Osamělost může být jednou z příčin spánkové apnoe, ne jen jejím následkem. Vědci nechali dospělé potkany tři týdny bydlet o samotě. U samců se pak během spánku výrazně častěji objevovaly pauzy v dýchání. Zároveň jim stoupl krevní tlak a přibrali víc tuku. Druhou část studie tvořila analýza genetických dat statisíců lidí v Evropě. I tam vyšlo, že sklon k pocitu osamělosti souvisí s vyšším rizikem spánkové apnoe, a to nezávisle na tělesné hmotnosti. Dosud se stres bral spíš jako důsledek špatného spánku — tahle práce naznačuje, že šipka může mířit i opačným směrem.",
+        "podrobneVysvetleni": "Spánková apnoe je porucha dýchání ve spánku (anglicky sleep apnea). Dýchání se opakovaně na chvíli zastaví, člověk se probouzí a ráno je nevyspalý. Trpí jí asi miliarda dospělých na světě. Odkud se bere, se ale úplně přesně neví. Vědci proto spojili dva různé postupy. Nejdřív pokusy na potkanech. Dospělá zvířata bydlela tři týdny sama v kleci, což je pro ně stresující. Pak jim během přirozeného spánku měřili dýchání. Pauz v dýchání přibylo. Nejvýraznější rozdíl se ukázal u samců v narkóze, ležících na zádech. Ucpání horních cest dýchacích s poklesem kyslíku v krvi bylo pětkrát častější než u kontrolní skupiny. Na jednu takovou příhodu u zvířat žijících pospolu tedy připadalo pět u osamělých. U samic se to neprojevilo. Podle autorů za tím stojí i horší ovládání svalů v dýchacích cestách. Osamělým samcům navíc stoupl tlak a přibrali víc tuku. Druhá část práce se týkala lidí. Vědci využili velké genetické databáze z evropských souborů, od zhruba sta tisíc po přes milion účastníků. Metoda se jmenuje mendelovská randomizace (Mendelian randomization). Zjednodušeně: využívá vrozené genetické rozdíly mezi lidmi jako přirozený los. Díky tomu se dá odhadnout, co je příčina a co následek. Vyšlo, že sklon k osamělosti zvyšuje riziko spánkové apnoe. A to i u lidí, kteří nemají nadváhu.",
+        "procJeToDulezite": "Pokud osamělost a dlouhodobý stres opravdu přispívají ke vzniku spánkové apnoe, je to další důvod brát mezilidské vazby vážně — nejen kvůli psychice, ale i kvůli dýchání, tlaku a spánku.",
+        "poznamkaKOmezenim": "Pokusy proběhly na potkanech, u lidí jde o statistický odhad z genetických dat, ne o přímé sledování pacientů — souvislost je tedy zatím pravděpodobná, ne prokázaná."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:kontrolni-skupina",
+            "span": {
+              "start": 599,
+              "end": 616
+            },
+            "matchedText": "kontrolní skupiny",
+            "messageCs": "Termín „kontrolní skupina“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:kontrolni-skupina @ podrobneVysvetleni[599,616]: kontrolní skupiny"
+          }
+        ],
+        "soft": [
+          {
+            "block": "procJeToDulezite",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 186
+            },
+            "matchedText": "Pokud osamělost a dlouhodobý stres opravdu přispívají ke vzniku spánkové apnoe, je to další důvod brát mezilidské vazby vážně — nejen kvůli psychice, ale i kvůli dýchání, tlaku a spánku.",
+            "messageCs": "Tato věta má 29 slov a je moc dlouhá: „Pokud osamělost a dlouhodobý stres opravdu přispívají ke vzniku spánkové apnoe,…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ procJeToDulezite[0,186]: Pokud osamělost a dlouhodobý stres opravdu přispívají ke vzniku spánkové apnoe, je to další důvod brát mezilidské vazby vážně — nejen kvůli psychice, ale i kvůli dýchání, tlaku a spánku."
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203603515",
+        "title": "Outcomes after discharge from acute hospital to residential aged care among long-stay inpatients: a retrospective cohort study using a health service long-stay dashboard",
+        "abstract": "Objective This study aimed to describe pathway timing and 90-day outcomes for long-stay inpatients discharged to residential aged care homes (RACHs), predominantly new entrants, and to explore potentially modifiable factors associated with delays and the composite unsuccessful placement outcome. Methods A retrospective cohort study using the Metro South Hospital and Health Service long-stay dashboard was used. Adults flagged as long-stay with a primary reason of awaiting RACH admission (1 January–31 May 2025) and subsequently admitted to a RACH within the health service were included. Key intervals were hospital admission-to-readiness for the RACH pathway and readiness-to-RACH admission (including interim care bed length of stay, where applicable). The primary outcome was the composite of unsuccessful placement within 90 days, defined as emergency department presentation, unplanned readmission, or non-return placement failure. Results Of 293 flagged patients, 198 were admitted to a RACH and included. Median age was 83 years, and 48% were male; 49% had documented dementia. Median acute length of stay was 28 days; median time from admission to readiness was 10 days, and from readiness to RACH admission was 24 days. Within 90 days, 32% attended an emergency department, 22% were readmitted, and 5% experienced non-return placement failure; 36% met the composite outcome. Conclusion Long-stay inpatients discharged to RACH experience substantial pathway delays and frequent early acute-care utilisation. Strengthening early family engagement and goals-of-care documentation may support safer transitions and help target quality improvement.",
+        "date": "2026-08-18",
+        "url": "https://doi.org/10.1071/ah26115",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1071/ah26115",
+        "openAlexId": "W7203603515",
+        "subfield": {
+          "id": "subfields/3600",
+          "name": "General Health Professions"
+        },
+        "field": {
+          "id": "fields/36",
+          "name": "Health Professions"
+        },
+        "topic": {
+          "id": "T11376",
+          "name": "Geriatric Care and Nursing Homes"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Terry Nash",
+          "Erin Cranitch",
+          "Paula McLeister",
+          "Juliana Friedrich",
+          "Michelle Jiang",
+          "Fiona Trad",
+          "Brett Davies",
+          "Cara Barnett",
+          "Alan Ho",
+          "Aisling Fleury",
+          "Paula Foley"
+        ],
+        "venue": "Australian Health Review",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 8,
+        "tldr": "Strengthening early family engagement and goals-of-care documentation may support safer transitions and help target quality improvement in long-stay inpatients discharged to RACHs.",
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8533,
+          "everydayRelevance": 1,
+          "freshness": 1,
+          "credibility": 0.605,
+          "total": 0.886,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 1,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.1282
+          },
+          "everydayDomains": [
+            "health",
+            "housing",
+            "family"
+          ],
+          "subfieldKey": "subfields/3600",
+          "evidence": [
+            "total 0.8860 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.85 = P 0.87 − 0.45×t 0.00 − 0.15×j 0.13",
+            "outcome verbs (v 0.75): improvement, delays, associated with",
+            "recognisable subjects (s 1.00): patients, adults, hospitals (title, ×2), homes",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.80): −0.2 title is 23 words",
+            "jargon density (j 0.13): 3/234 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — health, housing, family",
+            "everyday terms (8): health, patient, patients, dementia, hospital, home, homes, family",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.61 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Australian Health Review",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        }
+      },
+      "summary": {
+        "souhrn": "Když starší pacient v nemocnici čeká na místo v domově pro seniory (anglicky residential aged care home), stráví čekáním většinu pobytu. Australští autoři prošli záznamy zdravotní služby Metro South za pět měsíců roku 2025 a našli 198 lidí, kteří z nemocnice skutečně do takového domova odešli. Průměrný (přesněji prostřední) věk byl 83 let, zhruba polovina měla v dokumentaci uvedenou demenci. Na akutním lůžku strávili typicky 28 dní — z toho asi 10 dní trvalo, než byli na přesun připraveni, a dalších 24 dní čekali na volné místo. Během tří měsíců po přestěhování se zhruba každý třetí objevil na pohotovosti, přibližně jeden z pěti se vrátil do nemocnice na neplánované přijetí a jeden z dvaceti se do domova už nevrátil.",
+        "podrobneVysvetleni": "Autoři použili takzvaný přehled dlouhých pobytů (long-stay dashboard) — tabulku, do které nemocnice průběžně zapisuje pacienty ležící neobvykle dlouho a důvod, proč nemohou domů. Vybrali dospělé, u nichž byl důvod „čeká na místo v domově pro seniory\", a to od ledna do května 2025. Takto označených bylo 293 lidí; 198 z nich se nakonec do domova v rámci téže zdravotní služby dostalo a ty studie sleduje.\n\nČas rozdělili na dvě části. První: od přijetí do nemocnice do chvíle, kdy byl člověk připravený na přesun — prostřední hodnota 10 dní. Druhá: od této připravenosti do skutečného nástupu do domova — dalších 24 dní. Celkem tedy asi měsíc na akutním lůžku, které je určené pro léčbu, ne pro čekání.\n\nPo přesunu autoři sledovali 90 dní. Souhrnný „neúspěšný přesun\" — tedy pohotovost, neplánovaný návrat do nemocnice, nebo situace, kdy se člověk do domova už nevrátil — nastal u 36 %, tedy o něco více než u každého třetího.\n\nAutoři z toho nevyvozují, že za to může jedna konkrétní věc. Navrhují spíš dvě věci, které jdou ovlivnit: zapojit rodinu do plánování dřív a lépe zapisovat, jaký je cíl péče o daného člověka. Studie je popisná — ukazuje, kde se čas ztrácí, neprokazuje příčinu.",
+        "procJeToDulezite": "Skoro každá rodina jednou řeší přesun blízkého člověka z nemocnice do domova pro seniory a tahle čísla ukazují, že čekání i první měsíce po přestěhování bývají rizikové. Vyplatí se ptát se personálu na plán a zapojit se do něj co nejdřív.",
+        "poznamkaKOmezenim": "Jde o zpětný pohled do záznamů jediné australské zdravotní služby za pět měsíců a necelých 200 pacientů, takže výsledky popisují situaci v tomto konkrétním systému a neříkají, co je příčinou zpoždění ani návratů do nemocnice."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 314,
+              "end": 317
+            },
+            "matchedText": "198",
+            "messageCs": "Číslo „198“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „198 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[314,317]: 198"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=4",
+            "messageCs": "Počet vět delších než 25 slov: 4. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=4"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 535,
+              "end": 726
+            },
+            "matchedText": "Během tří měsíců po přestěhování se zhruba každý třetí objevil na pohotovosti, přibližně jeden z pěti se vrátil do nemocnice na neplánované přijetí a jeden z dvaceti se do domova už nevrátil.",
+            "messageCs": "Tato věta má 32 slov a je moc dlouhá: „Během tří měsíců po přestěhování se zhruba každý třetí objevil na pohotovosti, …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[535,726]: Během tří měsíců po přestěhování se zhruba každý třetí objevil na pohotovosti, přibližně jeden z pěti se vrátil do nemocnice na neplánované přijetí a jeden z dvaceti se do domova už nevrátil."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 304,
+              "end": 307
+            },
+            "matchedText": "293",
+            "messageCs": "Číslo „293“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „293 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[304,307]: 293"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=18.47",
+            "messageCs": "Věty jsou v průměru moc dlouhé (18,5 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=18.47"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203655281",
+        "title": "Association between modified a body shape index and incident cognitive impairment in middle-aged and older adults: a prospective cohort study",
+        "abstract": "Abstract Background Central obesity contributes significantly to cognitive decline. Traditional indices like BMI inadequately capture visceral adiposity and exhibit the obesity paradox in elderly populations.This study looked into the connection between a modified A Body Shape Index (ABSI) and the development of cognitive impairment in middle-aged and older adults. Methods Longitudinal data from 4,353 eligible participants in the 2011–2020 CHARLS cohort were analyzed. Modified ABSI was calculated based on waist circumference, BMI, and height and categorized into quartiles. Cox proportional hazards regression models were used to evaluate the association between modified ABSI and incident cognitive impairment. The fully adjusted model included age, sex, residence, education, marital status, smoking, drinking, hypertension, diabetes mellitus, dyslipidemia, stroke, heart disease, systolic and diastolic blood pressure, triglycerides, LDL-C, HDL-C, HbA1c, CRP, serum creatinine, and uric acid. Restricted cubic spline, subgroup, and sensitivity analyses were also performed. Results Over the follow-up period, cognitive impairment occurred in 1,822 participants, corresponding to 41.9% of the study population. In the Cox model that was fully adjusted, individuals in the highest ABSI quartile (Q4) exhibited a markedly elevated hazard of cognitive impairment relative to those in the lowest quartile (Q1) (HR = 1.22, P = 0.024). A pronounced dose–response pattern was evident, which persisted as statistically significant and linear following comprehensive covariate adjustment ( P = 0.037). Subgroup analyses indicated more pronounced associations among female participants and individuals aged 70 years or older ( P &lt; 0.05). Conclusion High ABSI levels are significantly associated with an increased long-term risk of cognitive impairment in middle-aged and older adults. The findings suggest that ABSI could serve as an effective surrogate marker for central adiposity, facilitating the early recognition of individuals at heightened risk for cognitive decline.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1186/s12889-026-28763-6",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1186/s12889-026-28763-6",
+        "openAlexId": "W7203655281",
+        "subfield": {
+          "id": "subfields/2737",
+          "name": "Physiology"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T10397",
+          "name": "Nutrition and Health in Aging"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Jingshuo Zhang",
+          "Qingqing Jiang",
+          "Furong Wang",
+          "Yu Chen"
+        ],
+        "venue": "BMC Public Health",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7638,
+          "everydayRelevance": 1,
+          "freshness": 1,
+          "credibility": 0.8488,
+          "total": 0.8843,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 1,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.1413
+          },
+          "everydayDomains": [
+            "food",
+            "health",
+            "family"
+          ],
+          "subfieldKey": "subfields/2737",
+          "evidence": [
+            "total 0.8843 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.76 = P 0.79 − 0.45×t 0.00 − 0.15×j 0.14",
+            "outcome verbs (v 0.50): increased, associated with",
+            "recognisable subjects (s 1.00): participants, adults (title, ×2), elderly, older adults (title, ×2)",
+            "quantified effect (q 1): percentage, p-value, effect ratio",
+            "title concreteness (c 0.80): −0.2 title is 20 words",
+            "jargon density (j 0.14): 4/283 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — food, health, family",
+            "everyday terms (6): obesity, disease, diabetes, blood pressure, elderly, older adults",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.85 = 0.40×c1 1.00 + 0.25×c2 0.82 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in BMC Public Health",
+            "c2 0.82: n = 1822",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1186/s12889-026-28763-6)"
+      },
+      "summary": {
+        "souhrn": "Obvod pasu vypovídá o riziku poruch paměti a myšlení víc, než by čekal ten, kdo se řídí jen váhou. Čínští vědci sledovali devět let 4 353 lidí středního a vyššího věku a počítali jim takzvaný upravený index tvaru těla (modified A Body Shape Index, ABSI) — ukazatel, který spojuje obvod pasu s výškou a BMI, a tím zachytí právě tuk kolem břicha. Zhoršení paměti a myšlení se za tu dobu objevilo u 1 822 z nich, tedy asi u dvou lidí z pěti. Lidé s nejvyššími hodnotami tohoto indexu na tom byli o zhruba pětinu hůř než lidé s nejnižšími (poměr rizik 1,22) a riziko rostlo plynule s tím, jak index stoupal — nejvýrazněji u žen a u lidí nad sedmdesát let. Studie ovšem jen sleduje souvislost, neprokazuje, že by břišní tuk poruchy myšlení přímo způsoboval.",
+        "podrobneVysvetleni": "Vědci pracovali s daty velkého čínského výzkumu stárnutí (CHARLS), který od roku 2011 do roku 2020 opakovaně vyšetřoval tytéž lidi středního a vyššího věku. Do analýzy zařadili 4 353 účastníků, kteří na začátku poruchu paměti a myšlení neměli. Každému spočítali upravený index tvaru těla — vzorec, který dá dohromady obvod pasu, výšku a BMI. Smysl je jednoduchý: samotné BMI nerozliší svaly od tuku a hlavně nepozná, jestli tuk sedí na břiše, nebo jinde. U starších lidí navíc vyšší BMI někdy paradoxně provází lepší zdraví, takže jako varovný signál moc neslouží.\n\nÚčastníky rozdělili do čtyř stejně velkých skupin podle hodnoty indexu. Během sledování se zhoršení paměti a myšlení objevilo u 1 822 lidí, tedy u 41,9 % — přibližně dvou z pěti. Čtvrtina s nejvyšším indexem měla riziko o 22 % vyšší než čtvrtina s nejnižším, tedy zhruba o pětinu. Výsledek platil i po zohlednění věku, pohlaví, vzdělání, kouření, pití, cukrovky, vysokého tlaku, mrtvice, srdečních nemocí a řady krevních hodnot. Riziko rostlo postupně, nikoli skokem. Výraznější souvislost vědci našli u žen a u lidí od sedmdesáti let výše.\n\nZ toho plyne praktická věc: metr na měření pasu může o riziku říct něco, co váha neprozradí. Nejde ale o důkaz příčiny — jen o opakovaně pozorovanou souvislost.",
+        "procJeToDulezite": "Obvod pasu si doma změří každý za pár vteřin a podle téhle studie vypovídá o riziku zhoršení paměti víc než samotná váha. Pro rodiny se staršími členy je to laciný a rychlý způsob, jak zjistit, kdo by měl s lékařem probrat prevenci dřív.",
+        "poznamkaKOmezenim": "Jde o pozorovací studii z jedné země, která ukazuje souvislost, nikoli příčinu — vyšší index tvaru těla může být i průvodním jevem jiných problémů, a rozdíl mezi krajními skupinami je navíc poměrně malý."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 99,
+              "end": 344
+            },
+            "matchedText": "Čínští vědci sledovali devět let 4 353 lidí středního a vyššího věku a počítali jim takzvaný upravený index tvaru těla (modified A Body Shape Index, ABSI) — ukazatel, který spojuje obvod pasu s výškou a BMI, a tím zachytí právě tuk kolem břicha.",
+            "messageCs": "Tato věta má 42 slov a je moc dlouhá: „Čínští vědci sledovali devět let 4 353 lidí středního a vyššího věku a počítali…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[99,344]: Čínští vědci sledovali devět let 4 353 lidí středního a vyššího věku a počítali jim takzvaný upravený index tvaru těla (modified A Body Shape Index, ABSI) — ukazatel, který spojuje obvod pasu s výškou a BMI, a tím zachytí právě tuk kolem břicha."
+          }
+        ],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 177,
+              "end": 182
+            },
+            "matchedText": "4 353",
+            "messageCs": "Číslo „4 353“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „4 353 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[177,182]: 4 353"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=18.95",
+            "messageCs": "Věty jsou v průměru moc dlouhé (18,9 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=18.95"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=2",
+            "messageCs": "Počet vět delších než 25 slov: 2. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=2"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203625950",
+        "title": "Clinical and neurophysiology study of 17 children with epileptic negative myoclonus",
+        "abstract": "Abstract Background Epileptic negative myoclonus (ENM) is a clinically underrecognized seizure type, and systematic data on its clinical manifestations and optimal management strategies in pediatric populations remain scarce. This case series aimed to describe the clinical manifestations, neurophysiological patterns, and therapeutic outcomes in pediatric ENM. Methods A retrospective descriptive analysis was conducted on 17 ENM patients diagnosed at Wuxi Children’s Hospital between October 2017 and June 2024. Clinical data, electroencephalogram (EEG) findings, and treatment responses were systematically evaluated. Results The cohort showed a marked female predominance (female-to-male ratio of 12:5). All cases exhibited upper-limb ENM, with contralateral central-parietal epileptiform discharges observed in ictal EEG. Two patients presented additional lower-limb ENM accompanied by midline discharges. Clinically, ENM manifested as the initial symptom in five cases (29.4%), including two with isolated ENM. Therapeutic outcomes varied: among four non-electrical status epilepticus during sleep (ESES) patients, antiseizure medications (ASMs) achieved symptom control, including one case of oxcarbazepine (OXC)-associated ENM that resolved after transition to valproate (VPA). Of 13 ESES-positive patients, three responded to ASMs alone, while nine received methylprednisolone pulse therapy (MPT), and one surgical candidate with focal cortical dysplasia (FCD) type IIa achieved post-resection remission. Among the nine children treated with MPT: four showed a good response; four relapsed upon steroid withdrawal; and one responded well to ketogenic diet (KD) therapy. Conclusions ENM can manifest as the initial or sole epilepsy symptom in children. The marked female predominance in this cohort suggests that sex-related factors may play an important role in the expression or underlying mechanisms of ENM. Additionally, a correlation was found between the EEG discharge patterns and the specific limb regions involved. Regarding treatment, OXC may exacerbate ENM, necessitating cautious use. Steroid therapy should be considered for ESES cases unresponsive to ASMs. Refractory ENM with ESES warrants evaluation for structural abnormalities, particularly cortical dysplasia. Early EEG and neuroimaging improve diagnostic accuracy, while combined therapies-ASMs, immunomodulation, KD, or surgery-optimize outcomes. These findings highlight ENM’s diagnostic intricacy and the need for individualized management. Clinical trial registration Not applicable.",
+        "date": "2026-08-18",
+        "url": "https://doi.org/10.1186/s42494-026-00273-3",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1186/s42494-026-00273-3",
+        "openAlexId": "W7203625950",
+        "subfield": {
+          "id": "subfields/2745",
+          "name": "Rheumatology"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T12604",
+          "name": "Glycogen Storage Diseases and Myoclonus"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1186/s42494-026-00273-3",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Lin Zhang",
+          "Tao Xu",
+          "Miao Jing",
+          "Jingbo Ma",
+          "Mingxia Sun",
+          "Ying Hua",
+          "Hongwei Tang",
+          "Yanping Wang"
+        ],
+        "venue": "Acta Epileptologica",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 28,
+        "tldr": "The marked female predominance in this cohort of ENM patients suggests that sex-related factors may play an important role in the expression or underlying mechanisms of ENM, and a correlation was found between the EEG discharge patterns and the specific limb regions involved.",
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7582,
+          "everydayRelevance": 1,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.8676,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.4451
+          },
+          "everydayDomains": [
+            "food",
+            "sleep",
+            "health",
+            "family"
+          ],
+          "subfieldKey": "subfields/2745",
+          "evidence": [
+            "total 0.8676 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.76 = P 0.82 − 0.45×t 0.00 − 0.15×j 0.45",
+            "outcome verbs (v 0.50): improves, lowers",
+            "recognisable subjects (s 1.00): patients, children (title, ×2), hospitals",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.45): 15/337 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 4 domain(s) — food, sleep, health, family",
+            "everyday terms (9): diet, sleep, patient, patients, hospital, therapy, treatment, medication, children",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Acta Epileptologica",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        }
+      },
+      "summary": {
+        "souhrn": "Ne každý epileptický záchvat vypadá jako křeč. U epileptického negativního myoklonu (epileptic negative myoclonus) sval naopak na okamžik ztratí napětí a ruka povolí. Lékaři z dětské nemocnice ve Wu-si zpětně popsali 17 dětí s tímto typem záchvatu z let 2017 až 2024. Dívek bylo dvanáct, chlapců pět; u všech šlo o horní končetinu a EEG ukázalo výboje na opačné straně mozku. U pěti dětí byl tento příznak první známkou epilepsie a u dvou z nich dokonce jedinou.",
+        "podrobneVysvetleni": "Autoři prošli zpětně zdravotnickou dokumentaci sedmnácti dětí. Sledovali příznaky, záznam elektrické aktivity mozku (EEG) a to, jak zabrala léčba. U všech dětí příznak postihoval ruku. Během záchvatu se na EEG objevily výboje ve středních a temenních oblastech mozku, vždy na opačné straně, než byla postižená končetina. Dvě děti měly stejný problém i na noze. U nich se výboje objevovaly ve střední čáře mozku. Třináct dětí mělo takzvaný ESES (electrical status epilepticus during sleep). To znamená, že jim mozek ve spánku téměř nepřetržitě vysílal chorobné výboje. U čtyř dětí bez ESES stačily běžné léky proti záchvatům. Jednomu z nich příznaky nejspíš vyvolal lék oxkarbazepin. Po přechodu na valproát potíže zmizely. Ze třinácti dětí s ESES zabraly léky u tří. Devět dostalo nárazovou léčbu kortikoidem methylprednisolonem. Z těchto devíti se čtyřem vedlo dobře, u čtyř se potíže po vysazení vrátily a jednomu pomohla ketogenní dieta, tedy jídelníček s velmi malým množstvím sacharidů. Jedno dítě mělo vrozenou odchylku ve stavbě mozkové kůry a po operaci se stav upravil. Z toho plyne trojí. Krátké povolení ruky může být první a jediná známka epilepsie. Oxkarbazepin může u některých dětí potíže zhoršit. A když léky nezabírají, má smysl udělat zobrazení mozku a zvážit kortikoidy, dietu nebo operaci.",
+        "procJeToDulezite": "Rodiče i učitelé si krátkého povolení ruky často nevšimnou, nebo ho berou jako nešikovnost. Přitom může jít o záchvat, který se dá léčit, když se včas rozpozná.",
+        "poznamkaKOmezenim": "Jde o zpětný popis pouhých sedmnácti dětí z jediné nemocnice, bez srovnávací skupiny, takže výsledky včetně výrazné převahy dívek jsou předběžné a mohou být dílem náhody."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "warn",
+        "hard": [],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 8,
+              "end": 18
+            },
+            "matchedText": " epileptic",
+            "messageCs": "Text opisuje původní název článku („ epileptic“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[8,18]:  epileptic"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 48,
+              "end": 58
+            },
+            "matchedText": " epileptic",
+            "messageCs": "Text opisuje původní název článku („ epileptic“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[48,58]:  epileptic"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 62,
+              "end": 70
+            },
+            "matchedText": " negativ",
+            "messageCs": "Text opisuje původní název článku („ negativ“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[62,70]:  negativ"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 217,
+              "end": 219
+            },
+            "matchedText": "17",
+            "messageCs": "Číslo „17“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „17 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[217,219]: 17"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 830,
+              "end": 991
+            },
+            "matchedText": "Z těchto devíti se čtyřem vedlo dobře, u čtyř se potíže po vysazení vrátily a jednomu pomohla ketogenní dieta, tedy jídelníček s velmi malým množstvím sacharidů.",
+            "messageCs": "Tato věta má 26 slov a je moc dlouhá: „Z těchto devíti se čtyřem vedlo dobře, u čtyř se potíže po vysazení vrátily a j…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[830,991]: Z těchto devíti se čtyřem vedlo dobře, u čtyř se potíže po vysazení vrátily a jednomu pomohla ketogenní dieta, tedy jídelníček s velmi malým množstvím sacharidů."
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-08-19T10:54:44.213Z",
+  "generatedOn": "2026-08-19",
+  "schemaVersion": 1
+}

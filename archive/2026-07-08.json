@@ -1,0 +1,819 @@
+{
+  "date": "2026-07-08",
+  "categoryKey": "nature-climate",
+  "categoryLabel": "Příroda a klima",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W4413962253",
+        "title": "Building emission reduction feasibility assessment considering uncertainty",
+        "abstract": "The building sector accounts for 37% of global carbon emissions, which is commonly recognized as a significant contributor to carbon emissions. The emission reduction related to the building sector has received widespread attention. Scientific calculation and assessment of building carbon emissions are fundamental to comprehensively understanding emission characteristics and supporting carbon reduction design with no doubt. However, most of the current mainstream building carbon emission calculation methods neglect the stochastic nature of emission parameters. This study introduced a building emission reduction feasibility assessment considering uncertainty, which defined the carbon compliance probability for buildings, established a probabilistic model for building emission reduction potential, derived probability assessment calculation methods for six distributions, and proposed a probabilistic characterization method for emission reduction feasibility. Validation with a practical case indicates that the proposed model requires minimal computational resources and offers rapid assessment speed; compared with Monte Carlo simulation with a sample size of 106, the proposed method uses only 44.2% of the computational time. Analysis of two real-world engineering cases yields carbon compliance probabilities of 0.8778 and 0.7489, respectively. At a 95% confidence level, the maximum carbon reduction relative to the baseline will not exceed 93.8 tCO2e and 3173 tCO2e for the two cases.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1016/j.sftr.2026.102082",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1016/j.sftr.2026.102082",
+        "openAlexId": "W4413962253",
+        "subfield": {
+          "id": "subfields/2305",
+          "name": "Environmental Engineering"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10435",
+          "name": "Environmental Impact and Sustainability"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Yang Xu",
+          "Qingbao Gao",
+          "Hongyuan Jing",
+          "Wei Wang",
+          "Yuan Zheng"
+        ],
+        "venue": "Sustainable Futures",
+        "indexedDate": "2025-10-10",
+        "referencedWorksCount": 19,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.6625,
+          "everydayRelevance": 0.3,
+          "freshness": 1,
+          "credibility": 0.705,
+          "total": 0.6277,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 0.5,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.25
+          },
+          "everydayDomains": [
+            "mind"
+          ],
+          "subfieldKey": "subfields/2305",
+          "evidence": [
+            "total 0.6277 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.66 = P 0.70 − 0.45×t 0.00 − 0.15×j 0.25",
+            "outcome verbs (v 0.50): reduction (title, ×2)",
+            "recognisable subjects (s 0.50): buildings (title, ×2)",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.25): 5/200 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.30: 1 domain(s) — mind",
+            "everyday terms (1): attention",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-17)",
+            "credibility 0.71 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.80 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Sustainable Futures",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.80: open access without an open licence (repository copy)",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1016/j.sftr.2026.102082)"
+      },
+      "summary": {
+        "souhrn": "Budovy stojí za 37 % celosvětových emisí oxidu uhličitého, tedy za více než třetinou. Kolik ale vypustí jeden konkrétní dům, se dopředu odhaduje těžko: spotřeba energie, materiály i technologie se mění. Autoři proto nepočítají jedno pevné číslo, ale pravděpodobnost, že stavba emisní limit splní. U dvou skutečných projektů vyšla 0,8778 a 0,7489 — na stupnici od nuly do jedné, kde jednička znamená jistotu. Výpočet je navíc úsporný: potřebuje jen 44,2 % času obvyklé počítačové simulace, tedy necelou polovinu.",
+        "podrobneVysvetleni": "Běžné výpočty emisí budovy pracují s jedním pevným číslem pro každý vstup. Skutečnost je ale jiná. Množství betonu, spotřeba elektřiny i emise z výroby materiálů se pohybují v nějakém rozmezí. Autoři proto vstupy popsali jako náhodné hodnoty. Zavedli pojem pravděpodobnost splnění emisního limitu (carbon compliance probability). Je to šance, že budova zůstane pod stanovenou hranicí. K tomu přidali model možných úspor. Vzorce odvodili pro šest typů rozdělení pravděpodobnosti, tedy pro šest způsobů, jak se hodnoty rozptylují kolem průměru. Metodu pak porovnali se simulací Monte Carlo (Monte Carlo simulation). To je postup, kdy počítač náhodně vylosuje velké množství variant a z nich odhadne výsledek. Při milionu vylosovaných vzorků potřebovala nová metoda jen 44,2 % výpočetního času, tedy necelou polovinu. Podle autorů byla přitom výsledkem srovnatelná. Nakonec metodu použili na dvou reálných stavbách. Pravděpodobnost splnění limitu vyšla 0,8778 u první a 0,7489 u druhé. Na stupnici od nuly do jedné, kde jednička znamená jistotu, je to slušné, ale ne zaručené. Autoři také spočítali, kolik nejvýš se dá ušetřit proti výchozímu stavu. U první stavby je to 93,8 tuny CO2 ekvivalentu. U druhé, mnohem větší, 3173 tuny. Obě horní hranice platí s 95% jistotou, tedy až na výjimky.",
+        "procJeToDulezite": "Emisní limity pro budovy se u nás i v Evropě zpřísňují a projektanti potřebují vědět nejen jedno číslo, ale i to, jak je jisté. Přístup, který počítá s pravděpodobností, ukazuje riziko, že stavba limit nakonec nesplní, už při návrhu.",
+        "poznamkaKOmezenim": "Metodu autoři vyzkoušeli jen na dvou konkrétních stavbách, takže jde o první ověření, a výsledek navíc silně závisí na tom, jaké rozmezí hodnot se do výpočtu zadá."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 448,
+              "end": 454
+            },
+            "matchedText": "44,2 %",
+            "messageCs": "Číslo „44,2 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „44,2 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[448,454]: 44,2 %"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:monte-carlo",
+            "span": {
+              "start": 576,
+              "end": 587
+            },
+            "matchedText": "Monte Carlo",
+            "messageCs": "Termín „modelování metodou Monte Carlo“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:monte-carlo @ podrobneVysvetleni[576,587]: Monte Carlo"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 767,
+              "end": 773
+            },
+            "matchedText": "44,2 %",
+            "messageCs": "Číslo „44,2 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „44,2 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[767,773]: 44,2 %"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 950,
+              "end": 956
+            },
+            "matchedText": "0,8778",
+            "messageCs": "Číslo „0,8778“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „0,8778 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[950,956]: 0,8778"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 967,
+              "end": 973
+            },
+            "matchedText": "0,7489",
+            "messageCs": "Číslo „0,7489“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „0,7489 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[967,973]: 0,7489"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "hype",
+            "ruleId": "hype:zaručen",
+            "span": {
+              "start": 1064,
+              "end": 1072
+            },
+            "matchedText": "zaručené",
+            "messageCs": "Slovo „zaručené“ je zakázané (pravidlo §2, žádná senzacechtivost). Napište místo něj konkrétně, co se změnilo.",
+            "detail": "hype:zaručen @ podrobneVysvetleni[1064,1072]: zaručené"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1168,
+              "end": 1172
+            },
+            "matchedText": "93,8",
+            "messageCs": "Číslo „93,8“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „93,8 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1168,1172]: 93,8"
+          }
+        ],
+        "soft": [
+          {
+            "block": "all",
+            "rule": "long-words",
+            "ruleId": "readability:R6",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "share5Syllables=0.060",
+            "messageCs": "Příliš mnoho abstraktních dlouhých slov (6 % slov má pět a více slabik). Nahraďte je konkrétními, kratšími slovy.",
+            "detail": "readability:R6 @ all[0,0]: share5Syllables=0.060"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203616423",
+        "title": "Projected climate change impacts on habitat suitability of threatened medicinal plants in Himachal Pradesh, Western Himalaya: an ensemble species distribution modelling approach",
+        "abstract": "Abstract Climate change is expected to profoundly influence high-elevation Himalayan ecosystems, where steep environmental gradients and narrow climatic tolerances render alpine plant communities particularly sensitive to environmental changes. Many threatened Himalayan medicinal plants occur near alpine-sub-alpine ecotones associated with upper forest limits, and shifts in their distribution may reflect broader ecosystem responses to climate change. Anticipating such range dynamics is essential for biodiversity conservation and sustainable resource management in climate-sensitive mountain landscapes. We assessed the current and future habitat suitability of three threatened Himalayan medicinal plants, Aconitum heterophyllum , Lilium polyphyllum , and Picrorhiza kurroa , in Himachal Pradesh, Western Himalaya, using an ensemble species distribution modelling framework. Species occurrence records were combined with climatic and topographic predictors to model the current and future habitat suitability. In addition to habitat suitability projections, we integrated model uncertainty, centroid displacement, and climatic niche overlap analyses to assess the robustness and spatial dynamics of future habitat changes. Ensemble models showed strong predictive performance, with the best-performing algorithms (Random Forest and MaxEnt) achieving ROC values of up to 0.90 and TSS values of up to 0.55. Habitat suitability was primarily influenced by precipitation seasonality (BIO15; importance up to ~ 0.45) and the mean diurnal temperature range (BIO2; up to ~ 0.28). Future suitability became increasingly concentrated in high-elevation districts, such as Lahaul and Spiti and Kinnaur, with suitable habitat declining by approximately 33–57% across most future scenarios. A. heterophyllum was the only species to show a temporary increase in suitable area (+ 35.7%) under SSP126 in 2050, before declining under later projections. Centroid shifts ranged from 9.4–19.4 km, while Schoener’s D declined from 0.59 to 0.47 across species and scenarios, indicating increasing divergence from current suitability patterns. These findings indicate that climate change may substantially reorganise habitat suitability for threatened Himalayan medicinal plants, highlighting the potential for high-elevation refugia and providing a framework for climate-informed conservation planning in Himachal Pradesh and other Himalayan mountain ecosystems.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1038/s41598-026-66433-0",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1038/s41598-026-66433-0",
+        "openAlexId": "W7203616423",
+        "subfield": {
+          "id": "subfields/2302",
+          "name": "Ecological Modeling"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10895",
+          "name": "Species Distribution and Climate Change"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1038/s41598-026-66433-0",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Simran Tomar",
+          "Merja Tölle",
+          "K. S. Kanwal",
+          "Sunil Puri"
+        ],
+        "venue": "Scientific Reports",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 65,
+        "tldr": "Assessment of habitat suitability of three threatened Himalayan medicinal plants in Himachal Pradesh indicates that climate change may substantially reorganise habitat suitability for threatened Himalayan medicinal plants, highlighting the potential for high-elevation refugia and providing a framework for climate-informed conservation planning in Himachal Pradesh and other Himalayan mountain ecosystems.",
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.5952,
+          "everydayRelevance": 0.3,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.6064,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 0.75,
+            "q": 1,
+            "c": 0.4,
+            "t": 0,
+            "j": 0.3155
+          },
+          "everydayDomains": [
+            "weather"
+          ],
+          "subfieldKey": "subfields/2302",
+          "evidence": [
+            "total 0.6064 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.60 = P 0.64 − 0.45×t 0.00 − 0.15×j 0.32",
+            "outcome verbs (v 0.50): increases, associated with",
+            "recognisable subjects (s 0.75): plants (title, ×2), forests",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.40): −0.4 method-word subtitle; −0.2 title is 22 words",
+            "jargon density (j 0.32): 10/317 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.30: 1 domain(s) — weather",
+            "everyday terms (1): climate",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Scientific Reports",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        }
+      },
+      "summary": {
+        "souhrn": "Tři léčivé himálajské rostliny — oměj (Aconitum heterophyllum), lilie (Lilium polyphyllum) a kutki (Picrorhiza kurroa) — by se v indickém státě Himáčalpradéš mohly během několika desetiletí ocitnout na podstatně menším území. Vědci spojili záznamy o tom, kde tyto ohrožené druhy dnes rostou, s údaji o podnebí a členitosti terénu a nechali několik počítačových modelů spočítat, kde jim bude dobře nyní a kde v budoucnu. Ve většině scénářů vhodná plocha ubývá přibližně o 33 až 57 procent, tedy o třetinu až víc než polovinu, a to, co zůstane, se stahuje do nejvýše položených okresů Lahaul a Spiti a Kinnaur. Nejvíc rozhodovalo, jak nerovnoměrně během roku padají srážky, a jak velký je rozdíl mezi denní a noční teplotou. Prakticky to znamená, že rostliny, které lidé v Himálaji sbírají po generace, se budou stěhovat výš — a někde už nebude kam.",
+        "podrobneVysvetleni": "Autoři použili takzvané modelování rozšíření druhů (species distribution modelling): počítač se učí, jaké podmínky mají místa, kde byl druh skutečně nalezen, a pak hledá další podobná místa na mapě. Aby nezáleželo na jediném výpočtu, spojili víc metod do jednoho společného výsledku (ensemble). Nejlépe si vedly algoritmy Random Forest a MaxEnt s hodnotou ROC až 0,90 — což je běžná známka pro to, jak dobře model odliší vhodné místo od nevhodného; 1,0 by byla dokonalost. Druhá známka, TSS, dosáhla nejvýš 0,55, tedy slušný, ale ne skvělý výkon.\n\nZ podnebních ukazatelů měla největší váhu nerovnoměrnost srážek během roku (asi 0,45 z celkové důležitosti, tedy téměř polovina vlivu) a rozdíl mezi denní a noční teplotou (až 0,28). Těžiště vhodných oblastí se v modelech posouvá o 9,4 až 19,4 kilometru — vzdálenost, kterou člověk ujde za den, ale rostlina za desítky let ne vždy. Podobnost budoucích a dnešních klimatických podmínek klesla z 0,59 na 0,47 (na stupnici od 0 do 1), takže rostliny by žily v nápadně jiném podnebí než dnes.\n\nJedna výjimka: oměji se v mírnějším scénáři do roku 2050 vhodná plocha dočasně zvětšila o 35,7 procenta, tedy o víc než třetinu. V pozdějších projekcích i on ztrácí.",
+        "procJeToDulezite": "Tyhle rostliny nejsou jen položky v atlasu — jsou to léčivky, na kterých závisí tradiční medicína i příjmy horských rodin, a už dnes patří mezi ohrožené. Studie zároveň ukazuje obecnější věc: v horách nemá teplejší podnebí kam ustoupit než nahoru, a nahoře je místa málo.",
+        "poznamkaKOmezenim": "Jde o počítačové projekce založené na podnebí a terénu — nezahrnují půdu, sběr rostlin lidmi ani to, zda se druh vůbec dokáže na nové místo rozšířit, a jedna z hodnot přesnosti modelu (TSS 0,55) je jen průměrná, takže konkrétní procenta berte jako odhad, ne předpověď."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 724,
+              "end": 728
+            },
+            "matchedText": "0,28",
+            "messageCs": "Číslo „0,28“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „0,28 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[724,728]: 0,28"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=23.88",
+            "messageCs": "Věty jsou v průměru moc dlouhé (23,9 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=23.88"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=8",
+            "messageCs": "Počet vět delších než 25 slov: 8. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=8"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 420,
+              "end": 608
+            },
+            "matchedText": "Ve většině scénářů vhodná plocha ubývá přibližně o 33 až 57 procent, tedy o třetinu až víc než polovinu, a to, co zůstane, se stahuje do nejvýše položených okresů Lahaul a Spiti a Kinnaur.",
+            "messageCs": "Tato věta má 34 slov a je moc dlouhá: „Ve většině scénářů vhodná plocha ubývá přibližně o 33 až 57 procent, tedy o tře…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[420,608]: Ve většině scénářů vhodná plocha ubývá přibližně o 33 až 57 procent, tedy o třetinu až víc než polovinu, a to, co zůstane, se stahuje do nejvýše položených okresů Lahaul a Spiti a Kinnaur."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_english_original:algoritmus",
+            "span": {
+              "start": 312,
+              "end": 321
+            },
+            "matchedText": "algoritmy",
+            "messageCs": "U termínu „algoritmus“ chybí při prvním použití anglický originál v závorce (např. „algoritmus (algorithm)“). Čtenář ten anglický výraz potká jinde (§2).",
+            "detail": "jargon:no_english_original:algoritmus @ podrobneVysvetleni[312,321]: algoritmy"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=48.1",
+            "messageCs": "Text se celkově čte těžko (index 48 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=48.1"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203633293",
+        "title": "Proximity to wind turbines altered plant–pollinator dynamics in prairie and sagebrush ecosystems in Wyoming, USA",
+        "abstract": "Wind turbines influence several abiotic conditions in the environments they are sited in and may influence the behavior and movement of insect pollinators. It is unknown how operating turbines influence plant–pollinator interactions. To investigate if pollination dynamics could be affected by the presence of wind turbines, we recorded videos of pollinating insects visiting flowers on blooming, native plants within a wind energy facility, and at five sites located 4–28 km from operating turbines. We calculated the length of interactions between insect pollinators and flowers, and identified individual behaviors exhibited by visiting insects. Insects interacted with flowers for longer periods of time when closer to wind turbines. As distance to turbine increased, the probability that pollinating insects would crawl into blooms or drink nectar decreased, while the probability that they would rest on plants increased. These behaviors also varied with changes in wind speed, air temperature, and the number of flowers on plants. Our study is one of the first to offer evidence that plant–pollinator interactions could be altered by turbines or abiotic changes caused by turbines. This topic merits further investigation to help land managers and conservation organizations make informed decisions about future turbine siting, restoration, and conservation efforts.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1002/njb.04996",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1002/njb.04996",
+        "openAlexId": "W7203633293",
+        "subfield": {
+          "id": "subfields/2303",
+          "name": "Ecology"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T13388",
+          "name": "Rangeland and Wildlife Management"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Michelle Weschler",
+          "Brenna Martin",
+          "Lusha M. Tronstad"
+        ],
+        "venue": "Nordic Journal of Botany",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 61,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.5875,
+          "everydayRelevance": 0.3,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.6033,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 0.5,
+            "q": 0,
+            "c": 1,
+            "t": 0,
+            "j": 0
+          },
+          "everydayDomains": [
+            "energy"
+          ],
+          "subfieldKey": "subfields/2303",
+          "evidence": [
+            "total 0.6033 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.59 = P 0.59 − 0.45×t 0.00 − 0.15×j 0.00",
+            "outcome verbs (v 0.75): increased, decreased, caused",
+            "recognisable subjects (s 0.50): plants (title, ×2)",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 1.00): no penalty",
+            "everyday relevance 0.30: 1 domain(s) — energy",
+            "everyday terms (1): energy",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Nordic Journal of Botany",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1002/njb.04996)"
+      },
+      "summary": {
+        "souhrn": "Hmyz na květech se v okolí větrných elektráren chová trochu jinak než dál od nich. Vědci ve Wyomingu natáčeli na video opylovače na kvetoucích domácích rostlinách přímo v areálu větrného parku a pak na pěti dalších místech vzdálených čtyři až dvacet osm kilometrů od běžících turbín. Čím blíž k turbínám, tím déle hmyz u květu zůstal a tím spíš zalezl dovnitř květu nebo pil nektar; dál od turbín naopak častěji jen odpočíval na rostlině. Chování ale ovlivňovala i síla větru, teplota vzduchu a počet květů na rostlině. Samotné turbíny tedy nejsou jediným vysvětlením — jde o jednu z prvních prací na tohle téma a spíš o podnět k dalšímu zkoumání než o hotovou odpověď.",
+        "podrobneVysvetleni": "Větrné elektrárny mění některé podmínky ve svém okolí — třeba proudění vzduchu nebo teplotu u země. Vědci chtěli zjistit, jestli se to promítne i do setkávání hmyzu s květinami, tedy do opylování. Postavili proto kamery k rozkvetlým původním rostlinám uvnitř areálu větrného parku ve Wyomingu a na pěti dalších plochách v prérii a v porostech pelyňku, vzdálených čtyři až dvacet osm kilometrů od běžících turbín. Z videí pak měřili, jak dlouho hmyz u květu vydržel, a zapisovali, co přesně dělal: jestli vlezl dovnitř květu, pil nektar, nebo jen seděl.\n\nVyšlo jim, že blíž k turbínám trávil hmyz na květech delší dobu. S rostoucí vzdáleností od turbín klesala pravděpodobnost, že se hmyz do květu zavrtá nebo se napije nektaru, a naopak rostla pravděpodobnost, že bude na rostlině jen odpočívat. Jinými slovy: u turbín se hmyz choval spíš „pracovně\", dál od nich spíš „lenošil\".\n\nAutoři ale sami upozorňují, že stejné chování se měnilo i podle toho, jak silně foukalo, jak bylo teplo a kolik měla rostlina květů. Rozlišit vliv samotných turbín od počasí je proto zatím těžké. Studie tak neříká, že turbíny opylování zlepšují nebo zhoršují — říká, že se v jejich okolí něco děje a stojí za to to prozkoumat pořádně.",
+        "procJeToDulezite": "Opylovači rozhodují o tom, jestli rostliny vytvoří semena a plody — a větrných elektráren v krajině přibývá. Pokud jejich okolí mění chování hmyzu, mělo by se s tím počítat při rozhodování, kam nové turbíny stavět a jak kolem nich pečovat o přírodu.",
+        "poznamkaKOmezenim": "Jde o jednu z prvních studií svého druhu, založenou na videozáznamech ze šesti míst v jediném státě USA, a protože chování hmyzu ovlivňovaly také vítr, teplota a množství květů, nelze zatím tvrdit, že za rozdíly mohou samotné turbíny."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=20.71",
+            "messageCs": "Věty jsou v průměru moc dlouhé (20,7 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=20.71"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=5",
+            "messageCs": "Počet vět delších než 25 slov: 5. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=5"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 91,
+              "end": 99
+            },
+            "matchedText": " Wyoming",
+            "messageCs": "Text opisuje původní název článku („ Wyoming“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[91,99]:  Wyoming"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 197,
+              "end": 412
+            },
+            "matchedText": "Postavili proto kamery k rozkvetlým původním rostlinám uvnitř areálu větrného parku ve Wyomingu a na pěti dalších plochách v prérii a v porostech pelyňku, vzdálených čtyři až dvacet osm kilometrů od běžících turbín.",
+            "messageCs": "Tato věta má 33 slov a je moc dlouhá: „Postavili proto kamery k rozkvetlým původním rostlinám uvnitř areálu větrného p…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[197,412]: Postavili proto kamery k rozkvetlým původním rostlinám uvnitř areálu větrného parku ve Wyomingu a na pěti dalších plochách v prérii a v porostech pelyňku, vzdálených čtyři až dvacet osm kilometrů od běžících turbín."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 283,
+              "end": 291
+            },
+            "matchedText": " Wyoming",
+            "messageCs": "Text opisuje původní název článku („ Wyoming“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[283,291]:  Wyoming"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203620029",
+        "title": "Unsupervised Multi-Sensor Condition Monitoring of AODD Pump Systems Using Physics-Informed Health Indices and Gaussian Mixture Models",
+        "abstract": "Air-operated double-diaphragm (AODD) pumps in industrial sludge transfer suffer from gradual performance degradation due to rheological variations and component wear, yet conventional monitoring relies on scarce labeled fault data. This paper presents an unsupervised multi-sensor framework that requires no fault labels, integrating physics-informed dual health indices, HI-P (sludge load) and HI-V (mechanical stress), with a Gaussian Mixture Model anomaly detector and a physics residual attribution module. Governing equations motivate the use of these indices from five sensors: inlet and outlet flow meters (100 Hz), an air pressure transducer (100 Hz), and inlet and outlet accelerometers (1652 Hz). Trained on one healthy baseline day (86,218 one-second windows), the Gaussian Mixture Model achieves 100% day-level classification performance on the evaluated dataset (F1 = 1.00) across 455,201 test windows from nine operating days, with window-level receiver operating characteristic area under the curve (ROC-AUC) = 0.8580 and precision–recall AUC (PR-AUC) = 0.9082. Residual attribution analytically confirms that pressure residuals drive Episode 1 (HI-P peak 3.63 times baseline, Cohen’s d = 1.70) and vibration residuals drive Episode 2 (HI-V peak 5.44 times the baseline, d = 4.10), providing empirical support for the proposed physics-informed formulation without requiring fault labels. Comparisons with four unsupervised benchmarks confirm that this is the only approach that simultaneously enables label-free operation, physics-driven features, exact attribution, real-world deployment, and perfect day-level F1.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.3390/s26165204",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.3390/s26165204",
+        "openAlexId": "W7203620029",
+        "subfield": {
+          "id": "subfields/2310",
+          "name": "Pollution"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10564",
+          "name": "Wastewater Treatment and Nitrogen Removal"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "S.W. Kim",
+          "Akeem Bayo Kareem",
+          "Jangwook Hur"
+        ],
+        "venue": "Sensors",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.359,
+          "everydayRelevance": 0.6,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.5959,
+          "explainDetail": {
+            "v": 0.25,
+            "s": 0,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.4566
+          },
+          "everydayDomains": [
+            "health",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2310",
+          "evidence": [
+            "total 0.5959 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.36 = P 0.43 − 0.45×t 0.00 − 0.15×j 0.46",
+            "outcome verbs (v 0.25): enables",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 1): percentage, Cohen's d",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.46): 10/219 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.60: 2 domain(s) — health, mind",
+            "everyday terms (2): health, stress",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Sensors",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.3390/s26165204)"
+      },
+      "summary": {
+        "souhrn": "Průmyslová membránová čerpadla na kal se kazí pomalu a nenápadně. Vědci proto zkusili hlídat je bez jediného záznamu poruchy. Model se naučil, jak vypadá jeden zdravý den provozu — přes 86 tisíc jednosekundových úseků, tedy měření sekundu po sekundě po celý den (den má 86 400 sekund). Pak dostal devět dalších dnů, dohromady přes 455 tisíc takových jednosekundových úseků, a všechny dny zařadil správně. U jednotlivých sekund už tak přesný nebyl, takže jde spíš o denní přehled než o okamžitý poplach.",
+        "podrobneVysvetleni": "Čerpadlo poháněné stlačeným vzduchem přečerpává kal. Sledovalo ho pět čidel. Průtokoměr na vstupu, průtokoměr na výstupu a snímač tlaku vzduchu měřily stokrát za sekundu. Dvě čidla otřesů (accelerometers) měřila 1652krát za sekundu. Z těchto dat autoři odvodili dva ukazatele zdraví. První, HI-P, popisuje zátěž kalem, tedy jak hustý je kal a kolik tlaku čerpadlo potřebuje. Druhý, HI-V, popisuje mechanické namáhání, tedy chvění a rázy.\n\nStatistický model (Gaussian Mixture Model) se naučil jen zdravý stav. Vše, co se od naučeného mraku obvyklých hodnot odchýlí, označí za podezřelé. Na devíti testovaných dnech rozdělil dny na zdravé a problémové bez chyby (F1 = 1,00, tedy žádný omyl na úrovni celých dnů). Jednotlivé sekundy hodnotil hůř. Hodnota ROC-AUC 0,86 znamená, že když model dostane náhodnou vadnou a náhodnou zdravou sekundu, seřadí je správně asi v 86 případech ze sta.\n\nModel také ukázal, co se pokazilo. V první epizodě vybočil tlak: ukazatel HI-P vyskočil na 3,63násobek běžné hodnoty. Ve druhé epizodě vybočily vibrace: ukazatel HI-V vyskočil na 5,44násobek běžné hodnoty. Obě vybočení byla přitom mnohem větší než běžné kolísání za normálního provozu. Obsluha tak nedostane jen varování, ale i vodítko, kde hledat příčinu.",
+        "procJeToDulezite": "Čerpadla a motory v čistírnách a továrnách se hlídají těžko, protože nikdo nemá připravenou sbírku poruch, na které by se počítač učil. Postup, který si vystačí s jedním zdravým dnem měření, může upozornit na blížící se problém dřív, než se stroj zastaví.",
+        "poznamkaKOmezenim": "Jde o jedno čerpadlo, devět testovaných dnů a jen dvě zachycené problémové epizody, takže bezchybné třídění dnů je zatím předběžný výsledek a je potřeba ověřit ho na dalších strojích a provozech."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 977,
+              "end": 978
+            },
+            "matchedText": "3",
+            "messageCs": "Číslo „3“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „3 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[977,978]: 3"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 126,
+              "end": 285
+            },
+            "matchedText": "Model se naučil, jak vypadá jeden zdravý den provozu — přes 86 tisíc jednosekundových úseků, tedy měření sekundu po sekundě po celý den (den má 86 400 sekund).",
+            "messageCs": "Tato věta má 27 slov a je moc dlouhá: „Model se naučil, jak vypadá jeden zdravý den provozu — přes 86 tisíc jednosekun…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[126,285]: Model se naučil, jak vypadá jeden zdravý den provozu — přes 86 tisíc jednosekundových úseků, tedy měření sekundu po sekundě po celý den (den má 86 400 sekund)."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 864,
+              "end": 866
+            },
+            "matchedText": "86",
+            "messageCs": "Číslo „86“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „86 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[864,866]: 86"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203647538",
+        "title": "An interpretable hydrodynamic intelligence framework for underwater species detection using biomimetic sensing and hybrid deep learning models",
+        "abstract": "Underwater marine organism detection is essential for biodiversity monitoring, ecological assessment, and autonomous ocean exploration; however, conventional vision-based systems often experience performance degradation in low-visibility and dynamic underwater environments. Existing studies primarily rely on image-based detection models and provide limited integration of hydrodynamic-inspired sensing mechanisms for intelligent species monitoring. To address these limitations, this study proposes a novel biomimetic hydrodynamic sensing framework inspired by the biological lateral line system of fish. The framework introduces a Hydrodynamic Signature Encoding Layer (HSEL) for structured feature representation and integrates ConvNeXt for feature extraction, TabNet for interpretable feature selection and classification, and K-Means clustering for exploratory pattern discovery. The model was implemented using Python with TensorFlow, PyTorch, Scikit-learn, and OpenCV. Experiments were conducted using the Oceanic Life Dataset containing 7,990 marine organism images and the UCI Yacht Hydrodynamics Dataset as auxiliary hydrodynamic information. Results demonstrated an accuracy of 97.23%, precision of 96.80%, recall of 97.10%, and F1-score of 97.00%, achieving a 0.49% accuracy improvement over the best baseline model (96.74%) and a 9.24% improvement over conventional CNN-based approaches. The findings indicate that the proposed framework provides an effective and scalable solution for intelligent marine organism monitoring, biodiversity assessment, and digital twin-enabled ecosystem observation.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1038/s41598-026-66915-1",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1038/s41598-026-66915-1",
+        "openAlexId": "W7203647538",
+        "subfield": {
+          "id": "subfields/2312",
+          "name": "Water Science and Technology"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T12697",
+          "name": "Water Quality Monitoring Technologies"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "C. Ishwarya",
+          "T. Sasipraba",
+          "Amit Kumar",
+          "S. Prakash"
+        ],
+        "venue": "Scientific Reports",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.775,
+          "everydayRelevance": 0,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.5943,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.25,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.25
+          },
+          "everydayDomains": [],
+          "subfieldKey": "subfields/2312",
+          "evidence": [
+            "total 0.5943 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.78 = P 0.81 − 0.45×t 0.00 − 0.15×j 0.25",
+            "outcome verbs (v 1.00): improvement, detection (title, ×2), enabled",
+            "recognisable subjects (s 0.25): fish",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.25): 5/200 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.00: touches none of the 16 everyday domains",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Scientific Reports",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1038/s41598-026-66915-1)"
+      },
+      "summary": {
+        "souhrn": "Rozpoznávat ryby a další mořské živočichy na fotkách z hlubin je těžké: voda kalí, světlo mizí a všechno se hýbe. Tým proto postavil počítačový program inspirovaný postranní čárou ryb — smyslovým pruhem podél těla, kterým ryba cítí proudění vody kolem sebe. Program spojuje několik nástrojů umělé inteligence: neuronovou síť (anglicky neural network), tedy program, který se sám učí z tisíců příkladů rozpoznávat tvary, a k tomu část, která umí ukázat, podle čeho se rozhodla. Na sadě necelých osmi tisíc snímků mořských organismů určil druh správně v 97,23 procenta případů, tedy zhruba u 97 snímků ze sta. Proti nejlepšímu srovnávanému programu je to zlepšení jen o půl procentního bodu — malý krok, ne skok.",
+        "podrobneVysvetleni": "Autoři poskládali systém z několika dílů, které si předávají práci. První vrstva, kterou nazvali Hydrodynamic Signature Encoding Layer, převádí údaje o proudění vody do uspořádané podoby, se kterou umí počítač pracovat. Následuje ConvNeXt, program na rozpoznávání tvarů v obrázcích. Pak přichází TabNet, který vybírá, které znaky byly pro rozhodnutí důležité — díky němu jde alespoň zčásti zjistit, proč program určil právě tento druh. Nakonec metoda zvaná K-Means třídí data do skupin podle podobnosti, aby se ukázaly vzorce, které nikdo předem nezadal. Testování proběhlo na veřejné sbírce Oceanic Life Dataset, která obsahuje 7 990 fotografií mořských organismů — tedy skoro osm tisíc snímků. Jako doplňkový zdroj údajů o pohybu ve vodě posloužila známá databáze měření odporu lodních trupů. Výsledky: přesnost 97,23 procenta (tedy asi 97 správných určení ze sta pokusů) a podobně vysoké hodnoty i u dalších ukazatelů, které sledují, jak často program druh přehlédne nebo naopak nahlásí planý poplach. Proti nejlepšímu porovnávanému programu si polepšil o 0,49 procentního bodu, tedy asi o jeden snímek ze dvou set. Proti běžnějším starším postupům je rozdíl větší, přes devět procentních bodů. Autoři z toho vyvozují, že podobný systém by mohl pomáhat při sledování mořské biodiverzity.",
+        "procJeToDulezite": "Sledování života v moři dnes stojí hodně lidské práce a kamery ve zkalené vodě selhávají; lepší automatické rozpoznávání druhů by ochráncům přírody usnadnilo měřit, jak se mořské ekosystémy mění.",
+        "poznamkaKOmezenim": "Jde o test na jedné sbírce fotografií, nikoli v reálném moři, náskok před nejlepším konkurenčním programem je velmi malý a údaje o proudění pocházejí z měření lodních trupů, ne od živých ryb."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 590,
+              "end": 592
+            },
+            "matchedText": "97",
+            "messageCs": "Číslo „97“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „97 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[590,592]: 97"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 258,
+              "end": 476
+            },
+            "matchedText": "Program spojuje několik nástrojů umělé inteligence: neuronovou síť (anglicky neural network), tedy program, který se sám učí z tisíců příkladů rozpoznávat tvary, a k tomu část, která umí ukázat, podle čeho se rozhodla.",
+            "messageCs": "Tato věta má 33 slov a je moc dlouhá: „Program spojuje několik nástrojů umělé inteligence: neuronovou síť (anglicky ne…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[258,476]: Program spojuje několik nástrojů umělé inteligence: neuronovou síť (anglicky neural network), tedy program, který se sám učí z tisíců příkladů rozpoznávat tvary, a k tomu část, která umí ukázat, podle čeho se rozhodla."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 96,
+              "end": 110
+            },
+            "matchedText": " Hydrodynamic ",
+            "messageCs": "Text opisuje původní název článku („ Hydrodynamic “). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[96,110]:  Hydrodynamic "
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_english_original:datova-sada",
+            "span": {
+              "start": 605,
+              "end": 612
+            },
+            "matchedText": "Dataset",
+            "messageCs": "U termínu „datová sada“ chybí při prvním použití anglický originál v závorce (např. „datová sada (dataset)“). Čtenář ten anglický výraz potká jinde (§2).",
+            "detail": "jargon:no_english_original:datova-sada @ podrobneVysvetleni[605,612]: Dataset"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=19.59",
+            "messageCs": "Věty jsou v průměru moc dlouhé (19,6 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=19.59"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 25 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-08-19T10:43:48.085Z",
+  "generatedOn": "2026-08-19",
+  "schemaVersion": 1
+}

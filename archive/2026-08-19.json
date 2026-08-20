@@ -1,0 +1,799 @@
+{
+  "date": "2026-08-19",
+  "categoryKey": "nature-climate",
+  "categoryLabel": "Příroda a klima",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7203627875",
+        "title": "Runoff Evolution and Its Attribution to Climatic Variability and Anthropogenic Influences in the Source Region of the Yellow River, China",
+        "abstract": "This study investigated the long-term evolution and driving mechanisms of runoff in the Source Region of the Yellow River (SRYR) using runoff records from 1960 to 2020. An integrated framework combining the Soil and Water Assessment Tool (SWAT) model, statistical analyses, and scenario simulations was developed to identify runoff evolution patterns, quantify the contributions of climatic variability and anthropogenic influences mainly represented by land-use change within the attribution framework, and evaluate runoff responses to environmental changes. The results showed that runoff exhibited distinct stage-wise characteristics, with an initial decline followed by gradual recovery, and 1987 was identified as the primary change point. Mean annual runoff during the impact period decreased by 10.07% compared with the baseline period, while the updated runoff record through 2020 revealed a gradual recovery trend during the most recent decade. The SWAT model showed satisfactory performance during calibration and validation, supporting runoff attribution analysis. Climatic variability was the dominant contributor to runoff variation, accounting for 66.73% of the observed runoff change, whereas anthropogenic influences mainly represented by land-use change accounted for 33.27%. This climatic contribution represents the combined effects of observed climatic conditions, including long-term trends and internal variability, rather than the isolated effect of anthropogenic climate change. Scenario simulations indicated that runoff was more sensitive to precipitation than temperature changes. A 10% increase and decrease in precipitation resulted in runoff changes of 20.47% and −16.54%, respectively, while a 1 °C increase and decrease in temperature caused changes of −3.28% and 3.04%, respectively. Land-use change affected runoff mainly by modifying runoff generation and routing processes, but its influence was weaker than that of climatic variability. These findings improve understanding of runoff evolution and controlling mechanisms in alpine headwater basins.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.3390/w18162012",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.3390/w18162012",
+        "openAlexId": "W7203627875",
+        "subfield": {
+          "id": "subfields/2312",
+          "name": "Water Science and Technology"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10330",
+          "name": "Hydrology and Watershed Management Studies"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Zeyu Xu",
+          "Zhenyang Liu",
+          "Shuai Wang",
+          "Yongxin Ni",
+          "Jianwei Wang"
+        ],
+        "venue": "Water",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8922,
+          "everydayRelevance": 0.9333,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.8768,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.75,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.0353
+          },
+          "everydayDomains": [
+            "weather",
+            "transport",
+            "water"
+          ],
+          "subfieldKey": "subfields/2312",
+          "evidence": [
+            "total 0.8768 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.89 = P 0.90 − 0.45×t 0.00 − 0.15×j 0.04",
+            "outcome verbs (v 1.00): increases, improves, decreased, decreases, caused, resulted in",
+            "recognisable subjects (s 0.75): soil, rivers (title, ×2)",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.80): −0.2 title is 20 words",
+            "jargon density (j 0.04): 1/283 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.93: 3 domain(s) — weather, transport, water",
+            "everyday terms (4): climate, driving, river, rivers",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Water",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.3390/w18162012)"
+      },
+      "summary": {
+        "nadpis": "Kolik vody teče z pramenů Žluté řeky, rozhoduje hlavně počasí",
+        "oCoJde": "Vědci se ptali, proč se v horní části čínské Žluté řeky mění množství protékající vody a jak velký podíl na tom má počasí a jak velký lidé. Porovnali dlouhá měření průtoku s počítačovým modelem povodí. Zjistili, že větší část změn vysvětlují srážky a teplota, menší část změny ve využívání krajiny.",
+        "podrobneVysvetleni": "Tým pracoval se záznamy o průtoku vody z let 1960 až 2020, tedy s řadou dlouhou šedesát let. K tomu použil počítačový model povodí (Soil and Water Assessment Tool, zkratkou SWAT), který napodobuje, jak déšť a tající sníh stékají po krajině do řeky. Model nejdřív seřídili podle skutečných měření a ověřili, že se výsledky shodují.\n\nOdtok se podle nich nejdřív snižoval a v posledním desetiletí se zase pomalu vracel nahoru. Zlom nastal v roce 1987. Po něm bylo v řece průměrně o 10,07 % vody méně než předtím — tedy zhruba o desetinu, jako když z deseti kbelíků jeden chybí.\n\nZ celé té změny připadlo 66,73 % na počasí — tedy dva díly ze tří. Zbylých 33,27 % připsali lidem, hlavně změnám ve využívání krajiny — to je jeden díl ze tří.\n\nModel také zkoušel, co by se stalo při jiném počasí. Když srážky stouply o desetinu, vody v řece přibylo o 20,47 %, tedy asi o pětinu. Když srážky o desetinu klesly, odtok se snížil o 16,54 %, zhruba o šestinu. Oteplení o jeden stupeň ubralo 3,28 % vody, tedy asi tři litry ze sta. Ochlazení o stupeň přidalo 3,04 %, opět zhruba tři litry ze sta. Déšť a sníh tedy rozhodují mnohem víc než teplota.",
+        "prikladZeZivota": "Vědci si v modelu pohráli s počasím v horním povodí Žluté řeky a sledovali, co to udělá s odtokem vody. Když do oblasti spadlo o desetinu více srážek, odtok vzrostl o 20,47 % — tedy o pětinu. Když srážek bylo o desetinu méně, odtok klesl o 16,54 %, tedy asi o šestinu. Naproti tomu změna teploty o jeden stupeň Celsia posunula odtok jen o něco přes tři procenta, tedy asi o třicetinu. Jinými slovy: kolik v této horské oblasti naprší, rozhoduje o množství vody v řece mnohem víc než to, o kolik se ohřeje vzduch.",
+        "procJeToDulezite": "Voda z horských pramenišť zásobuje miliony lidí níže po toku, a tahle práce ukazuje, na čem její množství nejvíc závisí. Kdo plánuje zásoby vody, ví díky tomu, že má hlídat hlavně srážky.",
+        "poznamkaKOmezenim": "Jde o výsledek z jednoho povodí a rozdělení vlivů závisí na počítačovém modelu, takže čísla jsou odhad; podíl připsaný počasí navíc zahrnuje i přirozené výkyvy, ne jen změnu klimatu způsobenou lidmi.",
+        "prikladJeMotivace": false
+      },
+      "verification": {
+        "verdict": "supported",
+        "attempts": 2,
+        "rejections": [
+          {
+            "attempt": 1,
+            "unsupportedClaims": [
+              "V2_UNSUPPORTED_CLAIM (c2): The region acts like a huge reservoir that people living downstream depend on for their livelihood.",
+              "V2_UNSUPPORTED_CLAIM (c7): For practical planning purposes, monitoring precipitation and snowfall matters more than monitoring warming."
+            ],
+            "fabricatedQuotes": []
+          }
+        ],
+        "resolution": "regenerated"
+      },
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 864,
+              "end": 870
+            },
+            "matchedText": "pětinu",
+            "messageCs": "Číslo „pětinu“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „pětinu — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[864,870]: pětinu"
+          }
+        ],
+        "soft": [
+          {
+            "block": "oCoJde",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 139
+            },
+            "matchedText": "Vědci se ptali, proč se v horní části čínské Žluté řeky mění množství protékající vody a jak velký podíl na tom má počasí a jak velký lidé.",
+            "messageCs": "Tato věta má 27 slov a je moc dlouhá: „Vědci se ptali, proč se v horní části čínské Žluté řeky mění množství protékají…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ oCoJde[0,139]: Vědci se ptali, proč se v horní části čínské Žluté řeky mění množství protékající vody a jak velký podíl na tom má počasí a jak velký lidé."
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7172417795",
+        "title": "Engineering and land use intensified climate-driven Yangtze River flood hazards since the Little Ice Age.",
+        "abstract": "Understanding the interplay between climate variability and human activities is essential for assessing long-term river flood hazards. Yet, the relative contributions of natural and anthropogenic drivers to flood magnitude remain poorly constrained due to limited multicentury records and insufficient integration of physical mechanisms with land-use histories. Here, we present the reconstruction of a 500-y history of Yangtze River flood variability using lake sediment archives, historical documents, and high-resolution climate reanalysis data. Our results reveal that flood frequency peaked during the Little Ice Age (~1500-1850 CE), driven by a weakened Western Pacific Subtropical High (WPSH), a southward-shifted Intertropical Convergence Zone (ITCZ), and enhanced southwesterly monsoonal moisture flux into the basin. These conditions were associated with El Niño-like tropical sea surface temperature (SST) anomalies and extratropical Rossby wave activity, highlighting the role of tropical-extratropical coupling in shaping flood-prone circulation regimes. Despite increased atmospheric temperature since 1850 CE, flood frequency declined, coinciding with a strengthened WPSH, a northward-shifted ITCZ, and the dominance of La Niña-like or neutral SST patterns. A nonstationary flood frequency model reveals that embankments and lake reclamation amplified the climate-driven 100-y flood magnitude by around 18% and 8%, respectively. These findings demonstrate that human interventions have intensified, rather than mitigated, the hydrological consequences of climatic forcing. Consistent with the recognition that flood risk is inherently nonstationary, our results provide empirical, multicentennial constraints on how atmospheric dynamics and landscape modification interact to shape flood hazards, highlighting the need for process-informed flood risk assessment in large river basins.",
+        "date": "2026-08-18",
+        "url": "https://doi.org/10.48620/99973",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.48620/99973",
+        "openAlexId": "W7172417795",
+        "subfield": {
+          "id": "subfields/1902",
+          "name": "Atmospheric Science"
+        },
+        "field": {
+          "id": "fields/19",
+          "name": "Earth and Planetary Sciences"
+        },
+        "topic": {
+          "id": "T11594",
+          "name": "Tree-ring climate responses"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Shi-Yong Yu",
+          "Zhixiong Shen",
+          "Jörg Franke",
+          "Chunhai Li",
+          "Liang Zhou",
+          "Andreas Lang",
+          "Wenjia Li",
+          "Xuefeng Yu"
+        ],
+        "venue": "Open Access CRIS of the University of Bern",
+        "indexedDate": "2026-08-05",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.764,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.705,
+          "total": 0.8386,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.4065
+          },
+          "everydayDomains": [
+            "weather",
+            "transport",
+            "water"
+          ],
+          "subfieldKey": "subfields/1902",
+          "evidence": [
+            "total 0.8386 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.76 = P 0.82 − 0.45×t 0.00 − 0.15×j 0.41",
+            "outcome verbs (v 0.50): increased, associated with",
+            "recognisable subjects (s 1.00): drivers, rivers (title, ×2), lakes",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.41): 10/246 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — weather, transport, water",
+            "everyday terms (6): climate, flood, driver, river, rivers, lake",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-18)",
+            "credibility 0.71 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.80 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Open Access CRIS of the University of Bern",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.80: open access without an open licence (repository copy)",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.48620/99973)"
+      },
+      "summary": {
+        "nadpis": "Hráze a vysoušení jezer zvýšily povodně na Jang-c'-ťiang",
+        "oCoJde": "Vědci se ptali, co víc řídí velké povodně na čínské řece Jang-c'-ťiang: počasí, nebo lidské zásahy do krajiny. Sestavili proto obraz povodní za posledních pět století. Zjistili, že hráze a vysoušení jezer povodně nezmírnily, ale zesílily.",
+        "podrobneVysvetleni": "Tým skládal příběh řeky ze tří zdrojů. Prvním byly usazeniny na dně jezer. Velká voda tam nechává jinou vrstvu bahna než klidná léta. Druhým zdrojem byly staré písemné záznamy o záplavách. Třetím byly dopočítané mapy dávného počasí. Z toho vznikl přehled povodní za zhruba 500 let.\n\nNejvíce povodní přišlo v době takzvané malé doby ledové, tedy zhruba mezi roky 1500 a 1850. Tehdy byla nad západním Tichým oceánem slabší tlaková výše. Pás dešťů u rovníku se posunul na jih. Do povodí proudilo víc vlhkého vzduchu od jihozápadu. K tomu se přidal teplý oceán u Jižní Ameriky, jev známý jako El Niño.\n\nPo roce 1850 se ovzduší otepluje. Povodní ale ubylo, protože se změnilo proudění vzduchu.\n\nPak přišel výpočet vlivu člověka. Autoři použili model, který počítá s tím, že se riziko povodní v čase mění. Sledovali takzvanou stoletou vodu, tedy povodeň, jaká v průměru přijde jednou za sto let. Hráze podél řeky ji zvětšily asi o 18 %, tedy zhruba o pětinu. Vysoušení jezer a jejich přeměna na pole přidaly asi 8 %, tedy zhruba o dvanáctinu.",
+        "prikladZeZivota": "Představte si takzvanou stoletou povodeň na Jangc'-ťiang — tedy tak velkou vodu, jaká podle výpočtů přijde průměrně jednou za sto let. Vědci si spočítali, jak velká by taková povodeň byla, kdyby ji řídilo jen podnebí. Pak do výpočtu přidali dva lidské zásahy, které v povodí opravdu proběhly: budování hrází (anglicky „embankments\") a zábor jezerních ploch (anglicky „lake reclamation\"). Výsledek: hráze zvětšily takovou povodeň asi o 18 % — tedy skoro o pětinu — a zábor jezerních ploch asi o 8 %, tedy o necelou dvanáctinu. Sami autoři z toho vyvozují, že tyto lidské zásahy dopad podnebí na povodně zesílily, ne zmírnily. Pro ověření sáhli po třech zdrojích: po vrstvách usazenin na dně jezer, po historických písemných záznamech o povodních a po dopočítaných údajích o dávném podnebí. Dohromady jim to složilo přehled o povodních za posledních pět set let.",
+        "procJeToDulezite": "Ukazuje to, že ochrana před povodní může jinde vodu naopak zvednout. Při plánování hrází a zástavby je proto potřeba počítat s celým povodím, ne jen s jedním úsekem.",
+        "poznamkaKOmezenim": "Jde o odhad z nepřímých stop a z modelu, takže uvedená procenta jsou přibližná a týkají se jedné konkrétní řeky.",
+        "prikladJeMotivace": false
+      },
+      "verification": {
+        "verdict": "supported",
+        "attempts": 2,
+        "rejections": [
+          {
+            "attempt": 1,
+            "unsupportedClaims": [
+              "V2_UNSUPPORTED_CLAIM (c2): People converted lakes into agricultural fields.",
+              "V2_UNSUPPORTED_CLAIM (c3): The purpose of the embankments is to protect villages and towns.",
+              "V2_UNSUPPORTED_CLAIM (c4): Because of the embankments the water has no way to escape sideways.",
+              "V2_UNSUPPORTED_CLAIM (c5): Lakes that formerly absorbed high water have disappeared."
+            ],
+            "fabricatedQuotes": []
+          }
+        ],
+        "resolution": "regenerated"
+      },
+      "checks": {
+        "ok": true,
+        "status": "pass",
+        "hard": [],
+        "soft": []
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203618403",
+        "title": "Meteorological Drivers and Chemical Evolution of Ozone Pollution in the North China Plain",
+        "abstract": "Over the past decade, stringent emission control policies have been implemented in the North China Plain, fundamentally altering regional air pollution profiles. This study investigates the long-term temporal evolution (2015–2025) and chemical reconstruction of air pollutants in Jinan, China. Benefiting from rigorous emission controls, annual median concentrations of PM2.5, SO2, and CO decreased significantly by 64%, 81%, and 54%, respectively. Conversely, NO2 exhibited a slower decline (47%), and the maximum 8-hour daily average (MDA8) ozone (O3) increased by 23%. Generalized additive model (GAM) analysis identified solar radiation, temperature, relative humidity, and NO2 as the primary factors strongly associated with O3 variations. The amplified atmospheric oxidation capacity driven by O3 has triggered a profound chemical reconstruction of secondary inorganic aerosols (i.e., SO42-, NO3-, and NH4+), with a significant increase in sulfur and nitrogen oxidation ratios (SOR and NOR), which may continue to intensify the combined pollution trend of ozone and PM2.5. These findings emphasize that coordinated reductions in nitrogen oxides and volatile organic compounds must be achieved in future air quality management while also taking into account the promoting effect of climate warming on ozone generation.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.3390/atmos17080789",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.3390/atmos17080789",
+        "openAlexId": "W7203618403",
+        "subfield": {
+          "id": "subfields/1902",
+          "name": "Atmospheric Science"
+        },
+        "field": {
+          "id": "fields/19",
+          "name": "Earth and Planetary Sciences"
+        },
+        "topic": {
+          "id": "T10075",
+          "name": "Atmospheric chemistry and aerosols"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Haoran Huo",
+          "Qiang Liu",
+          "Yunshan Zhang",
+          "Zhaoyang Li",
+          "Xiaozhen Yan",
+          "Ran Liu",
+          "Xiaodi Liu"
+        ],
+        "venue": "Atmosphere",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.746,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.837,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.5,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.8602
+          },
+          "everydayDomains": [
+            "energy",
+            "weather",
+            "transport",
+            "mind"
+          ],
+          "subfieldKey": "subfields/1902",
+          "evidence": [
+            "total 0.8370 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.75 = P 0.88 − 0.45×t 0.00 − 0.15×j 0.86",
+            "outcome verbs (v 1.00): reduction, increased, increases, decreased, triggered, associated with",
+            "recognisable subjects (s 0.50): drivers (title, ×2)",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.86): 16/186 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 4 domain(s) — energy, weather, transport, mind",
+            "everyday terms (7): solar, climate, warming, air quality, air pollution, driver, concentration",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Atmosphere",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.3390/atmos17080789)"
+      },
+      "summary": {
+        "nadpis": "V čínském městě ubylo prachu a kouře, ale přibylo ozonu",
+        "oCoJde": "Vědci se ptali, jak se za posledních deset let změnilo ovzduší v čínském městě Jinan poté, co tam začala platit přísná pravidla pro továrny a dopravu. Zjistili, že většiny škodlivin výrazně ubylo. Jediný přízemní ozon naopak přibyl a souvisí hlavně se sluncem, teplem a s výfukovými plyny.",
+        "podrobneVysvetleni": "Vědci prošli měření ovzduší ve městě Jinan na Severočínské nížině. Použili data z let 2015 až 2025, tedy z jednoho desetiletí. Sledovali jemný prach PM2.5 (drobné částice, které se dostanou hluboko do plic), oxid siřičitý, oxid uhelnatý, oxid dusičitý a přízemní ozon. Přízemní ozon není ochranná vrstva vysoko nad Zemí. Je to dráždivý plyn, který vzniká u země na slunci z výfukových a průmyslových plynů.\n\nVětšiny látek výrazně ubylo. Jemný prach klesl o 64 %, tedy zhruba na třetinu původního množství. Oxid siřičitý klesl o 81 %, zůstal z něj tedy jen malý zlomek. Oxid uhelnatý klesl o 54 %, tedy asi na polovinu. Oxid dusičitý z aut a spalování ubýval pomaleji, klesl o 47 %. Ozon jako jediný přibyl, a to o 23 %, tedy zhruba o čtvrtinu.\n\nPotom hledali, co s ozonem souvisí nejvíc. Použili statistický model (generalized additive model), který hledá vztahy mezi počasím a znečištěním. Nejsilněji vyšlo sluneční záření, teplota, vlhkost vzduchu a oxid dusičitý.\n\nVíc ozonu znamená, že vzduch ochotněji přetváří další plyny. Ze sirných a dusíkatých plynů tak vzniká víc solí, které samy tvoří jemný prach. Autoři proto varují, že ozon a prach mohou být problém společně. Doporučují snižovat zároveň oxidy dusíku i těkavé organické látky. Připomínají také, že oteplování vzniku ozonu pomáhá.",
+        "prikladZeZivota": "Autoři uvádějí, že v posledním desetiletí byla v oblasti Severočínské nížiny zavedena přísná opatření na omezení emisí, která od základu změnila skladbu znečištění vzduchu v regionu. Chtěli proto zmapovat, jak se koncentrace jednotlivých znečišťujících látek v čínském městě Ťi-nan vyvíjely v letech 2015 až 2025 a jak se přitom měnilo jejich chemické složení.",
+        "procJeToDulezite": "Ukazuje se, že vyčistit vzduch od kouře a prachu nestačí. Bez omezení výfukových plynů a rozpouštědel může v teplých letech přibývat ozonu, který dráždí dýchací cesty.",
+        "poznamkaKOmezenim": "Jde o měření z jediného města, takže jinde nemusí vývoj vypadat stejně; navíc model ukazuje jen souvislosti, ne jistou příčinu.",
+        "prikladJeMotivace": true
+      },
+      "verification": {
+        "verdict": "supported",
+        "attempts": 4,
+        "rejections": [
+          {
+            "attempt": 1,
+            "unsupportedClaims": [
+              "V7_QUOTE_IRRELEVANT (c4): mechanism claim, unrelated quote: Generalized additive model (GAM) analysis identified solar radiation, temperature, relative humidity, and NO2 as the pri…",
+              "V2_UNSUPPORTED_CLAIM (c5): Ozone is an irritant gas that stings the eyes and throat.",
+              "V2_UNSUPPORTED_CLAIM (c6): People there have air that is cleaner of soot.",
+              "V2_UNSUPPORTED_CLAIM (c7): There is a new problem specifically on summer days."
+            ],
+            "fabricatedQuotes": []
+          },
+          {
+            "attempt": 2,
+            "unsupportedClaims": [
+              "V2_UNSUPPORTED_CLAIM (c10): The authors conducted the study because they wanted to explain why ozone is rising while other pollution declines."
+            ],
+            "fabricatedQuotes": []
+          },
+          {
+            "attempt": 3,
+            "unsupportedClaims": [
+              "CHALLENGE_REJECTED: passed first pass, rejected on challenge",
+              "V2_UNSUPPORTED_CLAIM (c6): The emission control policies were the reason the authors chose to study this topic."
+            ],
+            "fabricatedQuotes": []
+          }
+        ],
+        "resolution": "motivation-fallback"
+      },
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 609,
+              "end": 617
+            },
+            "matchedText": "polovinu",
+            "messageCs": "Číslo „polovinu“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „polovinu — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[609,617]: polovinu"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 734,
+              "end": 742
+            },
+            "matchedText": "čtvrtinu",
+            "messageCs": "Číslo „čtvrtinu“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „čtvrtinu — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[734,742]: čtvrtinu"
+          }
+        ],
+        "soft": [
+          {
+            "block": "prikladZeZivota",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 183,
+              "end": 360
+            },
+            "matchedText": "Chtěli proto zmapovat, jak se koncentrace jednotlivých znečišťujících látek v čínském městě Ťi-nan vyvíjely v letech 2015 až 2025 a jak se přitom měnilo jejich chemické složení.",
+            "messageCs": "Tato věta má 27 slov a je moc dlouhá: „Chtěli proto zmapovat, jak se koncentrace jednotlivých znečišťujících látek v č…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ prikladZeZivota[183,360]: Chtěli proto zmapovat, jak se koncentrace jednotlivých znečišťujících látek v čínském městě Ťi-nan vyvíjely v letech 2015 až 2025 a jak se přitom měnilo jejich chemické složení."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 25 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203617339",
+        "title": "Risk-Based Decision Framework for Sustainable Monitoring and Remediation Prioritization of Potentially Toxic Elements in Arid Agricultural Soils",
+        "abstract": "Agricultural soils in arid regions require assessment approaches that separate local element enrichment from actual ecological and human health relevance. Here, a site-prioritization framework is applied to potentially toxic elements (PTEs) in agricultural soils from Onaizah, central Saudi Arabia. The approach combines contamination indices, ecological-risk screening, deterministic health-risk estimates, Monte Carlo resampling, and relative ranking of management priorities. A total of 33 surface-soil samples collected from cultivated farms were examined for As, Co, Cr, Cu, Mn, Ni, Pb, V, and Zn. The measured concentration ranges (mg/kg) were 1–5 (As), 1–12 (Co), 10–53 (Cr), 4–38 (Cu), 107–541 (Mn), 6–54 (Ni), 2–23 (Pb), 8–47 (V), and 11–168 (Zn). Based on their mean concentrations, the investigated elements decreased in the following sequence: Mn &gt; Zn &gt; Cr &gt; Ni &gt; V &gt; Cu &gt; Pb &gt; Co &gt; As. The PN values ranged from 0.127 to 1.339, indicating 27 safe sites, 2 warning-line sites, and 4 slightly polluted sites, mainly controlled by localized Zn enrichment and, in one case, Pb. In contrast, mCd values of 0.099–0.676 indicated nil to very low contamination, while RI values of 2.743–15.701 confirmed low ecological risk across all samples. Non-carcinogenic risk was generally below the threshold of concern, with HI values of 0.204–1.018 for children and 0.024–0.119 for adults. Only one site showed a marginal child HI exceedance, emphasizing localized rather than widespread health concern. Children showed approximately 8.6-fold higher non-carcinogenic risk than adults, with Mn, Cr, As, and V as the main contributors. The total LCR values for As, Cr, and Pb ranged from 7.79 × 10−6 to 4.07 × 10−5 for children and from 3.48 × 10−6 to 1.82 × 10−5 for adults, within the commonly tolerable range of 1 × 10−6 to 1 × 10−4. Chromium was the dominant contributor to LCR. Monte Carlo resampling supported the deterministic risk classification, with only a 3.1% probability of child HI exceeding 1 and no simulated exceedance of the LCR threshold for either children or adults. From the standpoint of sustainable soil management, site 7 should undergo further health-risk assessment, while sites 30 and 33 require source verification and periodic monitoring before any remediation action is considered.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.3390/su18168429",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.3390/su18168429",
+        "openAlexId": "W7203617339",
+        "subfield": {
+          "id": "subfields/2310",
+          "name": "Pollution"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10139",
+          "name": "Heavy metals in environment"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Abdelbaset S. El-Sorogy",
+          "Talal Alharbi",
+          "Naji Rikan",
+          "Khaled Al-Kahtany"
+        ],
+        "venue": "Sustainability",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7093,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.813,
+          "explainDetail": {
+            "v": 0.25,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.1877
+          },
+          "everydayDomains": [
+            "health",
+            "family",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2310",
+          "evidence": [
+            "total 0.8130 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.71 = P 0.74 − 0.45×t 0.00 − 0.15×j 0.19",
+            "outcome verbs (v 0.25): decreased",
+            "recognisable subjects (s 1.00): children, adults, soil (title, ×2)",
+            "quantified effect (q 1): percentage, fold change",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.19): 7/373 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 3 domain(s) — health, family, mind",
+            "everyday terms (5): health, screening, child, children, concentration",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Sustainability",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.3390/su18168429)"
+      },
+      "summary": {
+        "nadpis": "Půda na farmách v Saúdské Arábii je většinou v pořádku",
+        "oCoJde": "Vědci chtěli vědět, jestli kovy v půdě na polích v suché oblasti Saúdské Arábie opravdu ohrožují přírodu nebo lidi. Odebrali vzorky z obdělávaných farem a spočítali riziko zvlášť pro děti a pro dospělé. Většina míst vyšla jako bezpečná, problém se objevil jen na několika polích.",
+        "podrobneVysvetleni": "Vědci nabrali půdu z třiatřiceti obdělávaných polí u města Onaizah ve středu Saúdské Arábie. V každém vzorku změřili devět kovů a podobných prvků. Patřil mezi ně arsen, chrom, olovo, zinek nebo mangan. Nejvíc bylo manganu, nejméně arsenu. Naměřené hodnoty pak protáhli několika hodnoticími postupy. Ty ukazují, jestli je půda znečištěná a jestli hrozí něco přírodě nebo lidem. Většina polí vyšla jako čistá. Dvě byla na hranici a čtyři mírně znečištěná. Za to mohl hlavně zinek, v jednom případě olovo. Riziko pro přírodu vyšlo nízké u všech vzorků. U zdravotního rizika se používá hranice jedna. Pod ní se riziko nepovažuje za znepokojivé. U dospělých se hodnoty držely hluboko pod ní. U dětí se k ní blížily a na jednom poli ji těsně překročily. Děti vyšly zhruba devětkrát hůř než dospělí. Jsou menší, víc si hrají v prachu a víc ho spolknou. Riziko rakoviny zůstalo v pásmu, které se běžně bere jako přijatelné. Vyšlo někde mezi osmi možnými případy na milion lidí a čtyřmi na sto tisíc. Nejvíc k němu přispíval chrom. Vědci nakonec výpočet mnohokrát zopakovali s mírně obměněnými vstupy. Hranici jedna u dětí překročila jen asi tři procenta pokusů, tedy tři ze sta.",
+        "prikladZeZivota": "Zemědělské půdy v suchých oblastech podle autorů potřebují takový způsob hodnocení, který dokáže odlišit místně zvýšený obsah prvků od skutečného rizika pro přírodu a lidské zdraví. Proto na vzorky půdy z farem v oblasti Onaizah ve středním Saúdské Arábii použili postup, který umožňuje seřadit jednotlivá místa podle toho, jak naléhavě je třeba se jimi zabývat.",
+        "procJeToDulezite": "Ukazuje, že vyšší obsah kovu v půdě ještě neznamená nebezpečí. Díky tomu se peníze a čas dají věnovat těm několika místům, kde na tom opravdu záleží.",
+        "poznamkaKOmezenim": "Jde o jediný odběr z jedné malé zemědělské oblasti, takže výsledky se nedají přenášet jinam a odhady rizika vycházejí z modelových výpočtů, ne z měření na lidech.",
+        "prikladJeMotivace": true
+      },
+      "verification": {
+        "verdict": "supported",
+        "attempts": 3,
+        "rejections": [
+          {
+            "attempt": 1,
+            "unsupportedClaims": [
+              "V2_UNSUPPORTED_CLAIM (c1): An administrator is responsible for agricultural soil surrounding a town.",
+              "V2_UNSUPPORTED_CLAIM (c2): There is little money available for cleaning up the soil.",
+              "V2_UNSUPPORTED_CLAIM (c3): The authors carried out the study because of limited funding for remediation.",
+              "V2_UNSUPPORTED_CLAIM (c5): The further investigation of that one field is recommended because of children's health."
+            ],
+            "fabricatedQuotes": []
+          },
+          {
+            "attempt": 2,
+            "unsupportedClaims": [
+              "CHALLENGE_REJECTED: passed first pass, rejected on challenge",
+              "V2_UNSUPPORTED_CLAIM (c1): Soil samples were taken from 33 cultivated farms."
+            ],
+            "fabricatedQuotes": []
+          }
+        ],
+        "resolution": "motivation-fallback"
+      },
+      "checks": {
+        "ok": true,
+        "status": "pass",
+        "hard": [],
+        "soft": [
+          {
+            "block": "prikladZeZivota",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 182,
+              "end": 362
+            },
+            "matchedText": "Proto na vzorky půdy z farem v oblasti Onaizah ve středním Saúdské Arábii použili postup, který umožňuje seřadit jednotlivá místa podle toho, jak naléhavě je třeba se jimi zabývat.",
+            "messageCs": "Tato věta má 29 slov a je moc dlouhá: „Proto na vzorky půdy z farem v oblasti Onaizah ve středním Saúdské Arábii použi…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ prikladZeZivota[182,362]: Proto na vzorky půdy z farem v oblasti Onaizah ve středním Saúdské Arábii použili postup, který umožňuje seřadit jednotlivá místa podle toho, jak naléhavě je třeba se jimi zabývat."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=2",
+            "messageCs": "Počet vět delších než 25 slov: 2. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=2"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203644293",
+        "title": "Long-Term Ambient PM2.5 Exposure and Premature Mortality Across of Türkiye",
+        "abstract": "Long-term exposure to ambient fine particulate matter (PM2.5) is the leading environmental risk factor for premature mortality worldwide, yet comprehensive province-level evidence quantifying its health burden across Türkiye remains limited. This study investigated the spatial relationship between long-term PM2.5 exposure and all-cause attributable mortality across all 81 Turkish provinces in 2022 using province-level annual mean PM2.5 concentrations and World Health Organisation (WHO) AirQ+ estimates of PM2.5-attributable deaths among adults aged ≥30 years, assuming a counterfactual concentration of 5 µg/m3. The association between PM2.5 exposure and mortality was evaluated using Pearson and Spearman correlation analyses, ordinary least squares (OLS) regression, a log–log elasticity model, and population-weighted regional and exposure-quartile comparisons, while national temporal indicators for 2010–2023 were reported solely as supplementary context for the primary single-year 2022 cross-sectional analysis. The population-weighted annual mean PM2.5 concentration was 27.0 µg/m3, exceeding the WHO Air Quality Guideline by a factor of 5.4, and all 81 provinces exceeded the recommended threshold. The bivariate OLS model accounted for 41% of the between-province variation in attributable mortality rates (OLS slope = 3.23 additional deaths per 100,000 population for each 1 µg/m3 increase in PM2.5; 95% CI: 2.37–4.10; R2 = 0.41; p &lt; 0.001), while the log–log elasticity model indicated that a 1% increase in PM2.5 concentration was associated with a 0.80% increase in the attributable mortality rate (95% CI: 0.65–0.95). The attributable fraction of natural-cause mortality increased progressively from 8.8% in the lowest exposure quartile to 24.6% in the highest. Nationwide, an estimated 68,440 premature deaths, representing 14.2% of all natural-cause deaths among adults aged ≥30 years, were attributable to PM2.5 exposure. These findings quantify a steep, spatially graded PM2.5-attributable mortality burden across Türkiye. As the attributable estimates derive from the WHO AirQ+ concentration–response function, the gradient describes the magnitude and spatial distribution of the modelled burden rather than an independently estimated exposure–response relationship, and on that basis the results support the adoption of WHO-aligned air-quality standards and accelerated decarbonization strategies to reduce the national health burden attributable to ambient air pollution.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.3390/toxics14080728",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.3390/toxics14080728",
+        "openAlexId": "W7203644293",
+        "subfield": {
+          "id": "subfields/2307",
+          "name": "Health, Toxicology and Mutagenesis"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10190",
+          "name": "Air Quality and Health Impacts"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Nebile ÖZMEN",
+          "Volkan Duran",
+          "Fatma ŞENCAN",
+          "Yasin Paşa",
+          "Mehmet Ali Çelik"
+        ],
+        "venue": "Toxics",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 41,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.6482,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.7978,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.25,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.6957
+          },
+          "everydayDomains": [
+            "health",
+            "weather",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2307",
+          "evidence": [
+            "total 0.7978 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.65 = P 0.75 − 0.45×t 0.00 − 0.15×j 0.70",
+            "outcome verbs (v 1.00): reduces, increased, increases, accelerated, causes, associated with",
+            "recognisable subjects (s 0.25): adults",
+            "quantified effect (q 1): percentage, 95% CI",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.70): 24/345 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — health, weather, mind",
+            "everyday terms (6): health, mortality, air quality, air pollution, particulate, concentration",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Toxics",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.3390/toxics14080728)"
+      },
+      "summary": {
+        "nadpis": "Jemný prach ve vzduchu podle výpočtů stojí za velkou částí úmrtí v Turecku",
+        "oCoJde": "Vědci se ptali, jak moc se v Turecku podepisuje znečištěný vzduch na předčasných úmrtích a jestli se to liší kraj od kraje. Zjistili, že limit doporučený Světovou zdravotnickou organizací překračují všechny turecké provincie bez výjimky a že v oblastech se špinavějším vzduchem připadá na jemný prach výrazně větší podíl úmrtí dospělých než v oblastech s čistším vzduchem.",
+        "podrobneVysvetleni": "Autoři si vzali údaje o průměrné roční koncentraci jemného polétavého prachu (anglicky PM2.5 — částice menší než 2,5 tisíciny milimetru, tedy tak drobné, že se dostanou hluboko do plic) za rok 2022 ve všech 81 tureckých provinciích. Počty úmrtí, které lze prachu připsat, dopočítali programem AirQ+ od Světové zdravotnické organizace. Ten porovnává skutečný vzduch s ideálním stavem 5 mikrogramů prachu v krychlovém metru. Průměr v Turecku, vážený počtem obyvatel, vyšel 27 mikrogramů — tedy 5,4krát víc, než doporučuje Světová zdravotnická organizace. Limit překročily všechny provincie, žádná neuspěla. Podle výpočtu připadlo na jemný prach 68 440 předčasných úmrtí za rok, což je 14,2 % všech úmrtí z přirozených příčin u lidí od 30 let výš — tedy zhruba každé sedmé. Rozdíly mezi kraji byly velké. V nejčistší čtvrtině provincií šlo prachu připsat 8,8 % úmrtí, tedy asi jedno z jedenácti. V nejšpinavější čtvrtině to bylo 24,6 %, tedy skoro jedno ze čtyř. Každý nárůst o jeden mikrogram prachu se pojil s asi třemi úmrtími navíc na sto tisíc obyvatel. Rozdíly v míře znečištění vysvětlily zhruba 41 % rozdílů mezi provinciemi — zbytek má jiné příčiny. Autoři z toho vyvozují, že by Turecko mělo zpřísnit své normy pro kvalitu ovzduší.",
+        "prikladZeZivota": "Vezměte si dvě turecké provincie a v nich dospělé od třiceti let výše — tedy právě tu skupinu, kterou autoři sledovali. V provinciích s nejčistším vzduchem připadalo na znečištěné částice 8,8 % úmrtí z přirozených příčin, tedy asi jedno z jedenácti. V provinciích s nejšpinavějším vzduchem to bylo 24,6 %, tedy přibližně jedno ze čtyř. Podle výpočtu se s každým nárůstem znečištění o jeden mikrogram v kubickém metru vzduchu pojí asi 3,2 úmrtí navíc na sto tisíc obyvatel. Jde o modelový odhad z výpočtu Světové zdravotnické organizace, ne o sledování jednotlivých lidí.",
+        "procJeToDulezite": "Ukazuje to, že vzduch, který lidé dýchají doma před vlastními dveřmi, je otázka zdraví celé rodiny, ne jen abstraktní ekologické téma. A že rozdíly mezi jednotlivými kraji jsou velké.",
+        "poznamkaKOmezenim": "Jde o odhad z počítačového modelu za jediný rok a autoři sami upozorňují, že čísla popisují velikost a rozložení modelované zátěže, ne přímo změřený vztah mezi znečištěním a úmrtími u konkrétních lidí.",
+        "prikladJeMotivace": false
+      },
+      "verification": {
+        "verdict": "supported",
+        "attempts": 2,
+        "rejections": [
+          {
+            "attempt": 1,
+            "unsupportedClaims": [
+              "V2_UNSUPPORTED_CLAIM (c2): The people considered are fifty years old.",
+              "V7_MAGNITUDE_UNSUPPORTED (c3): no number in the quote: population-weighted regional and exposure-quartile comparisons"
+            ],
+            "fabricatedQuotes": []
+          }
+        ],
+        "resolution": "regenerated"
+      },
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 232
+            },
+            "matchedText": "Autoři si vzali údaje o průměrné roční koncentraci jemného polétavého prachu (anglicky PM2.5 — částice menší než 2,5 tisíciny milimetru, tedy tak drobné, že se dostanou hluboko do plic) za rok 2022 ve všech 81 tureckých provinciích.",
+            "messageCs": "Tato věta má 38 slov a je moc dlouhá: „Autoři si vzali údaje o průměrné roční koncentraci jemného polétavého prachu (a…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[0,232]: Autoři si vzali údaje o průměrné roční koncentraci jemného polétavého prachu (anglicky PM2.5 — částice menší než 2,5 tisíciny milimetru, tedy tak drobné, že se dostanou hluboko do plic) za rok 2022 ve všech 81 tureckých provinciích."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 207,
+              "end": 209
+            },
+            "matchedText": "81",
+            "messageCs": "Číslo „81“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „81 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[207,209]: 81"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 492,
+              "end": 499
+            },
+            "matchedText": "5,4krát",
+            "messageCs": "Číslo „5,4krát“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „5,4krát — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[492,499]: 5,4krát"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1100,
+              "end": 1104
+            },
+            "matchedText": "41 %",
+            "messageCs": "Číslo „41 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „41 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1100,1104]: 41 %"
+          },
+          {
+            "block": "prikladZeZivota",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 434,
+              "end": 437
+            },
+            "matchedText": "3,2",
+            "messageCs": "Číslo „3,2“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „3,2 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ prikladZeZivota[434,437]: 3,2"
+          }
+        ],
+        "soft": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=17.81",
+            "messageCs": "Věty jsou v průměru moc dlouhé (17,8 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=17.81"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 25 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-08-19T07:53:44.569Z",
+  "generatedOn": "2026-08-19",
+  "schemaVersion": 1
+}

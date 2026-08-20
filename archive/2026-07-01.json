@@ -1,0 +1,726 @@
+{
+  "date": "2026-07-01",
+  "categoryKey": "nature-climate",
+  "categoryLabel": "Příroda a klima",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7203647007",
+        "title": "Microclimate mediates the strength and direction of avian biotic interactions",
+        "abstract": "Theory predicts that the strength and direction of species interactions can shift from being competitive in benign environments toward being facilitative in stressful environments. However, the environmental context dependency of species interactions has rarely been tested in animal communities. We capitalized on a 15‐year, landscape‐scale dataset, collected annually in a relatively stable old‐growth forest environment, to test the long‐held hypothesis that the strength and direction of species interactions might be mediated by climatic conditions. It is generally accepted that competitive and facilitative interactions drive the distributions of many species, but are rarely included in climate envelope models, and may partly explain poor predictive performance of species distribution models in the face of climate change. Using multi‐species dynamic occupancy models applied to long‐term data, we tested whether annual settlement by bird species could affect either the persistence or settlement by other phylogenetically related species, and whether these interactions are mediated by microclimate. We found that species interactions were influenced by microclimate for a high proportion of species pairs (80%). Related species pairs more often showed settlement dynamics that were indicative of attraction rather than repulsion (55 versus 30%, respectively). In some cases, competitive interactions in colder microclimates flipped to become facilitative in warmer ones (15%) and vice versa (5%). Furthermore, species pairs that were closely related were more likely to exhibit competitive relationships along at least part of the microclimatic gradient. Our results highlight the importance of using long‐term data to incorporate competitive and facilitative interactions into species distribution models, and support the notion that the strength and direction of species interactions can be dependent on microclimatic conditions.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1002/ecog.08313",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1002/ecog.08313",
+        "openAlexId": "W7203647007",
+        "subfield": {
+          "id": "subfields/2302",
+          "name": "Ecological Modeling"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10895",
+          "name": "Species Distribution and Climate Change"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Sarah J. K. Frey",
+          "Brian D. Gerber",
+          "Adam S. Hadley",
+          "Hankyu Kim",
+          "Madison Sutton",
+          "Nina Ferrari",
+          "Matthew G. Betts"
+        ],
+        "venue": "Ecography",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 66,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.547,
+          "everydayRelevance": 0.3,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.5871,
+          "explainDetail": {
+            "v": 0.25,
+            "s": 0.5,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.0365
+          },
+          "everydayDomains": [
+            "weather"
+          ],
+          "subfieldKey": "subfields/2302",
+          "evidence": [
+            "total 0.5871 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.55 = P 0.55 − 0.45×t 0.00 − 0.15×j 0.04",
+            "outcome verbs (v 0.25): predicts",
+            "recognisable subjects (s 0.50): birds, forests",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.04): 1/274 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.30: 1 domain(s) — weather",
+            "everyday terms (1): climate",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Ecography",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1002/ecog.08313)"
+      },
+      "summary": {
+        "souhrn": "Ptáci si nekonkurují pořád stejně — záleží na tom, jak teplo je zrovna tam, kde hnízdí. Vědci prošli patnáct let každoroční sčítání ptáků ve starém, dlouho nerušeném lese a pomocí statistických modelů sledovali, jestli usazení jednoho druhu na daném místě pomáhá, nebo škodí příbuznému druhu. U 80 % zkoumaných dvojic druhů — tedy zhruba u čtyř z pěti — hrálo roli místní mikroklima, tedy teplota přímo v daném koutě lesa. Vzájemné přitahování bylo častější než vyhýbání: přitahovaly se zhruba tři dvojice z pěti (55 %), zatímco vyhýbání se objevilo asi u tří dvojic z deseti (30 %); a u každé sedmé dvojice (15 %) se vztah dokonce obrátil — v chladnějších místech si druhy konkurovaly, v teplejších si spíš pomáhaly. Pro předpovědi, jak ptáci zareagují na oteplování, to znamená, že počítat jen s teplotou a ignorovat sousedy nestačí.",
+        "podrobneVysvetleni": "Ekologové dlouho tvrdí, že v příznivém prostředí spolu druhy soupeří o zdroje, kdežto v drsných podmínkách si spíš pomáhají — jeden druhu druhému třeba zpřístupní úkryt nebo prozradí, kde je bezpečno. U rostlin se to testovalo mnohokrát, u živočichů málokdy. Autoři proto využili neobvykle dlouhou řadu dat: patnáct let každoročního mapování ptáků na rozsáhlém území starého lesa, jehož podoba se přitom výrazně neměnila. Použili takzvané dynamické modely obsazenosti (multi-species dynamic occupancy models) — statistický nástroj, který z opakovaných pozorování odhaduje, zda druh na dané místo přiletí a zda tam vydrží, i když ho pozorovatel pokaždé nezastihne. Ptáli se, jestli usazení jednoho druhu ovlivní příchod nebo setrvání jiného, příbuzného druhu, a jestli to závisí na mikroklimatu, tedy na teplotních poměrech konkrétního místa.\n\nMikroklima ovlivňovalo vztahy u 80 % dvojic, tedy asi u čtyř z pěti. Vzájemné přitahování převažovalo (55 % dvojic) nad vyhýbáním (30 %). U 15 % dvojic, zhruba u každé sedmé, se konkurence v chladu měnila v teple ve spolupráci, a u 5 % dvojic — tedy u jedné z dvaceti — to fungovalo přesně naopak. Blízce příbuzné druhy si přitom aspoň v části teplotního rozpětí konkurovaly častěji, což dává smysl: čím podobnější potřeby, tím větší tření.",
+        "procJeToDulezite": "Modely, které předpovídají, kam se druhy s oteplováním posunou, obvykle počítají jen s klimatem a sousední druhy ignorují — a právě to může být jeden z důvodů, proč jejich předpovědi často nesedí.",
+        "poznamkaKOmezenim": "Jde o pozorování z jediného typu prostředí, starého lesa, takže vypozorované vztahy jsou statistické souvislosti, ne prokázané příčiny, a nemusí platit jinde."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 423,
+              "end": 717
+            },
+            "matchedText": "Vzájemné přitahování bylo častější než vyhýbání: přitahovaly se zhruba tři dvojice z pěti (55 %), zatímco vyhýbání se objevilo asi u tří dvojic z deseti (30 %); a u každé sedmé dvojice (15 %) se vztah dokonce obrátil — v chladnějších místech si druhy konkurovaly, v teplejších si spíš pomáhaly.",
+            "messageCs": "Tato věta má 46 slov a je moc dlouhá: „Vzájemné přitahování bylo častější než vyhýbání: přitahovaly se zhruba tři dvoj…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[423,717]: Vzájemné přitahování bylo častější než vyhýbání: přitahovaly se zhruba tři dvojice z pěti (55 %), zatímco vyhýbání se objevilo asi u tří dvojic z deseti (30 %); a u každé sedmé dvojice (15 %) se vztah dokonce obrátil — v chladnějších místech si druhy konkurovaly, v teplejších si spíš pomáhaly."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=23.33",
+            "messageCs": "Věty jsou v průměru moc dlouhé (23,3 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=23.33"
+          }
+        ],
+        "soft": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 30 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=45.9",
+            "messageCs": "Text se celkově čte těžko (index 46 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=45.9"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203621582",
+        "title": "Development and validation of a humidified CAPS-PM <sub>SSA</sub> with an improved methodology to calculate the truncation correction factor",
+        "abstract": "Absorbing aerosols play an important role in the Earth’s radiation budget, and current uncertainties associated with their radiative impacts remain substantial. An element of this uncertainty derives from insufficient understanding of the extent to which water, as a coating on absorbing particles, enhances the absorption. Here, we describe and characterize the performance of a cavity-attenuated phase shift single scatter albedo spectrometer (CAPS-PMSSA) system that has been modified to enable concurrent aerosol extinction and scattering measurements, from which aerosol absorption is derived, at relative humidities up to ∼90%. The modified instrument is referred to as the humidified CAPS (HCAPS). Additionally, we develop and validate an update to a method to calculate the truncation correction factor, used to correct the scattering measurements, that can account for the effects of particle growth and compositional changes resulting from water uptake. The method can be applied to experiments that use either size-selected or polydisperse aerosol samples of either known or unknown composition. Overall, we show that measurements made with the HCAPS, when processed using the updated truncation correction method, enable accurate measurement of the influence of water uptake on light absorption.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1080/02786826.2026.2711663",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1080/02786826.2026.2711663",
+        "openAlexId": "W7203621582",
+        "subfield": {
+          "id": "subfields/2306",
+          "name": "Global and Planetary Change"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10347",
+          "name": "Atmospheric aerosols and clouds"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Rachael Dal Porto",
+          "Ningxin Wang",
+          "Christopher D. Cappa"
+        ],
+        "venue": "Aerosol Science and Technology",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 46,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7419,
+          "everydayRelevance": 0,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.5811,
+          "explainDetail": {
+            "v": 1,
+            "s": 0,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.0538
+          },
+          "everydayDomains": [],
+          "subfieldKey": "subfields/2306",
+          "evidence": [
+            "total 0.5811 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.74 = P 0.75 − 0.45×t 0.00 − 0.15×j 0.05",
+            "outcome verbs (v 1.00): improved (title, ×2), enables, associated with",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.05): 1/186 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.00: touches none of the 16 everyday domains",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Aerosol Science and Technology",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1080/02786826.2026.2711663)"
+      },
+      "summary": {
+        "souhrn": "Tmavé částice v ovzduší, hlavně saze, pohlcují sluneční světlo a ohřívají vzduch. Když na ně sedne voda, pohlcování se může ještě zesílit — a právě tohle se dodnes měří špatně. Vědci proto upravili přístroj CAPS-PMSSA tak, aby současně měřil pohlcené i rozptýlené světlo. Nová verze, zvaná HCAPS, zvládá i hodně vlhký vzduch: až kolem 90 procent relativní vlhkosti, tedy dusno jako v mlze. K tomu autoři vylepšili výpočet opravy měření, protože částice ve vlhku nabobtnají a mění složení.",
+        "podrobneVysvetleni": "Přístroj CAPS-PMSSA měří dvě věci najednou. Jednak útlum světla, které projde komorou se vzorkem vzduchu. Jednak světlo, které se od částic rozptýlí do stran. Rozdíl obou hodnot ukazuje, kolik světla částice skutečně pohltily. Původní přístroj ale pracuje se suchým vzduchem. Autoři ho doplnili o zvlhčování vzorku a ověřili, že měření drží až zhruba do 90 procent relativní vlhkosti. To je stav, kdy je vzduch skoro nasycený vodní parou. Upravenou sestavu nazvali HCAPS.\n\nDruhou částí práce je oprava výpočtu. Detektor rozptýleného světla nezachytí všechny směry, část paprsků mu unikne. Proto se k naměřené hodnotě přidává takzvaný korekční faktor oříznutí (truncation correction factor). Ten závisí na velikosti a složení částic. Jenže obojí se ve vlhku mění: voda částice zvětší a zároveň naředí jejich složení. Nový postup s tím počítá. Podle autorů ho lze použít i tehdy, když vzorek obsahuje částice různých velikostí nebo když jejich složení neznáme.\n\nVýsledkem tedy není nové číslo o oteplování. Je to nástroj a postup, jak takové číslo poctivě získat. Teprve s nimi jde v laboratoři změřit, o kolik vodní obal zesílí pohlcování světla u konkrétního typu částic.",
+        "procJeToDulezite": "Jak moc saze a další tmavé částice ohřívají ovzduší, patří k největším neznámým v klimatických modelech. Lepší měřicí technika je první krok k tomu, aby předpovědi počasí i klimatu stály na přesnějších datech.",
+        "poznamkaKOmezenim": "Jde o technickou práci o přístroji a metodě výpočtu, ověřenou v laboratorních podmínkách; sama o sobě nepřináší žádné nové odhady vlivu částic na klima."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "pass",
+        "hard": [],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 206,
+              "end": 214
+            },
+            "matchedText": " CAPS-PM",
+            "messageCs": "Text opisuje původní název článku („ CAPS-PM“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[206,214]:  CAPS-PM"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 8,
+              "end": 16
+            },
+            "matchedText": " CAPS-PM",
+            "messageCs": "Text opisuje původní název článku („ CAPS-PM“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[8,16]:  CAPS-PM"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203639209",
+        "title": "First Molecular Evidence of Hepatozoon spp. in the Mexican Black-Tailed Rattlesnake (Crotalus molossus nigrescens) from an Urban Ecological Reserve in Central Mexico",
+        "abstract": "Species of the genus Hepatozoon are among the most widespread haemogregarine parasites infecting reptiles; however, information regarding their occurrence in native snakes from Mexico remains scarce. This study investigated the molecular occurrence of Hepatozoon spp. in free-ranging Mexican black-tailed rattlesnakes (Crotalus molossus nigrescens) rescued within the Reserva Ecológica del Pedregal de San Ángel (REPSA), an urban protected area in central Mexico. Opportunistically sampled squirrels were also included to explore the occurrence of these parasites in sympatric mammals. Blood samples from 26 rattlesnakes, six Mexican gray squirrels (Sciurus aureogaster), and three rock squirrels (Otospermophilus variegatus) were screened by PCR targeting a partial fragment of the 18S rRNA gene. Hepatozoon spp. DNA was detected in six rattlesnakes (23.1%) and two Mexican gray squirrels (33.3%), whereas all rock squirrels tested negative. Phylogenetic analyses suggested the presence of two distinct Hepatozoon lineages: one showing phylogenetic affinity with Hepatozoon cf. ophiosauri, detected in all positive rattlesnakes and one squirrel, and another closely related to Hepatozoon griseisciuri, identified in a second squirrel. These findings represent the first molecular detection of Hepatozoon in C. molossus nigrescens, the first record of infection in S. aureogaster, and the first report of a H. griseisciuri-like lineage in Mexico. Although parasite identification was based exclusively on partial 18S rRNA gene sequences, this study expands current knowledge of Hepatozoon diversity in Mexican wildlife and provides important baseline information for future studies integrating molecular, morphological, and ecological approaches to better understand parasite diversity and transmission in protected urban ecosystems.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.3390/parasitologia6040049",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.3390/parasitologia6040049",
+        "openAlexId": "W7203639209",
+        "subfield": {
+          "id": "subfields/2303",
+          "name": "Ecology"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10815",
+          "name": "Parasite Biology and Host Interactions"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Guillermo Gil–Alarcón",
+          "José L. Bravo‐Ramos",
+          "Pablo Arenas",
+          "Omar Ovando-Márquez",
+          "Marlene Solís‐Cortés",
+          "Héctor M. Zazueta-Islas",
+          "Gerardo G. Ballados‐González",
+          "Ingeborg Becker",
+          "Yokomi N. Lozano-Sardaneta",
+          "Sokani Sánchez‐Montes"
+        ],
+        "venue": "Parasitologia",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 14,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.5198,
+          "everydayRelevance": 0.3,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.5762,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 0,
+            "q": 1,
+            "c": 0.5,
+            "t": 0,
+            "j": 0.2846
+          },
+          "everydayDomains": [
+            "health"
+          ],
+          "subfieldKey": "subfields/2303",
+          "evidence": [
+            "total 0.5762 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.52 = P 0.56 − 0.45×t 0.00 − 0.15×j 0.28",
+            "outcome verbs (v 0.75): detected, detection, protected",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.50): −0.3 no outcome verb or recognisable subject in the title; −0.2 title is 22 words",
+            "jargon density (j 0.28): 7/246 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.30: 1 domain(s) — health",
+            "everyday terms (1): infection",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Parasitologia",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.3390/parasitologia6040049)"
+      },
+      "summary": {
+        "souhrn": "V městské přírodní rezervaci ve středním Mexiku se vědci podívali chřestýšům do krve. Zajímal je Hepatozoon — jednobuněčný krevní parazit, který se u plazů vyskytuje běžně. Z 26 zachráněných chřestýšů mexických ho test hledající parazitovu DNA (PCR) našel u šesti, tedy u necelé čtvrtiny. Nakažené byly i dvě ze šesti veverek mexických; tři veverky skalní vyšly negativně. Porovnání genů ukázalo dvě různé linie parazita a jedna z nich se v Mexiku zjistila vůbec poprvé.",
+        "podrobneVysvetleni": "Hepatozoon je rod prvoků — jednobuněčných parazitů — kteří žijí v krvi plazů i savců. O tom, kteří mexičtí hadi je hostí, se ale ví málo.\n\nVědci proto odebrali krev zvířatům z Rezervace Pedregal de San Ángel (REPSA). Je to chráněné území uvnitř města ve středním Mexiku. Šlo o 26 chřestýšů mexických, které tam lidé odchytili a zachránili. Při té příležitosti přidali i devět veverek: šest veverek mexických a tři veverky skalní.\n\nVzorky prošly testem PCR. Ten v krvi hledá kousek parazitovy dědičné informace, konkrétně úsek genu 18S rRNA. Pozitivních bylo šest hadů z 26, tedy 23 procent. Z veverek mexických vyšly nakažené dvě ze šesti. Všechny tři veverky skalní byly negativní.\n\nNalezené úseky DNA pak vědci porovnali s databází známých sekvencí. Vyšly dvě odlišné linie. První se podobá druhu Hepatozoon cf. ophiosauri a měli ji všichni pozitivní hadi a jedna veverka. Druhá je blízká druhu Hepatozoon griseisciuri a našla se u druhé veverky.\n\nPro tento poddruh chřestýše jde o první takový nález. U veverky mexické rovněž a linie podobná H. griseisciuri se v Mexiku popsala poprvé. Práce ale nedokazuje, že si had a veverka parazita mezi sebou předávají.",
+        "procJeToDulezite": "Chráněná území uvnitř měst sdílejí lidé, domácí zvířata i divoká zvěř. Přehled o tom, jací parazité tam kolují, je první krok k tomu, aby šlo jejich šíření vůbec sledovat.",
+        "poznamkaKOmezenim": "Vzorek byl malý — 26 hadů a devět veverek — a parazity vědci určili jen podle jednoho krátkého úseku DNA, takže konkrétní druhy zůstávají nepotvrzené."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 277,
+              "end": 279
+            },
+            "matchedText": "26",
+            "messageCs": "Číslo „26“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „26 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[277,279]: 26"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 570,
+              "end": 572
+            },
+            "matchedText": "26",
+            "messageCs": "Číslo „26“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „26 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[570,572]: 26"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 579,
+              "end": 589
+            },
+            "matchedText": "23 procent",
+            "messageCs": "Číslo „23 procent“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „23 procent — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[579,589]: 23 procent"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 96,
+              "end": 108
+            },
+            "matchedText": " Hepatozoon ",
+            "messageCs": "Text opisuje původní název článku („ Hepatozoon “). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[96,108]:  Hepatozoon "
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 798,
+              "end": 810
+            },
+            "matchedText": " Hepatozoon ",
+            "messageCs": "Text opisuje původní název článku („ Hepatozoon “). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[798,810]:  Hepatozoon "
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 896,
+              "end": 908
+            },
+            "matchedText": " Hepatozoon ",
+            "messageCs": "Text opisuje původní název článku („ Hepatozoon “). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[896,908]:  Hepatozoon "
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203627073",
+        "title": "Research Contingency Planning",
+        "abstract": "&lt;p&gt;When early-career scientists first experience &amp;ldquo;things going wrong&amp;rdquo; during independent research, whether as undergraduate or graduate students, their confidence, resilience, and sense of competency as researchers can become undermined. These research roadblocks may delay progress and unnecessarily limit the scope of a project, or discourage students from continuing in research.&lt;/p&gt; &lt;p&gt;&lt;br /&gt; This activity is designed to normalize the reality that &amp;ldquo;things going wrong&amp;rdquo; is an inherent part of the research process while helping students proactively prepare for the eventuality of research roadblocks. Participants will identify potential research roadblocks, develop strategies to prevent common challenges, and create contingency plans for responding effectively and safely when problems do arise. Although this activity places a particular emphasis on ecological field research, the framework is broadly applicable to lab- and computer-based biological research.&lt;/p&gt; &lt;p&gt;Students will preemptively complete a research contingency plan for their own project outside of class and implement their plan throughout their first season of field research. Once the student completes the first 1-2 months of their independent research, they will revisit and update their research contingency plan. Once updated, students will prepare one slide in a shared presentation deck that addresses the following reflection prompts:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Reflect on something that went wrong last field season. In what ways could you have been more prepared to prevent that research roadblock from happening in the first place? How did you handle it when it happened and what would you do differently if the same thing happened again in the future?&amp;nbsp;&lt;/li&gt; &lt;li&gt;Share your most clever contingency plan with the group.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Each student will then give a brief 3&amp;ndash;5 minute presentation based on their reflection of creating a research contingency plan. Sharing these reflections with peers is an important component of the activity, as it allows students to learn from one another&amp;#39;s experiences, build collective wisdom, and recognize that overcoming challenges is an expected and valuable part of the research process.&lt;br /&gt; &amp;nbsp;&lt;/p&gt;",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.25334/sm8e-e782",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.25334/sm8e-e782",
+        "openAlexId": "W7203627073",
+        "subfield": {
+          "id": "subfields/2308",
+          "name": "Management, Monitoring, Policy and Law"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T13967",
+          "name": "Conservation, Ecology, Wildlife Education"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Bethany Ozolins"
+        ],
+        "venue": "QUBES",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.4361,
+          "everydayRelevance": 0.3333,
+          "freshness": 1,
+          "credibility": 0.705,
+          "total": 0.5465,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 0.5,
+            "q": 0,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.0263
+          },
+          "everydayDomains": [
+            "school"
+          ],
+          "subfieldKey": "subfields/2308",
+          "evidence": [
+            "total 0.5465 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.44 = P 0.44 − 0.45×t 0.00 − 0.15×j 0.03",
+            "outcome verbs (v 0.50): prevents, delays",
+            "recognisable subjects (s 0.50): participants, students",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.03): 1/380 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.33: 1 domain(s) — school",
+            "everyday terms (2): student, students",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.71 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.80 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in QUBES",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.80: open access without an open licence (repository copy)",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.25334/sm8e-e782)"
+      },
+      "summary": {
+        "souhrn": "Když se začínajícímu badateli poprvé něco pokazí, může to otřást jeho sebedůvěrou. Tahle výuková aktivita bere nezdary jako běžnou součást výzkumu a učí studenty počítat s nimi předem. Student si ještě před terénní sezónou sepíše plán pro případ potíží (research contingency plan). Vypíše možné překážky, promyslí prevenci a napíše, co dělat, když problém přesto nastane. Po prvních jednom až dvou měsících práce plán upraví a ve stručné prezentaci sdílí se spolužáky, co se pokazilo a jak si poradil.",
+        "podrobneVysvetleni": "Materiál vznikl jako hotový návod pro vyučující, ne jako experiment s měřením výsledků. Vychází z pozorování, které zná každý školitel. První samostatný výzkum bývá i prvním velkým setkáním s tím, že něco nevyjde. Vzorky se zkazí, přístroj se rozbije, cesta do terénu odpadne. Studenta to může zdržet, zbytečně zúžit téma, nebo ho od výzkumu úplně odradit. Postup aktivity je jednoduchý. Student ještě před začátkem práce, mimo výuku, sepíše svůj plán pro případ potíží. Nejdřív vyjmenuje možné překážky. Pak u každé napíše, jak jí předejít. Nakonec doplní, co udělá, když nastane — aby reakce byla rychlá a bezpečná. S tímhle plánem jde do své první terénní sezóny. Po prvních jednom až dvou měsících se k plánu vrátí a doplní do něj zkušenosti. Připraví jeden slide do společné prezentace a odpoví na dvě otázky. Co se pokazilo, dalo se tomu předejít a co by udělal příště jinak? A jaký je jeho nejchytřejší náhradní plán? Následuje krátká prezentace, tři až pět minut. Sdílení je tu podstatné. Studenti se učí ze zkušeností ostatních. Zároveň vidí, že problémy nejsou jejich osobní selhání, ale běžná součást vědecké práce. Autoři mysleli hlavně na ekologický výzkum v terénu. Stejný rámec ale podle nich funguje i v laboratoři nebo u počítače.",
+        "procJeToDulezite": "Nezdary u prvního vlastního projektu dokážou studenta od bádání odradit úplně. Tenhle postup s nimi počítá dopředu a učí, že plán B patří k práci stejně jako samotné měření.",
+        "poznamkaKOmezenim": "Jde o výukový materiál ze sbírky QUBES, ne o studii s měřenými výsledky — zdroj neuvádí žádná data o tom, zda aktivita studentům skutečně pomohla."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "pass",
+        "hard": [],
+        "soft": []
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203612156",
+        "title": "Redistribution of Cloud Weather States Across the Marine Cold-Air Outbreak Intensity Range in the Midlatitude North Atlantic",
+        "abstract": "Marine cold-air outbreaks (MCAOs) enhance air–sea exchange and are accompanied by substantial cloud-population reorganization over the North Atlantic. Previous satellite studies have documented MCAO-related cloud properties and International Satellite Cloud Climatology Project (ISCCP) weather-state distributions, but the continuous redistribution of the complete cloud population and its dependence on sampling scale remain less well quantified. We combine the merged H-series ISCCP (ISCCP-H) weather-state product with the ERA5 reanalysis over the North Atlantic sector of 35–50°N, 55–20°W during January–March and November–December of 2000–2009. Three complementary analytical strategies are used to examine scale-dependent cloud associations: intensity-binned analysis of positive-MCAO native ERA5 grid-point-days, domain-daily regressions, and ISCCP-H cell fixed-effect models. Across 1459 MCAO dates and 256,518 strict-ocean ISCCP-H cell-days, the combined frequency of shallow-cumulus-like and stratocumulus-like low-cloud weather states decreases systematically with MCAO intensity, with a domain-daily slope of −0.0562 K−1. Compensating regional increases occur mainly in the midlatitude-storm and middle-to-high-cloud weather states, while the deep convective and anvil state shows no robust increase. After cell and calendar-month climatological differences are removed, the low-cloud reduction persists, together with positive associations for the midlatitude-storm and optically thick middle-top weather states. Cirrus is positively associated with MCAO intensity at the regional scale but negatively associated within fixed cells, consistent with geographical composition contributing to its regional response. MCAO intensity is therefore more consistently associated with total low-cloud weather-state occupancy than with the internal composition of the low-cloud subset. The closed weather-state framework provides an observational benchmark for satellite and climate model evaluation.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.3390/rs18162774",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.3390/rs18162774",
+        "openAlexId": "W7203612156",
+        "subfield": {
+          "id": "subfields/2306",
+          "name": "Global and Planetary Change"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10029",
+          "name": "Climate variability and models"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Shang Wu",
+          "Zihang Wang",
+          "Yuzhi Jin"
+        ],
+        "venue": "Remote Sensing",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 32,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.3963,
+          "everydayRelevance": 0.3667,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.5455,
+          "explainDetail": {
+            "v": 1,
+            "s": 0,
+            "q": 0,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.625
+          },
+          "everydayDomains": [
+            "weather"
+          ],
+          "subfieldKey": "subfields/2306",
+          "evidence": [
+            "total 0.5455 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.40 = P 0.49 − 0.45×t 0.00 − 0.15×j 0.63",
+            "outcome verbs (v 1.00): reduction, increases, decreases, associated with",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.63): 16/256 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.37: 1 domain(s) — weather",
+            "everyday terms (3): weather, climate, storm",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Remote Sensing",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.3390/rs18162774)"
+      },
+      "summary": {
+        "souhrn": "Když v zimě proudí ledový vzduch z arktických oblastí nad teplý Atlantik, mění se nad hladinou celé „obsazení\" oblohy — a čeští i zahraniční meteorologové tomu říkají výron studeného vzduchu nad moře (marine cold-air outbreak, MCAO). Autoři propojili družicovou databázi typů oblačnosti ISCCP-H s daty z evropské meteorologické rekonstrukce ERA5 nad výsečí severního Atlantiku mezi 35. a 50. rovnoběžkou a podívali se na zimní měsíce let 2000 až 2009. Ukázalo se, že čím silnější výron, tím méně je na obloze nízké oblačnosti typu kupovité „vaty\" a souvislých plání slohové oblačnosti: na každý stupeň nárůstu intenzity ubude zhruba 5,6 procentního bodu jejich zastoupení. Místo nich přibývá oblačnosti spojené s frontálními cyklonami a oblaků se středně vysokou základnou, zatímco mohutná bouřková oblaka s kovadlinou nijak spolehlivě nepřibývají. Pro modeláře klimatu je to použitelné měřítko: model, který má tuhle přestavbu oblohy popsat správně, musí trefit hlavně celkové množství nízké oblačnosti, ne jen její vnitřní členění.",
+        "podrobneVysvetleni": "Vědci pracovali se dvěma zdroji dat. Prvním je ISCCP-H, dlouhodobá družicová databáze, která každý kus oblohy zařadí do jednoho z několika „počasových stavů\" — tedy typických sestav oblačnosti podle výšky a tloušťky mraků. Druhým je ERA5, podrobná počítačová rekonstrukce počasí, ze které spočítali sílu výronu studeného vzduchu. Sledovaná oblast ležela mezi 55. a 20. stupněm západní délky, v měsících listopad až březen let 2000–2009. Dohromady jde o 1459 dnů s výronem a 256 518 „buňkodnů\", tedy kombinací jednoho čtverce mapy a jednoho dne nad čistě mořským povrchem.\n\nAby vyloučili, že výsledek závisí jen na tom, jak hrubě se data sečtou, použili tři různé postupy: rozdělení jednotlivých bodů podle síly výronu, denní průměry přes celou oblast a model, který porovnává každý čtverec mapy sám se sebou. Pokles nízké oblačnosti vyšel ve všech třech případech, i po odečtení toho, že některá místa a některé měsíce mají prostě jiné počasí.\n\nZajímavý rozpor se objevil u řasovité oblačnosti (cirrus), tedy tenkých vysokých mraků: v součtu za celou oblast s výrony přibývá, ale při pohledu na jednotlivý čtverec mapy jich naopak ubývá. Podle autorů to znamená, že celkový nárůst není o mracích samotných, ale o tom, kde se výrony odehrávají.",
+        "procJeToDulezite": "Nízké mraky nad oceánem odrážejí sluneční záření zpátky do vesmíru, takže jejich úbytek při studených výronech patří mezi věci, které klimatické modely musí umět popsat správně. Tahle práce jim k tomu dává konkrétní čísla k porovnání.",
+        "poznamkaKOmezenim": "Jde o jednu výseč severního Atlantiku a jen o zimní měsíce deseti let, navíc autoři popisují statistické souvislosti — tedy co se s čím vyskytuje současně — nikoli prokázané příčiny."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 633,
+              "end": 648
+            },
+            "matchedText": "5,6 procentního",
+            "messageCs": "Číslo „5,6 procentního“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „5,6 procentního — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[633,648]: 5,6 procentního"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 573,
+              "end": 808
+            },
+            "matchedText": "Aby vyloučili, že výsledek závisí jen na tom, jak hrubě se data sečtou, použili tři různé postupy: rozdělení jednotlivých bodů podle síly výronu, denní průměry přes celou oblast a model, který porovnává každý čtverec mapy sám se sebou.",
+            "messageCs": "Tato věta má 38 slov a je moc dlouhá: „Aby vyloučili, že výsledek závisí jen na tom, jak hrubě se data sečtou, použili…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[573,808]: Aby vyloučili, že výsledek závisí jen na tom, jak hrubě se data sečtou, použili tři různé postupy: rozdělení jednotlivých bodů podle síly výronu, denní průměry přes celou oblast a model, který porovnává každý čtverec mapy sám se sebou."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=23.94",
+            "messageCs": "Věty jsou v průměru moc dlouhé (23,9 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=23.94"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=4",
+            "messageCs": "Počet vět delších než 30 slov: 4. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=4"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 63,
+              "end": 71
+            },
+            "matchedText": " Atlanti",
+            "messageCs": "Text opisuje původní název článku („ Atlanti“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[63,71]:  Atlanti"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 366,
+              "end": 374
+            },
+            "matchedText": " Atlanti",
+            "messageCs": "Text opisuje původní název článku („ Atlanti“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[366,374]:  Atlanti"
+          },
+          {
+            "block": "poznamkaKOmezenim",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 27,
+              "end": 35
+            },
+            "matchedText": " Atlanti",
+            "messageCs": "Text opisuje původní název článku („ Atlanti“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ poznamkaKOmezenim[27,35]:  Atlanti"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=44.6",
+            "messageCs": "Text se celkově čte těžko (index 45 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=44.6"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-08-19T15:40:46.525Z",
+  "generatedOn": "2026-08-19",
+  "schemaVersion": 1
+}

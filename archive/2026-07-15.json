@@ -1,0 +1,753 @@
+{
+  "date": "2026-07-15",
+  "categoryKey": "nature-climate",
+  "categoryLabel": "Příroda a klima",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7203605877",
+        "title": "The impact of work from home on urban expansion: a GIS simulation via an intelligent self-adapting multiscale agent-based model",
+        "abstract": "Urban land use is increasingly shaped by evolving work modalities, particularly the rise of Work from Home (WFH) arrangements. This study introduces a hybrid Artificial Neural Network – Agent-Based Modeling (ANN – ABM) framework to simulate urban expansion under differentiated work behaviors in the Roanoke Area, Virginia, USA. By integrating temporally stratified household behavior data with spatial predictors, the model captures how heterogeneity between WFH agents and Work on Site (WOS) agents influences land-transition probabilities. The simulation framework comprises four ANN classifiers trained on 2011–2019 data, generating land-use suitability surfaces, behavioral preference maps, and local adaptability scores. These were fused into a dynamic land-use change model calibrated to reflect zoning constraints and infrastructure access. Land Use Changeability Scores (LCS) were computed to prioritize high-probability transition cells, guiding annual allocation from 2019 to 2032. Results show that incorporating behavioral agents increased classification accuracy from 86.7% to 89.8%, particularly improving predictions of medium- and high-intensity development. Contrary to expectations, WFH prevalence had a limited effect on urban sprawl, with densification remaining dominant – reflecting persistently low WFH ratios observed in the 2011–2019 baseline data. Projected land transitions emphasize fringe intensification and infill development, with forest and open-space classes in decline. This research contributes to GIScience by enhancing land-use simulation accuracy through the integration of behavioral agents into an intelligent, GIS-based ANN – ABM framework. By incorporating spatial predictors, zoning constraints, and agent heterogeneity, it offers an interpretable and transferable method to simulate urban expansion patterns under emerging work modalities.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1080/10095020.2026.2710570",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1080/10095020.2026.2710570",
+        "openAlexId": "W7203605877",
+        "subfield": {
+          "id": "subfields/2306",
+          "name": "Global and Planetary Change"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10226",
+          "name": "Land Use and Ecosystem Services"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Heba Z. Nusair",
+          "Rasha Obeidat",
+          "Ihab Hijazi",
+          "C.L. Bohannon",
+          "Thomas W. Sanchez",
+          "Mintai Kim"
+        ],
+        "venue": "Geo-spatial Information Science",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 31,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.5746,
+          "everydayRelevance": 0.6333,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.6915,
+          "explainDetail": {
+            "v": 0.25,
+            "s": 1,
+            "q": 1,
+            "c": 0.4,
+            "t": 0,
+            "j": 0.2857
+          },
+          "everydayDomains": [
+            "work",
+            "housing"
+          ],
+          "subfieldKey": "subfields/2306",
+          "evidence": [
+            "total 0.6915 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.57 = P 0.62 − 0.45×t 0.00 − 0.15×j 0.29",
+            "outcome verbs (v 0.25): increased",
+            "recognisable subjects (s 1.00): households, forests, homes (title, ×2)",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.40): −0.4 method-word subtitle; −0.2 title is 19 words",
+            "jargon density (j 0.29): 7/245 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.63: 2 domain(s) — work, housing",
+            "everyday terms (3): work, home, homes",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Geo-spatial Information Science",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1080/10095020.2026.2710570)"
+      },
+      "summary": {
+        "souhrn": "Práce zkoumala, jak práce z domova mění růst města. Vědci vytvořili počítačový model pro oblast Roanoke ve Virginii v USA. Model spojil učící se programy s takzvanými agenty — to jsou umělé domácnosti v počítači, které se rozhodují, kde budou žít. Když autoři do modelu přidali rozdíl mezi domácnostmi pracujícími z domova a těmi, které jezdí na pracoviště, model předpovídal změny využití půdy o něco přesněji. Práce z domova ale růst města do šířky téměř neovlivnila. Hlavním trendem zůstalo zahušťování už zastavěných míst a dostavba na okrajích, zatímco lesy a volná plocha ubývaly.",
+        "podrobneVysvetleni": "Autoři sestavili čtyři učící se programy (neuronové sítě). Ty z map a údajů o domácnostech odvozovaly tři věci. Kde je území vhodné pro zástavbu. Kde by lidé s daným způsobem práce chtěli bydlet. A jak snadno se dané místo dokáže změnit. Programy se učily na datech z let 2011 až 2019. Výsledky pak model spojil do jedné mapy. Každé políčko mapy dostalo skóre, které říká, jak pravděpodobně se jeho využití změní. Model také bral v úvahu územní plán a přístup k silnicím a sítím. Na tomto základě rozděloval novou zástavbu rok po roce od 2019 do 2032.\n\nPřidání domácností s rozdílným chováním model zpřesnilo. Bez nich zařadil správně 86,7 % míst — tedy asi sedm míst z osmi. S nimi 89,8 %, což je přibližně devět míst z deseti. Zlepšení se nejvíc projevilo u hustěji zastavěných ploch.\n\nAutoři čekali, že práce z domova povede lidi dál od centra. To se ale nepotvrdilo. Důvod je prostý: v datech z let 2011 až 2019 pracovalo z domova jen málo lidí. Model proto ukazuje hlavně zahušťování okrajů a zastavování mezer ve městě. Lesů a otevřených ploch podle modelu ubývá. Metodu lze podle autorů použít i pro jiná města.",
+        "procJeToDulezite": "Města plánují novou zástavbu na mnoho let dopředu a taková rozhodnutí ovlivňují, kolik lesů a volné krajiny zůstane. Studie zároveň ukazuje, že rozšíření práce z domova samo o sobě podobu města nutně nezmění.",
+        "poznamkaKOmezenim": "Jde o počítačovou simulaci jediné oblasti v USA, navíc postavenou na datech z let 2011 až 2019, kdy z domova pracovalo jen málo lidí — na pozdější nárůst práce z domova tedy odpověď nedává."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:neuronova-sit",
+            "span": {
+              "start": 42,
+              "end": 56
+            },
+            "matchedText": "neuronové sítě",
+            "messageCs": "Termín „neuronová síť“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:neuronova-sit @ podrobneVysvetleni[42,56]: neuronové sítě"
+          }
+        ],
+        "soft": []
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203640978",
+        "title": "Direct Quantificationof CO2 DiffusionBehavior in Porous Media Using Raman Spectroscopy",
+        "abstract": "Abstract The diffusion behavior of CO2 in porous media is fundamental to geological carbon storage and enhanced oil recovery, yet its dynamic evolution remains inadequately resolved by conventional methods. This study presents a novel methodology combining Raman spectroscopy with high-pressure fixed-point sampling to directly quantify spatiotemporal CO2 concentration evolution during diffusion in porous media. Experiments were performed in kerosene-saturated systems of quartz sand and glass beads under simulated reservoir conditions (75 °C, 4 MPa). Variable diffusion coefficients were determined by fitting concentration profiles to Fick’s second law and compared with constant coefficients from pressure-decay experiments. Results reveal significant spatiotemporal heterogeneity: CO2 concentration declines sharply from the gas–liquid interface, while the diffusion coefficient decreases progressively with distance and time. The coefficient in 80–120 mesh quartz sand (∼10–8 m2/s) is two orders lower than in 5 mm glass beads (∼10–6 m2/s), underscoring the dominant influence of pore structure on mass transfer resistance (Figure 1). Diffusion front speed declines from 7.5 cm/d initially to 1.5 cm/d after 15 days, confirming that attenuation of the CO2 concentration gradient is the primary driving force. COMSOL simulations align with experimental results. System-averaged coefficients from Raman and pressure-decay methods agree within 5% error, validating accuracy. This work establishes Raman spectroscopy as a powerful tool for resolving CO2 diffusion dynamics in porous media. It provides critical insights for optimizing carbon capture, utilization, and storage (CCUS) applications in sandstone reservoirs and provides a methodological foundation applicable to a broad range of porous media.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1021/acs.energyfuels.6c02609",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1021/acs.energyfuels.6c02609",
+        "openAlexId": "W7203640978",
+        "subfield": {
+          "id": "subfields/2305",
+          "name": "Environmental Engineering"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T11302",
+          "name": "CO2 Sequestration and Geologic Interactions"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Renbao Zhao",
+          "Z. Liu",
+          "Mengfan Xu",
+          "Wenjun Ao",
+          "Jirui Zou",
+          "Xiang-an Yue"
+        ],
+        "venue": "Energy & Fuels",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 27,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.3917,
+          "everydayRelevance": 0.9,
+          "freshness": 1,
+          "credibility": 0.605,
+          "total": 0.6734,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 0,
+            "q": 1,
+            "c": 0.5,
+            "t": 0,
+            "j": 0.5556
+          },
+          "everydayDomains": [
+            "transport",
+            "work",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2305",
+          "evidence": [
+            "total 0.6734 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.39 = P 0.47 − 0.45×t 0.00 − 0.15×j 0.56",
+            "outcome verbs (v 0.50): lowers, decreases",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.50): −0.3 no outcome verb or recognisable subject in the title; −0.2 2 technical strings in the title",
+            "jargon density (j 0.56): 14/252 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.90: 3 domain(s) — transport, work, mind",
+            "everyday terms (3): driving, work, concentration",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.61 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Energy & Fuels",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1021/acs.energyfuels.6c02609)"
+      },
+      "summary": {
+        "souhrn": "Vědci změřili, jak rychle se plynný oxid uhličitý (CO2) rozpíná do kapaliny uvnitř drobných pórů v písku a mezi skleněnými kuličkami. Použili k tomu Ramanovu spektroskopii, tedy metodu, která podle rozptýleného světla laseru pozná, kolik dané látky je v malém vzorku. Odebírali vzorky v přesných místech a časech, a tak sledovali, jak koncentrace CO2 klesá se vzdáleností od hladiny. V jemném křemičitém písku se CO2 šířil asi stokrát pomaleji než mezi pětimilimetrovými skleněnými kuličkami. Postup se také zpomaloval v čase: na začátku čelo CO2 urazilo přibližně 7,5 centimetru za den, po patnácti dnech už jen 1,5 centimetru denně, tedy pětkrát méně.",
+        "podrobneVysvetleni": "Pokusy běžely v podmínkách, jaké panují hluboko pod zemí. Teplota byla 75 stupňů Celsia, tedy skoro jako horká voda z konvice, a tlak 4 megapascaly, což je asi čtyřicetkrát více než tlak vzduchu kolem nás. Nádoby vyplnili buď jemným křemičitým pískem, nebo skleněnými kuličkami o průměru 5 milimetrů, tedy velkými asi jako malý hrášek. Vše nasytili petrolejem, který zastupoval ropu v porézní hornině. Nad kapalinu pak pustili CO2 a v pravidelných odstupech odebírali vzorky z různých hloubek. Ramanova spektroskopie u každého vzorku určila, kolik CO2 obsahuje. Z těchto profilů vědci spočítali takzvaný difuzní koeficient. To je číslo, které říká, jak snadno se látka sama rozpíná do okolí. V jemném písku vyšel asi stokrát menší než mezi kuličkami. Drobné a klikaté pórové cesty tedy pohyb CO2 výrazně brzdí. Koeficient navíc klesal s rostoucí vzdáleností od hladiny i s časem. Hlavní hnací silou je totiž rozdíl v koncentraci, a ten se postupně vyrovnává. Rychlost postupu čela CO2 spadla z 7,5 na 1,5 centimetru za den, tedy na pětinu. Počítačový model v programu COMSOL dal podobné výsledky jako pokusy. Průměrné hodnoty z Ramanovy metody se shodly se starší tlakovou metodou s odchylkou do 5 procent, tedy do jedné dvacetiny hodnoty.",
+        "procJeToDulezite": "Ukládání oxidu uhličitého pod zem patří mezi hlavní návrhy, jak snížit jeho množství v atmosféře. Aby to fungovalo, je potřeba vědět, jak rychle se plyn v hornině skutečně šíří.",
+        "poznamkaKOmezenim": "Jde o laboratorní pokusy v uměle připravených nádobách s pískem, kuličkami a petrolejem, takže skutečná hornina hluboko pod zemí se může chovat jinak."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 565,
+              "end": 568
+            },
+            "matchedText": "7,5",
+            "messageCs": "Číslo „7,5“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „7,5 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[565,568]: 7,5"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 613,
+              "end": 616
+            },
+            "matchedText": "1,5",
+            "messageCs": "Číslo „1,5“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „1,5 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[613,616]: 1,5"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 994,
+              "end": 997
+            },
+            "matchedText": "7,5",
+            "messageCs": "Číslo „7,5“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „7,5 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[994,997]: 7,5"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1001,
+              "end": 1004
+            },
+            "matchedText": "1,5",
+            "messageCs": "Číslo „1,5“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „1,5 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1001,1004]: 1,5"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_english_original:spektroskopie",
+            "span": {
+              "start": 158,
+              "end": 171
+            },
+            "matchedText": "spektroskopii",
+            "messageCs": "U termínu „spektroskopie“ chybí při prvním použití anglický originál v závorce (např. „spektroskopie (spectroscopy)“). Čtenář ten anglický výraz potká jinde (§2).",
+            "detail": "jargon:no_english_original:spektroskopie @ souhrn[158,171]: spektroskopii"
+          },
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 493,
+              "end": 653
+            },
+            "matchedText": "Postup se také zpomaloval v čase: na začátku čelo CO2 urazilo přibližně 7,5 centimetru za den, po patnácti dnech už jen 1,5 centimetru denně, tedy pětkrát méně.",
+            "messageCs": "Tato věta má 29 slov a je moc dlouhá: „Postup se také zpomaloval v čase: na začátku čelo CO2 urazilo přibližně 7,5 cen…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[493,653]: Postup se také zpomaloval v čase: na začátku čelo CO2 urazilo přibližně 7,5 centimetru za den, po patnácti dnech už jen 1,5 centimetru denně, tedy pětkrát méně."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=2",
+            "messageCs": "Počet vět delších než 25 slov: 2. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=2"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203605354",
+        "title": "Techno-economic and environmental assessment of HFO, LNG, and ammonia under the red sea crisis and IMO carbon pricing: an OPEX-based multi-scenario analysis of Suez Canal and Cape of Good Hope routing",
+        "abstract": "Abstract The maritime shipping industry faces increasing pressure to decarbonise, with alternative fuels emerging as key pathways to reduce greenhouse gas emissions. This study develops an operational expenditure -based multi-scenario framework to evaluate the techno-economic and environmental performance of alternative marine fuels for a 15,000 TEU containership operating on the Rotterdam–Singapore route. The analysis compares Heavy Fuel Oil (HFO), Liquefied Natural Gas (LNG), and ammonia across Suez Canal (SC) and Cape of Good Hope (COGH) routing options under normal market conditions and Red Sea crisis conditions, incorporating fuel costs, tank-to-wake CO 2 emission costs, and SC transit tolls under alternative pricing and rebate schemes. The results demonstrate that the Red Sea crisis substantially increases total operating costs across all fuel pathways on the COGH route. Compared with normal market conditions, total operating costs increase by approximately 155% for HFO, 118% for LNG, and 58% for ammonia. While ammonia remains the highest-cost option in absolute terms, it exhibits the smallest relative cost escalation under crisis conditions, indicating greater resilience to fuel price and carbon cost shocks. LNG emerges as the most cost-competitive option across most scenarios, whereas HFO loses relative competitiveness due to its higher exposure to fuel and carbon costs. The diversion of vessels from the SC to the COGH increases voyage distance from 8288 to 11,755 nm, resulting in higher fuel consumption, emissions, and carbon costs. Consequently, CO 2 emissions increase from 4114 to 5,481 tons on the SC route to 5797–7723 tons on the COGH route, highlighting the critical influence of route choice on both environmental and economic performance. The findings further suggest that emerging IMO carbon pricing measures are likely to strengthen the competitiveness of low- and zero-emission fuels, particularly under conditions of geopolitical disruption. Overall, the study provides a comparative benchmark for evaluating alternative fuel pathways and routing strategies, contributing to the understanding of the interactions between maritime decarbonization, route selection, and geopolitical risk in global container shipping.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1186/s41072-026-00252-4",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1186/s41072-026-00252-4",
+        "openAlexId": "W7203605354",
+        "subfield": {
+          "id": "subfields/2305",
+          "name": "Environmental Engineering"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T12126",
+          "name": "Maritime Transport Emissions and Efficiency"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Samer Hassan Okasha"
+        ],
+        "venue": "Journal of Shipping and Trade",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.4475,
+          "everydayRelevance": 0.7,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.6593,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 0,
+            "q": 1,
+            "c": 0.5,
+            "t": 0,
+            "j": 0.1835
+          },
+          "everydayDomains": [
+            "energy",
+            "money"
+          ],
+          "subfieldKey": "subfields/2305",
+          "evidence": [
+            "total 0.6593 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.45 = P 0.47 − 0.45×t 0.00 − 0.15×j 0.18",
+            "outcome verbs (v 0.50): reduces, increases",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.50): −0.3 no outcome verb or recognisable subject in the title; −0.2 title is 31 words",
+            "jargon density (j 0.18): 6/327 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.70: 2 domain(s) — energy, money",
+            "everyday terms (5): fuel, price, prices, cost, costs",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Journal of Shipping and Trade",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1186/s41072-026-00252-4)"
+      },
+      "summary": {
+        "souhrn": "Vědci propočítali, kolik stojí provoz velké kontejnerové lodi na trase Rotterdam–Singapur. Porovnali tři palivа: těžký topný olej, zkapalněný zemní plyn (LNG) a amoniak. Sledovali dvě cesty: Suezským průplavem a okolo Afriky. Objíždění Afriky prodlouží cestu z 8 288 na 11 755 námořních mil, tedy asi o 40 procent. Emise oxidu uhličitého na jednu plavbu proto stoupnou z 4 114–5 481 tun na 5 797–7 723 tun. Náklady během krize v Rudém moři vyskočily u topného oleje asi o 155 procent, tedy více než dvaapůlkrát. U LNG stouply o 118 procent, tedy asi na dvojnásobek. U amoniaku jen o 58 procent, tedy zhruba o polovinu. Amoniak zůstává nejdražší, ale na otřesy reaguje nejméně.",
+        "podrobneVysvetleni": "Autoři postavili výpočet na provozních nákladech. To jsou peníze, které loď spotřebuje za plavbu: palivo, poplatky za vypuštěný oxid uhličitý a mýto za průjezd Suezským průplavem. Modelová loď unese 15 000 kontejnerů. Vědci pak spočítali několik variant. Jednou byl běžný stav trhu, jednou stav během krize v Rudém moři, kdy se lodě průplavu vyhýbaly. Ke každé variantě přiřadili tři paliva a dvě trasy.\n\nVýsledky ukazují dvě věci. První je cena. Nejvýhodnější byl ve většině scénářů zkapalněný zemní plyn (LNG). Těžký topný olej ztrácel výhodu, protože ho nejvíc zdražují jak cena paliva, tak platby za uhlík. Amoniak je stále nejdražší v absolutních číslech, ale jeho cena při krizi vyskočila nejméně. Nemá totiž uhlík, takže ho poplatky za emise netrápí.\n\nDruhá věc je trasa. Cesta okolo Afriky je delší, takže loď spálí víc paliva. Emise na plavbu jsou pak vyšší asi o třetinu až polovinu. Volba trasy tedy ovlivňuje jak peníze, tak dopad na klima.\n\nAutoři z toho vyvozují, že chystané poplatky za uhlík v lodní dopravě, které připravuje Mezinárodní námořní organizace (IMO), zlepší postavení paliv s nízkými nebo nulovými emisemi. Nejvíc právě v době, kdy se lodě musejí kvůli politickým konfliktům vyhýbat zkratkám.",
+        "procJeToDulezite": "Většina zboží v obchodech k nám dopluje lodí, takže ceny paliva a objížděk se nakonec objeví na cenovkách. Studie také ukazuje, že chystané poplatky za uhlík mohou změnit, jaké palivo se lodím vyplatí.",
+        "poznamkaKOmezenim": "Jde o modelový výpočet pro jednu loď a jednu trasu, ne o měření skutečných plaveb, takže výsledky závisí na zvolených cenách paliv a poplatků a mohou se při jiných předpokladech lišit."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 303,
+              "end": 313
+            },
+            "matchedText": "40 procent",
+            "messageCs": "Číslo „40 procent“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „40 procent — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[303,313]: 40 procent"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 199,
+              "end": 205
+            },
+            "matchedText": "15 000",
+            "messageCs": "Číslo „15 000“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „15 000 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[199,205]: 15 000"
+          }
+        ],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 954,
+              "end": 1135
+            },
+            "matchedText": "Autoři z toho vyvozují, že chystané poplatky za uhlík v lodní dopravě, které připravuje Mezinárodní námořní organizace (IMO), zlepší postavení paliv s nízkými nebo nulovými emisemi.",
+            "messageCs": "Tato věta má 26 slov a je moc dlouhá: „Autoři z toho vyvozují, že chystané poplatky za uhlík v lodní dopravě, které př…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[954,1135]: Autoři z toho vyvozují, že chystané poplatky za uhlík v lodní dopravě, které připravuje Mezinárodní námořní organizace (IMO), zlepší postavení paliv s nízkými nebo nulovými emisemi."
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203635569",
+        "title": "Near-Adjacent HeavyLanthanide Separation and SensingUsing Dimerizing Lanmodulins",
+        "abstract": "Abstract Protein-based recovery, detection, and separation of rare earth elements (REs) have accelerated since the discovery of the lanmodulin (LanM) proteins. While exceptional at total RE recovery, prior proteins, like most ligands, exhibited limited ability to differentiate REs, whether in detection or separations. Here we report two dimerizing LanMs (Al-LanM and Xan-LanM) that address these challenges. Uniquely among biomolecules, these proteins promote luminescence of up to six specific REs, enabling their use as biosensors to prospect for bacteria that accumulate the valuable heavy RE, terbium. The average adjacent-element separation factor (SF) for Al-LanM and structure-guided variants over the range of 11 REs, Nd–Lu, is 2.1, among the best for any ligand, protein or otherwise. By construction and immobilization of tandem dimers of Al-LanM competent to self-dimerize, we nearly double SF(Nd/Dy) relative to the immobilized monomer, establishing that protein dimerization amplifies RE discrimination. Leveraging this on-column dimerization behavior, we achieve separation of Y, Dy, Gd, Sm, and Nd from one another to &amp;gt;95% purities from a mixed-RE leachate derived from allanite ore, with just one pH step per element. In achieving robust protein-based separations with the simplest desorption scheme to date, our work highlights the many knobs biology uses to tune metal ion selectivity and introduces high-performance bioligands to identify heavy RE-accumulating organisms and to separate the most valuable REs, NdIII–LuIII.",
+        "date": "2026-08-18",
+        "url": "https://doi.org/10.1021/jacs.6c08525",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1021/jacs.6c08525",
+        "openAlexId": "W7203635569",
+        "subfield": {
+          "id": "subfields/1906",
+          "name": "Geochemistry and Petrology"
+        },
+        "field": {
+          "id": "fields/19",
+          "name": "Earth and Planetary Sciences"
+        },
+        "topic": {
+          "id": "T11740",
+          "name": "Geochemistry and Elemental Analysis"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Wonseok Choi",
+          "Xianxian Zhou",
+          "Ziye Dong",
+          "Fangchao Song",
+          "Jonathan J. Jung",
+          "Joseph A. Mattocks",
+          "Jennifer L. Chlebek",
+          "Patrick Diep",
+          "Andrew C. Johnson",
+          "Scott Crawford",
+          "Yongqin Jiao",
+          "Rick Honaker",
+          "Amie K. Boal",
+          "Dan Park",
+          "Joseph A. Cotruvo"
+        ],
+        "venue": "Journal of the American Chemical Society",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 81,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.4752,
+          "everydayRelevance": 0.6,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.6424,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 0,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.2655
+          },
+          "everydayDomains": [
+            "food",
+            "work"
+          ],
+          "subfieldKey": "subfields/1906",
+          "evidence": [
+            "total 0.6424 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.48 = P 0.52 − 0.45×t 0.00 − 0.15×j 0.27",
+            "outcome verbs (v 0.50): accelerated, detection",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.27): 6/226 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.60: 2 domain(s) — food, work",
+            "everyday terms (2): protein, work",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Journal of the American Chemical Society",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1021/jacs.6c08525)"
+      },
+      "summary": {
+        "souhrn": "Vzácné zeminy — kovy potřebné pro magnety v elektromotorech, větrných turbínách nebo displejích — se od sebe oddělují velmi obtížně, protože se chemicky chovají téměř stejně. Vědci popsali dvě bílkoviny z bakterií, tzv. lanmoduliny (lanmodulin), které tyto kovy vážou, a navíc se ve dvojicích spojují do párů. Právě to párování zlepšuje jejich schopnost rozeznat jeden kov od druhého: u sloupcové separace se rozlišení dvojice neodym/dysprosium téměř zdvojnásobilo. Z výluhu skutečné rudy tak dokázali oddělit pět kovů (yttrium, dysprosium, gadolinium, samarium, neodym) s čistotou nad 95 %, a to jen jedním krokem změny kyselosti na každý prvek. Bílkoviny také rozsvítí až šest konkrétních vzácných zemin, takže mohou fungovat jako jednoduché čidlo, kterým lze hledat bakterie hromadící cenné terbium.",
+        "podrobneVysvetleni": "Vzácné zeminy je skupina asi patnácti kovů, které se chovají téměř identicky. Průmyslové oddělování proto dnes vyžaduje stovky opakovaných kroků s organickými rozpouštědly. Vědci sáhli po jiné cestě: po bílkovinách, které si příroda vyvinula pro vazbu právě těchto kovů. Popsali dvě nové varianty (Al-LanM a Xan-LanM), jež se navzájem spojují do dvojic. Schopnost rozlišit dva sousední prvky se udává jako separační faktor — číslo 1 znamená žádné rozlišení, vyšší číslo lepší. Průměrná hodnota pro jedenáct kovů od neodymu po lutecium vyšla 2,1, tedy jeden z dvojice se váže přibližně dvakrát ochotněji než jeho soused. To patří mezi nejlepší dosud popsané výsledky u jakékoli vazebné látky. Když bílkovinu navázali na nosič v sloupci a nechali ji spojovat se do párů, rozlišení dvojice neodym/dysprosium se téměř zdvojnásobilo — párování tedy rozdíly zesiluje. Na výluhu z rudy allanitu pak oddělili pět kovů s čistotou nad 95 %; každý se uvolnil při jiné kyselosti roztoku, vždy jediným krokem. Druhé zjištění se týká světla: bílkoviny umí rozsvítit až šest konkrétních vzácných zemin. Díky tomu je lze použít jako čidlo a hledat bakterie, které hromadí terbium, jeden z nejcennějších kovů této skupiny.",
+        "procJeToDulezite": "Vzácné zeminy potřebujeme na motory elektromobilů, větrné turbíny i telefony a jejich současné oddělování je energeticky náročné a znečišťující. Postup s bílkovinami by ho mohl zjednodušit a udělat šetrnějším.",
+        "poznamkaKOmezenim": "Jde o laboratorní práci s malým množstvím materiálu; jak dobře postup obstojí v průmyslovém měřítku, s velkými objemy a opakovaným používáním bílkovin, práce neukazuje."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 925,
+              "end": 929
+            },
+            "matchedText": "95 %",
+            "messageCs": "Číslo „95 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „95 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[925,929]: 95 %"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 219,
+              "end": 230
+            },
+            "matchedText": " lanmodulin",
+            "messageCs": "Text opisuje původní název článku („ lanmodulin“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[219,230]:  lanmodulin"
+          },
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 466,
+              "end": 646
+            },
+            "matchedText": "Z výluhu skutečné rudy tak dokázali oddělit pět kovů (yttrium, dysprosium, gadolinium, samarium, neodym) s čistotou nad 95 %, a to jen jedním krokem změny kyselosti na každý prvek.",
+            "messageCs": "Tato věta má 28 slov a je moc dlouhá: „Z výluhu skutečné rudy tak dokázali oddělit pět kovů (yttrium, dysprosium, gado…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[466,646]: Z výluhu skutečné rudy tak dokázali oddělit pět kovů (yttrium, dysprosium, gadolinium, samarium, neodym) s čistotou nad 95 %, a to jen jedním krokem změny kyselosti na každý prvek."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=18.28",
+            "messageCs": "Věty jsou v průměru moc dlouhé (18,3 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=18.28"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203618260",
+        "title": "Community-based mangrove ecotourism governance at cross-roads: Applying policy arrangement analysis in Balikpapan, Indonesia",
+        "abstract": "Mangrove ecosystems provide essential services that support community well-being, yet they face increasing pressures from urbanisation and land conversion in developing countries, where policy implementation is often criticized for limited local inclusion. To examine gaps between national policy intentions and community perspective, this study conducts empirical analysis in Balikpapan, Indonesia, a strategic area serving as a gateway to the new capital. Using a mixed-methods case study design, we assess alignment between formal policy arrangements for mangrove ecotourism and community perspective through analysis of national, provincial, and city-level policy documents, 28 stakeholder interviews, and 100 community surveys across five coastal sites. Data were examined using the Policy Arrangement Approach (PAA), encompassing four dimensions of discourses, actors, rules, and resources, complemented by Analytic Hierarchy Process (AHP) to quantify community activity preferences. We applied the triangulation method and evaluated against five principles in community-based ecotourism (CBET): environmental conservation, cultural preservation, community participation, economic benefits, and empowerment. Findings reveal substantial disconnects: 80% of residents reported receiving no economic benefits; the policy's eco-cultural narrative lacked grounding in local cultural practices; governance preferences were fragmented (39% favouring local government and 37% favouring local communities); and conservation rules restrict the infrastructure development required by local tourism objectives. These misalignments indicate that rigid, uniform policy arrangements remain ineffective. Policy implications include establishing transparent mechanisms for Corporate Social Responsibility (CSR) fund management, differentiating participation models according to community capacity, and resolving regulatory inconsistencies across agencies to reduce operational bottlenecks.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1016/j.ocecoaman.2026.108339",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1016/j.ocecoaman.2026.108339",
+        "openAlexId": "W7203618260",
+        "subfield": {
+          "id": "subfields/2308",
+          "name": "Management, Monitoring, Policy and Law"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T12414",
+          "name": "Coastal and Marine Management"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Rizky Arif Nugroho",
+          "Ryo Kohsaka"
+        ],
+        "venue": "Ocean & Coastal Management",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 40,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.6375,
+          "everydayRelevance": 0.3,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.6233,
+          "explainDetail": {
+            "v": 0.25,
+            "s": 0.75,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.25
+          },
+          "everydayDomains": [
+            "mind"
+          ],
+          "subfieldKey": "subfields/2308",
+          "evidence": [
+            "total 0.6233 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.64 = P 0.68 − 0.45×t 0.00 − 0.15×j 0.25",
+            "outcome verbs (v 0.25): reduces",
+            "recognisable subjects (s 0.75): residents, roads (title, ×2)",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.25): 6/240 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.30: 1 domain(s) — mind",
+            "everyday terms (1): well-being",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Ocean & Coastal Management",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1016/j.ocecoaman.2026.108339)"
+      },
+      "summary": {
+        "souhrn": "V indonéském Balikpapanu vědci porovnali, co o turistice v mangrovových lesích slibují úřední dokumenty, a co z toho reálně mají místní lidé. Prostudovali předpisy státu, provincie i města, mluvili se zástupci úřadů a firem a obešli pět pobřežních míst s dotazníky. Osmdesát procent dotázaných obyvatel — tedy čtyři z pěti — uvedlo, že z turistiky nemají žádný finanční příjem. Názory na to, kdo má mangrovy spravovat, se rozdělily: 39 % lidí, tedy necelé dvě pětiny, dalo přednost městské správě, zatímco 37 %, tedy o něco méně než dvě pětiny, chtělo správu v rukou samotné komunity. Autoři dodávají, že ochranářské předpisy zároveň blokují stavby, které by turistika potřebovala, takže jednotná pravidla nastavená „shora\" tu nefungují.",
+        "podrobneVysvetleni": "Mangrovy jsou pobřežní lesy, které rostou v mělké slané vodě. Chrání břeh, slouží jako útočiště rybám a lidé z nich žijí. V Indonésii jich ale ubývá, jak se rozšiřují města. Balikpapan je navíc vstupní bránou k nově budovanému hlavnímu městu, takže tlak na jeho pobřeží roste.\n\nVědci zvolili kombinaci metod. Přečetli úřední dokumenty na třech úrovních: stát, provincie, město. Pak vedli osmadvacet rozhovorů se zapojenými lidmi — úředníky, firmami, průvodci. K tomu vyplnilo dotazník sto obyvatel z pěti pobřežních míst. Odpovědi porovnávali se čtyřmi otázkami: jaké příběhy o mangrovech úřady vyprávějí, kdo o nich rozhoduje, jaká platí pravidla a kdo má peníze. Nakonec vše přeměřili podle pěti zásad turistiky vedené místními lidmi: ochrana přírody, zachování kultury, účast obyvatel, ekonomický přínos a posílení jejich vlivu.\n\nVýsledek ukazuje na několik trhlin. Peníze z turistiky se k obyvatelům nedostávají. Dokumenty mluví o „ekologicko-kulturní\" turistice, ale na skutečné místní zvyky se neopírají. Lidé se navíc neshodnou, kdo má rozhodovat. A předpisy různých úřadů si odporují, což brzdí běžný provoz.\n\nAutoři proto navrhují tři věci. Průhledně spravovat peníze, které firmy dávají na veřejně prospěšné účely. Zapojovat komunity podle toho, co která zvládne. A sladit pravidla mezi úřady.",
+        "procJeToDulezite": "Ochrana přírody funguje dlouhodobě jen tehdy, když z ní mají prospěch i lidé, kteří u ní žijí. Studie na konkrétním příkladu ukazuje, jak snadno se dobrý plán rozejde se skutečností.",
+        "poznamkaKOmezenim": "Jde o jednu lokalitu a poměrně malý vzorek — sto dotázaných obyvatel a necelá třicítka rozhovorů — takže výsledky nelze bez dalšího ověření přenášet na jiná místa."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "warn",
+        "hard": [],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 12,
+              "end": 23
+            },
+            "matchedText": " Balikpapan",
+            "messageCs": "Text opisuje původní název článku („ Balikpapan“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[12,23]:  Balikpapan"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 58,
+              "end": 66
+            },
+            "matchedText": " mangrov",
+            "messageCs": "Text opisuje původní název článku („ mangrov“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[58,66]:  mangrov"
+          },
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 378,
+              "end": 584
+            },
+            "matchedText": "Názory na to, kdo má mangrovy spravovat, se rozdělily: 39 % lidí, tedy necelé dvě pětiny, dalo přednost městské správě, zatímco 37 %, tedy o něco méně než dvě pětiny, chtělo správu v rukou samotné komunity.",
+            "messageCs": "Tato věta má 34 slov a je moc dlouhá: „Názory na to, kdo má mangrovy spravovat, se rozdělily: 39 % lidí, tedy necelé d…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[378,584]: Názory na to, kdo má mangrovy spravovat, se rozdělily: 39 % lidí, tedy necelé dvě pětiny, dalo přednost městské správě, zatímco 37 %, tedy o něco méně než dvě pětiny, chtělo správu v rukou samotné komunity."
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 398,
+              "end": 406
+            },
+            "matchedText": " mangrov",
+            "messageCs": "Text opisuje původní název článku („ mangrov“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[398,406]:  mangrov"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 173,
+              "end": 184
+            },
+            "matchedText": " Balikpapan",
+            "messageCs": "Text opisuje původní název článku („ Balikpapan“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[173,184]:  Balikpapan"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 577,
+              "end": 586
+            },
+            "matchedText": " mangrove",
+            "messageCs": "Text opisuje původní název článku („ mangrove“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[577,586]:  mangrove"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-08-19T10:29:02.839Z",
+  "generatedOn": "2026-08-19",
+  "schemaVersion": 1
+}

@@ -1,0 +1,894 @@
+{
+  "date": "2026-08-05",
+  "categoryKey": "nature-climate",
+  "categoryLabel": "Příroda a klima",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7203595671",
+        "title": "Burned Area Evidence for Process-Sensitive Post-Fire Hydrogeomorphic Monitoring Across Mediterranean and Iberian–Atlantic Regions",
+        "abstract": "In operational terms, post-fire landscapes require monitoring priorities that reflect hydrogeomorphic susceptibility rather than burned extent alone. This study tests whether European Forest Fire Information System (EFFIS) burned area evidence, combined with open terrain, rainfall, drainage, soil, land cover, and settlement context data, can be translated into source-to-output traceable monitoring priority units across Mediterranean and Iberian–Atlantic regions. The backbone integrates Decision-Making Trial and Evaluation Laboratory (DEMATEL) driver structuring, cell criticality score (CCS) screening from the CCS-V0 conventional weighted linear GIS baseline to CCS-V5 staged refinement, upper-quartile (Q75) hotspot topology, multi-criteria decision analysis/cost penalty (MCDA/COST-PEN) ranking, and quadratic unconstrained binary optimization (QUBO)-ready selected/reserve organization. Across Vesuvius–Campania, Attica, Cyprus, Portugal, and Spain, the screening outputs show procedural portability without implying geomorphological equivalence, field-confirmed hydrogeomorphic damage, or cross-theater hazard comparability: hotspot geometry, dominance, fragmentation, and candidate composition remain theater-dependent. In Vesuvius–Campania, CCS-V1 rainfall conditioning reduced Q75 hotspot clusters from 58 to 18 and increased the dominant cluster ratio from 23.1% to 63.07%; in Portugal, CCS-V5 contracted hotspot support from 17,240 to 862 cells while increasing dominance to 66.13%. The final QUBO-ready layer retained 11 of 32 candidate units. The contribution links (i) EFFIS/Moderate-Resolution Imaging Spectroradiometer (MODIS) source sector traceability and valid support construction, (ii) DEMATEL-informed CCS refinement and hotspot topology interpretation, (iii) role-based transfer testing across non-equivalent theaters, and (iv) QUBO-ready prioritization for verification-oriented post-fire monitoring.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.3390/land15081494",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.3390/land15081494",
+        "openAlexId": "W7203595671",
+        "subfield": {
+          "id": "subfields/2306",
+          "name": "Global and Planetary Change"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10555",
+          "name": "Fire effects on ecosystems"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Salvatore Polverino",
+          "Hourakhsh Ahmadnia",
+          "Rokhsaneh Rahbarianyazd Ahmadnia",
+          "Behnam Mobaraki"
+        ],
+        "venue": "Land",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 77,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.5138,
+          "everydayRelevance": 1,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.7698,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 0.75,
+            "q": 1,
+            "c": 0.5,
+            "t": 0,
+            "j": 0.9914
+          },
+          "everydayDomains": [
+            "health",
+            "money",
+            "weather",
+            "transport",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2306",
+          "evidence": [
+            "total 0.7698 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.51 = P 0.66 − 0.45×t 0.00 − 0.15×j 0.99",
+            "outcome verbs (v 0.50): reduced, increased",
+            "recognisable subjects (s 0.75): drivers, soil, forests",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.50): −0.3 no outcome verb or recognisable subject in the title; −0.2 2 technical strings in the title",
+            "jargon density (j 0.99): 23/232 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 5 domain(s) — health, money, weather, transport, mind",
+            "everyday terms (6): screening, cost, costs, rainfall, driver, decision making",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Land",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.3390/land15081494)"
+      },
+      "summary": {
+        "nadpis": "Satelitní data pomáhají určit, kam po požáru poslat kontrolu jako první",
+        "oCoJde": "Po velkém požáru je spálená plocha často obrovská a lidí na kontrolu málo. Vědci zkoušeli, jestli se z družicových dat o požárech a z volně dostupných map dá sestavit seznam míst, kde nejvíc hrozí splavená půda, sesuvy a přívalová voda. Ukázali, že takový postup jde sestavit a přenést do několika různých oblastí, ale výsledky se mezi zeměmi liší.",
+        "podrobneVysvetleni": "Vědci vyšli z dat evropského systému EFFIS (European Forest Fire Information System), který pomocí družic sleduje, kde a jak velké plochy shořely. K tomu přidali volně dostupné mapy: sklon terénu, srážky, vodní toky, půdu, krajinný pokryv a polohu sídel. Území rozdělili na malé čtverce a každému dali skóre rizika. Dál pracovali jen s nejrizikovější čtvrtinou čtverců — tedy s 25 čtverci ze sta, které měly nejvyšší skóre. Postup pak krok za krokem zpřesňovali a testovali v pěti oblastech: u Vesuvu v Kampánii, v Attice, na Kypru, v Portugalsku a ve Španělsku. U Vesuvu klesl po zohlednění srážek počet rizikových shluků z 58 na 18 — tedy zhruba na třetinu. Největší shluk přitom vzrostl z 23 % na 63 % rizikové plochy, tedy z necelé čtvrtiny na skoro dvě třetiny. V Portugalsku se riziková plocha zúžila ze 17 240 čtverců na 862 — tedy zhruba na jednu dvacetinu. Z 32 navržených úseků ke kontrole nakonec v seznamu zůstalo 11, tedy asi každý třetí. Autoři upozorňují, že nejde o škody potvrzené v terénu. Je to jen pořadí míst, která má smysl prověřit nejdřív. Mezi zeměmi se čísla srovnávat nedají, protože krajina i tvar rizikových shluků jsou všude jiné.",
+        "prikladZeZivota": "Autoři uvádějí jako důvod běžnou situaci po požáru: seznam spálených ploch sám neříká, kde je půda náchylná k odnosu vody a zeminy. Ve studii proto vzali data o spálených plochách z evropského systému EFFIS a doplnila je veřejně dostupnými údaji o terénu, srážkách, odvodnění, půdě, krajinném pokryvu a osídlení. Z toho postup krok za krokem vybírá menší „jednotky priority sledování\" — tedy místa, kterým se má věnovat pozornost dřív než ostatním. V oblasti Vesuvius–Campania se po zohlednění srážek počet takto vytipovaných shluků snížil z 58 na 18, v Portugalsku se podklad stáhl ze 17 240 buněk na 862. Na konci zůstalo z 32 kandidátských jednotek 11 vybraných. Autoři zároveň upozorňují, že jde o výsledek výpočtu, ne o v terénu potvrzené škody, a že se výsledky mezi oblastmi nedají srovnávat mezi sebou.",
+        "procJeToDulezite": "Po požáru přichází druhá vlna škod, když déšť splaví holou půdu do potoků a k domům. Když se ví, kam poslat lidi nejdřív, dá se část těchto škod odvrátit.",
+        "poznamkaKOmezenim": "Jde o třídění dat od stolu, nikoli o škody ověřené v terénu, a autoři sami píšou, že výsledky z jedné oblasti neplatí pro jinou.",
+        "prikladJeMotivace": false
+      },
+      "verification": {
+        "verdict": "supported",
+        "attempts": 2,
+        "rejections": [
+          {
+            "attempt": 1,
+            "unsupportedClaims": [
+              "V2_UNSUPPORTED_CLAIM (c3): The burned area is located on the slopes of Vesuvius.",
+              "V2_UNSUPPORTED_CLAIM (c4): An authority cannot walk over the whole burned area at once.",
+              "V2_UNSUPPORTED_CLAIM (c5): The procedure selects a few dozen units out of the whole burned area.",
+              "V2_UNSUPPORTED_CLAIM (c6): The selected units are located above villages.",
+              "V2_UNSUPPORTED_CLAIM (c7): The selected units are located along watercourses.",
+              "V2_UNSUPPORTED_CLAIM (c8): Mud is likely to flow in these units after the first heavy rainfall.",
+              "V7_QUOTE_IRRELEVANT (c9): application claim, unrelated quote: (iv) QUBO-ready prioritization for verification-oriented post-fire monitoring"
+            ],
+            "fabricatedQuotes": []
+          }
+        ],
+        "resolution": "regenerated"
+      },
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 378,
+              "end": 380
+            },
+            "matchedText": "25",
+            "messageCs": "Číslo „25“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „25 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[378,380]: 25"
+          },
+          {
+            "block": "prikladZeZivota",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 542,
+              "end": 544
+            },
+            "matchedText": "58",
+            "messageCs": "Číslo „58“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „58 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ prikladZeZivota[542,544]: 58"
+          },
+          {
+            "block": "prikladZeZivota",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 548,
+              "end": 550
+            },
+            "matchedText": "18",
+            "messageCs": "Číslo „18“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „18 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ prikladZeZivota[548,550]: 18"
+          },
+          {
+            "block": "prikladZeZivota",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 586,
+              "end": 592
+            },
+            "matchedText": "17 240",
+            "messageCs": "Číslo „17 240“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „17 240 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ prikladZeZivota[586,592]: 17 240"
+          },
+          {
+            "block": "prikladZeZivota",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 602,
+              "end": 605
+            },
+            "matchedText": "862",
+            "messageCs": "Číslo „862“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „862 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ prikladZeZivota[602,605]: 862"
+          },
+          {
+            "block": "prikladZeZivota",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 626,
+              "end": 628
+            },
+            "matchedText": "32",
+            "messageCs": "Číslo „32“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „32 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ prikladZeZivota[626,628]: 32"
+          },
+          {
+            "block": "prikladZeZivota",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 652,
+              "end": 654
+            },
+            "matchedText": "11",
+            "messageCs": "Číslo „11“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „11 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ prikladZeZivota[652,654]: 11"
+          }
+        ],
+        "soft": [
+          {
+            "block": "oCoJde",
+            "rule": "hype",
+            "ruleId": "hype:obrovsk",
+            "span": {
+              "start": 41,
+              "end": 49
+            },
+            "matchedText": "obrovská",
+            "messageCs": "Slovo „obrovská“ zbytečně přehání (pravidlo §2). Zvažte střízlivější formulaci, nebo doplňte konkrétní číslo či příklad.",
+            "detail": "hype:obrovsk @ oCoJde[41,49]: obrovská"
+          },
+          {
+            "block": "prikladZeZivota",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 449,
+              "end": 606
+            },
+            "matchedText": "V oblasti Vesuvius–Campania se po zohlednění srážek počet takto vytipovaných shluků snížil z 58 na 18, v Portugalsku se podklad stáhl ze 17 240 buněk na 862.",
+            "messageCs": "Tato věta má 28 slov a je moc dlouhá: „V oblasti Vesuvius–Campania se po zohlednění srážek počet takto vytipovaných sh…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ prikladZeZivota[449,606]: V oblasti Vesuvius–Campania se po zohlednění srážek počet takto vytipovaných shluků snížil z 58 na 18, v Portugalsku se podklad stáhl ze 17 240 buněk na 862."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=17.78",
+            "messageCs": "Věty jsou v průměru moc dlouhé (17,8 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=17.78"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 25 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203610897",
+        "title": "Effects of small-scale forest treatments on reducing wildfire burn severity",
+        "abstract": "Background Intensive fire suppression and climate change have escalated wildfire intensity in fire-adapted forests. Although the consequences of fire suppression policies are well documented, fuel reduction treatment effectiveness – particularly across varying treatment sizes – remains debated. Aims We evaluated a recent large wildfire in New Mexico, USA, to determine whether small fuel treatments reduced burn severity. Methods Using paired plot analysis, we compared burn severity between treated and untreated sites. We used multiple regression analysis to evaluate how treatment effectiveness related to treatment size, topography, and time since treatment. Key results Treated sites had significantly lower burn severity than untreated sites. Treatment effectiveness did not vary with treatment size, regardless of slope, aspect, and time since treatment (≤9 years). Conclusions Small fuel treatments (≤4 ha) effectively reduced burn severity. Implications Because treated boundary areas can still experience high burn severity, these findings provide a baseline to evaluate treatment size effects under site-specific conditions and inform future size guidelines.",
+        "date": "2026-08-18",
+        "url": "https://doi.org/10.1071/wf26008",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1071/wf26008",
+        "openAlexId": "W7203610897",
+        "subfield": {
+          "id": "subfields/2306",
+          "name": "Global and Planetary Change"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10555",
+          "name": "Fire effects on ecosystems"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "J. Biggs",
+          "Nathan Tomczyk"
+        ],
+        "venue": "International Journal of Wildland Fire",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 41,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.5875,
+          "everydayRelevance": 0.9333,
+          "freshness": 1,
+          "credibility": 0.605,
+          "total": 0.761,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 0.5,
+            "q": 0,
+            "c": 1,
+            "t": 0,
+            "j": 0
+          },
+          "everydayDomains": [
+            "energy",
+            "health",
+            "weather"
+          ],
+          "subfieldKey": "subfields/2306",
+          "evidence": [
+            "total 0.7610 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.59 = P 0.59 − 0.45×t 0.00 − 0.15×j 0.00",
+            "outcome verbs (v 0.75): reduced, reduction, lowers",
+            "recognisable subjects (s 0.50): forests (title, ×2)",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 1.00): no penalty",
+            "everyday relevance 0.93: 3 domain(s) — energy, health, weather",
+            "everyday terms (4): fuel, treatment, climate, wildfire",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.61 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in International Journal of Wildland Fire",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1071/wf26008)"
+      },
+      "summary": {
+        "nadpis": "I malé prořezané kousky lesa dokázaly zmírnit sílu požáru",
+        "oCoJde": "Vědci se ptali, jestli má smysl upravovat les proti požárům jen na malých plochách, nebo jestli musí být zásah velký. Podívali se na jeden velký lesní požár v Novém Mexiku a porovnali místa, kde se předtím les upravoval, s místy bez úpravy. Upravená místa vyhořela mírněji, a to i tehdy, když šlo o malé plochy.",
+        "podrobneVysvetleni": "V lesích, které jsou na oheň zvyklé, se dlouhá desetiletí hasil každý plamínek. Dřevo a větve se tak hromadily a dnešní požáry jsou silnější. Proti tomu se používá takzvané snižování paliva (anglicky „fuel reduction treatment\") — les se prořeďuje a odstraňuje se z něj suché dřevo a podrost, aby oheň neměl co spálit. Sporné ale bylo, jak velká plocha se musí takto ošetřit, aby to k něčemu bylo.\n\nAutoři si vybrali nedávný velký požár v Novém Mexiku ve Spojených státech. Použili srovnávání dvojic ploch (anglicky „paired plot analysis\"): vždy vzali jedno upravené místo a k němu podobné neupravené místo poblíž a porovnali, jak silně tam oheň spálil porost. Pak počítali, jestli výsledek závisí na velikosti upravené plochy, na sklonu a natočení svahu a na tom, jak dávno se úprava dělala.\n\nUpravená místa vyhořela výrazně mírněji. Velikost plochy přitom nehrála roli — fungovaly i plochy do 4 hektarů, což jsou zhruba čtyři velká fotbalová hřiště. Nezáleželo ani na svahu, ani na tom, zda se úprava dělala nedávno, nebo až devět let předtím. Autoři ale upozorňují, že okraje upravených ploch mohou přesto hořet velmi silně. Výsledek berou jako výchozí bod pro pravidla, jak velké plochy do budoucna upravovat.",
+        "prikladZeZivota": "Intenzivní hašení požárů a změna klimatu podle autorů zvýšily sílu lesních požárů v lesích, které jsou na oheň běžně zvyklé. Zatímco důsledky politiky potlačování požárů jsou dobře popsané, o účinnosti opatření na snižování množství hořlavého materiálu v lesích se stále diskutuje – zvlášť u různě velkých ošetřených ploch. Autoři proto chtěli zjistit, zda i malé zásahy dokážou snížit škody způsobené požárem.",
+        "procJeToDulezite": "Velké úpravy lesa jsou drahé a zdlouhavé, takže se často odkládají. Zjištění naznačuje, že i menší a dostupnější zásahy mohou zmírnit škody, až oheň přijde.",
+        "poznamkaKOmezenim": "Jde o pohled na jediný požár v jedné oblasti Nového Mexika a na úpravy staré nejvýše devět let, takže výsledek nemusí platit stejně jinde ani po delší době.",
+        "prikladJeMotivace": true
+      },
+      "verification": {
+        "verdict": "supported",
+        "attempts": 3,
+        "rejections": [
+          {
+            "attempt": 1,
+            "unsupportedClaims": [
+              "V2_UNSUPPORTED_CLAIM (c1): A forest manager lacks the money and personnel to treat an entire valley."
+            ],
+            "fabricatedQuotes": []
+          },
+          {
+            "attempt": 2,
+            "unsupportedClaims": [
+              "CHALLENGE_REJECTED: passed first pass, rejected on challenge",
+              "V2_UNSUPPORTED_CLAIM (c3): The compared sites were adjacent/neighbouring to each other.",
+              "V2_UNSUPPORTED_CLAIM (c5): Foresters were the people who carried out the fuel removal."
+            ],
+            "fabricatedQuotes": []
+          }
+        ],
+        "resolution": "motivation-fallback"
+      },
+      "checks": {
+        "ok": true,
+        "status": "pass",
+        "hard": [],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 142,
+              "end": 317
+            },
+            "matchedText": "Proti tomu se používá takzvané snižování paliva (anglicky „fuel reduction treatment\") — les se prořeďuje a odstraňuje se z něj suché dřevo a podrost, aby oheň neměl co spálit.",
+            "messageCs": "Tato věta má 28 slov a je moc dlouhá: „Proti tomu se používá takzvané snižování paliva (anglicky „fuel reduction treat…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[142,317]: Proti tomu se používá takzvané snižování paliva (anglicky „fuel reduction treatment\") — les se prořeďuje a odstraňuje se z něj suché dřevo a podrost, aby oheň neměl co spálit."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=16.70",
+            "messageCs": "Věty jsou v průměru moc dlouhé (16,7 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=16.70"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 25 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203600978",
+        "title": "Compression Deformation Characteristics of Frozen Soil Containing Ice Lenses Under an Asymmetric Temperature Field",
+        "abstract": "Frozen soil on alpine slopes is influenced by inclination and aspect-induced differential solar radiation effects, resulting in non-uniform temperature fields and inclined layered ice lenses that enhance anisotropy and degrade mechanical properties. This study investigates the deformation and strength responses of frozen soil under different temperature-gradient magnitudes and orientations and ice-lens conditions. A stress–strain constitutive model incorporating the magnitude and orientation of the temperature gradient is established. In addition, an equal-scale discrete element model based on the parallel-bond contact model is developed and calibrated against the laboratory results. The numerical specimen is divided into 13 layers, and temperature-dependent interparticle bond properties are assigned layer by layer to reproduce the prescribed magnitude and orientation of the temperature gradient. Results show that the orientation of the temperature gradient significantly alters the mechanical response and failure mode. As the inclination angle increases, the failure mode transitions from compressive dilatancy to combined dilatancy–shear failure and ultimately to shear-dominated failure. At −10 °C, increasing the inclination angle from 0° to 30° reduces the compressive strength by 44.48%. The elastic modulus also decreases with increasing inclination, with a maximum inclination-induced difference of 111.98 kPa. Moreover, the presence of an ice lens further reduces specimen stiffness, and the elastic-modulus difference between ice-lens-bearing and ice-lens-free specimens increases from 5.57 kPa at −1 °C to 75.72 kPa at −10 °C. The DEM results show that particles at the top and bottom of the specimen primarily undergo vertical displacement, whereas particles in the middle region exhibit dominant horizontal displacement, forming an X-shaped shear band. The inclined temperature gradient produces a heterogeneous distribution of interparticle bond strength within each horizontal layer. As inclination increases, the shear band evolves from symmetric to asymmetric; particle displacements on the side toward which the temperature gradient points are larger than those on the opposite side, revealing the microscopic origins of macroscopic mechanical behavior.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.3390/buildings16163263",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.3390/buildings16163263",
+        "openAlexId": "W7203600978",
+        "subfield": {
+          "id": "subfields/1902",
+          "name": "Atmospheric Science"
+        },
+        "field": {
+          "id": "fields/19",
+          "name": "Earth and Planetary Sciences"
+        },
+        "topic": {
+          "id": "T11333",
+          "name": "Climate change and permafrost"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Zhilong Zhang",
+          "Xiaoxiao Gao",
+          "Xuejun Liu",
+          "Yi Sun"
+        ],
+        "venue": "Buildings",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 19,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7536,
+          "everydayRelevance": 0.6,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.7538,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 0.5,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.2258
+          },
+          "everydayDomains": [
+            "energy",
+            "mind"
+          ],
+          "subfieldKey": "subfields/1902",
+          "evidence": [
+            "total 0.7538 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.75 = P 0.79 − 0.45×t 0.00 − 0.15×j 0.23",
+            "outcome verbs (v 0.75): reduces, increases, decreases",
+            "recognisable subjects (s 0.50): soil (title, ×2)",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.23): 7/310 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.60: 2 domain(s) — energy, mind",
+            "everyday terms (2): solar, stress",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Buildings",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.3390/buildings16163263)"
+      },
+      "summary": {
+        "nadpis": "Zmrzlá půda na horském svahu je slabší, když ji slunce ohřívá z jedné strany",
+        "oCoJde": "Vědci zkoumali, jak se chová zmrzlá zemina, když v ní není všude stejná teplota a když jsou v ní šikmé ledové vrstvičky. Zjistili, že šikmý rozdíl teplot výrazně sníží její pevnost a změní i způsob, jakým se zemina poruší. Ledové vrstvy ji navíc dělají měkčí, a to tím víc, čím je zima větší.",
+        "podrobneVysvetleni": "Na horských svazích nesvítí slunce na půdu rovnoměrně. Jedna strana svahu se ohřívá víc než druhá, takže teplota uvnitř zmrzlé zeminy neklesá svisle dolů, ale šikmo. Zároveň v ní vznikají šikmé čočky ledu (anglicky ice lenses) — tenké ledové vrstvičky mezi zrnky zeminy. Vědci proto v laboratoři stlačovali vzorky zmrzlé zeminy při různých směrech a velikostech teplotního rozdílu. Výsledky pak přepočítali do vzorce a do počítačového modelu, který zeminu skládá z jednotlivých zrn spojených vazbami (discrete element model). Vzorek v počítači rozdělili na 13 vrstev a každé přiřadili pevnost vazeb podle její teploty.\n\nPři −10 °C stačilo naklonit směr teplotního rozdílu z nuly na 30 stupňů a pevnost v tlaku klesla o 44,48 % — tedy skoro na polovinu. Zemina byla také poddajnější: rozdíl v tuhosti dosáhl až 111,98 kilopascalu (kilopascal je jednotka tlaku). Přítomnost ledové čočky tuhost snížila ještě víc. Při −1 °C byl rozdíl mezi vzorkem s ledovou čočkou a bez ní jen 5,57 kilopascalu, tedy skoro zanedbatelný, ale při −10 °C už 75,72 kilopascalu — zhruba třináctkrát větší.\n\nZměnil se i způsob porušení. Bez náklonu se vzorek roztlačoval do stran, s rostoucím náklonem se začal spíš usmýkávat. V modelu se ukázal smykový pás ve tvaru písmene X, který se s náklonem stával nesouměrným.",
+        "prikladZeZivota": "Zmrzlá půda na horských svazích je podle autorů ovlivněna sklonem svahu a jeho orientací ke slunci, takže se v ní nerovnoměrně rozloží teplota a vznikají šikmé vrstvičky ledu (tzv. ledové čočky). Tím se půda stává v různých směrech různě pevná a její mechanické vlastnosti se zhoršují. Autoři proto zkoumali, jak se taková zmrzlá půda deformuje a jakou má pevnost při různě velkých a různě orientovaných teplotních rozdílech a při přítomnosti ledových čoček.",
+        "procJeToDulezite": "Kdo staví v horách nebo v oblastech s promrzlou půdou, musí počítat s tím, že zmrzlá zemina není všude stejně pevná. Přehlédnutí šikmých teplotních rozdílů a ledových vrstev může vést k podcenění únosnosti podloží.",
+        "poznamkaKOmezenim": "Jde o laboratorní vzorky a jejich počítačovou obdobu, ne o měření na skutečném horském svahu, takže přenos výsledků do praxe je zatím nepřímý.",
+        "prikladJeMotivace": true
+      },
+      "verification": {
+        "verdict": "supported",
+        "attempts": 3,
+        "rejections": [
+          {
+            "attempt": 1,
+            "unsupportedClaims": [
+              "V2_UNSUPPORTED_CLAIM (c5): The comparison baseline is soil that is frozen uniformly.",
+              "V2_UNSUPPORTED_CLAIM (c6): Buildings are constructed and roads are routed on such slopes.",
+              "V2_UNSUPPORTED_CLAIM (c7): Construction and roads on such slopes were the authors' reason for studying this soil behaviour."
+            ],
+            "fabricatedQuotes": []
+          },
+          {
+            "attempt": 2,
+            "unsupportedClaims": [
+              "V2_UNSUPPORTED_CLAIM (c5): Ice lenses are thin layers of pure ice."
+            ],
+            "fabricatedQuotes": []
+          }
+        ],
+        "resolution": "motivation-fallback"
+      },
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 810,
+              "end": 816
+            },
+            "matchedText": "111,98",
+            "messageCs": "Číslo „111,98“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „111,98 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[810,816]: 111,98"
+          }
+        ],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 911,
+              "end": 1081
+            },
+            "matchedText": "Při −1 °C byl rozdíl mezi vzorkem s ledovou čočkou a bez ní jen 5,57 kilopascalu, tedy skoro zanedbatelný, ale při −10 °C už 75,72 kilopascalu — zhruba třináctkrát větší.",
+            "messageCs": "Tato věta má 31 slov a je moc dlouhá: „Při −1 °C byl rozdíl mezi vzorkem s ledovou čočkou a bez ní jen 5,57 kilopascal…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[911,1081]: Při −1 °C byl rozdíl mezi vzorkem s ledovou čočkou a bez ní jen 5,57 kilopascalu, tedy skoro zanedbatelný, ale při −10 °C už 75,72 kilopascalu — zhruba třináctkrát větší."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=17.38",
+            "messageCs": "Věty jsou v průměru moc dlouhé (17,4 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=17.38"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 25 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203620690",
+        "title": "Women’s preparation, cooking, and serving of small fish shape nutritional outcomes in Northern Ugandan households",
+        "abstract": "Abstract While small fish are increasingly being recognized as an important source of essential nutrients, little is known about how they are utilized and consumed in households. This study aims to fill this gap. We used a cross-sectional survey consisting of 109 households, with 742 individuals, to collect quantitative data on household dietary diversity and fish consumption in three districts of northern Uganda. Additionally, qualitative data on the preparation of small fish were collected through observations and focus group discussions. Contrary to views in mainstream food security discourses, our results show that small fish are accessible and frequently consumed. Overall, 686 of the 742 individuals (92.4%) consumed fish at least once during the seven-day recall period, and over half of the selected households (51%) ate fish during a 24-hour recall period. The average fish consumption was three times per week. We also found that it is primarily women who make decisions about fish purchases, preparation, and cooking of local dishes containing a variety of ingredients, which they serve and distribute among household members in accordance with social expectations and gender norms. These findings demonstrate that women play a pivotal role in translating access to nutrient-dense small fish into nutritionally diverse and culturally acceptable meals. Nutrition-sensitive policies should therefore recognize both the value of small indigenous fish and the central role of women in their household utilization.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1007/s40152-026-00511-x",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1007/s40152-026-00511-x",
+        "openAlexId": "W7203620690",
+        "subfield": {
+          "id": "subfields/2303",
+          "name": "Ecology"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T13490",
+          "name": "Aquatic Ecosystems and Biodiversity"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1007/s40152-026-00511-x",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Fridah Siyanga-Tembo",
+          "Ragnhild Overå",
+          "Marian Kjellevold",
+          "Anne Hatløy",
+          "Jeppe Kolding",
+          "Peter Andersen",
+          "Godfrey Kawooya Kubiriza",
+          "Robinson Odong",
+          "Margaret Masette"
+        ],
+        "venue": "MAST. Maritime studies/Maritime studies",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 53,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.6235,
+          "everydayRelevance": 0.7333,
+          "freshness": 1,
+          "credibility": 0.8244,
+          "total": 0.7501,
+          "explainDetail": {
+            "v": 0,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.177
+          },
+          "everydayDomains": [
+            "food",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2303",
+          "evidence": [
+            "total 0.7501 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.62 = P 0.65 − 0.45×t 0.00 − 0.15×j 0.18",
+            "outcome verbs (v 0.00): none",
+            "recognisable subjects (s 1.00): women (title, ×2), households (title, ×2), fish (title, ×2)",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.18): 4/226 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.73: 2 domain(s) — food, mind",
+            "everyday terms (8): food, dietary, nutrition, nutrient, meal, meals, cooking, focus",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.82 = 0.40×c1 1.00 + 0.25×c2 0.72 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in MAST. Maritime studies/Maritime studies",
+            "c2 0.72: n = 742",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no tldr; falling back to the source abstract (§4.2)"
+      },
+      "summary": {
+        "nadpis": "Malé ryby jsou v severní Ugandě běžné jídlo a rozhodují o nich ženy",
+        "oCoJde": "Vědci chtěli vědět, jak se v domácnostech na severu Ugandy skutečně používají a jedí malé ryby. Zjistili, že ryby jsou pro rodiny dostupné a jedí je často. Zároveň zjistili, že o nákupu, přípravě i rozdělování jídla rozhodují především ženy.",
+        "podrobneVysvetleni": "Tým udělal jednorázový dotazníkový průzkum (anglicky cross-sectional survey — tedy sběr dat v jednom okamžiku, ne sledování v čase) ve třech okresech na severu Ugandy. Zapojilo se 109 domácností, dohromady 742 lidí. Vědci se ptali, jak pestrou stravu rodiny mají a jak často jedí ryby. K tomu přidali pozorování vaření a skupinové rozhovory, aby viděli, jak se malé ryby doopravdy připravují.\n\nVýsledky jdou proti běžnému obrázku o nedostatku jídla v této oblasti. Ryby jedlo během posledních sedmi dní 686 lidí ze 742, tedy zhruba devět lidí z deseti. Během jednoho posledního dne jedla ryby zhruba polovina domácností (51 %). V průměru se ryby na stole objevily třikrát týdně.\n\nDruhé zjištění se týká lidí, ne čísel. Ženy rozhodují, jaké ryby se koupí. Ženy je vaří do místních pokrmů s dalšími surovinami. Ženy pak jídlo rozdělují mezi členy rodiny — podle toho, co se v jejich komunitě očekává od muže, ženy nebo dítěte.\n\nAutoři z toho vyvozují, že samotná dostupnost výživných malých ryb nestačí. Teprve rozhodnutí ženy z ryby udělá jídlo, které rodina opravdu sní. Doporučují proto, aby programy zaměřené na výživu počítaly nejen s rybami, ale i s postavením žen v domácnosti.",
+        "prikladZeZivota": "Malé druhy ryb jsou podle autorů stále více vnímány jako důležitý zdroj základních výživných látek. Zároveň se ale ví jen velmi málo o tom, jak se s nimi v domácnostech skutečně zachází a jak se konzumují. Studie chtěla tuto mezeru v poznání zaplnit.",
+        "procJeToDulezite": "Ukazuje to, že o výživě rodiny nerozhoduje jen to, co je k dostání, ale hlavně to, kdo vaří a jak jídlo rozděluje. Programy proti podvýživě proto musí počítat i s lidmi, kteří u sporáku stojí.",
+        "poznamkaKOmezenim": "Jde o menší jednorázový průzkum ve 109 domácnostech ve třech okresech, takže výsledky nemusí platit pro celou Ugandu, a údaje o jídle si lidé vybavovali zpětně z paměti.",
+        "prikladJeMotivace": true
+      },
+      "verification": {
+        "verdict": "supported",
+        "attempts": 3,
+        "rejections": [
+          {
+            "attempt": 1,
+            "unsupportedClaims": [
+              "V2_UNSUPPORTED_CLAIM (c3): The fish are bought at a market."
+            ],
+            "fabricatedQuotes": []
+          },
+          {
+            "attempt": 2,
+            "unsupportedClaims": [
+              "CHALLENGE_REJECTED: passed first pass, rejected on challenge",
+              "V2_UNSUPPORTED_CLAIM (c7): The expectations shaping distribution are specifically those of the family and the immediate surroundings/neighbourhood.",
+              "V2_UNSUPPORTED_CLAIM (c9): Researchers observed the serving and distribution of the meal inside households.",
+              "V2_UNSUPPORTED_CLAIM (c10): Women are the ones who mainly decide who in the house actually receives some of the nutritious small fish."
+            ],
+            "fabricatedQuotes": []
+          }
+        ],
+        "resolution": "motivation-fallback"
+      },
+      "checks": {
+        "ok": true,
+        "status": "pass",
+        "hard": [],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 180,
+              "end": 183
+            },
+            "matchedText": "109",
+            "messageCs": "Číslo „109“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „109 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[180,183]: 109"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 206,
+              "end": 209
+            },
+            "matchedText": "742",
+            "messageCs": "Číslo „742“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „742 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[206,209]: 742"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203642620",
+        "title": "Osmotic conditions shape fitness gains and resistance mechanisms during <i>E. coli</i> and T4 phage co-evolution",
+        "abstract": "during serial passage. When evolved independently, we observed substantial fitness gains in both bacteria and phages, particularly in high-osmotic conditions. During co-evolution, however, fitness gains were limited, bacterial populations consistently evolved phage resistance, and several phage populations went extinct. Furthermore, the resistance mechanisms varied by osmolality. In lower osmolalities, mutations disrupted phage-binding sites, conferring strong resistance. In higher osmolalities, mutations led to increased colonic acid production, producing a mucoid phenotype with weaker resistance. Because mucoidy has been associated with increased bacterial virulence, these findings suggest that gut-relevant osmotic conditions may constrain evolutionary trajectories, favoring resistance strategies that are less effective against phage but potentially more virulent, with important implications for phage therapy design.Phages offer a promising alternative to antibiotics, but their safety and efficacy strongly depend on the environmental conditions where the bacteria and phages interact. In the human gut, for instance, solute concentrations can vary widely due to factors such as food intolerances or laxative use. In this study, we show that such variations significantly impact how bacteria and phages co-evolve. In particular, we find that in higher osmolalities, bacteria evolve phage resistance through mucoidy-a phenotype linked with increased bacterial virulence-rather than receptor loss. This highlights the need to consider environmental factors when developing phage therapies.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1128/mbio.01167-25",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1128/mbio.01167-25",
+        "openAlexId": "W7203642620",
+        "subfield": {
+          "id": "subfields/2303",
+          "name": "Ecology"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T11048",
+          "name": "Bacteriophages and microbial interactions"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1128/mbio.01167-25",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Michael Hunter",
+          "Eric Lyall",
+          "Kriti Verma",
+          "Carolina Tropini"
+        ],
+        "venue": "mBio",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 81,
+        "tldr": "In higher osmolalities, bacteria evolve phage resistance through mucoidy—a phenotype linked with increased bacterial virulence—rather than receptor loss, suggesting that gut-relevant osmotic conditions may constrain evolutionary trajectories, favoring resistance strategies that are less effective against phage but potentially more virulent.",
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.4755,
+          "everydayRelevance": 0.9667,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.7452,
+          "explainDetail": {
+            "v": 1,
+            "s": 0,
+            "q": 0,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.0966
+          },
+          "everydayDomains": [
+            "food",
+            "health",
+            "body",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2303",
+          "evidence": [
+            "total 0.7452 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.48 = P 0.49 − 0.45×t 0.00 − 0.15×j 0.10",
+            "outcome verbs (v 1.00): increased, lowers, led to, associated with",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.10): 2/207 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 4 domain(s) — food, health, body, mind",
+            "everyday terms (5): food, antibiotic, therapy, fitness, concentration",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in mBio",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        }
+      },
+      "summary": {
+        "nadpis": "Slanost prostředí rozhoduje, jak se bakterie brání virům, které je zabíjejí",
+        "oCoJde": "Vědci zkoumali, jak se mění souboj bakterie Escherichia coli a viru, který ji napadá, když se změní koncentrace rozpuštěných látek v prostředí — zjednodušeně řečeno, jak je okolní tekutina „hustá\". Ukázalo se, že bakterie si v hustším prostředí vytvoří jinou obranu než v řidším. A ta obrana je sice proti viru slabší, ale u bakterií bývá spojená s větší schopností škodit.",
+        "podrobneVysvetleni": "Bakterie mají své vlastní viry. Odborně se jim říká fágy (anglicky phage) a jsou to viry, které napadají a zabíjejí bakterie. Uvažuje se o nich jako o náhradě antibiotik, když už antibiotika nezabírají. Vědci proto pěstovali bakterii Escherichia coli a fág T4 vedle sebe a opakovaně je přeočkovávali do čerstvé půdy, aby je nechali společně se vyvíjet po mnoho generací. Dělali to při různých koncentracích rozpuštěných látek v roztoku — od řidšího po hustší prostředí.\n\nKdyž nechali bakterie a viry vyvíjet se odděleně, obě strany se výrazně zlepšily, nejvíc v hustém prostředí. Když je ale nechali bojovat proti sobě, zlepšení bylo malé. Bakterie si pokaždé vytvořily obranu proti viru a některé skupiny virů dokonce úplně vyhynuly.\n\nZajímavé je, jaká obrana to byla. V řidším prostředí se bakteriím změnila místa na povrchu, kterých se virus musí chytit, aby se dostal dovnitř. Bez „kliky\" se virus nedostane dál — to je velmi silná obrana. V hustším prostředí ale bakterie místo toho začaly vyrábět víc slizu a obalily se jím. Tato slizká podoba (anglicky mucoid) chrání hůř, virus se přes ni občas prodere. Zároveň bývá u bakterií spojená s tím, že snáze způsobí onemocnění.",
+        "prikladZeZivota": "Viry napadající bakterie (fágy) jsou nadějnou alternativou k antibiotikům, jejich bezpečnost a účinnost ale silně závisí na podmínkách prostředí, ve kterém se bakterie s fágy potkávají. Právě v lidském střevě se přitom koncentrace rozpuštěných látek může výrazně měnit, například kvůli potravinovým nesnášenlivostem nebo užívání projímadel. Autoři proto zkoumali, jak takové rozdíly ovlivňují společný vývoj bakterií a fágů.",
+        "procJeToDulezite": "Pokud se má léčba viry proti bakteriím jednou běžně používat, je potřeba počítat i s tím, v jakém prostředí se odehrává. Stejná léčba může dopadnout jinak podle toho, co se právě děje v těle pacienta.",
+        "poznamkaKOmezenim": "Jde o pokus v laboratoři s jedinou bakterií a jediným virem, nikoli o léčbu lidí; souvislost slizké obrany s větší škodlivostí bakterií vychází z dřívějších prací, ne z přímého měření v této studii.",
+        "prikladJeMotivace": true
+      },
+      "verification": {
+        "verdict": "supported",
+        "attempts": 3,
+        "rejections": [
+          {
+            "attempt": 1,
+            "unsupportedClaims": [
+              "V2_UNSUPPORTED_CLAIM (c2): Phage therapy means giving a person viruses that kill harmful bacteria in the gut."
+            ],
+            "fabricatedQuotes": []
+          },
+          {
+            "attempt": 2,
+            "unsupportedClaims": [
+              "V2_UNSUPPORTED_CLAIM (c3): A phage is a virus that attacks bacteria."
+            ],
+            "fabricatedQuotes": []
+          }
+        ],
+        "resolution": "motivation-fallback"
+      },
+      "checks": {
+        "ok": true,
+        "status": "pass",
+        "hard": [],
+        "soft": [
+          {
+            "block": "oCoJde",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 197
+            },
+            "matchedText": "Vědci zkoumali, jak se mění souboj bakterie Escherichia coli a viru, který ji napadá, když se změní koncentrace rozpuštěných látek v prostředí — zjednodušeně řečeno, jak je okolní tekutina „hustá\".",
+            "messageCs": "Tato věta má 29 slov a je moc dlouhá: „Vědci zkoumali, jak se mění souboj bakterie Escherichia coli a viru, který ji n…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ oCoJde[0,197]: Vědci zkoumali, jak se mění souboj bakterie Escherichia coli a viru, který ji napadá, když se změní koncentrace rozpuštěných látek v prostředí — zjednodušeně řečeno, jak je okolní tekutina „hustá\"."
+          },
+          {
+            "block": "prikladZeZivota",
+            "rule": "hype",
+            "ruleId": "hype:nadějn",
+            "span": {
+              "start": 37,
+              "end": 45
+            },
+            "matchedText": "nadějnou",
+            "messageCs": "Slovo „nadějnou“ zbytečně přehání (pravidlo §2). Zvažte střízlivější formulaci, nebo doplňte konkrétní číslo či příklad.",
+            "detail": "hype:nadějn @ prikladZeZivota[37,45]: nadějnou"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 25 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-08-19T08:43:50.857Z",
+  "generatedOn": "2026-08-19",
+  "schemaVersion": 1
+}

@@ -9,25 +9,20 @@ dist/
 .env*
 !.env.example
 
-# Run output. The archive is the product, but it is machine-generated, and
-# committing it would make every daily run a repository change. The repository
-# is the code; the archive is what the code makes.
+# Run output IS tracked from here on, which reverses assumption A12 ("the
+# repository is the code, the archive is what the code makes"). Deployment
+# forced the change: GitHub Pages serves this branch's root, and every daily
+# run happens on a fresh runner with no disk of its own. If the archive were
+# not committed, each run would rebuild an index containing only that day's
+# edition and every earlier page would vanish. Committing the output is what
+# makes the archive an archive. Recorded as A33.
 #
-# state/seen.json is ignored too, and that is the one to think about: it is the
-# only record of what has already been published, so losing it means published
-# papers can reappear. It is not in git because a daily-changing file does not
-# belong in a code repository — it is on disk, and assumption A1 asks for the
-# Mac mini's backup to include it.
-archive/*.html
-archive/*.json
-# The index is generated from the twins by `research-desk rerender`, so it is
-# output like the pages it links to. Tracking it while ignoring them left a
-# fresh clone with an index full of dead links — the two have to agree, and
-# assumption A12 already decided which way: the repository is the code, the
-# archive is what the code makes.
-/index.html
+# state/seen.json is tracked for the same reason and matters more: it is the
+# only record of what has already been published, so a runner that started
+# without it would re-publish papers already covered. See A34 for how the
+# commit-back handles a concurrent push.
+
 logs/*.log
-state/*.json
 
 # Scratch output for local previewing. Never a deliverable.
 tmp/

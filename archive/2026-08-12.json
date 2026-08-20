@@ -1,0 +1,596 @@
+{
+  "date": "2026-08-12",
+  "categoryKey": "nature-climate",
+  "categoryLabel": "Příroda a klima",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7203605366",
+        "title": "Plant CSR strategies and community assembly differ across water- and energy-limited alpine ecosystems",
+        "abstract": "Understanding plant strategies is critical for predicting biodiversity responses to global change. Here we show Grime’s Competitor, Stress-tolerator, and Ruderal (CSR) strategies and assemblages at 543 plots in 246 sites across alpine ecosystems on the Qinghai-Xizang Plateau, by integrating plant traits with data on geography, climate, soil, disturbance, and productivity. The S-strategy predominates, showing context-dependent variations and environmental determinants. Climate outweighs soil in water-limited meadow and shrubland with higher C-/R-strategies, but the opposite in energy-limited steppe (on R-strategy) and desert with a prevalent S-strategy, reflecting a core trade-off between resource acquisition and stress tolerance. Disturbance conversely impacts meadow and steppe with opposite effects on S- vs. C-/R-strategies. Habitat filtering converges CSR strategies, shifting to neutrality or limiting similarity along gradients, with contrasting trends for C-/S- vs. R-strategies. These results provide a trait-based framework for understanding vegetation change and community reassembly across alpine ecosystems under climate change and grazing pressure. Competitor, stress-tolerator, and ruderal (CSR) strategies of alpine ecosystems suggest context-dependent roles of geography, climate, soil, disturbance, and productivity, with community assembly shifts from habitat filtering to limiting similarity.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1038/s42003-026-10796-7",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1038/s42003-026-10796-7",
+        "openAlexId": "W7203605366",
+        "subfield": {
+          "id": "subfields/2309",
+          "name": "Nature and Landscape Conservation"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10005",
+          "name": "Ecology and Vegetation Dynamics Studies"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Qi Li",
+          "Xin Chen",
+          "Liang Zhao",
+          "Fuquan He",
+          "Dongdong Chen",
+          "Yukun Zhang",
+          "Li Zhang",
+          "Xinquan Zhao"
+        ],
+        "venue": "Communications Biology",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.3378,
+          "everydayRelevance": 0.9333,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.6807,
+          "explainDetail": {
+            "v": 0,
+            "s": 0.75,
+            "q": 0,
+            "c": 1,
+            "t": 0,
+            "j": 0.3315
+          },
+          "everydayDomains": [
+            "energy",
+            "weather",
+            "work",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2309",
+          "evidence": [
+            "total 0.6807 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "BELOW the 0.35 explainability gate (B.2) — not eligible for the top five",
+            "explainability 0.34 = P 0.39 − 0.45×t 0.00 − 0.15×j 0.33",
+            "outcome verbs (v 0.00): none",
+            "recognisable subjects (s 0.75): plants (title, ×2), soil",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.33): 6/181 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.93: 4 domain(s) — energy, weather, work, mind",
+            "everyday terms (4): energy, climate, productivity, stress",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Communications Biology",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1038/s42003-026-10796-7)"
+      },
+      "summary": {
+        "souhrn": "V alpínských porostech na náhorní plošině Qinghai-Xizang (Tibetská náhorní plošina) vede mezi rostlinami jedna strategie: vydržet. Vědci změřili vlastnosti rostlin na více než pěti stech plochách ve zhruba dvou a půl stovkách lokalit a porovnali je s klimatem, půdou, produktivitou i mírou narušení, třeba pastvou. Na loukách a v křovinách, které limituje voda, rozhodovalo hlavně klima a častěji se prosadily rychle rostoucí druhy. Ve stepích a polopouštích, kde chybí spíš teplo, vážila víc půda a odolné rostliny převládaly ještě výrazněji. Pastva a jiná narušení působila na louky a stepi opačným směrem, což je vodítko pro odhad toho, jak se tyto porosty promění s oteplováním.",
+        "podrobneVysvetleni": "Vědci vycházejí z Grimova rozdělení rostlinných strategií, zkráceně CSR. Konkurent (competitor) roste rychle. Přeroste sousedy tam, kde je dost vody i živin. Vytrvalec odolný vůči stresu (stress-tolerator) roste pomalu. Zato snese chlad, sucho i chudou půdu. Ruderál (ruderal) rychle obsadí místo, které něco poškodilo — sešlap, pastvu, sesuv. Tým změřil vlastnosti rostlin na více než pěti stech plochách. Ty se rozkládaly ve zhruba dvou a půl stovkách lokalit napříč náhorní plošinou. K tomu přidal údaje o poloze, klimatu, půdě, narušení a produktivitě.\n\nVe všech typech porostů převládala odolnost vůči stresu. Podíl zbylých dvou strategií se ale měnil podle prostředí. Na loukách a v křovinách, kde rostliny limituje voda, rozhodovalo hlavně klima. Přibývalo tam rychle rostoucích a ruderálních druhů. Ve stepích a polopouštích, kde chybí spíš teplo, vážila víc půda a odolné druhy převládaly ještě silněji. Za tím vším stojí jeden základní kompromis: buď rostlina investuje do rychlého růstu, nebo do přežití. Narušení, například pastva, působilo na louky a stepi opačně. Kde ubývalo odolných druhů, přibývalo konkurentů a ruderálů, a naopak.\n\nZajímavé je i to, jak se společenstva skládají. Na většině míst prostředí vybírá rostliny s podobnou strategií, čemuž se říká filtrování stanovištěm. Podél některých gradientů se to ale obrací a vedle sebe rostou druhy spíše odlišné. U ruderálů se navíc tento trend liší od obou zbylých strategií.",
+        "procJeToDulezite": "Alpínské louky a stepi jsou pastvinami pro miliony zvířat a zároveň patří k nejcitlivějším místům na oteplování. Studie ukazuje, které porosty se pravděpodobně promění nejdřív a co k tomu přispívá víc: podnebí, půda, nebo pastva.",
+        "poznamkaKOmezenim": "Jde o jednorázové měření z jednoho regionu, které ukazuje souvislosti, nikoli prokázané příčiny; budoucí vývoj porostů z něj lze jen odhadovat."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "warn",
+        "hard": [],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 110,
+              "end": 120
+            },
+            "matchedText": " strategie",
+            "messageCs": "Text opisuje původní název článku („ strategie“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[110,120]:  strategie"
+          },
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 131,
+              "end": 314
+            },
+            "matchedText": "Vědci změřili vlastnosti rostlin na více než pěti stech plochách ve zhruba dvou a půl stovkách lokalit a porovnali je s klimatem, půdou, produktivitou i mírou narušení, třeba pastvou.",
+            "messageCs": "Tato věta má 29 slov a je moc dlouhá: „Vědci změřili vlastnosti rostlin na více než pěti stech plochách ve zhruba dvou…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[131,314]: Vědci změřili vlastnosti rostlin na více než pěti stech plochách ve zhruba dvou a půl stovkách lokalit a porovnali je s klimatem, půdou, produktivitou i mírou narušení, třeba pastvou."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 47,
+              "end": 56
+            },
+            "matchedText": " strategi",
+            "messageCs": "Text opisuje původní název článku („ strategi“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[47,56]:  strategi"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 633,
+              "end": 642
+            },
+            "matchedText": " strategi",
+            "messageCs": "Text opisuje původní název článku („ strategi“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[633,642]:  strategi"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 1250,
+              "end": 1259
+            },
+            "matchedText": " strategi",
+            "messageCs": "Text opisuje původní název článku („ strategi“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[1250,1259]:  strategi"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 1436,
+              "end": 1445
+            },
+            "matchedText": " strategi",
+            "messageCs": "Text opisuje původní název článku („ strategi“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[1436,1445]:  strategi"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203650741",
+        "title": "Rethinking the soil core microbiome",
+        "abstract": "Summary The concept of a core microbiome emerged from host‐associated research to describe microbial members or functions conserved across clearly defined spatial, temporal, and biological boundaries. In soil‐ and plant‐associated microbiome research, however, the term has increasingly shifted toward analytically defined subsets selected using study‐specific thresholds or criteria. Synthesizing recent literature and cross‐site analyses of bioenergy crop field soils, we show that the original biological meaning of the core microbiome has been blurred by dataset‐specific analytical criteria. Taxa designated as ‘core’ were highly sensitive to methodological choices and often reflected explanatory value rather than conserved biological membership. Moreover, many studies that identify taxonomic ‘core’ members interpret their significance in functional terms, suggesting that functional conservation may be the biological interest. Taxonomic conservation may not be the most biologically meaningful target in highly heterogeneous soil and rhizosphere systems, where functional conservation may persist despite taxonomic turnover. Accordingly, ‘core microbiome’ should be reserved for microbial components explicitly demonstrated to be conserved across defined spatial, temporal, and environmental dimensions and linked to conserved ecological functions, while taxa selected for explanatory value are better described as ‘explanatory subsets of taxa’. Greater terminological precision will improve cross‐study comparability and strengthen ecological inference in plant–soil microbiome research.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1111/nph.71509",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1111/nph.71509",
+        "openAlexId": "W7203650741",
+        "subfield": {
+          "id": "subfields/2303",
+          "name": "Ecology"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T11791",
+          "name": "Microbial Community Ecology and Physiology"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1111/nph.71509",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Jae‐Jin Lee",
+          "Bolívar Aponte Rolón",
+          "Phillip De Lorimier",
+          "Jean‐Michel Ané",
+          "Gian Maria Niccolò Benucci",
+          "Alyssa A. Carrell",
+          "Yen Ning Chai",
+          "Janith Chandrasoma",
+          "Nicole Geerdes",
+          "Valentina Infante",
+          "Brandon Kristy",
+          "Stanton Martin",
+          "Imani Pascoe",
+          "Rounak Patra",
+          "Lorien Radmer",
+          "Tomás A. Rush",
+          "Ndenum Suzzy Shitta",
+          "Andie Suratt",
+          "Patrick F. Suthers",
+          "Melissa A. Cregger",
+          "Adina Howe",
+          "Sarah L. Lebeis",
+          "Henrik Vibe Scheller"
+        ],
+        "venue": "New Phytologist",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 42,
+        "tldr": "'core microbiome' should be reserved for microbial components explicitly demonstrated to be conserved across defined spatial, temporal, and environmental dimensions and linked to conserved ecological functions, while taxa selected for explanatory value are better described as 'explanatory subsets of taxa'.",
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.6106,
+          "everydayRelevance": 0,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.5285,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 1,
+            "q": 0,
+            "c": 1,
+            "t": 0,
+            "j": 0.0962
+          },
+          "everydayDomains": [],
+          "subfieldKey": "subfields/2303",
+          "evidence": [
+            "total 0.5285 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.61 = P 0.63 − 0.45×t 0.00 − 0.15×j 0.10",
+            "outcome verbs (v 0.50): improves, linked to",
+            "recognisable subjects (s 1.00): plants, crops, soil (title, ×2)",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.10): 2/208 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.00: touches none of the 16 everyday domains",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in New Phytologist",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        }
+      },
+      "summary": {
+        "souhrn": "Pojem „jádrový mikrobiom\" (core microbiome) se v půdní vědě používá čím dál volněji. Mikrobiom je soubor bakterií, hub a dalších drobných organismů, kteří někde společně žijí — třeba v hrsti půdy. Autoři prošli novější odborné práce a přidali vlastní srovnání půd z polí s energetickými plodinami. Ukázalo se, že seznam „jádrových\" mikrobů se mění podle toho, jaká pravidla výběru si vědci nastaví. Navrhují proto název šetřit pro organismy, u nichž je stálost skutečně doložená, a ostatní označovat jako „vysvětlující výběr taxonů\", tedy skupin mikrobů vybraných pro daný účel.",
+        "podrobneVysvetleni": "Pojem vznikl při výzkumu mikrobů žijících na těle hostitele nebo v něm. Tam dává smysl: dá se říct, kde tělo končí a jaké jsou hranice v čase i prostoru. Jádrem se pak myslí ti mikrobi, které najdeme u všech jedinců. V půdě a v okolí kořenů rostlin ale takové ostré hranice nejsou. Z pojmu se proto stal statistický výběr. Badatel si nastaví hranici, kolik vzorků musí mikrob obsadit a jak hojný musí být. Co projde sítem, to nazve jádrem. Autoři shrnuli nedávné práce a k tomu porovnali půdní vzorky z několika polí s energetickými plodinami. Zjistili, že seznam „jádrových\" mikrobů silně závisí na zvolených pravidlech. Stačí posunout hranici a v jádru je jiná společnost. Často se tam navíc dostanou mikrobi vybraní proto, že dobře vysvětlují nějaký sledovaný jev — ne proto, že by byli všude. Autoři upozorňují ještě na jednu věc. Mnoho studií vymezí jádro podle druhů, ale jeho význam pak vykládá funkčně. Tedy podle toho, co mikrobi v půdě dělají. V pestré půdě se přitom druhy mohou střídat, zatímco funkce zůstává. Rozkládat organickou hmotu nebo vázat dusík umí víc různých mikrobů. Doporučení zní: název „jádrový mikrobiom\" používat jen tam, kde je stálost doložená a spojená s konkrétní funkcí. Zbytku říkat „vysvětlující výběr taxonů\" (explanatory subsets of taxa). Srovnávání jednotlivých studií to podle autorů zpřesní.",
+        "procJeToDulezite": "Půdní mikrobi rozhodují o úrodnosti půdy i o tom, jak se rostlinám daří. Když si pod stejným slovem každý představuje něco jiného, výsledky se špatně srovnávají a doporučení pro zemědělskou praxi stojí na vratkém základě.",
+        "poznamkaKOmezenim": "Jde o přehledový a názorový text s doprovodným srovnáním několika polních lokalit, ne o nový experiment, a jiní badatelé mohou dosavadní používání pojmu obhajovat."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:mikrobiom",
+            "span": {
+              "start": 15,
+              "end": 24
+            },
+            "matchedText": "mikrobiom",
+            "messageCs": "Termín „mikrobiom“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:mikrobiom @ souhrn[15,24]: mikrobiom"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 399,
+              "end": 578
+            },
+            "matchedText": "Navrhují proto název šetřit pro organismy, u nichž je stálost skutečně doložená, a ostatní označovat jako „vysvětlující výběr taxonů\", tedy skupin mikrobů vybraných pro daný účel.",
+            "messageCs": "Tato věta má 26 slov a je moc dlouhá: „Navrhují proto název šetřit pro organismy, u nichž je stálost skutečně doložená…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[399,578]: Navrhují proto název šetřit pro organismy, u nichž je stálost skutečně doložená, a ostatní označovat jako „vysvětlující výběr taxonů\", tedy skupin mikrobů vybraných pro daný účel."
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203627670",
+        "title": "Systematic evaluation of SAM prompting strategies for agricultural land extraction with GeoSAM",
+        "abstract": "This study presents GeoSAM, a QGIS plugin that integrates five SAM prompting strategies (Text, Box, Point, Detection-guided Box and Detection-guided Point) for agricultural land extraction. Using 25 cm-resolution aerial imagery, Point Prompt achieved the highest F1-Score (0.9785) but is limited for large-scale use. Text Prompt scored 0.9406, with generic terms (e.g. ‘farm plot’) outperforming crop-specific terms. Adding text to Box Prompt improved its F1-Score from 0.5417 to 0.9220 (~70% gain), highlighting the value of semantic information. Detection-guided Point (0.8861) slightly outperformed Detection-guided Box+Text (0.8785). Compared to 97.05% F1 with 8 cm drone imagery, the performance dropped to 88.62% at 25 cm resolution, underscoring resolution's critical impact. GeoSAM helps practitioners navigate the accuracy–automation trade-off by offering context-appropriate segmentation strategies within a unified tool.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1080/10106049.2026.2717446",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1080/10106049.2026.2717446",
+        "openAlexId": "W7203627670",
+        "subfield": {
+          "id": "subfields/2303",
+          "name": "Ecology"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10111",
+          "name": "Remote Sensing in Agriculture"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Jeongbae Jeon",
+          "Sangwan Lee",
+          "Solhee Kim",
+          "김태곤"
+        ],
+        "venue": "Geocarto International",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 35,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.5674,
+          "everydayRelevance": 0,
+          "freshness": 1,
+          "credibility": 0.705,
+          "total": 0.5057,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 0.25,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.6504
+          },
+          "everydayDomains": [],
+          "subfieldKey": "subfields/2303",
+          "evidence": [
+            "total 0.5057 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.57 = P 0.66 − 0.45×t 0.00 − 0.15×j 0.65",
+            "outcome verbs (v 0.75): improved, detection, outperformed",
+            "recognisable subjects (s 0.25): crops",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.65): 8/123 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.00: touches none of the 16 everyday domains",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.71 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.80 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Geocarto International",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.80: open access without an open licence (repository copy)",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1080/10106049.2026.2717446)"
+      },
+      "summary": {
+        "souhrn": "Vyznačit na leteckém snímku hranice zemědělských polí umí dnes umělá inteligence sama — otázka je, jak jí říct, co má hledat. Tým vytvořil zásuvný modul GeoSAM do mapového programu QGIS, který nabízí pět způsobů zadání pro model Segment Anything (zkráceně SAM, program od Meta AI, který v obrázku odděluje jednotlivé objekty): kliknutí bodem, orámování, slovní popis a dvě varianty, kde objekty nejdřív najde automatický detektor. Nejpřesnější bylo prosté kliknutí do pole (skóre 0,98 z 1), jenže to nikdo nezvládne udělat u tisíců pozemků; slovní zadání dosáhlo 0,94, přičemž obecné anglické „farm plot“ (zemědělský pozemek) fungovalo lépe než názvy konkrétních plodin. Samotné orámování bylo skoro k ničemu (0,54), ale když k němu autoři přidali slovní popis, vyskočilo na 0,92. A na snímcích s rozlišením 25 centimetrů na pixel klesla přesnost plně automatického postupu na 88,6 % oproti 97 % u dronových snímků s rozlišením 8 centimetrů.",
+        "podrobneVysvetleni": "Autoři testovali pět způsobů, jak modelu SAM zadat úkol „najdi zemědělské pozemky“ na leteckých snímcích s rozlišením 25 centimetrů na obrazový bod (tedy jeden pixel odpovídá čtverci o straně 25 cm). Výsledky porovnávali takzvaným F1 skóre — číslem mezi 0 a 1, které dohromady měří, kolik polí program našel a kolik z toho, co označil, byla skutečně pole; 1 znamená dokonalou shodu s ručně vyznačenou skutečností.\n\nRučně zadaný bod uvnitř pozemku vedl k nejlepšímu výsledku 0,9785, tedy zhruba 98 procentům dokonalosti. Jenže každý pozemek musí někdo odklikat, takže pro velká území je to nepoužitelné. Textové zadání dalo 0,9406 a zajímavé je, že obecná slova fungovala lépe než přesné názvy plodin — model si zjevně poradí spíš s představou „pole“ než „pšenice“. Samotné orámování skončilo na 0,5417, tedy zhruba na úrovni náhody v tom smyslu, že skoro polovina práce byla špatně; po přidání textového popisu se zvedlo na 0,9220, což je zlepšení asi o 70 procent. Plně automatické varianty, kde pozemky nejdřív najde detektor, skončily na 0,8861 (bod) a 0,8785 (rámeček s textem).\n\nDruhé zjištění se týká kvality snímků: stejný automatický postup dosáhl 97,05 % na dronových snímcích s rozlišením 8 centimetrů, ale jen 88,62 % na leteckých s 25 centimetry. Detail vstupních dat tedy rozhoduje víc než jemné ladění zadání.",
+        "procJeToDulezite": "Mapování zemědělské půdy stojí za dotacemi, územním plánováním i sledováním, jak ubývá orné půdy — a tahle práce ukazuje, kdy se vyplatí nechat počítač pracovat samostatně a kdy je levnější pár kliknutí navíc. Zároveň je to srozumitelná ukázka toho, že úspěch umělé inteligence často závisí spíš na kvalitě podkladů a formulaci zadání než na modelu samotném.",
+        "poznamkaKOmezenim": "Jde o srovnání provedené na snímcích jedné oblasti a dvou rozlišení, takže v jiné krajině, u jiných typů pozemků nebo v jiném ročním období mohou čísla vypadat jinak."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 126,
+              "end": 430
+            },
+            "matchedText": "Tým vytvořil zásuvný modul GeoSAM do mapového programu QGIS, který nabízí pět způsobů zadání pro model Segment Anything (zkráceně SAM, program od Meta AI, který v obrázku odděluje jednotlivé objekty): kliknutí bodem, orámování, slovní popis a dvě varianty, kde objekty nejdřív najde automatický detektor.",
+            "messageCs": "Tato věta má 44 slov a je moc dlouhá: „Tým vytvořil zásuvný modul GeoSAM do mapového programu QGIS, který nabízí pět z…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[126,430]: Tým vytvořil zásuvný modul GeoSAM do mapového programu QGIS, který nabízí pět způsobů zadání pro model Segment Anything (zkráceně SAM, program od Meta AI, který v obrázku odděluje jednotlivé objekty): kliknutí bodem, orámování, slovní popis a dvě varianty, kde objekty nejdřív najde automatický detektor."
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 710,
+              "end": 714
+            },
+            "matchedText": "0,54",
+            "messageCs": "Číslo „0,54“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „0,54 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[710,714]: 0,54"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 775,
+              "end": 779
+            },
+            "matchedText": "0,92",
+            "messageCs": "Číslo „0,92“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „0,92 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[775,779]: 0,92"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 808,
+              "end": 810
+            },
+            "matchedText": "25",
+            "messageCs": "Číslo „25“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „25 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[808,810]: 25"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 877,
+              "end": 883
+            },
+            "matchedText": "88,6 %",
+            "messageCs": "Číslo „88,6 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „88,6 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[877,883]: 88,6 %"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 891,
+              "end": 895
+            },
+            "matchedText": "97 %",
+            "messageCs": "Číslo „97 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „97 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[891,895]: 97 %"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 928,
+              "end": 929
+            },
+            "matchedText": "8",
+            "messageCs": "Číslo „8“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „8 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[928,929]: 8"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 192,
+              "end": 194
+            },
+            "matchedText": "25",
+            "messageCs": "Číslo „25“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „25 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[192,194]: 25"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 494,
+              "end": 506
+            },
+            "matchedText": "98 procentům",
+            "messageCs": "Číslo „98 procentům“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „98 procentům — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[494,506]: 98 procentům"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 954,
+              "end": 964
+            },
+            "matchedText": "70 procent",
+            "messageCs": "Číslo „70 procent“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „70 procent — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[954,964]: 70 procent"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1041,
+              "end": 1048
+            },
+            "matchedText": "0,8861 ",
+            "messageCs": "Číslo „0,8861“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „0,8861 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1041,1048]: 0,8861 "
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1056,
+              "end": 1063
+            },
+            "matchedText": "0,8785 ",
+            "messageCs": "Číslo „0,8785“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „0,8785 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1056,1063]: 0,8785 "
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=26.00",
+            "messageCs": "Věty jsou v průměru moc dlouhé (26,0 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=26.00"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=6",
+            "messageCs": "Počet vět delších než 30 slov: 6. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=6"
+          }
+        ],
+        "soft": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=40.7",
+            "messageCs": "Text se celkově čte těžko (index 41 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=40.7"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": {
+    "expected": 5,
+    "produced": 3,
+    "reason": "not enough fresh, in-category candidates survived filtering and verification"
+  },
+  "degradations": [],
+  "generatedAt": "2026-08-19T15:49:35.837Z",
+  "generatedOn": "2026-08-19",
+  "schemaVersion": 1
+}

@@ -1,0 +1,747 @@
+{
+  "date": "2026-07-29",
+  "categoryKey": "nature-climate",
+  "categoryLabel": "Příroda a klima",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7203619971",
+        "title": "Young minds, big fish: exploring two to twelve-year-old’s descriptions and fear of sharks",
+        "abstract": "Sharks are often feared and negatively perceived by the public, potentially limiting conservation support. However, little is known about how children perceive sharks. We explored this using an online survey, with 323 parents reporting on 374 children aged 2–12 from 17 countries or regions. Parents described their child’s shark-related experiences and recorded responses to open-ended questions. Children most often encountered sharks through books (65%) and aquariums (59%), followed by TV (38%). Around two-thirds of children liked sharks, citing their appearance or behavior, while others disliked them due to fear or perceived danger. A total of 13.9% of children associated sharks with fear and/or being scary, and a statistically significant trend was found, where the proportion of children reporting fear associations with sharks increased with age. Our qualitative data suggest directions for future research, including examining the influence of parental fear and media exposure.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1080/10871209.2026.2717285",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1080/10871209.2026.2717285",
+        "openAlexId": "W7203619971",
+        "subfield": {
+          "id": "subfields/2309",
+          "name": "Nature and Landscape Conservation"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T11387",
+          "name": "Ichthyology and Marine Biology"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "B. Le Busque",
+          "C. Ambrosi",
+          "J. Gleaves",
+          "C. Litchfield"
+        ],
+        "venue": "Human Dimensions of Wildlife",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 43,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.675,
+          "everydayRelevance": 0.7,
+          "freshness": 1,
+          "credibility": 0.6658,
+          "total": 0.7392,
+          "explainDetail": {
+            "v": 0.25,
+            "s": 0.75,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0
+          },
+          "everydayDomains": [
+            "screens",
+            "family"
+          ],
+          "subfieldKey": "subfields/2309",
+          "evidence": [
+            "total 0.7392 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.68 = P 0.68 − 0.45×t 0.00 − 0.15×j 0.00",
+            "outcome verbs (v 0.25): increased",
+            "recognisable subjects (s 0.75): children, fish (title, ×2)",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "everyday relevance 0.70: 2 domain(s) — screens, family",
+            "everyday terms (5): online, child, children, parent, parents",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.67 = 0.40×c1 1.00 + 0.25×c2 0.64 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Human Dimensions of Wildlife",
+            "c2 0.64: n = 374",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1080/10871209.2026.2717285)"
+      },
+      "summary": {
+        "nadpis": "Většina malých dětí má žraloky ráda, strach přichází s věkem",
+        "oCoJde": "Vědci chtěli zjistit, jak žraloky vnímají malé děti. Zeptali se proto rodičů, co jejich děti o žralocích říkají a odkud je znají. Ukázalo se, že většina dětí má žraloky ráda, ale se rostoucím věkem se u nich častěji objevuje strach.",
+        "podrobneVysvetleni": "Autoři použili dotazník na internetu. Vyplnilo ho 323 rodičů, kteří odpovídali za 374 dětí ve věku od dvou do dvanácti let ze 17 zemí a oblastí. Rodiče popsali, s čím vším už jejich dítě ve spojení se žraloky přišlo, a zapsali jeho odpovědi na otevřené otázky, tedy takové, kde se nevybírá z hotových možností a dítě odpovídá vlastními slovy.\n\nDěti nejčastěji znaly žraloky z knih (65 % dětí, tedy asi dvě děti ze tří) a z akvárií (59 %, tedy o něco víc než polovina). Následovala televize (38 %, tedy přibližně dvě děti z pěti).\n\nAsi dvě třetiny dětí — tedy zhruba dvě děti ze tří — měly žraloky rády. Mluvily o tom, jak vypadají nebo jak se chovají. Zbytek je rád neměl, nejčastěji kvůli strachu nebo kvůli tomu, že jim žraloci připadali nebezpeční. Se strachem nebo se slovem „strašidelný\" si žraloky spojilo 13,9 % dětí, tedy přibližně jedno dítě ze sedmi. Zajímavé je, jak to souviselo s věkem: čím starší děti, tím častěji zmiňovaly strach. Tento rozdíl byl podle autorů dost velký na to, aby nešel vysvětlit jen náhodou.\n\nOdpovědi jsou slovní, ne měřené v číslech, takže autoři z nich hlavně navrhují, co zkoumat dál — třeba vliv strachu rodičů a vliv toho, co děti vidí v médiích.",
+        "prikladZeZivota": "Rodiče v dotazníku popisovali, odkud jejich dítě žraloky zná. Nejčastěji to byly knihy, hned potom akvária, a až za nimi televize.",
+        "prikladTyp": "ze-studie",
+        "procJeToDulezite": "Když lidé žraloky vnímají hlavně jako hrozbu, méně podporují jejich ochranu. Zjištění naznačuje, kdy a jak strach ze žraloků vzniká, a tedy i kdy má smysl dětem o nich vyprávět jinak.",
+        "poznamkaKOmezenim": "Jde o předběžný výsledek z internetového dotazníku, kde o dětech odpovídali rodiče, ne děti samy, a rodiče, kteří se do takového průzkumu zapojí, nemusí být běžný vzorek populace.",
+        "prikladJeMotivace": false
+      },
+      "verification": {
+        "verdict": "supported",
+        "attempts": 1,
+        "rejections": [],
+        "resolution": "accepted"
+      },
+      "checks": {
+        "ok": true,
+        "status": "pass",
+        "hard": [],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 145,
+              "end": 342
+            },
+            "matchedText": "Rodiče popsali, s čím vším už jejich dítě ve spojení se žraloky přišlo, a zapsali jeho odpovědi na otevřené otázky, tedy takové, kde se nevybírá z hotových možností a dítě odpovídá vlastními slovy.",
+            "messageCs": "Tato věta má 33 slov a je moc dlouhá: „Rodiče popsali, s čím vším už jejich dítě ve spojení se žraloky přišlo, a zapsa…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[145,342]: Rodiče popsali, s čím vším už jejich dítě ve spojení se žraloky přišlo, a zapsali jeho odpovědi na otevřené otázky, tedy takové, kde se nevybírá z hotových možností a dítě odpovídá vlastními slovy."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=2",
+            "messageCs": "Počet vět delších než 25 slov: 2. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=2"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7160246793",
+        "title": "Effects of pre-spawning heat stress on the fecundity of Acropora aspera",
+        "abstract": "<title>Abstract</title> Repeated bleaching events driven by heat stress have caused extensive coral mortality and long-term impairment in survivors. Following bleaching, larval production and recruitment decline, undermining reef recovery. On the Great Barrier Reef, such heat-stress events currently coincide with early oogenesis in abundant taxa; with climate change, earlier onsets are expected to overlap increasingly with later gametogenic stages. How coral reproduction will be altered as gametes mature and spawn in warmer waters remains unclear. To address this, we quantified the effects of heat stress during late gametogenesis on the fecundity of <italic>Acropora aspera</italic> . Using an <italic>ex-situ</italic> experiment, gravid colonies were exposed to nine treatments combining three temperatures (+ 0, + 1, +2°C) and three durations (3, 6, 9 weeks). Gravid polyp probability, egg count per polyp, egg volume, and testis volume were assessed at spawning. Responses were trait- and duration-specific. Sperm production was most sensitive, with testis volume declining ~threefold under + 2°C for 9 weeks relative to controls. However, 6-week exposure at + 2°C increased sperm production, highlighting the influence of exposure duration. In contrast, longer exposure to heat-stress increased egg volume, which nearly doubled at + 1°C; while egg counts remained stable, suggesting a strategy favouring better provisioned rather than numerous eggs. Nevertheless, larger gamete volumes may not necessarily represent improved quality and could instead reflect stress-induced physiological changes. These findings demonstrate that heat intensity, duration, and timing jointly shape coral reproductive investment. Incorporating these dynamics in models is important for predicting future reproductive potential and reef resilience under climate change.",
+        "date": "2026-08-18",
+        "url": "https://doi.org/10.1007/s00338-026-02942-8",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1007/s00338-026-02942-8",
+        "openAlexId": "W7160246793",
+        "subfield": {
+          "id": "subfields/2303",
+          "name": "Ecology"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10341",
+          "name": "Coral and Marine Ecosystems Studies"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Morane Le Nohaïc",
+          "Christopher Doropoulos",
+          "Selina WARD",
+          "Peter J. MUMBY"
+        ],
+        "venue": "Coral Reefs",
+        "indexedDate": "2026-05-06",
+        "referencedWorksCount": 86,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.4726,
+          "everydayRelevance": 0.9333,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.7347,
+          "explainDetail": {
+            "v": 1,
+            "s": 0,
+            "q": 0,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.1163
+          },
+          "everydayDomains": [
+            "health",
+            "weather",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2303",
+          "evidence": [
+            "total 0.7347 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.47 = P 0.49 − 0.45×t 0.00 − 0.15×j 0.12",
+            "outcome verbs (v 1.00): increased, improved, doubled, caused",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.12): 3/258 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.93: 3 domain(s) — health, weather, mind",
+            "everyday terms (4): mortality, treatment, climate, stress",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Coral Reefs",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1007/s00338-026-02942-8)"
+      },
+      "summary": {
+        "nadpis": "Teplejší voda mění, jaké rozmnožovací buňky korál vytvoří",
+        "oCoJde": "Vědci chtěli vědět, co se stane s rozmnožováním korálů, když je voda teplejší právě v době, kdy jejich pohlavní buňky dozrávají. Zahřívali proto korálové kolonie v nádržích a pak sledovali, co vypustí do vody. Ukázalo se, že teplo tvorbu spermií a vajíček mění, ale u každé z nich jinak — a hodně záleží na tom, jak dlouho teplo trvá.",
+        "podrobneVysvetleni": "Vědci pracovali s korálem druhu Acropora aspera. Pokus dělali mimo moře, v nádržích (ex-situ). Vybrali kolonie, které už měly v sobě dozrávající pohlavní buňky. Rozdělili je do devíti skupin. Každá skupina dostala jinou kombinaci teploty a délky ohřevu. Teploty byly tři: běžná, o jeden stupeň vyšší a o dva stupně vyšší. Délky byly také tři: tři, šest a devět týdnů. Tři teploty krát tři délky dávají devět kombinací. Pak korály vypustily pohlavní buňky do vody. Vědci v té chvíli změřili čtyři věci. Nejprve, kolik polypů mělo pohlavní buňky. Polyp je drobný jednotlivý živočich; z mnoha polypů se skládá celá kolonie. Dále počet vajíček v jednom polypu. Dále velikost těchto vajíček. A nakonec velikost varlat, tedy části, která tvoří spermie. Výsledky se lišily podle znaku i podle délky ohřevu. Nejcitlivější byla tvorba spermií. Při dvou stupních navíc po devět týdnů byla varlata asi třikrát menší než u nezahřívaných korálů. Při stejné teplotě, ale jen šest týdnů, se tvorba spermií naopak zvýšila. U vajíček to bylo jinak. Delší ohřev jejich objem zvětšil. Při jednom stupni navíc se objem téměř zdvojnásobil — jedno vajíčko bylo skoro tak velké jako dvě běžná. Počet vajíček se přitom nezměnil. Vypadá to, že korál dá přednost lépe zásobeným vajíčkům před větším počtem. Větší vajíčko ale nemusí být lepší. Může jít jen o projev stresu.",
+        "prikladZeZivota": "Vědci vzali kolonie korálu Acropora aspera, které už měly v sobě dozrávající vajíčka, a mimo jejich přirozené prostředí je rozdělili do devíti skupin. Každá skupina dostala jinou kombinaci: buď běžnou teplotu, nebo o jeden, nebo o dva stupně vyšší — a to po tři, šest, nebo devět týdnů. Když pak korál vypustil pohlavní buňky do vody, vědci u něj spočítali vajíčka v jednotlivých polypech a změřili jejich velikost i velikost varlat.",
+        "prikladTyp": "ze-studie",
+        "procJeToDulezite": "Když korály kvůli teplé vodě vytvoří méně nebo jiné pohlavní buňky, roste na útesu méně mladých korálů a útes se hůř zotavuje. To se s postupným ohříváním moří může stávat čím dál častěji.",
+        "poznamkaKOmezenim": "Jde o pokus v nádržích s jedním druhem korálu, takže výsledky jsou předběžné a nemusí přesně odpovídat tomu, co se děje v moři.",
+        "prikladJeMotivace": false
+      },
+      "verification": {
+        "verdict": "supported",
+        "attempts": 2,
+        "rejections": [
+          {
+            "attempt": 1,
+            "unsupportedClaims": [
+              "V2_UNSUPPORTED_CLAIM (c2): The colonies were kept in tanks"
+            ],
+            "fabricatedQuotes": []
+          }
+        ],
+        "resolution": "regenerated"
+      },
+      "checks": {
+        "ok": true,
+        "status": "pass",
+        "hard": [],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 31,
+              "end": 47
+            },
+            "matchedText": " Acropora aspera",
+            "messageCs": "Text opisuje původní název článku („ Acropora aspera“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[31,47]:  Acropora aspera"
+          },
+          {
+            "block": "prikladZeZivota",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 26,
+              "end": 42
+            },
+            "matchedText": " Acropora aspera",
+            "messageCs": "Text opisuje původní název článku („ Acropora aspera“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ prikladZeZivota[26,42]:  Acropora aspera"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203634726",
+        "title": "Insights into the assembly mechanisms, co-occurrence patterns, and functional roles of bacterial community in an estuary system",
+        "abstract": "Microbial drivers of biogeochemical cycles in estuaries remain understudied, particularly regarding biodiversity-function relationships. Using 16S rDNA sequencing, we analyzed taxonomic and functional profiles of bacterial communities in the water and sediment along the salinity gradient in Zhenhai Bay (South China). Significant differences in diversity, structure, composition, and function were observed between water and sediment habitats, indicating habitat influence. The terrestrial pollution sources detected in this study have a limited contribution to Zhenhai Bay, with unknown sources accounting for the majority of the total pollution, indicating the complexity of the estuarine environment in Zhenhai Bay. Additionally, most of the functional indicators of C, N, and S cycling were more enriched in the sediment, suggesting a more active biochemical cycle in the sediment than in the water. The spatial turnover of bacterial community composition in the water was much faster than the functional potential, and it showed higher functional redundancy in the water than in the sediment. Furthermore, except for the taxonomic community composition in the water, the functional community in the water and the taxonomic and functional community composition in the sediment were all dominated by stochastic processes. This indicated that strong environmental filtering of the taxonomic community in the water was due to hydrographic conditions or undetected environmental stressors. Overall, the results of this research provide a reasonable characterization of the taxonomy and function of microbial communities in an estuary and provide insights into how spatial changes in the taxonomic and functional community alter the nature and stability of microbial networks. IMPORTANCE: Understanding how bacteria drive essential processes like carbon and nutrient cycling is crucial for managing sensitive estuarine ecosystems. However, we lack clear knowledge of how the diversity of these microbes diversities relate to their actual functions in complex, real-world settings like Zhenhai Bay. This study provides a comprehensive picture of the identity and functional roles of bacterial communities across different habitats (water vs sediment) within a dynamic estuary. We found distinct patterns: sediment hosts more active nutrient cycling, water communities show greater functional flexibility, and pollution sources are surprisingly complex and largely unidentified. Critically, we show that the assembly of these communities is often governed by randomness, except in water, where environmental forces strongly filter which bacteria survive. These insights help predict how estuarine ecosystems might respond to pollution or change, improving management strategies to protect their health and the vital services they provide.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1128/spectrum.02249-25",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1128/spectrum.02249-25",
+        "openAlexId": "W7203634726",
+        "subfield": {
+          "id": "subfields/2303",
+          "name": "Ecology"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T11791",
+          "name": "Microbial Community Ecology and Physiology"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1128/spectrum.02249-25",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Yongjie Wu",
+          "Yang Zhang",
+          "Zhiwen Luo",
+          "Cheng Wang",
+          "Changdong Ke",
+          "Kaiming Li",
+          "Bixian Mai",
+          "Renren Wu"
+        ],
+        "venue": "Microbiology Spectrum",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 76,
+        "tldr": "The results of this research provide a reasonable characterization of the taxonomy and function of microbial communities in an estuary and provide insights into how spatial changes in the taxonomic and functional community alter the nature and stability of microbial networks.",
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.4498,
+          "everydayRelevance": 0.9333,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.7256,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 0.25,
+            "q": 0,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.101
+          },
+          "everydayDomains": [
+            "food",
+            "health",
+            "transport"
+          ],
+          "subfieldKey": "subfields/2303",
+          "evidence": [
+            "total 0.7256 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.45 = P 0.46 − 0.45×t 0.00 − 0.15×j 0.10",
+            "outcome verbs (v 0.75): predicts, detected, protects",
+            "recognisable subjects (s 0.25): drivers",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.10): 4/396 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.93: 3 domain(s) — food, health, transport",
+            "everyday terms (4): nutrient, health, driver, cycling",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Microbiology Spectrum",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        }
+      },
+      "summary": {
+        "nadpis": "V říčním ústí žijí jiné bakterie ve vodě a jiné v bahně na dně",
+        "oCoJde": "Vědci se ptali, jaké bakterie žijí v ústí řeky do moře a jakou práci tam odvádějí. Porovnávali vodu a bahno na dně a zjistili, že jde o dva hodně odlišné světy. V bahně běží přeměny látek živěji, zatímco ve vodě si bakterie navzájem snadněji zastupují úkoly.",
+        "podrobneVysvetleni": "Tým pracoval v zálivu Zhenhai v jižní Číně, tedy tam, kde se sladká voda z řeky míchá s morskou. Nabírali vzorky vody a usazenin ze dna podél linie, na které postupně roste slanost. Z každého vzorku pak přečetli krátký úsek bakteriální DNA (16S rDNA) — je to něco jako čárový kód, podle kterého se pozná, kdo ve vzorku je. Z toho pak odhadli i to, co ty bakterie umějí.\n\nVoda a dnové bahno se lišily ve všem: v počtu druhů, ve složení i ve schopnostech. Většina ukazatelů spojených s kolobehem uhlíku, dusíku a síry — tedy základních látek, ze kterých je živá příroda postavená — byla silnější v bahně. Přeměny látek tam tedy běží živěji než ve vodě.\n\nVe vodě se druhové složení měnilo od místa k místu mnohem rychleji než soubor schopností. Jinými slovy: bakterie se vyměňují, ale práce se dělá dál. Tomu se říká funkční nadbytečnost (functional redundancy) — víc různých druhů umí totéž, takže se navzájem zastoupí.\n\nAutoři také zkoumali, co určuje, kdo kde skončí. Ve většině případů rozhodovala náhoda. Výjimkou bylo druhové složení ve vodě: tam prostředí zřejmě tvrdě vybírá, kdo přežije. Zdroje znečištění se navíc většinou nedaly určit — ty, které vědci zachytili na pevnině, vysvětlily jen malou část.",
+        "prikladZeZivota": "Vědci nabírali v zálivu Zhenhai vzorky vody i bahna ze dna a postupovali podél linie, na které je voda čím dál slanější. Z každého vzorku pak přečetli bakteriální DNA a porovnali, kdo ve vzorku žije a co umí.",
+        "prikladTyp": "ze-studie",
+        "procJeToDulezite": "Ústí řek čistí vodu a přeměňují živiny, které do moře přitékají z pevniny — a tuhle práci tam odvádějí bakterie. Když víme, kde a jak pracují, umíme lépe posoudit, co takové místo snese a co ho poškodí.",
+        "poznamkaKOmezenim": "Jde o jediný záliv a schopnosti bakterií vědci většinou jen odhadli z jejich DNA, ne přímo změřili; navíc se hlavní zdroje znečištění vůbec nepodařilo určit, takže výsledky je třeba brát jako předběžný obrázek.",
+        "prikladJeMotivace": false
+      },
+      "verification": {
+        "verdict": "supported",
+        "attempts": 1,
+        "rejections": [],
+        "resolution": "accepted"
+      },
+      "checks": {
+        "ok": true,
+        "status": "pass",
+        "hard": [],
+        "soft": []
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203603563",
+        "title": "Impact of extreme rainstorm on the spatial distribution of population exposure in Haihe River basin in China",
+        "abstract": "Abstract Based on daily rainfall data from 252 national meteorological stations in the Haihe River Basin of China during 1961–2023, rainstorm events were divided, and four characteristic variables representing the hazard index of rainstorms were statistically analyzed, including total number of rainstorm days ( I day ), cumulative rainfall ( I pre ), average daily rainfall ( I 24pre ), and maximum duration days ( I dur ). Combined with the 1 km gridded population density data of the basin, the population exposure ( PE ) during 1961–2023 under scenarios with and without the “23·7” extreme rainstorm was calculated using the product model of the rainstorm hazard index ( HR ) and exposed population. K-means clustering was adopted to analyze the impact of this rainstorm on the spatial distribution characteristics of watershed population exposure, and a quantitative assessment of the impact contribution rate ( PEC ) was provided. The results show that a single extreme rainstorm can cause changes in the spatial clustering of population exposure in nearly 1/3 of the districts and counties in the basin, and its contribution rate to rainstorm hazard index and population exposure can exceed 10%, which provides a scientific basis for the timely incorporation of typical extreme rainstorm cases and the updating of the flood control and drainage design assessment system as well as relevant codes and standards. The findings can also help optimize the layout of flood storage and detention areas, and provide references for the deployment and construction of X-band radars in areas along the front plain of the Taihang Mountains.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1007/s13762-026-07370-3",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1007/s13762-026-07370-3",
+        "openAlexId": "W7203603563",
+        "subfield": {
+          "id": "subfields/1902",
+          "name": "Atmospheric Science"
+        },
+        "field": {
+          "id": "fields/19",
+          "name": "Earth and Planetary Sciences"
+        },
+        "topic": {
+          "id": "T11234",
+          "name": "Precipitation Measurement and Analysis"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1007/s13762-026-07370-3",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Chen Cheng",
+          "X. Fang",
+          "S. Zhang",
+          "Y. Yu",
+          "S. Yang",
+          "Y. Li",
+          "J. Liu",
+          "C. Mei"
+        ],
+        "venue": "International Journal of Environmental Science and Technology",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 42,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.5884,
+          "everydayRelevance": 0.6667,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.7063,
+          "explainDetail": {
+            "v": 0.25,
+            "s": 0.5,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.1606
+          },
+          "everydayDomains": [
+            "weather",
+            "water"
+          ],
+          "subfieldKey": "subfields/1902",
+          "evidence": [
+            "total 0.7063 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.59 = P 0.61 − 0.45×t 0.00 − 0.15×j 0.16",
+            "outcome verbs (v 0.25): causes",
+            "recognisable subjects (s 0.50): rivers (title, ×2)",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.16): 4/249 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.67: 2 domain(s) — weather, water",
+            "everyday terms (4): flood, rainfall, river, rivers",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in International Journal of Environmental Science and Technology",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no tldr; falling back to the source abstract (§4.2)"
+      },
+      "summary": {
+        "nadpis": "Jediná mimořádná průtrž mračen dokáže překreslit mapu ohrožených obyvatel",
+        "oCoJde": "Vědci se ptali, jak moc jedna jediná mimořádně silná průtrž mračen změní obraz toho, kde v čínském povodí řeky Chaj-che žijí lidé nejvíce ohrožení přívalovými dešti. Zjistili, že jedna taková bouře stačí k tomu, aby se u velké části okresů změnilo zařazení do skupin podle míry ohrožení. Její podíl na celkovém obrázku je přitom větší, než by odpovídalo jedné události za mnoho desetiletí.",
+        "podrobneVysvetleni": "Vědci vzali denní údaje o srážkách z 252 meteorologických stanic v povodí řeky Chaj-che v Číně za roky 1961 až 2023 — tedy měření z více než šesti desítek let. Z nich vybrali období, kdy pršelo mimořádně silně, a každou takovou průtrž popsali čtyřmi čísly: kolik dní celkem takto pršelo, kolik vody spadlo, kolik jí spadlo v průměru za jeden den a jak dlouho nejdéle vydržela bez přerušení. Z těch čtyř čísel udělali jeden ukazatel nebezpečnosti. Ten pak vynásobili počtem lidí, kteří v daném místě žijí. Počty lidí měli v mapě rozdělené na čtverce o straně jeden kilometr. Tak vznikl ukazatel, kterému říkají vystavení obyvatel (population exposure) — tedy kolik lidí je v daném místě přívalovými dešti ohroženo. Celý výpočet provedli dvakrát: jednou s jednou mimořádnou průtrží započtenou, jednou bez ní. Okresy potom roztřídili do skupin podle podobnosti (metoda k-means, tedy strojové hledání skupin s blízkými hodnotami). Ukázalo se, že jediná mimořádná průtrž přeřadila do jiné skupiny téměř třetinu okresů v povodí — tedy přibližně každý třetí. Její podíl na ukazateli nebezpečnosti i na vystavení obyvatel přesáhl 10 %, tedy více než desetinu celku. Autoři z toho vyvozují, že takové jednotlivé případy je potřeba rychle zahrnovat do norem pro odvodnění a ochranu před povodněmi.",
+        "prikladZeZivota": "Vědci spočítali totéž dvakrát. Nejprve s tím, že se ta jedna mimořádná průtrž mračen stala, a pak jako by se nestala. Oba výsledky pak porovnali a sledovali, u kolika okresů se zařazení do skupin podle ohrožení posunulo.",
+        "prikladTyp": "ze-studie",
+        "procJeToDulezite": "Pravidla pro kanalizaci, hráze a záchytné nádrže se navrhují podle dlouhodobých statistik, a ty jedna extrémní bouře dokáže citelně posunout. Když se s takovou událostí nepočítá, může být ochrana měst a obcí navržená slaběji, než odpovídá skutečnosti.",
+        "poznamkaKOmezenim": "Jde o výpočet z jednoho čínského povodí a z jedné konkrétní bouře, takže výsledek nelze bez dalšího přenášet na jiné oblasti; navíc závisí na tom, jak přesná jsou data o počtu obyvatel v jednotlivých čtvercích mapy.",
+        "prikladJeMotivace": false
+      },
+      "verification": {
+        "verdict": "supported",
+        "attempts": 1,
+        "rejections": [],
+        "resolution": "accepted"
+      },
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 160,
+              "end": 390
+            },
+            "matchedText": "Z nich vybrali období, kdy pršelo mimořádně silně, a každou takovou průtrž popsali čtyřmi čísly: kolik dní celkem takto pršelo, kolik vody spadlo, kolik jí spadlo v průměru za jeden den a jak dlouho nejdéle vydržela bez přerušení.",
+            "messageCs": "Tato věta má 38 slov a je moc dlouhá: „Z nich vybrali období, kdy pršelo mimořádně silně, a každou takovou průtrž pops…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[160,390]: Z nich vybrali období, kdy pršelo mimořádně silně, a každou takovou průtrž popsali čtyřmi čísly: kolik dní celkem takto pršelo, kolik vody spadlo, kolik jí spadlo v průměru za jeden den a jak dlouho nejdéle vydržela bez přerušení."
+          }
+        ],
+        "soft": [
+          {
+            "block": "nadpis",
+            "rule": "hype",
+            "ruleId": "hype:mimořádn",
+            "span": {
+              "start": 7,
+              "end": 16
+            },
+            "matchedText": "mimořádná",
+            "messageCs": "Slovo „mimořádná“ zbytečně přehání (pravidlo §2). Zvažte střízlivější formulaci, nebo doplňte konkrétní číslo či příklad.",
+            "detail": "hype:mimořádn @ nadpis[7,16]: mimořádná"
+          },
+          {
+            "block": "oCoJde",
+            "rule": "hype",
+            "ruleId": "hype:mimořádn",
+            "span": {
+              "start": 37,
+              "end": 46
+            },
+            "matchedText": "mimořádně",
+            "messageCs": "Slovo „mimořádně“ zbytečně přehání (pravidlo §2). Zvažte střízlivější formulaci, nebo doplňte konkrétní číslo či příklad.",
+            "detail": "hype:mimořádn @ oCoJde[37,46]: mimořádně"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "hype",
+            "ruleId": "hype:mimořádn",
+            "span": {
+              "start": 194,
+              "end": 203
+            },
+            "matchedText": "mimořádně",
+            "messageCs": "Slovo „mimořádně“ zbytečně přehání (pravidlo §2). Zvažte střízlivější formulaci, nebo doplňte konkrétní číslo či příklad.",
+            "detail": "hype:mimořádn @ podrobneVysvetleni[194,203]: mimořádně"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "hype",
+            "ruleId": "hype:mimořádn",
+            "span": {
+              "start": 761,
+              "end": 771
+            },
+            "matchedText": "mimořádnou",
+            "messageCs": "Slovo „mimořádnou“ zbytečně přehání (pravidlo §2). Zvažte střízlivější formulaci, nebo doplňte konkrétní číslo či příklad.",
+            "detail": "hype:mimořádn @ podrobneVysvetleni[761,771]: mimořádnou"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "hype",
+            "ruleId": "hype:mimořádn",
+            "span": {
+              "start": 949,
+              "end": 958
+            },
+            "matchedText": "mimořádná",
+            "messageCs": "Slovo „mimořádná“ zbytečně přehání (pravidlo §2). Zvažte střízlivější formulaci, nebo doplňte konkrétní číslo či příklad.",
+            "detail": "hype:mimořádn @ podrobneVysvetleni[949,958]: mimořádná"
+          },
+          {
+            "block": "prikladZeZivota",
+            "rule": "hype",
+            "ruleId": "hype:mimořádn",
+            "span": {
+              "start": 61,
+              "end": 70
+            },
+            "matchedText": "mimořádná",
+            "messageCs": "Slovo „mimořádná“ zbytečně přehání (pravidlo §2). Zvažte střízlivější formulaci, nebo doplňte konkrétní číslo či příklad.",
+            "detail": "hype:mimořádn @ prikladZeZivota[61,70]: mimořádná"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=17.74",
+            "messageCs": "Věty jsou v průměru moc dlouhé (17,7 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=17.74"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 25 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203600728",
+        "title": "Reverse Time Migration with Modified Nearly Analytical Discretization: Efficient Large-Scale High-Resolution Imaging and Aliasing Suppression",
+        "abstract": "Abstract Reverse time migration (RTM) requires numerically solving the partial differential wave equation because analytical solutions are infeasible. A significant challenge in numerical methods arises from inaccuracies in derivatives approximation, making the numerical wave velocity frequency-dependent and causing numerical dispersion. It is an unphysical artifact that degrades modeling and imaging, particularly at higher frequencies and over time. Avoiding numerical dispersion requires finer spatial grids, which substantially increase computational costs to achieve high-resolution imaging results. The modified nearly analytical discretization (MNAD) method reduces numerical dispersion by incorporating additional analytical relations through simultaneous numerical solutions of the wavefield and its spatial gradient fields, employing them in higher-order derivative approximations, and improving spatial derivative estimation via energy conservation optimization. MNAD is introduced for RTM in large-scale studies, where leveraging compact stencils and coarser spatial and temporal grids enables high-resolution imaging with substantially lower computational and memory costs compared to conventional finite difference (FD) methods. Furthermore, adjoint-state imaging is enhanced with a novel data boundary condition interpolation using MNAD gradient fields, mitigating aliasing effects in recovered images from data recorded at half the Nyquist rate, enabling imaging with fewer required number of sources/receivers and alleviating acquisition costs. Synthetic experiments validate the method’s performance in modeling and imaging on coarser grids than FD methods and in maintaining stability over longer propagation times. Further, the MNAD-based RTM application to ocean bottom seismometer (OBS) data in a large-scale study confirms its capability to achieve high-resolution images with reduced computational costs. Finally, imaging with data sampled at half the Nyquist rate highlights the potential of the proposed approach for minimizing acquisition costs without sacrificing resolution and suffering from aliasing. These findings affirm MNAD as a robust and efficient alternative to FD methods for large-scale, high-resolution imaging, offering significant advantages in computation, storage, and acquisition efficiency.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1190/geo-2025-0665",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1190/geo-2025-0665",
+        "openAlexId": "W7203600728",
+        "subfield": {
+          "id": "subfields/1908",
+          "name": "Geophysics"
+        },
+        "field": {
+          "id": "fields/19",
+          "name": "Earth and Planetary Sciences"
+        },
+        "topic": {
+          "id": "T10271",
+          "name": "Seismic Imaging and Inversion Techniques"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Toktam Zand"
+        ],
+        "venue": "Geophysics",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.4548,
+          "everydayRelevance": 0.9333,
+          "freshness": 1,
+          "credibility": 0.605,
+          "total": 0.7079,
+          "explainDetail": {
+            "v": 1,
+            "s": 0,
+            "q": 0,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.2349
+          },
+          "everydayDomains": [
+            "energy",
+            "money",
+            "mind"
+          ],
+          "subfieldKey": "subfields/1908",
+          "evidence": [
+            "total 0.7079 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.45 = P 0.49 − 0.45×t 0.00 − 0.15×j 0.23",
+            "outcome verbs (v 1.00): reduced, reduces, increases, lowers, enables",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.23): 7/298 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.93: 3 domain(s) — energy, money, mind",
+            "everyday terms (4): energy, cost, costs, memory",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.61 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Geophysics",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1190/geo-2025-0665)"
+      },
+      "summary": {
+        "nadpis": "Nový způsob počítání zpřesňuje obrazy zemských hlubin a šetří výkon počítačů",
+        "oCoJde": "Geofyzici hledají způsob, jak z odrazů zvukových vln vytvořit ostrý obraz vrstev pod zemí nebo pod mořským dnem, ale bez obrovské spotřeby počítačového času. Vyzkoušeli upravený postup výpočtu, který kromě samotné vlny počítá i to, jak rychle se mění v prostoru. Ukázalo se, že takový výpočet zvládne pracovat s hrubší sítí bodů, a přesto dá podobně ostrý obraz jako běžná metoda.",
+        "podrobneVysvetleni": "Aby vědci „viděli\" do podzemí, vysílají do něj vlny a měří, co se vrátí. Obraz pak dopočítají tak, že vlny v počítači pošlou zpět v čase (tomu se říká reverse time migration, RTM). Počítač ale nedokáže vlnovou rovnici vyřešit přesně. Prostor si rozdělí na mřížku bodů a v nich počítá přibližně. Z toho vzniká chyba, které se říká numerická disperze: vlna se v počítači šíří jinou rychlostí podle své frekvence, což obraz rozmazává. Chyba roste s vyššími frekvencemi a s delší dobou výpočtu. Obvyklé řešení je zjemnit mřížku, což ale výpočet velmi prodraží.\n\nAutoři použili metodu zvanou MNAD (modified nearly analytical discretization). Ta počítá současně vlnové pole i jeho prostorové změny a využívá je při odhadu derivací; odhad navíc ladí tak, aby se zachovávala energie. Díky tomu stačí hrubší mřížka v prostoru i v čase a menší okolí bodu. Výpočet je tedy rychlejší a zabere méně paměti než běžná metoda konečných diferencí (finite difference).\n\nMetodu ověřili nejprve na umělých, počítačem vytvořených datech, pak na skutečném měření z přístrojů na dně oceánu. Navíc doplnili postup, který potlačuje falešné vzory v obrazu (aliasing), pokud je měření řidší, než je běžně považováno za dostatečné.",
+        "prikladZeZivota": "Autoři metodu vyzkoušeli nejen na umělých, počítačem vytvořených datech, ale i na skutečném rozsáhlém měření ze seismometrů umístěných na dně oceánu (ocean bottom seismometer, OBS). I na hrubší výpočetní síti z nich dostali obrazy s vysokým rozlišením a s menšími nároky na výpočty. Pak zkusili totéž s daty, ve kterých ponechali jen polovinu obvykle potřebných záznamů — a obraz zůstal ostrý, bez rušivých falešných vzorů.",
+        "prikladTyp": "ze-studie",
+        "procJeToDulezite": "Mapování podzemí se používá při hledání zdrojů, sledování zlomů i výzkumu stavby Země, a je velmi drahé. Když stejný obraz vznikne s menší spotřebou výpočtů a z menšího počtu měřicích přístrojů, klesnou náklady na celý výzkum.",
+        "poznamkaKOmezenim": "Většina důkazů pochází z umělých, počítačem vytvořených testů a z jednoho skutečného měření, takže jde o slibné, ale zatím omezené srovnání s běžnou metodou.",
+        "prikladJeMotivace": false
+      },
+      "verification": {
+        "verdict": "supported",
+        "attempts": 2,
+        "rejections": [
+          {
+            "attempt": 1,
+            "unsupportedClaims": [
+              "V2_UNSUPPORTED_CLAIM (c4): The resulting image showed layers beneath the seafloor."
+            ],
+            "fabricatedQuotes": []
+          }
+        ],
+        "resolution": "regenerated"
+      },
+      "checks": {
+        "ok": true,
+        "status": "pass",
+        "hard": [],
+        "soft": [
+          {
+            "block": "oCoJde",
+            "rule": "hype",
+            "ruleId": "hype:obrovsk",
+            "span": {
+              "start": 121,
+              "end": 129
+            },
+            "matchedText": "obrovské",
+            "messageCs": "Slovo „obrovské“ zbytečně přehání (pravidlo §2). Zvažte střízlivější formulaci, nebo doplňte konkrétní číslo či příklad.",
+            "detail": "hype:obrovsk @ oCoJde[121,129]: obrovské"
+          },
+          {
+            "block": "poznamkaKOmezenim",
+            "rule": "hype",
+            "ruleId": "hype:slibn",
+            "span": {
+              "start": 105,
+              "end": 111
+            },
+            "matchedText": "slibné",
+            "messageCs": "Slovo „slibné“ zbytečně přehání (pravidlo §2). Zvažte střízlivější formulaci, nebo doplňte konkrétní číslo či příklad.",
+            "detail": "hype:slibn @ poznamkaKOmezenim[105,111]: slibné"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=16.76",
+            "messageCs": "Věty jsou v průměru moc dlouhé (16,8 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=16.76"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-08-19T08:58:16.249Z",
+  "generatedOn": "2026-08-19",
+  "schemaVersion": 1
+}

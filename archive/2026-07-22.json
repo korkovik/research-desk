@@ -1,0 +1,783 @@
+{
+  "date": "2026-07-22",
+  "categoryKey": "nature-climate",
+  "categoryLabel": "Příroda a klima",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7203603624",
+        "title": "Microbial inoculants for soil restoration: A Risk-Proportional Stewardship Framework Integrating Strain-Resolved Genomics and Adaptive Governance",
+        "abstract": "Abstract Global soil degradation and increasing reliance on chemical inputs threaten agricultural sustainability, driving interest in microbial inoculants as tools for soil restoration. These biological products have the potential to enhance nutrient cycling, improve soil structure, and support plant resilience, but their environmental release raises important safety and stewardship considerations. Here, we propose a risk-proportional framework for the responsible deployment of microbial inoculants grounded in release-based stewardship. The framework integrates genome-resolved strain identification, exclusionary hazard screening, bioassay-based risk triage, ecological testing under realistic conditions, and monitored field deployment. Drawing on evidence from microbial ecology and invasion biology, we highlight how inoculants can alter resident microbial communities, influence ecosystem function, and, in some cases, facilitate gene flow, underscoring the need for risk assessment. We further outline a federated, genome-informed data infrastructure to support traceability, cross-jurisdiction learning, and adaptive management. Together, this approach provides a scalable and scientifically grounded pathway to balance innovation and safety, enabling microbial technologies to contribute to soil restoration and climate-resilient agriculture.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1093/sumbio/qvag036",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1093/sumbio/qvag036",
+        "openAlexId": "W7203603624",
+        "subfield": {
+          "id": "subfields/2303",
+          "name": "Ecology"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T11791",
+          "name": "Microbial Community Ecology and Physiology"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Anna Edlund",
+          "G C Beattie",
+          "Joana Falcão Salles",
+          "Jack A. Gilbert",
+          "Janet Jansson",
+          "Lennon Jay",
+          "Jennifer B H Martiny",
+          "Ian A. Sanders",
+          "Christopher W. Schadt",
+          "Carsten Suhr Jacobsen",
+          "Matthew B Sullivan"
+        ],
+        "venue": "Sustainable Microbiology",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.4044,
+          "everydayRelevance": 0.9667,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.7167,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 1,
+            "q": 0,
+            "c": 0.4,
+            "t": 0,
+            "j": 0.6707
+          },
+          "everydayDomains": [
+            "food",
+            "health",
+            "weather",
+            "transport"
+          ],
+          "subfieldKey": "subfields/2303",
+          "evidence": [
+            "total 0.7167 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.40 = P 0.51 − 0.45×t 0.00 − 0.15×j 0.67",
+            "outcome verbs (v 0.50): improves, raises",
+            "recognisable subjects (s 1.00): residents, plants, soil (title, ×2)",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 0.40): −0.4 method-word subtitle; −0.2 2 technical strings in the title",
+            "jargon density (j 0.67): 11/164 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 4 domain(s) — food, health, weather, transport",
+            "everyday terms (5): nutrient, screening, climate, driving, cycling",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Sustainable Microbiology",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1093/sumbio/qvag036)"
+      },
+      "summary": {
+        "souhrn": "Půdy ubývá, zemědělství se hodně opírá o chemii, a tak roste zájem o mikrobiální přípravky (microbial inoculants) — živé bakterie a houby, které se přidávají do půdy. Autoři shrnují důkazy, že takové mikroby mohou změnit původní půdní společenstvo, ovlivnit fungování ekosystému a někdy i předat své geny jiným mikrobům. Navrhují proto postup, kde míra kontroly odpovídá míře rizika. Nejdřív se přesně určí, o jaký kmen jde, pak se vyloučí ty nebezpečné, následují testy v laboratoři i v podmínkách blízkých přírodě a nakonec sledování přímo na polích. Pro čtenáře z toho plyne jedno: „biologické\" samo o sobě neznamená ani bezpečné, ani rizikové — záleží na tom, o jaký mikrob jde a jak se prověřil.",
+        "podrobneVysvetleni": "Nejde o pokus na poli. Autoři sesbírali poznatky z dvou oborů. Prvním je ekologie mikroorganismů, tedy věda o tom, jak žijí bakterie a houby v půdě. Druhým je biologie invazí (invasion biology), tedy studium organismů, které se dostanou tam, kde dřív nebyly. Z obou vyplývá, že vypuštěný mikrob se nemusí chovat jen podle plánu. Může vytlačit domácí druhy. Může změnit, jak půda zpracovává živiny. A může si s okolními mikroby vyměnit geny.\n\nZ toho autoři staví postup složený z několika kroků. Nejprve se přečte celý dědičný kód přípravku, aby bylo jasné, o který konkrétní kmen jde. Pak přijde vyřazovací síto: kmeny s vlastnostmi, které jsou nebezpečné pro lidi, zvířata nebo rostliny, dál nepokračují. Zbytek projde jednoduchými testy na živých organismech, které rozdělí přípravky podle míry rizika. Rizikovější kmeny se testují v prostředí, které se blíží skutečné půdě. Teprve potom smějí na pole, a i tam se dál sleduje, co dělají.\n\nAutoři k tomu navrhují společnou databázi. Údaje by zůstaly u jednotlivých zemí a laboratoří, ale byly by propojené a porovnatelné. To by umožnilo dohledat, který kmen se kde použil, a učit se z případů z jiných států. Pravidla by se pak upravovala podle toho, co se v praxi zjistí.",
+        "procJeToDulezite": "Přípravky s živými mikroby se prodávají zahrádkářům i zemědělcům jako šetrná náhrada chemie, a tento text ukazuje, podle čeho poznat, že byly opravdu prověřené. Zdravá půda přitom rozhoduje o tom, kolik jídla vypěstujeme a jak dobře snese krajina suchá léta.",
+        "poznamkaKOmezenim": "Jde o návrh postupu a přehled dosavadních poznatků, nikoli o vlastní měření — sám rámec nebyl v praxi vyzkoušen, takže není jasné, jak dobře by fungoval a kolik by stál."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "pass",
+        "hard": [],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 384,
+              "end": 552
+            },
+            "matchedText": "Nejdřív se přesně určí, o jaký kmen jde, pak se vyloučí ty nebezpečné, následují testy v laboratoři i v podmínkách blízkých přírodě a nakonec sledování přímo na polích.",
+            "messageCs": "Tato věta má 28 slov a je moc dlouhá: „Nejdřív se přesně určí, o jaký kmen jde, pak se vyloučí ty nebezpečné, následuj…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[384,552]: Nejdřív se přesně určí, o jaký kmen jde, pak se vyloučí ty nebezpečné, následují testy v laboratoři i v podmínkách blízkých přírodě a nakonec sledování přímo na polích."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 25 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203606497",
+        "title": "Distinct cellular responses in liver macrophages to short- and long-term exposure to pristine and artificially aged polystyrene microplastic particles",
+        "abstract": "Microplastic particles (MPP) arise from mismanaged plastic waste, plastic degradation (i.e., agricultural films, textiles, or packaging), and direct use in products such as cosmetics. Their environmental persistence raises concerns for ecosystems, wildlife, and human health. However, most in vitro studies focus on pristine spherical particles and short-term exposure, limiting environmental relevance. Here, we conducted a comprehensive multi-parametric analysis of short- (24 h) and long-term (21 days) exposure of murine macrophages to pristine (PS pristine ) and artificially weathered (PS aged ) polystyrene (PS) MPP. PS pristine were largely non-toxic during short-term exposure but induced adaptive pro- and anti-inflammatory responses, with minimal cytotoxicity, after repeated long-term exposure. PS aged triggered acute oxidative stress, reduced metabolic activity, induced DNA damage, and elicited early pro-inflammatory activation, while long-term exposure resulted in pronounced cellular stress, functional impairment, and minimal macrophage polarization. These results demonstrate that particle ageing and exposure period critically shape macrophage responses and highlight the need for long-term in vitr o studies using environmentally relevant, well-characterized MPP.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1016/j.ecoenv.2026.120663",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1016/j.ecoenv.2026.120663",
+        "openAlexId": "W7203606497",
+        "subfield": {
+          "id": "subfields/2310",
+          "name": "Pollution"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10753",
+          "name": "Microplastics and Plastic Pollution"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1016/j.ecoenv.2026.120663",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Johanna K. Fritsche",
+          "Sebastian Reich",
+          "Kathrin A. Retsch",
+          "Valérie Jérôme",
+          "Thomas Scheibel",
+          "Ruth Freitag"
+        ],
+        "venue": "Ecotoxicology and Environmental Safety",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 68,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.404,
+          "everydayRelevance": 0.9333,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.7072,
+          "explainDetail": {
+            "v": 1,
+            "s": 0,
+            "q": 0,
+            "c": 0.5,
+            "t": 0,
+            "j": 0.3067
+          },
+          "everydayDomains": [
+            "health",
+            "mind",
+            "ageing"
+          ],
+          "subfieldKey": "subfields/2310",
+          "evidence": [
+            "total 0.7072 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.40 = P 0.45 − 0.45×t 0.00 − 0.15×j 0.31",
+            "outcome verbs (v 1.00): reduced, raises, triggered, resulted in",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 0.50): −0.3 no outcome verb or recognisable subject in the title; −0.2 title is 19 words",
+            "jargon density (j 0.31): 5/163 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.93: 3 domain(s) — health, mind, ageing",
+            "everyday terms (4): health, focus, stress, ageing",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Ecotoxicology and Environmental Safety",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no tldr; falling back to the source abstract (§4.2)"
+      },
+      "summary": {
+        "souhrn": "Vědci nechali působit drobné částečky plastu na myší buňky z jater. Šlo o makrofágy — takzvané uklízecí buňky imunity (macrophages). Ty pohlcují cizí věci v těle. Použili dvě podoby polystyrenu: nový, čistý a pak umělecky „zvětralý\". Zvětralý plast napodoboval částice, které dlouho ležely v přírodě. Čistý plast buňkám krátkodobě téměř neškodil. Po opakovaném působení po 21 dní ale buňky měnily své zánětlivé chování. Zvětralý plast poškozoval buňky hned. Vyvolal oxidační stres, snížil jejich metabolickou aktivitu a poškodil DNA. Po třech týdnech byly tyto buňky výrazně vyčerpané a fungovaly špatně. Z toho plyne jasná věc: zprávy o „neškodných\" mikroplastech vycházejí často z pokusů s čistými kuličkami a krátkou dobou působení.",
+        "podrobneVysvetleni": "Mikroplasty (microplastic particles) jsou drobné úlomky plastů. Vznikají z odhozeného odpadu, z rozpadu fólií, textilu a obalů. Někdy je výrobci přidávají přímo do kosmetiky. Většina laboratorních pokusů dosud používala jen hladké kuličky nového plastu. A působila na buňky krátce. To ale málo odpovídá tomu, co je v přírodě.\n\nTento tým to udělal jinak. Vzal myší makrofágy z jater. Vystavil je polystyrenu ve dvou stavech. První byl nový a nepoškozený. Druhý prošel umělým zvětráním, které napodobuje pobyt v prostředí. Sledovali dvě různě dlouhá období. Krátké trvalo 24 hodin, tedy jeden den. Dlouhé trvalo 21 dní, tedy tři týdny opakovaného působení.\n\nVýsledky se lišily podle obou faktorů. Nový plast po jednom dni buňkám téměř neškodil. Po třech týdnech u buněk vyvolal smíšenou reakci. Část signálů podporovala zánět, část ho tlumila. Buňky přitom hynuly jen v malé míře.\n\nZvětralý plast působil ostřeji a rychleji. Vyvolal oxidační stres — tedy chemické poškození uvnitř buňky. Snížil jejich energetický výkon. Poškodil jejich DNA, tedy nosič dědičné informace. A hned zpočátku spustil zánětlivou reakci. Po třech týdnech byly buňky silně vystresované a nefungovaly správně. Zároveň se téměř nedokázaly přeladit do svých obvyklých pracovních režimů.\n\nZávěr autorů je střízlivý. Stav částice a délka působení rozhodují o tom, co buňky udělají.",
+        "procJeToDulezite": "Mikroplasty v přírodě nezůstávají nové a hladké — časem se mění. Podle této práce právě takto zvětralé částice působí na buňky hůř než ty čisté, s nimiž se obvykle dělají pokusy.",
+        "poznamkaKOmezenim": "Jde o pokus s myšími buňkami v laboratorní nádobě, nikoli s živými lidmi či zvířaty, takže výsledky nelze přímo přenášet na zdraví člověka."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:imunita",
+            "span": {
+              "start": 110,
+              "end": 117
+            },
+            "matchedText": "imunity",
+            "messageCs": "Termín „imunita“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:imunita @ souhrn[110,117]: imunity"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 181,
+              "end": 192
+            },
+            "matchedText": " polystyren",
+            "messageCs": "Text opisuje původní název článku („ polystyren“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[181,192]:  polystyren"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 394,
+              "end": 405
+            },
+            "matchedText": " polystyren",
+            "messageCs": "Text opisuje původní název článku („ polystyren“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[394,405]:  polystyren"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203635404",
+        "title": "A DNA Barcode Reference Library for Trichoptera of Jingpo Lake: Taxonomic Diversity and Molecular Identification Basics",
+        "abstract": "Jingpo Lake in Northeast China is a vital aquatic ecosystem, yet it lacks baseline molecular data for its insects. Trichoptera (caddisflies) are excellent ecological bioindicators, but their accurate identification is often hindered by morphological similarities, life-stage limitations, and insufficient DNA barcode records. To address this gap, this study combined morphological identification with DNA barcoding to establish a local reference database. From 285 collected adult caddisflies, 105 representative specimens were selected for genetic analysis. The survey identified 22 species across 9 families, revealing four new records for China and six for Heilongjiang Province. Analyses confirmed the high efficacy of the COI marker, demonstrating low intraspecific genetic divergence (0.78%) and high interspecific divergence (17.80%), with a clear barcode gap separating all examined species. Species accumulation curves indicated robust sampling of the main genera, although expanded collection efforts could still uncover additional species. In conclusion, this study provides a valuable DNA barcode reference library for Trichoptera in the Jingpo Lake region. It establishes foundational data for regional biodiversity inventories and future ecological monitoring based on environmental DNA (eDNA) or metabarcoding approaches.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.3390/insects17080857",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.3390/insects17080857",
+        "openAlexId": "W7203635404",
+        "subfield": {
+          "id": "subfields/2303",
+          "name": "Ecology"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T12640",
+          "name": "Environmental DNA in Biodiversity Studies"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Tong‐Yin Xie",
+          "Lu Chai",
+          "Ni Zhang",
+          "Na Wang",
+          "Xinyu Ge",
+          "Chuncai Yan"
+        ],
+        "venue": "Insects",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.6247,
+          "everydayRelevance": 0.6,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.7022,
+          "explainDetail": {
+            "v": 0,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.1685
+          },
+          "everydayDomains": [
+            "water",
+            "family"
+          ],
+          "subfieldKey": "subfields/2303",
+          "evidence": [
+            "total 0.7022 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.62 = P 0.65 − 0.45×t 0.00 − 0.15×j 0.17",
+            "outcome verbs (v 0.00): none",
+            "recognisable subjects (s 1.00): adults, families, lakes (title, ×2)",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.17): 3/178 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.60: 2 domain(s) — water, family",
+            "everyday terms (2): lake, families",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Insects",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.3390/insects17080857)"
+      },
+      "summary": {
+        "souhrn": "U jezera Ťing-po v severovýchodní Číně vznikl první katalog DNA chrostíků — vodního hmyzu, podle kterého se dá poznat čistota vody. Vědci nasbírali 285 dospělých jedinců, tedy necelé tři stovky, a 105 z nich, tedy asi každého třetího, poslali na genetický rozbor. Určili 22 druhů, tedy něco přes dvacet, které patří do devíti rodin, tedy devíti větších skupin příbuzného hmyzu; čtyři z nich dosud nikdo v Číně nezaznamenal. Rozdíly v DNA uvnitř jednoho druhu byly malé — v průměru 0,78 %, tedy necelé jedno písmeno ze sta. Mezi různými druhy byly rozdíly velké: 17,8 %, tedy asi jedno písmeno z pěti až šesti, takže se druhy daly spolehlivě odlišit.",
+        "podrobneVysvetleni": "Chrostíci (anglicky caddisflies) jsou hmyz, jehož larvy žijí ve vodě. Citlivě reagují na znečištění, proto podle nich vědci posuzují stav řek a jezer. Určit je podle vzhledu je ale těžké. Dospělci různých druhů si bývají podobní a larvy se často určit nedají vůbec.\n\nTým proto spojil dva postupy. Nejprve hmyz od jezera Ťing-po určil podle stavby těla. Potom u vybraných jedinců přečetl krátký úsek dědičné informace z genu COI. Tomu se říká DNA čárový kód (DNA barcode) — funguje podobně jako čárový kód na zboží, jen místo výrobku označuje druh.\n\nVýsledkem je seznam 22 druhů, tedy něco přes dvacet, které patří do 9 rodin, tedy devíti širších skupin příbuzného hmyzu. Čtyři druhy dosud z Číny nikdo nehlásil, dalších šest je nových pro provincii Chej-lung-ťiang.\n\nKódy fungovaly spolehlivě. Mezi jedinci téhož druhu se lišily jen málo, mezi různými druhy hodně. Mezi oběma hodnotami zůstala jasná mezera. Žádné dva zkoumané druhy se proto nepletly.\n\nVědci také spočítali, kolik nových druhů přináší každý další sběr. U hlavních rodů už jich přibývalo málo, sběr tedy hlavní skupiny pokryl. Delší sbírání by přesto ještě další druhy najít mohlo.\n\nKatalog nyní poslouží k rozborům vody. Ze zbytků dědičné informace, kterou živočichové ve vodě zanechávají (environmentální DNA, eDNA), lze zjistit, které druhy v jezeře žijí, bez chytání jednotlivých jedinců.",
+        "procJeToDulezite": "Bez takového seznamu DNA nejde z vody spolehlivě vyčíst, jaký hmyz v ní žije — a právě podle vodního hmyzu se pozná, jak zdravá řeka nebo jezero je. Podobné katalogy jsou základ, na kterém stojí sledování přírody v okolí lidských sídel.",
+        "poznamkaKOmezenim": "Jde o jediné jezero a rozbor DNA jen u 105 jedinců, takže katalog zatím není úplný — sami autoři píšou, že další sběr by pravděpodobně přinesl další druhy."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "pass",
+        "hard": [],
+        "soft": [
+          {
+            "block": "procJeToDulezite",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 148
+            },
+            "matchedText": "Bez takového seznamu DNA nejde z vody spolehlivě vyčíst, jaký hmyz v ní žije — a právě podle vodního hmyzu se pozná, jak zdravá řeka nebo jezero je.",
+            "messageCs": "Tato věta má 27 slov a je moc dlouhá: „Bez takového seznamu DNA nejde z vody spolehlivě vyčíst, jaký hmyz v ní žije — …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ procJeToDulezite[0,148]: Bez takového seznamu DNA nejde z vody spolehlivě vyčíst, jaký hmyz v ní žije — a právě podle vodního hmyzu se pozná, jak zdravá řeka nebo jezero je."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=2",
+            "messageCs": "Počet vět delších než 25 slov: 2. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=2"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203608170",
+        "title": "Influence of solar and UV radiation on the photocatalytic removal of organophosphorus acephate pesticide",
+        "abstract": "Acephate is an organophosphorus pesticide that is widely used to protect a variety of crops worldwide. This study examined the removal of commercial acephate pesticide in the aqueous medium via advanced oxidation process with Silicon carbide (SiC) and Zerovalent Iron (ZVI) under Solar and UV light. The parameters addressed in this study are the pH of the system, the amount of catalyst, and the effect of irradiation time on single and mixed systems. The process exemplified 93.3% and 88.6% removal with UV light and Sunlight, respectively, in the presence of oxidant and ZVI, whereas 85.1% and 82.2% removal were observed with SiC and oxidant along with UV light and Sunlight irradiation after 360 min under optimum conditions. The degradation products produced during the photocatalytic processes were assessed using FTIR analysis. The developed SiC/ZVI-assisted advanced oxidation process shows great promise as an economical and environmentally friendly laboratory technology for the treatment of wastewater, particularly with regard to the remediation of industrial effluents and agricultural runoff containing Acephate pesticide.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1080/10934529.2026.2715166",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1080/10934529.2026.2715166",
+        "openAlexId": "W7203608170",
+        "subfield": {
+          "id": "subfields/2312",
+          "name": "Water Science and Technology"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10210",
+          "name": "Advanced oxidation water treatment"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Geeta V. Patel",
+          "Harshvadan P. Parmar",
+          "Sharmil N. Anjirwala",
+          "Saurabh K. Patel"
+        ],
+        "venue": "Journal of Environmental Science and Health Part A",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 35,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.4632,
+          "everydayRelevance": 0.9,
+          "freshness": 1,
+          "credibility": 0.605,
+          "total": 0.702,
+          "explainDetail": {
+            "v": 0.25,
+            "s": 0.25,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.1786
+          },
+          "everydayDomains": [
+            "energy",
+            "health",
+            "water"
+          ],
+          "subfieldKey": "subfields/2312",
+          "evidence": [
+            "total 0.7020 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.46 = P 0.49 − 0.45×t 0.00 − 0.15×j 0.18",
+            "outcome verbs (v 0.25): protects",
+            "recognisable subjects (s 0.25): crops",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.18): 3/168 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.90: 3 domain(s) — energy, health, water",
+            "everyday terms (3): solar, treatment, wastewater",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.61 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Journal of Environmental Science and Health Part A",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no tldr; falling back to the source abstract (§4.2)"
+      },
+      "summary": {
+        "souhrn": "Pesticid acefát se ve světě hojně používá na ochranu plodin a z polí i z výroby se dostává do vody. Skupina vědců zkoušela v laboratoři rozložit acefát rozpuštěný ve vodě pomocí dvou pomocných látek — karbidu křemíku (silicon carbide, SiC) a železa v základní, nezrezivělé formě (zerovalent iron, ZVI) — spolu s oxidačním činidlem, tedy látkou, která pomáhá pesticid \"spálit\" chemickou cestou. Vodu pak šest hodin osvětlovali buď ultrafialovou lampou, nebo přímo sluncem, a měnili kyselost vody i množství pomocné látky. Se železem a oxidačním činidlem zmizelo pod UV lampou 93,3 % pesticidu — tedy ze sta dílů zbylo necelých sedm — a na slunci 88,6 %, tedy ze sta dílů zbylo asi jedenáct. S karbidem křemíku to bylo 85,1 % pod UV lampou (ze sta dílů zbylo asi patnáct) a 82,2 % na slunci (ze sta dílů zbylo asi osmnáct). Sluneční světlo tedy fungovalo jen o málo horší než lampa, což je zajímavé pro levné čištění odpadní vody.",
+        "podrobneVysvetleni": "Vědci pracovali s běžným, komerčně prodávaným acefátem rozpuštěným ve vodě. Postupně zkoušeli tři věci: jak moc má být voda kyselá nebo zásaditá, kolik pomocné látky přidat a jak dlouho vodu osvětlovat. Testovali pomocné látky zvlášť i dohromady. Princip je takový, že světlo spolu s pomocnou látkou a oxidačním činidlem rozbije molekulu pesticidu na jednodušší kousky. Odborně se tomu říká pokročilá oxidace (advanced oxidation process) — jde o způsob, jak chemicky rozložit látku, kterou obyčejné čištění vody neodstraní.\n\nPo šesti hodinách (360 minutách) při nejlepším nastavení dosáhli s železem a oxidačním činidlem odstranění 93,3 % pesticidu pod ultrafialovou lampou, což znamená, že ze sta dílů pesticidu zbylo necelých sedm. Na slunci to bylo 88,6 %, tedy ze sta dílů zbylo asi jedenáct. S karbidem křemíku vyšlo 85,1 % pod lampou (zbylo asi patnáct dílů ze sta) a 82,2 % na slunci (zbylo asi osmnáct dílů ze sta). Železo tedy fungovalo lépe než karbid křemíku a umělé UV světlo o něco lépe než slunce — rozdíl mezi lampou a sluncem byl ale malý.\n\nCo z pesticidu po rozkladu zbylo, vědci zkoumali metodou FTIR, tedy měřením, jak vzorek pohlcuje infračervené světlo; z toho se dá odhadnout, jaké chemické vazby ve vzorku jsou. Autoři výsledek popisují jako levný a k prostředí přátelský laboratorní postup, který by se mohl hodit pro čištění odpadní vody z výroby a vody odtékající z polí.",
+        "procJeToDulezite": "Zbytky pesticidů se z polí a z výroby dostávají do řek a do podzemní vody, odkud je běžné čištění neumí spolehlivě odstranit. Když by na jejich rozklad stačilo obyčejné sluneční světlo a levné přísady, mohlo by být čištění vody dostupnější.",
+        "poznamkaKOmezenim": "Jde o pokusy v laboratoři s čistou vodou a jedním pesticidem, nikoli o skutečnou odpadní vodu, a rozkladné produkty autoři posuzovali jen přibližnou metodou — praktické využití je tedy zatím ve fázi ověřování."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 100,
+              "end": 393
+            },
+            "matchedText": "Skupina vědců zkoušela v laboratoři rozložit acefát rozpuštěný ve vodě pomocí dvou pomocných látek — karbidu křemíku (silicon carbide, SiC) a železa v základní, nezrezivělé formě (zerovalent iron, ZVI) — spolu s oxidačním činidlem, tedy látkou, která pomáhá pesticid \"spálit\" chemickou cestou.",
+            "messageCs": "Tato věta má 40 slov a je moc dlouhá: „Skupina vědců zkoušela v laboratoři rozložit acefát rozpuštěný ve vodě pomocí d…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[100,393]: Skupina vědců zkoušela v laboratoři rozložit acefát rozpuštěný ve vodě pomocí dvou pomocných látek — karbidu křemíku (silicon carbide, SiC) a železa v základní, nezrezivělé formě (zerovalent iron, ZVI) — spolu s oxidačním činidlem, tedy látkou, která pomáhá pesticid \"spálit\" chemickou cestou."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=22.05",
+            "messageCs": "Věty jsou v průměru moc dlouhé (22,1 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=22.05"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=6",
+            "messageCs": "Počet vět delších než 25 slov: 6. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=6"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 357,
+              "end": 366
+            },
+            "matchedText": " pesticid",
+            "messageCs": "Text opisuje původní název článku („ pesticid“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[357,366]:  pesticid"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 581,
+              "end": 590
+            },
+            "matchedText": " pesticid",
+            "messageCs": "Text opisuje původní název článku („ pesticid“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[581,590]:  pesticid"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 337,
+              "end": 346
+            },
+            "matchedText": " pesticid",
+            "messageCs": "Text opisuje původní název článku („ pesticid“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[337,346]:  pesticid"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 638,
+              "end": 647
+            },
+            "matchedText": " pesticid",
+            "messageCs": "Text opisuje původní název článku („ pesticid“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[638,647]:  pesticid"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 702,
+              "end": 711
+            },
+            "matchedText": " pesticid",
+            "messageCs": "Text opisuje původní název článku („ pesticid“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[702,711]:  pesticid"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 1061,
+              "end": 1070
+            },
+            "matchedText": " pesticid",
+            "messageCs": "Text opisuje původní název článku („ pesticid“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[1061,1070]:  pesticid"
+          },
+          {
+            "block": "procJeToDulezite",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 6,
+              "end": 15
+            },
+            "matchedText": " pesticid",
+            "messageCs": "Text opisuje původní název článku („ pesticid“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ procJeToDulezite[6,15]:  pesticid"
+          },
+          {
+            "block": "poznamkaKOmezenim",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 49,
+              "end": 59
+            },
+            "matchedText": " pesticide",
+            "messageCs": "Text opisuje původní název článku („ pesticide“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ poznamkaKOmezenim[49,59]:  pesticide"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203637053",
+        "title": "Managing Extreme Heat Through Indigenous Knowledge and Practices at Four Villages in Wardha, India",
+        "abstract": "Rural India faces increasing threats from rising temperatures. The increased frequency and severity of heat waves have highlighted the urgent need for implementing heat-resilient strategies. This study aims to discuss extreme heat management through traditional and indigenous knowledge and practices. In six structured focus group discussions in Wardha district of Maharashtra (India), 86 participants expressed their views. Three broad categories emerged from the discussion groups: (a) home, housing and building-infrastructure related, (b) daily practices during work and livelihood activities and (c) home remedies for heat-related symptoms. The study highlights a need to integrate indigenous knowledge and community-based practices within the framework of India’s Heat Action Plans to combat heat-related illness and to develop individual and community resilience.",
+        "date": "2026-08-17",
+        "url": "https://doi.org/10.1177/25166026261472713",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1177/25166026261472713",
+        "openAlexId": "W7203637053",
+        "subfield": {
+          "id": "subfields/2307",
+          "name": "Health, Toxicology and Mutagenesis"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T11244",
+          "name": "Climate Change and Health Impacts"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Premsagar Tasgaonkar",
+          "Kamal Kumar Murari",
+          "Meghan Tangney"
+        ],
+        "venue": "The International Journal of Community and Social Development",
+        "indexedDate": "2026-08-18",
+        "referencedWorksCount": 25,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.3765,
+          "everydayRelevance": 1,
+          "freshness": 1,
+          "credibility": 0.6259,
+          "total": 0.6982,
+          "explainDetail": {
+            "v": 0.25,
+            "s": 0.75,
+            "q": 0,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.2564
+          },
+          "everydayDomains": [
+            "health",
+            "weather",
+            "work",
+            "housing",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2307",
+          "evidence": [
+            "total 0.6982 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.38 = P 0.42 − 0.45×t 0.00 − 0.15×j 0.26",
+            "outcome verbs (v 0.25): increased",
+            "recognisable subjects (s 0.75): participants, homes, buildings",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.26): 3/117 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 5 domain(s) — health, weather, work, housing, mind",
+            "everyday terms (7): illness, heat wave, work, housing, home, homes, focus",
+            "freshness 1.00: 0 day(s) old (effective date 2026-08-18)",
+            "credibility 0.63 = 0.40×c1 1.00 + 0.25×c2 0.48 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in The International Journal of Community and Social Development",
+            "c2 0.48: n = 86",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1177/25166026261472713)"
+      },
+      "summary": {
+        "souhrn": "Ve čtyřech vesnicích okresu Wardha ve indickém státě Maháráštra se badatelé ptali místních lidí, jak sami zvládají extrémní horko. Uspořádali šest řízených skupinových rozhovorů (focus group discussions — moderovaná debata menší skupiny lidí na jedno téma), do kterých se zapojilo 86 účastníků. Z jejich odpovědí vyšly tři skupiny zvyků a postupů: úpravy domů a stavení, způsob, jak si lidé organizují práci a obživu během horkých dnů, a domácí prostředky na potíže způsobené horkem. Autoři z toho vyvozují, že indické „plány pro horké vlny\" (Heat Action Plans), tedy úřední postupy pro období extrémních teplot, by měly tyto místní zkušenosti využívat, ne je obcházet. Studie sama neměří, nakolik jednotlivé postupy skutečně chrání zdraví — popisuje, co lidé dělají a proč tomu věří.",
+        "podrobneVysvetleni": "Venkovská Indie čelí čím dál častějším a silnějším vlnám horka. Badatelé nezkoumali techniku ani léky, ale to, co si lidé předávají po generace. Metoda byla jednoduchá: šest předem připravených skupinových rozhovorů ve čtyřech vesnicích okresu Wardha, celkem 86 lidí — tedy v průměru asi čtrnáct lidí na jednu debatu. Účastníci popisovali, jak snášejí nejteplejší část roku.\n\nOdpovědi se daly rozdělit do tří okruhů. První se týká domu a stavby: jak je obydlí postavené, z čeho, jak se v něm dá udržet chládek. Druhý okruh je o každodenním chodu práce a obživy — kdy se pracuje, kdy se odpočívá, jak se lidé chovají venku během největšího žáru. Třetí okruh tvoří domácí prostředky na příznaky přehřátí, tedy to, co si lidé sami podávají, když jim horko způsobí zdravotní potíže.\n\nHlavní závěr autorů je organizační. Indie má úřední plány pro období vln horka (Heat Action Plans). Podle studie by tyto plány měly počítat i s tím, co komunity už dávno umějí, protože právě to lidé v praxi používají a rozumějí tomu. Zapojení místních zvyků může podle autorů posílit odolnost jednotlivců i celých vesnic. Studie je popisná: shrnuje názory a zkušenosti účastníků, neporovnává, který postup funguje lépe, a ani neměří, kolika lidem pomohl.",
+        "procJeToDulezite": "Horkých dní přibývá i u nás a ne všechno se dá vyřešit klimatizací — hodně záleží na tom, jak je postavené obydlí a jak si člověk rozvrhne den. Studie zároveň ukazuje, že úřední plány na ochranu zdraví fungují lépe, když navazují na to, co lidé v daném místě už dělají.",
+        "poznamkaKOmezenim": "Jde o kvalitativní popis názorů 86 lidí ze čtyř vesnic jednoho indického okresu, takže výsledky nelze zobecňovat a studie vůbec neměří, nakolik popsané postupy skutečně chrání zdraví."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "warn",
+        "hard": [],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 281,
+              "end": 283
+            },
+            "matchedText": "86",
+            "messageCs": "Číslo „86“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „86 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[281,283]: 86"
+          },
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 295,
+              "end": 483
+            },
+            "matchedText": "Z jejich odpovědí vyšly tři skupiny zvyků a postupů: úpravy domů a stavení, způsob, jak si lidé organizují práci a obživu během horkých dnů, a domácí prostředky na potíže způsobené horkem.",
+            "messageCs": "Tato věta má 31 slov a je moc dlouhá: „Z jejich odpovědí vyšly tři skupiny zvyků a postupů: úpravy domů a stavení, způ…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[295,483]: Z jejich odpovědí vyšly tři skupiny zvyků a postupů: úpravy domů a stavení, způsob, jak si lidé organizují práci a obživu během horkých dnů, a domácí prostředky na potíže způsobené horkem."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 243,
+              "end": 252
+            },
+            "matchedText": " Wardha, ",
+            "messageCs": "Text opisuje původní název článku („ Wardha, “). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[243,252]:  Wardha, "
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=18.20",
+            "messageCs": "Věty jsou v průměru moc dlouhé (18,2 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=18.20"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 25 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-08-19T10:20:26.483Z",
+  "generatedOn": "2026-08-19",
+  "schemaVersion": 1
+}

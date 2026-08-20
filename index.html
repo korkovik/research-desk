@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Research Desk – přehled všech dní</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="masthead">
+<h1>Research Desk</h1>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+<p>Každý den vybíráme několik nových studií. Níže jsou všechna dosavadní vydání, od nejnovějšího.</p>
+</header>
+<main>
+<h2>Všechna vydání</h2>
+<input type="radio" name="cat" id="cat-all" class="cat-input" checked>
+<input type="radio" name="cat" id="cat-ai-computing" class="cat-input">
+<input type="radio" name="cat" id="cat-health-medicine" class="cat-input">
+<input type="radio" name="cat" id="cat-nature-climate" class="cat-input">
+<input type="radio" name="cat" id="cat-psychology-behaviour" class="cat-input">
+<input type="radio" name="cat" id="cat-society-economy-education" class="cat-input">
+<input type="radio" name="cat" id="cat-physics-space-engineering" class="cat-input">
+<input type="radio" name="cat" id="cat-biology-food-agriculture" class="cat-input">
+<style>
+#cat-all:checked ~ .chips label[for="cat-all"] { background: #1a1a1a; border-color: #1a1a1a; color: #fbfaf7; }
+#cat-ai-computing:checked ~ .days .day:not([data-cat="ai-computing"]) { display: none; }
+#cat-ai-computing:checked ~ .cat-empty[data-cat="ai-computing"] { display: block; }
+#cat-ai-computing:checked ~ .chips label[for="cat-ai-computing"] { background: #1a1a1a; border-color: #1a1a1a; color: #fbfaf7; }
+#cat-health-medicine:checked ~ .days .day:not([data-cat="health-medicine"]) { display: none; }
+#cat-health-medicine:checked ~ .cat-empty[data-cat="health-medicine"] { display: block; }
+#cat-health-medicine:checked ~ .chips label[for="cat-health-medicine"] { background: #1a1a1a; border-color: #1a1a1a; color: #fbfaf7; }
+#cat-nature-climate:checked ~ .days .day:not([data-cat="nature-climate"]) { display: none; }
+#cat-nature-climate:checked ~ .cat-empty[data-cat="nature-climate"] { display: block; }
+#cat-nature-climate:checked ~ .chips label[for="cat-nature-climate"] { background: #1a1a1a; border-color: #1a1a1a; color: #fbfaf7; }
+#cat-psychology-behaviour:checked ~ .days .day:not([data-cat="psychology-behaviour"]) { display: none; }
+#cat-psychology-behaviour:checked ~ .cat-empty[data-cat="psychology-behaviour"] { display: block; }
+#cat-psychology-behaviour:checked ~ .chips label[for="cat-psychology-behaviour"] { background: #1a1a1a; border-color: #1a1a1a; color: #fbfaf7; }
+#cat-society-economy-education:checked ~ .days .day:not([data-cat="society-economy-education"]) { display: none; }
+#cat-society-economy-education:checked ~ .cat-empty[data-cat="society-economy-education"] { display: block; }
+#cat-society-economy-education:checked ~ .chips label[for="cat-society-economy-education"] { background: #1a1a1a; border-color: #1a1a1a; color: #fbfaf7; }
+#cat-physics-space-engineering:checked ~ .days .day:not([data-cat="physics-space-engineering"]) { display: none; }
+#cat-physics-space-engineering:checked ~ .cat-empty[data-cat="physics-space-engineering"] { display: block; }
+#cat-physics-space-engineering:checked ~ .chips label[for="cat-physics-space-engineering"] { background: #1a1a1a; border-color: #1a1a1a; color: #fbfaf7; }
+#cat-biology-food-agriculture:checked ~ .days .day:not([data-cat="biology-food-agriculture"]) { display: none; }
+#cat-biology-food-agriculture:checked ~ .cat-empty[data-cat="biology-food-agriculture"] { display: block; }
+#cat-biology-food-agriculture:checked ~ .chips label[for="cat-biology-food-agriculture"] { background: #1a1a1a; border-color: #1a1a1a; color: #fbfaf7; }
+</style>
+<nav class="chips" aria-label="Vyberte téma">
+<label class="chip" for="cat-all">Vše</label>
+<label class="chip" for="cat-ai-computing">Umělá inteligence a počítače</label>
+<label class="chip" for="cat-health-medicine">Zdraví a medicína <span class="chip-count">1</span></label>
+<label class="chip" for="cat-nature-climate">Příroda a klima <span class="chip-count">8</span></label>
+<label class="chip" for="cat-psychology-behaviour">Psychologie a chování</label>
+<label class="chip" for="cat-society-economy-education">Společnost, ekonomika a vzdělávání</label>
+<label class="chip" for="cat-physics-space-engineering">Fyzika, vesmír a technika</label>
+<label class="chip" for="cat-biology-food-agriculture">Biologie, jídlo a zemědělství</label>
+</nav>
+<p class="cat-empty" data-cat="ai-computing">Téma Umělá inteligence a počítače zatím nebylo na řadě. Každé téma přijde jednou za týden.</p>
+<p class="cat-empty" data-cat="psychology-behaviour">Téma Psychologie a chování zatím nebylo na řadě. Každé téma přijde jednou za týden.</p>
+<p class="cat-empty" data-cat="society-economy-education">Téma Společnost, ekonomika a vzdělávání zatím nebylo na řadě. Každé téma přijde jednou za týden.</p>
+<p class="cat-empty" data-cat="physics-space-engineering">Téma Fyzika, vesmír a technika zatím nebylo na řadě. Každé téma přijde jednou za týden.</p>
+<p class="cat-empty" data-cat="biology-food-agriculture">Téma Biologie, jídlo a zemědělství zatím nebylo na řadě. Každé téma přijde jednou za týden.</p>
+<ol class="days">
+<li class="day" data-cat="nature-climate">
+<p class="day-date"><a href="archive/2026-08-19.html"><time datetime="2026-08-19">19. srpna 2026</time></a></p>
+<p class="day-category">Příroda a klima</p>
+<ul class="day-titles">
+<li>Kolik vody teče z pramenů Žluté řeky, rozhoduje hlavně počasí</li>
+<li>Hráze a vysoušení jezer zvýšily povodně na Jang-c&#39;-ťiang</li>
+<li>V čínském městě ubylo prachu a kouře, ale přibylo ozonu</li>
+<li>Půda na farmách v Saúdské Arábii je většinou v pořádku</li>
+<li>Jemný prach ve vzduchu podle výpočtů stojí za velkou částí úmrtí v Turecku</li>
+</ul>
+<p class="day-link"><a href="archive/2026-08-19.html">Otevřít celé vydání</a></p>
+</li>
+<li class="day" data-cat="nature-climate">
+<p class="day-date"><a href="archive/2026-08-12.html"><time datetime="2026-08-12">12. srpna 2026</time></a></p>
+<p class="day-category">Příroda a klima</p>
+<ul class="day-titles">
+<li>V alpínských porostech na náhorní plošině Qinghai-Xizang (Tibetská náhorní plošina) vede mezi rostlinami jedna strategie: vydržet.</li>
+<li>Pojem „jádrový mikrobiom&quot; (core microbiome) se v půdní vědě používá čím dál volněji.</li>
+<li>Vyznačit na leteckém snímku hranice zemědělských polí umí dnes umělá inteligence sama — otázka je, jak jí říct, co má hledat.</li>
+</ul>
+<p class="day-link"><a href="archive/2026-08-12.html">Otevřít celé vydání</a></p>
+</li>
+<li class="day" data-cat="nature-climate">
+<p class="day-date"><a href="archive/2026-08-05.html"><time datetime="2026-08-05">5. srpna 2026</time></a></p>
+<p class="day-category">Příroda a klima</p>
+<ul class="day-titles">
+<li>Satelitní data pomáhají určit, kam po požáru poslat kontrolu jako první</li>
+<li>I malé prořezané kousky lesa dokázaly zmírnit sílu požáru</li>
+<li>Zmrzlá půda na horském svahu je slabší, když ji slunce ohřívá z jedné strany</li>
+<li>Malé ryby jsou v severní Ugandě běžné jídlo a rozhodují o nich ženy</li>
+<li>Slanost prostředí rozhoduje, jak se bakterie brání virům, které je zabíjejí</li>
+</ul>
+<p class="day-link"><a href="archive/2026-08-05.html">Otevřít celé vydání</a></p>
+</li>
+<li class="day" data-cat="nature-climate">
+<p class="day-date"><a href="archive/2026-07-29.html"><time datetime="2026-07-29">29. července 2026</time></a></p>
+<p class="day-category">Příroda a klima</p>
+<ul class="day-titles">
+<li>Většina malých dětí má žraloky ráda, strach přichází s věkem</li>
+<li>Teplejší voda mění, jaké rozmnožovací buňky korál vytvoří</li>
+<li>V říčním ústí žijí jiné bakterie ve vodě a jiné v bahně na dně</li>
+<li>Jediná mimořádná průtrž mračen dokáže překreslit mapu ohrožených obyvatel</li>
+<li>Nový způsob počítání zpřesňuje obrazy zemských hlubin a šetří výkon počítačů</li>
+</ul>
+<p class="day-link"><a href="archive/2026-07-29.html">Otevřít celé vydání</a></p>
+</li>
+<li class="day" data-cat="nature-climate">
+<p class="day-date"><a href="archive/2026-07-22.html"><time datetime="2026-07-22">22. července 2026</time></a></p>
+<p class="day-category">Příroda a klima</p>
+<ul class="day-titles">
+<li>Půdy ubývá, zemědělství se hodně opírá o chemii, a tak roste zájem o mikrobiální přípravky (microbial inoculants) — živé bakterie a houby, které se přidávají do půdy.</li>
+<li>Vědci nechali působit drobné částečky plastu na myší buňky z jater.</li>
+<li>U jezera Ťing-po v severovýchodní Číně vznikl první katalog DNA chrostíků — vodního hmyzu, podle kterého se dá poznat čistota vody.</li>
+<li>Pesticid acefát se ve světě hojně používá na ochranu plodin a z polí i z výroby se dostává do vody.</li>
+<li>Ve čtyřech vesnicích okresu Wardha ve indickém státě Maháráštra se badatelé ptali místních lidí, jak sami zvládají extrémní horko.</li>
+</ul>
+<p class="day-link"><a href="archive/2026-07-22.html">Otevřít celé vydání</a></p>
+</li>
+<li class="day" data-cat="nature-climate">
+<p class="day-date"><a href="archive/2026-07-15.html"><time datetime="2026-07-15">15. července 2026</time></a></p>
+<p class="day-category">Příroda a klima</p>
+<ul class="day-titles">
+<li>Práce zkoumala, jak práce z domova mění růst města.</li>
+<li>Vědci změřili, jak rychle se plynný oxid uhličitý (CO2) rozpíná do kapaliny uvnitř drobných pórů v písku a mezi skleněnými kuličkami.</li>
+<li>Vědci propočítali, kolik stojí provoz velké kontejnerové lodi na trase Rotterdam–Singapur.</li>
+<li>Vzácné zeminy — kovy potřebné pro magnety v elektromotorech, větrných turbínách nebo displejích — se od sebe oddělují velmi obtížně, protože se chemicky chovají téměř stejně.</li>
+<li>V indonéském Balikpapanu vědci porovnali, co o turistice v mangrovových lesích slibují úřední dokumenty, a co z toho reálně mají místní lidé.</li>
+</ul>
+<p class="day-link"><a href="archive/2026-07-15.html">Otevřít celé vydání</a></p>
+</li>
+<li class="day" data-cat="health-medicine">
+<p class="day-date"><a href="archive/2026-07-14.html"><time datetime="2026-07-14">14. července 2026</time></a></p>
+<p class="day-category">Zdraví a medicína</p>
+<ul class="day-titles">
+<li>Nízká hladina sodíku v krvi (hyponatrémie) patří u lidí v nemocnici k nejčastějším poruchám a bývá spojená s vyšší úmrtností.</li>
+<li>Osamělost může být jednou z příčin spánkové apnoe, ne jen jejím následkem.</li>
+<li>Když starší pacient v nemocnici čeká na místo v domově pro seniory (anglicky residential aged care home), stráví čekáním většinu pobytu.</li>
+<li>Obvod pasu vypovídá o riziku poruch paměti a myšlení víc, než by čekal ten, kdo se řídí jen váhou.</li>
+<li>Ne každý epileptický záchvat vypadá jako křeč.</li>
+</ul>
+<p class="day-link"><a href="archive/2026-07-14.html">Otevřít celé vydání</a></p>
+</li>
+<li class="day" data-cat="nature-climate">
+<p class="day-date"><a href="archive/2026-07-08.html"><time datetime="2026-07-08">8. července 2026</time></a></p>
+<p class="day-category">Příroda a klima</p>
+<ul class="day-titles">
+<li>Budovy stojí za 37 % celosvětových emisí oxidu uhličitého, tedy za více než třetinou.</li>
+<li>Tři léčivé himálajské rostliny — oměj (Aconitum heterophyllum), lilie (Lilium polyphyllum) a kutki (Picrorhiza kurroa) — by se v indickém státě Himáčalpradéš…</li>
+<li>Hmyz na květech se v okolí větrných elektráren chová trochu jinak než dál od nich.</li>
+<li>Průmyslová membránová čerpadla na kal se kazí pomalu a nenápadně.</li>
+<li>Rozpoznávat ryby a další mořské živočichy na fotkách z hlubin je těžké: voda kalí, světlo mizí a všechno se hýbe.</li>
+</ul>
+<p class="day-link"><a href="archive/2026-07-08.html">Otevřít celé vydání</a></p>
+</li>
+<li class="day" data-cat="nature-climate">
+<p class="day-date"><a href="archive/2026-07-01.html"><time datetime="2026-07-01">1. července 2026</time></a></p>
+<p class="day-category">Příroda a klima</p>
+<ul class="day-titles">
+<li>Ptáci si nekonkurují pořád stejně — záleží na tom, jak teplo je zrovna tam, kde hnízdí.</li>
+<li>Tmavé částice v ovzduší, hlavně saze, pohlcují sluneční světlo a ohřívají vzduch.</li>
+<li>V městské přírodní rezervaci ve středním Mexiku se vědci podívali chřestýšům do krve.</li>
+<li>Když se začínajícímu badateli poprvé něco pokazí, může to otřást jeho sebedůvěrou.</li>
+<li>Když v zimě proudí ledový vzduch z arktických oblastí nad teplý Atlantik, mění se nad hladinou celé „obsazení&quot; oblohy — a čeští i zahraniční meteorologové to…</li>
+</ul>
+<p class="day-link"><a href="archive/2026-07-01.html">Otevřít celé vydání</a></p>
+</li>
+</ol>
+</main>
+<footer>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+</footer>
+</div>
+</body>
+</html>
