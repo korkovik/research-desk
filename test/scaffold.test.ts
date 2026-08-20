@@ -23,8 +23,13 @@ test('S11-01a: config.json loads and validates', () => {
   assert.equal(config.windows.dedupDays, 180);
 });
 
+// `docs/` is deliberately absent from this list. It is documentation, not a
+// directory the pipeline writes to, and it is kept out of the public repository
+// because it carries spend figures and candid assessments — so asserting it
+// exists made a fresh clone fail a test about the pipeline's scaffolding.
+// The three write targets keep a .gitkeep so a clone has them before any run.
 test('S11-01b: every directory the pipeline writes to exists', () => {
-  for (const dir of ['archive', 'logs', 'state', 'src', 'test', 'docs', 'scripts']) {
+  for (const dir of ['archive', 'logs', 'state', 'src', 'test', 'scripts']) {
     const path = join(ROOT, dir);
     assert.ok(existsSync(path), `${dir}/ is missing`);
     assert.ok(statSync(path).isDirectory(), `${dir} is not a directory`);
