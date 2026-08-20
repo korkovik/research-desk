@@ -1,0 +1,178 @@
+name: daily digest
+
+on:
+  schedule:
+    # Target: 06:00 Europe/Prague, every day.
+    #
+    # GitHub cron is UTC and does not follow DST, so a single rule drifts by an
+    # hour for half the year. The usual workaround is two month-scoped rules
+    # ("0 4 * 3-10 *" / "0 5 * 11,12,1,2 *"), but months are the wrong unit:
+    # EU DST turns on the last Sunday of March and off the last Sunday of
+    # October, so a month-scoped pair is still an hour out for roughly the first
+    # four weeks of March and the last week of October.
+    #
+    # Instead both rules fire every day and a gate step decides, using the
+    # runner's tzdata, whether this is the 06:00 Prague one. That is exact all
+    # year with no switchover week to get wrong, and the losing run costs a few
+    # seconds. Actions minutes are free on public repositories, so the second
+    # firing is genuinely free.
+    - cron: '0 4 * * *'   # 06:00 Prague while CEST (UTC+2)
+    - cron: '0 5 * * *'   # 06:00 Prague while CET  (UTC+1)
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Republish today even if an edition already exists'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+# A queued run must wait, never race. Two runs pushing generated output at once
+# is exactly how state/seen.json gets corrupted, and cancel-in-progress would be
+# worse still: it could kill a run between spending the API money and committing
+# the result, losing the edition but keeping the cost.
+concurrency:
+  group: daily-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Decide whether this firing is the real one BEFORE touching the app.
+      # It cannot be left to the app: run.ts refuses a same-day republish with
+      # exit code 1, so letting the losing cron reach it would paint a red X on
+      # a day that actually succeeded, and §9's failure signal would stop
+      # meaning anything.
+      - id: gate
+        name: Is this the 06:00 Prague firing?
+        run: |
+          set -euo pipefail
+          day=$(TZ=Europe/Prague date +%F)
+          hour=$(TZ=Europe/Prague date +%H)
+          echo "day=$day" >> "$GITHUB_OUTPUT"
+          echo "Prague local time: $day ${hour}:00"
+
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "Manual dispatch — proceeding."
+            echo "proceed=true" >> "$GITHUB_OUTPUT"
+          elif [ -f "archive/$day.json" ]; then
+            # The other cron already did the work, or a manual run did.
+            echo "$day is already published — this firing has nothing to do."
+            echo "proceed=false" >> "$GITHUB_OUTPUT"
+          elif [ "$((10#$hour))" -ge 6 ] && [ "$((10#$hour))" -le 9 ]; then
+            # A window rather than an exact hour: GitHub delays scheduled runs
+            # under load, and a delayed run should still publish rather than
+            # silently skip the day. The archive check above is what stops the
+            # window from letting both firings through.
+            echo "Proceeding."
+            echo "proceed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Not the Prague-morning firing — skipping."
+            echo "proceed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-node@v4
+        if: steps.gate.outputs.proceed == 'true'
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install
+        if: steps.gate.outputs.proceed == 'true'
+        run: npm ci
+
+      - name: Build today's edition
+        id: build
+        if: steps.gate.outputs.proceed == 'true'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: |
+          if [ "${{ inputs.force }}" = "true" ]; then
+            npx tsx src/cli.ts run --force
+          else
+            npm run run:daily
+          fi
+
+      # Only reached when the build step succeeded, so a failed or half-finished
+      # run never commits partial output. §9 wants a bad day to degrade visibly,
+      # not to quietly overwrite a good archive with a broken one.
+      - name: Publish and persist state
+        if: steps.gate.outputs.proceed == 'true' && steps.build.outcome == 'success'
+        run: |
+          set -euo pipefail
+          git config user.name  "research-desk-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A archive index.html state/seen.json
+          if git diff --cached --quiet; then
+            echo "Nothing changed — not committing."
+            exit 0
+          fi
+
+          git commit -m "digest: ${{ steps.gate.outputs.day }}"
+
+          # Push race: Tom may push to main while this runs. Rebase our single
+          # output commit on top of whatever arrived and retry. If the rebase
+          # cannot apply cleanly, abort it and fail the job — a conflicted
+          # seen.json half-merged by a bot is worse than a visible red X,
+          # because it would silently break the dedup for every later run.
+          pushed=false
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase --autostash origin main; then
+              if git push origin main; then pushed=true; break; fi
+            else
+              git rebase --abort || true
+              echo "::error::Rebase onto origin/main conflicted; refusing to merge generated state by hand."
+              exit 1
+            fi
+            echo "Push attempt $attempt lost the race; retrying."
+            sleep $((attempt * 5))
+          done
+          if [ "$pushed" != "true" ]; then
+            echo "::error::Could not push after 5 attempts."
+            exit 1
+          fi
+
+      # §9 failure visibility without a daily email: nothing is sent on a good
+      # day, and a bad day opens (or comments on) a single dated issue, which
+      # GitHub notifies on. A run that fails is also a red X in the Actions tab
+      # and turns the README badge red.
+      - name: Report a failure
+        if: failure() && steps.gate.outputs.proceed == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const day = '${{ steps.gate.outputs.day }}';
+            const title = `Daily digest failed: ${day}`;
+            const url = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const body = [
+              `The ${day} run did not publish an edition.`,
+              ``,
+              `Log: ${url}`,
+              ``,
+              `Nothing was committed, so the archive and \`state/seen.json\` are`,
+              `untouched and yesterday's site is still being served. Per §9 the`,
+              `day is simply missing rather than padded with older papers.`,
+            ].join('\n');
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'run-failure',
+            });
+            const match = existing.data.find(i => i.title === title);
+            if (match) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: match.number, body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title, body, labels: ['run-failure'],
+              });
+            }

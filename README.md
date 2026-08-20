@@ -9,20 +9,33 @@ The success criterion, from the spec: **a secondary-school teacher or a family
 member with no research background reads the page and can explain the finding
 to someone else afterwards.**
 
-Full specification: [`docs/SPEC.md`](docs/SPEC.md).
-What is built, what is proven, and what still needs a hand: [`docs/HANDOVER.md`](docs/HANDOVER.md).
+**Live: https://korkovik.github.io/research-desk/**
+
+[![check](https://github.com/korkovik/research-desk/actions/workflows/ci.yml/badge.svg)](https://github.com/korkovik/research-desk/actions/workflows/ci.yml)
+[![daily digest](https://github.com/korkovik/research-desk/actions/workflows/daily.yml/badge.svg)](https://github.com/korkovik/research-desk/actions/workflows/daily.yml)
+
+The specification, the design notes, the assumptions log and the handover live
+in `docs/` on the build machine and are deliberately **not** published here:
+they carry spend figures, candid assessments of which editions read badly, and
+personal detail. `.gitignore` says how to publish them if that is ever wanted.
 
 ---
 
 ## Status
 
-Built and tested offline. **Not yet run end to end**, because OpenAlex has
-required an API key since 13 February 2026 and Research Desk does not have one
-yet. Everything is written against the documented API shape and against
-responses captured live from all three sources; the moment the key exists it
-drops into `.env.local` and the pipeline runs unchanged. `docs/HANDOVER.md`
-lists precisely what remains unproven until then — read that before trusting
-anything here.
+Running. Nine editions have been published from live data across all three
+sources, and deduplication has been proven across consecutive runs — the second
+run excluded nine papers it had already covered, with no overlap by ID or DOI.
+
+It now runs itself: GitHub Actions builds an edition every morning and GitHub
+Pages serves it. The Mac mini is no longer in the loop, which retires
+assumption A1.
+
+What is still weak, in order: number anchoring is the least reliable of the §2
+checks; the §7.4 verification machinery is in the codebase but **not wired into
+the daily run** since the "Příklad ze života" block was removed, because there
+is no longer a fabricated-example surface for it to guard; and no native Czech
+speaker has reviewed the output.
 
 ## Getting it running
 
@@ -36,13 +49,58 @@ npm run run:dry                    # a full run that writes nothing
 npm run run:daily                  # a real run
 ```
 
-Then schedule it:
+That is only needed to run it by hand. The daily schedule lives in GitHub
+Actions — see [Deployment](#deployment). The `launchd/` plist is kept for
+running it on the Mac mini instead, but nothing depends on it any more.
 
-```bash
-cp launchd/com.tomscld.research-desk.plist ~/Library/LaunchAgents/
-launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.tomscld.research-desk.plist
-launchctl kickstart -p gui/$(id -u)/com.tomscld.research-desk   # run it now
+## Deployment
+
+GitHub Actions builds the edition, GitHub Pages serves it. Actions rather than
+a serverless host because a run takes about eleven minutes end to end, which is
+past every serverless function ceiling; Actions has a six-hour job limit and is
+free on public repositories.
+
 ```
+06:00 Prague ─ .github/workflows/daily.yml
+               ├── gate      is this the 06:00 firing, and is today unpublished?
+               ├── build     npm run run:daily          (the only step that spends)
+               ├── publish   commit archive/, index.html, state/seen.json → main
+               └── on failure  open a dated issue labelled run-failure
+                     │
+               Pages serves main at the repository root
+```
+
+**Why the output is committed.** Every run gets a clean runner. If the archive
+were not in git, each morning would rebuild an index holding only that day's
+edition and every earlier page would 404; and `state/seen.json` — the only
+record of what has already been published — would start empty and re-publish
+papers already covered. Committing the output is what makes the archive an
+archive.
+
+**The DST trap.** GitHub cron is UTC and ignores daylight saving. The common
+fix is two month-scoped rules, but EU DST switches on the *last Sunday* of March
+and October, so a month-scoped pair is still an hour out for about the first
+four weeks of March and the last week of October. Instead both rules fire daily
+and a gate step asks the runner's own tzdata whether it is 06:00 in Prague.
+Exact all year; the losing firing costs a few free seconds.
+
+**Not committing a broken day.** The publish step runs only if the build step
+succeeded, so a failed run leaves the archive and `seen.json` untouched and
+yesterday's site still served. Per §9 the day is visibly missing rather than
+padded with older or off-category papers.
+
+**The push race.** The output commit is rebased onto `origin/main` and retried
+five times with backoff. If the rebase conflicts it is aborted and the job
+fails: a `seen.json` half-merged by a bot would silently break deduplication
+for every later run, which is worse than a red X.
+
+**Knowing it broke, without a daily email.** A good day sends nothing. A bad day
+opens (or comments on) one dated issue labelled `run-failure`, which GitHub
+notifies on, turns the badge above red, and leaves a red X in the Actions tab.
+The site itself also shows its newest edition's date, so a stall is visible.
+
+Run it by hand from the Actions tab → **daily digest** → *Run workflow*, with
+`force` ticked to replace an edition already published today.
 
 ## Credentials
 
@@ -58,42 +116,50 @@ any other project on this machine.
 
 **Research Desk uses its own Anthropic key.** No key was copied here from
 another project — `czech-product-verifier` has one, and its spend cap is its
-own. Put Research Desk's key in
+own. For local runs, put the key in
 `~/claudecode-workspace/research-desk/.env.local` at mode 0600.
+
+For the daily Actions run the same two values are **repository secrets**
+(Settings → Secrets and variables → Actions), never committed. `.gitignore`
+denies everything env-shaped and re-admits only `.env.example`, so a stray
+copy like `.env.local.bak` cannot reach git either.
 
 ## What a run costs
 
-Two Claude calls per paper — one to write the six blocks, one to check that the
-"Příklad ze života" is really traceable to the paper — plus an optional
-adversarial third, plus whatever regeneration the checks demand. A clean run makes
-**exactly 15 calls** for five papers — measured, not estimated: five to write, five
-to verify, five to challenge — and more whenever a block has to be regenerated.
+Measured across nine live runs, not estimated. One Claude call per paper —
+the `Příklad ze života` block was removed, and with it the second verification
+call that guarded it — so a clean run makes **12 to 15 calls** for five papers,
+the spread being regeneration when a §2 style check rejects a block.
 
-Measured prompt sizes and estimated tokens, at `claude-opus-5`
-($5 / $25 per million tokens in / out), `effort: high`, challenge pass on:
+At `claude-opus-5` ($5 / $25 per million tokens in / out), `effort: high`:
 
 | | per day |
 |---|---|
-| Input (after prompt caching of the stable system prompts) | ~16,000 tokens |
-| Output, including adaptive thinking | ~33,000 tokens |
-| **Estimated cost** | **$0.55 – $0.95 per day, i.e. roughly $17 – $29 per month** |
+| Calls | 12 – 15 |
+| **Measured cost** | **$0.62 – $0.80, averaging about $0.70** |
+| **Per month** | **roughly $21** |
 
-The range is wide because the uncertain term is thinking tokens, which are
-billed as output and dominate the bill. **The upper end of that range exceeds a
-$20 monthly cap**, so if the cap is a hard one, pull these levers in this order —
-each is a one-line change in `config.json`:
+That sits inside the **$40 cap** with about $19 of headroom, which is the
+month's whole margin for manual re-runs — each `force` dispatch costs another
+$0.70.
 
-1. `summarisation.effort` and `verification.effort` from `high` to `medium` —
-   roughly halves thinking tokens, and costs the least of the three.
-2. `verification.challengePass: false` — removes the adversarial second pass.
-   About a quarter of the output tokens, but it is the §7.4 defence you are
-   trimming, so pull it after (1) and not before.
-3. `summarisation.model` / `verification.model` to `claude-sonnet-5`
-   ($3 / $15) — about 40 % cheaper, at some quality cost on the Czech.
+How it came down, since the trajectory is the useful part: 41 calls / $1.99 per
+run at the start, then $1.86 once the number-anchor check stopped forcing
+needless regeneration, then $1.18 when the generator was rewritten, then $0.62
+once the example block and its verification call went. `effort: medium` was
+measured and rejected: it saved 12 % and doubled the surviving style findings
+from four to eight.
 
-Every run logs its actual token usage and an estimated cost into
-`logs/run.log`, so after a week the estimate above can be replaced with a
-measurement.
+If the cap ever needs defending, pull these in order — each is one line in
+`config.json`:
+
+1. `summarisation.effort` from `high` to `medium` — cheapest lever, at a
+   measured cost in Czech style quality.
+2. `summarisation.model` to `claude-sonnet-5` ($3 / $15) — about 40 % cheaper,
+   at more quality cost on the Czech.
+
+Every run logs its real token usage and cost to `logs/run.log`, and the Actions
+log keeps the same line for each day.
 
 ## How it works
 
@@ -150,7 +216,7 @@ so it can be reviewed in a single pass. The prompts in
 [`src/summarise/prompt.ts`](src/summarise/prompt.ts) are also Czech and also
 machine-written; a reader never sees them, but bad Czech there produces bad
 Czech downstream, so they belong in the same review. Neither the project owner
-nor the machine that wrote them is a native speaker — see `docs/HANDOVER.md`
+nor the machine that wrote them is a native speaker — see the handover notes on the build machine
 for the specific strings flagged as least confident.
 
 ## Commands
