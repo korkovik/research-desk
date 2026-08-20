@@ -99,6 +99,50 @@ jobs:
             npm run run:daily
           fi
 
+      # §9 wants a line per run, and the brief wants real spend reported per run.
+      # run.ts writes both into logs/run.log, but logs/ is gitignored and a
+      # runner's disk is thrown away, so on Actions that record vanished. This
+      # lifts the line into the Actions summary where it is visible, and appends
+      # it to a committed history so the month's spend against the $40 cap can
+      # actually be totalled. Runs even on failure, because a failed run is
+      # exactly the one worth having a line for.
+      - name: Report the run and its spend
+        if: always() && steps.gate.outputs.proceed == 'true'
+        run: |
+          node -e '
+            const fs = require("fs");
+            let line;
+            try {
+              const lines = fs.readFileSync("logs/run.log", "utf8").trim().split("\n");
+              line = JSON.parse(lines[lines.length - 1]);
+            } catch {
+              console.log("No run.log line — the run failed before it could write one.");
+              process.exit(0);
+            }
+            const a = line.anthropic ?? {};
+            const usd = a.estimatedCostUsd;
+            const money = typeof usd === "number" ? "$" + usd.toFixed(3) : "unknown";
+            const md = [
+              "### " + (line.ts ?? "").slice(0, 10) + " — " + line.outcome,
+              "",
+              "| | |",
+              "|---|---|",
+              "| Summary | " + (line.summary ?? "-") + " |",
+              "| Claude calls | " + (a.callsTotal ?? 0) + " |",
+              "| Tokens in / out | " + (a.inputTokens ?? 0) + " / " + (a.outputTokens ?? 0) + " |",
+              "| Cache reads | " + (a.cacheReadTokens ?? 0) + " |",
+              "| **Estimated cost** | **" + money + "** |",
+              "| Warnings / errors | " + (line.warnings?.length ?? 0) + " / " + (line.errors?.length ?? 0) + " |",
+              "| Degradations | " + (line.degradations?.length ? line.degradations.join(", ") : "none") + " |",
+            ].join("\n");
+            console.log(md);
+            if (process.env.GITHUB_STEP_SUMMARY) {
+              fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, md + "\n");
+            }
+            fs.mkdirSync("state", { recursive: true });
+            fs.appendFileSync("state/runs.jsonl", JSON.stringify(line) + "\n");
+          '
+
       # Only reached when the build step succeeded, so a failed or half-finished
       # run never commits partial output. §9 wants a bad day to degrade visibly,
       # not to quietly overwrite a good archive with a broken one.
@@ -109,7 +153,7 @@ jobs:
           git config user.name  "research-desk-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add -A archive index.html state/seen.json
+          git add -A archive index.html state/seen.json state/runs.jsonl
           if git diff --cached --quiet; then
             echo "Nothing changed — not committing."
             exit 0
