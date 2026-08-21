@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Společnost, ekonomika a vzdělávání – 21. srpna 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Společnost, ekonomika a vzdělávání</h1>
+<p class="dateline"><time datetime="2026-08-21">21. srpna 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 5</p>
+<div class="summary"><p><span class="lead">V indickém státě Karnátaka běží několik programů, které chudším rodinám na venkově pomáhají postavit zděný dům.</span> Autor porovnal úřední data z let 2015–16 až 2024–25: kolik peněz stát na tyto programy vydal a kolik domů skutečně přibylo. Obě řady čísel se pohybovaly téměř souběžně, těsnost jejich vztahu vyšla 0,976 na stupnici, kde 1 znamená naprostou shodu a 0 žádnou souvislost. Jinými slovy: v letech s vyšším rozpočtem vyrostlo znatelně víc domů. Práce ale pracuje jen se souhrnnými čísly z výročních zpráv a neříká nic o tom, jak se v postavených domech lidem žije.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Autor nesbíral vlastní data. Vycházel z úředních zdrojů: zpráv karnátackého ministerstva bydlení, ekonomického přehledu státu za rok 2025–26, statistického ředitelství v Bengalúru a Karnátacké bytové rady. Čísla pokrývají roky 2013 až 2025. Nejdřív popsal pět programů na podporu venkovského bydlení. Pak spočítal, jak spolu souvisí vydané peníze a počet dokončených domů. Použil k tomu korelaci, tedy míru toho, jak těsně se dvě řady čísel pohybují společně. Vyšla mu hodnota 0,976, přičemž 1 by znamenala dokonalou shodu a 0 žádný vztah. Výsledek je podle autora statisticky významný, tedy je málo pravděpodobné, že by taková shoda vznikla čirou náhodou. Programy se liší tím, komu pomáhají. Ashraya/Basava Vasathi běží od roku 2000 a příjemci v něm dostávali až 85 % stavebního materiálu zdarma. Program Devaraj Urs z roku 2014–15 míří na zvlášť zranitelné skupiny: lidi s postižením, vdovy, kočovné kmeny nebo rodiny zasažené HIV. Nabízí jim až 80 % materiálu na stavbu či opravu domu. Program Dr. B. R. Ambedkara z roku 2015–16 dává peněžní příspěvek na stavbu na vlastním pozemku. Celostátní program Indira Awaas Yojana se v roce 2016 přejmenoval a přebudoval na Pradhan Mantri Awaas Yojana–Gramin. Závěr zní střízlivě. Kolísání počtu postavených domů jde v Karnátace ruku v ruce s tím, kolik peněz se na ně v daném roce uvolnilo.</p>
+<h3>Proč je to důležité</h3>
+<p>Ukazuje to, že u veřejných programů bydlení jde vysledovat docela přímou vazbu mezi vydanými penězi a počtem střech nad hlavou. Pro kohokoli, kdo posuzuje smysl takových dotací, je to jednoduché a srozumitelné měřítko.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Dr.Nagendraiah</dd>
+<dt>Časopis</dt>
+<dd>Zenodo (CERN European Organization for Nuclear Research)</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-18">18. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.5281/zenodo.21989705" rel="noreferrer">10.5281/zenodo.21989705</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7203682406" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.5281/zenodo.21989705" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o souhrnná úřední čísla z jednoho indického státu, publikovaná v otevřeném repozitáři bez recenzního řízení. Těsná souvislost sama o sobě neříká nic o kvalitě postavených domů ani o tom, ke komu se pomoc nakonec dostala.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 5</p>
+<div class="summary"><p><span class="lead">V Číně pomáhají bohatší východní provincie chudším regionům na západě a uprostřed země, a podle nové analýzy se to projevilo i na zdraví tamních seniorů.</span> Autoři využili velké čínské šetření o zdraví a stárnutí (CHARLS). To sleduje stejné lidi opakovaně od roku 2011 do roku 2020. Vědci porovnali, jak se zdraví starších lidí v podporovaných oblastech měnilo oproti ostatním po posílení politiky v roce 2016. Zdravotní stav se v podporovaných regionech zlepšil, nejvýrazněji v nejchudších oblastech a ve městech, zatímco na venkově výsledek průkazný nebyl.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Čína řeší podobný problém jako řada dalších zemí. Lidí v důchodovém věku přibývá rychleji, než roste bohatství. K tomu se přidávají velké rozdíly mezi rozvinutým východem a chudším vnitrozemím. Stát proto páruje provincie: bohatší region má přiděleného chudšího partnera a posílá mu peníze, odborníky i technologie. V roce 2016 vláda tento program posílila. Právě této změny autoři využili jako takzvaného přirozeného experimentu.</p>
+<p>Použili metodu zvanou rozdíl v rozdílech (difference-in-differences). Znamená to jednoduchou věc. Sledujeme, jak se zdraví změnilo v podporovaných oblastech. Od toho odečteme změnu, kterou ve stejné době prošly oblasti bez podpory. Co zbude, se dá připsat politice. Data pocházejí z pěti vln šetření CHARLS z let 2011 až 2020.</p>
+<p>Po roce 2016 si starší lidé v podporovaných regionech vedli zdravotně lépe než srovnávací skupina. Autoři výsledek prověřovali několika způsoby a držel se.</p>
+<p>Nabízejí tři vysvětlení. Zaprvé lepší dostupnost péče: více lidí mělo zdravotní pojištění a doplatky za ambulantní ošetření jim ukrajovaly menší část rozpočtu. Nemocnic ani ordinací přitom nepřibylo. Zadruhé vzrostly příjmy domácností. Zatřetí se zlepšila dopravní a digitální infrastruktura, tedy cesty k lékaři i připojení k internetu.</p>
+<p>Rozdíly mezi skupinami byly výrazné. Ve městech byl efekt statisticky průkazný, v ekonomicky slabých regionech výrazně silnější. Na venkově vyšel kladně, ale nedal se odlišit od náhody.</p>
+<h3>Proč je to důležité</h3>
+<p>Ukazuje to, že zdraví starších lidí neovlivňují jen nemocnice a léky, ale i příjmy domácností, silnice a internetové připojení. To je úvaha, která platí i pro rozdíly mezi bohatšími a chudšími regiony u nás.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Liu Ya, Zhanyu Wu, R. Zhang, Yawen An, Chao Xie, Qinglan Ding a další</dd>
+<dt>Časopis</dt>
+<dd>BMC Public Health</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-18">18. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1186/s12889-026-28905-w" rel="noreferrer">10.1186/s12889-026-28905-w</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7203721996" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://doi.org/10.1186/s12889-026-28905-w" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1186/s12889-026-28905-w" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o statistické porovnání skupin obyvatel, které samo o sobě nedokazuje příčinu a následek, a u venkovských seniorů se zlepšení nepodařilo odlišit od náhody.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 5</p>
+<div class="summary"><p>Strach z toho, že člověk zůstane bez mobilu, má mezi studenty univerzity Koya v irácké Kurdistánské oblasti překvapivě pevné místo: z 362 dotázaných vysokoškoláků vykázalo střední míru 51,7 % a silnou 34,5 %, tedy zhruba každý třetí. Vědci použili standardizovaný dotazník o dvaceti otázkách, který sleduje čtyři obavy — že se člověk nedostane k informacím, přijde o pohodlí, nebude moci komunikovat a ztratí spojení s ostatními. Průměrné skóre 87,58 bodu spadá do středního pásma. Muži a ženy, jednotlivé ročníky ani studenti z města a z venkova se přitom nelišili. Rozdíl se ukázal jen mezi fakultami: technici a studenti tělesné výchovy skórovali výš než studenti humanitních a společenských věd.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Autoři oslovili 362 studentů bakalářského studia na univerzitě Koya a udělali takzvané průřezové šetření — tedy jednorázový snímek situace v jednom okamžiku, ne sledování stejných lidí v čase. Sběr dat probíhal od února do listopadu 2024. Použili ověřený dotazník NMP-Q (Nomophobia Questionnaire), kde студenti u dvaceti výroků na sedmibodové škále označovali, nakolik s nimi souhlasí. Výsledky vyšly takto: průměrné skóre 87,58 bodu, což dotazník řadí do středního pásma. Střední míru obav mělo 51,7 % studentů (o něco víc než polovina), silnou 34,5 % (asi třetina). Zbytek dopadl mírně: 13 % studentů — tedy zhruba jeden z osmi — mělo obavy jen slabé a bez jakýchkoli příznaků byla necelá procenta, 0,8 %, což odpovídá zhruba jednomu člověku ze sta. Pohlaví, obor, ročník ani bydliště na výsledku nic neměnily. Statisticky významný rozdíl vyšel jen mezi šesti fakultami: studenti techniky a tělesné výchovy měli vyšší skóre než studenti humanitních a společenských věd. Síla tohoto vlivu je ovšem malá — příslušnost k fakultě vysvětluje asi 5 % rozdílů mezi studenty, zbylých zhruba 95 % připadá na něco jiného, co studie neměřila. Autoři z toho vyvozují, že by univerzity měly věnovat pozornost tomu, jak studenti s telefony zacházejí.</p>
+<h3>Proč je to důležité</h3>
+<p>Obavy z odloučení od telefonu nejsou okrajová kuriozita — u většiny dotázaných studentů byly středně silné nebo silné, což se může promítat do soustředění při studiu i do spánku. Pro učitele i rodiče je to argument bavit se o návycích s mobilem dřív, než začnou vadit.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Paiz Saber, Khalid Mustafa, Kochr Ali Mahmood, Ardalan Abdulla</dd>
+<dt>Časopis</dt>
+<dd>BMC Psychology</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-18">18. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1186/s40359-026-05396-3" rel="noreferrer">10.1186/s40359-026-05396-3</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7203642475" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://doi.org/10.1186/s40359-026-05396-3" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1186/s40359-026-05396-3" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jednorázové dotazníkové šetření na jediné univerzitě s účastníky vybíranými podle dostupnosti, takže výsledky nelze bez dalšího přenášet na jiné školy ani na české studenty a neříkají nic o tom, co je příčinou a co následkem.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-4">
+<p class="paper-counter">Studie 4 z 5</p>
+<div class="summary"><p><span class="lead">Loutky ve třídě umí víc než jen pobavit.</span> Španělská disertace shrnula tři školní projekty s loutkami a sledovala, co se u dětí změnilo. Po dílně se stínovými loutkami o sluneční soustavě stoupl u 46 osmiletých dětí podíl správných odpovědí zhruba z pětiny na téměř všechny. Ve druhé dílně, zaměřené na soustředění, přešlo po laně před hrou necelých 43 dětí ze sta, s vlastnoručně vyrobenou loutkou v ruce už zhruba 75 ze sta. Autor sám ale upozorňuje, že nejde o důkaz, že za to může loutka — chybělo srovnání se skupinou, která si s loutkami nehrála.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Práce vychází z kvalitativního výzkumu (qualitative research) — tedy z podrobného popisu toho, co se ve třídě opravdu děje, ne z měření na velkých vzorcích. Autor prošel odbornou literaturu, chodil do škol, pozoroval, vedl rozhovory a dílny. V článku popisuje tři případy. V prvním děti sledují hotové vzdělávací představení Un viaje invisible. Ve druhém samy vyrábějí a vodí stínové loutky a učí se přitom o sluneční soustavě. Ve třetím si loutku postaví a rozehrají s ní dramatickou hru o soustředění.</p>
+<p>Dílny o sluneční soustavě se zúčastnilo 46 osmiletých dětí. Disertace uvádí, že před dílnou odpovídaly správně asi na 20 % otázek, tedy zhruba na jednu z pěti. Po dílně to bylo asi 95 %, tedy skoro na všechny. Autor pak čísla přepočítal ze šesti tabulek s jednotlivými otázkami. Vyšlo mu 24,75 % správných odpovědí před dílnou, tedy přibližně každá čtvrtá. Po dílně 95,67 %, tedy téměř všechny.</p>
+<p>Druhá dílna se týkala soustředění. Zapojilo se do ní 110 dětí ve věku od čtyř do osmi let. Úkolem bylo přejít po laně. Před loutkovou hrou to zvládlo 47 dětí ze 110, tedy necelá polovina. Když děti nesly vlastnoručně vyrobenou loutku a kámen, uspělo jich 82 ze 110, tedy zhruba tři ze čtyř.</p>
+<p>Autor výslovně píše, že to není důkaz o účinku loutky. Součástí dílen bylo i vyprávění, stavění, zkoušení, pohyb a povídání s ostatními. Co přesně zabralo, z těchto dat poznat nejde.</p>
+<h3>Proč je to důležité</h3>
+<p>Učitelům i rodičům to nabízí konkrétní a levný nápad, jak dětem přiblížit učivo nebo je přimět k soustředění — a zároveň poctivý příklad toho, že zajímavý výsledek z jedné třídy ještě není důkaz.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Hossein Hossein Zeinali</dd>
+<dt>Časopis</dt>
+<dd>Zenodo (CERN European Organization for Nuclear Research)</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-18">18. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.5281/zenodo.22003012" rel="noreferrer">10.5281/zenodo.22003012</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7203715061" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.5281/zenodo.22003012" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o popisná data z několika dílen bez srovnávací skupiny a bez náhodného rozdělení dětí, takže zlepšení může mít jinou příčinu než samotnou loutku; text navíc vyšel jako záznam v otevřeném repozitáři Zenodo.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-5">
+<p class="paper-counter">Studie 5 z 5</p>
+<div class="summary"><p><span class="lead">Studenti, kteří jsou se studiem spokojení, víc věří i tomu, že se uplatní na trhu práce.</span> Vyplynulo to z dotazníku, který vyplnilo 179 studentů univerzity v Palermu. Ptal se na kvalitu výuky, na pouto k vlastní škole, na spokojenost se studiem a na to, jak студenti hodnotí své šance získat práci. Dobrá výuka i pocit sounáležitosti souvisely s vyšší spokojeností, a ta pak s větší vírou ve vlastní uplatnění. Jde ale o jednorázový průzkum, takže ukazuje souvislosti, nikoli příčiny.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Výzkumníci oslovili 179 studentů univerzity v Palermu. Ženy tvořily 59,2 % vzorku, tedy zhruba šest z deseti. Průměrný věk byl 24,4 roku. Všichni vyplnili dotazník o čtyřech věcech: o kvalitě výuky, o svém sepětí s univerzitou, o spokojenosti se studiem a o tom, jak si věří na pracovním trhu (odborně vnímaná zaměstnatelnost, anglicky perceived employability). Pak vědci hledali, co s čím souvisí. Obě akademické stránky souvisely se spokojeností kladně. Kvalita výuky měla vazbu o něco silnější než sepětí s univerzitou. Dohromady vysvětlily 26,3 % rozdílů ve spokojenosti mezi studenty. To je zhruba čtvrtina; zbylé tři čtvrtiny závisí na něčem jiném. Spokojenost se studiem pak souvisela s vírou ve vlastní uplatnění. Byla to nejsilnější vazba v celém modelu. Model jako celek vysvětlil 32,8 % rozdílů ve vnímané zaměstnatelnosti, tedy zhruba třetinu. Zbylé dvě třetiny mají jiné příčiny. Zajímavý je způsob, jakým to podle dat funguje. Kvalita výuky se sebedůvěrou sama o sobě nesouvisela, jakmile vědci započítali spokojenost. Vypadá to tedy, že dobrá výuka působí právě přes ni. U sepětí s univerzitou zůstala i část přímé vazby. Pro školy z toho plyne jednoduchá myšlenka. Spokojenost studentů není jen příjemný doplněk k výuce. Je to cesta, kterou si student buduje představu o tom, co dokáže.</p>
+<h3>Proč je to důležité</h3>
+<p>Když je studium dobré a student v něm má své místo, odnáší si nejen znalosti, ale i důvěru, že se uplatní. Pro učitele i rodiče je to připomínka, že atmosféra školy ovlivňuje i sebevědomí, s jakým mladý člověk vstoupí do práce.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Giuditta Cusimano, Francesco Pace, Cristina Moavero</dd>
+<dt>Časopis</dt>
+<dd>Sustainability</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-18">18. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.3390/su18168478" rel="noreferrer">10.3390/su18168478</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7203698321" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://doi.org/10.3390/su18168478" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.3390/su18168478" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jednorázový dotazník od 179 studentů jediné univerzity, navíc založený na vlastním hodnocení, takže výsledky ukazují souvislosti, ne příčiny, a nemusí platit všude.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 21. srpna 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>
