@@ -456,6 +456,46 @@
       "titleKey": "aspirationsperceptionsandrealityexaminingtheroleofthelearningexperienceonuniversitystudentsperceivedemployability",
       "publishedOn": "2026-08-21",
       "category": "society-economy-education"
+    },
+    {
+      "openalexId": "W7203837956",
+      "doi": "10.3390/math14163014",
+      "arxivId": null,
+      "titleKey": "researchonrouteoptimizationofsinglesupplypointperishablegoodsmultimodaltransportconsideringtransportationvibrationloss",
+      "publishedOn": "2026-08-22",
+      "category": "physics-space-engineering"
+    },
+    {
+      "openalexId": "W7203831134",
+      "doi": "10.3390/s26165267",
+      "arxivId": null,
+      "titleKey": "bsdatasetatailormadeurbanroadpotholedatasetforrealtimedetectionandsafetyorientedmonitoring",
+      "publishedOn": "2026-08-22",
+      "category": "physics-space-engineering"
+    },
+    {
+      "openalexId": "W7203820689",
+      "doi": "10.1002/adma.74645",
+      "arxivId": null,
+      "titleKey": "fluorinerichdoublenetworkinterfaciallayerenablingdynamicinterphasereconstructionforhighcapacityzincmetalbatteries",
+      "publishedOn": "2026-08-22",
+      "category": "physics-space-engineering"
+    },
+    {
+      "openalexId": "W7203824501",
+      "doi": "10.3390/batteries12080314",
+      "arxivId": null,
+      "titleKey": "reconcilingmanufacturerclaimswithmeasureddegradationincommerciallithiumioncellsaprovenanceawareknowledgegraphwithcoveragegatedabstention",
+      "publishedOn": "2026-08-22",
+      "category": "physics-space-engineering"
+    },
+    {
+      "openalexId": "W7203832254",
+      "doi": "10.1038/s43246-026-01314-7",
+      "arxivId": null,
+      "titleKey": "plasmonicnearfieldenhancesphotoelectricsinafabryperotcavityheterostructure",
+      "publishedOn": "2026-08-22",
+      "category": "physics-space-engineering"
     }
   ]
 }

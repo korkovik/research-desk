@@ -1,0 +1,790 @@
+{
+  "date": "2026-08-22",
+  "categoryKey": "physics-space-engineering",
+  "categoryLabel": "Fyzika, vesmír a technika",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7203837956",
+        "title": "Research on Route Optimization of Single-Supply-Point Perishable Goods Multimodal Transport Considering Transportation Vibration Loss",
+        "abstract": "As the market of perishable goods in China continues to expand, reducing quality loss during transportation has become an urgent issue for the industry. Multimodal transport, as a key approach to optimizing the transportation structure and lowering logistics costs, has been increasingly adopted in practice. However, multimodal transport involves multiple transfers, and continuous vibration from transportation equipment throughout the transport process, together with impacts during transfer operations, can easily increase the loss of perishable goods, making it highly significant in practice to consider vibration loss during transportation in route planning. Since different transportation equipment generates different levels of vibration acceleration, this study considers the vibration losses caused by road, rail, and air transport. A bi-objective route optimization model for fresh produce multimodal transport is established, aiming to minimize total cost while maximizing product quality satisfaction. A hybrid algorithm combining an improved Strength Pareto Evolutionary Algorithm and a multi-objective adaptive large neighborhood search algorithm is designed to solve the model. The effectiveness of the model and algorithm is verified through case analysis, followed by sensitivity analysis on different time-sensitive factors of vibration damage and vibration acceleration. The results show that, compared with the multi-objective adaptive large neighborhood search algorithm and the non-dominated sorting genetic algorithm, the proposed algorithm can obtain solutions with lower total costs or higher product quality satisfaction. The minimum total cost of the multimodal transport scheme obtained by the proposed algorithm is reduced by 0.27% and 2.4%, respectively, compared with the multi-objective adaptive large neighborhood search algorithm and the non-dominated sorting genetic algorithm, while the maximum satisfaction is increased by 2.1% and 0.35%, respectively.",
+        "date": "2026-08-20",
+        "url": "https://doi.org/10.3390/math14163014",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.3390/math14163014",
+        "openAlexId": "W7203837956",
+        "subfield": {
+          "id": "subfields/2215",
+          "name": "Building and Construction"
+        },
+        "field": {
+          "id": "fields/22",
+          "name": "Engineering"
+        },
+        "topic": {
+          "id": "T12306",
+          "name": "Urban and Freight Transport Logistics"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Yang Xu",
+          "Mei-juan MA",
+          "Xin Zhang",
+          "Bin Su",
+          "Meng Zhang",
+          "Qing-E Guo"
+        ],
+        "venue": "Mathematics",
+        "indexedDate": "2026-08-21",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7017,
+          "everydayRelevance": 0.9333,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.8006,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.25,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.3383
+          },
+          "everydayDomains": [
+            "money",
+            "transport",
+            "housing"
+          ],
+          "subfieldKey": "subfields/2215",
+          "evidence": [
+            "total 0.8006 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.70 = P 0.75 − 0.45×t 0.00 − 0.15×j 0.34",
+            "outcome verbs (v 1.00): reduced, increased, increases, improved, lowers, caused",
+            "recognisable subjects (s 0.25): roads",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.34): 9/266 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.93: 3 domain(s) — money, transport, housing",
+            "everyday terms (4): cost, costs, rail, neighborhood",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-21)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Mathematics",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.3390/math14163014)"
+      },
+      "summary": {
+        "souhrn": "Ovoce, zelenina nebo maso se cestou nekazí jen teplem — poškozuje je i neustálé třesení ve vozidle a nárazy při překládce. Čínští autoři proto postavili výpočetní model, který hledá trasu z jednoho skladu k odběratelům tak, aby byla levná a zboží dorazilo v dobrém stavu. Každý druh dopravy — silniční, železniční i letecká — přitom třese jinak. Jejich postup výpočtu, tedy algoritmus (přesný návod krok za krokem, podle kterého počítač hledá řešení), našel v testovacím příkladu trasy o něco levnější nebo šetrnější než dvě starší metody. Rozdíly jsou ale malé, nanejvýš jednotky procent, a jde zatím o výpočet na jednom modelovém případu.",
+        "podrobneVysvetleni": "Model počítá se třemi druhy dopravy: po silnici, po železnici a letecky. Každý se třese jinak silně. Autoři to popisují takzvaným vibračním zrychlením, tedy mírou toho, jak prudce se náklad chvěje. K tomu přidali nárazy při každé překládce z jednoho dopravního prostředku na druhý. Delší cesta a víc překládek znamená víc otřesů, a tedy větší úbytek kvality. Úloha má dva cíle najednou: co nejnižší celkové náklady a co nejvyšší spokojenost s kvalitou dodaného zboží. Tyto cíle jdou proti sobě — rychlá a šetrná letecká přeprava stojí víc. Autoři proto spojili dvě známé metody hledání řešení do jednoho postupu a otestovali ho na modelovém příkladu. Výsledek: nejnižší nalezené náklady byly o 0,27 % nižší než u první srovnávané metody, tedy zhruba o tři koruny z každého tisíce. Proti druhé metodě to bylo o 2,4 %, tedy asi o 24 korun z tisíce. Nejvyšší dosažená spokojenost s kvalitou zboží stoupla o 2,1 % proti první metodě (tedy asi o dva body ze sta) a o 0,35 % proti druhé (zhruba tři a půl dílu z tisíce). Autoři pak ještě zkoušeli, jak se plán mění, když je zboží citlivější na čas nebo když se otřesy zesílí.",
+        "procJeToDulezite": "Část potravin se cestou znehodnotí dřív, než se dostane do obchodu, a tyhle ztráty nakonec platí zákazník. Plánování tras, které počítá i s otřesy, může jídla zachránit víc než jen chlazení.",
+        "poznamkaKOmezenim": "Jde o teoretický výpočet ověřený na jediném modelovém příkladu, nikoli o měření na skutečných zásilkách, a zlepšení proti dřívějším metodám je v řádu jednotek procent."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:algoritmus",
+            "span": {
+              "start": 374,
+              "end": 384
+            },
+            "matchedText": "algoritmus",
+            "messageCs": "Termín „algoritmus“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:algoritmus @ souhrn[374,384]: algoritmus"
+          }
+        ],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 847,
+              "end": 1014
+            },
+            "matchedText": "Nejvyšší dosažená spokojenost s kvalitou zboží stoupla o 2,1 % proti první metodě (tedy asi o dva body ze sta) a o 0,35 % proti druhé (zhruba tři a půl dílu z tisíce).",
+            "messageCs": "Tato věta má 33 slov a je moc dlouhá: „Nejvyšší dosažená spokojenost s kvalitou zboží stoupla o 2,1 % proti první meto…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[847,1014]: Nejvyšší dosažená spokojenost s kvalitou zboží stoupla o 2,1 % proti první metodě (tedy asi o dva body ze sta) a o 0,35 % proti druhé (zhruba tři a půl dílu z tisíce)."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=16.95",
+            "messageCs": "Věty jsou v průměru moc dlouhé (16,9 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=16.95"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203831134",
+        "title": "BS Dataset: A Tailor-Made Urban Road Pothole Dataset for Real-Time Detection and Safety-Oriented Monitoring",
+        "abstract": "Road surface hazards remain a persistent concern for vehicle safety, passenger comfort, and the operational continuity of transport infrastructure. Among these hazards, potholes are particularly significant because they can cause tire damage, suspension wear, wheel misalignment, and sudden vehicle instability. In addition to direct mechanical damage, potholes may reduce driving comfort, increase maintenance costs, and degrade traffic efficiency in urban environments where roads are heavily used and rapidly deteriorate. For these reasons, the timely detection of potholes is an important requirement for road safety and infrastructure management. This work presents a tailor-made dataset for road pothole detection in urban environments, referred to as the Bridgestone Dataset (BS Dataset). The dataset was designed to support object detection from vehicle-mounted imagery collected from a test vehicle under realistic road conditions, thereby aligning the training data more closely with the target deployment scenario. The resulting dataset is intended to support real-time monitoring systems for road hazard detection and maintenance planning. The dataset was also designed as a multimodal resource. In addition to pothole bounding-box annotations, it provides accelerometer and GPS signals to characterize the vehicle dynamics during operation which might help identifying hazard severity and the potential risk to the vehicle. To collect the dataset, the authors developed a smartphone application, which supports the acquisition of both images and vehicle telemetry by leveraging the device’s internal sensors.",
+        "date": "2026-08-20",
+        "url": "https://doi.org/10.3390/s26165267",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.3390/s26165267",
+        "openAlexId": "W7203831134",
+        "subfield": {
+          "id": "subfields/2205",
+          "name": "Civil and Structural Engineering"
+        },
+        "field": {
+          "id": "fields/22",
+          "name": "Engineering"
+        },
+        "topic": {
+          "id": "T11606",
+          "name": "Infrastructure Maintenance and Monitoring"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Roberto Benedetti",
+          "V. Bortolotto"
+        ],
+        "venue": "Sensors",
+        "indexedDate": "2026-08-21",
+        "referencedWorksCount": 20,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.5749,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.7686,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.5,
+            "q": 0,
+            "c": 0.6,
+            "t": 0,
+            "j": 0.1339
+          },
+          "everydayDomains": [
+            "screens",
+            "money",
+            "transport",
+            "work"
+          ],
+          "subfieldKey": "subfields/2205",
+          "evidence": [
+            "total 0.7686 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.57 = P 0.59 − 0.45×t 0.00 − 0.15×j 0.13",
+            "outcome verbs (v 1.00): reduces, increases, detection (title, ×2), causes",
+            "recognisable subjects (s 0.50): roads (title, ×2)",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 0.60): −0.4 method-word subtitle",
+            "jargon density (j 0.13): 3/224 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 4 domain(s) — screens, money, transport, work",
+            "everyday terms (8): smartphone, smartphones, cost, costs, driving, traffic, road safety, work",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-21)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Sensors",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.3390/s26165267)"
+      },
+      "summary": {
+        "souhrn": "Výmoly na silnicích ničí pneumatiky, tlumiče i geometrii kol. Tým spojený s firmou Bridgestone proto sestavil vlastní sbírku dat (anglicky dataset) nazvanou BS Dataset. Jsou to snímky vozovky pořízené z jedoucího testovacího auta v běžném městském provozu. V každém snímku je výmol ručně vyznačený rámečkem, aby se na tom mohly učit programy pro automatické rozpoznávání. Kromě obrázků sada obsahuje i záznam z akcelerometru (čidla otřesů a zrychlení) a z GPS, takže je vidět, jak auto v daném místě nadskočilo. Data sbírala aplikace v mobilním telefonu, který k tomu využívá svoje vlastní čidla a fotoaparát.",
+        "podrobneVysvetleni": "Většina programů, které hledají výmoly na fotkách, se učí na snímcích posbíraných kdovíkde a kdovíjak. Autoři šli jinou cestou. Vzali testovací vozidlo, vyrazili s ním do běžného městského provozu a natáčeli vozovku tak, jak ji vidí kamera umístěná ve voze. Trénovací data tedy vypadají stejně jako to, co bude systém potkávat v ostrém nasazení. To je praktický rozdíl: program naučený na uměle vybraných záběrech v reálném provozu často selhává.\n\nDruhá věc, kterou sada přidává, je pohyb auta. Vedle rámečků kolem výmolů na snímcích obsahuje i signál z akcelerometru, tedy čidla, které měří otřesy a zrychlení, a polohu z GPS. Díky tomu se dá u konkrétního místa poznat nejen to, že tam díra je, ale i jak silný náraz způsobila. Mělká prohlubeň a díra, na které auto pořádně poskočí, tak přestávají být totéž. Autoři to označují za vodítko k odhadu závažnosti a rizika pro vozidlo.\n\nSběr dat zajišťovala aplikace pro chytrý telefon, kterou autoři sami vytvořili. Telefon zvládne obojí najednou — fotí vozovku a zároveň zapisuje údaje ze svých vnitřních čidel. Není tedy potřeba drahá měřicí technika. Sada je určená pro systémy, které mají výmoly hlásit průběžně za jízdy a pomáhat správcům silnic plánovat opravy.",
+        "procJeToDulezite": "Pokud se auta a telefony naučí spolehlivě hlásit výmoly samy, správci silnic zjistí o poškozené vozovce dřív, než na ní někdo rozbije kolo. A levné vybavení znamená, že si to může dovolit i menší město.",
+        "poznamkaKOmezenim": "Práce představuje datovou sbírku, ne hotový funkční systém — zdroj neuvádí, kolik snímků obsahuje, z jakých měst pochází ani jak přesně na ní vyškolené programy výmoly nacházejí."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:datova-sada",
+            "span": {
+              "start": 139,
+              "end": 146
+            },
+            "matchedText": "dataset",
+            "messageCs": "Termín „datová sada“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:datova-sada @ souhrn[139,146]: dataset"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 157,
+              "end": 167
+            },
+            "matchedText": "BS Dataset",
+            "messageCs": "Text opisuje původní název článku („BS Dataset“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[157,167]: BS Dataset"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_english_original:trenovaci-data",
+            "span": {
+              "start": 258,
+              "end": 272
+            },
+            "matchedText": "Trénovací data",
+            "messageCs": "U termínu „trénovací data“ chybí při prvním použití anglický originál v závorce (např. „trénovací data (training data)“). Čtenář ten anglický výraz potká jinde (§2).",
+            "detail": "jargon:no_english_original:trenovaci-data @ podrobneVysvetleni[258,272]: Trénovací data"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203820689",
+        "title": "Fluorine‐Rich Double‐Network Interfacial Layer Enabling Dynamic Interphase Reconstruction for High‐Capacity Zinc Metal Batteries",
+        "abstract": "ABSTRACT Developing large‐scale, dendrite‐free zinc (Zn) anodes is pivotal for the practical deployment of aqueous Zn‐metal batteries (AZMBs), yet maintaining interfacial stability under high‐areal‐capacity conditions remains challenging. Here, we report an adaptive artificial solid‐electrolyte interphase (ASEI) based on a single‐ion‐conducting fluorine‐rich double network (SFDN) that enables in situ dynamic reconstruction of the Zn/electrolyte interphase. The SFDN, comprising an Al(OR) 4 − ‐based (R = −CH 2 −(CF 2 ) 7 −CH 2 −) dynamic crosslinked network integrated within PVDF‐HFP matrix, delivers a high Zn 2+ transference number (0.78) and hydrophobic/zincophilic properties. During cycling, residual monomers within the SFDN fulfill a dual‐functional role: coordinating with Zn 2+ to establish a dynamic Zn(OR) 2 − ‐based network while undergoing sacrificial decomposition to form a robust ZnF 2 ‐rich inner SEI. This evolution yields a multilayered architecture that effectively suppresses water‐induced side reactions, homogenizes Zn 2+ flux, and provides self‐healing. Consequently, the SFDN@Zn anode achieves an extraordinary lifespan of over 4,000 h at 10 mA cm − 2 /10 mAh cm − 2 , and a high average Coulombic Efficiency of 99.9% at 5 mA cm − 2 . Furthermore, a ∼900 mAh Zn||I 2 pouch cell achieves a high energy density of 196 Wh kg − 1 with 97.8% capacity retention over 300 cycles. This work presents a dynamic self‐adaptive interphase engineering, offering fundamental insights into Zn‐anode stabilization, and extending to other metal‐based battery systems.",
+        "date": "2026-08-20",
+        "url": "https://doi.org/10.1002/adma.74645",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1002/adma.74645",
+        "openAlexId": "W7203820689",
+        "subfield": {
+          "id": "subfields/2208",
+          "name": "Electrical and Electronic Engineering"
+        },
+        "field": {
+          "id": "fields/22",
+          "name": "Engineering"
+        },
+        "topic": {
+          "id": "T11690",
+          "name": "Advanced battery technologies research"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Caiyun Chang",
+          "Titi Li",
+          "Jie Li",
+          "Cuiping Han"
+        ],
+        "venue": "Advanced Materials",
+        "indexedDate": "2026-08-21",
+        "referencedWorksCount": 32,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.6064,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.605,
+          "total": 0.7615,
+          "explainDetail": {
+            "v": 0.25,
+            "s": 0.5,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.0408
+          },
+          "everydayDomains": [
+            "energy",
+            "transport",
+            "work",
+            "ageing"
+          ],
+          "subfieldKey": "subfields/2208",
+          "evidence": [
+            "total 0.7615 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.61 = P 0.61 − 0.45×t 0.00 − 0.15×j 0.04",
+            "outcome verbs (v 0.25): enables",
+            "recognisable subjects (s 0.50): batteries (title, ×2)",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.04): 1/245 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 4 domain(s) — energy, transport, work, ageing",
+            "everyday terms (6): energy, battery, batteries, cycling, work, lifespan",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-21)",
+            "credibility 0.61 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Advanced Materials",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no tldr; falling back to the source abstract (§4.2)"
+      },
+      "summary": {
+        "souhrn": "Zinek je pro baterie lákavý: je levný, bezpečný a nehoří. Potíž je v tom, že se ve vodném elektrolytu, tedy v tekutině vedoucí náboj uvnitř článku, pokrývá ostrými jehličkami a koroduje. Vědci na něj proto nanesli tenkou vrstvu polymeru bohatého na fluor, která se za provozu sama přestavuje a doplňuje. Elektroda díky ní vydržela přes 4 000 hodin nabíjení a vybíjení, tedy zhruba pět měsíců bez přestávky. Zkušební článek zinek–jod si po 300 nabitích a vybitích udržel 97,8 % kapacity, tedy téměř celou.",
+        "podrobneVysvetleni": "Zinková elektroda v baterii s vodným roztokem má dvě slabiny. Zinek se při nabíjení neusazuje rovnoměrně a tvoří výrůstky, které mohou článek zkratovat. Zároveň reaguje s vodou, takže se část zinku nenávratně spotřebuje. Tým proto na povrch nanesl umělou mezivrstvu (artificial SEI), tedy tenkou ochrannou blánu mezi kovem a roztokem. Tvoří ji dvě propletené sítě: pružný polymer a menší molekuly s řetězci nasycenými fluorem, spojené přes hliník. Vrstva odpuzuje vodu a zinek naopak přitahuje. Podíl náboje, který v ní přenášejí samotné zinkové ionty, je 0,78 — tedy zhruba čtyři pětiny, zbytek připadá na ostatní částice. Právě to pomáhá rozvést přísun zinku rovnoměrně po celé ploše. Zajímavé je, co se s vrstvou děje během provozu. Nespotřebované molekuly se navážou na zinkové ionty a vytvoří novou pružnou síť. Jiné se rozloží a zanechají po sobě pevnou vrstvičku fluoridu zinečnatého. Vrstva se tak průběžně sama opravuje. Výsledky testů: elektroda vydržela přes 4 000 hodin i při vysokém zatížení. Účinnost 99,9 % znamená, že se z tisíce zinkových iontů při každém cyklu ztratil zhruba jeden. Měkký článek zinek–jod o kapacitě kolem 900 miliampérhodin, což je zásoba energie na úrovni malé spotřební baterie, uložil 196 watthodin na každý kilogram své hmotnosti. Po 300 cyklech mu zbývalo 97,8 % původní kapacity, tedy skoro všechno.",
+        "procJeToDulezite": "Zinkové baterie s vodou místo hořlavého rozpouštědla by mohly levně a bezpečně uchovávat elektřinu ze slunce a větru; jejich hlavní překážkou je právě rychlé opotřebení zinkové elektrody.",
+        "poznamkaKOmezenim": "Jde o laboratorní výsledek na jediném zkušebním článku a 300 cyklů je proti životnosti běžných komerčních baterií krátký test, takže o sériové výrobě zatím nelze mluvit."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 439,
+              "end": 442
+            },
+            "matchedText": "300",
+            "messageCs": "Číslo „300“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „300 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[439,442]: 300"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 470,
+              "end": 476
+            },
+            "matchedText": "97,8 %",
+            "messageCs": "Číslo „97,8 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „97,8 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[470,476]: 97,8 %"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1224,
+              "end": 1227
+            },
+            "matchedText": "196",
+            "messageCs": "Číslo „196“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „196 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1224,1227]: 196"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1274,
+              "end": 1277
+            },
+            "matchedText": "300",
+            "messageCs": "Číslo „300“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „300 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1274,1277]: 300"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1297,
+              "end": 1303
+            },
+            "matchedText": "97,8 %",
+            "messageCs": "Číslo „97,8 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „97,8 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1297,1303]: 97,8 %"
+          }
+        ],
+        "soft": [
+          {
+            "block": "procJeToDulezite",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 187
+            },
+            "matchedText": "Zinkové baterie s vodou místo hořlavého rozpouštědla by mohly levně a bezpečně uchovávat elektřinu ze slunce a větru; jejich hlavní překážkou je právě rychlé opotřebení zinkové elektrody.",
+            "messageCs": "Tato věta má 27 slov a je moc dlouhá: „Zinkové baterie s vodou místo hořlavého rozpouštědla by mohly levně a bezpečně …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ procJeToDulezite[0,187]: Zinkové baterie s vodou místo hořlavého rozpouštědla by mohly levně a bezpečně uchovávat elektřinu ze slunce a větru; jejich hlavní překážkou je právě rychlé opotřebení zinkové elektrody."
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203824501",
+        "title": "Reconciling Manufacturer Claims with Measured Degradation in Commercial Lithium-Ion Cells: A Provenance-Aware Knowledge Graph with Coverage-Gated Abstention",
+        "abstract": "Manufacturer datasheets state battery cycle life under conditions that rarely match how cells are used, while public cycling datasets measure degradation under conditions datasheets do not cover. We present a knowledge-graph (KG) system that represents claims, measurements, and independent tests of commercial lithium-ion cells with full provenance, detects claim-versus-measured and claim-versus-claim discrepancies conditioned on the comparability of test conditions, and supports cycle-life prediction with coverage-gated abstention. On the 124-cell Severson dataset under leave-one-policy-group-out cross-validation, graph-derived neighbor features do not significantly improve point prediction over a strong early-cycle baseline (RMSE 135 vs. 141 cycles), but graph coverage provides a statistically significant abstention signal (Spearman ρ=−0.25 with prediction error, p=0.006) that reduces retained RMSE by roughly 40% at 60% retention, where random abstention does not. Deployed zero-shot on a second cycling study of the same commercial cell, the gate abstained on all 77 cells; the counterfactual confirms every refusal (approximately 83% error had it answered), an error an ungated baseline commits silently. On a third study with commensurable features, the gate’s first partial acceptance (17 of 45 cells) is itself diagnostic: coverage acts partly as a lifetime proxy out of distribution, and five labeled cells halve retained error while leaving that proxy in place—adaptation repairs the predictor, not the selection criterion. A 70B open-weight LLM extracts datasheet claims at F1=0.70 with non-deterministic output even at temperature 0; a deterministic validator with three-run consensus raises this to F1=0.78 with zero unsourced values; on a held-out datasheet, precision and the zero-unsourced-value property transfer while recall falls to 0.34, localizing the extractor’s boundary at table-structured content; row-level table grounding, implemented in response, raises held-out recall to 0.63 with zero hallucinations at a measured precision cost. Reconciling claims across document variants shows that roughly one in three cross-document specification comparisons (14 of 43, three commercial cells) yields a conflict or condition mismatch, twelve involving third-party documents and two internal to a single manufacturer’s own documents. A hand-labeled, condition-annotated gold standard of 103 claims (62 development, 41 held-out; inter-annotator κ=0.74 on property naming) and a staged, human-gated literature-monitoring pipeline are released with the code.",
+        "date": "2026-08-20",
+        "url": "https://doi.org/10.3390/batteries12080314",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.3390/batteries12080314",
+        "openAlexId": "W7203824501",
+        "subfield": {
+          "id": "subfields/2203",
+          "name": "Automotive Engineering"
+        },
+        "field": {
+          "id": "fields/22",
+          "name": "Engineering"
+        },
+        "topic": {
+          "id": "T10663",
+          "name": "Advanced Battery Technologies Research"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Alexandru Lecu",
+          "Lezan Hawizy",
+          "Adrian Groza"
+        ],
+        "venue": "Batteries",
+        "indexedDate": "2026-08-21",
+        "referencedWorksCount": 14,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.605,
+          "everydayRelevance": 0.9333,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.7619,
+          "explainDetail": {
+            "v": 1,
+            "s": 0,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.5666
+          },
+          "everydayDomains": [
+            "energy",
+            "money",
+            "transport"
+          ],
+          "subfieldKey": "subfields/2203",
+          "evidence": [
+            "total 0.7619 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.61 = P 0.69 − 0.45×t 0.00 − 0.15×j 0.57",
+            "outcome verbs (v 1.00): reduces, improves, raises, detects",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 1): percentage, p-value",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.57): 20/353 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.93: 3 domain(s) — energy, money, transport",
+            "everyday terms (4): battery, cost, costs, cycling",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-21)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Batteries",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.3390/batteries12080314)"
+      },
+      "summary": {
+        "souhrn": "Údaje o životnosti baterií v katalogových listech výrobců a výsledky laboratorních testů se často míjejí — každý měří za jiných podmínek, takže se čísla nedají poctivě srovnat. Autoři proto postavili databázi propojených údajů, která si u každého čísla pamatuje, odkud pochází a za jakých podmínek vzniklo, a která umí říct „na tohle nemám dost srovnatelných dat, raději neodpovím\". Přesnost samotné předpovědi životnosti se tím nezlepšila, ale schopnost včas mlčet ano: když systém odpovídal jen tam, kde měl oporu v datech, klesla chyba u zodpovězených případů zhruba o 40 %. Na jiné sadě článků odmítl odpovědět úplně — a dodatečná kontrola potvrdila, že kdyby odpověděl, spletl by se hrubě. Při porovnávání údajů z různých dokumentů o stejných článcích skončilo zhruba každé třetí srovnání rozporem nebo nesrovnatelnými podmínkami, a to i mezi dokumenty jednoho výrobce.",
+        "podrobneVysvetleni": "Vědci propojili tři druhy informací do jedné provázané sítě údajů (knowledge graph): tvrzení výrobců z katalogových listů, výsledky veřejných laboratorních testů a měření nezávislých testerů. U každého údaje si systém pamatuje, odkud pochází a za jakých podmínek vznikl, takže pozná, že se dvě čísla vlastně srovnat nedají. Na veřejné sadě 124 komerčních článků — tedy něco přes stovku kusů projetých v laboratoři — zkoušeli předpovídat, kolik nabíjecích cyklů článek vydrží. Předpověď samotná se nezlepšila: průměrná odchylka 135 cyklů oproti 141 u běžného postupu je rozdíl, který se vejde do náhody. Užitečné bylo něco jiného: systém pozná, kdy má o článku málo srovnatelných dat, a raději neodpoví. Když odpovídal jen na 60 % případů, tedy zhruba na tři z pěti, klesla chyba u zodpovězených asi o 40 % — tedy skoro na polovinu; náhodné mlčení nic takového nesvedlo. U druhé sady 77 článků odmítl odpovědět úplně a měl pravdu: dodatečný přepočet ukázal, že by se spletl asi o 83 %, tedy hrubě. U třetí sady přijal 17 článků ze 45, tedy zhruba každý třetí. Údaje z katalogových listů vytahoval program pracující s textem podobně jako ChatGPT (velký jazykový model); jeho úspěšnost byla 0,70 na stupnici od 0 do 1, kde 1 znamená bezchybné vytěžení, a kontrolní krok se třemi průchody ji zvedl na 0,78, přičemž nezůstal jediný údaj bez uvedeného zdroje. Při porovnávání dokumentů o třech komerčních článcích skončilo 14 ze 43 srovnání sporem nebo nesrovnatelnými podmínkami — zhruba jedno ze tří.",
+        "procJeToDulezite": "Životnost baterie v elektromobilu, notebooku či solárním úložišti se dnes běžně odhaduje z čísel, která platila za úplně jiných podmínek — a systém, který umí přiznat „na tohle nemám data\", je pro takové odhady spolehlivější než ten, který vždy sebejistě odpoví.",
+        "poznamkaKOmezenim": "Jde o práci na několika veřejných sadách dat v řádu desítek až stovek článků, nikoli o ověření v reálném provozu, a hlavní zlepšení se týká jen toho, kdy systém mlčí — ne přesnosti samotné předpovědi."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 572,
+              "end": 576
+            },
+            "matchedText": "40 %",
+            "messageCs": "Číslo „40 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „40 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[572,576]: 40 %"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 527,
+              "end": 530
+            },
+            "matchedText": "135",
+            "messageCs": "Číslo „135“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „135 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[527,530]: 135"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 544,
+              "end": 547
+            },
+            "matchedText": "141",
+            "messageCs": "Číslo „141“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „141 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[544,547]: 141"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 1059,
+              "end": 1353
+            },
+            "matchedText": "Údaje z katalogových listů vytahoval program pracující s textem podobně jako ChatGPT (velký jazykový model); jeho úspěšnost byla 0,70 na stupnici od 0 do 1, kde 1 znamená bezchybné vytěžení, a kontrolní krok se třemi průchody ji zvedl na 0,78, přičemž nezůstal jediný údaj bez uvedeného zdroje.",
+            "messageCs": "Tato věta má 49 slov a je moc dlouhá: „Údaje z katalogových listů vytahoval program pracující s textem podobně jako Ch…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[1059,1353]: Údaje z katalogových listů vytahoval program pracující s textem podobně jako ChatGPT (velký jazykový model); jeho úspěšnost byla 0,70 na stupnici od 0 do 1, kde 1 znamená bezchybné vytěžení, a kontrolní krok se třemi průchody ji zvedl na 0,78, přičemž nezůstal jediný údaj bez uvedeného zdroje."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:velky-jazykovy-model",
+            "span": {
+              "start": 1145,
+              "end": 1165
+            },
+            "matchedText": "velký jazykový model",
+            "messageCs": "Termín „velký jazykový model“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:velky-jazykovy-model @ podrobneVysvetleni[1145,1165]: velký jazykový model"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=25.38",
+            "messageCs": "Věty jsou v průměru moc dlouhé (25,4 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=25.38"
+          }
+        ],
+        "soft": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 30 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=42.1",
+            "messageCs": "Text se celkově čte těžko (index 42 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=42.1"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203832254",
+        "title": "Plasmonic near-field enhances photoelectrics in a Fabry–Pérot cavity heterostructure",
+        "abstract": "Fabry–Pérot (F–P) cavities integrated with plasmonic nanostructures offer an effective platform for enhancing light–matter interactions, yet simultaneously achieving >90% broadband absorption across visible-NIR range and strong near-field enhancement remains challenging due to intrinsic spectral limitations of plasmonic resonators and complex cavity design. Herein, a hierarchical wheat spike-shaped plasmonic F–P–like cavity photoelectrode (Au-NP@TNW/Au-PL) is synthesized through the alkaline thermal treatment and visible-light-driven photoreduction process. This hybrid architecture exhibits an average absorption of 92% across 400-1080 nm and strong broadband near-field electromagnetic enhancement, as revealed by two-photon-induced photoluminescence measurements. This response arises from cooperative coupling between F–P cavity modes and nanoparticle plasmons, enabling broadband excitation and effective energy concentration near the plasmonic nanostructures. This coupling also shortens the plasmon dephasing time, indicating increased damping through interfacial charge transfer that converts plasmon energy into hot carriers. Consequently, Au-NP@TNW/Au-PL exhibits a photocurrent density nine times higher than TNW/Au-PL under solar irradiation, demonstrating strong potential for solar-driven hydrogen production. Plasmonic Fabry–Pérot cavities enhance light–matter interactions, but broadband absorption and near-field enhancement remain challenging. Here, the authors synthesized a plasmonic Fabry–Pérot–like photoelectrode with broadband absorption and strong field enhancement, resulting in a ninefold increase in photocurrent density.",
+        "date": "2026-08-20",
+        "url": "https://doi.org/10.1038/s43246-026-01314-7",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1038/s43246-026-01314-7",
+        "openAlexId": "W7203832254",
+        "subfield": {
+          "id": "subfields/2204",
+          "name": "Biomedical Engineering"
+        },
+        "field": {
+          "id": "fields/22",
+          "name": "Engineering"
+        },
+        "topic": {
+          "id": "T10295",
+          "name": "Plasmonic and Surface Plasmon Research"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Shin‐Chwen Yeh",
+          "Wen‐Yin Ko",
+          "H. Takeuchi",
+          "Keisuke Imaeda",
+          "Ching-Yuan Yang",
+          "Kosei Ueno",
+          "Kuan‐Jiuh Lin"
+        ],
+        "venue": "Communications Materials",
+        "indexedDate": "2026-08-21",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.5922,
+          "everydayRelevance": 0.9333,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.7568,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 0.25,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.4854
+          },
+          "everydayDomains": [
+            "energy",
+            "health",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2204",
+          "evidence": [
+            "total 0.7568 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.59 = P 0.66 − 0.45×t 0.00 − 0.15×j 0.49",
+            "outcome verbs (v 0.75): increased, increases, shortens",
+            "recognisable subjects (s 0.25): wheat",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.49): 10/206 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.93: 3 domain(s) — energy, health, mind",
+            "everyday terms (4): energy, solar, treatment, concentration",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-21)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Communications Materials",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1038/s43246-026-01314-7)"
+      },
+      "summary": {
+        "souhrn": "Zlatá podložka, na ní les titanátových nanodrátků a na nich drobné zlaté kuličky. Taková elektroda podle nové práce pohltí v průměru 92 % dopadajícího světla, a to od modré barvy až po blízké infračervené záření — tedy zhruba devatenáct fotonů z dvaceti. Vědci ji vyrobili ve dvou krocích: povrch nejprve ošetřili horkým alkalickým roztokem, pak nechali samo světlo vysrážet zlaté nanočástice. Výsledná elektroda dávala pod slunečním osvitem devětkrát vyšší elektrický proud než stejná vrstva bez zlatých částic. Autoři v tom vidí cestu k účinnějšímu získávání vodíku ze slunečního světla a vody.",
+        "podrobneVysvetleni": "Základem je takzvaná Fabry–Pérotova dutina (Fabry–Pérot cavity). Jsou to dvě odrazivé plochy nad sebou. Světlo mezi nimi poskakuje sem a tam, takže má víc příležitostí být pohlceno. Autoři takovou dutinu propojili se zlatými nanočásticemi. Na zlaté podložce nechali v horkém alkalickém roztoku vyrůst titanátové nanodrátky. Zlaté kuličky pak na drátky vysráželi působením viditelného světla. Výsledný útvar prý připomíná pšeničný klas.\n\nVe zlatě se elektrony rozkmitají v rytmu světelné vlny. Tomuto jevu se říká plasmon. Energie se přitom nahromadí v maličkém prostoru těsně u povrchu částice. Jak silné to nahromadění je, vědci zjistili měřením, při němž materiál pohltí dva fotony naráz a sám pak zasvítí (two-photon-induced photoluminescence).\n\nVyšlo jim průměrné pohlcení 92 % světla v rozsahu vlnových délek 400 až 1080 nanometrů. To pokrývá celé viditelné světlo i kus blízkého infračerveného záření. Kmity elektronů navíc utichaly rychleji než obvykle. Autoři to čtou tak, že energie z kmitů rychleji odchází jinam. Míří do elektronů s vysokou energií, které přeskočí přes rozhraní do nanodrátků. Právě takové elektrony dokážou konat užitečnou práci, třeba rozkládat vodu. Elektroda proto dávala devětkrát vyšší proudovou hustotu než stejná vrstva bez zlatých nanočástic. Devětkrát znamená, že z téhož slunce dostanete devětinásobek proudu.",
+        "procJeToDulezite": "Vodík vyráběný přímo ze slunečního světla a vody patří mezi zvažované způsoby, jak skladovat energii bez spalování paliv, a takové elektrody rozhodují o tom, kolik ze slunce se podaří využít. Zároveň je to hezká ukázka, že tvar materiálu v měřítku miliontin milimetru mění jeho vlastnosti stejně silně jako jeho složení.",
+        "poznamkaKOmezenim": "Jde o laboratorní vzorek a autoři měřili elektrický proud, nikoli skutečně vyrobený vodík; o dlouhodobé stabilitě, ceně ani o chování ve větším měřítku práce nevypovídá."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 777,
+              "end": 781
+            },
+            "matchedText": "92 %",
+            "messageCs": "Číslo „92 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „92 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[777,781]: 92 %"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 814,
+              "end": 817
+            },
+            "matchedText": "400",
+            "messageCs": "Číslo „400“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „400 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[814,817]: 400"
+          }
+        ],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 20,
+              "end": 32
+            },
+            "matchedText": " Fabry–Pérot",
+            "messageCs": "Text opisuje původní název článku („ Fabry–Pérot“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[20,32]:  Fabry–Pérot"
+          },
+          {
+            "block": "procJeToDulezite",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 191
+            },
+            "matchedText": "Vodík vyráběný přímo ze slunečního světla a vody patří mezi zvažované způsoby, jak skladovat energii bez spalování paliv, a takové elektrody rozhodují o tom, kolik ze slunce se podaří využít.",
+            "messageCs": "Tato věta má 30 slov a je moc dlouhá: „Vodík vyráběný přímo ze slunečního světla a vody patří mezi zvažované způsoby, …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ procJeToDulezite[0,191]: Vodík vyráběný přímo ze slunečního světla a vody patří mezi zvažované způsoby, jak skladovat energii bez spalování paliv, a takové elektrody rozhodují o tom, kolik ze slunce se podaří využít."
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-08-22T04:43:27.862Z",
+  "generatedOn": "2026-08-22",
+  "schemaVersion": 1
+}
