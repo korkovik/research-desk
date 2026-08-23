@@ -1,0 +1,804 @@
+{
+  "date": "2026-08-23",
+  "categoryKey": "biology-food-agriculture",
+  "categoryLabel": "Biologie, jídlo a zemědělství",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7203894445",
+        "title": "Arbuscular Mycorrhizal Fungi as Nature-Based Solutions to Improve Drought Adaptation in Maize",
+        "abstract": "In the face of climate change, drought stress represents a critical challenge to the sustainability of maize (Zea mays L.) cultivation. This study explored the potential of Arbuscular Mycorrhizal Fungi (AMF) to enhance maize tolerance to drought. The experiment was conducted in a glass greenhouse of the Soil Fertilizer and Water Resources Central Research Institute, Ankara, employing a factorial design with five AMF treatments under three water stress levels (70%, 50%, and 30% of field capacity). Maize plants inoculated with AMF demonstrated notable improvements in growth parameters under drought conditions. At 70% field capacity, the AMF treatment with Rhizophagus intraradices (M3) significantly increased plant height (PH) by up to 104.2 cm and fresh weight (FW) by 35.7 g, compared to control values of 95.7 cm and 27.5 g, respectively. Similarly, at 50% field capacity, AMF treatments sustained higher stem diameter (SD) measurements, with a notable instance being Rhizophagus irregularis (M2) at 5.44 cm, against a control value of 4.74 cm. The resilience of AMF-treated plants was further underlined by the improved root dry weight (RDW) in the face of severe drought stress (30% field capacity), where Glomus iranicum (M5) treatments resulted in RDW of 1.20 g compared to 0.73 g in non-AMF-treated plants. These findings substantiate the hypothesis that mycorrhizal symbiosis can significantly mitigate the effects of drought stress on maize, suggesting a viable strategy to enhance crop resilience and productivity in water-limited environments.",
+        "date": "2026-08-21",
+        "url": "https://doi.org/10.29133/yyutbd.1791922",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.29133/yyutbd.1791922",
+        "openAlexId": "W7203894445",
+        "subfield": {
+          "id": "subfields/1110",
+          "name": "Plant Science"
+        },
+        "field": {
+          "id": "fields/11",
+          "name": "Agricultural and Biological Sciences"
+        },
+        "topic": {
+          "id": "T10451",
+          "name": "Mycorrhizal Fungi and Plant Interactions"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Rohat Gültekin",
+          "Tuğba Yeter",
+          "Ceren Görgişen",
+          "Çağlar Sagun",
+          "Kadri Avağ"
+        ],
+        "venue": "Yüzüncü Yıl Üniversitesi Tarım Bilimleri Dergisi",
+        "indexedDate": "2026-08-22",
+        "referencedWorksCount": 30,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9679,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.9164,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.2137
+          },
+          "everydayDomains": [
+            "health",
+            "weather",
+            "work",
+            "mind"
+          ],
+          "subfieldKey": "subfields/1110",
+          "evidence": [
+            "total 0.9164 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.97 = P 1.00 − 0.45×t 0.00 − 0.15×j 0.21",
+            "outcome verbs (v 1.00): increased, improved, improves (title, ×2), improvement, resulted in",
+            "recognisable subjects (s 1.00): plants, crops, maize (title, ×2), soil",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.21): 5/234 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 4 domain(s) — health, weather, work, mind",
+            "everyday terms (5): treatment, climate, drought, productivity, stress",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-22)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Yüzüncü Yıl Üniversitesi Tarım Bilimleri Dergisi",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.29133/yyutbd.1791922)"
+      },
+      "summary": {
+        "souhrn": "Kukuřici v suchu pomáhá spolupráce s houbami, které vrůstají do jejích kořenů. Vědci ve skleníku výzkumného ústavu v Ankaře pěstovali kukuřici při třech úrovních zálivky a část rostlin naočkovali různými druhy arbuskulárních mykorhizních hub (anglicky arbuscular mycorrhizal fungi) — tedy hub, které žijí přímo uvnitř kořenů a výměnou za cukry z rostliny jí dodávají vodu a živiny. Naočkované rostliny byly při dobré zálivce vyšší a těžší (104,2 proti 95,7 centimetru výšky) a při nejsilnějším suchu měly znatelně mohutnější kořeny (1,20 gramu suché hmoty proti 0,73 gramu u rostlin bez hub). Jde ale o pokus v nádobách ve skleníku, ne o pole — než z toho vznikne rada pro pěstitele, bude potřeba ověření v praxi.",
+        "podrobneVysvetleni": "Pokus proběhl ve skleníku ústavu pro půdu, hnojiva a vodní zdroje v Ankaře. Kukuřici pěstovali v nádobách, část rostlin nechali bez zásahu a části přidali ke kořenům jeden z několika druhů mykorhizních hub. Zálivku nastavili na tři úrovně podle toho, kolik vody půda drží z množství, které udržet dokáže: sedm desetin (mírný nedostatek), polovinu a jen tři desetiny, což už je silné sucho. Při nejlepší zálivce rostliny s houbou Rhizophagus intraradices dorostly do 104,2 centimetru proti 95,7 centimetru u neočkovaných, tedy zhruba o osm a půl centimetru výš, a jejich čerstvá hmotnost byla 35,7 gramu proti 27,5 gramu — o víc než osm gramů na rostlinu. Při poloviční zálivce měly rostliny s houbou Rhizophagus irregularis silnější stonek: 5,44 proti 4,74 podle měření autorů. A při nejtvrdším suchu se rozdíl ukázal hlavně pod zemí — kořeny rostlin s houbou Glomus iranicum vážily po vysušení 1,20 gramu, zatímco u rostlin bez hub 0,73 gramu, tedy skoro o půl gramu méně. To dává smysl: houba prodlužuje dosah kořenů do půdy a rostlina se dostane k vodě, na kterou by sama nedosáhla. Autoři z toho vyvozují, že očkování mykorhizními houbami je jedna z cest, jak kukuřici pomoci přečkat období bez deště.",
+        "procJeToDulezite": "Kukuřice patří k nejpěstovanějším plodinám u nás i ve světě a sucho jí škodí čím dál častěji; pokud pomůže obyčejná půdní houba, je to levnější a šetrnější než další zavlažování.",
+        "poznamkaKOmezenim": "Jde o jediný skleníkový pokus s rostlinami v nádobách, měřený jen na výšce, hmotnosti a tloušťce stonku — nikoli na výnosu zrna na poli, takže výsledek je předběžný."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 390,
+              "end": 654
+            },
+            "matchedText": "Při nejlepší zálivce rostliny s houbou Rhizophagus intraradices dorostly do 104,2 centimetru proti 95,7 centimetru u neočkovaných, tedy zhruba o osm a půl centimetru výš, a jejich čerstvá hmotnost byla 35,7 gramu proti 27,5 gramu — o víc než osm gramů na rostlinu.",
+            "messageCs": "Tato věta má 46 slov a je moc dlouhá: „Při nejlepší zálivce rostliny s houbou Rhizophagus intraradices dorostly do 104…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[390,654]: Při nejlepší zálivce rostliny s houbou Rhizophagus intraradices dorostly do 104,2 centimetru proti 95,7 centimetru u neočkovaných, tedy zhruba o osm a půl centimetru výš, a jejich čerstvá hmotnost byla 35,7 gramu proti 27,5 gramu — o víc než osm gramů na rostlinu."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=26.85",
+            "messageCs": "Věty jsou v průměru moc dlouhé (26,8 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=26.85"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=4",
+            "messageCs": "Počet vět delších než 30 slov: 4. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=4"
+          }
+        ],
+        "soft": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=41.5",
+            "messageCs": "Text se celkově čte těžko (index 42 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=41.5"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203890031",
+        "title": "Do precision land management technologies improve farm efficiency? Evidence from laser land levelling in India",
+        "abstract": "Context: The Indian agriculture system is increasingly constrained by resources and climate vulnerability, with rapid groundwater depletion. This is creating an urgency for adoption of resource-efficient agricultural technologies to address sustainability challenges in intensively irrigated systems. Laser land levelling (LLL) has emerged as a prominent resource and precision land management technology. Objective: The study tries to examine the key determinants of LLL adoption and its impact on paddy productivity in Punjab. Secondly, the study also evaluates the technical efficiency of LLL in paddy production. Finally, we examine heterogeneity in technical efficiency outcomes separately for marginal landholders to assess whether the efficiency gains from LLL adoption vary by farm size. Methods: Primary survey data is collected from 885 farmers from 12 districts in Punjab, India. The sample comprises of 527 (60%) adopters and 358 (40%) non-adopters of LLL. We use a probit model to identify the key drivers of adoption and derive the inverse mills ratio for correcting the sample selection bias. The, we use propensity score matching to estimate causal impact of LLL adoption on paddy yield. Finally, we apply the stochastic production frontier framework with sample-selection correction to evaluate the technical efficiency levels. Results and Conclusions: The findings highlight that LLL adoption increases paddy yield by 2.64 quintals/acre. Efficiency estimates show that adopters achieve approximately 3% higher technical efficiency compared to non-adopters. Moreover, adoption decisions are influenced by structural and asset-related factors, including education, landholding size, and ownership of tractors and pumpsets. Notably, efficiency gains are larger for the marginal farmers, suggesting that smaller landholders may have greater scope of improvements from LLL adoption. Significance: This study contributes two fold: It provides a new empirical evidence on the determinants and impact of LLL adoption in paddy cultivation. Secondly, we develop an integrated econometric framework to address selection bias and evaluate efficiency outcomes of LLL adoption. The study highlights the multidimensional benefits of LLL in enhancing productivity and efficiency, supporting its promotion as a climate-smart technology in improving resource-use efficiency and reducing groundwater stress in rice-based farming systems in India.",
+        "date": "2026-08-21",
+        "url": "https://doi.org/10.1016/j.agsy.2026.104927",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1016/j.agsy.2026.104927",
+        "openAlexId": "W7203890031",
+        "subfield": {
+          "id": "subfields/1111",
+          "name": "Soil Science"
+        },
+        "field": {
+          "id": "fields/11",
+          "name": "Agricultural and Biological Sciences"
+        },
+        "topic": {
+          "id": "T11789",
+          "name": "Land Rights and Reforms"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://www.sciencedirect.com/science/article/pii/S0308521X26002957/pdf",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Shreya Kapoor",
+          "Anjani Kumar"
+        ],
+        "venue": "Agricultural Systems",
+        "indexedDate": "2026-08-22",
+        "referencedWorksCount": 48,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8574,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.8722,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.5,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.1173
+          },
+          "everydayDomains": [
+            "weather",
+            "transport",
+            "water",
+            "work",
+            "mind"
+          ],
+          "subfieldKey": "subfields/1111",
+          "evidence": [
+            "total 0.8722 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.86 = P 0.88 − 0.45×t 0.00 − 0.15×j 0.12",
+            "outcome verbs (v 1.00): increases, improves (title, ×2), improvement",
+            "recognisable subjects (s 0.50): drivers, farmers",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.12): 4/341 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 5 domain(s) — weather, transport, water, work, mind",
+            "everyday terms (5): climate, driver, groundwater, productivity, stress",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-22)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Agricultural Systems",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1016/j.agsy.2026.104927)"
+      },
+      "summary": {
+        "souhrn": "Na nerovném poli steče voda do prohlubní a vyvýšená místa zůstanou suchá. Proto se v Indii rozšířilo laserové urovnávání pozemků (laser land levelling): stroj naváděný laserovým paprskem srovná políčko do roviny. Vědci v indickém Paňdžábu porovnali pěstitele rýže, kteří tuhle úpravu použili, s těmi, kdo ji nepoužili. Urovnaná pole dala o 2,64 metrického centu rýže na akr víc, tedy asi o 264 kilogramů z plochy kolem čtyř tisíc metrů čtverečních. Největší zlepšení přitom měli hospodáři s nejmenšími pozemky.",
+        "podrobneVysvetleni": "Tazatelé oslovili 885 pěstitelů rýže ve dvanácti okresech indického Paňdžábu, tedy necelou tisícovku hospodářů. Laserové urovnávání používalo 527 z nich, tedy zhruba šest z deseti. Zbylých 358, tedy čtyři z deseti, hospodařilo bez něj. Obě skupiny se ale nedají porovnat jen tak. Techniku si totiž pořizují spíš vzdělanější lidé s větší výměrou a s vlastním traktorem nebo čerpadlem. Vědci proto použili statistické postupy, které ke každému uživateli hledají co nejpodobnějšího neuživatele (propensity score matching). Zároveň počítali s tím, že se lidé rozhodovali sami, a tenhle vliv z výsledku odečetli. Po přepočtu vyšel rozdíl ve výnosu 2,64 metrického centu na akr. Metrický cent je sto kilogramů a akr necelá polovina hektaru, přesněji asi 0,4 hektaru, tedy plocha kolem čtyř tisíc metrů čtverečních. Rozdíl tak odpovídá zhruba 264 kilogramům rýže navíc z takového pozemku. Druhý ukazatel se jmenuje technická efektivita a říká, kolik hospodář vytěží z toho, co má k dispozici. Uživatelé urovnávání na tom byli asi o 3 procenta lépe, tedy o tři body ze sta možných. U hospodářů s nejmenší výměrou byl zisk větší než u ostatních. Autoři to vysvětlují tím, že rovné pole potřebuje méně vody a zalije se rovnoměrněji. V Paňdžábu, kde hladina podzemní vody rychle klesá, to má váhu i mimo účetnictví jednotlivých farem.",
+        "procJeToDulezite": "Pěstování rýže v Paňdžábu spotřebuje velké množství čerpané podzemní vody a její zásoby ubývají, takže i drobná úprava pole má dopad na to, jak dlouho tam bude na co hospodařit. Ukazuje se také, že nejvíc si polepší ti nejmenší, tedy skupina, která má na nové technologie obvykle nejhůř.",
+        "poznamkaKOmezenim": "Jde o jednorázové dotazování v jediném indickém státě a rozdíly mezi skupinami srovnávaly statistické metody, ne náhodné rozdělení farem, takže příčinnou souvislost je třeba brát jako pravděpodobnou, ne prokázanou."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 390,
+              "end": 393
+            },
+            "matchedText": "264",
+            "messageCs": "Číslo „264“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „264 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[390,393]: 264"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 836,
+              "end": 839
+            },
+            "matchedText": "264",
+            "messageCs": "Číslo „264“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „264 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[836,839]: 264"
+          }
+        ],
+        "soft": [
+          {
+            "block": "procJeToDulezite",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 177
+            },
+            "matchedText": "Pěstování rýže v Paňdžábu spotřebuje velké množství čerpané podzemní vody a její zásoby ubývají, takže i drobná úprava pole má dopad na to, jak dlouho tam bude na co hospodařit.",
+            "messageCs": "Tato věta má 30 slov a je moc dlouhá: „Pěstování rýže v Paňdžábu spotřebuje velké množství čerpané podzemní vody a jej…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ procJeToDulezite[0,177]: Pěstování rýže v Paňdžábu spotřebuje velké množství čerpané podzemní vody a její zásoby ubývají, takže i drobná úprava pole má dopad na to, jak dlouho tam bude na co hospodařit."
+          },
+          {
+            "block": "procJeToDulezite",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 259,
+              "end": 271
+            },
+            "matchedText": " technologie",
+            "messageCs": "Text opisuje původní název článku („ technologie“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ procJeToDulezite[259,271]:  technologie"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203880429",
+        "title": "Enhancing Root Growth and Water Use Efficiency of Winter Wheat by Optimizing the Irrigation Amount of Micro-Sprinkler Irrigation",
+        "abstract": "Conventional irrigation practices, characterized by excessive water application, have diminished water use efficiency (WUE) and intensified agricultural water consumption. Optimizing irrigation schedules and moderately reducing water input are therefore essential for enhancing WUE while safeguarding stable yields. Micro-sprinkler irrigation, which integrates the benefits of both drip and sprinkler systems, represents a promising technology with substantial water-saving potential. However, its effects on root development and crop yield remain inadequately investigated. Here, we established three micro-sprinkler irrigation regimes—MS20 (20 mm), MS30 (30 mm), and MS40 (40 mm)—alongside flood irrigation (FI) and rainfed (RF) controls, to systematically assess their impacts on soil water content, root growth traits, dry matter accumulation, yield, and WUE. Compared with FI, MS treatments decreased profile soil water content at jointing but increased it in specific layers during grain filling, albeit to varying extents. MS treatments enhanced total root length density (TRLD) and total root dry weight density (TRDD) relative to FI, with MS20 significantly increasing both parameters in the 20–100 cm soil layer. Moreover, MS20 increased pre-flowering dry matter translocation (PDMT) by 9.69% on average and post-flowering dry matter accumulation (PFDMA) by 15.04% during the 2022–2023 season. Yield and WUE under MS treatments exceeded those under FI by 3.46–6.53% and 4.42–21.21%, respectively. Among the MS treatments, MS20 achieved the highest average WUE. No significant yield or WUE differences were observed between MS20 and MS30, with MS30 producing the numerically maximum average yield. MS40 did not significantly affect yield in 2021–2022; however, it substantially reduced both yield and WUE relative to MS20 and MS30 in 2022–2023. A comprehensive TOPSIS analysis identified the combination of micro-sprinkler irrigation with total seasonal irrigation amounts of 80 mm or 120 mm as the optimal strategy for winter wheat production in the eastern Henan region of the North China Plain (NCP).",
+        "date": "2026-08-21",
+        "url": "https://doi.org/10.3390/plants15162540",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.3390/plants15162540",
+        "openAlexId": "W7203880429",
+        "subfield": {
+          "id": "subfields/1111",
+          "name": "Soil Science"
+        },
+        "field": {
+          "id": "fields/11",
+          "name": "Agricultural and Biological Sciences"
+        },
+        "topic": {
+          "id": "T11404",
+          "name": "Irrigation Practices and Water Management"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Mingda Yang",
+          "Hui Cao",
+          "Jiaju Dong",
+          "Suyu Zhang",
+          "Hongjie Liu",
+          "Jinping Chen",
+          "Xiaoyun Zheng",
+          "Shenjiao Yang",
+          "马守田"
+        ],
+        "venue": "Plants",
+        "indexedDate": "2026-08-22",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8289,
+          "everydayRelevance": 0.9333,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.8515,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.5574
+          },
+          "everydayDomains": [
+            "health",
+            "money",
+            "weather",
+            "water"
+          ],
+          "subfieldKey": "subfields/1111",
+          "evidence": [
+            "total 0.8515 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.83 = P 0.91 − 0.45×t 0.00 − 0.15×j 0.56",
+            "outcome verbs (v 0.75): reduced, increased, decreased",
+            "recognisable subjects (s 1.00): crops, wheat (title, ×2), soil",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.56): 17/305 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.93: 4 domain(s) — health, money, weather, water",
+            "everyday terms (4): treatment, savings, flood, irrigation",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-22)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Plants",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.3390/plants15162540)"
+      },
+      "summary": {
+        "souhrn": "Mikropostřik — jemné rozprašování vody těsně nad porostem, něco mezi kapkovou závlahou a klasickým postřikovačem — dal ozimé pšenici na východě čínské provincie Che-nan víc zrna i lepší hospodaření s vodou než tradiční zaplavování pole. Vědci porovnávali tři velikosti jedné zálivky, k tomu zaplavené pole a políčka ponechaná jen dešti, a sledovali vlhkost půdy, kořeny i sklizeň. Menší dávky dopadly nejlépe: při dávce 20 milimetrů, tedy 20 litrech vody na každý metr čtvereční, měla pšenice delší a hustší kořeny hlouběji v půdě. Největší dávka, tedy 40 litrů vody na metr čtvereční při jedné zálivce, ve druhém roce výnos i účinnost naopak snížila. Proti zaplavení stouply výnosy o 3,5 až 6,5 procenta (zhruba o dvacetinu) a účinnost využití vody o 4 až 21 procent.",
+        "podrobneVysvetleni": "Pokus běžel dvě pěstitelské sezóny a porovnával pět režimů: mikropostřik s jednou zálivkou 20 milimetrů (tedy 20 litrů vody na metr čtvereční pole), 30 milimetrů (30 litrů na metr čtvereční) a 40 milimetrů (40 litrů na metr čtvereční), dále běžné zaplavení pole a kontrolní plochy bez závlahy, jen na dešti. Autoři měřili vlhkost půdy v různých hloubkách, délku a hmotnost kořenů, tvorbu sušiny, výnos a takzvanou účinnost využití vody (water use efficiency) — tedy kolik zrna se urodí z jednoho litru vody. Mikropostřik nechal půdu v době sloupkování sušší než zaplavení, zato v některých vrstvách během nalévání zrna vlhčí. Kořeny byly u mikropostřiku celkově delší a těžší; u nejmenší dávky výrazně i v hloubkách od 20 do 100 centimetrů pod povrchem, tedy tam, kde se rostlina dostane k vodě v suchých obdobích. Nejmenší dávka také zvýšila přesun zásob z rostliny do zrna po odkvětu v průměru o 9,7 procenta a tvorbu sušiny po odkvětu o 15 procent (zhruba o sedminu). Mezi nejmenší a střední dávkou nebyl v úrodě ani v účinnosti podstatný rozdíl. Souhrnné vyhodnocení podle několika kritérií najednou doporučilo pro tuto oblast celkovou sezónní závlahu 80 milimetrů (80 litrů vody na metr čtvereční) nebo 120 milimetrů (120 litrů na metr čtvereční) — tedy méně vody než při zvyklém zaplavování.",
+        "procJeToDulezite": "Zemědělství spotřebuje velkou část dostupné vody a tenhle pokus ukazuje, že rozumnější způsob zavlažování může ušetřit vodu a přitom neubrat na úrodě — což se týká ceny chleba i toho, kolik vody zbude na ostatní.",
+        "poznamkaKOmezenim": "Jde o dvouletý polní pokus v jedné konkrétní oblasti Severočínské nížiny, takže doporučené dávky nelze bez ověření přenést na jiné půdy a podnebí, a rozdíly mezi lety ukazují, že výsledek závisí i na počasí dané sezóny."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 752,
+              "end": 753
+            },
+            "matchedText": "4",
+            "messageCs": "Číslo „4“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „4 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[752,753]: 4"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 757,
+              "end": 767
+            },
+            "matchedText": "21 procent",
+            "messageCs": "Číslo „21 procent“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „21 procent — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[757,767]: 21 procent"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 307
+            },
+            "matchedText": "Pokus běžel dvě pěstitelské sezóny a porovnával pět režimů: mikropostřik s jednou zálivkou 20 milimetrů (tedy 20 litrů vody na metr čtvereční pole), 30 milimetrů (30 litrů na metr čtvereční) a 40 milimetrů (40 litrů na metr čtvereční), dále běžné zaplavení pole a kontrolní plochy bez závlahy, jen na dešti.",
+            "messageCs": "Tato věta má 50 slov a je moc dlouhá: „Pokus běžel dvě pěstitelské sezóny a porovnával pět režimů: mikropostřik s jedn…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[0,307]: Pokus běžel dvě pěstitelské sezóny a porovnával pět režimů: mikropostřik s jednou zálivkou 20 milimetrů (tedy 20 litrů vody na metr čtvereční pole), 30 milimetrů (30 litrů na metr čtvereční) a 40 milimetrů (40 litrů na metr čtvereční), dále běžné zaplavení pole a kontrolní plochy bez závlahy, jen na dešti."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 898,
+              "end": 910
+            },
+            "matchedText": "9,7 procenta",
+            "messageCs": "Číslo „9,7 procenta“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „9,7 procenta — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[898,910]: 9,7 procenta"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 940,
+              "end": 950
+            },
+            "matchedText": "15 procent",
+            "messageCs": "Číslo „15 procent“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „15 procent — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[940,950]: 15 procent"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=28.15",
+            "messageCs": "Věty jsou v průměru moc dlouhé (28,2 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=28.15"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=6",
+            "messageCs": "Počet vět delších než 30 slov: 6. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=6"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=37.5",
+            "messageCs": "Text se celkově čte těžko (index 37 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=37.5"
+          }
+        ],
+        "soft": []
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203908458",
+        "title": "NanoZnO foliar application confers salinity tolerance in alfalfa: integrative physiological and transcriptomic analysis",
+        "abstract": "Salt stress severely limits alfalfa ( Medicago sativa L.) growth and productivity. Although zinc oxide nanoparticles (ZnO NPs) may improve plant stress tolerance, the physiological and transcriptional responses of alfalfa to ZnO NP treatment under salinity remain insufficiently understood. Here, we evaluated foliar-applied ZnO NPs using physiological and comparative transcriptomic analyses. Under salt stress, ZnO NP treatment increased plant height by 13.83%, total antioxidant capacity by 30.69%, and DPPH radical-scavenging activity by 21.54%, while reducing malondialdehyde accumulation by 30.11%. Transcriptome analysis identified 1,526 differentially expressed genes in the SZ vs. S comparison. These genes were enriched in pathways related to calcium signaling, phytohormone signaling, photosynthesis, and reactive oxygen species metabolism. Selected members of the WRKY, ERF, bHLH, and NAC transcription factor families were also upregulated following ZnO NP treatment under salinity. These findings indicate that foliar ZnO NP treatment was associated with improved salinity tolerance and coordinated physiological and transcriptional changes in alfalfa. However, because equivalent soluble-Zn and bulk ZnO controls were not included, the observed responses cannot be attributed exclusively to nanoparticle-specific effects.",
+        "date": "2026-08-21",
+        "url": "https://doi.org/10.1186/s12870-026-09767-1",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1186/s12870-026-09767-1",
+        "openAlexId": "W7203908458",
+        "subfield": {
+          "id": "subfields/1110",
+          "name": "Plant Science"
+        },
+        "field": {
+          "id": "fields/11",
+          "name": "Agricultural and Biological Sciences"
+        },
+        "topic": {
+          "id": "T10014",
+          "name": "Plant Stress Responses and Tolerance"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Xiaohong Li",
+          "Ansar Abbas",
+          "Huizhen Yang",
+          "Fei Xie",
+          "Furong Kang",
+          "Aneela Bashir",
+          "Qingke Shi",
+          "Yaoyao Li",
+          "Lijing Zhang"
+        ],
+        "venue": "BMC Plant Biology",
+        "indexedDate": "2026-08-22",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7288,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.8208,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.5,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.5747
+          },
+          "everydayDomains": [
+            "food",
+            "health",
+            "work",
+            "family",
+            "mind"
+          ],
+          "subfieldKey": "subfields/1110",
+          "evidence": [
+            "total 0.8208 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.73 = P 0.82 − 0.45×t 0.00 − 0.15×j 0.57",
+            "outcome verbs (v 1.00): increased, improved, improves, associated with",
+            "recognisable subjects (s 0.50): families, plants",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.57): 10/174 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 5 domain(s) — food, health, work, family, mind",
+            "everyday terms (5): salt, treatment, productivity, families, stress",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-22)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in BMC Plant Biology",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1186/s12870-026-09767-1)"
+      },
+      "summary": {
+        "souhrn": "Postřik listů drobnými částicemi oxidu zinečnatého (ZnO NPs) pomohl vojtěšce lépe snášet zasolenou půdu. Ošetřené rostliny byly o 13,83 % vyšší, tedy zhruba o sedminu. Jejich celková antioxidační kapacita — schopnost zneškodňovat škodlivé látky vznikající při stresu — stoupla o 30,69 %, přibližně o třetinu. Zároveň v nich bylo o 30,11 % méně malondialdehydu; podle množství této látky se pozná, jak jsou poškozené buněčné membrány, takže méně znamená zdravější rostliny. Autoři ale sami upozorňují, že chybělo srovnání s obyčejným zinkem, takže se přínos nedá připsat výhradně nanočásticím.",
+        "podrobneVysvetleni": "Vojtěška patří k nejrozšířenějším pícninám, ale sůl v půdě jí bere růst i výnos. Vědci proto část rostlin vystavili solnému stresu a některým z nich postříkali listy suspenzí drobných částic oxidu zinečnatého. Pak porovnávali dvě věci najednou: viditelné a měřitelné znaky rostlin a to, které geny se v nich zapínají a vypínají.\n\nOšetřené rostliny pod solí povyrostly o 13,83 % oproti neošetřeným, což je zhruba o sedminu. Celková antioxidační kapacita jim vzrostla o 30,69 % a takzvaná schopnost zneškodňovat volné radikály (DPPH) o 21,54 %, tedy asi o pětinu. Obsah malondialdehydu, který slouží jako ukazatel poškození buněčných obalů, klesl o 30,11 %.\n\nRozbor genové aktivity ukázal 1 526 genů, tedy zhruba půldruhého tisíce, které se u ošetřených rostlin chovaly jinak než u neošetřených. Nešlo o náhodnou směs. Soustředily se do několika okruhů: signalizace pomocí vápníku, rostlinné hormony, fotosyntéza a nakládání s reaktivními formami kyslíku. Aktivnější byly také některé regulační geny z rodin WRKY, ERF, bHLH a NAC, které fungují jako přepínače celých skupin dalších genů.\n\nSpolečně to naznačuje, že postřik nespustil jeden konkrétní trik, ale posunul rostlinu do lépe bráněného stavu. Zůstává otázka, kolik z toho zvládne prostý zinek v běžné podobě.",
+        "procJeToDulezite": "Zasolené půdy ubírají zemědělcům výnosy na mnoha místech světa a vojtěška je běžné krmivo pro dobytek. Levný postřik na listy by mohl být jedním z nástrojů, jak na takových pozemcích udržet úrodu — pokud se přínos potvrdí v poli.",
+        "poznamkaKOmezenim": "Pokus neobsahoval srovnávací skupiny ošetřené rozpustným zinkem ani běžným, nerozdrobeným oxidem zinečnatým, takže není jasné, kolik z účinku má na svědomí zinek jako takový a kolik velmi malé částice; výsledek je tedy předběžný."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 279,
+              "end": 286
+            },
+            "matchedText": "30,69 %",
+            "messageCs": "Číslo „30,69 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „30,69 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[279,286]: 30,69 %"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 331,
+              "end": 338
+            },
+            "matchedText": "30,11 %",
+            "messageCs": "Číslo „30,11 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „30,11 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[331,338]: 30,11 %"
+          }
+        ],
+        "soft": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=16.58",
+            "messageCs": "Věty jsou v průměru moc dlouhé (16,6 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=16.58"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203911454",
+        "title": "Dose-dependent effects of hydrolysed yeast on gut microbial diversity, growth performance, antioxidant activity, and meat quality in densely stocked broilers",
+        "abstract": "The search for effective alternatives to antibiotic growth promoters (AGP) has intensified due to increasing concerns regarding antimicrobial resistance and antibiotic residues in poultry products. Hydrolysed yeast (HY) has emerged as a promising functional feed additive with potential benefits for growth performance, immune function, and product quality in broilers. This study evaluated the effects of graded dietary HY supplementation on growth performance, carcass characteristics, meat quality, oxidative stability, and gut microbial diversity in broilers reared under high stocking density. A total of 900, one-week-old male Ross 308 broilers were randomly allocated to 36 pens (25 birds/1.2 m²) and assigned to six dietary treatments with six replicates each, in a completely randomised design. The treatments were a standard diet with 0.05% AGP (PCON), diet without an AGP (NCON), or the NCON diet supplemented with 0.025 (HY25), 0.05 (HY50), 0.075 (HY75), or 0.10% HY (HY100). Dietary HY supplementation influenced growth performance primarily during the starter and grower phases. Feed intake, body weight gain, and feed conversion ratio were affected ( P < 0.05), with birds receiving the HY75 diet exhibiting lower body weight gain and poorer feed efficiency than the other treatments, whereas overall growth performance was not affected ( P > 0.05). Hydrolysed yeast supplementation increased haematocrit ( P = 0.048) and reduced plasma malondialdehyde concentrations ( P < 0.001), while serum phosphorus concentration was lower in HY-supplemented birds than in the negative control ( P = 0.046). Relative breast yield was reduced only in birds fed the HY75 diet ( P < 0.001), whereas carcass weight, visceral morphometry, and meat quality traits were largely unaffected ( P > 0.05). Meat pH and colour exhibited significant quadratic responses to increasing dietary hydrolysed yeast inclusion ( P < 0.05), although treatment effects were limited. Alpha (α) diversity indices did not differ significantly ( P > 0.05) among dietary treatments. Hydrolysed yeast supplementation had inclusion-dependent effects in densely stocked Ross 308 broilers. The HY75 diet reduced early growth performance and breast yield, while overall performance and most carcass, visceral, and meat quality traits were unaffected. Hydrolysed yeast reduced plasma malondialdehyde concentrations, suggesting improved oxidative status under high stocking density conditions. Not applicable.",
+        "date": "2026-08-21",
+        "url": "https://doi.org/10.1186/s44364-026-00039-0",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1186/s44364-026-00039-0",
+        "openAlexId": "W7203911454",
+        "subfield": {
+          "id": "subfields/1103",
+          "name": "Animal Science and Zoology"
+        },
+        "field": {
+          "id": "fields/11",
+          "name": "Agricultural and Biological Sciences"
+        },
+        "topic": {
+          "id": "T10152",
+          "name": "Animal Nutrition and Physiology"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Lihle Sindaku",
+          "Victor Mlambo",
+          "Victory Osirimade Sumanu",
+          "Omolola E. Fayemi",
+          "Ghaneshree Moonsamy",
+          "Rajesh Jha",
+          "Caven Mguvane Mnisi"
+        ],
+        "venue": "Poultry science and management.",
+        "indexedDate": "2026-08-22",
+        "referencedWorksCount": 33,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.6292,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.7903,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.25,
+            "q": 1,
+            "c": 0.5,
+            "t": 0,
+            "j": 0.5556
+          },
+          "everydayDomains": [
+            "food",
+            "health",
+            "body",
+            "mind"
+          ],
+          "subfieldKey": "subfields/1103",
+          "evidence": [
+            "total 0.7903 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.63 = P 0.71 − 0.45×t 0.00 − 0.15×j 0.56",
+            "outcome verbs (v 1.00): reduced, increased, improved, lowers",
+            "recognisable subjects (s 0.25): birds",
+            "quantified effect (q 1): percentage, p-value",
+            "title concreteness (c 0.50): −0.3 no outcome verb or recognisable subject in the title; −0.2 title is 20 words",
+            "jargon density (j 0.56): 19/342 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 4 domain(s) — food, health, body, mind",
+            "everyday terms (7): diet, dietary, meat, antibiotic, treatment, body weight, concentration",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-22)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Poultry science and management.",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no tldr; falling back to the source abstract (§4.2)"
+      },
+      "summary": {
+        "souhrn": "Hydrolyzované kvasnice v krmivu brojlerů nenahradily antibiotikum, ale ani nic nepokazily. Vědci rozdělili 900 týdenních kohoutků plemene Ross 308 do šesti skupin a chovali je v hustém osazení. Celkový přírůstek, jatečné znaky ani složení střevní mikroflóry se mezi skupinami nelišily. Kuřata s kvasnicemi měla v krvi méně malondialdehydu, tedy látky, která vzniká při poškozování tuků v těle; na oxidační zátěž tak byla o něco lépe připravená. Jedna z dávek naopak v první fázi růstu přírůstek zbrzdila.",
+        "podrobneVysvetleni": "Pokus proběhl s 900 týdenními kohoutky plemene Ross 308. Ptáci byli ve 36 kotcích po 25 kusech na 1,2 metru čtverečního, tedy v hustém osazení. Šest skupin dostávalo šest různých krmiv. První obsahovalo antibiotický růstový stimulátor, druhé bylo bez něj. Zbylá čtyři byla bez antibiotika a s přídavkem hydrolyzovaných kvasnic, tedy kvasnic předem rozložených na menší části. Dávky postupně stoupaly: čtvrt gramu, půl gramu, tři čtvrtě gramu a jeden gram kvasnic na kilogram krmiva. Rozdíly se objevily hlavně v prvních týdnech výkrmu. Skupina se třetí nejvyšší dávkou, tedy tři čtvrtě gramu na kilogram krmiva, přibývala pomaleji a hůř využívala krmivo. Měla také nižší podíl prsní svaloviny. Za celé období se ale celkový růst mezi skupinami nelišil. Většina jatečných znaků, rozměrů vnitřních orgánů i vlastností masa zůstala stejná. Kyselost a barva masa reagovaly na rostoucí dávku \"do oblouku\", rozdíly však byly malé. Kuřatům s kvasnicemi mírně stoupl hematokrit, tedy podíl červených krvinek v krvi. Zároveň jim klesl malondialdehyd v krevní plazmě, což je ukazatel poškozování tuků kyslíkovými radikály. Hladinu fosforu v krvi měla tato kuřata nižší než skupina bez antibiotika i bez kvasnic. Pestrost střevních bakterií se mezi skupinami nezměnila. Závěr je střízlivý: přídavek pomohl hlavně s oxidační zátěží, ne s růstem.",
+        "procJeToDulezite": "Chovatelé hledají náhradu za antibiotika v krmivu, protože jejich nadužívání vede k odolnosti bakterií a k zbytkům léčiv v mase. Tahle studie ukazuje, že kvasnice mohou v něčem pomoci, ale zázračnou náhradu z nich dělat nelze.",
+        "poznamkaKOmezenim": "Šlo o jeden pokus s jedním plemenem v hustém osazení a nečekaně horší výsledek u prostřední dávky autoři nevysvětlují, takže výsledky je třeba brát jako předběžné."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 107,
+              "end": 110
+            },
+            "matchedText": "900",
+            "messageCs": "Číslo „900“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „900 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[107,110]: 900"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 143,
+              "end": 146
+            },
+            "matchedText": "308",
+            "messageCs": "Číslo „308“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „308 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[143,146]: 308"
+          },
+          {
+            "block": "procJeToDulezite",
+            "rule": "hype",
+            "ruleId": "hype:zázračn",
+            "span": {
+              "start": 189,
+              "end": 198
+            },
+            "matchedText": "zázračnou",
+            "messageCs": "Slovo „zázračnou“ je zakázané (pravidlo §2, žádná senzacechtivost). Napište místo něj konkrétně, co se změnilo.",
+            "detail": "hype:zázračn @ procJeToDulezite[189,198]: zázračnou"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 286,
+              "end": 444
+            },
+            "matchedText": "Kuřata s kvasnicemi měla v krvi méně malondialdehydu, tedy látky, která vzniká při poškozování tuků v těle; na oxidační zátěž tak byla o něco lépe připravená.",
+            "messageCs": "Tato věta má 26 slov a je moc dlouhá: „Kuřata s kvasnicemi měla v krvi méně malondialdehydu, tedy látky, která vzniká …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[286,444]: Kuřata s kvasnicemi měla v krvi méně malondialdehydu, tedy látky, která vzniká při poškozování tuků v těle; na oxidační zátěž tak byla o něco lépe připravená."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 302,
+              "end": 310
+            },
+            "matchedText": " hydroly",
+            "messageCs": "Text opisuje původní název článku („ hydroly“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[302,310]:  hydroly"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-08-23T04:46:38.019Z",
+  "generatedOn": "2026-08-23",
+  "schemaVersion": 1
+}

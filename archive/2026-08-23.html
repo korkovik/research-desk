@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Biologie, jídlo a zemědělství – 23. srpna 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Biologie, jídlo a zemědělství</h1>
+<p class="dateline"><time datetime="2026-08-23">23. srpna 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 5</p>
+<div class="summary"><p><span class="lead">Kukuřici v suchu pomáhá spolupráce s houbami, které vrůstají do jejích kořenů.</span> Vědci ve skleníku výzkumného ústavu v Ankaře pěstovali kukuřici při třech úrovních zálivky a část rostlin naočkovali různými druhy arbuskulárních mykorhizních hub (anglicky arbuscular mycorrhizal fungi) — tedy hub, které žijí přímo uvnitř kořenů a výměnou za cukry z rostliny jí dodávají vodu a živiny. Naočkované rostliny byly při dobré zálivce vyšší a těžší (104,2 proti 95,7 centimetru výšky) a při nejsilnějším suchu měly znatelně mohutnější kořeny (1,20 gramu suché hmoty proti 0,73 gramu u rostlin bez hub). Jde ale o pokus v nádobách ve skleníku, ne o pole — než z toho vznikne rada pro pěstitele, bude potřeba ověření v praxi.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Pokus proběhl ve skleníku ústavu pro půdu, hnojiva a vodní zdroje v Ankaře. Kukuřici pěstovali v nádobách, část rostlin nechali bez zásahu a části přidali ke kořenům jeden z několika druhů mykorhizních hub. Zálivku nastavili na tři úrovně podle toho, kolik vody půda drží z množství, které udržet dokáže: sedm desetin (mírný nedostatek), polovinu a jen tři desetiny, což už je silné sucho. Při nejlepší zálivce rostliny s houbou Rhizophagus intraradices dorostly do 104,2 centimetru proti 95,7 centimetru u neočkovaných, tedy zhruba o osm a půl centimetru výš, a jejich čerstvá hmotnost byla 35,7 gramu proti 27,5 gramu — o víc než osm gramů na rostlinu. Při poloviční zálivce měly rostliny s houbou Rhizophagus irregularis silnější stonek: 5,44 proti 4,74 podle měření autorů. A při nejtvrdším suchu se rozdíl ukázal hlavně pod zemí — kořeny rostlin s houbou Glomus iranicum vážily po vysušení 1,20 gramu, zatímco u rostlin bez hub 0,73 gramu, tedy skoro o půl gramu méně. To dává smysl: houba prodlužuje dosah kořenů do půdy a rostlina se dostane k vodě, na kterou by sama nedosáhla. Autoři z toho vyvozují, že očkování mykorhizními houbami je jedna z cest, jak kukuřici pomoci přečkat období bez deště.</p>
+<h3>Proč je to důležité</h3>
+<p>Kukuřice patří k nejpěstovanějším plodinám u nás i ve světě a sucho jí škodí čím dál častěji; pokud pomůže obyčejná půdní houba, je to levnější a šetrnější než další zavlažování.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Rohat Gültekin, Tuğba Yeter, Ceren Görgişen, Çağlar Sagun, Kadri Avağ</dd>
+<dt>Časopis</dt>
+<dd>Yüzüncü Yıl Üniversitesi Tarım Bilimleri Dergisi</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-21">21. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.29133/yyutbd.1791922" rel="noreferrer">10.29133/yyutbd.1791922</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7203894445" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.29133/yyutbd.1791922" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jediný skleníkový pokus s rostlinami v nádobách, měřený jen na výšce, hmotnosti a tloušťce stonku — nikoli na výnosu zrna na poli, takže výsledek je předběžný.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 5</p>
+<div class="summary"><p><span class="lead">Na nerovném poli steče voda do prohlubní a vyvýšená místa zůstanou suchá.</span> Proto se v Indii rozšířilo laserové urovnávání pozemků (laser land levelling): stroj naváděný laserovým paprskem srovná políčko do roviny. Vědci v indickém Paňdžábu porovnali pěstitele rýže, kteří tuhle úpravu použili, s těmi, kdo ji nepoužili. Urovnaná pole dala o 2,64 metrického centu rýže na akr víc, tedy asi o 264 kilogramů z plochy kolem čtyř tisíc metrů čtverečních. Největší zlepšení přitom měli hospodáři s nejmenšími pozemky.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Tazatelé oslovili 885 pěstitelů rýže ve dvanácti okresech indického Paňdžábu, tedy necelou tisícovku hospodářů. Laserové urovnávání používalo 527 z nich, tedy zhruba šest z deseti. Zbylých 358, tedy čtyři z deseti, hospodařilo bez něj. Obě skupiny se ale nedají porovnat jen tak. Techniku si totiž pořizují spíš vzdělanější lidé s větší výměrou a s vlastním traktorem nebo čerpadlem. Vědci proto použili statistické postupy, které ke každému uživateli hledají co nejpodobnějšího neuživatele (propensity score matching). Zároveň počítali s tím, že se lidé rozhodovali sami, a tenhle vliv z výsledku odečetli. Po přepočtu vyšel rozdíl ve výnosu 2,64 metrického centu na akr. Metrický cent je sto kilogramů a akr necelá polovina hektaru, přesněji asi 0,4 hektaru, tedy plocha kolem čtyř tisíc metrů čtverečních. Rozdíl tak odpovídá zhruba 264 kilogramům rýže navíc z takového pozemku. Druhý ukazatel se jmenuje technická efektivita a říká, kolik hospodář vytěží z toho, co má k dispozici. Uživatelé urovnávání na tom byli asi o 3 procenta lépe, tedy o tři body ze sta možných. U hospodářů s nejmenší výměrou byl zisk větší než u ostatních. Autoři to vysvětlují tím, že rovné pole potřebuje méně vody a zalije se rovnoměrněji. V Paňdžábu, kde hladina podzemní vody rychle klesá, to má váhu i mimo účetnictví jednotlivých farem.</p>
+<h3>Proč je to důležité</h3>
+<p>Pěstování rýže v Paňdžábu spotřebuje velké množství čerpané podzemní vody a její zásoby ubývají, takže i drobná úprava pole má dopad na to, jak dlouho tam bude na co hospodařit. Ukazuje se také, že nejvíc si polepší ti nejmenší, tedy skupina, která má na nové technologie obvykle nejhůř.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Shreya Kapoor, Anjani Kumar</dd>
+<dt>Časopis</dt>
+<dd>Agricultural Systems</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-21">21. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1016/j.agsy.2026.104927" rel="noreferrer">10.1016/j.agsy.2026.104927</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7203890031" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://www.sciencedirect.com/science/article/pii/S0308521X26002957/pdf" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1016/j.agsy.2026.104927" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jednorázové dotazování v jediném indickém státě a rozdíly mezi skupinami srovnávaly statistické metody, ne náhodné rozdělení farem, takže příčinnou souvislost je třeba brát jako pravděpodobnou, ne prokázanou.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 5</p>
+<div class="summary"><p>Mikropostřik — jemné rozprašování vody těsně nad porostem, něco mezi kapkovou závlahou a klasickým postřikovačem — dal ozimé pšenici na východě čínské provincie Che-nan víc zrna i lepší hospodaření s vodou než tradiční zaplavování pole. Vědci porovnávali tři velikosti jedné zálivky, k tomu zaplavené pole a políčka ponechaná jen dešti, a sledovali vlhkost půdy, kořeny i sklizeň. Menší dávky dopadly nejlépe: při dávce 20 milimetrů, tedy 20 litrech vody na každý metr čtvereční, měla pšenice delší a hustší kořeny hlouběji v půdě. Největší dávka, tedy 40 litrů vody na metr čtvereční při jedné zálivce, ve druhém roce výnos i účinnost naopak snížila. Proti zaplavení stouply výnosy o 3,5 až 6,5 procenta (zhruba o dvacetinu) a účinnost využití vody o 4 až 21 procent.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Pokus běžel dvě pěstitelské sezóny a porovnával pět režimů: mikropostřik s jednou zálivkou 20 milimetrů (tedy 20 litrů vody na metr čtvereční pole), 30 milimetrů (30 litrů na metr čtvereční) a 40 milimetrů (40 litrů na metr čtvereční), dále běžné zaplavení pole a kontrolní plochy bez závlahy, jen na dešti. Autoři měřili vlhkost půdy v různých hloubkách, délku a hmotnost kořenů, tvorbu sušiny, výnos a takzvanou účinnost využití vody (water use efficiency) — tedy kolik zrna se urodí z jednoho litru vody. Mikropostřik nechal půdu v době sloupkování sušší než zaplavení, zato v některých vrstvách během nalévání zrna vlhčí. Kořeny byly u mikropostřiku celkově delší a těžší; u nejmenší dávky výrazně i v hloubkách od 20 do 100 centimetrů pod povrchem, tedy tam, kde se rostlina dostane k vodě v suchých obdobích. Nejmenší dávka také zvýšila přesun zásob z rostliny do zrna po odkvětu v průměru o 9,7 procenta a tvorbu sušiny po odkvětu o 15 procent (zhruba o sedminu). Mezi nejmenší a střední dávkou nebyl v úrodě ani v účinnosti podstatný rozdíl. Souhrnné vyhodnocení podle několika kritérií najednou doporučilo pro tuto oblast celkovou sezónní závlahu 80 milimetrů (80 litrů vody na metr čtvereční) nebo 120 milimetrů (120 litrů na metr čtvereční) — tedy méně vody než při zvyklém zaplavování.</p>
+<h3>Proč je to důležité</h3>
+<p>Zemědělství spotřebuje velkou část dostupné vody a tenhle pokus ukazuje, že rozumnější způsob zavlažování může ušetřit vodu a přitom neubrat na úrodě — což se týká ceny chleba i toho, kolik vody zbude na ostatní.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Mingda Yang, Hui Cao, Jiaju Dong, Suyu Zhang, Hongjie Liu, Jinping Chen a další</dd>
+<dt>Časopis</dt>
+<dd>Plants</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-21">21. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.3390/plants15162540" rel="noreferrer">10.3390/plants15162540</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7203880429" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.3390/plants15162540" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o dvouletý polní pokus v jedné konkrétní oblasti Severočínské nížiny, takže doporučené dávky nelze bez ověření přenést na jiné půdy a podnebí, a rozdíly mezi lety ukazují, že výsledek závisí i na počasí dané sezóny.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-4">
+<p class="paper-counter">Studie 4 z 5</p>
+<div class="summary"><p><span class="lead">Postřik listů drobnými částicemi oxidu zinečnatého (ZnO NPs) pomohl vojtěšce lépe snášet zasolenou půdu.</span> Ošetřené rostliny byly o 13,83 % vyšší, tedy zhruba o sedminu. Jejich celková antioxidační kapacita — schopnost zneškodňovat škodlivé látky vznikající při stresu — stoupla o 30,69 %, přibližně o třetinu. Zároveň v nich bylo o 30,11 % méně malondialdehydu; podle množství této látky se pozná, jak jsou poškozené buněčné membrány, takže méně znamená zdravější rostliny. Autoři ale sami upozorňují, že chybělo srovnání s obyčejným zinkem, takže se přínos nedá připsat výhradně nanočásticím.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Vojtěška patří k nejrozšířenějším pícninám, ale sůl v půdě jí bere růst i výnos. Vědci proto část rostlin vystavili solnému stresu a některým z nich postříkali listy suspenzí drobných částic oxidu zinečnatého. Pak porovnávali dvě věci najednou: viditelné a měřitelné znaky rostlin a to, které geny se v nich zapínají a vypínají.</p>
+<p>Ošetřené rostliny pod solí povyrostly o 13,83 % oproti neošetřeným, což je zhruba o sedminu. Celková antioxidační kapacita jim vzrostla o 30,69 % a takzvaná schopnost zneškodňovat volné radikály (DPPH) o 21,54 %, tedy asi o pětinu. Obsah malondialdehydu, který slouží jako ukazatel poškození buněčných obalů, klesl o 30,11 %.</p>
+<p>Rozbor genové aktivity ukázal 1 526 genů, tedy zhruba půldruhého tisíce, které se u ošetřených rostlin chovaly jinak než u neošetřených. Nešlo o náhodnou směs. Soustředily se do několika okruhů: signalizace pomocí vápníku, rostlinné hormony, fotosyntéza a nakládání s reaktivními formami kyslíku. Aktivnější byly také některé regulační geny z rodin WRKY, ERF, bHLH a NAC, které fungují jako přepínače celých skupin dalších genů.</p>
+<p>Společně to naznačuje, že postřik nespustil jeden konkrétní trik, ale posunul rostlinu do lépe bráněného stavu. Zůstává otázka, kolik z toho zvládne prostý zinek v běžné podobě.</p>
+<h3>Proč je to důležité</h3>
+<p>Zasolené půdy ubírají zemědělcům výnosy na mnoha místech světa a vojtěška je běžné krmivo pro dobytek. Levný postřik na listy by mohl být jedním z nástrojů, jak na takových pozemcích udržet úrodu — pokud se přínos potvrdí v poli.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Xiaohong Li, Ansar Abbas, Huizhen Yang, Fei Xie, Furong Kang, Aneela Bashir a další</dd>
+<dt>Časopis</dt>
+<dd>BMC Plant Biology</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-21">21. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1186/s12870-026-09767-1" rel="noreferrer">10.1186/s12870-026-09767-1</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7203908458" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1186/s12870-026-09767-1" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Pokus neobsahoval srovnávací skupiny ošetřené rozpustným zinkem ani běžným, nerozdrobeným oxidem zinečnatým, takže není jasné, kolik z účinku má na svědomí zinek jako takový a kolik velmi malé částice; výsledek je tedy předběžný.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-5">
+<p class="paper-counter">Studie 5 z 5</p>
+<div class="summary"><p><span class="lead">Hydrolyzované kvasnice v krmivu brojlerů nenahradily antibiotikum, ale ani nic nepokazily.</span> Vědci rozdělili 900 týdenních kohoutků plemene Ross 308 do šesti skupin a chovali je v hustém osazení. Celkový přírůstek, jatečné znaky ani složení střevní mikroflóry se mezi skupinami nelišily. Kuřata s kvasnicemi měla v krvi méně malondialdehydu, tedy látky, která vzniká při poškozování tuků v těle; na oxidační zátěž tak byla o něco lépe připravená. Jedna z dávek naopak v první fázi růstu přírůstek zbrzdila.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Pokus proběhl s 900 týdenními kohoutky plemene Ross 308. Ptáci byli ve 36 kotcích po 25 kusech na 1,2 metru čtverečního, tedy v hustém osazení. Šest skupin dostávalo šest různých krmiv. První obsahovalo antibiotický růstový stimulátor, druhé bylo bez něj. Zbylá čtyři byla bez antibiotika a s přídavkem hydrolyzovaných kvasnic, tedy kvasnic předem rozložených na menší části. Dávky postupně stoupaly: čtvrt gramu, půl gramu, tři čtvrtě gramu a jeden gram kvasnic na kilogram krmiva. Rozdíly se objevily hlavně v prvních týdnech výkrmu. Skupina se třetí nejvyšší dávkou, tedy tři čtvrtě gramu na kilogram krmiva, přibývala pomaleji a hůř využívala krmivo. Měla také nižší podíl prsní svaloviny. Za celé období se ale celkový růst mezi skupinami nelišil. Většina jatečných znaků, rozměrů vnitřních orgánů i vlastností masa zůstala stejná. Kyselost a barva masa reagovaly na rostoucí dávku &quot;do oblouku&quot;, rozdíly však byly malé. Kuřatům s kvasnicemi mírně stoupl hematokrit, tedy podíl červených krvinek v krvi. Zároveň jim klesl malondialdehyd v krevní plazmě, což je ukazatel poškozování tuků kyslíkovými radikály. Hladinu fosforu v krvi měla tato kuřata nižší než skupina bez antibiotika i bez kvasnic. Pestrost střevních bakterií se mezi skupinami nezměnila. Závěr je střízlivý: přídavek pomohl hlavně s oxidační zátěží, ne s růstem.</p>
+<h3>Proč je to důležité</h3>
+<p>Chovatelé hledají náhradu za antibiotika v krmivu, protože jejich nadužívání vede k odolnosti bakterií a k zbytkům léčiv v mase. Tahle studie ukazuje, že kvasnice mohou v něčem pomoci, ale zázračnou náhradu z nich dělat nelze.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Lihle Sindaku, Victor Mlambo, Victory Osirimade Sumanu, Omolola E. Fayemi, Ghaneshree Moonsamy, Rajesh Jha a další</dd>
+<dt>Časopis</dt>
+<dd>Poultry science and management.</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-21">21. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1186/s44364-026-00039-0" rel="noreferrer">10.1186/s44364-026-00039-0</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7203911454" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1186/s44364-026-00039-0" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Šlo o jeden pokus s jedním plemenem v hustém osazení a nečekaně horší výsledek u prostřední dávky autoři nevysvětlují, takže výsledky je třeba brát jako předběžné.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 23. srpna 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>
