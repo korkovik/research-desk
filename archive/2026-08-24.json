@@ -1,0 +1,760 @@
+{
+  "date": "2026-08-24",
+  "categoryKey": "ai-computing",
+  "categoryLabel": "Umělá inteligence a počítače",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7204012019",
+        "title": "Influence of ‘virtual tourism’ multisensory stimulation therapy on older adults with mild cognitive impairment: A mixed-methods study",
+        "abstract": "Background Interventions for mild cognitive impairment (MCI) can delay cognitive decline. Sensory deprivation is a risk factor for the development of dementia. Providing multisensory stimulation (MSS) based on ‘virtual tourism’, a dynamic presentation of natural tourist landscapes to visitors through internet technology that allows them to experience immersive travel experiences without leaving their homes, may constitute an effective management strategy. Objective To evaluate a ‘virtual tourism’ MSS intervention for older adults with MCI using a mixed-methods design to assess attitudes and perceived benefits. Methods Sixty-six older adults with MCI were randomized to either the experimental group receiving ‘virtual tourism’ MSS for 8 weeks or the waitlist control group. Cognitive function, neuropsychiatric symptoms (NPSs), quality of life, and sleep were assessed using scales at baseline and at 4, 8, 12, and 16 weeks. Semistructured interviews were conducted at 8 weeks. Results The attrition and activity attendance rates were 6.06% and 81.25%, respectively. According to the questionnaire results, cognitive function, NPSs, quality of life and sleep significantly improved in the intervention group and continued to improve for up to 16 weeks. Many respondents said that their participation improved their cognition, mood, sleep, physical fitness, and social support and provided suggestions for content enrichment and technological updates. Conclusions ‘Virtual tourism’ MSS is effective for older adults with MCI. Eight weeks of MSS can effectively improve cognitive function, NPSs, quality of life and sleep for >16 weeks. These results contribute to the development of novel strategies to slow cognitive decline.",
+        "date": "2026-08-22",
+        "url": "https://doi.org/10.1016/j.gerinurse.2026.104281",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1016/j.gerinurse.2026.104281",
+        "openAlexId": "W7204012019",
+        "subfield": {
+          "id": "subfields/1709",
+          "name": "Human-Computer Interaction"
+        },
+        "field": {
+          "id": "fields/17",
+          "name": "Computer Science"
+        },
+        "topic": {
+          "id": "T10648",
+          "name": "Virtual Reality Applications and Impacts"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Qian Liu",
+          "Xiaoyu Li",
+          "Lijia Zhang",
+          "Xuechun Bai",
+          "Mingzhu Zhao",
+          "Sitao Zhang",
+          "Wenxi Duan",
+          "Haoying Liu",
+          "Wei Xu",
+          "Li Chen",
+          "Huiru Yin"
+        ],
+        "venue": "Geriatric Nursing",
+        "indexedDate": "2026-08-23",
+        "referencedWorksCount": 55,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9878,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.9337,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.0813
+          },
+          "everydayDomains": [
+            "sleep",
+            "health",
+            "body",
+            "housing",
+            "family",
+            "mind"
+          ],
+          "subfieldKey": "subfields/1709",
+          "evidence": [
+            "total 0.9337 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.99 = P 1.00 − 0.45×t 0.00 − 0.15×j 0.08",
+            "outcome verbs (v 1.00): improved, improves, slows, delays",
+            "recognisable subjects (s 1.00): adults (title, ×2), older adults (title, ×2), homes",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.08): 2/246 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 6 domain(s) — sleep, health, body, housing, family, mind",
+            "everyday terms (8): sleep, dementia, therapy, fitness, home, homes, older adults, mood",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-23)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Geriatric Nursing",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1016/j.gerinurse.2026.104281)"
+      },
+      "summary": {
+        "souhrn": "Osm týdnů „virtuální turistiky\" pomohlo starším lidem s mírnou poruchou paměti a myšlení (anglicky mild cognitive impairment), tedy se stavem někde mezi běžným stárnutím a demencí. Virtuální turistika tu znamená promítání přírodních a turistických míst doplněné o podněty pro další smysly — zvuky, vůně, doteky. Vědci rozdělili losem šestašedesát seniorů do dvou skupin: jedna na program chodila, druhá zatím čekala. Podle dotazníků se u zapojených zlepšilo myšlení, nálada, spánek i spokojenost se životem, a to ještě zhruba dva měsíce po skončení kurzu. V rozhovorech lidé mluvili také o lepší kondici a o pocitu, že nejsou sami.",
+        "podrobneVysvetleni": "Šlo o takzvaný smíšený výzkum: čísla z dotazníků doplnily rozhovory s účastníky. Vědci vybrali šestašedesát seniorů s mírným oslabením paměti a myšlení a losem je rozdělili na dvě poloviny. První skupina absolvovala osm týdnů virtuální turistiky. Druhá byla na čekací listině a program dostala až později. Sledování ale koncem kurzu neskončilo. Účastníky vědci testovali na začátku, pak v polovině programu, na jeho konci a ještě dvakrát potom — naposledy zhruba dva měsíce po skončení. Měřili paměť a myšlení, psychické potíže jako úzkost či podrážděnost, kvalitu života a spánek.\n\nProgram lidi zjevně bavil. Předčasně z něj odešli jen zhruba čtyři lidé z šestašedesáti (6,06 %). Na naplánovaná setkání účastníci dorazili asi ve čtyřech případech z pěti (81,25 %). Ve všech čtyřech sledovaných oblastech se skupina s virtuální turistikou zlepšila. Zlepšení navíc pokračovalo i poté, co kurz skončil.\n\nV rozhovorech lidé popisovali, že se jim lépe spí, mají lepší náladu a cítí větší oporu okolí. Zmiňovali i lepší tělesnou kondici. Sami navrhovali, co by šlo vylepšit: pestřejší obsah a modernější techniku.\n\nAutoři z toho vyvozují, že podněty pro více smyslů najednou mohou zpomalovat úbytek paměti a myšlení. Nedostatek smyslových podnětů totiž patří mezi rizikové faktory demence.",
+        "procJeToDulezite": "Mírné oslabení paměti se v rodinách řeší často a možností, jak s ním něco dělat, je málo. Tohle je levná a doma proveditelná činnost, která podle první studie stojí za vyzkoušení.",
+        "poznamkaKOmezenim": "Jde o poměrně malý vzorek šestašedesáti lidí a kontrolní skupina jen čekala bez náhradní činnosti, takže část zlepšení mohla způsobit sama pozornost a společnost, ne konkrétní obsah programu."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 180,
+              "end": 188
+            },
+            "matchedText": "poloviny",
+            "messageCs": "Číslo „poloviny“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „poloviny — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[180,188]: poloviny"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 756,
+              "end": 763
+            },
+            "matchedText": "81,25 %",
+            "messageCs": "Číslo „81,25 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „81,25 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[756,763]: 81,25 %"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 180
+            },
+            "matchedText": "Osm týdnů „virtuální turistiky\" pomohlo starším lidem s mírnou poruchou paměti a myšlení (anglicky mild cognitive impairment), tedy se stavem někde mezi běžným stárnutím a demencí.",
+            "messageCs": "Tato věta má 26 slov a je moc dlouhá: „Osm týdnů „virtuální turistiky\" pomohlo starším lidem s mírnou poruchou paměti …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[0,180]: Osm týdnů „virtuální turistiky\" pomohlo starším lidem s mírnou poruchou paměti a myšlení (anglicky mild cognitive impairment), tedy se stavem někde mezi běžným stárnutím a demencí."
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7204004979",
+        "title": "Using emoji reduces dropout of remote workers: a causal analysis on GitHub",
+        "abstract": "Remote work relies heavily on online communication methods including asynchronous text-based messaging, which is often associated with delayed feedback and reduced emotional support. Inefficient communication may ultimately lead to negative impacts on work-related outcomes such as a higher turnover rate. We propose that emojis can help mitigate such disadvantages and present a causal analysis on GitHub—a setting where remote workers work voluntarily and rely primarily on textual communication. Our analysis demonstrates that, after adjusting for confounding bias using propensity score-based methods, including emojis in at least one post in 2018 reduces the dropout risk in the following year by half (an absolute risk reduction of 0.052, p ≪ 0.001), and higher emoji usage intensity further leads to lower dropout risk. While the absolute effect of emoji use is greater for new contributors, the relative reduction in dropout risk is larger for developers with a longer contribution history. The effect of using emojis is also more pronounced for developers from collectivist or restrained cultural backgrounds, who may be more sensitive to group identity and social norms. Our analysis provides valuable insights for designing interventions to enhance the experience and work-related outcomes of remote workers.",
+        "date": "2026-08-22",
+        "url": "https://doi.org/10.1057/s41599-026-08748-x",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1057/s41599-026-08748-x",
+        "openAlexId": "W7204004979",
+        "subfield": {
+          "id": "subfields/1709",
+          "name": "Human-Computer Interaction"
+        },
+        "field": {
+          "id": "fields/17",
+          "name": "Computer Science"
+        },
+        "topic": {
+          "id": "T13155",
+          "name": "Digital Communication and Language"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://www.nature.com/articles/s41599-026-08748-x_reference.pdf",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Xuan Lu",
+          "Wei Ai",
+          "Qiaozhu Mei"
+        ],
+        "venue": "Humanities and Social Sciences Communications",
+        "indexedDate": "2026-08-23",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.875,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.8793,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.5,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0
+          },
+          "everydayDomains": [
+            "school",
+            "screens",
+            "work"
+          ],
+          "subfieldKey": "subfields/1709",
+          "evidence": [
+            "total 0.8793 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.88 = P 0.88 − 0.45×t 0.00 − 0.15×j 0.00",
+            "outcome verbs (v 1.00): reduced, reduces (title, ×2), reduction, lowers, delayed, associated with",
+            "recognisable subjects (s 0.50): workers (title, ×2)",
+            "quantified effect (q 1): increase/decrease of n",
+            "title concreteness (c 1.00): no penalty",
+            "everyday relevance 0.97: 3 domain(s) — school, screens, work",
+            "everyday terms (5): dropout, online, work, worker, remote work",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-23)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Humanities and Social Sciences Communications",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1057/s41599-026-08748-x)"
+      },
+      "summary": {
+        "souhrn": "Smajlík v pracovní zprávě zní jako detail. Na GitHubu — velké platformě, kde vývojáři z celého světa spolupracují na dálku a hlavně přes psaný text — přesto souvisí s tím, jestli člověk u projektu vydrží. Vědci porovnávali vývojáře, kteří v roce 2018 použili emoji aspoň v jednom příspěvku, s podobnými lidmi, kteří je nepoužili. Riziko, že do roka z projektu odejdou, bylo u „emoji skupiny\" zhruba poloviční, v absolutních číslech asi o 5 procentních bodů nižší. A čím víc emoji člověk používal, tím menší byla šance, že skončí.",
+        "podrobneVysvetleni": "Práce na dálku stojí na psaném textu. Odpověď přijde se zpožděním a emoce se z holé věty čtou špatně. Autoři si položili otázku, jestli emoji tenhle nedostatek aspoň zčásti vyrovnávají. Jako materiál si vybrali GitHub, kde vývojáři přispívají dobrovolně a domlouvají se skoro výhradně písemně.\n\nSamotné srovnání „kdo používá emoji\" a „kdo ne\" by nestačilo. Lidé, kteří sázejí smajlíky, se totiž můžou lišit i v jiných věcech — třeba být aktivnější nebo déle u projektu. Vědci proto použili statistickou metodu (propensity score), která k sobě páruje lidi s podobným profilem a liší se hlavně tím, jestli emoji použili. Až pak výsledky porovnali.\n\nVýsledek: použití emoji aspoň v jednom příspěvku v roce 2018 souviselo s tím, že riziko odchodu v následujícím roce kleslo na polovinu. V absolutních číslech je to pokles o 0,052, tedy asi o pět lidí ze sta. Vyšší intenzita používání znamenala ještě nižší riziko.\n\nZajímavé jsou rozdíly mezi skupinami. U nováčků byl absolutní rozdíl větší, u dlouholetých přispěvatelů zase větší poměrný pokles. Silnější efekt měli lidé z kultur, kde se víc dbá na skupinu a na společenské normy — u nich může být drobný přátelský signál cennější.",
+        "procJeToDulezite": "Práce na dálku a psaná komunikace dnes patří k běžnému pracovnímu i školnímu životu a tahle studie ukazuje, že i drobný přátelský signál v textu může souviset s tím, jestli u věci člověk zůstane.",
+        "poznamkaKOmezenim": "Jde o statistické zpracování dat z jedné platformy, takže i po pečlivém dorovnání skupin nelze vyloučit, že za výsledkem stojí nějaká nezměřená vlastnost lidí, kteří emoji používají."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 438,
+              "end": 451
+            },
+            "matchedText": "5 procentních",
+            "messageCs": "Číslo „5 procentních“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „5 procentních — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[438,451]: 5 procentních"
+          }
+        ],
+        "soft": [
+          {
+            "block": "procJeToDulezite",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 195
+            },
+            "matchedText": "Práce na dálku a psaná komunikace dnes patří k běžnému pracovnímu i školnímu životu a tahle studie ukazuje, že i drobný přátelský signál v textu může souviset s tím, jestli u věci člověk zůstane.",
+            "messageCs": "Tato věta má 34 slov a je moc dlouhá: „Práce na dálku a psaná komunikace dnes patří k běžnému pracovnímu i školnímu ži…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ procJeToDulezite[0,195]: Práce na dálku a psaná komunikace dnes patří k běžnému pracovnímu i školnímu životu a tahle studie ukazuje, že i drobný přátelský signál v textu může souviset s tím, jestli u věci člověk zůstane."
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203977998",
+        "title": "A Cache Modeling Framework for Accelerator Systems",
+        "abstract": "Modern hardware accelerators increasingly rely on cache-based memory systems to improve modularity and tolerate irregular memory behavior in sparse and data-dependent workloads. However, configuring accelerator caches remains challenging: designers must choose cache capacity, Miss Status Holding Register (MSHR) count, subentry provisioning, and fill bandwidth without a fast model that captures the timing-dependent behavior of non-blocking caches. Existing analytical models often focus on cache residency or miss counts, while cycle-level simulation captures miss merging and resource contention at substantially higher cost. This paper presents PlastiCache, a timing-augmented reuse-distance model for non-blocking accelerator caches. PlastiCache represents an accelerator memory stream as address–time pairs and extends reuse-distance analysis with predicted service intervals for outstanding misses. This formulation classifies each request as a cache-resident hit, an in-flight MSHR merge, or a new off-chip miss, while incorporating miss-handling capacity, memory-service timing, and return-path bandwidth as event constraints over the request stream. As a result, PlastiCache identifies whether a cache design is limited by cache capacity, MSHR availability, subentry pressure, DRAM service, or fill bandwidth. PlastiCache targets early-stage cache design-space exploration by preserving the relative ordering of candidate configurations. Across broad sweeps of workloads and cache designs, PlastiCache achieves a mean Spearman ranking correlation of 0.93 with RTL on latency–area tradeoff curves, while achieving geometric-mean speedups of 545 × over tree-based analytical models and 303 × over Verilator-based RTL simulation. We further integrate PlastiCache into an end-to-end accelerator cache sizing flow with a Chisel-based sparse matrix multiplication processing element and a synthesizable cache generator. FPGA prototyping across real-world workloads, including SuiteSparse matrices and a large language model, shows that the PlastiCache-Balanced design reduces delay–area product by 45.6% and 25.9% on average compared with MOMS and MiCache, respectively, with maximum reductions of 73.8% and 37.3%.",
+        "date": "2026-08-22",
+        "url": "https://doi.org/10.1145/3838806",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1145/3838806",
+        "openAlexId": "W7203977998",
+        "subfield": {
+          "id": "subfields/1708",
+          "name": "Hardware and Architecture"
+        },
+        "field": {
+          "id": "fields/17",
+          "name": "Computer Science"
+        },
+        "topic": {
+          "id": "T10054",
+          "name": "Parallel Computing and Optimization Techniques"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1145/3838806",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Lingfeng Pei",
+          "Wei Siew Liew",
+          "Udaree Chathurangee Hiranthika Kanewala",
+          "Trevor E. Carlson"
+        ],
+        "venue": "ACM Transactions on Architecture and Code Optimization",
+        "indexedDate": "2026-08-23",
+        "referencedWorksCount": 41,
+        "tldr": "PlastiCache represents an accelerator memory stream as address–time pairs and extends reuse-distance analysis with predicted service intervals for outstanding misses, and targets early-stage cache design-space exploration by preserving the relative ordering of candidate configurations.",
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.6902,
+          "everydayRelevance": 0.6667,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.7213,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.25,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.4152
+          },
+          "everydayDomains": [
+            "money",
+            "mind"
+          ],
+          "subfieldKey": "subfields/1708",
+          "evidence": [
+            "total 0.7213 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.69 = P 0.75 − 0.45×t 0.00 − 0.15×j 0.42",
+            "outcome verbs (v 1.00): reduces, reduction, improves, predicted, delays, extends",
+            "recognisable subjects (s 0.25): residents",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.42): 12/289 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.67: 2 domain(s) — money, mind",
+            "everyday terms (4): cost, costs, memory, focus",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-23)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in ACM Transactions on Architecture and Code Optimization",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        }
+      },
+      "summary": {
+        "souhrn": "Návrháři specializovaných čipů (akcelerátorů) musí rozhodnout, jak velkou vyrovnávací paměť cache jim dát a kolik souběžných nevyřízených čtení z hlavní paměti zvládnou — a dosud to šlo spolehlivě zjistit jen zdlouhavou simulací celého obvodu. Tým představil model PlastiCache, který místo simulace odhadne chování paměti z proudu dvojic „adresa a čas\" a ke každému požadavku dopočítá, jak dlouho se na data bude čekat. V porovnání se skutečnou simulací obvodu model seřadil kandidátní návrhy od nejlepšího po nejhorší téměř stejně (Spearmanova korelace 0,93, kde 1,0 znamená shodné pořadí). Přitom počítá zhruba 545krát rychleji než starší analytické modely a asi 303krát rychleji než simulace obvodu — stihne tedy prověřit tři stovky návrhů v čase, za který simulace zvládne jediný. Pro čtenáře to znamená, že hledání dobrého poměru mezi velikostí čipu a jeho rychlostí se z týdnů zkracuje na hodiny.",
+        "podrobneVysvetleni": "Akcelerátor je čip stavěný na jednu úlohu — třeba na násobení řídkých matic, tedy tabulek čísel, kde je většina políček nula. Aby nečekal na pomalou hlavní paměť, má vlastní malou rychlou paměť zvanou cache. Návrhář musí zvolit její velikost, počet souběžně rozpracovaných čtení i šířku cesty, kterou se data vracejí. Dosud to spolehlivě ukázala až simulace hotového obvodu, která trvá dlouho.\n\nPlastiCache popisuje provoz do paměti jako dvojice adresa–čas a ke každému nevyřízenému čtení odhaduje, jak dlouho potrvá. Každý požadavek pak zařadí do jedné ze tří skupin: data už v cache leží, data se právě táhnou z paměti a lze se přidat k probíhajícímu čtení, nebo je nutné nové čtení zvenčí. Model navíc ukáže, co návrh brzdí nejvíc.\n\nAutoři pořadí návrhů porovnali se simulací skutečného obvodu; shoda pořadí byla vysoká (0,93 z maxima 1,0). Pak celý postup vyzkoušeli na programovatelném čipu FPGA, tedy hardwaru, na kterém se návrh dá otestovat nanečisto, na reálných úlohách včetně jazykového modelu — programu, který generuje text podobně jako ChatGPT.\n\nSledovali součin zpoždění a plochy, tedy společnou míru „jak pomalé a jak velké to je\". Proti metodě MOMS klesl v průměru o 45,6 procenta, tedy skoro na polovinu. Proti metodě MiCache o 25,9 procenta, tedy zhruba o čtvrtinu. V nejlepším případě to bylo 73,8 procenta (zbyla asi čtvrtina původní hodnoty), respektive 37,3 procenta (o víc než třetinu méně).",
+        "procJeToDulezite": "Rychlejší hledání dobrého návrhu paměti znamená levnější, menší a úspornější čipy pro umělou inteligenci i běžné výpočty — tedy i nižší spotřebu energie v datových centrech, jejichž provoz platíme všichni v ceně služeb.",
+        "poznamkaKOmezenim": "Jde o odhadovací model pro rané fáze návrhu, který přesnou simulaci obvodu nenahrazuje — dobře řadí návrhy podle kvality, ale ověřen byl jen na omezené sadě úloh a jednom typu výpočetní jednotky."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:korelace",
+            "span": {
+              "start": 545,
+              "end": 553
+            },
+            "matchedText": "korelace",
+            "messageCs": "Termín „korelace“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:korelace @ souhrn[545,553]: korelace"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=20.84",
+            "messageCs": "Věty jsou v průměru moc dlouhé (20,8 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=20.84"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 243
+            },
+            "matchedText": "Návrháři specializovaných čipů (akcelerátorů) musí rozhodnout, jak velkou vyrovnávací paměť cache jim dát a kolik souběžných nevyřízených čtení z hlavní paměti zvládnou — a dosud to šlo spolehlivě zjistit jen zdlouhavou simulací celého obvodu.",
+            "messageCs": "Tato věta má 33 slov a je moc dlouhá: „Návrháři specializovaných čipů (akcelerátorů) musí rozhodnout, jak velkou vyrov…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[0,243]: Návrháři specializovaných čipů (akcelerátorů) musí rozhodnout, jak velkou vyrovnávací paměť cache jim dát a kolik souběžných nevyřízených čtení z hlavní paměti zvládnou — a dosud to šlo spolehlivě zjistit jen zdlouhavou simulací celého obvodu."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 30 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203964426",
+        "title": "Structure-Derived Bottleneck-Aware Scheduling for Multitasking MCM-GPUs",
+        "abstract": "Multi-chip-module (MCM) GPUs improve scalability by integrating multiple GPU chiplets, but spatial multitasking introduces severe performance interference due to non-uniform memory access and asymmetric inter-chip bandwidth. Existing GPU multitasking schedulers rely on runtime profiling metrics to guide placement decisions. These reactive approaches observe the consequence of interference rather than its structural cause, vary across inputs and co-running workloads, and incur non-trivial overhead. This paper presents SA-Scheduler , a structure-derived bottleneck-aware scheduling framework for multitasking MCM-GPUs. Instead of profiling execution behavior, SA-Scheduler derives hardware bottleneck regimes directly from kernel structure prior to execution. Through offline architecture-aware modeling, we extract iteration-normalized features such as warp-level working-set footprint and global memory intensity (GMI). A fine-tuned lightweight code model (Qwen-2.5-Coder-1.5B) assists semantic structural extraction for CUDA kernels. These features are translated via an analytical bottleneck model into distinct interference regimes (C, M1, M2, and M3), characterizing how kernels interact with hierarchical and asymmetric memory resources under co-execution. Based on the inferred regimes, SA-Scheduler determines chip placement without hardware modification or runtime bottleneck profiling. For streaming multiprocessor (SM) allocation and optional power-gating decisions, SA-Scheduler further employs lightweight counter-based feedback to tune resource usage under bounded overhead. Across 105 two-program workloads, SA-Scheduler improves system throughput (STP) by 17.63% and 10.48% over intra-chip and inter-chip scheduling, respectively, while increasing fairness by up to 33.27%. An energy-aware Power Mode further reduces average power by up to 25.39% under bounded throughput degradation. These results demonstrate that structure-derived bottleneck inference provides a principled and scalable foundation for multitasking on future MCM-GPUs.",
+        "date": "2026-08-22",
+        "url": "https://doi.org/10.1145/3842670",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1145/3842670",
+        "openAlexId": "W7203964426",
+        "subfield": {
+          "id": "subfields/1708",
+          "name": "Hardware and Architecture"
+        },
+        "field": {
+          "id": "fields/17",
+          "name": "Computer Science"
+        },
+        "topic": {
+          "id": "T10054",
+          "name": "Parallel Computing and Optimization Techniques"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1145/3842670",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Tiejian Zhang",
+          "Guangda Zhang",
+          "Lu Wang",
+          "Yandong He",
+          "高继平",
+          "Hengzhu Liu",
+          "Xia Zhao"
+        ],
+        "venue": "ACM Transactions on Design Automation of Electronic Systems",
+        "indexedDate": "2026-08-23",
+        "referencedWorksCount": 23,
+        "tldr": "SA-Scheduler is presented, a structure-derived bottleneck-aware scheduling framework for multitasking MCM-GPUs that determines chip placement without hardware modification or runtime bottleneck profiling, and provides a principled and scalable foundation for multitasking on future MCM-GPUs.",
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.4905,
+          "everydayRelevance": 0.9,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.7068,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 0,
+            "q": 1,
+            "c": 0.5,
+            "t": 0,
+            "j": 0.48
+          },
+          "everydayDomains": [
+            "energy",
+            "body",
+            "mind"
+          ],
+          "subfieldKey": "subfields/1708",
+          "evidence": [
+            "total 0.7068 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.49 = P 0.56 − 0.45×t 0.00 − 0.15×j 0.48",
+            "outcome verbs (v 0.75): reduces, improves, causes",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.50): −0.3 no outcome verb or recognisable subject in the title; −0.2 2 technical strings in the title",
+            "jargon density (j 0.48): 12/250 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.90: 3 domain(s) — energy, body, mind",
+            "everyday terms (3): energy, running, memory",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-23)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in ACM Transactions on Design Automation of Electronic Systems",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        }
+      },
+      "summary": {
+        "souhrn": "Moderní grafické karty se skládají z několika menších čipů poskládaných dohromady. Když na nich běží dvě úlohy naráz, perou se o paměť a vzájemně se zpomalují. Vědci proto navrhli plánovač SA-Scheduler: místo aby měřil, jak se program chová za běhu, odhadne jeho nároky předem z jeho zdrojového kódu. Na 105 dvojicích současně běžících programů zvýšil celkovou propustnost o 17,63 % proti umístění obou úloh na jeden čip. Proti jejich rozdělení mezi čipy byl lepší o 10,48 % — tedy zhruba o šestinu, respektive o desetinu práce navíc za stejný čas. Spravedlivější dělení výkonu mezi úlohy se zlepšilo až o 33,27 % a úsporný režim srazil průměrnou spotřebu až o 25,39 %, tedy asi o čtvrtinu.",
+        "podrobneVysvetleni": "Plánovač pracuje ve dvou krocích. Nejdřív přijde na řadu rozbor kódu, který proběhne ještě před spuštěním. Z funkce psané v CUDA (jazyk pro výpočty na grafických kartách) se vytáhnou dvě charakteristiky. První: kolik dat potřebuje mít po ruce nejmenší pracovní skupinka vláken. Druhá: jak často program sahá do hlavní paměti (autoři tomu říkají global memory intensity, tedy intenzita přístupů do globální paměti). S rozborem pomáhá malý jazykový model vyladěný na čtení programového kódu. Jednoduchý výpočetní model pak úlohu zařadí do jedné ze čtyř skupin, které autoři značí C, M1, M2 a M3. Skupina napovídá, o jaký zdroj se úloha nejspíš popere: o výpočetní jednotky, nebo o paměť na některé z úrovní. Podle toho plánovač rozhodne, na který čip úlohu posadí. Nepotřebuje k tomu úpravu hardwaru ani sledování běhu. Kolik výpočetních jednotek úloha dostane a zda se část čipu kvůli úspoře vypne, ladí až za chodu. I tady si vystačí s jednoduchými čítači, takže režie zůstává malá. Autoři přístup vyzkoušeli na 105 kombinacích dvou současně běžících programů. Smysl je jednoduchý: dosavadní plánovače sledují až následek toho, že si úlohy překážejí. Výsledek se přitom mění podle vstupních dat i podle toho, co běží vedle. Odhad z kódu je naopak stejný pokaždé a nic nestojí za běhu.",
+        "procJeToDulezite": "Grafické karty z více čipů pohánějí datová centra i výpočty pro umělou inteligenci, kde na jednom stroji běží úlohy více uživatelů najednou. Chytřejší rozdělení práce znamená víc hotového výpočtu a nižší spotřebu elektřiny za stejné peníze.",
+        "poznamkaKOmezenim": "Výsledky vycházejí ze sady 105 dvojic programů na jedné konfiguraci karty; jak si plánovač povede u většího počtu souběžných úloh nebo u jiného hardwaru, práce neukazuje."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1012,
+              "end": 1015
+            },
+            "matchedText": "105",
+            "messageCs": "Číslo „105“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „105 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1012,1015]: 105"
+          }
+        ],
+        "soft": []
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7203979571",
+        "title": "Prediction of delayed postgraduate graduation using machine learning in Ugandan higher education",
+        "abstract": "Abstract Delayed postgraduate graduation is a major challenge to higher education institutions in Uganda in terms of student progression, institutional planning and human capital development. Identifying students at risk of delayed completion early can inform timely academic interventions and improve post-graduate outcomes. This study developed and compared machine learning models for delayed postgraduate graduation prediction using institutional administrative records from Makerere University. A retrospective predictive modelling study was performed using anonymised data from 500 postgraduate students registered from 2017 to 2023. 29% of them graduated on time and 71% graduated late. We developed and evaluated a number of supervised machine learning classifiers such as Random Forest, XGBoost, K-Nearest Neighbours, Logistic Regression and a stacking ensemble model. The model performance was evaluated using accuracy, precision, recall, F1-score and ROC-AUC. All trained models were found to have high and similar predictive performance in terms of accuracy (between ~ 94% and 95%) and ROC-AUC (between 0.94 and 0.95). Logistic Regression gave the numerically highest ROC-AUC (0.950) although differences in classifier performance were not statistically meaningful. Employment status and age at admission were positively related to delayed graduation whereas higher undergraduate CGPA decreased the likelihood of delayed completion. The results indicate that interpretable machine learning models can match the performance of complex ensemble methods on structured educational datasets. Apart from predictive performance, the study offers context-specific evidence on the use of predictive analytics in postgraduate education in Uganda, which is often characterised by patterns of progression affected by research-intensive study requirements, employment responsibilities, and long thesis completion processes. The proposed framework can assist in early identification of at-risk postgraduate students and directing institutional interventions in order to improve graduation outcomes.",
+        "date": "2026-08-22",
+        "url": "https://doi.org/10.1007/s44163-026-02000-w",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1007/s44163-026-02000-w",
+        "openAlexId": "W7203979571",
+        "subfield": {
+          "id": "subfields/1706",
+          "name": "Computer Science Applications"
+        },
+        "field": {
+          "id": "fields/17",
+          "name": "Computer Science"
+        },
+        "topic": {
+          "id": "T11122",
+          "name": "Online Learning and Analytics"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://link.springer.com/content/pdf/10.1007/s44163-026-02000-w.pdf",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Musoke Robert Lubelenga",
+          "Florence Nameere Kivunike",
+          "Halimu Chongomweru",
+          "Emmanuel Ahishakiye"
+        ],
+        "venue": "Discover Artificial Intelligence",
+        "indexedDate": "2026-08-23",
+        "referencedWorksCount": 33,
+        "tldr": "The results indicate that interpretable machine learning models can match the performance of complex ensemble methods on structured educational datasets and assist in early identification of at-risk postgraduate students and directing institutional interventions in order to improve graduation outcomes.",
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8423,
+          "everydayRelevance": 0.3667,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.6982,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.5,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.2182
+          },
+          "everydayDomains": [
+            "school"
+          ],
+          "subfieldKey": "subfields/1706",
+          "evidence": [
+            "total 0.6982 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.84 = P 0.88 − 0.45×t 0.00 − 0.15×j 0.22",
+            "outcome verbs (v 1.00): improves, delayed (title, ×2), decreased",
+            "recognisable subjects (s 0.50): students, forests",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.22): 6/275 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.37: 1 domain(s) — school",
+            "everyday terms (3): student, students, university",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-23)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Discover Artificial Intelligence",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        }
+      },
+      "summary": {
+        "souhrn": "Na ugandské Makerere University dokončí postgraduální studium včas jen menšina — z 500 sledovaných studentů zapsaných mezi lety 2017 a 2023 to stihlo 29 procent, tedy zhruba tři z deseti. Vědci zkusili, jestli se zpoždění dá odhadnout předem pomocí strojového učení, tedy programů, které si samy hledají vzorce v datech. Použili k tomu jen údaje, které univerzita běžně eviduje. Modely pak správně zařadily zhruba 94 až 95 studentů ze sta. Se zpožděním nejvíc souviselo zaměstnání a vyšší věk při nástupu, zatímco lepší průměr známek z předchozího studia riziko snižoval.",
+        "podrobneVysvetleni": "Šlo o zpětný pohled do dat, která univerzita stejně sbírá. Výzkumníci vzali anonymizované záznamy 500 postgraduálních studentů. Sledovali věk při nástupu, zaměstnání a průměr známek z předchozího studia. Anglicky se mu říká CGPA, tedy souhrnný průměr za celé bakalářské studium. Program pak hledal vzorce, které odlišují včasné absolventy od těch opožděných.\n\nAutoři porovnali pět různých postupů. Byla mezi nimi jednoduchá logistická regrese i složitější metody, například takzvaný náhodný les nebo kombinace více modelů dohromady. Rozdíly mezi nimi vyšly malé. Přesnost se pohybovala kolem 94 až 95 procent, tedy asi 94 až 95 správných odhadů ze sta. Nejlepší číslo měla shodou okolností ta nejjednodušší metoda. Autoři ale upozorňují, že rozdíly nebyly statisticky významné — jinými slovy, mohly vzniknout náhodou a na jiných datech by mohly dopadnout obráceně.\n\nZajímavější než čísla jsou samotné souvislosti. Studenti, kteří při studiu chodili do práce, se zpožďovali častěji. Totéž platilo pro ty, kdo nastoupili ve vyšším věku. Naopak lepší studijní výsledky z dřívějška šanci na včasné dokončení zvyšovaly. Autoři to dávají do souvislosti s tím, jak postgraduální studium v Ugandě vypadá: hodně vlastního výzkumu, dlouhé psaní závěrečné práce a k tomu často zaměstnání na plný úvazek.",
+        "procJeToDulezite": "Škola může podle běžných zápisových údajů poznat, kdo se pravděpodobně zdrží, a nabídnout mu podporu dřív, než se práce začne vléct. A pro samotné studenty je užitečné vědět, že práce při studiu a pozdější nástup jsou hlavní brzdy.",
+        "poznamkaKOmezenim": "Jde o data 500 studentů z jediné univerzity a model nikdo nevyzkoušel jinde, takže výsledky ukazují jen souvislosti, ne příčiny, a mimo Makerere University nemusí platit."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 414,
+              "end": 416
+            },
+            "matchedText": "94",
+            "messageCs": "Číslo „94“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „94 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[414,416]: 94"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 98,
+              "end": 101
+            },
+            "matchedText": "500",
+            "messageCs": "Číslo „500“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „500 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[98,101]: 500"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:regrese",
+            "span": {
+              "start": 435,
+              "end": 442
+            },
+            "matchedText": "regrese",
+            "messageCs": "Termín „regrese“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:regrese @ podrobneVysvetleni[435,442]: regrese"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 619,
+              "end": 621
+            },
+            "matchedText": "94",
+            "messageCs": "Číslo „94“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „94 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[619,621]: 94"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 625,
+              "end": 627
+            },
+            "matchedText": "95",
+            "messageCs": "Číslo „95“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „95 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[625,627]: 95"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 187
+            },
+            "matchedText": "Na ugandské Makerere University dokončí postgraduální studium včas jen menšina — z 500 sledovaných studentů zapsaných mezi lety 2017 a 2023 to stihlo 29 procent, tedy zhruba tři z deseti.",
+            "messageCs": "Tato věta má 29 slov a je moc dlouhá: „Na ugandské Makerere University dokončí postgraduální studium včas jen menšina …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[0,187]: Na ugandské Makerere University dokončí postgraduální studium včas jen menšina — z 500 sledovaných studentů zapsaných mezi lety 2017 a 2023 to stihlo 29 procent, tedy zhruba tři z deseti."
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 39,
+              "end": 49
+            },
+            "matchedText": " postgradu",
+            "messageCs": "Text opisuje původní název článku („ postgradu“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[39,49]:  postgradu"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 420,
+              "end": 422
+            },
+            "matchedText": "95",
+            "messageCs": "Číslo „95“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „95 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[420,422]: 95"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 101,
+              "end": 111
+            },
+            "matchedText": " postgradu",
+            "messageCs": "Text opisuje původní název článku („ postgradu“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[101,111]:  postgradu"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_english_original:statisticky-vyznamny",
+            "span": {
+              "start": 756,
+              "end": 776
+            },
+            "matchedText": "statisticky významné",
+            "messageCs": "U termínu „statisticky významný“ chybí při prvním použití anglický originál v závorce (např. „statisticky významný (statistically significant)“). Čtenář ten anglický výraz potká jinde (§2).",
+            "detail": "jargon:no_english_original:statisticky-vyznamny @ podrobneVysvetleni[756,776]: statisticky významné"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 1157,
+              "end": 1167
+            },
+            "matchedText": " postgradu",
+            "messageCs": "Text opisuje původní název článku („ postgradu“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[1157,1167]:  postgradu"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [
+    {
+      "source": "semantic-scholar",
+      "message": "Automatická krátká shrnutí dnes nebyla dostupná. Vysvětlení jsou proto napsaná přímo podle abstraktů, tedy podle shrnutí od samotných autorů.",
+      "detail": "HTTP 429 from https://api.semanticscholar.org/graph/v1/paper/arXiv:2608.21207?fields=paperId,title,abstract,tldr,externalIds,openAccessPdf,publicationDate,venue,isOpenAccess"
+    }
+  ],
+  "generatedAt": "2026-08-24T04:53:38.789Z",
+  "generatedOn": "2026-08-24",
+  "schemaVersion": 1
+}

@@ -536,6 +536,46 @@
       "titleKey": "dosedependenteffectsofhydrolysedyeastongutmicrobialdiversitygrowthperformanceantioxidantactivityandmeatqualityindenselystockedbroilers",
       "publishedOn": "2026-08-23",
       "category": "biology-food-agriculture"
+    },
+    {
+      "openalexId": "W7204012019",
+      "doi": "10.1016/j.gerinurse.2026.104281",
+      "arxivId": null,
+      "titleKey": "influenceofvirtualtourismmultisensorystimulationtherapyonolderadultswithmildcognitiveimpairmentamixedmethodsstudy",
+      "publishedOn": "2026-08-24",
+      "category": "ai-computing"
+    },
+    {
+      "openalexId": "W7204004979",
+      "doi": "10.1057/s41599-026-08748-x",
+      "arxivId": null,
+      "titleKey": "usingemojireducesdropoutofremoteworkersacausalanalysisongithub",
+      "publishedOn": "2026-08-24",
+      "category": "ai-computing"
+    },
+    {
+      "openalexId": "W7203977998",
+      "doi": "10.1145/3838806",
+      "arxivId": null,
+      "titleKey": "acachemodelingframeworkforacceleratorsystems",
+      "publishedOn": "2026-08-24",
+      "category": "ai-computing"
+    },
+    {
+      "openalexId": "W7203964426",
+      "doi": "10.1145/3842670",
+      "arxivId": null,
+      "titleKey": "structurederivedbottleneckawareschedulingformultitaskingmcmgpus",
+      "publishedOn": "2026-08-24",
+      "category": "ai-computing"
+    },
+    {
+      "openalexId": "W7203979571",
+      "doi": "10.1007/s44163-026-02000-w",
+      "arxivId": null,
+      "titleKey": "predictionofdelayedpostgraduategraduationusingmachinelearninginugandanhighereducation",
+      "publishedOn": "2026-08-24",
+      "category": "ai-computing"
     }
   ]
 }

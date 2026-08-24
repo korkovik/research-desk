@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Umělá inteligence a počítače – 24. srpna 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Umělá inteligence a počítače</h1>
+<p class="dateline"><time datetime="2026-08-24">24. srpna 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 5</p>
+<div class="summary"><p><span class="lead">Osm týdnů „virtuální turistiky&quot; pomohlo starším lidem s mírnou poruchou paměti a myšlení (anglicky mild cognitive impairment), tedy se stavem někde mezi běžným stárnutím a demencí.</span> Virtuální turistika tu znamená promítání přírodních a turistických míst doplněné o podněty pro další smysly — zvuky, vůně, doteky. Vědci rozdělili losem šestašedesát seniorů do dvou skupin: jedna na program chodila, druhá zatím čekala. Podle dotazníků se u zapojených zlepšilo myšlení, nálada, spánek i spokojenost se životem, a to ještě zhruba dva měsíce po skončení kurzu. V rozhovorech lidé mluvili také o lepší kondici a o pocitu, že nejsou sami.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Šlo o takzvaný smíšený výzkum: čísla z dotazníků doplnily rozhovory s účastníky. Vědci vybrali šestašedesát seniorů s mírným oslabením paměti a myšlení a losem je rozdělili na dvě poloviny. První skupina absolvovala osm týdnů virtuální turistiky. Druhá byla na čekací listině a program dostala až později. Sledování ale koncem kurzu neskončilo. Účastníky vědci testovali na začátku, pak v polovině programu, na jeho konci a ještě dvakrát potom — naposledy zhruba dva měsíce po skončení. Měřili paměť a myšlení, psychické potíže jako úzkost či podrážděnost, kvalitu života a spánek.</p>
+<p>Program lidi zjevně bavil. Předčasně z něj odešli jen zhruba čtyři lidé z šestašedesáti (6,06 %). Na naplánovaná setkání účastníci dorazili asi ve čtyřech případech z pěti (81,25 %). Ve všech čtyřech sledovaných oblastech se skupina s virtuální turistikou zlepšila. Zlepšení navíc pokračovalo i poté, co kurz skončil.</p>
+<p>V rozhovorech lidé popisovali, že se jim lépe spí, mají lepší náladu a cítí větší oporu okolí. Zmiňovali i lepší tělesnou kondici. Sami navrhovali, co by šlo vylepšit: pestřejší obsah a modernější techniku.</p>
+<p>Autoři z toho vyvozují, že podněty pro více smyslů najednou mohou zpomalovat úbytek paměti a myšlení. Nedostatek smyslových podnětů totiž patří mezi rizikové faktory demence.</p>
+<h3>Proč je to důležité</h3>
+<p>Mírné oslabení paměti se v rodinách řeší často a možností, jak s ním něco dělat, je málo. Tohle je levná a doma proveditelná činnost, která podle první studie stojí za vyzkoušení.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Qian Liu, Xiaoyu Li, Lijia Zhang, Xuechun Bai, Mingzhu Zhao, Sitao Zhang a další</dd>
+<dt>Časopis</dt>
+<dd>Geriatric Nursing</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-22">22. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1016/j.gerinurse.2026.104281" rel="noreferrer">10.1016/j.gerinurse.2026.104281</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7204012019" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1016/j.gerinurse.2026.104281" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o poměrně malý vzorek šestašedesáti lidí a kontrolní skupina jen čekala bez náhradní činnosti, takže část zlepšení mohla způsobit sama pozornost a společnost, ne konkrétní obsah programu.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 5</p>
+<div class="summary"><p><span class="lead">Smajlík v pracovní zprávě zní jako detail.</span> Na GitHubu — velké platformě, kde vývojáři z celého světa spolupracují na dálku a hlavně přes psaný text — přesto souvisí s tím, jestli člověk u projektu vydrží. Vědci porovnávali vývojáře, kteří v roce 2018 použili emoji aspoň v jednom příspěvku, s podobnými lidmi, kteří je nepoužili. Riziko, že do roka z projektu odejdou, bylo u „emoji skupiny&quot; zhruba poloviční, v absolutních číslech asi o 5 procentních bodů nižší. A čím víc emoji člověk používal, tím menší byla šance, že skončí.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Práce na dálku stojí na psaném textu. Odpověď přijde se zpožděním a emoce se z holé věty čtou špatně. Autoři si položili otázku, jestli emoji tenhle nedostatek aspoň zčásti vyrovnávají. Jako materiál si vybrali GitHub, kde vývojáři přispívají dobrovolně a domlouvají se skoro výhradně písemně.</p>
+<p>Samotné srovnání „kdo používá emoji&quot; a „kdo ne&quot; by nestačilo. Lidé, kteří sázejí smajlíky, se totiž můžou lišit i v jiných věcech — třeba být aktivnější nebo déle u projektu. Vědci proto použili statistickou metodu (propensity score), která k sobě páruje lidi s podobným profilem a liší se hlavně tím, jestli emoji použili. Až pak výsledky porovnali.</p>
+<p>Výsledek: použití emoji aspoň v jednom příspěvku v roce 2018 souviselo s tím, že riziko odchodu v následujícím roce kleslo na polovinu. V absolutních číslech je to pokles o 0,052, tedy asi o pět lidí ze sta. Vyšší intenzita používání znamenala ještě nižší riziko.</p>
+<p>Zajímavé jsou rozdíly mezi skupinami. U nováčků byl absolutní rozdíl větší, u dlouholetých přispěvatelů zase větší poměrný pokles. Silnější efekt měli lidé z kultur, kde se víc dbá na skupinu a na společenské normy — u nich může být drobný přátelský signál cennější.</p>
+<h3>Proč je to důležité</h3>
+<p>Práce na dálku a psaná komunikace dnes patří k běžnému pracovnímu i školnímu životu a tahle studie ukazuje, že i drobný přátelský signál v textu může souviset s tím, jestli u věci člověk zůstane.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Xuan Lu, Wei Ai, Qiaozhu Mei</dd>
+<dt>Časopis</dt>
+<dd>Humanities and Social Sciences Communications</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-22">22. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1057/s41599-026-08748-x" rel="noreferrer">10.1057/s41599-026-08748-x</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7204004979" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://www.nature.com/articles/s41599-026-08748-x_reference.pdf" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1057/s41599-026-08748-x" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o statistické zpracování dat z jedné platformy, takže i po pečlivém dorovnání skupin nelze vyloučit, že za výsledkem stojí nějaká nezměřená vlastnost lidí, kteří emoji používají.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 5</p>
+<div class="summary"><p>Návrháři specializovaných čipů (akcelerátorů) musí rozhodnout, jak velkou vyrovnávací paměť cache jim dát a kolik souběžných nevyřízených čtení z hlavní paměti zvládnou — a dosud to šlo spolehlivě zjistit jen zdlouhavou simulací celého obvodu. Tým představil model PlastiCache, který místo simulace odhadne chování paměti z proudu dvojic „adresa a čas&quot; a ke každému požadavku dopočítá, jak dlouho se na data bude čekat. V porovnání se skutečnou simulací obvodu model seřadil kandidátní návrhy od nejlepšího po nejhorší téměř stejně (Spearmanova korelace 0,93, kde 1,0 znamená shodné pořadí). Přitom počítá zhruba 545krát rychleji než starší analytické modely a asi 303krát rychleji než simulace obvodu — stihne tedy prověřit tři stovky návrhů v čase, za který simulace zvládne jediný. Pro čtenáře to znamená, že hledání dobrého poměru mezi velikostí čipu a jeho rychlostí se z týdnů zkracuje na hodiny.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Akcelerátor je čip stavěný na jednu úlohu — třeba na násobení řídkých matic, tedy tabulek čísel, kde je většina políček nula. Aby nečekal na pomalou hlavní paměť, má vlastní malou rychlou paměť zvanou cache. Návrhář musí zvolit její velikost, počet souběžně rozpracovaných čtení i šířku cesty, kterou se data vracejí. Dosud to spolehlivě ukázala až simulace hotového obvodu, která trvá dlouho.</p>
+<p>PlastiCache popisuje provoz do paměti jako dvojice adresa–čas a ke každému nevyřízenému čtení odhaduje, jak dlouho potrvá. Každý požadavek pak zařadí do jedné ze tří skupin: data už v cache leží, data se právě táhnou z paměti a lze se přidat k probíhajícímu čtení, nebo je nutné nové čtení zvenčí. Model navíc ukáže, co návrh brzdí nejvíc.</p>
+<p>Autoři pořadí návrhů porovnali se simulací skutečného obvodu; shoda pořadí byla vysoká (0,93 z maxima 1,0). Pak celý postup vyzkoušeli na programovatelném čipu FPGA, tedy hardwaru, na kterém se návrh dá otestovat nanečisto, na reálných úlohách včetně jazykového modelu — programu, který generuje text podobně jako ChatGPT.</p>
+<p>Sledovali součin zpoždění a plochy, tedy společnou míru „jak pomalé a jak velké to je&quot;. Proti metodě MOMS klesl v průměru o 45,6 procenta, tedy skoro na polovinu. Proti metodě MiCache o 25,9 procenta, tedy zhruba o čtvrtinu. V nejlepším případě to bylo 73,8 procenta (zbyla asi čtvrtina původní hodnoty), respektive 37,3 procenta (o víc než třetinu méně).</p>
+<h3>Proč je to důležité</h3>
+<p>Rychlejší hledání dobrého návrhu paměti znamená levnější, menší a úspornější čipy pro umělou inteligenci i běžné výpočty — tedy i nižší spotřebu energie v datových centrech, jejichž provoz platíme všichni v ceně služeb.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Lingfeng Pei, Wei Siew Liew, Udaree Chathurangee Hiranthika Kanewala, Trevor E. Carlson</dd>
+<dt>Časopis</dt>
+<dd>ACM Transactions on Architecture and Code Optimization</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-22">22. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1145/3838806" rel="noreferrer">10.1145/3838806</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7203977998" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://doi.org/10.1145/3838806" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1145/3838806" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o odhadovací model pro rané fáze návrhu, který přesnou simulaci obvodu nenahrazuje — dobře řadí návrhy podle kvality, ale ověřen byl jen na omezené sadě úloh a jednom typu výpočetní jednotky.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-4">
+<p class="paper-counter">Studie 4 z 5</p>
+<div class="summary"><p><span class="lead">Moderní grafické karty se skládají z několika menších čipů poskládaných dohromady.</span> Když na nich běží dvě úlohy naráz, perou se o paměť a vzájemně se zpomalují. Vědci proto navrhli plánovač SA-Scheduler: místo aby měřil, jak se program chová za běhu, odhadne jeho nároky předem z jeho zdrojového kódu. Na 105 dvojicích současně běžících programů zvýšil celkovou propustnost o 17,63 % proti umístění obou úloh na jeden čip. Proti jejich rozdělení mezi čipy byl lepší o 10,48 % — tedy zhruba o šestinu, respektive o desetinu práce navíc za stejný čas. Spravedlivější dělení výkonu mezi úlohy se zlepšilo až o 33,27 % a úsporný režim srazil průměrnou spotřebu až o 25,39 %, tedy asi o čtvrtinu.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Plánovač pracuje ve dvou krocích. Nejdřív přijde na řadu rozbor kódu, který proběhne ještě před spuštěním. Z funkce psané v CUDA (jazyk pro výpočty na grafických kartách) se vytáhnou dvě charakteristiky. První: kolik dat potřebuje mít po ruce nejmenší pracovní skupinka vláken. Druhá: jak často program sahá do hlavní paměti (autoři tomu říkají global memory intensity, tedy intenzita přístupů do globální paměti). S rozborem pomáhá malý jazykový model vyladěný na čtení programového kódu. Jednoduchý výpočetní model pak úlohu zařadí do jedné ze čtyř skupin, které autoři značí C, M1, M2 a M3. Skupina napovídá, o jaký zdroj se úloha nejspíš popere: o výpočetní jednotky, nebo o paměť na některé z úrovní. Podle toho plánovač rozhodne, na který čip úlohu posadí. Nepotřebuje k tomu úpravu hardwaru ani sledování běhu. Kolik výpočetních jednotek úloha dostane a zda se část čipu kvůli úspoře vypne, ladí až za chodu. I tady si vystačí s jednoduchými čítači, takže režie zůstává malá. Autoři přístup vyzkoušeli na 105 kombinacích dvou současně běžících programů. Smysl je jednoduchý: dosavadní plánovače sledují až následek toho, že si úlohy překážejí. Výsledek se přitom mění podle vstupních dat i podle toho, co běží vedle. Odhad z kódu je naopak stejný pokaždé a nic nestojí za běhu.</p>
+<h3>Proč je to důležité</h3>
+<p>Grafické karty z více čipů pohánějí datová centra i výpočty pro umělou inteligenci, kde na jednom stroji běží úlohy více uživatelů najednou. Chytřejší rozdělení práce znamená víc hotového výpočtu a nižší spotřebu elektřiny za stejné peníze.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Tiejian Zhang, Guangda Zhang, Lu Wang, Yandong He, 高继平, Hengzhu Liu a další</dd>
+<dt>Časopis</dt>
+<dd>ACM Transactions on Design Automation of Electronic Systems</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-22">22. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1145/3842670" rel="noreferrer">10.1145/3842670</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7203964426" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://doi.org/10.1145/3842670" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1145/3842670" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Výsledky vycházejí ze sady 105 dvojic programů na jedné konfiguraci karty; jak si plánovač povede u většího počtu souběžných úloh nebo u jiného hardwaru, práce neukazuje.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-5">
+<p class="paper-counter">Studie 5 z 5</p>
+<div class="summary"><p>Na ugandské Makerere University dokončí postgraduální studium včas jen menšina — z 500 sledovaných studentů zapsaných mezi lety 2017 a 2023 to stihlo 29 procent, tedy zhruba tři z deseti. Vědci zkusili, jestli se zpoždění dá odhadnout předem pomocí strojového učení, tedy programů, které si samy hledají vzorce v datech. Použili k tomu jen údaje, které univerzita běžně eviduje. Modely pak správně zařadily zhruba 94 až 95 studentů ze sta. Se zpožděním nejvíc souviselo zaměstnání a vyšší věk při nástupu, zatímco lepší průměr známek z předchozího studia riziko snižoval.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Šlo o zpětný pohled do dat, která univerzita stejně sbírá. Výzkumníci vzali anonymizované záznamy 500 postgraduálních studentů. Sledovali věk při nástupu, zaměstnání a průměr známek z předchozího studia. Anglicky se mu říká CGPA, tedy souhrnný průměr za celé bakalářské studium. Program pak hledal vzorce, které odlišují včasné absolventy od těch opožděných.</p>
+<p>Autoři porovnali pět různých postupů. Byla mezi nimi jednoduchá logistická regrese i složitější metody, například takzvaný náhodný les nebo kombinace více modelů dohromady. Rozdíly mezi nimi vyšly malé. Přesnost se pohybovala kolem 94 až 95 procent, tedy asi 94 až 95 správných odhadů ze sta. Nejlepší číslo měla shodou okolností ta nejjednodušší metoda. Autoři ale upozorňují, že rozdíly nebyly statisticky významné — jinými slovy, mohly vzniknout náhodou a na jiných datech by mohly dopadnout obráceně.</p>
+<p>Zajímavější než čísla jsou samotné souvislosti. Studenti, kteří při studiu chodili do práce, se zpožďovali častěji. Totéž platilo pro ty, kdo nastoupili ve vyšším věku. Naopak lepší studijní výsledky z dřívějška šanci na včasné dokončení zvyšovaly. Autoři to dávají do souvislosti s tím, jak postgraduální studium v Ugandě vypadá: hodně vlastního výzkumu, dlouhé psaní závěrečné práce a k tomu často zaměstnání na plný úvazek.</p>
+<h3>Proč je to důležité</h3>
+<p>Škola může podle běžných zápisových údajů poznat, kdo se pravděpodobně zdrží, a nabídnout mu podporu dřív, než se práce začne vléct. A pro samotné studenty je užitečné vědět, že práce při studiu a pozdější nástup jsou hlavní brzdy.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Musoke Robert Lubelenga, Florence Nameere Kivunike, Halimu Chongomweru, Emmanuel Ahishakiye</dd>
+<dt>Časopis</dt>
+<dd>Discover Artificial Intelligence</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-22">22. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1007/s44163-026-02000-w" rel="noreferrer">10.1007/s44163-026-02000-w</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7203979571" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://link.springer.com/content/pdf/10.1007/s44163-026-02000-w.pdf" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1007/s44163-026-02000-w" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o data 500 studentů z jediné univerzity a model nikdo nevyzkoušel jinde, takže výsledky ukazují jen souvislosti, ne příčiny, a mimo Makerere University nemusí platit.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<h2>Poznámka k dnešnímu vydání</h2>
+<ul class="degradations">
+<li>Automatická krátká shrnutí dnes nebyla dostupná. Vysvětlení jsou proto napsaná přímo podle abstraktů, tedy podle shrnutí od samotných autorů.</li>
+</ul>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 24. srpna 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>
