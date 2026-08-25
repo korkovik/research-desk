@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Zdraví a medicína – 25. srpna 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Zdraví a medicína</h1>
+<p class="dateline"><time datetime="2026-08-25">25. srpna 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 5</p>
+<div class="summary"><p><span class="lead">Potíže s polykáním se běžně spojují s vysokým věkem, ale na Kypru je hlásí i mladí lidé.</span> Vědci rozdali dotazník o polykání (Eating Assessment Tool-10, zkráceně EAT-10) 1 163 dospělým obyvatelům Kypru. Skóre naznačující příznaky potíží s polykáním mělo 18,3 procenta z nich — tedy skoro každý pátý. Souvislost s věkem nebyla přímočará: vyšší výskyt se objevil u lidí od 65 let výš, ale také u nejmladší skupiny, tedy u osmnácti až dvacetipětiletých. Autoři proto přidali druhé měření na skupině dvou set mladých studentů kyperské technické univerzity a vyšlo jim v podstatě totéž. Dotazník ale sám neřekne, co za příznaky stojí — může to být reflux i běžné dušení se při polykání tablet — takže skutečný podíl skutečných poruch polykání je pravděpodobně nižší.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Polykací potíže (odborně dysfagie) se obvykle popisují jako problém starších lidí a lidí s dalšími nemocemi. Data o celé populaci, a zvlášť o mladších dospělých, ale téměř nejsou. Autoři proto uspořádali rozsáhlý dotazníkový průzkum mezi dospělými, kteří mají na Kypru trvalé bydliště a je jim aspoň osmnáct let. Použili EAT-10, krátký dotazník s deseti otázkami, v němž člověk sám hodnotí, jak moc mu polykání dělá problém. Skóre 3 a víc se bere jako signál příznaků.</p>
+<p>V hlavní analýze 1 163 lidí překročilo tuto hranici 18,3 procenta účastníků, tedy skoro každý pátý. Nejsilněji s výsledkem souvisel věk a celkový zdravotní stav. Věková souvislost ale nešla po přímce: nejvíc příznaků hlásili lidé od 65 let, hned po nich ale nejmladší skupina od osmnácti do dvaceti pěti let. To autoři nečekali, a tak přidali doplňkové měření u 199 mladých dospělých ze studentů kyperské technické univerzity. Výsledky odpovídaly hlavní analýze a mezi podskupinami studentů se skóre výrazně nelišilo.</p>
+<p>Autoři sami upozorňují na hlavní slabinu. EAT-10 zjišťuje příznaky, ne jejich příčinu. Za obtížemi mladých lidí může stát pálení žáhy a návrat žaludeční kyseliny do jícnu (reflux) nebo jen problém spolknout velkou tabletu. Uváděný podíl tedy může být nadhodnocený a k rozlišení skutečných poruch polykání je potřeba důkladnější vyšetření.</p>
+<h3>Proč je to důležité</h3>
+<p>Potíže s polykáním se dají léčit, ale u mladého člověka je málokdo hledá — a přitom je podle tohoto průzkumu hlásí podobně často jako senioři. Zároveň platí, že samotný dotazník diagnózu nenahrazuje.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Maria Demetriou, Fidhan S. Gugo, Polykarpou Polina, Aikaterini Kyprianou, Anastasios M. Georgiou</dd>
+<dt>Časopis</dt>
+<dd>Dysphagia</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-24">24. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1007/s00455-026-11000-y" rel="noreferrer">10.1007/s00455-026-11000-y</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7204038552" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1007/s00455-026-11000-y" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o dotazníkový průzkum z jedné země, kde lidé hodnotili sami sebe a nástroj nerozlišuje příčiny, takže skutečný výskyt poruch polykání může být nižší, než uvedená čísla naznačují.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 5</p>
+<div class="summary"><p><span class="lead">Během pandemie covidu-19 dostávala část brazilských dětí léky a doplňky, u kterých se prokázalo, že proti covidu nefungují.</span> Vědci se ptali matek a opatrovníků 3098 dětí ve věku šesti až sedmi let ze studie, která od roku 2015 sleduje všechny děti narozené v brazilském městě Pelotas, a zjistili, že takový přípravek dostalo 13,9 % dětí — tedy přibližně každé sedmé. Šlo o antibiotikum azithromycin, chlorochin a hydroxychlorochin, ivermektin a nitazoxanid, případně vitamin C, vitamin D a zinek. Nejčastěji je dostávaly děti z rodin, které covid zasáhl silněji (úmrtí nebo odloučení od blízkého člověka, život se seniorem, astma, bronchitida či obezita), a naopak nejméně tam, kde se rodina chovala preventivně. Neočkované děti měly proti očkovaným asi dva a půlkrát vyšší šanci, že takový lék dostanou.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Data pocházejí z dlouhodobé studie, která sleduje děti narozené roku 2015 v brazilském městě Pelotas; autoři použili kontrolní návštěvu ve věku šesti až sedmi let a zahrnuli jen rozhovory pořízené v době, kdy už byla ve městě k dispozici vakcína proti covidu. Rodiče odpovídali, zda dítě dostalo některý z léků bez prokázaného účinku proti covidu, nebo doplňky (vitamin C, vitamin D, zinek), a doplnili údaje o vzdělání, příjmu a zdraví.</p>
+<p>Výzkumníci si pak vytvořili dvě jednoduchá skóre. První měřilo, jak silně se covid dotkl konkrétního dítěte: počítala se úmrtí nebo odloučení od blízkého člověka i rizikové okolnosti, jako je společné bydlení se staršími lidmi, astma, bronchitida nebo obezita. Druhé skóre popisovalo preventivní chování rodiny — omezení pobytu venku a očkování.</p>
+<p>Výsledek: 13,9 % dětí (asi jedno ze sedmi) dostalo něco z uvedeného seznamu. Čím vyšší bylo skóre zátěže covidem, tím častěji; čím vyšší bylo skóre prevence, tím méně často. Rozdíl u očkování byl výrazný — neočkované děti měly 2,57krát vyšší šanci, že jim rodiče podají lék mimo schválené použití, tedy přibližně dvaapůlkrát vyšší než děti očkované.</p>
+<p>Autoři z toho vyvozují, že jde o pochopitelnou reakci vystrašených rodin na ohrožení: kde chybí důvěryhodná informace nebo dostupná prevence, sáhne člověk po tom, co je po ruce. Doporučují proto při příštích zdravotních krizích lépe a srozumitelněji vysvětlovat, co funguje a co ne.</p>
+<h3>Proč je to důležité</h3>
+<p>Ukazuje, že v době nejistoty rodiče sahají po lécích, které dítěti nepomohou a mohou mu uškodit — a že tomu lze předejít hlavně srozumitelným vysvětlováním, ne zákazy.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Andréa Dâmaso Bertoldi, Fernando Silva Guimarães, Alexandra Crispim Boing, Marysabel Pinto Telis Silveira, Pedro Curi Hallal, Mariângela Freitas da Silveira</dd>
+<dt>Časopis</dt>
+<dd>Pharmacoepidemiology and Drug Safety</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-23">23. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1002/pds.70460" rel="noreferrer">10.1002/pds.70460</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7204044691" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1002/pds.70460" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Údaje o podávání léků vycházejí z toho, co si rodiče zpětně vybavili, jde o jedno konkrétní brazilské město a studie ukazuje jen souvislosti, ne to, že by neočkovanost sama podávání léků způsobovala.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 5</p>
+<div class="summary"><p><span class="lead">Kousek čokolády dokáže krátkodobě zmírnit bolest — ale nezdá se, že by o tom rozhodovalo množství kakaa.</span> Vědci vyvolali třicítce zdravých dobrovolníků bolest žvýkacího svalu vpichem solného roztoku a měřili, jak silná a jak dlouhá byla před a po sní čokolády: bílé, mléčné a hořké. Nejlépe fungovala mléčná čokoláda, kterou účastníci zároveň nejčastěji označili za svou nejoblíbenější: špička bolesti byla asi o čtvrtinu nižší a bolest odezněla přibližně o třetinu dřív než po hořké čokoládě. Bílá čokoláda naopak vyšla o pár procent hůř než hořká. Obsah kakaa ani cukru sám o sobě s výsledky jasně nesouvisel, takže úleva podle autorů pramení spíš z toho, že si člověk dá něco, co mu chutná.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Do studie se zapojilo třicet zdravých lidí bez bolestí — patnáct mužů a patnáct žen, v průměru necelých pětadvacet let. Každý prošel třemi sezeními s odstupem jednoho týdne a ani účastník, ani hodnotitel nevěděli, který druh čokolády je právě na řadě. Bolest vědci vyvolávali vpichem koncentrovaného solného roztoku do žvýkacího svalu na tváři, a to dvakrát za sezení: jednou před sníst čokolády a jednou po. Účastníci pak na posuvné stupnici označovali, jak silná bolest byla a jak dlouho trvala. Testovaly se tři druhy: bílá (30 % kakaa), mléčná (34 %) a hořká (70 %). Nejlépe vyšla mléčná: špička bolesti po ní byla asi o čtvrtinu nižší než po hořké a bolest odeznívala přibližně o třetinu rychleji. Bílá čokoláda si vedla o něco hůř než hořká, rozdíl byl ale malý. Klíčové zjištění je jiné: když vědci sledovali, který druh měl který účastník nejradši, ukázalo se, že oblíbená čokoláda snižovala bolest víc než ta méně oblíbená — a v tomto souboru byla nejoblíbenější právě mléčná. Samotné složení, tedy podíl kakaa a cukru, přitom s výsledky jasně nesouviselo. Protože šlo o malé množství čokolády a krátkou dobu, autoři nepřičítají účinek látkám v kakau, ale okamžité chuťové a emoční odpovědi — tomu, že příjemný zážitek zapojí systém odměny v mozku a bolest tím trochu utlumí.</p>
+<h3>Proč je to důležité</h3>
+<p>Naznačuje to, že u krátké, ostré bolesti může pomoct i to, co má člověk prostě rád, a že „zdravější&quot; varianta s vysokým obsahem kakaa nemusí být automaticky ta účinnější.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Maria Christidis, Dyanne Medina Flores, Anastasios Grigoriadis, Abhishek Kumar, Giuliana Estefanía Lunecke Serendero, Mario Brondani a další</dd>
+<dt>Časopis</dt>
+<dd>Food, Nutrition and Health.</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-24">24. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1007/s44403-026-00076-x" rel="noreferrer">10.1007/s44403-026-00076-x</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7204051077" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://doi.org/10.1007/s44403-026-00076-x" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1007/s44403-026-00076-x" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o malý experiment na třiceti mladých zdravých lidech s umělou, krátkodobě vyvolanou bolestí, takže výsledky se nedají bez dalšího ověření přenášet na dlouhodobé bolesti v běžném životě.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-4">
+<p class="paper-counter">Studie 4 z 5</p>
+<div class="summary"><p><span class="lead">Zhubnout se vyplatí, jenže výhoda sama od sebe nedrží.</span> Dietou až na normální hmotnost prošlo 221 žen s nadváhou, tedy něco přes dvě stovky účastnic. Po zhubnutí jim spočítaný odhad rizika srdečních příhod a cukrovky druhého typu na deset let dopředu klesl. Za rok se ale část kil vrátila: průměrné BMI (poměr hmotnosti a výšky) šlo z 28,3 na 23,9, tedy z nadváhy do normy, a pak zpět na 25,8, na její hranici. S kily se vrátil i díl rizika — kromě žen, které k dietě posilovaly, u těch zůstal odhad rizika cukrovky nižší i po roce.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Vědci pracovali se ženami s nadváhou, které se předtím téměř nehýbaly. Bylo jim od 21 do 49 let, tedy od začátku dvacítky do konce čtyřicítky. Náhodně je rozdělili do tří skupin: dieta a vytrvalostní pohyb, dieta a posilování, nebo dieta samotná. Všechny držely velmi přísný jídelníček s 800 kilokaloriemi denně. Hubnutí končilo až ve chvíli, kdy BMI kleslo pod 25 — tedy z nadváhy do normálního pásma. Z 221 účastnic bylo 115 Afroameričanek, tedy asi polovina. Riziko se přitom nesledovalo podle toho, kdo skutečně onemocněl. Autoři použili rovnice, které z naměřených hodnot odhadují pravděpodobnost potíží v příštích deseti letech. Odhad rizika srdečních příhod klesl po zhubnutí ve všech třech skupinách. Za rok se ale ve všech zase zvedl. Nejvíc si polepšila skupina jen s dietou, a to víc než skupina s posilováním. U cukrovky druhého typu klesl odhad rizika také ve všech skupinách. Po roce se vrátil zpět u vytrvalostního cvičení i u samotné diety. Jen u posilování zůstal po roce zřetelně nižší než na začátku. Kdo po dietě dál cvičil, měl návrat rizika cukrovky menší. Průměrné BMI mezitím spadlo na 23,9 (normální hmotnost) a po roce stouplo na 25,8 (mírná nadváha). Autoři z toho vyvozují, že posilování má v programech hubnutí své místo právě kvůli cukrovce.</p>
+<h3>Proč je to důležité</h3>
+<p>Většina lidí po dietě část kil nabere zpět, a tahle práce ukazuje, že se s nimi vrací i zdravotní riziko — tedy že rozhoduje spíš to, co přijde po hubnutí, než samo hubnutí. Naznačuje také, že cvičení se zátěží může pomoct udržet aspoň nižší riziko cukrovky.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Abdelrahman ELSHAKANKIRY, Gary R. Hunter, Cátia Martins, Gordon Fisher, W. Timothy Garvey, Carrie R. Howell</dd>
+<dt>Časopis</dt>
+<dd>Obesity</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-23">23. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1002/oby.70291" rel="noreferrer">10.1002/oby.70291</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7204045077" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1002/oby.70291" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Šlo o odhad rizika z výpočtových rovnic, ne o skutečně zaznamenané infarkty či případy cukrovky, a účastnicemi byly jen ženy s nadváhou, které se předtím nehýbaly — na jiné skupiny se výsledek přenášet nedá.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-5">
+<p class="paper-counter">Studie 5 z 5</p>
+<div class="summary"><p><span class="lead">Cvičení, při kterém člověk tlačí bradou proti odporu (anglicky chin tuck against resistance, CTAR), po šesti týdnech posílilo svaly mezi bradou a hrudní kostí.</span> Vědci to vyzkoušeli na 42 zdravých dospělých. Jedna skupina mačkala bradou nafukovací míček, druhá nové pružinové zařízení s pevným odporem a třetí totéž zařízení s odporem, který se postupem času zvyšoval. Síla se měřitelně zvýšila ve všech třech skupinách, žádná z nich ale nebyla prokazatelně lepší než ostatní. Studie zatím neříká nic o tom, že by se díky cvičení zlepšilo samotné polykání.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Svaly nad jazylkou a pod ní leží mezi bradou a hrudní kostí. Při polykání táhnou jazylku a hrtan vzhůru a vpřed a otevírají tím vstup do jícnu. Když zeslábnou, polykání se zhoršuje. Cvičení proti odporu je proto u poruch polykání běžnou součástí terapie.</p>
+<p>Autoři náhodně rozdělili 42 zdravých dospělých do tří skupin. Všichni cvičili šest týdnů doma a jejich docházku k cvičení zaznamenávala digitální aplikace. Sílu vědci měřili před začátkem a po skončení programu. Použili ruční měřidlo tlaku (dynamometr): člověk má otevřená ústa a tlačí bradou proti čidlu, jak nejsilněji dokáže.</p>
+<p>Výsledky se zlepšily ve všech třech skupinách. Prostřední hodnota přírůstku (medián, tedy hodnota, nad kterou byla polovina lidí a pod kterou druhá polovina) činila u nafukovacího míčku 3,65 kilogramu síly. To je tlak, jaký odpovídá zvednutí necelých čtyř kilogramů. U nového zařízení s pevným odporem to bylo 2,25 kilogramu, tedy přírůstek o něco menší, a u postupně zvyšovaného odporu 3,20 kilogramu. Rozdíly mezi skupinami se ztrácely v běžném rozptylu mezi jednotlivými lidmi. Žádný z postupů tedy nevyšel jako lepší. Nezáleželo ani na tom, jak pečlivě kdo cvičil.</p>
+<p>Z toho plyne jednoduchý závěr: tyto svaly na domácí cvičení reagují a posilují se. Jestli se tím zlepší i samotné polykání, studie neměřila.</p>
+<h3>Proč je to důležité</h3>
+<p>Potíže s polykáním potkávají hlavně starší lidi a pacienty po mrtvici a zhoršují jim jídlo, pití i bezpečnost dýchacích cest. Tato práce ukazuje, že příslušné svaly lze posilovat jednoduchým cvičením doma, bez návštěvy ordinace.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Kelly Salmon</dd>
+<dt>Časopis</dt>
+<dd>Dysphagia</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-24">24. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1007/s00455-026-10998-5" rel="noreferrer">10.1007/s00455-026-10998-5</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7204035568" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1007/s00455-026-10998-5" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Šlo o malý vzorek 42 zdravých dospělých a měřila se jen síla svalů, nikoli samotné polykání, takže přenos k lidem s poruchou polykání zůstává nepotvrzený.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 25. srpna 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>

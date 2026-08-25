@@ -1,0 +1,805 @@
+{
+  "date": "2026-08-25",
+  "categoryKey": "health-medicine",
+  "categoryLabel": "Zdraví a medicína",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7204038552",
+        "title": "Prevalence of Dysphagia Symptoms in the General Population of Cyprus",
+        "abstract": "Abstract Dysphagia is commonly linked to advanced age and coexisting health conditions, but population-level data, especially for younger adults, are limited. This study sought to determine the prevalence of dysphagia symptoms in the general population of Cyprus and examine how it varies across demographic and clinical groups. A large-scale survey was carried out among adult permanent residents of Cyprus aged 18 years and older. Dysphagia symptoms were evaluated using the Eating Assessment Tool-10 (EAT-10). In the primary analysis of 1,163 participants, 18.3% scored ≥ 3 on the EAT-10, indicating a substantial prevalence of dysphagia symptoms in the adult population, with age and health status emerging as the primary associated factors. The association between age and dysphagia risk was non-linear, with higher prevalence observed in both older adults (≥ 65 years) and younger adults (18–25 years). Given the unexpectedly high prevalence of dysphagia in the 18–25 age group, a supplementary analysis was conducted in a cohort of 199 young adults recruited from the student population of the Cyprus University of Technology (CUT). The findings were consistent with those of the primary analysis, showing no meaningful differences in EAT-10 scores between subgroups. Overall, dysphagia symptoms are common among young adults in the Cypriot population and are not confined to older individuals. These findings suggest that swallowing-related symptoms may arise from diverse underlying mechanisms and etiologies (e.g., reflux, pill-swallowing difficulties, etc.) across age groups. As the EAT-10 is a symptom-based screening tool that does not distinguish between underlying causes, the reported dysphagia symptom-based prevalence may be inflated, highlighting the need for more comprehensive assessment approaches to improve etiological differentiation and clinical identification of swallowing disorders.",
+        "date": "2026-08-24",
+        "url": "https://doi.org/10.1007/s00455-026-11000-y",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1007/s00455-026-11000-y",
+        "openAlexId": "W7204038552",
+        "subfield": {
+          "id": "subfields/3616",
+          "name": "Speech and Hearing"
+        },
+        "field": {
+          "id": "fields/36",
+          "name": "Health Professions"
+        },
+        "topic": {
+          "id": "T11358",
+          "name": "Dysphagia Assessment and Management"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Maria Demetriou",
+          "Fidhan S. Gugo",
+          "Polykarpou Polina",
+          "Aikaterini Kyprianou",
+          "Anastasios M. Georgiou"
+        ],
+        "venue": "Dysphagia",
+        "indexedDate": "2026-08-24",
+        "referencedWorksCount": 28,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8851,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.8366,
+          "total": 0.9054,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.3663
+          },
+          "everydayDomains": [
+            "food",
+            "school",
+            "health",
+            "family"
+          ],
+          "subfieldKey": "subfields/3616",
+          "evidence": [
+            "total 0.9054 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.89 = P 0.94 − 0.45×t 0.00 − 0.15×j 0.37",
+            "outcome verbs (v 1.00): improves, cut, causes, linked to",
+            "recognisable subjects (s 1.00): participants, students, adults, older adults, residents",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.37): 10/273 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 4 domain(s) — food, school, health, family",
+            "everyday terms (7): eating, student, students, university, health, screening, older adults",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-24)",
+            "credibility 0.84 = 0.40×c1 1.00 + 0.25×c2 0.77 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Dysphagia",
+            "c2 0.77: n = 1163",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1007/s00455-026-11000-y)"
+      },
+      "summary": {
+        "souhrn": "Potíže s polykáním se běžně spojují s vysokým věkem, ale na Kypru je hlásí i mladí lidé. Vědci rozdali dotazník o polykání (Eating Assessment Tool-10, zkráceně EAT-10) 1 163 dospělým obyvatelům Kypru. Skóre naznačující příznaky potíží s polykáním mělo 18,3 procenta z nich — tedy skoro každý pátý. Souvislost s věkem nebyla přímočará: vyšší výskyt se objevil u lidí od 65 let výš, ale také u nejmladší skupiny, tedy u osmnácti až dvacetipětiletých. Autoři proto přidali druhé měření na skupině dvou set mladých studentů kyperské technické univerzity a vyšlo jim v podstatě totéž. Dotazník ale sám neřekne, co za příznaky stojí — může to být reflux i běžné dušení se při polykání tablet — takže skutečný podíl skutečných poruch polykání je pravděpodobně nižší.",
+        "podrobneVysvetleni": "Polykací potíže (odborně dysfagie) se obvykle popisují jako problém starších lidí a lidí s dalšími nemocemi. Data o celé populaci, a zvlášť o mladších dospělých, ale téměř nejsou. Autoři proto uspořádali rozsáhlý dotazníkový průzkum mezi dospělými, kteří mají na Kypru trvalé bydliště a je jim aspoň osmnáct let. Použili EAT-10, krátký dotazník s deseti otázkami, v němž člověk sám hodnotí, jak moc mu polykání dělá problém. Skóre 3 a víc se bere jako signál příznaků.\n\nV hlavní analýze 1 163 lidí překročilo tuto hranici 18,3 procenta účastníků, tedy skoro každý pátý. Nejsilněji s výsledkem souvisel věk a celkový zdravotní stav. Věková souvislost ale nešla po přímce: nejvíc příznaků hlásili lidé od 65 let, hned po nich ale nejmladší skupina od osmnácti do dvaceti pěti let. To autoři nečekali, a tak přidali doplňkové měření u 199 mladých dospělých ze studentů kyperské technické univerzity. Výsledky odpovídaly hlavní analýze a mezi podskupinami studentů se skóre výrazně nelišilo.\n\nAutoři sami upozorňují na hlavní slabinu. EAT-10 zjišťuje příznaky, ne jejich příčinu. Za obtížemi mladých lidí může stát pálení žáhy a návrat žaludeční kyseliny do jícnu (reflux) nebo jen problém spolknout velkou tabletu. Uváděný podíl tedy může být nadhodnocený a k rozlišení skutečných poruch polykání je potřeba důkladnější vyšetření.",
+        "procJeToDulezite": "Potíže s polykáním se dají léčit, ale u mladého člověka je málokdo hledá — a přitom je podle tohoto průzkumu hlásí podobně často jako senioři. Zároveň platí, že samotný dotazník diagnózu nenahrazuje.",
+        "poznamkaKOmezenim": "Jde o dotazníkový průzkum z jedné země, kde lidé hodnotili sami sebe a nástroj nerozlišuje příčiny, takže skutečný výskyt poruch polykání může být nižší, než uvedená čísla naznačují."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 325,
+              "end": 327
+            },
+            "matchedText": "10",
+            "messageCs": "Číslo „10“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „10 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[325,327]: 10"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 832,
+              "end": 835
+            },
+            "matchedText": "199",
+            "messageCs": "Číslo „199“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „199 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[832,835]: 199"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1035,
+              "end": 1037
+            },
+            "matchedText": "10",
+            "messageCs": "Číslo „10“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „10 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1035,1037]: 10"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 580,
+              "end": 759
+            },
+            "matchedText": "Dotazník ale sám neřekne, co za příznaky stojí — může to být reflux i běžné dušení se při polykání tablet — takže skutečný podíl skutečných poruch polykání je pravděpodobně nižší.",
+            "messageCs": "Tato věta má 28 slov a je moc dlouhá: „Dotazník ale sám neřekne, co za příznaky stojí — může to být reflux i běžné duš…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[580,759]: Dotazník ale sám neřekne, co za příznaky stojí — může to být reflux i běžné dušení se při polykání tablet — takže skutečný podíl skutečných poruch polykání je pravděpodobně nižší."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=16.18",
+            "messageCs": "Věty jsou v průměru moc dlouhé (16,2 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=16.18"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7204044691",
+        "title": "Pediatric Use of Off‐Label Medicines and Nonevidence‐Based Supplements for COVID ‐19: Findings From the 2015 Pelotas Birth Cohort Study (Brazil)",
+        "abstract": "ABSTRACT Purpose Pediatric off‐label medicine use increased during the COVID‐19 pandemic, exposing children to nonevidence‐based treatments. We described the use of nonevidence‐based COVID‐19 medicines and supplements among children from the 2015 Pelotas Birth Cohort, according to sociodemographic and health‐related characteristics. Methods Data from the 6–7‐year follow‐up were analyzed. Mothers/caregivers reported children's use of nonevidence‐based medicines (azithromycin, chloroquine/hydroxychloroquine, ivermectin, nitazoxanide) and supplements (vitamin C, vitamin D, and zinc) along with sociodemographic and health‐related characteristics. Two scores were analyzed: (1) child's COVID‐19 burden score (considering negative experiences such as death or separation from a close person due to COVID‐19, and risk factors such as living with older adults or having asthma, bronchitis, or obesity) and (2) preventive behavior score (limited outdoor exposure during COVID‐19 and vaccine uptake against COVID‐19). Hierarchical logistic regression analyses were used to identify factors associated with nonevidence‐based medicine and supplement use. Results Among 3098 children interviewed after COVID‐19 vaccines became available in the municipality, 13.9% (95% CI 12.7–15.2) used nonevidence‐based medicines and supplements for COVID‐19. Overall, the use of nonevidence‐based medicines and supplements increased with higher COVID‐19 burden scores and decreased with higher preventive behavior scores. Unvaccinated children had 2.57‐fold higher odds of using off‐label medicines than vaccinated children. Conclusions These findings highlight behavioral responses during a health emergency and suggest that public health policies should strengthen evidence‐based risk communication and discourage inappropriate medicine use during future health emergencies.",
+        "date": "2026-08-23",
+        "url": "https://doi.org/10.1002/pds.70460",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1002/pds.70460",
+        "openAlexId": "W7204044691",
+        "subfield": {
+          "id": "subfields/2735",
+          "name": "Pediatrics, Perinatology and Child Health"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T12547",
+          "name": "Pharmaceutical studies and practices"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Andréa Dâmaso Bertoldi",
+          "Fernando Silva Guimarães",
+          "Alexandra Crispim Boing",
+          "Marysabel Pinto Telis Silveira",
+          "Pedro Curi Hallal",
+          "Mariângela Freitas da Silveira"
+        ],
+        "venue": "Pharmacoepidemiology and Drug Safety",
+        "indexedDate": "2026-08-24",
+        "referencedWorksCount": 27,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7834,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.8632,
+          "total": 0.8685,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 1,
+            "q": 1,
+            "c": 0.5,
+            "t": 0,
+            "j": 0.1938
+          },
+          "everydayDomains": [
+            "food",
+            "health",
+            "family"
+          ],
+          "subfieldKey": "subfields/2735",
+          "evidence": [
+            "total 0.8685 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.78 = P 0.81 − 0.45×t 0.00 − 0.15×j 0.19",
+            "outcome verbs (v 0.75): increased, decreased, associated with",
+            "recognisable subjects (s 1.00): children, adults, mothers, older adults",
+            "quantified effect (q 1): percentage, 95% CI",
+            "title concreteness (c 0.50): −0.3 no outcome verb or recognisable subject in the title; −0.2 title is 20 words",
+            "jargon density (j 0.19): 5/258 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — food, health, family",
+            "everyday terms (11): obesity, supplement, health, vaccine, covid, asthma, treatment, child, children, older adults, caregiver",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-24)",
+            "credibility 0.86 = 0.40×c1 1.00 + 0.25×c2 0.87 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Pharmacoepidemiology and Drug Safety",
+            "c2 0.87: n = 3098",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1002/pds.70460)"
+      },
+      "summary": {
+        "souhrn": "Během pandemie covidu-19 dostávala část brazilských dětí léky a doplňky, u kterých se prokázalo, že proti covidu nefungují. Vědci se ptali matek a opatrovníků 3098 dětí ve věku šesti až sedmi let ze studie, která od roku 2015 sleduje všechny děti narozené v brazilském městě Pelotas, a zjistili, že takový přípravek dostalo 13,9 % dětí — tedy přibližně každé sedmé. Šlo o antibiotikum azithromycin, chlorochin a hydroxychlorochin, ivermektin a nitazoxanid, případně vitamin C, vitamin D a zinek. Nejčastěji je dostávaly děti z rodin, které covid zasáhl silněji (úmrtí nebo odloučení od blízkého člověka, život se seniorem, astma, bronchitida či obezita), a naopak nejméně tam, kde se rodina chovala preventivně. Neočkované děti měly proti očkovaným asi dva a půlkrát vyšší šanci, že takový lék dostanou.",
+        "podrobneVysvetleni": "Data pocházejí z dlouhodobé studie, která sleduje děti narozené roku 2015 v brazilském městě Pelotas; autoři použili kontrolní návštěvu ve věku šesti až sedmi let a zahrnuli jen rozhovory pořízené v době, kdy už byla ve městě k dispozici vakcína proti covidu. Rodiče odpovídali, zda dítě dostalo některý z léků bez prokázaného účinku proti covidu, nebo doplňky (vitamin C, vitamin D, zinek), a doplnili údaje o vzdělání, příjmu a zdraví.\n\nVýzkumníci si pak vytvořili dvě jednoduchá skóre. První měřilo, jak silně se covid dotkl konkrétního dítěte: počítala se úmrtí nebo odloučení od blízkého člověka i rizikové okolnosti, jako je společné bydlení se staršími lidmi, astma, bronchitida nebo obezita. Druhé skóre popisovalo preventivní chování rodiny — omezení pobytu venku a očkování.\n\nVýsledek: 13,9 % dětí (asi jedno ze sedmi) dostalo něco z uvedeného seznamu. Čím vyšší bylo skóre zátěže covidem, tím častěji; čím vyšší bylo skóre prevence, tím méně často. Rozdíl u očkování byl výrazný — neočkované děti měly 2,57krát vyšší šanci, že jim rodiče podají lék mimo schválené použití, tedy přibližně dvaapůlkrát vyšší než děti očkované.\n\nAutoři z toho vyvozují, že jde o pochopitelnou reakci vystrašených rodin na ohrožení: kde chybí důvěryhodná informace nebo dostupná prevence, sáhne člověk po tom, co je po ruce. Doporučují proto při příštích zdravotních krizích lépe a srozumitelněji vysvětlovat, co funguje a co ne.",
+        "procJeToDulezite": "Ukazuje, že v době nejistoty rodiče sahají po lécích, které dítěti nepomohou a mohou mu uškodit — a že tomu lze předejít hlavně srozumitelným vysvětlováním, ne zákazy.",
+        "poznamkaKOmezenim": "Údaje o podávání léků vycházejí z toho, co si rodiče zpětně vybavili, jde o jedno konkrétní brazilské město a studie ukazuje jen souvislosti, ne to, že by neočkovanost sama podávání léků způsobovala."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 259
+            },
+            "matchedText": "Data pocházejí z dlouhodobé studie, která sleduje děti narozené roku 2015 v brazilském městě Pelotas; autoři použili kontrolní návštěvu ve věku šesti až sedmi let a zahrnuli jen rozhovory pořízené v době, kdy už byla ve městě k dispozici vakcína proti covidu.",
+            "messageCs": "Tato věta má 42 slov a je moc dlouhá: „Data pocházejí z dlouhodobé studie, která sleduje děti narozené roku 2015 v bra…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[0,259]: Data pocházejí z dlouhodobé studie, která sleduje děti narozené roku 2015 v brazilském městě Pelotas; autoři použili kontrolní návštěvu ve věku šesti až sedmi let a zahrnuli jen rozhovory pořízené v době, kdy už byla ve městě k dispozici vakcína proti covidu."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=22.94",
+            "messageCs": "Věty jsou v průměru moc dlouhé (22,9 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=22.94"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=4",
+            "messageCs": "Počet vět delších než 30 slov: 4. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=4"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 274,
+              "end": 282
+            },
+            "matchedText": " Pelotas",
+            "messageCs": "Text opisuje původní název článku („ Pelotas“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[274,282]:  Pelotas"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 92,
+              "end": 100
+            },
+            "matchedText": " Pelotas",
+            "messageCs": "Text opisuje původní název článku („ Pelotas“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[92,100]:  Pelotas"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=45.3",
+            "messageCs": "Text se celkově čte těžko (index 45 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=45.3"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7204051077",
+        "title": "Effect of chocolate preference and cocoa content on experimentally induced muscle pain",
+        "abstract": "Abstract Objectives Chocolate consumption has been associated with pain reduction, but it remains unclear whether this effect depends on cocoa concentration or individual preference. This study aimed to investigate whether chocolate preference and/or cocoa content modulate experimentally induced muscle pain in healthy men and women. Methods Thirty healthy, pain-free participants (15 men, 15 women; mean age 24.6 years) underwent three randomized, double-blind, crossover sessions separated by one-week washout periods. Pain was induced twice per session by intramuscular hypertonic saline injections into the masseter muscle, before and after ingestion of white (30% cocoa), milk (34%), or dark (70%) chocolate. Peak-pain intensity and pain-duration were assessed using a visual analogue scale. Data were analyzed using multilevel Poisson regression models accounting for repeated measures. Results Both chocolate type and individual preference significantly influenced pain outcomes. Milk chocolate produced the strongest analgesic effect, showing lower peak-pain (IRR = 0.75, 95% CI:0.64–0.88) and shorter pain-duration (IRR = 0.64, 95% CI:0.57–0.72; p < 0.01) compared with dark chocolate. White chocolate showed weaker effects for both outcomes (IRR = 1.09 and 1.11; p < 0.01). Participants’ most preferred chocolate (milk) produced greater pain-reduction than less preferred types (IRR range 0.61–0.69; p < 0.01). Chocolate composition, including sugar and cocoa content, showed no clear association with pain measures under the experimental conditions. Conclusion The analgesic effect of chocolate in this experimental setting appears to be more closely related to subjective preference and hedonic value than to cocoa concentration. Given the low dose and short exposure time, the findings primarily reflect immediate sensory-affective mechanisms rather than biochemical effects. These results suggest that reward-related processes may contribute to chocolate-induced pain modulation in acute experimental muscle pain.",
+        "date": "2026-08-24",
+        "url": "https://doi.org/10.1007/s44403-026-00076-x",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1007/s44403-026-00076-x",
+        "openAlexId": "W7204051077",
+        "subfield": {
+          "id": "subfields/2737",
+          "name": "Physiology"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T10196",
+          "name": "Pain Mechanisms and Treatments"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1007/s44403-026-00076-x",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Maria Christidis",
+          "Dyanne Medina Flores",
+          "Anastasios Grigoriadis",
+          "Abhishek Kumar",
+          "Giuliana Estefanía Lunecke Serendero",
+          "Mario Brondani",
+          "Alexandra Hajati",
+          "Giancarlo De la Torre Canales",
+          "Bruna Brondani",
+          "Nikolaos Christidis"
+        ],
+        "venue": "Food, Nutrition and Health.",
+        "indexedDate": "2026-08-24",
+        "referencedWorksCount": 53,
+        "tldr": "The analgesic effect of chocolate in this experimental setting appears to be more closely related to subjective preference and hedonic value than to cocoa concentration, which suggests reward-related processes may contribute to chocolate-induced pain modulation in acute experimental muscle pain.",
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7628,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.8344,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 0.75,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.1812
+          },
+          "everydayDomains": [
+            "food",
+            "health",
+            "body",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2737",
+          "evidence": [
+            "total 0.8344 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.76 = P 0.79 − 0.45×t 0.00 − 0.15×j 0.18",
+            "outcome verbs (v 0.75): reduction, lowers, associated with",
+            "recognisable subjects (s 0.75): participants, women, men",
+            "quantified effect (q 1): percentage, p-value, effect ratio, 95% CI",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.18): 5/276 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 4 domain(s) — food, health, body, mind",
+            "everyday terms (5): sugar, milk, pain, muscle, concentration",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-24)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Food, Nutrition and Health.",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        }
+      },
+      "summary": {
+        "souhrn": "Kousek čokolády dokáže krátkodobě zmírnit bolest — ale nezdá se, že by o tom rozhodovalo množství kakaa. Vědci vyvolali třicítce zdravých dobrovolníků bolest žvýkacího svalu vpichem solného roztoku a měřili, jak silná a jak dlouhá byla před a po sní čokolády: bílé, mléčné a hořké. Nejlépe fungovala mléčná čokoláda, kterou účastníci zároveň nejčastěji označili za svou nejoblíbenější: špička bolesti byla asi o čtvrtinu nižší a bolest odezněla přibližně o třetinu dřív než po hořké čokoládě. Bílá čokoláda naopak vyšla o pár procent hůř než hořká. Obsah kakaa ani cukru sám o sobě s výsledky jasně nesouvisel, takže úleva podle autorů pramení spíš z toho, že si člověk dá něco, co mu chutná.",
+        "podrobneVysvetleni": "Do studie se zapojilo třicet zdravých lidí bez bolestí — patnáct mužů a patnáct žen, v průměru necelých pětadvacet let. Každý prošel třemi sezeními s odstupem jednoho týdne a ani účastník, ani hodnotitel nevěděli, který druh čokolády je právě na řadě. Bolest vědci vyvolávali vpichem koncentrovaného solného roztoku do žvýkacího svalu na tváři, a to dvakrát za sezení: jednou před sníst čokolády a jednou po. Účastníci pak na posuvné stupnici označovali, jak silná bolest byla a jak dlouho trvala. Testovaly se tři druhy: bílá (30 % kakaa), mléčná (34 %) a hořká (70 %). Nejlépe vyšla mléčná: špička bolesti po ní byla asi o čtvrtinu nižší než po hořké a bolest odeznívala přibližně o třetinu rychleji. Bílá čokoláda si vedla o něco hůř než hořká, rozdíl byl ale malý. Klíčové zjištění je jiné: když vědci sledovali, který druh měl který účastník nejradši, ukázalo se, že oblíbená čokoláda snižovala bolest víc než ta méně oblíbená — a v tomto souboru byla nejoblíbenější právě mléčná. Samotné složení, tedy podíl kakaa a cukru, přitom s výsledky jasně nesouviselo. Protože šlo o malé množství čokolády a krátkou dobu, autoři nepřičítají účinek látkám v kakau, ale okamžité chuťové a emoční odpovědi — tomu, že příjemný zážitek zapojí systém odměny v mozku a bolest tím trochu utlumí.",
+        "procJeToDulezite": "Naznačuje to, že u krátké, ostré bolesti může pomoct i to, co má člověk prostě rád, a že „zdravější\" varianta s vysokým obsahem kakaa nemusí být automaticky ta účinnější.",
+        "poznamkaKOmezenim": "Jde o malý experiment na třiceti mladých zdravých lidech s umělou, krátkodobě vyvolanou bolestí, takže výsledky se nedají bez dalšího ověření přenášet na dlouhodobé bolesti v běžném životě."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 1066,
+              "end": 1284
+            },
+            "matchedText": "Protože šlo o malé množství čokolády a krátkou dobu, autoři nepřičítají účinek látkám v kakau, ale okamžité chuťové a emoční odpovědi — tomu, že příjemný zážitek zapojí systém odměny v mozku a bolest tím trochu utlumí.",
+            "messageCs": "Tato věta má 35 slov a je moc dlouhá: „Protože šlo o malé množství čokolády a krátkou dobu, autoři nepřičítají účinek …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[1066,1284]: Protože šlo o malé množství čokolády a krátkou dobu, autoři nepřičítají účinek látkám v kakau, ale okamžité chuťové a emoční odpovědi — tomu, že příjemný zážitek zapojí systém odměny v mozku a bolest tím trochu utlumí."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=21.56",
+            "messageCs": "Věty jsou v průměru moc dlouhé (21,6 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=21.56"
+          }
+        ],
+        "soft": [
+          {
+            "block": "poznamkaKOmezenim",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 10,
+              "end": 21
+            },
+            "matchedText": " experiment",
+            "messageCs": "Text opisuje původní název článku („ experiment“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ poznamkaKOmezenim[10,21]:  experiment"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=2",
+            "messageCs": "Počet vět delších než 30 slov: 2. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=2"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7204045077",
+        "title": "Weight Loss Improves Predicted 10‐Year MACE and Type 2 Diabetes Risk, but Benefits Partially Rebound at 1 Year",
+        "abstract": "ABSTRACT Objective This study aimed to quantify changes in predicted 10‐year risk for major adverse cardiovascular events (MACE) and type 2 diabetes (T2D) across weight loss, post–weight loss (Post‐WL), and 1‐year follow‐up and to determine whether trajectories varied by exercise modality. Methods Sedentary women with overweight (21–49 years) were randomized to Diet+Aerobic, Diet+Resistance, or Diet‐only and completed an 800 kcal/day diet until BMI < 25 kg m −2 . Predicted 10‐year MACE and T2D risks were calculated using cardiometabolic disease staging equations. Longitudinal changes and adherence effects were analyzed using fractional logit models fit with generalized estimating equations. Results Among 221 women (115 African American), mean BMI decreased from 28.3 to 23.9 kg m −2 , with regain to 25.8 at 1 year. MACE risk decreased from Baseline to Post‐WL and rebounded from Post‐WL to 1 year in all groups (all p < 0.001). Diet‐only achieved greater MACE reduction than Diet+Resistance ( p = 0.022). T2D risk decreased in all groups (all p < 0.001) but rebounded in Diet+Aerobic and Diet‐only. The Diet+Resistance group maintained a significant net reduction at 1 year ( p = 0.003). Follow‐up exercise adherence was associated with lower T2D risk rebound ( p = 0.024). Conclusions Weight loss reduced MACE and T2D risks, but both rebounded with weight regain. Resistance exercise may be beneficial in weight loss interventions to prevent progression to T2D. Trial Registration ClinicalTrials.gov identifier: NCT00067873",
+        "date": "2026-08-23",
+        "url": "https://doi.org/10.1002/oby.70291",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1002/oby.70291",
+        "openAlexId": "W7204045077",
+        "subfield": {
+          "id": "subfields/2737",
+          "name": "Physiology"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T10352",
+          "name": "Physical Activity and Health"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Abdelrahman ELSHAKANKIRY",
+          "Gary R. Hunter",
+          "Cátia Martins",
+          "Gordon Fisher",
+          "W. Timothy Garvey",
+          "Carrie R. Howell"
+        ],
+        "venue": "Obesity",
+        "indexedDate": "2026-08-24",
+        "referencedWorksCount": 41,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7299,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.8305,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.25,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.5508
+          },
+          "everydayDomains": [
+            "food",
+            "health",
+            "body"
+          ],
+          "subfieldKey": "subfields/2737",
+          "evidence": [
+            "total 0.8305 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.73 = P 0.81 − 0.45×t 0.00 − 0.15×j 0.55",
+            "outcome verbs (v 1.00): reduced, reduction, improves (title, ×2), lowers, prevents, predicted (title, ×2), decreased, associated with",
+            "recognisable subjects (s 0.25): women",
+            "quantified effect (q 1): p-value",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.55): 13/236 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — food, health, body",
+            "everyday terms (7): diet, overweight, disease, diabetes, exercise, weight loss, sedentary",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-24)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Obesity",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1002/oby.70291)"
+      },
+      "summary": {
+        "souhrn": "Zhubnout se vyplatí, jenže výhoda sama od sebe nedrží. Dietou až na normální hmotnost prošlo 221 žen s nadváhou, tedy něco přes dvě stovky účastnic. Po zhubnutí jim spočítaný odhad rizika srdečních příhod a cukrovky druhého typu na deset let dopředu klesl. Za rok se ale část kil vrátila: průměrné BMI (poměr hmotnosti a výšky) šlo z 28,3 na 23,9, tedy z nadváhy do normy, a pak zpět na 25,8, na její hranici. S kily se vrátil i díl rizika — kromě žen, které k dietě posilovaly, u těch zůstal odhad rizika cukrovky nižší i po roce.",
+        "podrobneVysvetleni": "Vědci pracovali se ženami s nadváhou, které se předtím téměř nehýbaly. Bylo jim od 21 do 49 let, tedy od začátku dvacítky do konce čtyřicítky. Náhodně je rozdělili do tří skupin: dieta a vytrvalostní pohyb, dieta a posilování, nebo dieta samotná. Všechny držely velmi přísný jídelníček s 800 kilokaloriemi denně. Hubnutí končilo až ve chvíli, kdy BMI kleslo pod 25 — tedy z nadváhy do normálního pásma. Z 221 účastnic bylo 115 Afroameričanek, tedy asi polovina. Riziko se přitom nesledovalo podle toho, kdo skutečně onemocněl. Autoři použili rovnice, které z naměřených hodnot odhadují pravděpodobnost potíží v příštích deseti letech. Odhad rizika srdečních příhod klesl po zhubnutí ve všech třech skupinách. Za rok se ale ve všech zase zvedl. Nejvíc si polepšila skupina jen s dietou, a to víc než skupina s posilováním. U cukrovky druhého typu klesl odhad rizika také ve všech skupinách. Po roce se vrátil zpět u vytrvalostního cvičení i u samotné diety. Jen u posilování zůstal po roce zřetelně nižší než na začátku. Kdo po dietě dál cvičil, měl návrat rizika cukrovky menší. Průměrné BMI mezitím spadlo na 23,9 (normální hmotnost) a po roce stouplo na 25,8 (mírná nadváha). Autoři z toho vyvozují, že posilování má v programech hubnutí své místo právě kvůli cukrovce.",
+        "procJeToDulezite": "Většina lidí po dietě část kil nabere zpět, a tahle práce ukazuje, že se s nimi vrací i zdravotní riziko — tedy že rozhoduje spíš to, co přijde po hubnutí, než samo hubnutí. Naznačuje také, že cvičení se zátěží může pomoct udržet aspoň nižší riziko cukrovky.",
+        "poznamkaKOmezenim": "Šlo o odhad rizika z výpočtových rovnic, ne o skutečně zaznamenané infarkty či případy cukrovky, a účastnicemi byly jen ženy s nadváhou, které se předtím nehýbaly — na jiné skupiny se výsledek přenášet nedá."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 387,
+              "end": 391
+            },
+            "matchedText": "25,8",
+            "messageCs": "Číslo „25,8“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „25,8 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[387,391]: 25,8"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 405,
+              "end": 408
+            },
+            "matchedText": "221",
+            "messageCs": "Číslo „221“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „221 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[405,408]: 221"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 423,
+              "end": 426
+            },
+            "matchedText": "115",
+            "messageCs": "Číslo „115“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „115 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[423,426]: 115"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1110,
+              "end": 1115
+            },
+            "matchedText": "23,9 ",
+            "messageCs": "Číslo „23,9“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „23,9 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1110,1115]: 23,9 "
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1156,
+              "end": 1161
+            },
+            "matchedText": "25,8 ",
+            "messageCs": "Číslo „25,8“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „25,8 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1156,1161]: 25,8 "
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 257,
+              "end": 409
+            },
+            "matchedText": "Za rok se ale část kil vrátila: průměrné BMI (poměr hmotnosti a výšky) šlo z 28,3 na 23,9, tedy z nadváhy do normy, a pak zpět na 25,8, na její hranici.",
+            "messageCs": "Tato věta má 34 slov a je moc dlouhá: „Za rok se ale část kil vrátila: průměrné BMI (poměr hmotnosti a výšky) šlo z 28…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[257,409]: Za rok se ale část kil vrátila: průměrné BMI (poměr hmotnosti a výšky) šlo z 28,3 na 23,9, tedy z nadváhy do normy, a pak zpět na 25,8, na její hranici."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=2",
+            "messageCs": "Počet vět delších než 30 slov: 2. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=2"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7204035568",
+        "title": "Changes in Perihyoid Muscle Strength Associated with Fixed and Progressive Resistance Exercise in Healthy Adults",
+        "abstract": "Abstract The supra- and infrahyoid muscles, collectively referred to as the perihyoid musculature, contribute to hyolaryngeal excursion and pharyngoesophageal segment opening during swallowing. This study investigated whether fixed- and progressive-resistance chin tuck against resistance (CTAR) protocols improve perihyoid strength, measured using open-mouth maximum isometric pressure (OM-MIP), in healthy adults. Forty-two healthy adults were randomly assigned to one of three intervention groups: traditional fixed-resistance CTAR using an inflatable ball, fixed-resistance CTAR using a novel spring-loaded device, or progressive-resistance CTAR using the same novel device. Participants completed a six-week home-based training program. Perihyoid strength was quantified at baseline and post-intervention using the OM-MIP protocol with a handheld dynamometer. Adherence was tracked using a digital home exercise platform. All groups demonstrated statistically significant within-group improvements in OM-MIP. Median paired gains were observed in the traditional fixed-resistance group (+ 3.65 kgF), novel fixed-resistance group (+ 2.25 kgF), and progressive-resistance group (+ 3.20 kgF). Between-group comparisons of change scores were not statistically significant ( p = .371), indicating that no single training approach resulted in superior OM-MIP gains. Adherence did not differ significantly across groups and did not significantly predict post-intervention OM-MIP when included as a covariate. Traditional fixed-resistance, novel fixed-resistance, and novel progressive-resistance CTAR protocols were associated with improved OM-MIP in healthy adults following six weeks of home-based training. These findings support the physiologic feasibility of CTAR-based perihyoid strengthening approaches but do not establish effects on swallowing biomechanics or functional swallowing outcomes. Further research is needed to optimize resistance progression, examine dose-response relationships, and determine whether gains in OM-MIP translate to clinically meaningful swallowing outcomes in dysphagic populations.",
+        "date": "2026-08-24",
+        "url": "https://doi.org/10.1007/s00455-026-10998-5",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1007/s00455-026-10998-5",
+        "openAlexId": "W7204035568",
+        "subfield": {
+          "id": "subfields/3616",
+          "name": "Speech and Hearing"
+        },
+        "field": {
+          "id": "fields/36",
+          "name": "Health Professions"
+        },
+        "topic": {
+          "id": "T11358",
+          "name": "Dysphagia Assessment and Management"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Kelly Salmon"
+        ],
+        "venue": "Dysphagia",
+        "indexedDate": "2026-08-24",
+        "referencedWorksCount": 37,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9247,
+          "everydayRelevance": 0.6667,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.8151,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.5019
+          },
+          "everydayDomains": [
+            "body",
+            "housing"
+          ],
+          "subfieldKey": "subfields/3616",
+          "evidence": [
+            "total 0.8151 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.92 = P 1.00 − 0.45×t 0.00 − 0.15×j 0.50",
+            "outcome verbs (v 1.00): improved, improves, improvement, predicts, resulted in, associated with (title, ×2)",
+            "recognisable subjects (s 1.00): participants, adults (title, ×2), homes",
+            "quantified effect (q 1): p-value",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.50): 13/259 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.67: 2 domain(s) — body, housing",
+            "everyday terms (4): exercise, muscle, home, homes",
+            "freshness 0.86: 1 day(s) old (effective date 2026-08-24)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Dysphagia",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1007/s00455-026-10998-5)"
+      },
+      "summary": {
+        "souhrn": "Cvičení, při kterém člověk tlačí bradou proti odporu (anglicky chin tuck against resistance, CTAR), po šesti týdnech posílilo svaly mezi bradou a hrudní kostí. Vědci to vyzkoušeli na 42 zdravých dospělých. Jedna skupina mačkala bradou nafukovací míček, druhá nové pružinové zařízení s pevným odporem a třetí totéž zařízení s odporem, který se postupem času zvyšoval. Síla se měřitelně zvýšila ve všech třech skupinách, žádná z nich ale nebyla prokazatelně lepší než ostatní. Studie zatím neříká nic o tom, že by se díky cvičení zlepšilo samotné polykání.",
+        "podrobneVysvetleni": "Svaly nad jazylkou a pod ní leží mezi bradou a hrudní kostí. Při polykání táhnou jazylku a hrtan vzhůru a vpřed a otevírají tím vstup do jícnu. Když zeslábnou, polykání se zhoršuje. Cvičení proti odporu je proto u poruch polykání běžnou součástí terapie.\n\nAutoři náhodně rozdělili 42 zdravých dospělých do tří skupin. Všichni cvičili šest týdnů doma a jejich docházku k cvičení zaznamenávala digitální aplikace. Sílu vědci měřili před začátkem a po skončení programu. Použili ruční měřidlo tlaku (dynamometr): člověk má otevřená ústa a tlačí bradou proti čidlu, jak nejsilněji dokáže.\n\nVýsledky se zlepšily ve všech třech skupinách. Prostřední hodnota přírůstku (medián, tedy hodnota, nad kterou byla polovina lidí a pod kterou druhá polovina) činila u nafukovacího míčku 3,65 kilogramu síly. To je tlak, jaký odpovídá zvednutí necelých čtyř kilogramů. U nového zařízení s pevným odporem to bylo 2,25 kilogramu, tedy přírůstek o něco menší, a u postupně zvyšovaného odporu 3,20 kilogramu. Rozdíly mezi skupinami se ztrácely v běžném rozptylu mezi jednotlivými lidmi. Žádný z postupů tedy nevyšel jako lepší. Nezáleželo ani na tom, jak pečlivě kdo cvičil.\n\nZ toho plyne jednoduchý závěr: tyto svaly na domácí cvičení reagují a posilují se. Jestli se tím zlepší i samotné polykání, studie neměřila.",
+        "procJeToDulezite": "Potíže s polykáním potkávají hlavně starší lidi a pacienty po mrtvici a zhoršují jim jídlo, pití i bezpečnost dýchacích cest. Tato práce ukazuje, že příslušné svaly lze posilovat jednoduchým cvičením doma, bez návštěvy ordinace.",
+        "poznamkaKOmezenim": "Šlo o malý vzorek 42 zdravých dospělých a měřila se jen síla svalů, nikoli samotné polykání, takže přenos k lidem s poruchou polykání zůstává nepotvrzený."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 183,
+              "end": 185
+            },
+            "matchedText": "42",
+            "messageCs": "Číslo „42“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „42 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[183,185]: 42"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 281,
+              "end": 283
+            },
+            "matchedText": "42",
+            "messageCs": "Číslo „42“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „42 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[281,283]: 42"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 973,
+              "end": 977
+            },
+            "matchedText": "3,20",
+            "messageCs": "Číslo „3,20“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „3,20 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[973,977]: 3,20"
+          }
+        ],
+        "soft": []
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-08-25T04:47:32.319Z",
+  "generatedOn": "2026-08-25",
+  "schemaVersion": 1
+}

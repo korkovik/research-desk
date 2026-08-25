@@ -576,6 +576,46 @@
       "titleKey": "predictionofdelayedpostgraduategraduationusingmachinelearninginugandanhighereducation",
       "publishedOn": "2026-08-24",
       "category": "ai-computing"
+    },
+    {
+      "openalexId": "W7204038552",
+      "doi": "10.1007/s00455-026-11000-y",
+      "arxivId": null,
+      "titleKey": "prevalenceofdysphagiasymptomsinthegeneralpopulationofcyprus",
+      "publishedOn": "2026-08-25",
+      "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7204044691",
+      "doi": "10.1002/pds.70460",
+      "arxivId": null,
+      "titleKey": "pediatricuseofofflabelmedicinesandnonevidencebasedsupplementsforcovid19findingsfromthe2015pelotasbirthcohortstudybrazil",
+      "publishedOn": "2026-08-25",
+      "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7204051077",
+      "doi": "10.1007/s44403-026-00076-x",
+      "arxivId": null,
+      "titleKey": "effectofchocolatepreferenceandcocoacontentonexperimentallyinducedmusclepain",
+      "publishedOn": "2026-08-25",
+      "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7204045077",
+      "doi": "10.1002/oby.70291",
+      "arxivId": null,
+      "titleKey": "weightlossimprovespredicted10yearmaceandtype2diabetesriskbutbenefitspartiallyreboundat1year",
+      "publishedOn": "2026-08-25",
+      "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7204035568",
+      "doi": "10.1007/s00455-026-10998-5",
+      "arxivId": null,
+      "titleKey": "changesinperihyoidmusclestrengthassociatedwithfixedandprogressiveresistanceexerciseinhealthyadults",
+      "publishedOn": "2026-08-25",
+      "category": "health-medicine"
     }
   ]
 }
