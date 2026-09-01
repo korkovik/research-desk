@@ -114,15 +114,16 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: |
+          set -o pipefail   # tee must not swallow the run's exit code
           if [ "${{ inputs.force }}" = "true" ]; then
-            npx tsx src/cli.ts run --force
+            npx tsx src/cli.ts run --force 2>&1 | tee /tmp/build.log
           else
             # --skip-if-published makes "today is already published" a calm exit 0
             # instead of exit 1. The guard still refuses to overwrite the page —
             # it just stops reporting a benign no-op as a failed run, which would
             # otherwise send a failure notification on a morning when nothing was
             # wrong, and teach the reader to ignore the ones that matter.
-            npx tsx src/cli.ts run --skip-if-published
+            npx tsx src/cli.ts run --skip-if-published 2>&1 | tee /tmp/build.log
           fi
 
       # §9 wants a line per run, and the brief wants real spend reported per run.
@@ -221,10 +222,37 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
+            const fs = require('fs');
             const day = '${{ steps.gate.outputs.day }}';
-            const title = `Daily digest failed: ${day}`;
+
+            // Running out of Anthropic budget is this project's most likely
+            // recurring failure — it killed a week of editions in August, and
+            // it will recur every month the spend outruns the cap. It deserves
+            // to be named in the title, because "Daily digest failed" sends you
+            // reading logs for a bug that is not there.
+            let log = '';
+            try { log = fs.readFileSync('/tmp/build.log', 'utf8'); } catch {}
+            const capped = /reached your specified API usage limits/.test(log);
+            const regain = (log.match(/regain access on ([0-9-]+ at [0-9:]+ UTC)/) || [])[1];
+
+            const title = capped
+              ? `Anthropic spend cap reached — no editions until it resets`
+              : `Daily digest failed: ${day}`;
             const url = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
-            const body = [
+            const body = capped ? [
+              `The ${day} run stopped because the Anthropic account hit its`,
+              `configured spend limit${regain ? `. Access returns **${regain}**` : ''}.`,
+              ``,
+              `**This is a budget limit, not a bug.** Nothing is broken and no code`,
+              `change will fix it. Until the cap resets or is raised, every run will`,
+              `fail the same way and no edition will be published — and the cap is`,
+              `shared with any other project using the same key, which will also stop.`,
+              ``,
+              `\`state/runs.jsonl\` holds the real per-run cost if you want to see`,
+              `where the month went.`,
+              ``,
+              `Log: ${url}`,
+            ].join('\n') : [
               `The ${day} run did not publish an edition.`,
               ``,
               `Log: ${url}`,

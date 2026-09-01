@@ -149,12 +149,12 @@ At `claude-opus-5` ($5 / $25 per million tokens in / out), `effort: high`:
 | | per day |
 |---|---|
 | Calls | 12 – 15 |
-| **Measured cost** | **$0.85 – $1.00, averaging $0.94** |
-| **Per month** | **roughly $28** |
+| **Measured cost** | **$0.85 – $1.13, averaging $0.97** |
+| **Per month** | **roughly $29** |
 
-Those are five consecutive unattended runs (21–25 August), and they revise an
-earlier figure of $0.70/day taken from hand-triggered runs. Unattended days
-cost more because nobody is choosing an easy category for them.
+Six unattended runs (21–25 August and 1 September), revising an earlier figure
+of $0.70/day that came from hand-triggered runs. Unattended days cost more
+because nobody is picking an easy category for them.
 
 **$28 does not sit comfortably inside a $40 cap**, and on 26 August the cap
 was exhausted — every run failed with `You have reached your specified API
