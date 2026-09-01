@@ -1,0 +1,1212 @@
+{
+  "date": "2026-09-01",
+  "categoryKey": "health-medicine",
+  "categoryLabel": "Zdraví a medicína",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7155097679",
+        "title": "Use of Attention Deficit Hyperactivity Disorder Medication Among Danish Children and Adolescents From 2010 to 2023",
+        "abstract": "Introduction: Pharmacological treatment is an important component in the multimodal management of attention deficit hyperactivity disorder (ADHD), but contemporary trends in ADHD medication use among boys and girls in Denmark have not been fully characterized. This study aimed to provide an updated and detailed description of ADHD medication use among Danish children and adolescents during 2010–2023. Methods: We analyzed filled prescriptions for ADHD medication in youths aged 5–17 years in Denmark (2010–2023), calculating incidence rates, prevalence proportions, male/female ratios, treatment persistence, age at initiation, and prescriber setting. Analyses were stratified by sex and age. Results: The incidence rates of ADHD medication use followed a u-shaped pattern for boys, declining from 0.59 per 100 person-years in 2010 to 0.34 in 2014, before rising to 1.0 in 2023. Among girls, incidence rates increased continuously from 0.20 per 100 person-years in 2010 to 0.67 per 100 person-years in 2023. Prevalence proportions were stable until 2018, where an increase was observed for both sexes, reaching 3.4% for boys and 1.8% for girls in 2023. The male/female incidence and prevalence ratios decreased consistently from 2010 to 2023. ADHD medication was initiated at a median age of 13 years for girls and 11 years for boys. The share of index prescriptions from child and adolescent psychiatry increased, reaching 87% in 2023. Most 5–9-year-olds (65%) and almost half of 10–13-year-olds (45%) were covered by an ADHD medication prescription 5 years after treatment initiation, as opposed to 29% of 14–17-year-olds. Conclusion: ADHD medication use in Denmark increased from 2010 to 2023, particularly among girls, where the prevalence tripled compared to a 1.5-fold increase in boys. This likely reflects greater awareness of ADHD in girls, although their 2-year treatment delay compared to boys warrants clinical attention.",
+        "date": "2026-09-01",
+        "url": "https://portal.findresearcher.sdu.dk/da/publications/34c6339b-38d2-4911-be30-ea3051ea871e",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1111/acps.70103",
+        "openAlexId": "W7155097679",
+        "subfield": {
+          "id": "subfields/2738",
+          "name": "Psychiatry and Mental health"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T10537",
+          "name": "Attention Deficit Hyperactivity Disorder"
+        },
+        "citedByCount": 1,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://findresearcher.sdu.dk/ws/files/315402264/Acta_Psychiatr_Scand_-_2026_-_Stoltz_Andersen_-_Use_of_Attention_Deficit_Hyperactivity_Disorder_Medication_Among_Danish.pdf",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Maria Højgaard; id_orcid 0009-0004-0172-7620 Stoltz-Andersen",
+          "Martin Ernst",
+          "Søren Dalsgaard",
+          "Lotte Rasmussen",
+          "Rikke Wesselhoeft"
+        ],
+        "venue": "University of Southern Denmark Research Portal (University of Southern Denmark)",
+        "indexedDate": "2026-08-14",
+        "referencedWorksCount": 0,
+        "tldr": "An updated and detailed description of ADHD medication use among Danish children and adolescents during 2010–2023 is provided.",
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9695,
+          "everydayRelevance": 0.9667,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.9428,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.2034
+          },
+          "everydayDomains": [
+            "health",
+            "family",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2738",
+          "evidence": [
+            "total 0.9428 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.97 = P 1.00 − 0.45×t 0.00 − 0.15×j 0.20",
+            "outcome verbs (v 1.00): increased, increases, tripled, delays, decreased",
+            "recognisable subjects (s 1.00): children (title, ×2), adolescents (title, ×2)",
+            "quantified effect (q 1): percentage, fold change",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.20): 6/295 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 3 domain(s) — health, family, mind",
+            "everyday terms (5): treatment, medication, child, children, attention",
+            "freshness 1.00: 0 day(s) old (effective date 2026-09-01)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in University of Southern Denmark Research Portal (University of Southern Denmark)",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        }
+      },
+      "summary": {
+        "souhrn": "Dánští vědci prošli všechny vyzvednuté recepty na léky proti ADHD u dětí a dospívajících od pěti do sedmnácti let a sledovali, jak se jejich užívání měnilo mezi roky 2010 a 2023. U chlapců počet nově léčených nejprve klesal, kolem roku 2014 se trend otočil a dál už jen rostl; u dívek stoupal celou dobu bez přestávky. Podíl léčených dívek se do roku 2023 ztrojnásobil, u chlapců vzrostl asi o polovinu, takže rozdíl mezi pohlavími se zmenšil — dívky ovšem začínaly s léky v průměru o dva roky později než chlapci, tedy ve třinácti letech místo v jedenácti. A čím později léčba začala, tím kratší bývala. Z dětí, které s léky začaly jako nejmladší, je po pěti letech brala ještě asi dvě třetiny, kdežto z těch, kdo začal jako starší teenager, necelá třetina.",
+        "podrobneVysvetleni": "Podkladem byly záznamy o lécích skutečně vyzvednutých v lékárně, ne jen o předepsaných — Dánsko takové údaje vede pro celou zemi, takže autoři nepracovali se vzorkem, ale s celou populací dětí a dospívajících od pěti do sedmnácti let. Sledovali, kolik dětí s léčbou každý rok začíná, kolik dětí léky v daném roce užívá, v jakém věku léčba začíná, kdo ji předepisuje a jak dlouho vydrží. U chlapců má křivka nově léčených tvar písmene U: od roku 2010 do roku 2014 klesla přibližně na polovinu, pak se ale zvedla a do roku 2023 se proti tomuto dnu ztrojnásobila. U dívek rostla plynule a na konci období byla víc než trojnásobná proti začátku. V roce 2023 užívalo léky asi tři a půl procenta chlapců, tedy přibližně jeden ze třiceti, a necelá dvě procenta dívek, tedy asi jedna z padesáti. Předepisování se zároveň přesunulo k odborníkům: recept na začátku léčby vydala v posledním sledovaném roce téměř v devíti případech z deseti dětská a dorostová psychiatrie. Autoři soudí, že hlavní příčinou růstu u dívek je větší povědomí o tom, že ADHD se u nich projevuje jinak a snadněji se přehlédne. Dvouleté zpoždění oproti chlapcům podle nich zaslouží pozornost lékařů — dívky se k léčbě dostávají až v době, kdy na ně doléhá puberta a nároky vyšších ročníků.",
+        "procJeToDulezite": "ADHD se u dívek dlouho přehlíželo a tato data ukazují, že se to mění — ale i to, že diagnózu a léčbu dostávají v průměru o dva roky později než chlapci, tedy až po části školních let, kdy by pomoc potřebovaly.",
+        "poznamkaKOmezenim": "Studie popisuje jen vyzvednuté recepty v Dánsku, neříká nic o tom, zda byly diagnózy správné ani zda léky pomohly, a příčiny nárůstu autoři pouze odhadují."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 319,
+              "end": 557
+            },
+            "matchedText": "Podíl léčených dívek se do roku 2023 ztrojnásobil, u chlapců vzrostl asi o polovinu, takže rozdíl mezi pohlavími se zmenšil — dívky ovšem začínaly s léky v průměru o dva roky později než chlapci, tedy ve třinácti letech místo v jedenácti.",
+            "messageCs": "Tato věta má 40 slov a je moc dlouhá: „Podíl léčených dívek se do roku 2023 ztrojnásobil, u chlapců vzrostl asi o polo…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[319,557]: Podíl léčených dívek se do roku 2023 ztrojnásobil, u chlapců vzrostl asi o polovinu, takže rozdíl mezi pohlavími se zmenšil — dívky ovšem začínaly s léky v průměru o dva roky později než chlapci, tedy ve třinácti letech místo v jedenácti."
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 687,
+              "end": 694
+            },
+            "matchedText": "třetiny",
+            "messageCs": "Číslo „třetiny“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „třetiny — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[687,694]: třetiny"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 750,
+              "end": 757
+            },
+            "matchedText": "třetina",
+            "messageCs": "Číslo „třetina“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „třetina — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[750,757]: třetina"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=27.29",
+            "messageCs": "Věty jsou v průměru moc dlouhé (27,3 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=27.29"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=5",
+            "messageCs": "Počet vět delších než 30 slov: 5. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=5"
+          }
+        ],
+        "soft": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=44.8",
+            "messageCs": "Text se celkově čte těžko (index 45 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=44.8"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7171972344",
+        "title": "Is the St. Gallen Algorithm for proximal humerus fractures associated with improved outcomes?",
+        "abstract": "Background Proximal humerus fractures are the fourth most common type of fracture in elderly humans, seventh most common overall, and their incidence is rising. In 2019, the St. Gallen Algorithm (SGA) for treatment of proximal humerus fractures was proposed to improve treatment outcomes and reduce secondary surgeries. To date, no external validation of this algorithm has been reported.Methods We performed a retrospective validation study with patients who sustained an isolated proximal humerus fracture between January 2010 and December 2020 at our institution. We calculated the prevalence of patients following the SGA and compared failure rates and Subjective Shoulder Value scores between those following the SGA and not. We also evaluated the entire cohort for predictors of treatment failure.Results The prevalence of patients receiving treatment based on the SGA at our institution was 43% (n = 316). The overall failure rate was 13% (94/730 patients) at a mean follow-up of 22 months. The failure rate was 11% (36/316 patients) for the SGA group and 14% (58/414 patients) for the non-SGA group (P value = .3). Subjective Shoulder Value scores were 89 ± 12 in the SGA group (n = 33) and 90 ± 13 in the non-SGA group (n = 52; P = .7). Kaplan-Meier analysis showed no difference in survivorship between following and not following the SGA. Univariate analysis identified algorithm pathway 10 and Neer fracture type 3 as risk factors for failure. Multivariable analysis suggested a potential association between adherence to the SGA and reduced failure risk; however, this finding should be interpreted cautiously given the borderline statistical significance and limitations of the regression model.Conclusion Following the SGA produced similar results to not following the SGA in terms of failure rate, survivorship, and clinical outcome scores. However, multivariate analysis identifies following the SGA as protective against failure. The findings of this study provide supportive but not definitive evidence for the clinical utility of the SGA as a decision-making aid in the treatment of proximal humerus fractures.",
+        "date": "2026-09-01",
+        "url": "https://doi.org/10.48620/99911",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.48620/99911",
+        "openAlexId": "W7171972344",
+        "subfield": {
+          "id": "subfields/2746",
+          "name": "Surgery"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T10280",
+          "name": "Shoulder Injury and Treatment"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Angela M. Moosmann",
+          "Andres Marin",
+          "Philippe Vial",
+          "Attila Güleryüz",
+          "Joseph M Schwab",
+          "Moritz Tannast"
+        ],
+        "venue": "Open Access CRIS of the University of Bern",
+        "indexedDate": "2026-08-01",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8564,
+          "everydayRelevance": 0.9667,
+          "freshness": 1,
+          "credibility": 0.784,
+          "total": 0.903,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.5,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.1238
+          },
+          "everydayDomains": [
+            "health",
+            "family",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2746",
+          "evidence": [
+            "total 0.9030 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.86 = P 0.88 − 0.45×t 0.00 − 0.15×j 0.12",
+            "outcome verbs (v 1.00): reduced, reduces, improved (title, ×2), improves, associated with (title, ×2)",
+            "recognisable subjects (s 0.50): patients, elderly",
+            "quantified effect (q 1): percentage, p-value, sample size",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.12): 4/323 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 3 domain(s) — health, family, mind",
+            "everyday terms (5): patient, patients, treatment, elderly, decision making",
+            "freshness 1.00: 0 day(s) old (effective date 2026-09-01)",
+            "credibility 0.78 = 0.40×c1 1.00 + 0.25×c2 0.72 + 0.20×c3 0.80 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Open Access CRIS of the University of Bern",
+            "c2 0.72: n = 730",
+            "c3 0.80: open access without an open licence (repository copy)",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.48620/99911)"
+      },
+      "summary": {
+        "souhrn": "Zlomeniny horního konce pažní kosti (proximal humerus fracture) patří u starších lidí k nejčastějším a lékaři se dodnes přou, kdy operovat a kdy ne. V roce 2019 vznikl takzvaný St. Gallenský algoritmus — rozhodovací návod, který má lékaři podle typu zlomeniny a stavu pacienta poradit správnou léčbu. Švýcarští autoři poprvé ověřili, jak si návod vede v praxi: prošli zpětně 730 pacientů léčených v jedné nemocnici v letech 2010 až 2020 a zjistili, že podle algoritmu byla léčena necelá polovina z nich (43 %). Selhání léčby, tedy nutnost dalšího zákroku či nezhojení, nastalo u 11 % pacientů léčených podle algoritmu a u 14 % ostatních — rozdíl tak malý, že ho statistika neodliší od náhody, a spokojenost s funkcí ramene byla v obou skupinách prakticky stejná. Návod tedy podle téhle práce neškodí a možná mírně pomáhá, ale zázraky od něj čekat nelze.",
+        "podrobneVysvetleni": "Autoři nesledovali pacienty dopředu, ale zpětně prošli zdravotnickou dokumentaci všech, kdo měli v jejich nemocnici mezi lety 2010 a 2020 samostatnou zlomeninu horního konce pažní kosti. U každého posoudili, zda zvolená léčba odpovídala doporučení St. Gallenského algoritmu, a pak porovnali, jak oba postupy dopadly. Průměrná doba sledování byla 22 měsíců, tedy necelé dva roky.\n\nPodle algoritmu byla léčena necelá polovina pacientů — 43 %, tedy 316 ze 730. Léčba selhala celkem u 13 % lidí, což je zhruba jeden z osmi (94 pacientů). Ve skupině léčené podle návodu to bylo 11 % (asi jeden z devíti), v ostatní skupině 14 % (asi jeden ze sedmi). Rozdíl tří procentních bodů ale nebyl statisticky průkazný, jinými slovy mohl vzniknout náhodou. Pacienti sami hodnotili funkci svého ramene na stupnici do sta bodů podobně: 89 bodů v jedné skupině a 90 ve druhé.\n\nZajímavější jsou vedlejší nálezy. Mezi rizikové faktory selhání patřila jedna konkrétní větev algoritmu a takzvaný Neerův typ zlomeniny 3, tedy určitý vzorec roztříštění kosti. Složitější statistický model pak naznačil, že dodržení algoritmu by přece jen mohlo riziko selhání snižovat — výsledek byl ale těsně na hranici průkaznosti, takže ho sami autoři berou jen jako náznak.",
+        "procJeToDulezite": "Tyhle zlomeniny potkají hlavně starší lidi a to, jestli se rameno vrátí do provozu, závisí na volbě léčby — je proto dobré vědět, že populární rozhodovací návod má zatím jen podpůrné, ne přesvědčivé důkazy. Pro pacienta z toho plyne, že rozhodnutí lékaře stále stojí hlavně na konkrétním případu, ne na univerzálním schématu.",
+        "poznamkaKOmezenim": "Jde o zpětný rozbor dokumentace z jediné nemocnice bez náhodného rozdělení pacientů do skupin, spokojenost s ramenem navíc vyplnilo jen 85 lidí ze 730, takže závěry jsou podpůrné, nikoli definitivní."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 511,
+              "end": 762
+            },
+            "matchedText": "Selhání léčby, tedy nutnost dalšího zákroku či nezhojení, nastalo u 11 % pacientů léčených podle algoritmu a u 14 % ostatních — rozdíl tak malý, že ho statistika neodliší od náhody, a spokojenost s funkcí ramene byla v obou skupinách prakticky stejná.",
+            "messageCs": "Tato věta má 39 slov a je moc dlouhá: „Selhání léčby, tedy nutnost dalšího zákroku či nezhojení, nastalo u 11 % pacien…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[511,762]: Selhání léčby, tedy nutnost dalšího zákroku či nezhojení, nastalo u 11 % pacientů léčených podle algoritmu a u 14 % ostatních — rozdíl tak malý, že ho statistika neodliší od náhody, a spokojenost s funkcí ramene byla v obou skupinách prakticky stejná."
+          },
+          {
+            "block": "souhrn",
+            "rule": "hype",
+            "ruleId": "hype:zázrak",
+            "span": {
+              "start": 826,
+              "end": 833
+            },
+            "matchedText": "zázraky",
+            "messageCs": "Slovo „zázraky“ je zakázané (pravidlo §2, žádná senzacechtivost). Napište místo něj konkrétně, co se změnilo.",
+            "detail": "hype:zázrak @ souhrn[826,833]: zázraky"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 819,
+              "end": 826
+            },
+            "matchedText": "89 bodů",
+            "messageCs": "Číslo „89 bodů“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „89 bodů — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[819,826]: 89 bodů"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 845,
+              "end": 847
+            },
+            "matchedText": "90",
+            "messageCs": "Číslo „90“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „90 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[845,847]: 90"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=20.83",
+            "messageCs": "Věty jsou v průměru moc dlouhé (20,8 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=20.83"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 176,
+              "end": 187
+            },
+            "matchedText": " St. Gallen",
+            "messageCs": "Text opisuje původní název článku („ St. Gallen“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[176,187]:  St. Gallen"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 190,
+              "end": 198
+            },
+            "matchedText": " algorit",
+            "messageCs": "Text opisuje původní název článku („ algorit“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[190,198]:  algorit"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_english_original:algoritmus",
+            "span": {
+              "start": 191,
+              "end": 201
+            },
+            "matchedText": "algoritmus",
+            "messageCs": "U termínu „algoritmus“ chybí při prvním použití anglický originál v závorce (např. „algoritmus (algorithm)“). Čtenář ten anglický výraz potká jinde (§2).",
+            "detail": "jargon:no_english_original:algoritmus @ souhrn[191,201]: algoritmus"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 457,
+              "end": 465
+            },
+            "matchedText": " algorit",
+            "messageCs": "Text opisuje původní název článku („ algorit“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[457,465]:  algorit"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 607,
+              "end": 615
+            },
+            "matchedText": " algorit",
+            "messageCs": "Text opisuje původní název článku („ algorit“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[607,615]:  algorit"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 247,
+              "end": 258
+            },
+            "matchedText": " St. Gallen",
+            "messageCs": "Text opisuje původní název článku („ St. Gallen“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[247,258]:  St. Gallen"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 263,
+              "end": 271
+            },
+            "matchedText": " algorit",
+            "messageCs": "Text opisuje původní název článku („ algorit“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[263,271]:  algorit"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 385,
+              "end": 393
+            },
+            "matchedText": " algorit",
+            "messageCs": "Text opisuje původní název článku („ algorit“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[385,393]:  algorit"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 952,
+              "end": 960
+            },
+            "matchedText": " algorit",
+            "messageCs": "Text opisuje původní název článku („ algorit“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[952,960]:  algorit"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 1090,
+              "end": 1098
+            },
+            "matchedText": " algorit",
+            "messageCs": "Text opisuje původní název článku („ algorit“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[1090,1098]:  algorit"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 30 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          },
+          {
+            "block": "all",
+            "rule": "passive-voice",
+            "ruleId": "readability:R7",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "passiveShare=0.222",
+            "messageCs": "22 % vět je v trpném rodě. Pište činným rodem: „vědci změřili…“, ne „bylo změřeno…“.",
+            "detail": "readability:R7 @ all[0,0]: passiveShare=0.222"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7167246019",
+        "title": "Efficacy and safety of risdiplam in patients with type 1 spinal muscular atrophy: a 3-year open-label extension of the two-part, phase 2 FIREFISH trial.",
+        "abstract": "Background FIREFISH was a multicentre, open-label, two-part, phase 2 trial that assessed the safety, tolerability, pharmacokinetics, pharmacodynamics, and efficacy of risdiplam in children with type 1 spinal muscular atrophy and two SMN2 copies, aged 1-7 months at enrolment. Part 1 assessed safety and determined the dose for part 2. In part 2, treatment with risdiplam for 24 months resulted in continual improvements in motor function and achievement of developmental motor milestones. The aim of the 3-year open-label extension reported here was to assess long-term safety and efficacy of risdiplam.Methods The 3-year extension of the FIREFISH trial was a multicentre, open-label study in 17 centres across 12 countries (in Asia, Europe, Brazil, and the USA). Children with a confirmed genetic diagnosis of spinal muscular atrophy and two copies of the SMN2 gene who had completed 2 years of risdiplam treatment were eligible to continue in the open-label extension study, during which risdiplam was administered once daily by oral syringe or feeding tube at the pivotal dose of 0·20 mg/kg for infants younger than 2 years, at 0·25 mg/kg for children aged 2 years and older with bodyweight below 20 kg, and at 5 mg for children aged 2 years and older with bodyweight of 20 kg or more. Adverse events were assessed as part of physical assessments every 13 weeks. More comprehensive assessments every 26 weeks included level of respiratory support and efficacy assessments of motor function in addition to safety and physical assessments. Outcomes assessed during the open-label extension study included adverse events, survival and event-free survival (defined as being alive with no permanent ventilation), growth measures, swallowing, feeding, and motor function. Motor function was assessed with the Children's Hospital of Philadelphia Infant Test of Neuromuscular Disorders (CHOP-INTEND), the gross motor subscale of the Bayley Scales of Infant and Toddler Development, third edition (BSID-III), and the Hammersmith Infant Neurological Examination, Module 2 (HINE-2). For all children, safety data including adverse events, serious and non-serious adverse events of special interest; ophthalmology assessments; laboratory assessments; vital signs; ECGs; and other protocol-specified tests deemed critical to the safety evaluation of the study, were collected up to 30 days after the last dose. Survival and event-free survival are reported at year 5 for all enrolled children. Adverse events are reported at year 5 for all children who received at least one dose of risdiplam (safety population). All other efficacy endpoints are reported at year 5 for the population who received the pivotal dose. FIREFISH is registered with ClinicalTrials.gov, NCT02913482.Findings Between Dec 23, 2016, and Nov 19, 2018, 62 children aged 1-7 months were enrolled in FIREFISH parts 1 and 2. After 2 years in the study (parts 1 and 2), 55 children continued risdiplam treatment into the open-label extension for a further 3 years. The study was completed on Dec 22, 2023, at which time 52 children (84%) had completed 5 years of risdiplam treatment. After 5 years of risdiplam treatment, 56 children (90%) were alive, and 50 (80%) were alive without the need for permanent ventilation. In the pivotal-dose population (n=58), 17 children (29%) did not require invasive or non-invasive respiratory support at year 5 and 13 (22%) did not require hospitalisations during the study. Upward trajectories for motor function responses were observed between years 1 and 5. The number of children who could sit without support for at least 5 s and 30 s was maintained during the 3-year extension, with 36 children (62%) and 34 children (59%), respectively, doing so by year 5. Similarly, for HINE-2, eight children (14%) reached the stable sit milestone and 26 (45%) met pivots at year 5. By year 5, four children (7%) could stand without support as assessed by both the BSID-III and HINE-2. No children could walk independently, but six (10%) met the HINE-2 cruising milestone. The mean HINE-2 total score increased from baseline (0·93 [90% CI 0·72-1·14]) to year 4 (14·22 [12·66-15·79]), remaining stable thereafter. Mean CHOP-INTEND scores increased from 22·47 at baseline (90% CI 20·97-23·96) and stabilised at around 50 at year 5, with scores of ≥40 for 38 children (66%), ≥50 for 29 children (50%), and ≥60 for 11 children (19%) at year 5. Most children maintained oral feeding (n=42; 72%) and swallowing (n=46; 79%) abilities, and growth was consistent with typical patterns seen in type 1 spinal muscular atrophy. Safety findings over 5 years were consistent with the results from the primary analysis. Most adverse events were mild or moderate. The most frequently reported adverse events were pyrexia (65% [n=40]), upper respiratory tract infection (63% [n=39]), and pneumonia (50% [n=31]). Pneumonia was the most frequently reported serious adverse event in 28 children (45%). No new safety findings were reported and no treatment-related events led to withdrawal from study treatment.Interpretation Unlike the natural history of children with type 1 spinal muscular atrophy, after 5 years of risdiplam treatment, most children in FIREFISH were alive without needing permanent ventilation, were able to swallow and feed orally, and had reached motor milestones not typically observed in untreated patients. These results show long-term continuous efficacy and safety of risdiplam in children with type 1 spinal muscular atrophy.Funding F Hoffmann-La Roche.",
+        "date": "2026-09-01",
+        "url": "https://doi.org/10.48620/99361",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.48620/99361",
+        "openAlexId": "W7167246019",
+        "subfield": {
+          "id": "subfields/2716",
+          "name": "Genetics"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T12400",
+          "name": "Neurogenetic and Muscular Disorders Research"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Maria Mazurkiewicz-Bełdzińska",
+          "Laurent Servais",
+          "Giovanni Baranello",
+          "Odile Boespflug‐Tanguy",
+          "John W Day",
+          "Nicolas P Deconinck",
+          "Andrea Klein",
+          "Riccardo Masson",
+          "Eugenio M Mercuri",
+          "Kristy Rose",
+          "Dmitry V Vlodavets",
+          "Hui Xiong",
+          "Edmar Zanoteli",
+          "Muna El-Khairi",
+          "Εleni Gaki",
+          "Manni Kuthiala",
+          "Ksenija Gorni",
+          "Heidemarie Kletzl",
+          "Laura Palfreeman",
+          "Basil T Darras"
+        ],
+        "venue": "Open Access CRIS of the University of Bern",
+        "indexedDate": "2026-07-04",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9257,
+          "everydayRelevance": 0.7333,
+          "freshness": 1,
+          "credibility": 0.855,
+          "total": 0.8753,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.2286
+          },
+          "everydayDomains": [
+            "health",
+            "family"
+          ],
+          "subfieldKey": "subfields/2716",
+          "evidence": [
+            "total 0.8753 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.93 = P 0.96 − 0.45×t 0.00 − 0.15×j 0.23",
+            "outcome verbs (v 1.00): increased, improvement, led to, resulted in",
+            "recognisable subjects (s 1.00): patients (title, ×2), children, infants, hospitals",
+            "quantified effect (q 1): percentage, sample size",
+            "title concreteness (c 0.80): −0.2 title is 24 words",
+            "jargon density (j 0.23): 20/875 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.73: 2 domain(s) — health, family",
+            "everyday terms (6): patient, patients, infection, hospital, treatment, children",
+            "freshness 1.00: 0 day(s) old (effective date 2026-09-01)",
+            "credibility 0.86 = 0.40×c1 1.00 + 0.25×c2 1.00 + 0.20×c3 0.80 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Open Access CRIS of the University of Bern",
+            "c2 1.00: n = 201862",
+            "c3 0.80: open access without an open licence (repository copy)",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.48620/99361)"
+      },
+      "summary": {
+        "souhrn": "Spinální svalová atrofie prvního typu je dědičná nemoc, při které kojencům rychle slábnou svaly, a studie FIREFISH sledovala 62 takových dětí léčených lékem risdiplam. Lék dostávaly ústy, poprvé ve věku jednoho až sedmi měsíců, a autoři je nyní sledovali celkem pět let. Po pěti letech žilo 56 z těchto 62 dětí, tedy devět z deseti; bez trvalé podpory dýchacího přístroje jich bylo 50, tedy čtyři z pěti. Ze skupiny 58 dětí, které dostávaly nakonec zvolenou dávku, si 36 dokázalo chvíli sednout bez opory, tedy zhruba tři z pěti, a čtyři se postavily bez držení. Samostatně nechodilo žádné dítě a nejčastější závažnou komplikací byl zápal plic, který prodělalo 31 dětí z těch 62, tedy polovina.",
+        "podrobneVysvetleni": "Do studie vědci zařadili 62 kojenců na sedmnácti pracovištích ve dvanácti zemích. Všechny děti měly geneticky potvrzenou diagnózu a dvě kopie genu SMN2. Po dvou letech léčby pokračovalo do tříletého prodloužení 55 z těchto 62 dětí. Celých pět let léčby dokončilo 52 dětí, tedy naprostá většina z těch 55. Lék se podával jednou denně ústy stříkačkou nebo sondou, dávka rostla s věkem a hmotností. Pohyblivost měřily tři standardní testy, u nichž vyšší číslo znamená lepší schopnost pohybu. Průměrné skóre testu CHOP-INTEND stouplo z 22,5 bodu na začátku na zhruba 50 bodů v pátém roce. Hranici 40 bodů překročilo 38 z 58 dětí na zvolené dávce, tedy asi dvě ze tří. Sedět bez opory alespoň pět vteřin zvládlo 36 z těchto 58 dětí, tedy zhruba tři z pěti. Žádnou dýchací podporu nepotřebovalo 17 z těch 58 dětí, tedy asi každé třetí. Ústy jedlo 42 z nich, tedy sedm z deseti, a polykat dokázalo 46, tedy čtyři z pěti. Bezpečnostní zjištění se od dřívějších analýz nelišila a většina potíží byla mírná či středně těžká. Horečku mělo 40 z 62 dětí, infekci horních cest dýchacích 39 z 62 a zápal plic 31 z 62. Zápal plic byl i nejčastější závažnou příhodou, prodělalo ho 28 dětí z těch 62, tedy skoro polovina. Kvůli potížím spojeným s lékem neukončilo léčbu žádné dítě. U neléčených dětí s tímto typem nemoci se popsané pohybové dovednosti obvykle neobjevují.",
+        "procJeToDulezite": "Spinální svalová atrofie prvního typu patří k nejtěžším dědičným nemocem kojenců. Studie ukazuje, jak si po pěti letech léčby vedou děti, které lék dostávaly už od prvních měsíců života: většina z nich žila bez trvalého dýchacího přístroje, jedla ústy a část se naučila sedět.",
+        "poznamkaKOmezenim": "Studie byla otevřená a neměla srovnávací skupinu neléčených dětí, zahrnula jen 62 dětí a zaplatila ji firma, která lék vyrábí."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 676,
+              "end": 678
+            },
+            "matchedText": "62",
+            "messageCs": "Číslo „62“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „62 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[676,678]: 62"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 25,
+              "end": 27
+            },
+            "matchedText": "62",
+            "messageCs": "Číslo „62“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „62 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[25,27]: 62"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 301,
+              "end": 303
+            },
+            "matchedText": "55",
+            "messageCs": "Číslo „55“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „55 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[301,303]: 55"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1028,
+              "end": 1030
+            },
+            "matchedText": "40",
+            "messageCs": "Číslo „40“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „40 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1028,1030]: 40"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1073,
+              "end": 1075
+            },
+            "matchedText": "39",
+            "messageCs": "Číslo „39“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „39 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1073,1075]: 39"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1078,
+              "end": 1080
+            },
+            "matchedText": "62",
+            "messageCs": "Číslo „62“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „62 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1078,1080]: 62"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1094,
+              "end": 1096
+            },
+            "matchedText": "31",
+            "messageCs": "Číslo „31“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „31 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1094,1096]: 31"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1099,
+              "end": 1101
+            },
+            "matchedText": "62",
+            "messageCs": "Číslo „62“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „62 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1099,1101]: 62"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1179,
+              "end": 1181
+            },
+            "matchedText": "62",
+            "messageCs": "Číslo „62“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „62 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1179,1181]: 62"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 125,
+              "end": 127
+            },
+            "matchedText": "62",
+            "messageCs": "Číslo „62“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „62 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[125,127]: 62"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 156,
+              "end": 166
+            },
+            "matchedText": " risdiplam",
+            "messageCs": "Text opisuje původní název článku („ risdiplam“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[156,166]:  risdiplam"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 661,
+              "end": 663
+            },
+            "matchedText": "31",
+            "messageCs": "Číslo „31“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „31 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[661,663]: 31"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1033,
+              "end": 1035
+            },
+            "matchedText": "62",
+            "messageCs": "Číslo „62“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „62 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1033,1035]: 62"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1164,
+              "end": 1166
+            },
+            "matchedText": "28",
+            "messageCs": "Číslo „28“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „28 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1164,1166]: 28"
+          },
+          {
+            "block": "procJeToDulezite",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 82,
+              "end": 276
+            },
+            "matchedText": "Studie ukazuje, jak si po pěti letech léčby vedou děti, které lék dostávaly už od prvních měsíců života: většina z nich žila bez trvalého dýchacího přístroje, jedla ústy a část se naučila sedět.",
+            "messageCs": "Tato věta má 33 slov a je moc dlouhá: „Studie ukazuje, jak si po pěti letech léčby vedou děti, které lék dostávaly už …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ procJeToDulezite[82,276]: Studie ukazuje, jak si po pěti letech léčby vedou děti, které lék dostávaly už od prvních měsíců života: většina z nich žila bez trvalého dýchacího přístroje, jedla ústy a část se naučila sedět."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=16.91",
+            "messageCs": "Věty jsou v průměru moc dlouhé (16,9 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=16.91"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7162752165",
+        "title": "Effects of midazolam and propofol on EEG detection of epileptiform activity in patients with altered consciousness.",
+        "abstract": "Objective Midazolam and propofol are the most frequently used sedative agents in intensive care units (ICU). Their effects on EEG in patients with altered consciousness received limited attention; we aim to assess their effects on diagnostic yield for epileptiform abnormalities.Methods This retrospective analysis of a multicenter randomized clinical trial (CERTA) included adult patients with acute consciousness disorders. All patients had EEG recordings and they were randomized 1:1 to either a continuous EEG (cEEG) or two routine EEG (rEEG). Patients were stratified according whether or not they received sedative medications and their dosage (combining midazolam and propofol).Results We analyzed 364 patients, 246 (67.6%) received sedative medication. Median dose of propofol was 0.89 mg/kg/h and 0.08 mg/kg/h for midazolam. Sedation was more frequent in structural brain injuries, and lower consciousness scores. Epileptiform discharges were more frequent in cEEG, women, higher consciousness scores, less severe condition, in patients with antiseizure medication (ASM). Sedation was not independently associated with EEG epileptiform activity.Conclusions Despite its potential of suppressing epileptiform activity, we found no difference in terms of detection of epileptiform activity whether patients received sedation or not.Significance Continuously administrated sedation may have less effect on EEG than when administered in bolus.",
+        "date": "2026-09-01",
+        "url": "https://doi.org/10.48620/98198",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.48620/98198",
+        "openAlexId": "W7162752165",
+        "subfield": {
+          "id": "subfields/2703",
+          "name": "Anesthesiology and Pain Medicine"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T10436",
+          "name": "Anesthesia and Sedative Agents"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Milène Guinchard",
+          "Andrea O Rossetti",
+          "Kaspar Schindler",
+          "Stephan Rüegg",
+          "Vincent Alvarez",
+          "Jan Novy"
+        ],
+        "venue": "Open Access CRIS of the University of Bern",
+        "indexedDate": "2026-05-30",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9777,
+          "everydayRelevance": 0.6667,
+          "freshness": 1,
+          "credibility": 0.7651,
+          "total": 0.8649,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.1485
+          },
+          "everydayDomains": [
+            "health",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2703",
+          "evidence": [
+            "total 0.8649 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.98 = P 1.00 − 0.45×t 0.00 − 0.15×j 0.15",
+            "outcome verbs (v 1.00): lowers, detection (title, ×2), associated with",
+            "recognisable subjects (s 1.00): patients (title, ×2), adults, women",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.15): 3/202 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.67: 2 domain(s) — health, mind",
+            "everyday terms (4): patient, patients, medication, attention",
+            "freshness 1.00: 0 day(s) old (effective date 2026-09-01)",
+            "credibility 0.77 = 0.40×c1 1.00 + 0.25×c2 0.64 + 0.20×c3 0.80 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Open Access CRIS of the University of Bern",
+            "c2 0.64: n = 364",
+            "c3 0.80: open access without an open licence (repository copy)",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.48620/98198)"
+      },
+      "summary": {
+        "souhrn": "Uklidňující léky, které dostávají pacienti na jednotkách intenzivní péče, jsou podezřelé z toho, že „utlumí\" i epileptickou aktivitu v mozku, a lékař tak na EEG (záznamu mozkových vln) nemusí nic poznat. Švýcarští autoři proto znovu prošli data 364 dospělých s náhlou poruchou vědomí z dřívější studie CERTA a porovnali ty, kdo dostávali midazolam nebo propofol, s těmi, kdo je nedostávali. Sedaci mělo 246 pacientů, tedy 67,6 %, a přesto se u nich epileptické výboje na EEG nacházely zhruba stejně často jako u ostatních — souvislost mezi tlumením a nálezem se neprokázala. Výboje se přitom častěji objevily při nepřetržitém snímání EEG než při dvou krátkých vyšetřeních. Autoři to vysvětlují tím, že sedativa podávaná plynule kapačkou působí na EEG jinak než jednorázová dávka do žíly.",
+        "podrobneVysvetleni": "Data pocházejí z už dokončené mezinárodní studie CERTA, do níž lékaři zařazovali dospělé pacienty s náhle porušeným vědomím. Každý dostal buď nepřetržité snímání mozkových vln (continuous EEG), nebo dvě krátká běžná vyšetření; o tom, co komu připadne, rozhodl los, a obě skupiny vyšly stejně velké. Autoři nynější práce se zpětně podívali na 364 těchto pacientů a rozdělili je podle toho, zda dostávali sedativa a v jaké dávce. Sedaci mělo 246 z nich, tedy 67,6 % — zbývající pacienti ji nedostali. Prostřední (v odborném jazyce mediánová) dávka propofolu, tedy taková, pod kterou a nad kterou leží stejný počet pacientů, byla 0,89 miligramu na kilogram hmotnosti za hodinu; u midazolamu činila tato prostřední dávka 0,08 miligramu na kilogram za hodinu. Obojí se podávalo plynule kapačkou, ne nárazově.\n\nTlumící léky dostávali častěji lidé s poškozením mozkové tkáně a s hlubší poruchou vědomí. Epileptické výboje se na záznamu objevovaly častěji při nepřetržitém snímání, u žen, u pacientů v lepším stavu vědomí a u těch, kdo už užívali léky proti záchvatům. Samotná sedace ale s nálezem výbojů nesouvisela, ani když autoři přihlédli k ostatním rozdílům mezi pacienty. Prakticky to znamená, že běžné tlumení na jednotce intenzivní péče podle těchto dat nález na EEG nesmaže — a lékař tedy nemusí kvůli vyšetření tlumení přerušovat.",
+        "procJeToDulezite": "U pacientů v bezvědomí se epileptické záchvaty často pozná jen z EEG, a pochybnost, zda výsledek nezkreslila sedativa, komplikuje rozhodování lékařů o léčbě i o tom, co rodině sdělit.",
+        "poznamkaKOmezenim": "Jde o zpětné vyhodnocení dat z dřívější studie, která nebyla pro tuto otázku navržena; o tom, kdo dostane sedativa, nerozhodoval los, ale stav pacienta, a dávky byly podávané plynule — u jednorázových nárazových dávek může být výsledek jiný."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 499,
+              "end": 754
+            },
+            "matchedText": "Prostřední (v odborném jazyce mediánová) dávka propofolu, tedy taková, pod kterou a nad kterou leží stejný počet pacientů, byla 0,89 miligramu na kilogram hmotnosti za hodinu; u midazolamu činila tato prostřední dávka 0,08 miligramu na kilogram za hodinu.",
+            "messageCs": "Tato věta má 40 slov a je moc dlouhá: „Prostřední (v odborném jazyce mediánová) dávka propofolu, tedy taková, pod kter…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[499,754]: Prostřední (v odborném jazyce mediánová) dávka propofolu, tedy taková, pod kterou a nad kterou leží stejný počet pacientů, byla 0,89 miligramu na kilogram hmotnosti za hodinu; u midazolamu činila tato prostřední dávka 0,08 miligramu na kilogram za hodinu."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 627,
+              "end": 631
+            },
+            "matchedText": "0,89",
+            "messageCs": "Číslo „0,89“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „0,89 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[627,631]: 0,89"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 717,
+              "end": 721
+            },
+            "matchedText": "0,08",
+            "messageCs": "Číslo „0,08“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „0,08 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[717,721]: 0,08"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=22.44",
+            "messageCs": "Věty jsou v průměru moc dlouhé (22,4 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=22.44"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 337,
+              "end": 348
+            },
+            "matchedText": " midazolam ",
+            "messageCs": "Text opisuje původní název článku („ midazolam “). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[337,348]:  midazolam "
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 352,
+              "end": 361
+            },
+            "matchedText": " propofol",
+            "messageCs": "Text opisuje původní název článku („ propofol“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[352,361]:  propofol"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 448,
+              "end": 457
+            },
+            "matchedText": " epilepti",
+            "messageCs": "Text opisuje původní název článku („ epilepti“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[448,457]:  epilepti"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 676,
+              "end": 686
+            },
+            "matchedText": " midazolam",
+            "messageCs": "Text opisuje původní název článku („ midazolam“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[676,686]:  midazolam"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 895,
+              "end": 904
+            },
+            "matchedText": " Epilepti",
+            "messageCs": "Text opisuje původní název článku („ Epilepti“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[895,904]:  Epilepti"
+          },
+          {
+            "block": "procJeToDulezite",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 25,
+              "end": 34
+            },
+            "matchedText": " epilepti",
+            "messageCs": "Text opisuje původní název článku („ epilepti“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ procJeToDulezite[25,34]:  epilepti"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=2",
+            "messageCs": "Počet vět delších než 30 slov: 2. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=2"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=46.1",
+            "messageCs": "Text se celkově čte těžko (index 46 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=46.1"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7204495343",
+        "title": "Association Between Perceived Interpersonal Support and Quality of Life Among Adult Patients Undergoing Chemotherapy at an Integrated Academic Cancer Institute.",
+        "abstract": "PURPOSE: Increased interpersonal support may improve the quality of life of patients with a cancer diagnosis. We seek to determine the relationship between perceived interpersonal support (PIS) and quality of life (QOL) among adult patients receiving chemotherapy infusions at an academic cancer institute. METHODS: We surveyed patients with cancer receiving chemotherapy infusions at The Miriam Hospital (TMH) of Brown University Health from February 2024 to April 2024. We administered two established surveys in-person to patients: (1) a 12-item Interpersonal Support Evaluation List (ISEL), and (2) a 16-item Quality of Life Scale (QOLS). Linear regressions were run to understand any association between performance on the ISEL and the QOLS, and between demographic characteristics and ISEL or QOLS performance. RESULTS: Of 432 eligible chemotherapy patients during the study period, 93 (22%) completed the prospective surveys. The mean (SD) ISEL total score was 31.2 (6.0) out of a maximum of 36, and the mean QOLS total score was 93.5 (11.8) out of a maximum of 112. Higher PIS was significantly associated with greater QOL satisfaction (β = 0.86; 95% CI, 0.28 to 1.43; P = 0.004), indicating a 0.86-unit QOLS increase per unit rise in ISEL score. Patients who identified as \"Black or African American\" (β = -5.36; 95% CI, -9.39 to -1.32; P = 0.010) or \"Other\" (β = -4.91; 95% CI, -8.95 to -0.88; P = 0.018) had a significantly lower ISEL total score compared to those who identified as \"White or Caucasian.\" CONCLUSION: PIS is positively associated with QOL among patients undergoing chemotherapy. Cancer institutes should proactively make workforce, programmatic, and resource investments to better address gaps in support to improve QOL.",
+        "date": "2026-09-01",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42647840",
+        "licence": null,
+        "source": "openalex",
+        "doi": null,
+        "openAlexId": "W7204495343",
+        "subfield": {
+          "id": "subfields/2730",
+          "name": "Oncology"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T10178",
+          "name": "Cancer survivorship and care"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Ian B Lau",
+          "Hamid Torabzadeh",
+          "Wesley H Peng",
+          "Kathleen Higginbotham",
+          "Fred J. Schiffman"
+        ],
+        "venue": "PubMed",
+        "indexedDate": "2026-08-28",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9374,
+          "everydayRelevance": 0.7333,
+          "freshness": 1,
+          "credibility": 0.605,
+          "total": 0.845,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.1504
+          },
+          "everydayDomains": [
+            "school",
+            "health"
+          ],
+          "subfieldKey": "subfields/2730",
+          "evidence": [
+            "total 0.8450 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.94 = P 0.96 − 0.45×t 0.00 − 0.15×j 0.15",
+            "outcome verbs (v 1.00): increased, increases, improves, lowers, associated with",
+            "recognisable subjects (s 1.00): patients (title, ×2), adults (title, ×2), hospitals",
+            "quantified effect (q 1): percentage, p-value, 95% CI",
+            "title concreteness (c 0.80): −0.2 title is 20 words",
+            "jargon density (j 0.15): 4/266 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.73: 2 domain(s) — school, health",
+            "everyday terms (6): university, health, patient, patients, cancer, hospital",
+            "freshness 1.00: 0 day(s) old (effective date 2026-09-01)",
+            "credibility 0.61 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in PubMed",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no DOI and no arXiv id to look up"
+      },
+      "summary": {
+        "souhrn": "Lidé, kteří na chemoterapii cítí kolem sebe víc opory od blízkých, hodnotí kvalitu svého života lépe. Vyplývá to z dotazníkového šetření mezi 93 dospělými pacienty jedné americké nemocnice, kteří na jaře 2024 docházeli na infuze chemoterapie a vyplnili dva zavedené dotazníky — jeden o vnímané mezilidské opoře, druhý o spokojenosti se životem. Souvislost byla mírná, ale statisticky doložená: každý bod navíc v míře vnímané opory odpovídal zhruba 0,86 bodu navíc ve skóre kvality života. Zároveň se ukázalo, že pacienti, kteří se označili za černochy nebo za jinou než bílou skupinu, uváděli výrazně nižší míru opory než pacienti bílí. Autoři z toho vyvozují, že nemocnice by neměly spoléhat jen na to, že si oporu každý pacient zařídí sám, a měly by do podpůrných služeb cíleně investovat.",
+        "podrobneVysvetleni": "Výzkumníci oslovili pacienty s nádorovým onemocněním, kteří od února do dubna 2024 dostávali chemoterapii v nemocnici The Miriam Hospital (Brown University Health). Osobně jim předložili dva standardní dotazníky: dvanáctipoložkový seznam hodnotící, jak člověk vnímá dostupnost pomoci od svého okolí (Interpersonal Support Evaluation List), a šestnáctipoložkovou škálu spokojenosti s různými oblastmi života (Quality of Life Scale). Odpovědi pak porovnávali statistickou metodou, která hledá, jak spolu dvě čísla souvisejí.\n\nZ 432 pacientů, kteří přicházeli v úvahu, dotazníky vyplnilo 93 — tedy zhruba každý pátý. Průměrné skóre opory bylo 31,2 z maximálních 36 bodů, průměrná kvalita života 93,5 ze 112 bodů; oba průměry tedy ležely v horní části stupnice. Vztah mezi nimi byl kladný: bod navíc v oporě odpovídal 0,86 bodu navíc v kvalitě života. Rozdíly podle toho, jak se pacienti sami zařadili, byly zřetelné — pacienti hlásící se k černošské identitě měli skóre opory v průměru o 5,4 bodu nižší a pacienti v kategorii „jiné\" o 4,9 bodu nižší než pacienti bílí.\n\nJde o měření v jeden okamžik, takže studie neukazuje, co je příčina a co následek. Je stejně dobře možné, že lidé, kterým se daří lépe, vnímají své okolí jako vstřícnější.",
+        "procJeToDulezite": "Ukazuje, že u léčby rakoviny nehraje roli jen samotná terapie, ale i to, jestli má pacient kolem sebe někoho, na koho se může spolehnout — a že tahle opora není rozdělená rovnoměrně.",
+        "poznamkaKOmezenim": "Šlo o jednorázový dotazník v jedné nemocnici, který vyplnilo jen 93 z 432 oslovených pacientů (22 %), takže výsledek ukazuje souvislost, nikoli příčinu, a nemusí platit obecně."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 814,
+              "end": 823
+            },
+            "matchedText": "0,86 bodu",
+            "messageCs": "Číslo „0,86 bodu“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „0,86 bodu — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[814,823]: 0,86 bodu"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 848,
+              "end": 1065
+            },
+            "matchedText": "Rozdíly podle toho, jak se pacienti sami zařadili, byly zřetelné — pacienti hlásící se k černošské identitě měli skóre opory v průměru o 5,4 bodu nižší a pacienti v kategorii „jiné\" o 4,9 bodu nižší než pacienti bílí.",
+            "messageCs": "Tato věta má 39 slov a je moc dlouhá: „Rozdíly podle toho, jak se pacienti sami zařadili, byly zřetelné — pacienti hlá…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[848,1065]: Rozdíly podle toho, jak se pacienti sami zařadili, byly zřetelné — pacienti hlásící se k černošské identitě měli skóre opory v průměru o 5,4 bodu nižší a pacienti v kategorii „jiné\" o 4,9 bodu nižší než pacienti bílí."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=23.27",
+            "messageCs": "Věty jsou v průměru moc dlouhé (23,3 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=23.27"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=4",
+            "messageCs": "Počet vět delších než 30 slov: 4. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=4"
+          }
+        ],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 985,
+              "end": 993
+            },
+            "matchedText": "5,4 bodu",
+            "messageCs": "Číslo „5,4 bodu“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „5,4 bodu — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[985,993]: 5,4 bodu"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1032,
+              "end": 1040
+            },
+            "matchedText": "4,9 bodu",
+            "messageCs": "Číslo „4,9 bodu“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „4,9 bodu — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1032,1040]: 4,9 bodu"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=43.3",
+            "messageCs": "Text se celkově čte těžko (index 43 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=43.3"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-09-01T09:42:33.878Z",
+  "generatedOn": "2026-09-01",
+  "schemaVersion": 1
+}

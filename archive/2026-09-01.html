@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Zdraví a medicína – 1. září 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Zdraví a medicína</h1>
+<p class="dateline"><time datetime="2026-09-01">1. září 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 5</p>
+<div class="summary"><p><span class="lead">Dánští vědci prošli všechny vyzvednuté recepty na léky proti ADHD u dětí a dospívajících od pěti do sedmnácti let a sledovali, jak se jejich užívání měnilo mezi roky 2010 a 2023.</span> U chlapců počet nově léčených nejprve klesal, kolem roku 2014 se trend otočil a dál už jen rostl; u dívek stoupal celou dobu bez přestávky. Podíl léčených dívek se do roku 2023 ztrojnásobil, u chlapců vzrostl asi o polovinu, takže rozdíl mezi pohlavími se zmenšil — dívky ovšem začínaly s léky v průměru o dva roky později než chlapci, tedy ve třinácti letech místo v jedenácti. A čím později léčba začala, tím kratší bývala. Z dětí, které s léky začaly jako nejmladší, je po pěti letech brala ještě asi dvě třetiny, kdežto z těch, kdo začal jako starší teenager, necelá třetina.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Podkladem byly záznamy o lécích skutečně vyzvednutých v lékárně, ne jen o předepsaných — Dánsko takové údaje vede pro celou zemi, takže autoři nepracovali se vzorkem, ale s celou populací dětí a dospívajících od pěti do sedmnácti let. Sledovali, kolik dětí s léčbou každý rok začíná, kolik dětí léky v daném roce užívá, v jakém věku léčba začíná, kdo ji předepisuje a jak dlouho vydrží. U chlapců má křivka nově léčených tvar písmene U: od roku 2010 do roku 2014 klesla přibližně na polovinu, pak se ale zvedla a do roku 2023 se proti tomuto dnu ztrojnásobila. U dívek rostla plynule a na konci období byla víc než trojnásobná proti začátku. V roce 2023 užívalo léky asi tři a půl procenta chlapců, tedy přibližně jeden ze třiceti, a necelá dvě procenta dívek, tedy asi jedna z padesáti. Předepisování se zároveň přesunulo k odborníkům: recept na začátku léčby vydala v posledním sledovaném roce téměř v devíti případech z deseti dětská a dorostová psychiatrie. Autoři soudí, že hlavní příčinou růstu u dívek je větší povědomí o tom, že ADHD se u nich projevuje jinak a snadněji se přehlédne. Dvouleté zpoždění oproti chlapcům podle nich zaslouží pozornost lékařů — dívky se k léčbě dostávají až v době, kdy na ně doléhá puberta a nároky vyšších ročníků.</p>
+<h3>Proč je to důležité</h3>
+<p>ADHD se u dívek dlouho přehlíželo a tato data ukazují, že se to mění — ale i to, že diagnózu a léčbu dostávají v průměru o dva roky později než chlapci, tedy až po části školních let, kdy by pomoc potřebovaly.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Maria Højgaard; id_orcid 0009-0004-0172-7620 Stoltz-Andersen, Martin Ernst, Søren Dalsgaard, Lotte Rasmussen, Rikke Wesselhoeft</dd>
+<dt>Časopis</dt>
+<dd>University of Southern Denmark Research Portal (University of Southern Denmark)</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-01">1. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1111/acps.70103" rel="noreferrer">10.1111/acps.70103</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7155097679" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://findresearcher.sdu.dk/ws/files/315402264/Acta_Psychiatr_Scand_-_2026_-_Stoltz_Andersen_-_Use_of_Attention_Deficit_Hyperactivity_Disorder_Medication_Among_Danish.pdf" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://portal.findresearcher.sdu.dk/da/publications/34c6339b-38d2-4911-be30-ea3051ea871e" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Studie popisuje jen vyzvednuté recepty v Dánsku, neříká nic o tom, zda byly diagnózy správné ani zda léky pomohly, a příčiny nárůstu autoři pouze odhadují.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 5</p>
+<div class="summary"><p><span class="lead">Zlomeniny horního konce pažní kosti (proximal humerus fracture) patří u starších lidí k nejčastějším a lékaři se dodnes přou, kdy operovat a kdy ne.</span> V roce 2019 vznikl takzvaný St. Gallenský algoritmus — rozhodovací návod, který má lékaři podle typu zlomeniny a stavu pacienta poradit správnou léčbu. Švýcarští autoři poprvé ověřili, jak si návod vede v praxi: prošli zpětně 730 pacientů léčených v jedné nemocnici v letech 2010 až 2020 a zjistili, že podle algoritmu byla léčena necelá polovina z nich (43 %). Selhání léčby, tedy nutnost dalšího zákroku či nezhojení, nastalo u 11 % pacientů léčených podle algoritmu a u 14 % ostatních — rozdíl tak malý, že ho statistika neodliší od náhody, a spokojenost s funkcí ramene byla v obou skupinách prakticky stejná. Návod tedy podle téhle práce neškodí a možná mírně pomáhá, ale zázraky od něj čekat nelze.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Autoři nesledovali pacienty dopředu, ale zpětně prošli zdravotnickou dokumentaci všech, kdo měli v jejich nemocnici mezi lety 2010 a 2020 samostatnou zlomeninu horního konce pažní kosti. U každého posoudili, zda zvolená léčba odpovídala doporučení St. Gallenského algoritmu, a pak porovnali, jak oba postupy dopadly. Průměrná doba sledování byla 22 měsíců, tedy necelé dva roky.</p>
+<p>Podle algoritmu byla léčena necelá polovina pacientů — 43 %, tedy 316 ze 730. Léčba selhala celkem u 13 % lidí, což je zhruba jeden z osmi (94 pacientů). Ve skupině léčené podle návodu to bylo 11 % (asi jeden z devíti), v ostatní skupině 14 % (asi jeden ze sedmi). Rozdíl tří procentních bodů ale nebyl statisticky průkazný, jinými slovy mohl vzniknout náhodou. Pacienti sami hodnotili funkci svého ramene na stupnici do sta bodů podobně: 89 bodů v jedné skupině a 90 ve druhé.</p>
+<p>Zajímavější jsou vedlejší nálezy. Mezi rizikové faktory selhání patřila jedna konkrétní větev algoritmu a takzvaný Neerův typ zlomeniny 3, tedy určitý vzorec roztříštění kosti. Složitější statistický model pak naznačil, že dodržení algoritmu by přece jen mohlo riziko selhání snižovat — výsledek byl ale těsně na hranici průkaznosti, takže ho sami autoři berou jen jako náznak.</p>
+<h3>Proč je to důležité</h3>
+<p>Tyhle zlomeniny potkají hlavně starší lidi a to, jestli se rameno vrátí do provozu, závisí na volbě léčby — je proto dobré vědět, že populární rozhodovací návod má zatím jen podpůrné, ne přesvědčivé důkazy. Pro pacienta z toho plyne, že rozhodnutí lékaře stále stojí hlavně na konkrétním případu, ne na univerzálním schématu.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Angela M. Moosmann, Andres Marin, Philippe Vial, Attila Güleryüz, Joseph M Schwab, Moritz Tannast</dd>
+<dt>Časopis</dt>
+<dd>Open Access CRIS of the University of Bern</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-01">1. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.48620/99911" rel="noreferrer">10.48620/99911</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7171972344" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.48620/99911" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o zpětný rozbor dokumentace z jediné nemocnice bez náhodného rozdělení pacientů do skupin, spokojenost s ramenem navíc vyplnilo jen 85 lidí ze 730, takže závěry jsou podpůrné, nikoli definitivní.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 5</p>
+<div class="summary"><p><span class="lead">Spinální svalová atrofie prvního typu je dědičná nemoc, při které kojencům rychle slábnou svaly, a studie FIREFISH sledovala 62 takových dětí léčených lékem risdiplam.</span> Lék dostávaly ústy, poprvé ve věku jednoho až sedmi měsíců, a autoři je nyní sledovali celkem pět let. Po pěti letech žilo 56 z těchto 62 dětí, tedy devět z deseti; bez trvalé podpory dýchacího přístroje jich bylo 50, tedy čtyři z pěti. Ze skupiny 58 dětí, které dostávaly nakonec zvolenou dávku, si 36 dokázalo chvíli sednout bez opory, tedy zhruba tři z pěti, a čtyři se postavily bez držení. Samostatně nechodilo žádné dítě a nejčastější závažnou komplikací byl zápal plic, který prodělalo 31 dětí z těch 62, tedy polovina.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Do studie vědci zařadili 62 kojenců na sedmnácti pracovištích ve dvanácti zemích. Všechny děti měly geneticky potvrzenou diagnózu a dvě kopie genu SMN2. Po dvou letech léčby pokračovalo do tříletého prodloužení 55 z těchto 62 dětí. Celých pět let léčby dokončilo 52 dětí, tedy naprostá většina z těch 55. Lék se podával jednou denně ústy stříkačkou nebo sondou, dávka rostla s věkem a hmotností. Pohyblivost měřily tři standardní testy, u nichž vyšší číslo znamená lepší schopnost pohybu. Průměrné skóre testu CHOP-INTEND stouplo z 22,5 bodu na začátku na zhruba 50 bodů v pátém roce. Hranici 40 bodů překročilo 38 z 58 dětí na zvolené dávce, tedy asi dvě ze tří. Sedět bez opory alespoň pět vteřin zvládlo 36 z těchto 58 dětí, tedy zhruba tři z pěti. Žádnou dýchací podporu nepotřebovalo 17 z těch 58 dětí, tedy asi každé třetí. Ústy jedlo 42 z nich, tedy sedm z deseti, a polykat dokázalo 46, tedy čtyři z pěti. Bezpečnostní zjištění se od dřívějších analýz nelišila a většina potíží byla mírná či středně těžká. Horečku mělo 40 z 62 dětí, infekci horních cest dýchacích 39 z 62 a zápal plic 31 z 62. Zápal plic byl i nejčastější závažnou příhodou, prodělalo ho 28 dětí z těch 62, tedy skoro polovina. Kvůli potížím spojeným s lékem neukončilo léčbu žádné dítě. U neléčených dětí s tímto typem nemoci se popsané pohybové dovednosti obvykle neobjevují.</p>
+<h3>Proč je to důležité</h3>
+<p>Spinální svalová atrofie prvního typu patří k nejtěžším dědičným nemocem kojenců. Studie ukazuje, jak si po pěti letech léčby vedou děti, které lék dostávaly už od prvních měsíců života: většina z nich žila bez trvalého dýchacího přístroje, jedla ústy a část se naučila sedět.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Maria Mazurkiewicz-Bełdzińska, Laurent Servais, Giovanni Baranello, Odile Boespflug‐Tanguy, John W Day, Nicolas P Deconinck a další</dd>
+<dt>Časopis</dt>
+<dd>Open Access CRIS of the University of Bern</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-01">1. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.48620/99361" rel="noreferrer">10.48620/99361</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7167246019" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.48620/99361" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Studie byla otevřená a neměla srovnávací skupinu neléčených dětí, zahrnula jen 62 dětí a zaplatila ji firma, která lék vyrábí.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-4">
+<p class="paper-counter">Studie 4 z 5</p>
+<div class="summary"><p>Uklidňující léky, které dostávají pacienti na jednotkách intenzivní péče, jsou podezřelé z toho, že „utlumí&quot; i epileptickou aktivitu v mozku, a lékař tak na EEG (záznamu mozkových vln) nemusí nic poznat. Švýcarští autoři proto znovu prošli data 364 dospělých s náhlou poruchou vědomí z dřívější studie CERTA a porovnali ty, kdo dostávali midazolam nebo propofol, s těmi, kdo je nedostávali. Sedaci mělo 246 pacientů, tedy 67,6 %, a přesto se u nich epileptické výboje na EEG nacházely zhruba stejně často jako u ostatních — souvislost mezi tlumením a nálezem se neprokázala. Výboje se přitom častěji objevily při nepřetržitém snímání EEG než při dvou krátkých vyšetřeních. Autoři to vysvětlují tím, že sedativa podávaná plynule kapačkou působí na EEG jinak než jednorázová dávka do žíly.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Data pocházejí z už dokončené mezinárodní studie CERTA, do níž lékaři zařazovali dospělé pacienty s náhle porušeným vědomím. Každý dostal buď nepřetržité snímání mozkových vln (continuous EEG), nebo dvě krátká běžná vyšetření; o tom, co komu připadne, rozhodl los, a obě skupiny vyšly stejně velké. Autoři nynější práce se zpětně podívali na 364 těchto pacientů a rozdělili je podle toho, zda dostávali sedativa a v jaké dávce. Sedaci mělo 246 z nich, tedy 67,6 % — zbývající pacienti ji nedostali. Prostřední (v odborném jazyce mediánová) dávka propofolu, tedy taková, pod kterou a nad kterou leží stejný počet pacientů, byla 0,89 miligramu na kilogram hmotnosti za hodinu; u midazolamu činila tato prostřední dávka 0,08 miligramu na kilogram za hodinu. Obojí se podávalo plynule kapačkou, ne nárazově.</p>
+<p>Tlumící léky dostávali častěji lidé s poškozením mozkové tkáně a s hlubší poruchou vědomí. Epileptické výboje se na záznamu objevovaly častěji při nepřetržitém snímání, u žen, u pacientů v lepším stavu vědomí a u těch, kdo už užívali léky proti záchvatům. Samotná sedace ale s nálezem výbojů nesouvisela, ani když autoři přihlédli k ostatním rozdílům mezi pacienty. Prakticky to znamená, že běžné tlumení na jednotce intenzivní péče podle těchto dat nález na EEG nesmaže — a lékař tedy nemusí kvůli vyšetření tlumení přerušovat.</p>
+<h3>Proč je to důležité</h3>
+<p>U pacientů v bezvědomí se epileptické záchvaty často pozná jen z EEG, a pochybnost, zda výsledek nezkreslila sedativa, komplikuje rozhodování lékařů o léčbě i o tom, co rodině sdělit.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Milène Guinchard, Andrea O Rossetti, Kaspar Schindler, Stephan Rüegg, Vincent Alvarez, Jan Novy</dd>
+<dt>Časopis</dt>
+<dd>Open Access CRIS of the University of Bern</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-01">1. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.48620/98198" rel="noreferrer">10.48620/98198</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7162752165" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.48620/98198" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o zpětné vyhodnocení dat z dřívější studie, která nebyla pro tuto otázku navržena; o tom, kdo dostane sedativa, nerozhodoval los, ale stav pacienta, a dávky byly podávané plynule — u jednorázových nárazových dávek může být výsledek jiný.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-5">
+<p class="paper-counter">Studie 5 z 5</p>
+<div class="summary"><p><span class="lead">Lidé, kteří na chemoterapii cítí kolem sebe víc opory od blízkých, hodnotí kvalitu svého života lépe.</span> Vyplývá to z dotazníkového šetření mezi 93 dospělými pacienty jedné americké nemocnice, kteří na jaře 2024 docházeli na infuze chemoterapie a vyplnili dva zavedené dotazníky — jeden o vnímané mezilidské opoře, druhý o spokojenosti se životem. Souvislost byla mírná, ale statisticky doložená: každý bod navíc v míře vnímané opory odpovídal zhruba 0,86 bodu navíc ve skóre kvality života. Zároveň se ukázalo, že pacienti, kteří se označili za černochy nebo za jinou než bílou skupinu, uváděli výrazně nižší míru opory než pacienti bílí. Autoři z toho vyvozují, že nemocnice by neměly spoléhat jen na to, že si oporu každý pacient zařídí sám, a měly by do podpůrných služeb cíleně investovat.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Výzkumníci oslovili pacienty s nádorovým onemocněním, kteří od února do dubna 2024 dostávali chemoterapii v nemocnici The Miriam Hospital (Brown University Health). Osobně jim předložili dva standardní dotazníky: dvanáctipoložkový seznam hodnotící, jak člověk vnímá dostupnost pomoci od svého okolí (Interpersonal Support Evaluation List), a šestnáctipoložkovou škálu spokojenosti s různými oblastmi života (Quality of Life Scale). Odpovědi pak porovnávali statistickou metodou, která hledá, jak spolu dvě čísla souvisejí.</p>
+<p>Z 432 pacientů, kteří přicházeli v úvahu, dotazníky vyplnilo 93 — tedy zhruba každý pátý. Průměrné skóre opory bylo 31,2 z maximálních 36 bodů, průměrná kvalita života 93,5 ze 112 bodů; oba průměry tedy ležely v horní části stupnice. Vztah mezi nimi byl kladný: bod navíc v oporě odpovídal 0,86 bodu navíc v kvalitě života. Rozdíly podle toho, jak se pacienti sami zařadili, byly zřetelné — pacienti hlásící se k černošské identitě měli skóre opory v průměru o 5,4 bodu nižší a pacienti v kategorii „jiné&quot; o 4,9 bodu nižší než pacienti bílí.</p>
+<p>Jde o měření v jeden okamžik, takže studie neukazuje, co je příčina a co následek. Je stejně dobře možné, že lidé, kterým se daří lépe, vnímají své okolí jako vstřícnější.</p>
+<h3>Proč je to důležité</h3>
+<p>Ukazuje, že u léčby rakoviny nehraje roli jen samotná terapie, ale i to, jestli má pacient kolem sebe někoho, na koho se může spolehnout — a že tahle opora není rozdělená rovnoměrně.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Ian B Lau, Hamid Torabzadeh, Wesley H Peng, Kathleen Higginbotham, Fred J. Schiffman</dd>
+<dt>Časopis</dt>
+<dd>PubMed</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-01">1. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd>Studie zatím nemá DOI</dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7204495343" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://pubmed.ncbi.nlm.nih.gov/42647840" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Šlo o jednorázový dotazník v jedné nemocnici, který vyplnilo jen 93 z 432 oslovených pacientů (22 %), takže výsledek ukazuje souvislost, nikoli příčinu, a nemusí platit obecně.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 1. září 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>

@@ -616,6 +616,46 @@
       "titleKey": "changesinperihyoidmusclestrengthassociatedwithfixedandprogressiveresistanceexerciseinhealthyadults",
       "publishedOn": "2026-08-25",
       "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7155097679",
+      "doi": "10.1111/acps.70103",
+      "arxivId": null,
+      "titleKey": "useofattentiondeficithyperactivitydisordermedicationamongdanishchildrenandadolescentsfrom2010to2023",
+      "publishedOn": "2026-09-01",
+      "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7171972344",
+      "doi": "10.48620/99911",
+      "arxivId": null,
+      "titleKey": "isthestgallenalgorithmforproximalhumerusfracturesassociatedwithimprovedoutcomes",
+      "publishedOn": "2026-09-01",
+      "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7167246019",
+      "doi": "10.48620/99361",
+      "arxivId": null,
+      "titleKey": "efficacyandsafetyofrisdiplaminpatientswithtype1spinalmuscularatrophya3yearopenlabelextensionofthetwopartphase2firefishtrial",
+      "publishedOn": "2026-09-01",
+      "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7162752165",
+      "doi": "10.48620/98198",
+      "arxivId": null,
+      "titleKey": "effectsofmidazolamandpropofoloneegdetectionofepileptiformactivityinpatientswithalteredconsciousness",
+      "publishedOn": "2026-09-01",
+      "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7204495343",
+      "doi": null,
+      "arxivId": null,
+      "titleKey": "associationbetweenperceivedinterpersonalsupportandqualityoflifeamongadultpatientsundergoingchemotherapyatanintegratedacademiccancerinstitute",
+      "publishedOn": "2026-09-01",
+      "category": "health-medicine"
     }
   ]
 }
