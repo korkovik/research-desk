@@ -1,0 +1,832 @@
+{
+  "date": "2026-09-02",
+  "categoryKey": "nature-climate",
+  "categoryLabel": "Příroda a klima",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7204783978",
+        "title": "Comments: Why Scaling CO2-EOR Remains Difficult",
+        "abstract": "_ In August, Occidental Petroleum told investors that Stratos, its long-awaited direct air capture (DAC) project, could be fully constructed by year-end, with full commercial operations expected in 2027. The Permian Basin facility, expected to be the world's largest DAC plant with a nameplate capacity of 500,000 metric tons of CO2per year, was initially targeted to begin operating in 2024. The startup date was later pushed to mid-2025, which ended up slipping once again. The company attributed the most recent setback to an unspecified component that required significant repairs but was said to be unrelated to the core DAC technology involved. The lengthy delay reflects not only the challenge of scaling emerging technologies such as DAC, but also serves as a general reminder of the often long and difficult process of integrating carbon capture, storage and utilization (CCUS) projects with oilfield operations. A point source for the emissions usually needs to be relatively close to the oil field to keep midstream costs manageable. Then there’s the cost of capturing technology, which can be expensive to install and maintain. In a low-price environment, justifying these added expenses can be too high a bar for management. Stratos is estimated to have cost Occidental and its partners $1.3 billion, which the company is hoping to make back by selling carbon credits to other industrial firms. It also wants to make money with the CO2by supporting its enhanced oil recovery (EOR) business in the Permian. The company has for decades used naturally sourced (i.e., geologic) CO2 for EOR in conventional rocks, but has recently committed to commercial-scale shale CO2-EOR. Occidental has outlined plans for three shale CO2-EOR projects, two in Texas and one in New Mexico, with additional developments hoped to come in the future. Early pilot results saw production gains of 40 to 50% above baseline levels, which represent a big enough carrot for the company to go after with new CO2 infrastructure. ExxonMobil is also looking to step up its CO2-EOR business following its 2023 acquisition of Denbury, which operated 1,300 miles of CO2pipelines across the US. The US supermajor has recently proposed a 900-mile \"carbon superhighway\" designed to transport captured shale CO2 from industrial facilities across Texas, Louisiana, and Mississippi to other locations for EOR, permanent storage, and commercial beverage manufacturing. ExxonMobil has said CO2volumes and quality will be monitored as they enter and move through the system, likening the process to vehicles passing through toll booths. The US pioneered CO2-EOR in the 1970s and remains a global leader in the practice. There are more than 140 such projects spread across the country. This is according to a slightly dated report in 2021 from the Enhanced Oil Recovery Institute, which said then that CO2-EOR projects accounted for 273,000 B/D of combined output. But there are also projects outside of the US that are worth noting. In Canada, the best-known and successful may be the Weyburn-Midale Field in Saskatchewan. Pilot CO2 injections started in the 1980s and by 2000 full-scale injections began. As summarized in a recent paper (SPE 233164), more than 121 million metric tons of CO2have been placed into the reservoir, sourced from a coal gasification facility across the international border in North Dakota. But not all the CO2stays in the ground in some of these projects. Researchers responsible for the paper highlighted that, in the Weyburn-Midale Field, about 65 million metric tons, or just over half, of the CO2has remained sequestered, while the rest was produced back with the oil. In 2025, Brazil’s Petrobras said it had injected almost 68 million metric tons of CO2since 2008, and it expected that figure to rise to a total of 80 million metric tons by the end of that year. In 2024 alone, the company injected 14.2 million metric tons into the pre-salt rocks of the Santos Basin, which it said represented the largest CO2-EOR project of its kind in the world and represented more than a quarter of all CCUS efforts globally. The data suggest Petrobras has rapidly scaled up injection activity, with 2024 and 2025 injection volumes running several times above the project's long-term historical average. The strategy used by Petrobras involves 22 floating production, storage, and offloading (FPSO) units that are equipped with CO2 capture and injection technologies. One of the newest technologies in this area is a subsea high-pressure separation and reinjection system called HISEP. Developed by Petrobras and built by Technip, HISEP was the cornerstone of a $1.5-billion pilot program in 2024 in the Mero field. The goal was to lower the cost of processing CO2on the topsides of an FPSO. The technology is now hoped to be applied across other developments, potentially extending production from Brazil's pre-salt fields and especially those reservoirs with a high CO2content. Other countries including China, Turkey, Hungary, the UAE, and Saudi Arabia have also established CO2-EOR projects of varying scale. Several more are either piloting or are in the early stages of launching their first CO2-EOR developments. One to watch is in Oman. A pilot project that has led to a full-field development was recently presented at the SPE Improved Oil Recovery Conference this year in SPE 231525. The paper outlines Oman’s first full-field CO2-EOR project that will involve capturing up to 250,000 metric tons of CO2per year which will be transported just over 57 miles to well locations. The project, owned and operated by Petroleum Development Oman (PDO), includes the drilling of 94 new horizontal wells for production along with 42 new dual and single lateral wells for gas injection. PDO expects to have CO2injections running by 2031 and thanks in part to CO2recycling aims to produce the field for 25 or more years. Notably, the field could not be economically produced without this approach. PDO reports that the low permeability of the rock resulted in a primary recovery factor of only 2%. With the CO2injections, PDO believes it can recover as much as 30% while also hoping to leave all the injected CO2in the ground. Various analyses have shown that there is a great deal of potential to expand CO2-EOR across many of the world’s reservoirs, at least from a technical perspective. But as is pointed out by the author of SPE 233164, companies must first have a very detailed and clear vision to accomplish such a project. And as mentioned, capturing technology is expensive and complex, as is moving the gas around. ExxonMobil’s plan hinges on an existing network of several hundreds of miles of CO2 pipelines it bought from what was a pure play CO2-EOR operator. In other words, it did not sprout overnight. Also, almost no countries offer the kind of government incentives or generous tax breaks that the US and Canada do for this type of operation. Then there is the critical factor of human capital. Experience and technical expertise are widely viewed as essential to the success of CO₂ management programs and to controlling project costs. That expertise may be more readily available than two other essential ingredients. The first is corporate commitment. The second, closely related, is access to capital, or at least capital that can compete with other investment opportunities for funding. Occidental provides a useful example. In 2023, the company outlined a vision of building 100 DAC plants globally by 2035. Today, with its first commercial-scale facility facing the sometimes-harsh realities of startup and scale-up, that goal appears unrealistic. The company has likewise stepped back from publicly mentioning its original target. For Further Reading SPE 231525 - The Field Development Plan for Sultanate of Oman’s First Full-Field CO2 Enhanced Oil Recovery Project by R. Valdez, J. Gavnholt, and A. Dhahli, et al. SPE 233164 - Thirty Years of CO2 Storage: Lessons Learned, Field Realities, and the Central Role of CO2-EOR by Tayfun Babadagli.",
+        "date": "2026-09-01",
+        "url": "https://doi.org/10.2118/0926-0002-jpt",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.2118/0926-0002-jpt",
+        "openAlexId": "W7204783978",
+        "subfield": {
+          "id": "subfields/2305",
+          "name": "Environmental Engineering"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T11302",
+          "name": "CO2 Sequestration and Geologic Interactions"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Trent Jacobs"
+        ],
+        "venue": "Journal of Petroleum Technology",
+        "indexedDate": "2026-09-01",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7605,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.605,
+          "total": 0.8232,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.5,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.3632
+          },
+          "everydayDomains": [
+            "food",
+            "money",
+            "body"
+          ],
+          "subfieldKey": "subfields/2305",
+          "evidence": [
+            "total 0.8232 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.76 = P 0.82 − 0.45×t 0.00 − 0.15×j 0.36",
+            "outcome verbs (v 1.00): improved, lowers, delays, led to, resulted in",
+            "recognisable subjects (s 0.50): plants, buildings",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.36): 47/1294 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — food, money, body",
+            "everyday terms (7): salt, price, prices, cost, costs, tax, running",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-01)",
+            "credibility 0.61 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Journal of Petroleum Technology",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.2118/0926-0002-jpt)"
+      },
+      "summary": {
+        "souhrn": "Do vyčerpaných ropných polí se dá vhánět oxid uhličitý, aby z nich vyteklo víc ropy — a část plynu přitom zůstane pod zemí. Komentář v oborovém časopise Journal of Petroleum Technology vysvětluje, proč se tento postup i po půlstoletí šíří jen pomalu. Příkladem je texaský projekt Stratos: měl začít fungovat v roce 2024, dnes se plný provoz čeká až v roce 2027, a stál 1,3 miliardy dolarů. Jinde to jde lépe — brazilský Petrobras vtlačuje CO2 ve velkém a v Ománu má metoda proměnit jinak netěžitelné ložisko. Podle autorů nerozhoduje technika, ale peníze, potrubí, státní podpora a hlavně vytrvalost firem.",
+        "podrobneVysvetleni": "Autoři vycházejí z odborných zpráv a z firemních oznámení. Princip metody je jednoduchý. Zachycený CO2 se stlačí a vtlačí do ložiska. Tam ropu naředí a pomůže ji vytlačit k vrtu. Něco plynu se ale vrátí zpátky s ropou na povrch. Kolik ho zůstane dole, se liší. Do kanadského pole Weyburn-Midale šlo od 80. let 121 milionů tun CO2. Pod zemí zůstalo asi 65 milionů tun, tedy něco přes polovinu. Ve Spojených státech běží víc než 140 takových projektů. Podle zprávy z roku 2021 daly dohromady 273 tisíc barelů ropy denně. To je v průměru necelé dva tisíce barelů na jeden projekt. Brazilský Petrobras vtlačil od roku 2008 téměř 68 milionů tun. Jen v roce 2024 to bylo 14,2 milionu tun, tedy víc než pětina celkového množství za jediný rok. Pomáhá mu k tomu 22 plovoucích těžebních plošin se zařízením na zachycování plynu. Nejnovější příklad je Omán. Bez vtlačování by z ložiska šlo vytěžit jen 2 % ropy, tedy dva barely ze sta. S CO2 firma čeká až 30 %, tedy skoro každý třetí barel. Proto se vyplatí vyhloubit 94 nových vodorovných vrtů, téměř sto nových děr do země. Hlavní překážky jsou ale jinde. Zachycovací technologie je drahá, potrubí se staví roky a mimo USA a Kanadu chybí státní podpora. Occidental chtěl do roku 2035 postavit sto zařízení na odsávání CO2 ze vzduchu. Dnes už ten cíl veřejně nezmiňuje.",
+        "procJeToDulezite": "Zachycování oxidu uhličitého se často líčí jako hotové řešení klimatu. Skutečné projekty ale ukazují, že rozhoduje cena, potrubí a trpělivost — a že část vtlačeného plynu se vrací zpět na povrch.",
+        "poznamkaKOmezenim": "Jde o přehledový komentář, ne o vlastní měření: čísla pocházejí z firemních oznámení a odborných zpráv, jedna z nich je z roku 2021, a údaje o budoucí těžbě v Ománu jsou zatím jen odhady."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 369,
+              "end": 381
+            },
+            "matchedText": "1,3 miliardy",
+            "messageCs": "Číslo „1,3 miliardy“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „1,3 miliardy — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[369,381]: 1,3 miliardy"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 427,
+              "end": 430
+            },
+            "matchedText": "140",
+            "messageCs": "Číslo „140“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „140 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[427,430]: 140"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 754,
+              "end": 756
+            },
+            "matchedText": "22",
+            "messageCs": "Číslo „22“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „22 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[754,756]: 22"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1009,
+              "end": 1011
+            },
+            "matchedText": "94",
+            "messageCs": "Číslo „94“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „94 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1009,1011]: 94"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 251,
+              "end": 389
+            },
+            "matchedText": "Příkladem je texaský projekt Stratos: měl začít fungovat v roce 2024, dnes se plný provoz čeká až v roce 2027, a stál 1,3 miliardy dolarů.",
+            "messageCs": "Tato věta má 26 slov a je moc dlouhá: „Příkladem je texaský projekt Stratos: měl začít fungovat v roce 2024, dnes se p…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[251,389]: Příkladem je texaský projekt Stratos: měl začít fungovat v roce 2024, dnes se plný provoz čeká až v roce 2027, a stál 1,3 miliardy dolarů."
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7131883892",
+        "title": "Remediation of phenol and p-nitrophenol from contaminated water using raw and quaternized Annona muricata L. peels",
+        "abstract": "Phenol and p -nitrophenol (PNP) are toxic, widely occurring phenolic pollutants requiring cost-effective removal methods. This study evaluates raw Annona muricata L. peels (RGP) and peels chemically quaternized (QGP) as low-cost biosorbents for phenol and PNP remediation from aqueous media. Adsorbents were prepared, characterized, and tested in batch experiments to optimize pH, contact time, sorbent dose, initial concentration, and temperature. Optimal removal occurred at pH 4; QGP consistently outperformed RGP. Under optimized conditions (0.03 g, 30–45 min, 298 K), Langmuir isotherm described sorption better than Freundlich, yielding q max values of 54.945 mg/g (QGP–phenol), 8.787 mg/g (RGP–phenol), 17.490 mg/g (QGP–PNP) and 5.920 mg/g (RGP–PNP). Kinetic data fitted the pseudo-second-order model ( R 2 > 0.959), indicating physisorption dominance and good agreement between experimental and calculated q e . Thermodynamic parameters (ΔH° negative, ΔS° positive, ΔG° negative) suggest spontaneous, mainly exothermic physisorption with increased randomness at the solid–liquid interface. Regeneration with 0.5 M HCl showed limited desorption (31–41% first cycle) and declining efficiency over five cycles, indicating incomplete regeneration and need for improved desorption methods. Application to river water spiked with 5 mg/L phenols produced removal of 49–63%, lower than synthetic solutions due to competing constituents. Overall, quaternization markedly enhances A. muricata peel adsorption capacity, making QGP a promising, low-cost biosorbent for phenolic pollutant removal pending optimization of regeneration and scale-up studies.",
+        "date": "2026-08-31",
+        "url": "https://doi.org/10.1007/s44274-026-01006-6",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1007/s44274-026-01006-6",
+        "openAlexId": "W7131883892",
+        "subfield": {
+          "id": "subfields/2312",
+          "name": "Water Science and Technology"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10016",
+          "name": "Adsorption and biosorption for pollutant removal"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://link.springer.com/content/pdf/10.1007/s44274-026-01006-6.pdf",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "James Ndiritu",
+          "John Wamumwe Mwangi"
+        ],
+        "venue": "Discover Environment",
+        "indexedDate": "2026-02-28",
+        "referencedWorksCount": 75,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.733,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.7143,
+          "credibility": 0.745,
+          "total": 0.7967,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.25,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.1299
+          },
+          "everydayDomains": [
+            "money",
+            "water",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2312",
+          "evidence": [
+            "total 0.7967 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.73 = P 0.75 − 0.45×t 0.00 − 0.15×j 0.13",
+            "outcome verbs (v 1.00): increased, improved, lowers, outperformed",
+            "recognisable subjects (s 0.25): rivers",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.13): 3/231 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 3 domain(s) — money, water, mind",
+            "everyday terms (5): cost, costs, river, rivers, concentration",
+            "freshness 0.71: 2 day(s) old (effective date 2026-08-31)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Discover Environment",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no tldr; falling back to the source abstract (§4.2)"
+      },
+      "summary": {
+        "souhrn": "Slupky z graviholy (Annona muricata, tropické ovoce známé jako soursop) umí z vody vytáhnout fenol a p-nitrofenol — dvě jedovaté látky, které se do vody dostávají hlavně z průmyslu. Vědci slupky nejprve jen usušili a pomleli, a pak druhou část chemicky upravili tak, aby na povrchu nesly kladný náboj (tzv. kvaternizace), který přitahuje molekuly znečišťujících látek. Upravené slupky zabraly výrazně víc: na gram materiálu navázaly asi 55 miligramů fenolu proti necelým 9 miligramům u neupravených slupek, tedy přibližně šestkrát více. Nejlépe to fungovalo v mírně kyselé vodě a během půl hodiny až tří čtvrtin hodiny. Háček je v tom, že slupky se špatně čistí a používají opakovaně, a v reálné říční vodě odstranily jen 49 až 63 procent znečištění — tedy asi polovinu až dvě třetiny.",
+        "podrobneVysvetleni": "Fenol a p-nitrofenol (PNP) patří mezi rozšířené a jedovaté látky ve odpadních vodách a jejich odstraňování bývá drahé. Autoři proto zkoušeli materiál, který je normálně odpad: slupky z plodů graviholy. Připravili dva vzorky — surové slupky (v práci označené RGP) a slupky chemicky upravené kvaternizací (QGP), díky níž na povrchu vzniknou trvale kladně nabitá místa. Pak v malých nádobkách postupně měnili kyselost vody, dobu míchání, množství slupek, počáteční koncentraci znečištění a teplotu, aby našli nejlepší nastavení.\n\nNejvíc se odstranilo při pH 4, tedy v mírně kyselé vodě, s 0,03 gramu materiálu a po 30 až 45 minutách. Maximální množství, které gram materiálu pobral, bylo u upravených slupek 54,9 mg fenolu a 17,5 mg PNP; u surových slupek jen 8,8 a 5,9 mg. Rozbor rychlosti i teplotních měření ukazuje, že se molekuly na povrch spíš jen přilepí slabými silami (fyzikální vazba), než že by vznikla pevná chemická vazba, a že proces běží sám a při něm se uvolňuje teplo.\n\nSlabinou je opakované použití: promytím kyselinou se podařilo uvolnit jen 31 až 41 procent zachycených látek, tedy asi třetinu, a po pěti cyklech účinnost dál klesala. Ve skutečné říční vodě s přidanými 5 mg fenolů na litr materiál odstranil 49 až 63 procent, protože mu konkurovaly další látky přítomné ve vodě.",
+        "procJeToDulezite": "Ukazuje to cestu, jak z ovocného odpadu udělat levný filtr na jedovaté látky ve vodě — užitečné hlavně tam, kde na drahé technologie nejsou peníze.",
+        "poznamkaKOmezenim": "Jde o laboratorní pokusy v malých objemech, materiál se zatím nedaří dobře vyčistit a znovu použít a v reálné říční vodě fungoval podstatně slabší než v připravených roztocích, takže využití ve velkém měřítku je teprve otázkou dalšího výzkumu."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 586,
+              "end": 590
+            },
+            "matchedText": "0,03",
+            "messageCs": "Číslo „0,03“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „0,03 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[586,590]: 0,03"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 612,
+              "end": 614
+            },
+            "matchedText": "30",
+            "messageCs": "Číslo „30“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „30 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[612,614]: 30"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 771,
+              "end": 982
+            },
+            "matchedText": "Rozbor rychlosti i teplotních měření ukazuje, že se molekuly na povrch spíš jen přilepí slabými silami (fyzikální vazba), než že by vznikla pevná chemická vazba, a že proces běží sám a při něm se uvolňuje teplo.",
+            "messageCs": "Tato věta má 36 slov a je moc dlouhá: „Rozbor rychlosti i teplotních měření ukazuje, že se molekuly na povrch spíš jen…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[771,982]: Rozbor rychlosti i teplotních měření ukazuje, že se molekuly na povrch spíš jen přilepí slabými silami (fyzikální vazba), než že by vznikla pevná chemická vazba, a že proces běží sám a při něm se uvolňuje teplo."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1187,
+              "end": 1188
+            },
+            "matchedText": "5",
+            "messageCs": "Číslo „5“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „5 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1187,1188]: 5"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1226,
+              "end": 1228
+            },
+            "matchedText": "49",
+            "messageCs": "Číslo „49“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „49 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1226,1228]: 49"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1232,
+              "end": 1242
+            },
+            "matchedText": "63 procent",
+            "messageCs": "Číslo „63 procent“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „63 procent — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1232,1242]: 63 procent"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=24.07",
+            "messageCs": "Věty jsou v průměru moc dlouhé (24,1 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=24.07"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 100,
+              "end": 108
+            },
+            "matchedText": " p-nitro",
+            "messageCs": "Text opisuje původní název článku („ p-nitro“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[100,108]:  p-nitro"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 7,
+              "end": 15
+            },
+            "matchedText": " p-nitro",
+            "messageCs": "Text opisuje původní název článku („ p-nitro“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[7,15]:  p-nitro"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=45.8",
+            "messageCs": "Text se celkově čte těžko (index 46 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=45.8"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7204684331",
+        "title": "E-Waste and Environmental Protection in India: A Contemporary Socio-Legal Study of Environmental Impacts, Regulatory Measures and Challenges",
+        "abstract": "Abstract The rapid development of digital technology, consumer electronics, information technology, and communication devices has led to a significant increase in electronic trash (e-waste) in India. Discarded computers, mobile phones, televisions, refrigerators, batteries, and other electronic devices contain both valuable materials and harmful compounds like lead, mercury, cadmium, and some flame retardants.[i] Improper collecting, dismantling, recycling, and disposal of e-waste can lead to major environmental pollution and harm human health. India generates significant amounts of e-waste, making its management a crucial environmental and regulatory issue.[ii] India has established a legal framework for e-waste management, most notably thru the E-Waste (Management) Rules, 2022, which included an enhanced system of Extended Producer Responsibility (EPR), recycling targets, registration requirements, and environmental compensation systems.[iii]These initiatives aim to shift more responsibility to producers, makers, refurbishes, and recyclers. However, considerable issues persist, including as insufficient collection methods, low public awareness, informal recycling, lax enforcement, poor infrastructure, and difficulties monitoring compliance.[iv] This article explores the environmental impact of e-waste in India thru a socio-legal lens. It examines the constitutional and statutory frameworks governing environmental protection and e-waste management, assesses the efficacy of existing regulatory measures, and identifies implementation issues. The study also examines the roles of government officials, producers, consumers, recyclers, and the informal sector in developing a sustainable e-waste management system. It contends that effective environmental preservation necessitates not just stricter legislation, but also effective enforcement, formalization of informal recyclers, public awareness, technical innovation, and increased producer responsibility. 1. World Health Organization, Children and Digital Dumpsites: E-Waste Exposure and Child Health, WHO (2021). 2. United Nations Institute for Training and Research (UNITAR), Global E-waste Monitor 202 3. Ministry of Environment, Forest and Climate Change, Government of India, E-Waste (Management) Rules, 2022 4. Ministry of Environment, Forest and Climate Change, Government of India, E-Waste (Management) Rules, 2022.",
+        "date": "2026-08-31",
+        "url": "https://doi.org/10.5281/zenodo.22172166",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.5281/zenodo.22172166",
+        "openAlexId": "W7204684331",
+        "subfield": {
+          "id": "subfields/2311",
+          "name": "Waste Management and Disposal"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T12017",
+          "name": "Recycling and Waste Management Techniques"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Dr. Bhakti Sharad Bhosale"
+        ],
+        "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+        "indexedDate": "2026-08-31",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7105,
+          "everydayRelevance": 1,
+          "freshness": 0.7143,
+          "credibility": 0.705,
+          "total": 0.7915,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 0,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.1967
+          },
+          "everydayDomains": [
+            "screens",
+            "energy",
+            "health",
+            "weather",
+            "family"
+          ],
+          "subfieldKey": "subfields/2311",
+          "evidence": [
+            "total 0.7915 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.71 = P 0.74 − 0.45×t 0.00 − 0.15×j 0.20",
+            "outcome verbs (v 1.00): increased, increases, extended, led to",
+            "recognisable subjects (s 1.00): children, consumers, forests, batteries, phones",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.20): 6/305 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 5 domain(s) — screens, energy, health, weather, family",
+            "everyday terms (6): mobile phone, batteries, health, climate, child, children",
+            "freshness 0.71: 2 day(s) old (effective date 2026-08-31)",
+            "credibility 0.71 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.80 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Zenodo (CERN European Organization for Nuclear Research)",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.80: open access without an open licence (repository copy)",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.5281/zenodo.22172166)"
+      },
+      "summary": {
+        "souhrn": "Vyhozené mobily, počítače, televize a chladničky obsahují cenné kovy i jedovaté látky, jako je olovo, rtuť nebo kadmium. V Indii jich rychle přibývá. Autor právní studie porovnal, co indická pravidla pro elektroodpad z roku 2022 nařizují, s tím, jak správa odpadu funguje v praxi. Předpisy přenášejí odpovědnost na výrobce a stanoví cíle pro recyklaci. Sběrných míst je ale málo, velkou část přístrojů rozebírají lidé v neformálních dílnách bez ochrany a dodržování pravidel se těžko kontroluje.",
+        "podrobneVysvetleni": "Nejde o měření v laboratoři. Autor pracuje s právními a společenskými zdroji. Rozebírá indickou ústavu a zákony na ochranu prostředí. Podrobně se věnuje pravidlům pro elektroodpad z roku 2022. Pak srovnává, co předpisy slibují, s tím, co se skutečně děje. Jádrem pravidel je takzvaná rozšířená odpovědnost výrobce (extended producer responsibility). Znamená to, že firma, která zařízení prodá, má postarat se i o jeho sběr a recyklaci. Pravidla zavádějí povinnou registraci, cíle pro množství recyklovaného odpadu a platby za nesplnění, tedy environmentální kompenzaci. Na papíře jde o poměrně silný systém. V praxi autor nachází několik slabin. Sběrných míst je nedostatek. Mnoho lidí nemá povědomí o tom, že starý přístroj nepatří do běžného koše. Velkou část práce odvádí neformální sektor: drobní sběrači a dělníci, kteří zařízení rozebírají ručně, pálí kabely a vyplavují kovy. Bez ochranných pomůcek se přitom dostávají do kontaktu s olovem, rtutí a kadmiem. Autor v této souvislosti odkazuje na zprávu Světové zdravotnické organizace z roku 2021 o ohrožení dětí na skládkách elektroniky. Úřadům navíc chybí kapacita na kontroly i technické zázemí. Závěr studie je střízlivý. Zpřísňovat zákony samo nestačí. Podle autora je potřeba zapojit neformální recyklátory do legálního systému, dát jim ochranu a školení, zlepšit osvětu mezi spotřebiteli a vymáhat existující pravidla důsledněji.",
+        "procJeToDulezite": "Elektroniku měníme čím dál častěji a její cesta nekončí v popelnici. Tam, kde se rozebírá bez ochrany, ohrožuje zdraví lidí, kteří tuhle práci dělají, i vodu a půdu v okolí.",
+        "poznamkaKOmezenim": "Jde o právní a společenský rozbor jednoho autora, nikoli o vlastní měření znečištění nebo zdravotních dopadů, a text vyšel v otevřeném repozitáři bez běžného recenzního posouzení."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "pass",
+        "hard": [],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 541,
+              "end": 553
+            },
+            "matchedText": " environment",
+            "messageCs": "Text opisuje původní název článku („ environment“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[541,553]:  environment"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7163378252",
+        "title": "Explicit depth representation improves the 3D modelling of soil carbon to nitrogen ratio in croplands",
+        "abstract": "The soil carbon-to-nitrogen ratio (C:N ratio) is a fundamental indicator of organic matter quality and nutrient cycling, yet its three-dimensional (3D) variability in croplands remains poorly understood. Accurate mapping of the C:N ratio is essential for evaluating sustainable agricultural practices, as it reflects the balance between soil organic carbon (SOC) and total nitrogen (TN) stabilization. Using the Hangjiahu Plain in the Yangtze River Basin of China, as a case study, we evaluated the predictive performance of 2.5D and 3D digital soil mapping (DSM) frameworks for soil C:N ratio to a depth of 1 m. A key methodological focus was comparing the direct prediction of the C:N ratio against indirect calculation from separate SOC and TN models. The results demonstrate that C:N ratio declined with soil depth, decreasing from 16.63±2.12 in the 0-20 cm to 14.58±3.87 in the 60–100 cm. Models based on a 3D assumption where depth is treated as an explicit spatial dimension consistently outperformed 2.5D models in estimating C:N ratio, achieving an R2 of 0.56 and an RMSE of 2.25. Crucially, direct prediction of the C:N ratio significantly improved model stability and accuracy, particularly in deeper layers. By reducing uncertainty in the 60–100 cm, the 3D direct-prediction approach provides a more robust representation of vertical stoichiometric gradients. These findings suggest that vertically informed DSM frameworks are vital for the reliable mapping of soil C:N ratio in high-resolution, profile-resolved agricultural assessments.",
+        "date": "2026-08-31",
+        "url": "https://doi.org/10.1016/j.geoderma.2026.118011",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1016/j.geoderma.2026.118011",
+        "openAlexId": "W7163378252",
+        "subfield": {
+          "id": "subfields/2305",
+          "name": "Environmental Engineering"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10770",
+          "name": "Soil Geostatistics and Mapping"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://www.sciencedirect.com/science/article/pii/S0016706126003393/pdf",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Hancheng Guo",
+          "Yushu Xia",
+          "Zhongxing Chen",
+          "Zheng Wang (25883)",
+          "Yuanyuan Yang",
+          "Songchao Chen",
+          "Zhou Shi"
+        ],
+        "venue": "Geoderma",
+        "indexedDate": "2026-06-04",
+        "referencedWorksCount": 54,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.6453,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.7143,
+          "credibility": 0.745,
+          "total": 0.7617,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.75,
+            "q": 0,
+            "c": 1,
+            "t": 0,
+            "j": 0.6148
+          },
+          "everydayDomains": [
+            "food",
+            "transport",
+            "water",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2305",
+          "evidence": [
+            "total 0.7617 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.65 = P 0.74 − 0.45×t 0.00 − 0.15×j 0.61",
+            "outcome verbs (v 1.00): improved, improves (title, ×2), outperformed",
+            "recognisable subjects (s 0.75): soil (title, ×2), rivers",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.61): 15/244 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 4 domain(s) — food, transport, water, mind",
+            "everyday terms (5): nutrient, cycling, river, rivers, focus",
+            "freshness 0.71: 2 day(s) old (effective date 2026-08-31)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Geoderma",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1016/j.geoderma.2026.118011)"
+      },
+      "summary": {
+        "souhrn": "Poměr uhlíku a dusíku v půdě (anglicky C:N ratio) prozradí, jak kvalitní je půdní organická hmota a jak rychle se v ní uvolňují živiny — a čínští vědci teď ukázali, že se vyplatí modelovat ho i do hloubky, ne jen po povrchu. Na zemědělské nížině Chang-ťia-chu v povodí Jang-c'-ťiang porovnali dva přístupy k mapování půdy do jednoho metru: jeden bere hloubku jen jako sadu oddělených pater, druhý s ní počítá jako s plnohodnotným třetím rozměrem, podobně jako u mapy krajiny počítáme s nadmořskou výškou. Poměr uhlíku k dusíku s hloubkou klesal, z průměrných 16,63 v horních 20 centimetrech na 14,58 v hloubce 60 až 100 centimetrů. Model, který hloubku bral jako skutečný rozměr, vysvětlil zhruba 56 % rozdílů mezi místy a byl přesnější než ten jednodušší. A ještě jedno zjištění: vyplatí se předpovídat poměr přímo, místo abychom ho počítali z dvou zvlášť namodelovaných hodnot — uhlíku a dusíku.",
+        "podrobneVysvetleni": "Vědci vzali půdní vzorky z nížiny Chang-ťia-chu v povodí Jang-c'-ťiang a zkoušeli z nich sestavit mapu poměru uhlíku k dusíku do hloubky jednoho metru. Porovnávali dva způsoby. První, označovaný jako 2,5D, dělá vlastně několik samostatných plošných map — jednu pro každou vrstvu půdy — a hloubka mezi nimi nijak nepropojuje. Druhý, 3D, bere hloubku jako rovnocennou souřadnici vedle zeměpisné šířky a délky, takže model ví, že to, co je v 30 centimetrech, souvisí s tím, co je v 50.\n\nVýsledky: poměr uhlíku k dusíku klesá se vzrůstající hloubkou, ze 16,63 v nejsvrchnější vrstvě (0–20 cm) na 14,58 v nejhlubší (60–100 cm). Trojrozměrný přístup vycházel lépe než ten plošný — vysvětlil asi 56 % rozdílů mezi jednotlivými místy (hodnota R² 0,56, tedy zhruba polovina) a jeho typická chyba odhadu byla 2,25 jednotky, což při hodnotách kolem patnácti odpovídá přibližně jedné sedmině.\n\nDruhé zjištění je metodické: když model předpovídá poměr rovnou, je stabilnější a přesnější, než když se zvlášť odhadne uhlík, zvlášť dusík a pak se jedno vydělí druhým. Chyby obou dílčích odhadů se totiž při dělení sčítají — a nejvíc to bylo znát v nejhlubší vrstvě, kde je vzorků nejmíň a nejistota největší.",
+        "procJeToDulezite": "Poměr uhlíku a dusíku pomáhá zemědělcům i úřadům posoudit, jestli způsob hospodaření půdě prospívá, nebo ji vyčerpává — a spolehlivější mapy znamenají lepší podklady pro rozhodování o hnojení a péči o půdu.",
+        "poznamkaKOmezenim": "Jde o jednu konkrétní zemědělskou oblast v Číně, takže není jisté, jak dobře čísla platí jinde; navíc i lepší z modelů vysvětlil jen zhruba polovinu rozdílů mezi místy a v největších hloubkách zůstává nejistota nejvyšší."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 224
+            },
+            "matchedText": "Poměr uhlíku a dusíku v půdě (anglicky C:N ratio) prozradí, jak kvalitní je půdní organická hmota a jak rychle se v ní uvolňují živiny — a čínští vědci teď ukázali, že se vyplatí modelovat ho i do hloubky, ne jen po povrchu.",
+            "messageCs": "Tato věta má 42 slov a je moc dlouhá: „Poměr uhlíku a dusíku v půdě (anglicky C:N ratio) prozradí, jak kvalitní je půd…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[0,224]: Poměr uhlíku a dusíku v půdě (anglicky C:N ratio) prozradí, jak kvalitní je půdní organická hmota a jak rychle se v ní uvolňují živiny — a čínští vědci teď ukázali, že se vyplatí modelovat ho i do hloubky, ne jen po povrchu."
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 697,
+              "end": 701
+            },
+            "matchedText": "56 %",
+            "messageCs": "Číslo „56 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „56 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[697,701]: 56 %"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 439,
+              "end": 441
+            },
+            "matchedText": "30",
+            "messageCs": "Číslo „30“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „30 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[439,441]: 30"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 479,
+              "end": 481
+            },
+            "matchedText": "50",
+            "messageCs": "Číslo „50“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „50 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[479,481]: 50"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=26.64",
+            "messageCs": "Věty jsou v průměru moc dlouhé (26,6 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=26.64"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=4",
+            "messageCs": "Počet vět delších než 30 slov: 4. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=4"
+          }
+        ],
+        "soft": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=43.1",
+            "messageCs": "Text se celkově čte těžko (index 43 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=43.1"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7204684097",
+        "title": "Association between Blood Concentrations of Lead and Total IgE in South Korean Adults: An Analysis of Data from the Fourth Korean National Environmental Health Survey",
+        "abstract": "Background: Long-term exposure to heavy metals may affect the human immune system in adult populations as well as children.Objectives: This study aimed to evaluate the association between blood concentrations of lead and mercury and total immunoglobulin E (IgE) level among South Korean adults.Data from the Fourth Korean National Environmental Health Survey (KoNEHS, 2018~2020) was used.Methods: Among the adult participants in the Fourth KoNEHS, those who had taken antiparasitic medications or traditional herbal medicine within the past year were excluded.A total of 2,655 subjects (2,688 when sampling design weights were applied) were included in the final analysis.All statistical analyses were conducted using the survey package in R (ver.4.4.1).General linear models (GLMs) were employed to assess the associations between blood concentrations of lead and mercury and total IgE levels, adjusting for age, sex, body mass index (BMI), education level, urinary cotinine concentration, alcohol consumption, physical activity, large fish (including tuna) consumption, and job classification. Results:The association between blood lead and total IgE was statistically significant in the multiple regression model after adjustment for covariates and blood mercury level (p=0.02).A similar result was observed when blood lead level was divided into quintiles (p trend =0.05).Stratified analysis by sex and smoking status showed that the association was significant among men and current smokers (p interaction =0.01, 0.002, respectively).In terms of blood mercury levels, the association between blood mercury and total IgE disappeared when its correlation with blood lead and other exposure markers such as per-and polyfluoroalkyl substances was considered (p>0.10). Conclusions:The findings of this study suggest a positive association between blood concentration of lead and total IgE levels among South Korean adults, especially men and smokers.However, further prospective studies are warranted to establish causal relationships.",
+        "date": "2026-08-31",
+        "url": "https://doi.org/10.5668/jehs.2026.52.4.328",
+        "licence": "cc-by-nc",
+        "source": "openalex",
+        "doi": "10.5668/jehs.2026.52.4.328",
+        "openAlexId": "W7204684097",
+        "subfield": {
+          "id": "subfields/2307",
+          "name": "Health, Toxicology and Mutagenesis"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10790",
+          "name": "Heavy Metal Exposure and Toxicity"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://pdf.medrang.co.kr/JEHS/2026/052/JHES052-04-328.pdf",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Naeun Lee",
+          "Kyoung-Mu Lee"
+        ],
+        "venue": "Korean Journal of Environmental Health Sciences",
+        "indexedDate": "2026-08-31",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.5689,
+          "everydayRelevance": 1,
+          "freshness": 0.7143,
+          "credibility": 0.859,
+          "total": 0.7564,
+          "explainDetail": {
+            "v": 0,
+            "s": 1,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.274
+          },
+          "everydayDomains": [
+            "food",
+            "health",
+            "body",
+            "work",
+            "family",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2307",
+          "evidence": [
+            "total 0.7564 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.57 = P 0.61 − 0.45×t 0.00 − 0.15×j 0.27",
+            "outcome verbs (v 0.00): none",
+            "recognisable subjects (s 1.00): participants, subjects, children, adults (title, ×2), men, fish",
+            "quantified effect (q 1): p-value",
+            "title concreteness (c 0.80): −0.2 title is 25 words",
+            "jargon density (j 0.27): 8/292 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 6 domain(s) — food, health, body, work, family, mind",
+            "everyday terms (7): alcohol, health, medication, physical activity, job, children, concentration",
+            "freshness 0.71: 2 day(s) old (effective date 2026-08-31)",
+            "credibility 0.86 = 0.40×c1 1.00 + 0.25×c2 0.86 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Korean Journal of Environmental Health Sciences",
+            "c2 0.86: n = 2655",
+            "c3 1.00: open access under cc-by-nc",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.5668/jehs.2026.52.4.328)"
+      },
+      "summary": {
+        "souhrn": "Olovo v krvi souvisí s vyšší hladinou IgE, protilátky, kterou tělo tvoří hlavně při alergiích. Vyplývá to z dat čtvrtého celostátního korejského průzkumu environmentálního zdraví z let 2018 až 2020. Vědci zpracovali údaje o 2 655 dospělých; to je zhruba tolik lidí, kolik žije v menší české obci. Souvislost byla statisticky významná, tedy nejspíš nejde o náhodu, a nejvýraznější vyšla u mužů a u kuřáků. Rtuť se naopak s IgE spojit nedala, jakmile se do výpočtu započítalo i olovo a další látky.",
+        "podrobneVysvetleni": "Olovo a rtuť se v těle ukládají dlouhé roky. Autoři chtěli vědět, jestli ovlivňují obranyschopnost těla, tedy jeho schopnost bránit se nemocem. Jako ukazatel zvolili celkovou hladinu IgE v krvi. IgE je protilátka, která bývá zvýšená hlavně u alergiků a u lidí s parazity. Právě proto ze vzorku vyřadili každého, kdo za poslední rok užíval léky proti parazitům nebo bylinné přípravky. V analýze zůstalo 2 655 dospělých Korejců. Vědci vzali v úvahu věk, pohlaví, poměr hmotnosti a výšky, vzdělání, kouření, pití alkoholu, pohyb, jedení velkých ryb včetně tuňáka a typ zaměstnání. I po započtení všech těchto vlivů zůstala souvislost mezi olovem a IgE významná. Když účastníky rozdělili do pěti stejně velkých skupin podle množství olova v krvi, hladina IgE s olovem rostla. Tento trend byl ale jen na hranici průkaznosti. Rozdělení podle pohlaví a kouření ukázalo, že souvislost drží hlavně u mužů a u lidí, kteří kouří teď. U rtuti to dopadlo jinak. Sama o sobě se s IgE zdánlivě pojila. Jakmile ale výpočet zohlednil olovo a další znečišťující látky, souvislost zmizela. Studie je průřezová: olovo i IgE měřila v jednom okamžiku. Neříká tedy, že olovo vyšší IgE způsobuje. Autoři sami píší, že to musí ověřit výzkum, který stejné lidi sleduje delší dobu.",
+        "procJeToDulezite": "Olovo se k lidem dostává z ovzduší, starých vodovodních rozvodů, prachu i cigaretového kouře. Pokud opravdu souvisí s hladinami protilátek spojených s alergiemi, je to další důvod jeho množství v prostředí sledovat a snižovat.",
+        "poznamkaKOmezenim": "Jde o jednorázové měření u zhruba 2 700 dospělých v Jižní Koreji, takže výsledek ukazuje jen souvislost, nikoli to, že olovo hladinu IgE zvyšuje."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:protilatka",
+            "span": {
+              "start": 43,
+              "end": 53
+            },
+            "matchedText": "protilátky",
+            "messageCs": "Termín „protilátka“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:protilatka @ souhrn[43,53]: protilátky"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 402,
+              "end": 407
+            },
+            "matchedText": "2 655",
+            "messageCs": "Číslo „2 655“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „2 655 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[402,407]: 2 655"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 153,
+              "end": 165
+            },
+            "matchedText": " environment",
+            "messageCs": "Text opisuje původní název článku („ environment“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[153,165]:  environment"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_english_original:statisticky-vyznamny",
+            "span": {
+              "start": 313,
+              "end": 333
+            },
+            "matchedText": "statisticky významná",
+            "messageCs": "U termínu „statisticky významný“ chybí při prvním použití anglický originál v závorce (např. „statisticky významný (statistically significant)“). Čtenář ten anglický výraz potká jinde (§2).",
+            "detail": "jargon:no_english_original:statisticky-vyznamny @ souhrn[313,333]: statisticky významná"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_english_original:prurezovy",
+            "span": {
+              "start": 1081,
+              "end": 1090
+            },
+            "matchedText": "průřezová",
+            "messageCs": "U termínu „průřezová studie“ chybí při prvním použití anglický originál v závorce (např. „průřezová studie (cross-sectional)“). Čtenář ten anglický výraz potká jinde (§2).",
+            "detail": "jargon:no_english_original:prurezovy @ podrobneVysvetleni[1081,1090]: průřezová"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-09-02T08:58:13.589Z",
+  "generatedOn": "2026-09-02",
+  "schemaVersion": 1
+}

@@ -656,6 +656,46 @@
       "titleKey": "associationbetweenperceivedinterpersonalsupportandqualityoflifeamongadultpatientsundergoingchemotherapyatanintegratedacademiccancerinstitute",
       "publishedOn": "2026-09-01",
       "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7204783978",
+      "doi": "10.2118/0926-0002-jpt",
+      "arxivId": null,
+      "titleKey": "commentswhyscalingco2eorremainsdifficult",
+      "publishedOn": "2026-09-02",
+      "category": "nature-climate"
+    },
+    {
+      "openalexId": "W7131883892",
+      "doi": "10.1007/s44274-026-01006-6",
+      "arxivId": null,
+      "titleKey": "remediationofphenolandpnitrophenolfromcontaminatedwaterusingrawandquaternizedannonamuricatalpeels",
+      "publishedOn": "2026-09-02",
+      "category": "nature-climate"
+    },
+    {
+      "openalexId": "W7204684331",
+      "doi": "10.5281/zenodo.22172166",
+      "arxivId": null,
+      "titleKey": "ewasteandenvironmentalprotectioninindiaacontemporarysociolegalstudyofenvironmentalimpactsregulatorymeasuresandchallenges",
+      "publishedOn": "2026-09-02",
+      "category": "nature-climate"
+    },
+    {
+      "openalexId": "W7163378252",
+      "doi": "10.1016/j.geoderma.2026.118011",
+      "arxivId": null,
+      "titleKey": "explicitdepthrepresentationimprovesthe3dmodellingofsoilcarbontonitrogenratioincroplands",
+      "publishedOn": "2026-09-02",
+      "category": "nature-climate"
+    },
+    {
+      "openalexId": "W7204684097",
+      "doi": "10.5668/jehs.2026.52.4.328",
+      "arxivId": null,
+      "titleKey": "associationbetweenbloodconcentrationsofleadandtotaligeinsouthkoreanadultsananalysisofdatafromthefourthkoreannationalenvironmentalhealthsurvey",
+      "publishedOn": "2026-09-02",
+      "category": "nature-climate"
     }
   ]
 }

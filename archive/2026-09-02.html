@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Příroda a klima – 2. září 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Příroda a klima</h1>
+<p class="dateline"><time datetime="2026-09-02">2. září 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 5</p>
+<div class="summary"><p><span class="lead">Do vyčerpaných ropných polí se dá vhánět oxid uhličitý, aby z nich vyteklo víc ropy — a část plynu přitom zůstane pod zemí.</span> Komentář v oborovém časopise Journal of Petroleum Technology vysvětluje, proč se tento postup i po půlstoletí šíří jen pomalu. Příkladem je texaský projekt Stratos: měl začít fungovat v roce 2024, dnes se plný provoz čeká až v roce 2027, a stál 1,3 miliardy dolarů. Jinde to jde lépe — brazilský Petrobras vtlačuje CO2 ve velkém a v Ománu má metoda proměnit jinak netěžitelné ložisko. Podle autorů nerozhoduje technika, ale peníze, potrubí, státní podpora a hlavně vytrvalost firem.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Autoři vycházejí z odborných zpráv a z firemních oznámení. Princip metody je jednoduchý. Zachycený CO2 se stlačí a vtlačí do ložiska. Tam ropu naředí a pomůže ji vytlačit k vrtu. Něco plynu se ale vrátí zpátky s ropou na povrch. Kolik ho zůstane dole, se liší. Do kanadského pole Weyburn-Midale šlo od 80. let 121 milionů tun CO2. Pod zemí zůstalo asi 65 milionů tun, tedy něco přes polovinu. Ve Spojených státech běží víc než 140 takových projektů. Podle zprávy z roku 2021 daly dohromady 273 tisíc barelů ropy denně. To je v průměru necelé dva tisíce barelů na jeden projekt. Brazilský Petrobras vtlačil od roku 2008 téměř 68 milionů tun. Jen v roce 2024 to bylo 14,2 milionu tun, tedy víc než pětina celkového množství za jediný rok. Pomáhá mu k tomu 22 plovoucích těžebních plošin se zařízením na zachycování plynu. Nejnovější příklad je Omán. Bez vtlačování by z ložiska šlo vytěžit jen 2 % ropy, tedy dva barely ze sta. S CO2 firma čeká až 30 %, tedy skoro každý třetí barel. Proto se vyplatí vyhloubit 94 nových vodorovných vrtů, téměř sto nových děr do země. Hlavní překážky jsou ale jinde. Zachycovací technologie je drahá, potrubí se staví roky a mimo USA a Kanadu chybí státní podpora. Occidental chtěl do roku 2035 postavit sto zařízení na odsávání CO2 ze vzduchu. Dnes už ten cíl veřejně nezmiňuje.</p>
+<h3>Proč je to důležité</h3>
+<p>Zachycování oxidu uhličitého se často líčí jako hotové řešení klimatu. Skutečné projekty ale ukazují, že rozhoduje cena, potrubí a trpělivost — a že část vtlačeného plynu se vrací zpět na povrch.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Trent Jacobs</dd>
+<dt>Časopis</dt>
+<dd>Journal of Petroleum Technology</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-01">1. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.2118/0926-0002-jpt" rel="noreferrer">10.2118/0926-0002-jpt</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7204783978" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.2118/0926-0002-jpt" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o přehledový komentář, ne o vlastní měření: čísla pocházejí z firemních oznámení a odborných zpráv, jedna z nich je z roku 2021, a údaje o budoucí těžbě v Ománu jsou zatím jen odhady.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 5</p>
+<div class="summary"><p><span class="lead">Slupky z graviholy (Annona muricata, tropické ovoce známé jako soursop) umí z vody vytáhnout fenol a p-nitrofenol — dvě jedovaté látky, které se do vody dostávají hlavně z průmyslu.</span> Vědci slupky nejprve jen usušili a pomleli, a pak druhou část chemicky upravili tak, aby na povrchu nesly kladný náboj (tzv. kvaternizace), který přitahuje molekuly znečišťujících látek. Upravené slupky zabraly výrazně víc: na gram materiálu navázaly asi 55 miligramů fenolu proti necelým 9 miligramům u neupravených slupek, tedy přibližně šestkrát více. Nejlépe to fungovalo v mírně kyselé vodě a během půl hodiny až tří čtvrtin hodiny. Háček je v tom, že slupky se špatně čistí a používají opakovaně, a v reálné říční vodě odstranily jen 49 až 63 procent znečištění — tedy asi polovinu až dvě třetiny.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Fenol a p-nitrofenol (PNP) patří mezi rozšířené a jedovaté látky ve odpadních vodách a jejich odstraňování bývá drahé. Autoři proto zkoušeli materiál, který je normálně odpad: slupky z plodů graviholy. Připravili dva vzorky — surové slupky (v práci označené RGP) a slupky chemicky upravené kvaternizací (QGP), díky níž na povrchu vzniknou trvale kladně nabitá místa. Pak v malých nádobkách postupně měnili kyselost vody, dobu míchání, množství slupek, počáteční koncentraci znečištění a teplotu, aby našli nejlepší nastavení.</p>
+<p>Nejvíc se odstranilo při pH 4, tedy v mírně kyselé vodě, s 0,03 gramu materiálu a po 30 až 45 minutách. Maximální množství, které gram materiálu pobral, bylo u upravených slupek 54,9 mg fenolu a 17,5 mg PNP; u surových slupek jen 8,8 a 5,9 mg. Rozbor rychlosti i teplotních měření ukazuje, že se molekuly na povrch spíš jen přilepí slabými silami (fyzikální vazba), než že by vznikla pevná chemická vazba, a že proces běží sám a při něm se uvolňuje teplo.</p>
+<p>Slabinou je opakované použití: promytím kyselinou se podařilo uvolnit jen 31 až 41 procent zachycených látek, tedy asi třetinu, a po pěti cyklech účinnost dál klesala. Ve skutečné říční vodě s přidanými 5 mg fenolů na litr materiál odstranil 49 až 63 procent, protože mu konkurovaly další látky přítomné ve vodě.</p>
+<h3>Proč je to důležité</h3>
+<p>Ukazuje to cestu, jak z ovocného odpadu udělat levný filtr na jedovaté látky ve vodě — užitečné hlavně tam, kde na drahé technologie nejsou peníze.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>James Ndiritu, John Wamumwe Mwangi</dd>
+<dt>Časopis</dt>
+<dd>Discover Environment</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-31">31. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1007/s44274-026-01006-6" rel="noreferrer">10.1007/s44274-026-01006-6</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7131883892" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://link.springer.com/content/pdf/10.1007/s44274-026-01006-6.pdf" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1007/s44274-026-01006-6" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o laboratorní pokusy v malých objemech, materiál se zatím nedaří dobře vyčistit a znovu použít a v reálné říční vodě fungoval podstatně slabší než v připravených roztocích, takže využití ve velkém měřítku je teprve otázkou dalšího výzkumu.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 5</p>
+<div class="summary"><p><span class="lead">Vyhozené mobily, počítače, televize a chladničky obsahují cenné kovy i jedovaté látky, jako je olovo, rtuť nebo kadmium.</span> V Indii jich rychle přibývá. Autor právní studie porovnal, co indická pravidla pro elektroodpad z roku 2022 nařizují, s tím, jak správa odpadu funguje v praxi. Předpisy přenášejí odpovědnost na výrobce a stanoví cíle pro recyklaci. Sběrných míst je ale málo, velkou část přístrojů rozebírají lidé v neformálních dílnách bez ochrany a dodržování pravidel se těžko kontroluje.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Nejde o měření v laboratoři. Autor pracuje s právními a společenskými zdroji. Rozebírá indickou ústavu a zákony na ochranu prostředí. Podrobně se věnuje pravidlům pro elektroodpad z roku 2022. Pak srovnává, co předpisy slibují, s tím, co se skutečně děje. Jádrem pravidel je takzvaná rozšířená odpovědnost výrobce (extended producer responsibility). Znamená to, že firma, která zařízení prodá, má postarat se i o jeho sběr a recyklaci. Pravidla zavádějí povinnou registraci, cíle pro množství recyklovaného odpadu a platby za nesplnění, tedy environmentální kompenzaci. Na papíře jde o poměrně silný systém. V praxi autor nachází několik slabin. Sběrných míst je nedostatek. Mnoho lidí nemá povědomí o tom, že starý přístroj nepatří do běžného koše. Velkou část práce odvádí neformální sektor: drobní sběrači a dělníci, kteří zařízení rozebírají ručně, pálí kabely a vyplavují kovy. Bez ochranných pomůcek se přitom dostávají do kontaktu s olovem, rtutí a kadmiem. Autor v této souvislosti odkazuje na zprávu Světové zdravotnické organizace z roku 2021 o ohrožení dětí na skládkách elektroniky. Úřadům navíc chybí kapacita na kontroly i technické zázemí. Závěr studie je střízlivý. Zpřísňovat zákony samo nestačí. Podle autora je potřeba zapojit neformální recyklátory do legálního systému, dát jim ochranu a školení, zlepšit osvětu mezi spotřebiteli a vymáhat existující pravidla důsledněji.</p>
+<h3>Proč je to důležité</h3>
+<p>Elektroniku měníme čím dál častěji a její cesta nekončí v popelnici. Tam, kde se rozebírá bez ochrany, ohrožuje zdraví lidí, kteří tuhle práci dělají, i vodu a půdu v okolí.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Dr. Bhakti Sharad Bhosale</dd>
+<dt>Časopis</dt>
+<dd>Zenodo (CERN European Organization for Nuclear Research)</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-31">31. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.5281/zenodo.22172166" rel="noreferrer">10.5281/zenodo.22172166</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7204684331" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.5281/zenodo.22172166" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o právní a společenský rozbor jednoho autora, nikoli o vlastní měření znečištění nebo zdravotních dopadů, a text vyšel v otevřeném repozitáři bez běžného recenzního posouzení.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-4">
+<p class="paper-counter">Studie 4 z 5</p>
+<div class="summary"><p>Poměr uhlíku a dusíku v půdě (anglicky C:N ratio) prozradí, jak kvalitní je půdní organická hmota a jak rychle se v ní uvolňují živiny — a čínští vědci teď ukázali, že se vyplatí modelovat ho i do hloubky, ne jen po povrchu. Na zemědělské nížině Chang-ťia-chu v povodí Jang-c&#39;-ťiang porovnali dva přístupy k mapování půdy do jednoho metru: jeden bere hloubku jen jako sadu oddělených pater, druhý s ní počítá jako s plnohodnotným třetím rozměrem, podobně jako u mapy krajiny počítáme s nadmořskou výškou. Poměr uhlíku k dusíku s hloubkou klesal, z průměrných 16,63 v horních 20 centimetrech na 14,58 v hloubce 60 až 100 centimetrů. Model, který hloubku bral jako skutečný rozměr, vysvětlil zhruba 56 % rozdílů mezi místy a byl přesnější než ten jednodušší. A ještě jedno zjištění: vyplatí se předpovídat poměr přímo, místo abychom ho počítali z dvou zvlášť namodelovaných hodnot — uhlíku a dusíku.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Vědci vzali půdní vzorky z nížiny Chang-ťia-chu v povodí Jang-c&#39;-ťiang a zkoušeli z nich sestavit mapu poměru uhlíku k dusíku do hloubky jednoho metru. Porovnávali dva způsoby. První, označovaný jako 2,5D, dělá vlastně několik samostatných plošných map — jednu pro každou vrstvu půdy — a hloubka mezi nimi nijak nepropojuje. Druhý, 3D, bere hloubku jako rovnocennou souřadnici vedle zeměpisné šířky a délky, takže model ví, že to, co je v 30 centimetrech, souvisí s tím, co je v 50.</p>
+<p>Výsledky: poměr uhlíku k dusíku klesá se vzrůstající hloubkou, ze 16,63 v nejsvrchnější vrstvě (0–20 cm) na 14,58 v nejhlubší (60–100 cm). Trojrozměrný přístup vycházel lépe než ten plošný — vysvětlil asi 56 % rozdílů mezi jednotlivými místy (hodnota R² 0,56, tedy zhruba polovina) a jeho typická chyba odhadu byla 2,25 jednotky, což při hodnotách kolem patnácti odpovídá přibližně jedné sedmině.</p>
+<p>Druhé zjištění je metodické: když model předpovídá poměr rovnou, je stabilnější a přesnější, než když se zvlášť odhadne uhlík, zvlášť dusík a pak se jedno vydělí druhým. Chyby obou dílčích odhadů se totiž při dělení sčítají — a nejvíc to bylo znát v nejhlubší vrstvě, kde je vzorků nejmíň a nejistota největší.</p>
+<h3>Proč je to důležité</h3>
+<p>Poměr uhlíku a dusíku pomáhá zemědělcům i úřadům posoudit, jestli způsob hospodaření půdě prospívá, nebo ji vyčerpává — a spolehlivější mapy znamenají lepší podklady pro rozhodování o hnojení a péči o půdu.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Hancheng Guo, Yushu Xia, Zhongxing Chen, Zheng Wang (25883), Yuanyuan Yang, Songchao Chen a další</dd>
+<dt>Časopis</dt>
+<dd>Geoderma</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-31">31. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1016/j.geoderma.2026.118011" rel="noreferrer">10.1016/j.geoderma.2026.118011</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7163378252" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://www.sciencedirect.com/science/article/pii/S0016706126003393/pdf" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1016/j.geoderma.2026.118011" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jednu konkrétní zemědělskou oblast v Číně, takže není jisté, jak dobře čísla platí jinde; navíc i lepší z modelů vysvětlil jen zhruba polovinu rozdílů mezi místy a v největších hloubkách zůstává nejistota nejvyšší.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-5">
+<p class="paper-counter">Studie 5 z 5</p>
+<div class="summary"><p><span class="lead">Olovo v krvi souvisí s vyšší hladinou IgE, protilátky, kterou tělo tvoří hlavně při alergiích.</span> Vyplývá to z dat čtvrtého celostátního korejského průzkumu environmentálního zdraví z let 2018 až 2020. Vědci zpracovali údaje o 2 655 dospělých; to je zhruba tolik lidí, kolik žije v menší české obci. Souvislost byla statisticky významná, tedy nejspíš nejde o náhodu, a nejvýraznější vyšla u mužů a u kuřáků. Rtuť se naopak s IgE spojit nedala, jakmile se do výpočtu započítalo i olovo a další látky.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Olovo a rtuť se v těle ukládají dlouhé roky. Autoři chtěli vědět, jestli ovlivňují obranyschopnost těla, tedy jeho schopnost bránit se nemocem. Jako ukazatel zvolili celkovou hladinu IgE v krvi. IgE je protilátka, která bývá zvýšená hlavně u alergiků a u lidí s parazity. Právě proto ze vzorku vyřadili každého, kdo za poslední rok užíval léky proti parazitům nebo bylinné přípravky. V analýze zůstalo 2 655 dospělých Korejců. Vědci vzali v úvahu věk, pohlaví, poměr hmotnosti a výšky, vzdělání, kouření, pití alkoholu, pohyb, jedení velkých ryb včetně tuňáka a typ zaměstnání. I po započtení všech těchto vlivů zůstala souvislost mezi olovem a IgE významná. Když účastníky rozdělili do pěti stejně velkých skupin podle množství olova v krvi, hladina IgE s olovem rostla. Tento trend byl ale jen na hranici průkaznosti. Rozdělení podle pohlaví a kouření ukázalo, že souvislost drží hlavně u mužů a u lidí, kteří kouří teď. U rtuti to dopadlo jinak. Sama o sobě se s IgE zdánlivě pojila. Jakmile ale výpočet zohlednil olovo a další znečišťující látky, souvislost zmizela. Studie je průřezová: olovo i IgE měřila v jednom okamžiku. Neříká tedy, že olovo vyšší IgE způsobuje. Autoři sami píší, že to musí ověřit výzkum, který stejné lidi sleduje delší dobu.</p>
+<h3>Proč je to důležité</h3>
+<p>Olovo se k lidem dostává z ovzduší, starých vodovodních rozvodů, prachu i cigaretového kouře. Pokud opravdu souvisí s hladinami protilátek spojených s alergiemi, je to další důvod jeho množství v prostředí sledovat a snižovat.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Naeun Lee, Kyoung-Mu Lee</dd>
+<dt>Časopis</dt>
+<dd>Korean Journal of Environmental Health Sciences</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-08-31">31. srpna 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.5668/jehs.2026.52.4.328" rel="noreferrer">10.5668/jehs.2026.52.4.328</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7204684097" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://pdf.medrang.co.kr/JEHS/2026/052/JHES052-04-328.pdf" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.5668/jehs.2026.52.4.328" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jednorázové měření u zhruba 2 700 dospělých v Jižní Koreji, takže výsledek ukazuje jen souvislost, nikoli to, že olovo hladinu IgE zvyšuje.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 2. září 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>
