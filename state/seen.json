@@ -696,6 +696,46 @@
       "titleKey": "associationbetweenbloodconcentrationsofleadandtotaligeinsouthkoreanadultsananalysisofdatafromthefourthkoreannationalenvironmentalhealthsurvey",
       "publishedOn": "2026-09-02",
       "category": "nature-climate"
+    },
+    {
+      "openalexId": "W7205007818",
+      "doi": "10.1007/s42761-026-00405-5",
+      "arxivId": null,
+      "titleKey": "socializinginthedigitaleraexamininghowsocialactivitiesinfluencemomentaryemotionsinmothersofinfants",
+      "publishedOn": "2026-09-03",
+      "category": "psychology-behaviour"
+    },
+    {
+      "openalexId": "W7205013179",
+      "doi": "10.1177/00315125261475240",
+      "arxivId": null,
+      "titleKey": "thecomplexityofmotorskillscouldbepositivelyassociatedwithcognitivedevelopmentinzambianpreschoolchildren",
+      "publishedOn": "2026-09-03",
+      "category": "psychology-behaviour"
+    },
+    {
+      "openalexId": "W7155376256",
+      "doi": "10.3390/psychiatryint7050195",
+      "arxivId": null,
+      "titleKey": "bridgingthegapexaminingacculturativefamilydistancinganditsassociationwithmentalwellbeinginsouthasianamericanwomenincollege",
+      "publishedOn": "2026-09-03",
+      "category": "psychology-behaviour"
+    },
+    {
+      "openalexId": "W7204996542",
+      "doi": "10.1007/s41060-026-01270-y",
+      "arxivId": null,
+      "titleKey": "deeplearningbasedstressdetectionusingmultimodalbiosignals",
+      "publishedOn": "2026-09-03",
+      "category": "psychology-behaviour"
+    },
+    {
+      "openalexId": "W7205002977",
+      "doi": "10.1177/0095327x261481443",
+      "arxivId": null,
+      "titleKey": "psychologicalcapitalandsubjectivewellbeingamonguniversitystudentsduringprolongedarmedconflictexaminingthecivilianfrontanddisplacementinisrael",
+      "publishedOn": "2026-09-03",
+      "category": "psychology-behaviour"
     }
   ]
 }

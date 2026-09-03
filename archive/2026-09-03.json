@@ -1,0 +1,757 @@
+{
+  "date": "2026-09-03",
+  "categoryKey": "psychology-behaviour",
+  "categoryLabel": "Psychologie a chování",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7205007818",
+        "title": "Socializing in the Digital Era: Examining How Social Activities Influence Momentary Emotions in Mothers of Infants",
+        "abstract": "Abstract The transition to parenthood is a period of heightened emotion; while deeply rewarding, it is also a stressful time, marked by an increased risk of mental health problems. Socializing is vital for parents’ mental health and may buffer these risks. However, little is known about how different forms of socializing relate to parents’ emotional well-being, or how individual differences in internalizing symptoms (depression and anxiety) may modify these associations. The present study examined real-time associations between social activities and mothers’ momentary affect, with a focus on comparing in-person socializing, virtual socializing (e.g., FaceTime, phone calls, instant messaging, text, or email), and social media use (e.g., browsing or posting on platforms such as Instagram, Facebook, or TikTok). Two hundred and fifty mothers (Mean age = 33.2 years, range = 19–45, 51.5% Hispanic/Latinx) with infants (Mean age = 9.4 months, range = 3–23 months, 52.8% female, 57% Hispanic/Latinx) completed an ecological momentary assessment (EMA) protocol for up to 14 days (6 surveys/day). Results showed that in-person socializing was significantly associated with increased positive affect and reduced negative affect, whereas socializing virtually was associated with heightened negative (but not positive) affect. Social media use showed no significant associations with either affective outcome. In addition, the associations between socializing and momentary affect differed by mothers’ internalizing symptoms. Mothers with higher internalizing symptoms reported lower positive affect during virtual socializing. They also reported lower negative affect during in-person socializing but increased negative affect when socializing virtually. Our results suggest that for emotionally vulnerable mothers, in-person connection serves as a buffer against emotional distress, whereas virtual socializing and social media use may attenuate momentary positive affect.",
+        "date": "2026-09-02",
+        "url": "https://doi.org/10.1007/s42761-026-00405-5",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1007/s42761-026-00405-5",
+        "openAlexId": "W7205007818",
+        "subfield": {
+          "id": "subfields/3207",
+          "name": "Social Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T10677",
+          "name": "Attachment and Relationship Dynamics"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Wenyi Xu",
+          "Alexis Hernandez",
+          "Sarvenaz Oloomi",
+          "A.D. Monachino",
+          "Irene Tung",
+          "Lauren C. Shuffrey",
+          "Santiago Morales"
+        ],
+        "venue": "Affective Science",
+        "indexedDate": "2026-09-02",
+        "referencedWorksCount": 79,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 1,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.9386,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0
+          },
+          "everydayDomains": [
+            "screens",
+            "health",
+            "family",
+            "mind"
+          ],
+          "subfieldKey": "subfields/3207",
+          "evidence": [
+            "total 0.9386 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 1.00 = P 1.00 − 0.45×t 0.00 − 0.15×j 0.00",
+            "outcome verbs (v 1.00): reduced, increased, lowers, associated with",
+            "recognisable subjects (s 1.00): mothers (title, ×2), infants (title, ×2), phones",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "everyday relevance 1.00: 4 domain(s) — screens, health, family, mind",
+            "everyday terms (11): social media, tiktok, instagram, facebook, health, depression, anxiety, parent, parents, focus, well-being",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-02)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Affective Science",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1007/s42761-026-00405-5)"
+      },
+      "summary": {
+        "souhrn": "Matky malých dětí vyplňovaly až dva týdny šestkrát denně krátký dotazník o tom, co právě dělají a jak se cítí. Když byly zrovna s někým osobně, hlásily víc příjemných pocitů a míň těch nepříjemných. Naopak u telefonátů, videohovorů a psaní zpráv se nepříjemné pocity spíš zvedly. Prohlížení sociálních sítí s náladou nesouviselo nijak. U matek s výraznějšími příznaky úzkosti a skleslosti byly tyhle rozdíly ještě výraznější.",
+        "podrobneVysvetleni": "Do studie se zapojilo 250 matek, v průměru třiatřicetiletých, s dětmi ve věku od tří do třiadvaceti měsíců. Zhruba polovina rodin měla hispánské kořeny. Každá matka dostávala až čtrnáct dní šestkrát denně krátký dotazník do telefonu. Téhle metodě se říká opakované dotazování v běžném dni (ecological momentary assessment). Místo vzpomínání na celý uplynulý týden se ptá na to, co se děje právě teď. Matky pokaždé uvedly, jestli se s někým stýkají a jak se cítí.\n\nOsobní setkání vycházela nejlépe. Když byla matka s někým tváří v tvář, hlásila víc příjemných pocitů a méně těch nepříjemných. Kontakt na dálku — telefon, videohovor, zprávy, e-mail — se pojil s vyšší mírou nepříjemných pocitů. Příjemné pocity přitom nezvýšil. Prohlížení a přispívání na sociálních sítích nesouviselo s náladou ani v jednom směru.\n\nRozdíly byly větší u matek, které samy uváděly víc příznaků úzkosti a smutku. Právě jim osobní setkání ubíralo nejvíc nepříjemných pocitů. A právě u nich kontakt na dálku nepříjemné pocity nejvíc zvyšoval a příjemné oslaboval. Autoři z toho vyvozují, že pro matky, kterým je psychicky hůř, funguje osobní blízkost jako opora. Obrazovka ji podle těchto dat nenahradí.",
+        "procJeToDulezite": "Rodiče s miminkem se často stýkají hlavně přes telefon, protože osobní návštěva je logisticky náročná. Studie naznačuje, že i krátké setkání naživo může udělat pro náladu víc než hodina psaní zpráv.",
+        "poznamkaKOmezenim": "Jde o pozorování souvislostí, ne o důkaz příčiny — je možné, že matky vyhledávají osobní setkání spíš ve chvílích, kdy už je jim dobře, a data pocházejí z jednoho konkrétního vzorku 250 matek kojenců."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 115,
+              "end": 123
+            },
+            "matchedText": "polovina",
+            "messageCs": "Číslo „polovina“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „polovina — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[115,123]: polovina"
+          }
+        ],
+        "soft": []
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7205013179",
+        "title": "The Complexity of Motor Skills Could be Positively Associated With Cognitive Development in Zambian Preschool Children",
+        "abstract": "Higher motor competence and fundamental motor skill levels have been linked to stronger executive and attentional functions in early childhood. Still, this evidence base is drawn almost entirely from high-income, so-called WEIRD (Western, Educated, Industrialised, Rich, Democratic) settings. In sub-Saharan African contexts, developmental opportunities are often shaped instead by informal outdoor play, household activity, active commuting, and uneven access to structured physical education. Therefore, it is unclear whether motor–cognitive associations described in WEIRD samples extend to this setting in the sub-Saharan African children’s population. This exploratory cross-sectional study examined associations between motor performance and seven cognitive functions in 56 Zambian preschool children (mean age 4.80 ± 0.57 years; 22 boys, 34 girls) recruited from three government preschools in Lusaka. Motor performance was assessed with the Standing Long Jump, 4 × 5 m Shuttle Run, Lateral Jumps, Shifting Platforms, Right- and Left-Hand overarm throws, and the 20 m shuttle run(BEEP) test; cognition was assessed with the seven subtests of the Intelligence and Development Scales – Preschool (IDS-P). Linear regression models, stratified by age group (3–4.9 and 5–6.9 years) and adjusted for age and sex, identified six motor–cognitive associations that reached nominal significance, most consistently between faster Shuttle Run performance and higher Selective Attention scores in both age groups (older group: standardised β = −0.56, p = .003, R 2 = .37) and between Standing Long Jump and Visual Processing in the older group (β = 0.55, p = .003, R 2 = .32). None of these associations remained significant after false discovery rate (FDR) correction. The findings should be interpreted as preliminary, hypothesis-generating signals rather than confirmatory evidence of specific motor–cognitive pathways. Larger longitudinal and intervention studies that measure nutritional status, parental education, socioeconomic circumstances, home stimulation, habitual physical activity, sleep quality, and preschool context are needed in sub-Saharan African preschool populations.",
+        "date": "2026-09-02",
+        "url": "https://doi.org/10.1177/00315125261475240",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1177/00315125261475240",
+        "openAlexId": "W7205013179",
+        "subfield": {
+          "id": "subfields/3204",
+          "name": "Developmental and Educational Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T12241",
+          "name": "Children's Physical and Motor Development"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1177/00315125261475240",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Chipo Malambo",
+          "Susan Chungu",
+          "Adam Provazník",
+          "J. Anitha Menon",
+          "Petr Bob",
+          "Martin Musálek"
+        ],
+        "venue": "Perceptual and Motor Skills",
+        "indexedDate": "2026-09-02",
+        "referencedWorksCount": 51,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9849,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.9325,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.1007
+          },
+          "everydayDomains": [
+            "sleep",
+            "money",
+            "transport",
+            "body",
+            "housing",
+            "family",
+            "mind"
+          ],
+          "subfieldKey": "subfields/3204",
+          "evidence": [
+            "total 0.9325 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.98 = P 1.00 − 0.45×t 0.00 − 0.15×j 0.10",
+            "outcome verbs (v 1.00): extends, associated with (title, ×2), linked to",
+            "recognisable subjects (s 1.00): children (title, ×2), households, homes",
+            "quantified effect (q 1): p-value",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.10): 3/298 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 7 domain(s) — sleep, money, transport, body, housing, family, mind",
+            "everyday terms (9): sleep, sleep quality, income, commuting, physical activity, home, homes, children, attention",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-02)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Perceptual and Motor Skills",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no tldr; falling back to the source abstract (§4.2)"
+      },
+      "summary": {
+        "souhrn": "Rychlejší běh a lepší soustředění jdou u zambijských předškoláků možná ruku v ruce. Vědci v Lusace pozvali 56 dětí ze tří státních školek, tedy zhruba dvě běžné třídy. Děti skákaly do dálky, běhaly mezi metami, přeskakovaly stranou a házely míčkem. K tomu plnily sedm úloh z uznávaného testu rozumových schopností pro předškoláky. Nejsilněji spolu souvisely rychlý běh a pozornost, ale po přísnější statistické kontrole žádná souvislost neobstála — jde tedy zatím jen o námět k dalšímu ověřování.",
+        "podrobneVysvetleni": "Skoro všechno, co se o vztahu pohybu a myšlení u malých dětí ví, pochází z bohatých západních zemí. Autoři proto chtěli zjistit, jestli to platí i jinde. Zapojili 56 předškoláků ze tří státních školek v Lusace, hlavním městě Zambie. Průměrný věk byl necelých pět let. Dívek bylo ve vzorku zhruba o polovinu víc než chlapců. Pohyb měřili sedmi zkouškami: skok daleký z místa, člunkový běh na pětimetrové dráze, boční poskoky, přesouvání destiček, hody přes rameno pravou i levou rukou a vytrvalostní běh na dvacetimetrové dráze. Myšlení pak sedmi částmi testu rozumových schopností pro předškoláky. Děti rozdělili na mladší a starší a ve výpočtech zohlednili věk i pohlaví. Šest dvojic „pohyb a myšlení\" spolu na první pohled souviselo. Nejčastěji se objevil rychlý člunkový běh spolu s lepší schopností soustředit se na podstatné a přehlížet rušivé podněty. U starších dětí souvisel výsledek běhu asi s třetinou rozdílů v pozornosti mezi dětmi. Podobně silná byla u starších dětí vazba mezi skokem do dálky a zrakovým zpracováním, také zhruba třetina rozdílů. Pak ale přišla přísnější kontrola. Když autoři vzali v úvahu, že porovnávali mnoho kombinací najednou, neobstál ani jeden výsledek. Při takovém množství porovnání se totiž část „nálezů\" objeví čirou náhodou. Autoři sami píšou, že jde o signály k dalšímu zkoumání, ne o důkaz.",
+        "procJeToDulezite": "Poznatky o dětském vývoji vznikají skoro výhradně v bohatých západních zemích, a přitom není jisté, že platí i tam, kde děti běhají venku místo v tělocvičně. Tahle práce ukazuje, že se to vyplatí ověřovat.",
+        "poznamkaKOmezenim": "Jde o jednorázové měření na 56 dětech, žádný z výsledků neobstál po statistické kontrole a studie nesledovala výživu, vzdělání rodičů ani domácí prostředí, takže výsledky jsou předběžné."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 163,
+              "end": 165
+            },
+            "matchedText": "56",
+            "messageCs": "Číslo „56“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „56 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[163,165]: 56"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 903,
+              "end": 911
+            },
+            "matchedText": "třetinou",
+            "messageCs": "Číslo „třetinou“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „třetinou — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[903,911]: třetinou"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1043,
+              "end": 1050
+            },
+            "matchedText": "třetina",
+            "messageCs": "Číslo „třetina“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „třetina — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1043,1050]: třetina"
+          }
+        ],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 324,
+              "end": 527
+            },
+            "matchedText": "Pohyb měřili sedmi zkouškami: skok daleký z místa, člunkový běh na pětimetrové dráze, boční poskoky, přesouvání destiček, hody přes rameno pravou i levou rukou a vytrvalostní běh na dvacetimetrové dráze.",
+            "messageCs": "Tato věta má 30 slov a je moc dlouhá: „Pohyb měřili sedmi zkouškami: skok daleký z místa, člunkový běh na pětimetrové …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[324,527]: Pohyb měřili sedmi zkouškami: skok daleký z místa, člunkový běh na pětimetrové dráze, boční poskoky, přesouvání destiček, hody přes rameno pravou i levou rukou a vytrvalostní běh na dvacetimetrové dráze."
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7155376256",
+        "title": "Bridging the Gap: Examining Acculturative Family Distancing and Its Association with Mental Well-Being in South Asian American Women in College",
+        "abstract": "Acculturative family distancing (AFD), characterized by communication gaps and cultural value differences between immigrant parents and their children, has been identified as a potential contributor to mental health disparities among Asian American populations. However, limited research has examined its role among South Asian Americans. This study aimed to assess the association between AFD and symptoms of depression, anxiety, and self-harm in this population. A cross-sectional, anonymous survey was administered to 673 South Asian female college students across the United States. Validated measures included the PHQ-9 for depression, GAD-7 for anxiety, and an adapted AFD scale focusing on communication. Multivariate linear and logistic regression models were used to examine associations between AFD and mental health outcomes, adjusting for demographic factors. Higher AFD scores were significantly associated with increased depressive scores (β = 0.122, p<0.001), anxiety symptoms (β = 0.102, p<0.001), and greater odds of self-harm (OR = 1.064, p<0.001). These findings suggest that AFD represents a meaningful form of psychological disconnection that may increase vulnerability to mental health challenges. Interventions addressing emotional connection within families may be critical for improving mental health outcomes among South Asian American women.",
+        "date": "2026-09-02",
+        "url": "https://doi.org/10.3390/psychiatryint7050195",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.3390/psychiatryint7050195",
+        "openAlexId": "W7155376256",
+        "subfield": {
+          "id": "subfields/3207",
+          "name": "Social Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T10272",
+          "name": "Mental Health Treatment and Access"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Kanika Seth",
+          "Amita Vyas",
+          "Nitasha Nagaraj"
+        ],
+        "venue": "Psychiatry International",
+        "indexedDate": "2026-04-24",
+        "referencedWorksCount": 27,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8484,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.878,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 1,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.1604
+          },
+          "everydayDomains": [
+            "school",
+            "health",
+            "family",
+            "mind"
+          ],
+          "subfieldKey": "subfields/3207",
+          "evidence": [
+            "total 0.8780 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.85 = P 0.87 − 0.45×t 0.00 − 0.15×j 0.16",
+            "outcome verbs (v 0.75): increased, increases, associated with",
+            "recognisable subjects (s 1.00): children, students, women (title, ×2), families",
+            "quantified effect (q 1): p-value, effect ratio",
+            "title concreteness (c 0.80): −0.2 title is 20 words",
+            "jargon density (j 0.16): 3/187 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 4 domain(s) — school, health, family, mind",
+            "everyday terms (11): student, students, health, depression, anxiety, children, parent, parents, family, families, well-being",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-02)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Psychiatry International",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.3390/psychiatryint7050195)"
+      },
+      "summary": {
+        "souhrn": "Když si dítě přistěhovalců a jeho rodiče přestanou rozumět — jazykem i hodnotami — psychologové mluví o kulturním odcizení v rodině (acculturative family distancing). Američtí badatelé s tím oslovili studentky vysokých škol jihoasijského původu; anonymní dotazník vyplnilo přes šest set z nich. Čím hůř se studentky doma s rodiči domlouvaly, tím častěji uváděly příznaky deprese a úzkosti. Častěji také uváděly, že si ubližují. Souvislost zůstala i poté, co autoři zohlednili věk a další základní údaje.",
+        "podrobneVysvetleni": "Dotazník byl anonymní, vyplňoval se jednou a zúčastnily se ho studentky jihoasijského původu z různých amerických vysokých škol. Příznaky deprese měřil devítipoložkový dotazník PHQ-9, úzkost sedmipoložkový GAD-7. Oba se běžně používají i v ordinacích. Míru odcizení od rodičů zjišťovala upravená škála zaměřená na komunikaci: nakolik si doma rozumějí a nakolik spolu dokážou mluvit o tom, co prožívají.\n\nVýsledek byl u všech tří ukazatelů stejným směrem. Studentky s vyšším skóre odcizení měly vyšší skóre deprese i úzkosti. Rozdíl byl mírný, ale ukázal se opakovaně a nešlo ho vysvětlit náhodou. Podobně to platilo u sebepoškozování: s každým bodem na škále odcizení mírně rostla pravděpodobnost, že ho studentka uvede. Statistické modely počítaly i s demografickými údaji, takže výsledek nestojí jen na tom, že by šlo o starší či mladší studentky.\n\nAutoři z toho usuzují, že přerušené porozumění mezi rodiči a dospívajícími dětmi není jen rodinná nepohoda. Může jít o skutečnou zátěž pro duševní zdraví. Navrhují proto podporu zaměřenou na obnovení emočního kontaktu uvnitř rodiny, ne pouze na jazykové bariéry. Zároveň platí, že data byla sebrána v jediném okamžiku. Nelze z nich tedy říct, zda odcizení duševní potíže způsobuje, nebo zda potíže zpětně ztěžují rozhovory doma.",
+        "procJeToDulezite": "Mlčení mezi rodiči a dospívajícím dítětem, které vyrůstá v jiném prostředí než oni, může souviset s tím, jak se dítě cítí. Pro rodiče i učitele je to důvod všímat si, jestli má mladý člověk doma s kým mluvit o svých pocitech.",
+        "poznamkaKOmezenim": "Jde o jednorázový dotazník vyplněný samotnými studentkami jedné konkrétní skupiny, takže výsledky ukazují souvislost, nikoli příčinu, a nemusí platit pro jiné populace."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 181,
+              "end": 182
+            },
+            "matchedText": "9",
+            "messageCs": "Číslo „9“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „9 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[181,182]: 9"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 210,
+              "end": 211
+            },
+            "matchedText": "7",
+            "messageCs": "Číslo „7“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „7 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[210,211]: 7"
+          }
+        ],
+        "soft": []
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7204996542",
+        "title": "Deep learning-based stress detection using multimodal biosignals",
+        "abstract": "Abstract Stress-related health problems drive an urgent need for sensitive, real-time monitoring devices capable of capturing psychophysiological stress dynamics in natural settings. This study presents a stress detection system that uses deep learning, combining synchronized physiological signals and survey data from university students who experienced controlled stress through psychological sessions and examinations. We analyzed two model families with differing complexities: a deep neural network (DNN)-based model for static physiological patterns and a long short-term memory (LSTM)-based model designed to capture temporal dependencies in biosignals. The DNN (86.42% accuracy) was outperformed by the LSTM-based model (94.14% accuracy). The statistical results showed a relationship between stress and gender (females: $$\\mu $$ μ = 2.2, males: $$\\mu $$ μ = 2.7, p < 0.05) and smoking (smokers: $$\\mu $$ μ = 3.7, nonsmokers: $$\\mu $$ μ = 2.2, p < 0.05). Academic elements also impacted stress perception. The stress scores were in accordance with self-reported measurements, which validated the model.",
+        "date": "2026-09-02",
+        "url": "https://doi.org/10.1007/s41060-026-01270-y",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1007/s41060-026-01270-y",
+        "openAlexId": "W7204996542",
+        "subfield": {
+          "id": "subfields/3205",
+          "name": "Experimental and Cognitive Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T10667",
+          "name": "Emotion and Mood Recognition"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1007/s41060-026-01270-y",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Büşra Kocaçınar",
+          "Çağla Çöpürkaya",
+          "Elif Meriç",
+          "Elif Berra Erik",
+          "Fatma Patlar Akbulut",
+          "Cagatay Catal"
+        ],
+        "venue": "International Journal of Data Science and Analytics",
+        "indexedDate": "2026-09-02",
+        "referencedWorksCount": 48,
+        "tldr": "This study presents a stress detection system that uses deep learning, combining synchronized physiological signals and survey data from university students who experienced controlled stress through psychological sessions and examinations.",
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7674,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.8455,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 0.5,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.1342
+          },
+          "everydayDomains": [
+            "school",
+            "health",
+            "family",
+            "mind"
+          ],
+          "subfieldKey": "subfields/3205",
+          "evidence": [
+            "total 0.8455 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.77 = P 0.79 − 0.45×t 0.00 − 0.15×j 0.13",
+            "outcome verbs (v 0.75): detection (title, ×2), outperformed",
+            "recognisable subjects (s 0.50): students, families",
+            "quantified effect (q 1): percentage, p-value",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.13): 2/149 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 4 domain(s) — school, health, family, mind",
+            "everyday terms (7): student, students, university, health, families, memory, stress",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-02)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in International Journal of Data Science and Analytics",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        }
+      },
+      "summary": {
+        "souhrn": "Vědci zkoušeli poznat stres z tělesných signálů — tepu, dechu a podobných měření — u vysokoškolských studentů, kterým stres navozovali řízeně při psychologických sezeních a u zkoušek. Porovnali dva programy, které se učí z příkladů. Jednodušší z nich se díval jen na okamžitý stav těla a určil stres správně v 86,42 % případů, tedy zhruba v pěti ze šesti. Ten druhý sledoval, jak se signály mění v čase, a uspěl v 94,14 % případů, tedy asi devatenáctkrát z dvaceti. V dotaznících se navíc lišili kuřáci a nekuřáci a v tomto souboru i muži a ženy, a odhady programu odpovídaly tomu, jak studenti svůj stres sami popisovali.",
+        "podrobneVysvetleni": "Autoři pracovali se studenty vysoké školy. Stres u nich vyvolávali řízeně, tedy psychologickými sezeními a zkouškovými situacemi. Během toho jim několik senzorů najednou snímalo tělesné signály. K tomu studenti vyplňovali dotazníky o svém prožívání. Měření i odpovědi běžely synchronizovaně, takže je šlo přímo porovnat.\n\nNa těchto datech vědci zkusili dva typy neuronových sítí (neural networks). Jsou to programy, které se učí rozpoznávat vzorce z příkladů. První se díval na okamžitý stav těla, jako by si prohlížel jednu fotografii. Uspěl v 86,42 % případů, tedy zhruba v pěti ze šesti. Druhý model typu LSTM sleduje, jak se signál vyvíjí v čase. Je to spíš film než fotografie. Ten se trefil v 94,14 % případů, tedy asi devatenáctkrát z dvaceti.\n\nDotazníky ukázaly i rozdíly mezi skupinami. Kuřáci uváděli vyšší stres než nekuřáci. V tomto souboru hlásili vyšší stres muži než ženy. Oba rozdíly autoři označili za statisticky významné (p < 0,05). To znamená, že je málo pravděpodobné, aby šlo jen o náhodu. Na prožívaný stres působily podle autorů i okolnosti studia. Odhady modelu odpovídaly tomu, co studenti sami o svém stresu napsali. To autoři berou jako potvrzení, že model měří něco skutečného.",
+        "procJeToDulezite": "Kdyby náramek nebo hodinky uměly spolehlivě poznat stres už během dne, dalo by se na něj reagovat dřív, než se projeví na zdraví nebo na výkonu ve škole a v práci.",
+        "poznamkaKOmezenim": "Jde o výsledek z jedné skupiny vysokoškolských studentů a z uměle navozených stresových situací; abstrakt neuvádí počet účastníků, takže není jisté, jak dobře by systém fungoval u jiných lidí v běžném životě."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:neuronova-sit",
+            "span": {
+              "start": 362,
+              "end": 378
+            },
+            "matchedText": "neuronových sítí",
+            "messageCs": "Termín „neuronová síť“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:neuronova-sit @ podrobneVysvetleni[362,378]: neuronových sítí"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:statisticky-vyznamny",
+            "span": {
+              "start": 919,
+              "end": 939
+            },
+            "matchedText": "statisticky významné",
+            "messageCs": "Termín „statisticky významný“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:statisticky-vyznamny @ podrobneVysvetleni[919,939]: statisticky významné"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:p-hodnota",
+            "span": {
+              "start": 941,
+              "end": 948
+            },
+            "matchedText": "p < 0,0",
+            "messageCs": "Termín „p-hodnota“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:p-hodnota @ podrobneVysvetleni[941,948]: p < 0,0"
+          }
+        ],
+        "soft": [
+          {
+            "block": "procJeToDulezite",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 163
+            },
+            "matchedText": "Kdyby náramek nebo hodinky uměly spolehlivě poznat stres už během dne, dalo by se na něj reagovat dřív, než se projeví na zdraví nebo na výkonu ve škole a v práci.",
+            "messageCs": "Tato věta má 31 slov a je moc dlouhá: „Kdyby náramek nebo hodinky uměly spolehlivě poznat stres už během dne, dalo by …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ procJeToDulezite[0,163]: Kdyby náramek nebo hodinky uměly spolehlivě poznat stres už během dne, dalo by se na něj reagovat dřív, než se projeví na zdraví nebo na výkonu ve škole a v práci."
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7205002977",
+        "title": "Psychological Capital and Subjective Well-Being Among University Students During Prolonged Armed Conflict: Examining the Civilian Front and Displacement in Israel",
+        "abstract": "This study examined relations between psychological capital, subjective well-being, and anxiety among students during the Israeli national crisis following the events of October 7, 2023. The sample comprised 310 students, including evacuated ( n = 147) and non-evacuated participants ( n = 163). We found that the psychological capital was positively associated with subjective well-being and negatively associated with anxiety, while subjective well-being mediated this relationship. Evacuation status moderated the psychological capital–subjective well-being link, with stronger effects observed among evacuated students. Non-evacuated students exhibited higher psychological capital and subjective well-being and lower anxiety than their evacuated peers, underscoring the psychological toll of displacement. The findings confirm the psychological capital’s role as a protective resource and the role of subjective well-being as a mediator, translating internal strengths into emotional stability. The study contributes to the military-and-society literature by examining how a large-scale armed conflict and the resulting civilian evacuation shape psychological adaptation among young adults.",
+        "date": "2026-09-02",
+        "url": "https://doi.org/10.1177/0095327x261481443",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1177/0095327x261481443",
+        "openAlexId": "W7205002977",
+        "subfield": {
+          "id": "subfields/3203",
+          "name": "Clinical Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T10242",
+          "name": "Posttraumatic Stress Disorder Research"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Batel Hazan‐Liran",
+          "Ofra Walter"
+        ],
+        "venue": "Armed Forces & Society",
+        "indexedDate": "2026-09-02",
+        "referencedWorksCount": 48,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7751,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.8571,
+          "credibility": 0.6433,
+          "total": 0.825,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 1,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.0662
+          },
+          "everydayDomains": [
+            "school",
+            "health",
+            "mind"
+          ],
+          "subfieldKey": "subfields/3203",
+          "evidence": [
+            "total 0.8250 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.78 = P 0.79 − 0.45×t 0.00 − 0.15×j 0.07",
+            "outcome verbs (v 0.50): lowers, associated with",
+            "recognisable subjects (s 1.00): participants, students (title, ×2), adults",
+            "quantified effect (q 1): sample size",
+            "title concreteness (c 0.80): −0.2 title is 20 words",
+            "jargon density (j 0.07): 1/151 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 3 domain(s) — school, health, mind",
+            "everyday terms (5): student, students, university, anxiety, well-being",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-02)",
+            "credibility 0.64 = 0.40×c1 1.00 + 0.25×c2 0.55 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Armed Forces & Society",
+            "c2 0.55: n = 163",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1177/0095327x261481443)"
+      },
+      "summary": {
+        "souhrn": "Mezi 310 studenty izraelských vysokých škol, kteří vyplnili dotazníky po událostech ze 7. října 2023, se ukázalo, že lidé s většími vnitřními psychickými zdroji — badatelé je označují jako psychologický kapitál (psychological capital) — uváděli vyšší životní spokojenost a méně úzkosti. Polovina souboru (147 osob) musela opustit domov kvůli evakuaci, druhá část (163 osob) zůstala doma. Evakuovaní studenti měli v průměru nižší psychologický kapitál, nižší spokojenost a více úzkosti než ti, kdo zůstali. Zároveň ale u evakuovaných platilo, že když už vnitřní zdroje měli, jejich vliv na spokojenost byl silnější než u ostatních. Autoři z toho vyvozují, že vnitřní zdroje působí jako ochrana hlavně tak, že se přes ně zvyšuje celková spokojenost se životem, a ta pak tlumí úzkost.",
+        "podrobneVysvetleni": "Výzkumníci oslovili 310 studentů v Izraeli v období po 7. říjnu 2023 a nechali je vyplnit dotazníky měřící tři věci: psychologický kapitál (psychological capital), tedy souhrn vnitřních psychických zdrojů, ze kterých člověk čerpá při zvládání zátěže; subjektivní pohodu (subjective well-being), tedy jak spokojený se svým životem člověk sám sebe hodnotí; a míru úzkosti. Soubor rozdělili podle toho, zda účastníci museli kvůli bojům opustit domov: 147 evakuovaných a 163 neevakuovaných, tedy zhruba půl na půl.\n\nVýsledky ukázaly tři věci. Za prvé, čím vyšší psychologický kapitál, tím vyšší spokojenost a tím nižší úzkost. Za druhé, spokojenost fungovala jako mezičlánek — vnitřní zdroje samy o sobě úzkost nesnižovaly přímo, ale skrze to, že člověk vnímal svůj život jako lepší. Za třetí, evakuace celý obrázek posunula: kdo přišel o domov, měl v průměru horší výsledky ve všech třech ukazatelích, ale souvislost mezi vnitřními zdroji a spokojeností byla u této skupiny těsnější.\n\nAbstrakt neuvádí konkrétní čísla, o kolik se skupiny lišily, takže síla rozdílů zůstává nejasná. Praktické vyznění je nicméně srozumitelné: ztráta domova má měřitelnou psychickou daň a podpora zaměřená na posilování vnitřních zdrojů dává největší smysl právě u lidí, kteří museli odejít.",
+        "procJeToDulezite": "Ukazuje to, že u lidí vytržených z domova válkou nejde jen o materiální ztrátu, ale o měřitelné zhoršení psychického stavu — a naznačuje, kam nasměrovat psychologickou podporu.",
+        "poznamkaKOmezenim": "Jde o jednorázové dotazníkové šetření na 310 studentech, které zachycuje pouze souvislosti mezi jevy, nikoli příčiny, a výsledky nelze bez dalšího ověření přenášet na jiné skupiny obyvatel."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 370
+            },
+            "matchedText": "Výzkumníci oslovili 310 studentů v Izraeli v období po 7. říjnu 2023 a nechali je vyplnit dotazníky měřící tři věci: psychologický kapitál (psychological capital), tedy souhrn vnitřních psychických zdrojů, ze kterých člověk čerpá při zvládání zátěže; subjektivní pohodu (subjective well-being), tedy jak spokojený se svým životem člověk sám sebe hodnotí; a míru úzkosti.",
+            "messageCs": "Tato věta má 53 slov a je moc dlouhá: „Výzkumníci oslovili 310 studentů v Izraeli v období po 7. říjnu 2023 a nechali …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[0,370]: Výzkumníci oslovili 310 studentů v Izraeli v období po 7. říjnu 2023 a nechali je vyplnit dotazníky měřící tři věci: psychologický kapitál (psychological capital), tedy souhrn vnitřních psychických zdrojů, ze kterých člověk čerpá při zvládání zátěže; subjektivní pohodu (subjective well-being), tedy jak spokojený se svým životem člověk sám sebe hodnotí; a míru úzkosti."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=23.57",
+            "messageCs": "Věty jsou v průměru moc dlouhé (23,6 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=23.57"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 189,
+              "end": 200
+            },
+            "matchedText": "psychologic",
+            "messageCs": "Text opisuje původní název článku („psychologic“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[189,200]: psychologic"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 429,
+              "end": 440
+            },
+            "matchedText": "psychologic",
+            "messageCs": "Text opisuje původní název článku („psychologic“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[429,440]: psychologic"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 117,
+              "end": 128
+            },
+            "matchedText": "psychologic",
+            "messageCs": "Text opisuje původní název článku („psychologic“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[117,128]: psychologic"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 558,
+              "end": 569
+            },
+            "matchedText": "psychologic",
+            "messageCs": "Text opisuje původní název článku („psychologic“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[558,569]: psychologic"
+          },
+          {
+            "block": "procJeToDulezite",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 153,
+              "end": 164
+            },
+            "matchedText": "psychologic",
+            "messageCs": "Text opisuje původní název článku („psychologic“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ procJeToDulezite[153,164]: psychologic"
+          },
+          {
+            "block": "poznamkaKOmezenim",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 44,
+              "end": 52
+            },
+            "matchedText": " student",
+            "messageCs": "Text opisuje původní název článku („ student“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ poznamkaKOmezenim[44,52]:  student"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 30 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=43.3",
+            "messageCs": "Text se celkově čte těžko (index 43 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=43.3"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-09-03T09:06:37.920Z",
+  "generatedOn": "2026-09-03",
+  "schemaVersion": 1
+}
