@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Společnost, ekonomika a vzdělávání – 4. září 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Společnost, ekonomika a vzdělávání</h1>
+<p class="dateline"><time datetime="2026-09-04">4. září 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 5</p>
+<div class="summary"><p><span class="lead">Umět vařit ještě neznamená jíst zdravěji.</span> Turečtí vědci oslovili 281 žen ve věku od 19 do 64 let, tedy necelé tři stovky dospělých od konce dospívání po hranici důchodu. Dovednosti v kuchyni jim měřili podrobným dotazníkem o 33 otázkách a jídelníček zapsali za jeden den. Ženy z nejzdatnější třetiny sice vařily doma alespoň pětkrát týdně, ale kvalita jejich stravy nebyla lepší než u ostatních. Zdálo se dokonce, že mají dvakrát vyšší šanci na hmotnost mimo normu; po zohlednění vzdělání, příjmu a složení stravy ten rozdíl zmizel.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Šlo o průřezový průzkum (cross-sectional study), tedy jediný snímek situace, ne sledování v čase. Vzorek vznikl tak, jak se ženy podařilo oslovit; nešlo o náhodný výběr z populace. Dovednosti při vaření a přípravě jídla hodnotila zavedená škála o 33 otázkách, tedy poměrně podrobný dotazník. Kvalitu jídelníčku měřil index NRF 9.3, který porovnává devět prospěšných živin s třemi, jichž má být v jídle málo. Podkladem byl jediný zápis toho, co žena snědla za posledních čtyřiadvacet hodin. Vědci pak ženy rozdělili do tří stejně velkých skupin podle dovedností. Nejlepší třetina si víc věřila v kuchařských technikách a vařila doma alespoň pětkrát v týdnu. Kvalita jídelníčku ale byla ve všech třech skupinách v podstatě stejná: průměr 333,4 bodu, přičemž jednotlivé ženy se od průměru běžně lišily asi o 50 bodů nahoru i dolů. Zdatnější kuchařky měly zpočátku 2,1krát vyšší šanci, že jejich BMI nebude v normě — tedy zhruba dvakrát. Jakmile ale výzkumníci vzali v potaz vzdělání, příjem a složení stravy, rozdíl se rozplynul. Autoři z toho vyvozují, že samotné kuchařské dovednosti jídelníček ani hmotnost nezmění. Musí jít ruku v ruce s ostatním, co jídlo ovlivňuje: cenou, časem a znalostmi o výživě.</p>
+<h3>Proč je to důležité</h3>
+<p>Kurzy vaření ve školách i v obcích se často nabízejí jako cesta ke zdravějšímu jídlu. Tahle práce naznačuje, že dovednost sama nestačí — záleží i na tom, co si člověk může dovolit a co o výživě ví.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Kezban Şahin, Hacı Ömer Yılmaz, Çağdaş Salih Meriç</dd>
+<dt>Časopis</dt>
+<dd>Scientific Reports</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-02">2. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1038/s41598-026-66250-5" rel="noreferrer">10.1038/s41598-026-66250-5</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7204988453" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1038/s41598-026-66250-5" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Výsledek je předběžný: jde o jednorázové měření u necelých tří stovek žen z jediné země, které nebyly vybrány náhodně, a jídelníček stojí na jednom jediném dni podle vzpomínek.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 5</p>
+<div class="summary"><p><span class="lead">Nemoci spojené se stárnutím tvoří dnes největší část celosvětové zdravotní zátěže — a to i v zemích s nízkými příjmy.</span> Vědci využili data projektu Global Burden of Disease a rozdělili nemoci podle toho, v jakém věku člověka nejvíc zasáhnou. Vyšly jim čtyři skupiny: nemoci kojenců, nemoci mladých dospělých, nemoci starších dospělých a nemoci stárnutí. U nemocí stárnutí jdou úmrtnost a nemocnost ruku v ruce, takže odsunout smrt většinou znamená i odsunout léta strávená ve špatném zdraví. Navíc u nich platí takzvané rostoucí výnosy: čím víc jich ubude, tím víc se vyplatí řešit ty zbývající.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Průměrná délka života na světě stoupla od roku 1973 z 58 na více než 73 let. Podíl lidí ve věku 65 a více let se zdvojnásobil na 10 %, tedy na jednoho člověka z deseti. Podle projekcí má do roku 2073 dosáhnout 21 % — to je přibližně každý pátý člověk. S tím se mění i to, co lidem nejvíc škodí. Ubývá infekčních nemocí a přibývá nemocí dlouhodobých, tedy chronických.</p>
+<p>Autoři tenhle posun popsali jinak než obvykle. Vzali data z mezinárodního projektu Global Burden of Disease, který sleduje nemoci po celém světě. Nemoci pak statisticky seskupili podle toho, kdy v životě dopadají nejsilněji. Tak vznikly čtyři skupiny. Nemoci stárnutí z nich vyšly jako největší část dnešní zdravotní zátěže. Jsou také největší zátěží, kterou má před sebou dnes narozené dítě. Platí to i v zemích s nízkými příjmy, kde by mnoho lidí čekalo hlavně infekce.</p>
+<p>Dvě věci tuto skupinu odlišují. První je těsné spojení úmrtnosti a nemocnosti: kdo na ně umírá, ten s nimi obvykle předtím dlouho žil ve zhoršeném zdraví. Druhá je efekt rostoucích výnosů. Když výskyt těchto nemocí klesne, další zlepšení se vyplatí ještě víc než to předchozí. Autoři z toho odvozují doporučení pro zdravotní systémy a pro výzkum stárnutí.</p>
+<h3>Proč je to důležité</h3>
+<p>Nemoci stárnutí se netýkají jen seniorů v bohatých zemích — podle téhle analýzy jsou největší zdravotní zátěží, která čeká dnes narozené dítě kdekoli na světě. To ovlivňuje, kam má smysl směřovat peníze na léčbu i na výzkum.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Julian Ashwin, David E. Bloom, Naomi Lee, Peter Piot, Andrew Scott</dd>
+<dt>Časopis</dt>
+<dd>Nature Aging</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-02">2. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1038/s43587-026-01210-2" rel="noreferrer">10.1038/s43587-026-01210-2</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7204987523" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://doi.org/10.1038/s43587-026-01210-2" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1038/s43587-026-01210-2" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Práce pracuje s odhady z jedné velké mezinárodní databáze a se způsobem, jakým autoři nemoci rozdělili do skupin; jiné rozdělení nebo jiná data by mohly dát trochu jiný obrázek a projekce do roku 2073 zůstává předpokladem, ne jistotou.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 5</p>
+<div class="summary"><p>Kanadská provincie Ontario ukládá domovům pro seniory povinnost okamžitě volat policii pokaždé, když někdo ohlásí, tuší nebo přímo vidí týrání, zanedbání či jiné jednání, které může být trestným činem. Výzkumníci prošli veřejně dostupné inspekční zprávy ministerstva z roku 2024 pro náhodně vybranou pětinu ontarijských domovů — dohromady 457 zpráv — a hledali v nich zmínky o týrání, zanedbání a policii. Ve 21 zprávách se policie vůbec objevila, a v 16 z nich šlo o popsané případy krádeže, podvodu, fyzického nebo sexuálního napadení; policie ale byla přivolána jen ve dvou z těchto šestnácti případů, tedy zhruba v jednom z osmi. Další čtyři zprávy popisovaly chybějící nebo zfalšované výpisy z rejstříku trestů u personálu. Autoři z toho usuzují, že se takové události řeší převážně interně jako porušení předpisů nebo jako zdravotní problém, a do trestního řízení se dostanou jen zřídka.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Tým vybral náhodně 20 % domovů dlouhodobé péče v Ontariu a stáhl všechny inspekční zprávy, které k nim ministerstvo vydalo v roce 2024 — celkem 457 dokumentů. V nich hledal klíčová slova „týrání&quot;, „zanedbání&quot; a „policie&quot;; tomu odpovídalo 193 zpráv, které pak četl a třídil podle obsahu. Policie se objevila jen ve 21 z nich, tedy přibližně v jedné z devíti. Šestnáct z těchto 21 zpráv popisovalo konkrétní týrání nebo zanedbání péče, od krádeží a podvodů po fyzické a sexuální napadení. Policie přijela do domova jen ve dvou případech ze šestnácti — 12,5 %, tedy zhruba jeden případ z osmi. Ve zbývajících čtrnácti (87,5 %, téměř devět z deseti) nikdo policii nekontaktoval, přestože to zákon vyžaduje. Další čtyři zprávy se týkaly personálu: chyběly předepsané kvalifikace nebo výpisy z rejstříku trestů, případně byly zfalšované. Poslední zpráva zmiňovala policii jen zprostředkovaně, z dřívějšího vyprávění o agresivním chování jednoho z obyvatel. Autoři také upozorňují, že za srovnatelné události inspektoři udělovali různě přísné postihy a zápisy se lišily v podrobnosti. Podle nich to naznačuje, že se podezření na trestný čin v domovech řeší spíš jako regulační nebo ošetřovatelský problém než jako věc pro policii — což znamená, že skutečný rozsah problému neukazují ani policejní statistiky, ani inspekční zprávy.</p>
+<h3>Proč je to důležité</h3>
+<p>Jde o lidi, kteří se sami bránit ani stěžovat často nedokážou, a zákon je má chránit právě tím, že podezření na trestný čin musí zamířit na policii. Pokud se to v praxi neděje, rodiny se o vážných událostech nemusí dozvědět a nikdo za ně nenese trestní odpovědnost.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Vivian Stamatopoulos, Shannon Vettor, Emily Hladkowicz</dd>
+<dt>Časopis</dt>
+<dd>Canadian Geriatrics Journal</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-02">2. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.5770/cgj.29.930" rel="noreferrer">10.5770/cgj.29.930</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7204887545" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://doi.org/10.5770/cgj.29.930" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.5770/cgj.29.930" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Studie vychází pouze z toho, co inspektoři zapsali do zpráv — pokud domov policii zavolal a inspektor to nezaznamenal, v datech to chybí — a jde o první práci svého druhu, postavenou na jedné provincii, jednom roce a jednadvaceti relevantních zprávách, takže její závěry je třeba brát jako předběžné.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-4">
+<p class="paper-counter">Studie 4 z 5</p>
+<div class="summary"><p><span class="lead">Katolická církev učí, že prvními vychovateli dětí jsou rodiče.</span> Výzkumníci se zeptali rodičů, učitelů a kněží z katolických škol v Anglii a Walesu, co si pod „zapojením rodičů“ představují. Odpovědi byly praktické: účast na školních akcích a pomoc s domácími úkoly, tedy podpora toho, co vymyslí škola. Učení doma, které odborná literatura považuje za jádro zapojení, zaznívalo méně — a nejméně právě u kněží a školního personálu. Autoři z toho vyvozují, že mezi tím, co církev hlásá, a tím, jak školy v praxi fungují, je mezera.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Studie proběhla ve dvou krocích. Nejdřív online dotazník, který vyplnilo 115 lidí — tolik, kolik by naplnilo čtyři až pět běžných školních tříd. Pak následovaly hloubkové rozhovory se 40 lidmi, tedy s počtem, který se vejde do jedné velké třídy. Účastníci patřili do tří skupin: rodiče dětí z katolických škol, zaměstnanci těchto škol a duchovní zapojení do katolického školství. Všichni působili v Anglii nebo ve Walesu. Odborníci na vzdělávání rozlišují dvě různé věci. Zapojení do chodu školy (parental involvement) znamená, že rodič přijde na třídní schůzku, pomůže na jarmarku nebo dohlédne na domácí úkoly. Zapojení do učení (parental engagement) znamená, že rodič doma sám podporuje, jak se dítě učí: čte s ním, mluví s ním o tom, co ho zajímá, povzbuzuje ho. Podle širšího výzkumu vzdělávání má na děti větší vliv ta druhá věc. V odpovědích ale jasně převažovala ta první. Platilo to u všech tří skupin, nejvýrazněji u kněží a zaměstnanců škol. Vztah k rodičům se tak popisoval spíš „shora dolů“: škola určí, rodič se přidá. To autoři staví do kontrastu s církevním učením o rodičích jako prvních vychovatelích. Navrhují proto cílené vzdělávání pro učitele i duchovní, aby se těžiště spolupráce přesunulo ze školních akcí k tomu, co se děje doma.</p>
+<h3>Proč je to důležité</h3>
+<p>Ukazuje to rozdíl mezi tím, co škola po rodičích obvykle chce, a tím, co dětem podle výzkumu pomáhá nejvíc — a to se týká i rodičů a učitelů mimo církevní školství.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Sara Spear, Janet Goodall, Karen North, John Lydon, Shalini Bhorkar</dd>
+<dt>Časopis</dt>
+<dd>International Studies in Catholic Education</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-02">2. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1080/19422539.2026.2725674" rel="noreferrer">10.1080/19422539.2026.2725674</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7204742008" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1080/19422539.2026.2725674" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o průzkumnou studii z jedné země s malým počtem účastníků, kteří se navíc přihlásili sami, takže výsledky ukazují spíš směr než přesný obraz katolických škol.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-5">
+<p class="paper-counter">Studie 5 z 5</p>
+<div class="summary"><p><span class="lead">Kdo na sociálních sítích tráví hodně času, bývá se sebou méně smířený — a nový rozbor naznačuje, kudy k tomu vede cesta.</span> Vědci prošli odpovědi téměř 28 tisíc lidí z Nového Zélandu. Intenzivnější používání sítí se pojilo s menší spokojeností s vlastním tělem, ta pak se slabším pocitem propojení s druhými, a to nakonec s nižší sebeúctou. Nejde tedy jen o srovnávání s ostatními; podle autorů jde i o pocit odstřižení od lidí. Dotazník ale zachytil jeden okamžik, takže co je příčina a co následek, z něj nevyčteme.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Data pocházejí z dlouhodobého novozélandského výzkumu postojů a hodnot (New Zealand Attitudes and Values Study). Autoři použili odpovědi 27 838 lidí. Sledovali čtyři věci. První: jak intenzivně člověk používá sociální sítě. Druhou: jak je spokojený se svým tělem. Třetí: jak moc se cítí propojený s ostatními. Pod tím spojili dvě věci — vnímanou oporu od druhých a pocit, že někam patřím. Čtvrtou: jak si sám sebe váží. Pak čísla propojili do modelu, který hledá celý řetězec vztahů (structural equation modeling — statistický postup, jak testovat několik propojených souvislostí naráz). Ve výpočtech zohlednili věk, pohlaví a další základní údaje. Řetězec vyšel tak, jak autoři čekali. Více času na sítích znamenalo v průměru menší spokojenost s vlastním tělem. Menší spokojenost s tělem se pojila se slabším pocitem propojení s lidmi. A ten se pojil s nižší sebeúctou. Oba mezikroky tedy vysvětlují část souvislosti mezi sítěmi a sebeúctou. Zajímavý je hlavně ten druhý krok. Dosavadní výzkum se soustředil především na srovnávání s cizími profily. Tady se ukazuje, že nespokojenost s vlastním tělem může člověka i vzdalovat od druhých. Autoři z toho odvozují, kam mířit s pomocí: podpořit zdravější vztah k vlastnímu tělu a zároveň skutečné vazby na lidi kolem. Zdůrazňují ale, že jde o souvislosti, ne o důkaz příčiny.</p>
+<h3>Proč je to důležité</h3>
+<p>Sociální sítě dnes používá téměř každý a rodiče i učitelé hledají, kde přesně problém vzniká. Tato práce ukazuje dvě konkrétní místa, kam se dá zamířit: vztah k vlastnímu tělu a opravdové vazby na lidi kolem.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Yuyan Wang, Kong Meng Liew, Chris G. Sibley</dd>
+<dt>Časopis</dt>
+<dd>Social Sciences &amp; Humanities Open</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-02">2. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1016/j.ssaho.2026.103498" rel="noreferrer">10.1016/j.ssaho.2026.103498</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W4417511708" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1016/j.ssaho.2026.103498" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o měření v jednom okamžiku a v jedné zemi, takže data ukazují souvislosti, ale nedokážou určit, co je příčina a co následek; sami autoři proto volají po dlouhodobých a experimentálních studiích.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 4. září 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>
