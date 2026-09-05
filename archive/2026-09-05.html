@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Fyzika, vesmír a technika – 5. září 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Fyzika, vesmír a technika</h1>
+<p class="dateline"><time datetime="2026-09-05">5. září 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 5</p>
+<div class="summary"><p>Robot na mechanické odplevelování cukrové řepy dokáže spouštět a zvedat jednotlivé plecí nože přesně tam, kde je potřeba, podle polohy z přesné satelitní navigace (RTK-GPS), takže neruší půdu tam, kde plevel není. Tým jej vyzkoušel přímo na poli a spočítal, že nože skutečně pracovaly na 96,5 % délky úseků, kde pracovat měly — tedy zhruba na sedmadevadesáti metrech ze sta. Souběžně vědci v počítačové simulaci, postavené na datech naměřených na poli, ověřovali systém, který podle napětí v konstrukci sám nastavuje hloubku nožů na nerovném terénu. Simulace naznačuje, že by to fungovalo, ale skutečné otestování v terénu autoři nechávají na později spolu s rychlejším ovládáním a lepšími čidly. Pro pěstitele, kteří nechtějí nebo nesmějí používat herbicidy, je to jedna z cest, jak plevel řešit strojově a přitom zbytečně nerozrývat půdu.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Autoři spojili běžný meziřádkový kypřič s robotickou plošinou, kterou naviguje přesná satelitní technologie RTK-GPS — ta na rozdíl od navigace v telefonu určuje polohu s odchylkou v řádu centimetrů. Každý plecí nůž (v angličtině sweep) se ovládá zvlášť: podle uložené mapy se v daném místě spustí do půdy a za chvíli zase zvedne. Účinnost měřili jednoduše a poctivě — porovnávali délku úseků, které nože skutečně zpracovaly, s délkou úseků, kde to bylo naplánováno. Vyšlo 96,5 %, tedy zhruba sedmadevadesát metrů ze sta; na zbývajících pár metrech nůž nestihl zabrat nebo se zvedl dřív. Druhá část práce zůstala zatím v počítači: pole není rovná deska, a tak vědci navrhli řízení, které měří napětí v rámu stroje a podle něj samo dorovnává hloubku každého nože. Tuhle část zkoušeli jen v simulaci živené daty z pole a vyšla jako proveditelná — ne jako ověřená. Význam je v tom, že stroj hýbe půdou jen tam, kde je plevel. Méně rozrušené půdy znamená méně narušené struktury a nižší spotřebu energie, protože motor netahá nože zbytečně celou brázdou. Pro ekologické hospodaření, kde chemické postřiky odpadají, je mechanické plení hlavní zbraní a jeho zpřesnění šetří čas i naftu. Autoři sami píší, co chybí: rychlejší pohyb nožů a lepší čidla.</p>
+<h3>Proč je to důležité</h3>
+<p>Plevel bere výnosy a v ekologickém zemědělství se proti němu nesmí použít postřik, takže přesnější mechanické plení je jedna z mála reálných cest, jak pěstovat bez chemie a přitom zbytečně nerozorávat půdu.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Shafi Md. Istiak, Mohammad Aftabi Talami, James Y. Kim, Sulaymon Eshkabilov</dd>
+<dt>Časopis</dt>
+<dd>Precision Agriculture</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-04">4. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1007/s11119-026-10445-3" rel="noreferrer">10.1007/s11119-026-10445-3</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7207873251" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://doi.org/10.1007/s11119-026-10445-3" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1007/s11119-026-10445-3" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Údaj o 96,5 % pochází z polních zkoušek jednoho prototypu na cukrové řepě a chytré dorovnávání hloubky nožů na nerovném terénu zatím existuje jen v počítačové simulaci, takže jde o předběžný výsledek, ne o ověřený stroj pro běžný provoz.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 5</p>
+<div class="summary"><p><span class="lead">Baterie typu LFP (lithium-železo-fosfát) s grafitovou zápornou elektrodou dnes pohánějí velká úložiště energie.</span> Mají ale jednu daň hned na začátku: při prvním nabití se část lithia nenávratně spotřebuje na ochranný film na grafitu, a kapacita tím klesne. Vědci proto do kladné elektrody přidávají zásobní látku Li5FeO4, která lithium navíc dodá — jenže ta se na vzduchu a ve vlhku rychle kazí. V této práci ji obalili tenoučkou vrstvou oxidu titaničitého (TiO2), tedy stejné bílé látky, jaká se používá do opalovacích krémů. Články s takto chráněnou přísadou startovaly s kapacitou 175 místo 160 miliampérhodin na gram, tedy asi o desetinu vyšší.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Autoři nanesli na částice Li5FeO4 nanometrovou vrstvičku oxidu titaničitého. Nejlépe dopadlo množství 1,5 procenta hmotnosti, tedy zhruba půldruhého gramu na kilogram přísady. Ověřovali, že obal nepokazí vnitřní uspořádání atomů v částicích — a nepokazil. Nechráněná látka se ve vlhkém vzduchu rozkládá a způsobuje, že se elektrodová kaše při výrobě sráží do rosolu. Obalená verze vydržela dvě hodiny na vzduchu bez poškození a rosolovatění výrazně omezila. To je pro výrobu důležité: elektrody se natírají ve velkém a kaše musí zůstat tekutá. Při nabíjení pak přísada v rozmezí 3,5 až 4,0 voltu jednorázově uvolní lithium navíc. To nahradí právě to lithium, které se spotřebuje na ochranný film. První vybití díky tomu dalo 175 miliampérhodin na gram místo 160, tedy zhruba o devět procent víc. V testech životnosti články s přísadou zvládly 500 cyklů, tedy 500 nabití a vybití, při proudu 1C — to znamená rychlost, při níž se článek nabije či vybije zhruba za hodinu. Větší články typu pouch (ploché, v měkkém obalu) prošly 2000 cykly a zůstaly jim asi tři pětiny původní kapacity. Autoři je pak použili k rozsvícení LED lampičky. Podstata výsledku je prostá: obal z běžné a levné látky udělal z citlivé přísady něco, s čím se dá pracovat v běžné výrobní hale.</p>
+<h3>Proč je to důležité</h3>
+<p>Delší životnost a vyšší kapacita baterií znamenají levnější a spolehlivější uchovávání elektřiny, na němž stojí solární i větrné zdroje. Navíc jde o vylepšení, které nevyžaduje vzácné suroviny, jen tenký obal z běžného oxidu titaničitého.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Ruijin He, Bo Zhu, Zhenyu Jiang, Ming Ma, Minying Wu, Qiang Fu a další</dd>
+<dt>Časopis</dt>
+<dd>Energy Materials and Devices</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-04">4. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.26599/emd.2026.9370111" rel="noreferrer">10.26599/emd.2026.9370111</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7207871604" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.26599/emd.2026.9370111" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o laboratorní výsledek na malých článcích a jednom typu pouch článku; test odolnosti na vzduchu trval jen dvě hodiny, což nevypovídá o skladování v reálné výrobě, a chování v sériové produkci se teprve musí ověřit.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 5</p>
+<div class="summary"><p>Města dnes mívají svůj trojrozměrný digitální model složený z milionů naměřených bodů (point cloud, mračno bodů) — a problém nastává, když se má aktualizovat jen kousek, třeba nově postavená budova. Nový sken se špatně napojí na starý: hranice objektů se rozostří a v místě spoje je vidět šev jako na nepovedeně slepené fotce. Autoři z Chuzhou University proto poskládali celý postup dohromady tak, aby si jednotlivé kroky předávaly informaci o tom, co je co (strom, zem, stěna), místo aby každý pracoval sám za sebe. Na datech ze skutečného univerzitního kampusu vyšlo, že hranice objektů program určil správně ve zhruba devíti případech z deseti a napojení dvou skenů se povedlo podobně často. V žádné jednotlivé disciplíně metoda nevyhrála, ale nabídla nejvyrovnanější kompromis mezi neviditelným švem a zachovanými detaily.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Postup má tři návazné části. První odděluje terén od objektů metodou, která si počíná jako pomyslná látka spuštěná na krajinu (Cloth Simulation Filtering); autoři ji doplnili o váhu podle významu bodů, aby program rozeznal skutečnou hranu budovy od falešné, kterou způsobí třeba projíždějící auto. Druhá část dopočítává tvar zakrytých míst pomocí neuronové sítě pracující s prostorovými vztahy mezi body, takže není tolik závislá na tom, jak přesně se sken na začátku umístí. Třetí část srovnává barvy a osvětlení obou skenů tak, aby přechod nebyl vidět. Testovali to na datech z kampusu Huifeng univerzity v Chuzhou. Hranice objektů systém zařadil do správné kategorie v průměru u 92,5 procenta případů, tedy zhruba u devíti bodů z deseti. Odchylka určené hranice od skutečné byla 2,1 centimetru, což je asi šířka dvou prstů — a toto číslo platí pro 95 procent bodů, takže nejhorší dvacetina může být horší. Napojení dvou skenů se podařilo v 91,6 procenta pokusů, tedy asi devětkrát z deseti, s průměrnou odchylkou 0,21 metru, tedy zhruba na délku dlaně. Textura si udržela kolem devadesáti procent jemných detailů, zatímco šev zůstal viditelný asi u poloviny hodnocených míst. Autoři sami přiznávají, že v obou texturových měřeních existují lepší metody — ta jejich ale drží obě hodnoty rozumné najednou.</p>
+<h3>Proč je to důležité</h3>
+<p>Digitální modely měst se používají při plánování staveb, správě majetku i krizovém řízení a jejich průběžná aktualizace je drahá; spolehlivější a méně ručního nastavování znamená přesnější podklady za nižší cenu.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Weibo Zeng, Shanshan Liang, Wenxin Jiang, Cheng Chen, Zhipeng Wang, Shuangxi Gu</dd>
+<dt>Časopis</dt>
+<dd>Scientific Reports</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-04">4. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1038/s41598-026-69295-8" rel="noreferrer">10.1038/s41598-026-69295-8</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7207814743" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1038/s41598-026-69295-8" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Metodu autoři vyzkoušeli jen na datech z jednoho univerzitního kampusu, takže není jisté, jak si povede v jiném prostředí — třeba v husté zástavbě nebo v členitém terénu.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-4">
+<p class="paper-counter">Studie 4 z 5</p>
+<div class="summary"><p>Uhlí ve vytěžených částech dolu se může samo vznítit, jakmile se k němu skulinami dostane vzduch, a čínští autoři proto namíchali injektážní maltu, která se chová podle teploty: při 20 °C zůstává tekutá natolik, že se na podložce rozteče do kruhu o průměru 20 centimetrů, a proto zateče hluboko do puklin, ale jakmile narazí na místo teplejší než 40 °C, do tří minut zhoustne a chodbičku ucpe. Při tvrdnutí se sama ohřeje jen o 18,4 stupně, což je 13 procent toho, co se naměřilo u polyuretanu, tedy zhruba osmina, a 52 procent hodnoty u směsi cementu s vodním sklem, tedy asi polovina — méně tepla znamená menší riziko, že se materiál při velkých nástřicích sám rozpálí. V provozní zkoušce v dole Chung-čching-che ve Vnitřním Mongolsku klesl obsah kyslíku ve sledovaném prostoru z 9 až 17 procent (v běžném vzduchu je ho kolem 21 procent, takže šlo o polovinu až většinu obvyklého množství) na 1 až 5 procent, tedy na zlomek původní hodnoty, a oxid uhelnatý, který prozrazuje doutnající uhlí, se za třicet dní přestal měřit úplně.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Směs tvoří hydroxid hořečnatý a hlinitý, velmi jemně mletý cement a bentonit s naroubovaným polymerem NIPAM — látkou, která nad určitou teplotou náhle změní chování a zahustí kaši, v níž je rozmíchaná. Právě to dává materiálu jeho vlastnost: studený teče, teplý tuhne. Vývoj tepla autoři měřili v termosce, která teplo nepouští ven (adiabatická kalorimetrie), a nejvyšší ohřátí o 18,4 stupně nastalo až po zhruba osmi hodinách, tedy pomalu a mírně; zůstalo hluboko pod hranicí 60 °C, kterou čínská praxe pro injektáže bere jako bezpečnostní strop. Vnitřek ztvrdlé směsi prosvítili rentgenem s velmi jemným rozlišením (mikro-CT): propojených pórů širších než 0,05 milimetru, což je zhruba tloušťka lidského vlasu, ubylo o 85 procent, takže zbyla asi sedmina původního množství, a na rozhraní uhlí a malty nenašli trhliny. Po 28 dnech měl materiál pevnost v tlaku 30,1 megapascalu, tedy na každý centimetr čtvereční unese zhruba tři metráky, a nesmrštil se ani z něj neodsedala voda. V dole se obsah kyslíku dostal na 1 až 5 procent, tedy pod hranici 7 procent, kterou čínská norma označuje za kritickou pro vznik samovznícení. Cena suroviny vychází na 185 dolarů za tunu a autoři odhadují, že za pět let provozu vyjde řešení asi o třetinu levněji než polyuretan.</p>
+<h3>Proč je to důležité</h3>
+<p>Samovznícení uhlí v dolech ohrožuje životy horníků a hasí se roky; materiál, který sám najde horké místo a ucpe ho, aniž by se přitom nebezpečně rozpálil, je praktickou cestou, jak takovým požárům předcházet.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Wenxin Dong, Jie Chen, Chaozhong Qin, Wen Liu, Jinyang Fan</dd>
+<dt>Časopis</dt>
+<dd>Scientific Reports</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-03">3. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1038/s41598-026-69708-8" rel="noreferrer">10.1038/s41598-026-69708-8</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7165173424" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1038/s41598-026-69708-8" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde zatím o laboratorní měření doplněná jedinou provozní zkouškou v jednom dole a po dobu třiceti dnů, takže dlouhodobou životnost ani chování v jiných geologických podmínkách výsledky neprokazují.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-5">
+<p class="paper-counter">Studie 5 z 5</p>
+<div class="summary"><p><span class="lead">Io, sopečně nejaktivnější těleso Sluneční soustavy, neustále hněte gravitace Jupiteru — kde přesně v jeho nitru vzniká teplo, se ale zatím neví.</span> Italští vědci proto počítali, jak se měsíc pod tahem Jupiteru deformuje. Zkoušeli přitom různé hloubky, v nichž plášť začíná tát, i různá množství tepla potřebného k roztavení hornin. Řada kombinací dala stejnou míru vyboulení, jakou u Io naměřila sonda Juno (0,125 s nejistotou ±0,047), zatímco vypočtené vnitřní zahřívání vyšlo o něco vyšší než pozorované, pořád však v mezích měřicí nejistoty. Io tedy nejspíš má plášť jen zčásti roztavený, s tak malým podílem taveniny, že hornina zůstává pevná.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Vědci si Io rozdělili na tři části: tekuté jádro, poddajný plášť a tenkou kůru. Jádro má v modelu poloměr 950 kilometrů, tedy zhruba polovinu poloměru celého měsíce. Plášť je tlustý 820 kilometrů a vyplňuje skoro celý zbytek cesty k povrchu. Navrchu leží kůra tlustá 50 kilometrů, což je necelá třicetina poloměru. Plášť pak ještě rozkrájeli na 67 tenkých slupek, aby mohli počítat s tím, že v každé hloubce je hornina jinak měkká. Pro každou slupku spočítali, kolik tepla v ní vznikne třením, kolik horniny se tím roztaví a jak moc to horninu změkčí. Výpočet pak zopakovali s novými hodnotami, a tak dokola, dokud se výsledek neustálil. Takto prošli mnoho variant a pokaždé měnili hloubku tání i teplo nutné k roztavení hornin. Výsledek popisuje takzvané Loveovo číslo k2. Jeho první část říká, o kolik se měsíc přílivovým působením vyboulí. Druhá část říká, kolik energie se přitom promění v teplo. První část modely trefily dobře. Druhá vyšla vyšší, než ukazují data z Juno, ale zůstala uvnitř pásma nejistoty měření. Hodně přitom záleželo na jediném čísle označovaném β, které popisuje, jak ochotně hornina pomalu teče pod dlouhodobým zatížením. Právě jeho volba rozhodovala o tom, zda se teplo tvoří hluboko v plášti, nebo spíš blízko pod povrchem.</p>
+<h3>Proč je to důležité</h3>
+<p>Do nitra cizího měsíce nikdo nikdy nedohlédne přímo, a tak je počítání z toho, jak se povrch ohýbá, jediná cesta, jak zjistit, co je pod ním. Io je navíc příklad tělesa, které zahřívá čistě mechanické hnětení gravitací sousední planety.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Matteo Paris, A. Mura, F. Zambon, Antonio Genova, F. Tosi, A. Consorzi a další</dd>
+<dt>Časopis</dt>
+<dd>Astronomy and Astrophysics</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-03">3. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1051/0004-6361/202660038" rel="noreferrer">10.1051/0004-6361/202660038</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W4412120521" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1051/0004-6361/202660038" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o průběžný výsledek konferenčního příspěvku: model stojí na několika zvolených vstupních hodnotách (hlavně na čísle β), autoři je sami dál upravují a vypočtené zahřívání se s měřením shoduje jen v širším pásmu nejistoty.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 5. září 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>

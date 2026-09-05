@@ -1,0 +1,791 @@
+{
+  "date": "2026-09-05",
+  "categoryKey": "physics-space-engineering",
+  "categoryLabel": "Fyzika, vesmír a technika",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7207873251",
+        "title": "Site-specific mechanical weeding robot with automatic self-adjustable individually controlled cultivator",
+        "abstract": "Abstract Context Weeds significantly reduce crop productivity and profitability, particularly in sugar beet production where losses exceed $1.25 billion annually in the United States. Limitations of herbicide-based control and drawbacks of conventional tillage highlight the need for efficient, sustainable alternatives. Aims To develop and evaluate an autonomous site-specific mechanical weeding (SSMW) system with adaptive control for precise inter-row weed removal under field conditions. Methods An SSMW system was designed by integrating an inter-row tillage mechanism with a robotic platform using RTK-GPS for navigation and site-specific actuation. Site-specific weeding was performed in the field test and a strain-based feedback control system was implemented in computer simulation to enable ASIC tillage under uneven terrain. Simulation studies based on field data were conducted to validate control performance, followed by field experiments to assess system effectiveness. Key Results The SSMW system’s efficacy was found to be 96.5% by tillage length. Conclusion The SSMW system achieved precise site-specific weeding using GPS-based control of individual sweeps, with a weeding efficacy of 96.5% based on tillage length. The ASIC framework with sensor feedback simulation showed the feasibility of improved adaptability to uneven terrain, with future work focusing on enhanced sensing and faster actuation for improved field performance. Implications and Impacts This study contributes to precision agriculture by enabling targeted weed management through intelligent sensing and control, reducing energy use and soil disruption. The system offers a sustainable alternative for organic farming, improving operational efficiency and environmental stewardship.",
+        "date": "2026-09-04",
+        "url": "https://doi.org/10.1007/s11119-026-10445-3",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1007/s11119-026-10445-3",
+        "openAlexId": "W7207873251",
+        "subfield": {
+          "id": "subfields/2205",
+          "name": "Civil and Structural Engineering"
+        },
+        "field": {
+          "id": "fields/22",
+          "name": "Engineering"
+        },
+        "topic": {
+          "id": "T11978",
+          "name": "Soil Mechanics and Vehicle Dynamics"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1007/s11119-026-10445-3",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Shafi Md. Istiak",
+          "Mohammad Aftabi Talami",
+          "James Y. Kim",
+          "Sulaymon Eshkabilov"
+        ],
+        "venue": "Precision Agriculture",
+        "indexedDate": "2026-09-04",
+        "referencedWorksCount": 36,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7212,
+          "everydayRelevance": 0.9333,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.8084,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 0.5,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.0417
+          },
+          "everydayDomains": [
+            "food",
+            "energy",
+            "work"
+          ],
+          "subfieldKey": "subfields/2205",
+          "evidence": [
+            "total 0.8084 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.72 = P 0.73 − 0.45×t 0.00 − 0.15×j 0.04",
+            "outcome verbs (v 0.75): reduces, improved, enables",
+            "recognisable subjects (s 0.50): crops, soil",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.04): 1/240 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.93: 3 domain(s) — food, energy, work",
+            "everyday terms (4): sugar, energy, work, productivity",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-04)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Precision Agriculture",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no tldr; falling back to the source abstract (§4.2)"
+      },
+      "summary": {
+        "souhrn": "Robot na mechanické odplevelování cukrové řepy dokáže spouštět a zvedat jednotlivé plecí nože přesně tam, kde je potřeba, podle polohy z přesné satelitní navigace (RTK-GPS), takže neruší půdu tam, kde plevel není. Tým jej vyzkoušel přímo na poli a spočítal, že nože skutečně pracovaly na 96,5 % délky úseků, kde pracovat měly — tedy zhruba na sedmadevadesáti metrech ze sta. Souběžně vědci v počítačové simulaci, postavené na datech naměřených na poli, ověřovali systém, který podle napětí v konstrukci sám nastavuje hloubku nožů na nerovném terénu. Simulace naznačuje, že by to fungovalo, ale skutečné otestování v terénu autoři nechávají na později spolu s rychlejším ovládáním a lepšími čidly. Pro pěstitele, kteří nechtějí nebo nesmějí používat herbicidy, je to jedna z cest, jak plevel řešit strojově a přitom zbytečně nerozrývat půdu.",
+        "podrobneVysvetleni": "Autoři spojili běžný meziřádkový kypřič s robotickou plošinou, kterou naviguje přesná satelitní technologie RTK-GPS — ta na rozdíl od navigace v telefonu určuje polohu s odchylkou v řádu centimetrů. Každý plecí nůž (v angličtině sweep) se ovládá zvlášť: podle uložené mapy se v daném místě spustí do půdy a za chvíli zase zvedne. Účinnost měřili jednoduše a poctivě — porovnávali délku úseků, které nože skutečně zpracovaly, s délkou úseků, kde to bylo naplánováno. Vyšlo 96,5 %, tedy zhruba sedmadevadesát metrů ze sta; na zbývajících pár metrech nůž nestihl zabrat nebo se zvedl dřív. Druhá část práce zůstala zatím v počítači: pole není rovná deska, a tak vědci navrhli řízení, které měří napětí v rámu stroje a podle něj samo dorovnává hloubku každého nože. Tuhle část zkoušeli jen v simulaci živené daty z pole a vyšla jako proveditelná — ne jako ověřená. Význam je v tom, že stroj hýbe půdou jen tam, kde je plevel. Méně rozrušené půdy znamená méně narušené struktury a nižší spotřebu energie, protože motor netahá nože zbytečně celou brázdou. Pro ekologické hospodaření, kde chemické postřiky odpadají, je mechanické plení hlavní zbraní a jeho zpřesnění šetří čas i naftu. Autoři sami píší, co chybí: rychlejší pohyb nožů a lepší čidla.",
+        "procJeToDulezite": "Plevel bere výnosy a v ekologickém zemědělství se proti němu nesmí použít postřik, takže přesnější mechanické plení je jedna z mála reálných cest, jak pěstovat bez chemie a přitom zbytečně nerozorávat půdu.",
+        "poznamkaKOmezenim": "Údaj o 96,5 % pochází z polních zkoušek jednoho prototypu na cukrové řepě a chytré dorovnávání hloubky nožů na nerovném terénu zatím existuje jen v počítačové simulaci, takže jde o předběžný výsledek, ne o ověřený stroj pro běžný provoz."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=22.44",
+            "messageCs": "Věty jsou v průměru moc dlouhé (22,4 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=22.44"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 213
+            },
+            "matchedText": "Robot na mechanické odplevelování cukrové řepy dokáže spouštět a zvedat jednotlivé plecí nože přesně tam, kde je potřeba, podle polohy z přesné satelitní navigace (RTK-GPS), takže neruší půdu tam, kde plevel není.",
+            "messageCs": "Tato věta má 32 slov a je moc dlouhá: „Robot na mechanické odplevelování cukrové řepy dokáže spouštět a zvedat jednotl…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[0,213]: Robot na mechanické odplevelování cukrové řepy dokáže spouštět a zvedat jednotlivé plecí nože přesně tam, kde je potřeba, podle polohy z přesné satelitní navigace (RTK-GPS), takže neruší půdu tam, kde plevel není."
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 8,
+              "end": 17
+            },
+            "matchedText": " mechanic",
+            "messageCs": "Text opisuje původní název článku („ mechanic“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[8,17]:  mechanic"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 1112,
+              "end": 1121
+            },
+            "matchedText": " mechanic",
+            "messageCs": "Text opisuje původní název článku („ mechanic“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[1112,1121]:  mechanic"
+          },
+          {
+            "block": "procJeToDulezite",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 98,
+              "end": 107
+            },
+            "matchedText": " mechanic",
+            "messageCs": "Text opisuje původní název článku („ mechanic“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ procJeToDulezite[98,107]:  mechanic"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=2",
+            "messageCs": "Počet vět delších než 30 slov: 2. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=2"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=49.1",
+            "messageCs": "Text se celkově čte těžko (index 49 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=49.1"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7207871604",
+        "title": "Interfacial engineering enables air-stable Li 5 FeO 4 prelithiation additives for long-Life LiFePO 4 |graphite batteries",
+        "abstract": "Abstract Lithium iron phosphate (LiFePO4, LFP)|graphite (Gr) full cells are widely used in large-scale energy storage owing to their safety and long cycling stability. However, irreversible lithium consumption during solid electrolyte interphase (SEI) formation depletes the limited lithium inventory, causing initial capacity loss and compromising the cycling stability of full cells. Lithium-rich lithium ferrite (Li5FeO4, LFO) has emerged as a promising cathode prelithiation additive for compensating lithium loss, but its poor air stability and moisture sensitivity restrict practical application. Herein, we introduce a TiO2 interfacial coating strategy to stabilize LFO by constructing a nanoscale protective layer on particle surfaces. The TiO2 coating preserves the antifluorite structure of LFO while suppressing surface degradation and improving electrode processing compatibility. The optimized 1.5% TiO2@LFO maintains structural integrity after air exposure for 2 h and effectively mitigates slurry gelation. In LFP|Gr full cells, TiO2@LFO delivers an irreversible delithiation plateau at 3.5–4.0 V, compensating for SEI-related lithium consumption and increasing the initial discharge capacity from 160 to 175 mAh g−1. Moreover, TiO2@LFO enables stable cycling over 500 cycles at 1C, while LFP|Gr pouch cells achieve 60% capacity retention after 2000 cycles and remain capable of powering an LED lamp. This work provides an effective interfacial engineering approach for developing air-stable LFO prelithiation additives toward practical high-energy-density lithium-ion batteries.",
+        "date": "2026-09-04",
+        "url": "https://doi.org/10.26599/emd.2026.9370111",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.26599/emd.2026.9370111",
+        "openAlexId": "W7207871604",
+        "subfield": {
+          "id": "subfields/2208",
+          "name": "Electrical and Electronic Engineering"
+        },
+        "field": {
+          "id": "fields/22",
+          "name": "Engineering"
+        },
+        "topic": {
+          "id": "T10281",
+          "name": "Advanced Battery Materials and Technologies"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Ruijin He",
+          "Bo Zhu",
+          "Zhenyu Jiang",
+          "Ming Ma",
+          "Minying Wu",
+          "Qiang Fu",
+          "Zhengrong Liu",
+          "Qing Li"
+        ],
+        "venue": "Energy Materials and Devices",
+        "indexedDate": "2026-09-04",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.6389,
+          "everydayRelevance": 0.9333,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.7755,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 0.5,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.4072
+          },
+          "everydayDomains": [
+            "energy",
+            "transport",
+            "work"
+          ],
+          "subfieldKey": "subfields/2208",
+          "evidence": [
+            "total 0.7755 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.64 = P 0.70 − 0.45×t 0.00 − 0.15×j 0.41",
+            "outcome verbs (v 0.50): enables (title, ×2)",
+            "recognisable subjects (s 0.50): batteries (title, ×2)",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.41): 9/221 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.93: 3 domain(s) — energy, transport, work",
+            "everyday terms (4): energy, batteries, cycling, work",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-04)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Energy Materials and Devices",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.26599/emd.2026.9370111)"
+      },
+      "summary": {
+        "souhrn": "Baterie typu LFP (lithium-železo-fosfát) s grafitovou zápornou elektrodou dnes pohánějí velká úložiště energie. Mají ale jednu daň hned na začátku: při prvním nabití se část lithia nenávratně spotřebuje na ochranný film na grafitu, a kapacita tím klesne. Vědci proto do kladné elektrody přidávají zásobní látku Li5FeO4, která lithium navíc dodá — jenže ta se na vzduchu a ve vlhku rychle kazí. V této práci ji obalili tenoučkou vrstvou oxidu titaničitého (TiO2), tedy stejné bílé látky, jaká se používá do opalovacích krémů. Články s takto chráněnou přísadou startovaly s kapacitou 175 místo 160 miliampérhodin na gram, tedy asi o desetinu vyšší.",
+        "podrobneVysvetleni": "Autoři nanesli na částice Li5FeO4 nanometrovou vrstvičku oxidu titaničitého. Nejlépe dopadlo množství 1,5 procenta hmotnosti, tedy zhruba půldruhého gramu na kilogram přísady. Ověřovali, že obal nepokazí vnitřní uspořádání atomů v částicích — a nepokazil. Nechráněná látka se ve vlhkém vzduchu rozkládá a způsobuje, že se elektrodová kaše při výrobě sráží do rosolu. Obalená verze vydržela dvě hodiny na vzduchu bez poškození a rosolovatění výrazně omezila. To je pro výrobu důležité: elektrody se natírají ve velkém a kaše musí zůstat tekutá. Při nabíjení pak přísada v rozmezí 3,5 až 4,0 voltu jednorázově uvolní lithium navíc. To nahradí právě to lithium, které se spotřebuje na ochranný film. První vybití díky tomu dalo 175 miliampérhodin na gram místo 160, tedy zhruba o devět procent víc. V testech životnosti články s přísadou zvládly 500 cyklů, tedy 500 nabití a vybití, při proudu 1C — to znamená rychlost, při níž se článek nabije či vybije zhruba za hodinu. Větší články typu pouch (ploché, v měkkém obalu) prošly 2000 cykly a zůstaly jim asi tři pětiny původní kapacity. Autoři je pak použili k rozsvícení LED lampičky. Podstata výsledku je prostá: obal z běžné a levné látky udělal z citlivé přísady něco, s čím se dá pracovat v běžné výrobní hale.",
+        "procJeToDulezite": "Delší životnost a vyšší kapacita baterií znamenají levnější a spolehlivější uchovávání elektřiny, na němž stojí solární i větrné zdroje. Navíc jde o vylepšení, které nevyžaduje vzácné suroviny, jen tenký obal z běžného oxidu titaničitého.",
+        "poznamkaKOmezenim": "Jde o laboratorní výsledek na malých článcích a jednom typu pouch článku; test odolnosti na vzduchu trval jen dvě hodiny, což nevypovídá o skladování v reálné výrobě, a chování v sériové produkci se teprve musí ověřit."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 579,
+              "end": 582
+            },
+            "matchedText": "3,5",
+            "messageCs": "Číslo „3,5“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „3,5 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[579,582]: 3,5"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 586,
+              "end": 589
+            },
+            "matchedText": "4,0",
+            "messageCs": "Číslo „4,0“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „4,0 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[586,589]: 4,0"
+          }
+        ],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 796,
+              "end": 969
+            },
+            "matchedText": "V testech životnosti články s přísadou zvládly 500 cyklů, tedy 500 nabití a vybití, při proudu 1C — to znamená rychlost, při níž se článek nabije či vybije zhruba za hodinu.",
+            "messageCs": "Tato věta má 30 slov a je moc dlouhá: „V testech životnosti články s přísadou zvládly 500 cyklů, tedy 500 nabití a vyb…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[796,969]: V testech životnosti články s přísadou zvládly 500 cyklů, tedy 500 nabití a vybití, při proudu 1C — to znamená rychlost, při níž se článek nabije či vybije zhruba za hodinu."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=16.90",
+            "messageCs": "Věty jsou v průměru moc dlouhé (16,9 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=16.90"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7207814743",
+        "title": "High-fidelity update method for multi-temporal point cloud models with semantic-geometric collaborative constraints",
+        "abstract": "Abstract Local incremental updating of point cloud models remains a core challenge in urban digital governance, limited by two well-documented bottlenecks: inaccurate semantic boundary localization and pronounced seam artifacts in texture stitching across fused regions. To address these limitations, we propose a high-fidelity multi-temporal point cloud updating method integrating semantic, geometric and texture information under a unified semantic-geometric collaborative constraint framework. The core contribution lies in cross-stage collaborative optimization across semantic boundary extraction, point cloud registration and texture fusion. Such improvements stem not from breakthroughs in individual sub-algorithms, but from the integrated pipeline that suppresses cumulative error propagation and delivers steady performance improvements across all processing stages. Specifically, we adapt the classic Cloth Simulation Filtering (CSF) into a semantic-adaptive variant (SA-CSF) as the upstream module, adjusting mechanical constraints with adaptive semantic weighting to distinguish true structural boundaries from pseudo-edges caused by dynamic interference. Built upon these boundary outputs, a spatial topology-aware BiResNet pipeline integrates established position-aware convolution and Graph Neural Network architectures to reconstruct topology in occluded regions and mitigate over-reliance on precise initial poses. For texture harmonization, gradient-domain fusion frameworks are extended into a semantic-weighted multi-scale Poisson fusion mechanism with an enhanced Phong model, achieving joint optimization of illumination correction and fine-grained texture retention. Evaluated on point cloud data from Chuzhou University’s Huifeng Campus, the method achieves 92.5% average class accuracy and 2.1 cm 95% Hausdorff distance (95% HD) for semantic boundary extraction, 91.6% registration success rate with 0.21 m Chamfer distance, and 90.10% texture detail preservation rate with 51.24% texture seam visibility. While not top-ranked on either texture metric, the method achieves the optimal overall trade-off between seam visibility reduction and detail preservation. This balance holds notable practical value for engineering applications: in mixed urban scenarios, single-metric methods (e.g., Graph Cut for detail, Mean Value Coordinates for seams) either compromise overall visual coherence or lose high-frequency details critical for fine-grained management. The unified pipeline also reduces scene-specific parameter tuning effort, lowering operational costs for batch projects. This work provides an effective solution for high-fidelity multi-temporal point cloud updating and supports digital twin city construction and urban digital governance.",
+        "date": "2026-09-04",
+        "url": "https://doi.org/10.1038/s41598-026-69295-8",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1038/s41598-026-69295-8",
+        "openAlexId": "W7207814743",
+        "subfield": {
+          "id": "subfields/2206",
+          "name": "Computational Mechanics"
+        },
+        "field": {
+          "id": "fields/22",
+          "name": "Engineering"
+        },
+        "topic": {
+          "id": "T10719",
+          "name": "3D Shape Modeling and Analysis"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Weibo Zeng",
+          "Shanshan Liang",
+          "Wenxin Jiang",
+          "Cheng Chen",
+          "Zhipeng Wang",
+          "Shuangxi Gu"
+        ],
+        "venue": "Scientific Reports",
+        "indexedDate": "2026-09-04",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.6386,
+          "everydayRelevance": 0.9333,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.7753,
+          "explainDetail": {
+            "v": 1,
+            "s": 0,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.3429
+          },
+          "everydayDomains": [
+            "school",
+            "money",
+            "work"
+          ],
+          "subfieldKey": "subfields/2206",
+          "evidence": [
+            "total 0.7753 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.64 = P 0.69 − 0.45×t 0.00 − 0.15×j 0.34",
+            "outcome verbs (v 1.00): reduces, reduction, improvement, cut, extended, caused",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.34): 12/350 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.93: 3 domain(s) — school, money, work",
+            "everyday terms (4): university, cost, costs, work",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-04)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Scientific Reports",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1038/s41598-026-69295-8)"
+      },
+      "summary": {
+        "souhrn": "Města dnes mívají svůj trojrozměrný digitální model složený z milionů naměřených bodů (point cloud, mračno bodů) — a problém nastává, když se má aktualizovat jen kousek, třeba nově postavená budova. Nový sken se špatně napojí na starý: hranice objektů se rozostří a v místě spoje je vidět šev jako na nepovedeně slepené fotce. Autoři z Chuzhou University proto poskládali celý postup dohromady tak, aby si jednotlivé kroky předávaly informaci o tom, co je co (strom, zem, stěna), místo aby každý pracoval sám za sebe. Na datech ze skutečného univerzitního kampusu vyšlo, že hranice objektů program určil správně ve zhruba devíti případech z deseti a napojení dvou skenů se povedlo podobně často. V žádné jednotlivé disciplíně metoda nevyhrála, ale nabídla nejvyrovnanější kompromis mezi neviditelným švem a zachovanými detaily.",
+        "podrobneVysvetleni": "Postup má tři návazné části. První odděluje terén od objektů metodou, která si počíná jako pomyslná látka spuštěná na krajinu (Cloth Simulation Filtering); autoři ji doplnili o váhu podle významu bodů, aby program rozeznal skutečnou hranu budovy od falešné, kterou způsobí třeba projíždějící auto. Druhá část dopočítává tvar zakrytých míst pomocí neuronové sítě pracující s prostorovými vztahy mezi body, takže není tolik závislá na tom, jak přesně se sken na začátku umístí. Třetí část srovnává barvy a osvětlení obou skenů tak, aby přechod nebyl vidět. Testovali to na datech z kampusu Huifeng univerzity v Chuzhou. Hranice objektů systém zařadil do správné kategorie v průměru u 92,5 procenta případů, tedy zhruba u devíti bodů z deseti. Odchylka určené hranice od skutečné byla 2,1 centimetru, což je asi šířka dvou prstů — a toto číslo platí pro 95 procent bodů, takže nejhorší dvacetina může být horší. Napojení dvou skenů se podařilo v 91,6 procenta pokusů, tedy asi devětkrát z deseti, s průměrnou odchylkou 0,21 metru, tedy zhruba na délku dlaně. Textura si udržela kolem devadesáti procent jemných detailů, zatímco šev zůstal viditelný asi u poloviny hodnocených míst. Autoři sami přiznávají, že v obou texturových měřeních existují lepší metody — ta jejich ale drží obě hodnoty rozumné najednou.",
+        "procJeToDulezite": "Digitální modely měst se používají při plánování staveb, správě majetku i krizovém řízení a jejich průběžná aktualizace je drahá; spolehlivější a méně ručního nastavování znamená přesnější podklady za nižší cenu.",
+        "poznamkaKOmezenim": "Metodu autoři vyzkoušeli jen na datech z jednoho univerzitního kampusu, takže není jisté, jak si povede v jiném prostředí — třeba v husté zástavbě nebo v členitém terénu."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 29,
+              "end": 297
+            },
+            "matchedText": "První odděluje terén od objektů metodou, která si počíná jako pomyslná látka spuštěná na krajinu (Cloth Simulation Filtering); autoři ji doplnili o váhu podle významu bodů, aby program rozeznal skutečnou hranu budovy od falešné, kterou způsobí třeba projíždějící auto.",
+            "messageCs": "Tato věta má 39 slov a je moc dlouhá: „První odděluje terén od objektů metodou, která si počíná jako pomyslná látka sp…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[29,297]: První odděluje terén od objektů metodou, která si počíná jako pomyslná látka spuštěná na krajinu (Cloth Simulation Filtering); autoři ji doplnili o váhu podle významu bodů, aby program rozeznal skutečnou hranu budovy od falešné, kterou způsobí třeba projíždějící auto."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:neuronova-sit",
+            "span": {
+              "start": 347,
+              "end": 361
+            },
+            "matchedText": "neuronové sítě",
+            "messageCs": "Termín „neuronová síť“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:neuronova-sit @ podrobneVysvetleni[347,361]: neuronové sítě"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1152,
+              "end": 1160
+            },
+            "matchedText": "poloviny",
+            "messageCs": "Číslo „poloviny“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „poloviny — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1152,1160]: poloviny"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=22.69",
+            "messageCs": "Věty jsou v průměru moc dlouhé (22,7 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=22.69"
+          }
+        ],
+        "soft": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=2",
+            "messageCs": "Počet vět delších než 30 slov: 2. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=2"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=46.6",
+            "messageCs": "Text se celkově čte těžko (index 47 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=46.6"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7165173424",
+        "title": "Thermoresponsive mineral grout for autonomous oxygen isolation in underground coal pillars",
+        "abstract": "A thermo-responsive mineral-based grout composite (GC) was developed for rapid sealing of fracture networks in underground coal pillars, aiming to eliminate oxygen ingress and prevent spontaneous combustion in goaf areas. Coal spontaneous combustion triggered by air leakage poses severe threats to mine safety. Traditional sealants such as rapid-hardening calcium sulfoaluminate (CSA)-sodium silicate systems and polyurethane materials suffer from thermal-runaway risks, poor fire resistance, and complex parameter control requirements. The GC slurry is composed of Mg(OH) 2 , Al(OH) 3 , ultra-fine cement and NIPAM-grafted bentonite. It maintains 200 mm flowability at 20 °C for deep penetration, yet triggers abrupt thickening within 3 min when ≥ 40 °C is encountered, forming a dense oxygen barrier. Adiabatic calorimetry revealed a maximum temperature rise of only 18.4 °C (ΔTmax = 18.4 °C, t max = 7.8 h), 13% and 52% of those measured for polyurethane and cement–sodium-silicate systems, respectively, thereby minimising the thermal-runaway risk during bulk injection. Laboratory micro-CT confirmed 85% reduction in connected porosity (> 50 μm) and crack-free coal–grout interfaces. Field trials in the 102 auxiliary transport roadway (No. 3 coal seam, Hongqinghe Mine, Inner Mongolia, China) reduced O 2 concentration from 9 to 17% to 1–5% and decreased CO to 0 ppm within 30 d under mining-induced dynamic loading. The 28-d compressive strength reached 30.1 MPa (w/c = 0.7) while zero bleeding or shrinkage cracks were observed. Raw-material cost analysis shows GC (USD 185 t − 1 ) achieves 35% lower life-cycle cost than polyurethane over a 5-year horizon. With ΔTmax well below the 60 °C thermal-safety limit adopted in Chinese coal-mine grouting practice (AQ/T 1089–2020, a standard issued for polymeric materials and used here as a conservative benchmark) and goaf O 2 maintained below the 7% critical oxygen concentration specified in GB 51,078 − 2015, GC offers a low-exotherm, fire-resistant and environmentally benign alternative to organic sealants for coal-mine fire prevention.",
+        "date": "2026-09-03",
+        "url": "https://doi.org/10.1038/s41598-026-69708-8",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1038/s41598-026-69708-8",
+        "openAlexId": "W7165173424",
+        "subfield": {
+          "id": "subfields/2205",
+          "name": "Civil and Structural Engineering"
+        },
+        "field": {
+          "id": "fields/22",
+          "name": "Engineering"
+        },
+        "topic": {
+          "id": "T13596",
+          "name": "Grouting, Rheology, and Soil Mechanics"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Wenxin Dong",
+          "Jie Chen",
+          "Chaozhong Qin",
+          "Wen Liu",
+          "Jinyang Fan"
+        ],
+        "venue": "Scientific Reports",
+        "indexedDate": "2026-06-19",
+        "referencedWorksCount": 41,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.6323,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.7143,
+          "credibility": 0.745,
+          "total": 0.7565,
+          "explainDetail": {
+            "v": 1,
+            "s": 0,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.3846
+          },
+          "everydayDomains": [
+            "food",
+            "money",
+            "weather",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2205",
+          "evidence": [
+            "total 0.7565 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.63 = P 0.69 − 0.45×t 0.00 − 0.15×j 0.38",
+            "outcome verbs (v 1.00): reduced, reduction, lowers, prevents, prevention, decreased, eliminates, triggered",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.38): 12/312 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 4 domain(s) — food, money, weather, mind",
+            "everyday terms (5): sodium, cost, costs, temperature rise, concentration",
+            "freshness 0.71: 2 day(s) old (effective date 2026-09-03)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Scientific Reports",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1038/s41598-026-69708-8)"
+      },
+      "summary": {
+        "souhrn": "Uhlí ve vytěžených částech dolu se může samo vznítit, jakmile se k němu skulinami dostane vzduch, a čínští autoři proto namíchali injektážní maltu, která se chová podle teploty: při 20 °C zůstává tekutá natolik, že se na podložce rozteče do kruhu o průměru 20 centimetrů, a proto zateče hluboko do puklin, ale jakmile narazí na místo teplejší než 40 °C, do tří minut zhoustne a chodbičku ucpe. Při tvrdnutí se sama ohřeje jen o 18,4 stupně, což je 13 procent toho, co se naměřilo u polyuretanu, tedy zhruba osmina, a 52 procent hodnoty u směsi cementu s vodním sklem, tedy asi polovina — méně tepla znamená menší riziko, že se materiál při velkých nástřicích sám rozpálí. V provozní zkoušce v dole Chung-čching-che ve Vnitřním Mongolsku klesl obsah kyslíku ve sledovaném prostoru z 9 až 17 procent (v běžném vzduchu je ho kolem 21 procent, takže šlo o polovinu až většinu obvyklého množství) na 1 až 5 procent, tedy na zlomek původní hodnoty, a oxid uhelnatý, který prozrazuje doutnající uhlí, se za třicet dní přestal měřit úplně.",
+        "podrobneVysvetleni": "Směs tvoří hydroxid hořečnatý a hlinitý, velmi jemně mletý cement a bentonit s naroubovaným polymerem NIPAM — látkou, která nad určitou teplotou náhle změní chování a zahustí kaši, v níž je rozmíchaná. Právě to dává materiálu jeho vlastnost: studený teče, teplý tuhne. Vývoj tepla autoři měřili v termosce, která teplo nepouští ven (adiabatická kalorimetrie), a nejvyšší ohřátí o 18,4 stupně nastalo až po zhruba osmi hodinách, tedy pomalu a mírně; zůstalo hluboko pod hranicí 60 °C, kterou čínská praxe pro injektáže bere jako bezpečnostní strop. Vnitřek ztvrdlé směsi prosvítili rentgenem s velmi jemným rozlišením (mikro-CT): propojených pórů širších než 0,05 milimetru, což je zhruba tloušťka lidského vlasu, ubylo o 85 procent, takže zbyla asi sedmina původního množství, a na rozhraní uhlí a malty nenašli trhliny. Po 28 dnech měl materiál pevnost v tlaku 30,1 megapascalu, tedy na každý centimetr čtvereční unese zhruba tři metráky, a nesmrštil se ani z něj neodsedala voda. V dole se obsah kyslíku dostal na 1 až 5 procent, tedy pod hranici 7 procent, kterou čínská norma označuje za kritickou pro vznik samovznícení. Cena suroviny vychází na 185 dolarů za tunu a autoři odhadují, že za pět let provozu vyjde řešení asi o třetinu levněji než polyuretan.",
+        "procJeToDulezite": "Samovznícení uhlí v dolech ohrožuje životy horníků a hasí se roky; materiál, který sám najde horké místo a ucpe ho, aniž by se přitom nebezpečně rozpálil, je praktickou cestou, jak takovým požárům předcházet.",
+        "poznamkaKOmezenim": "Jde zatím o laboratorní měření doplněná jedinou provozní zkouškou v jednom dole a po dobu třiceti dnů, takže dlouhodobou životnost ani chování v jiných geologických podmínkách výsledky neprokazují."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 393
+            },
+            "matchedText": "Uhlí ve vytěžených částech dolu se může samo vznítit, jakmile se k němu skulinami dostane vzduch, a čínští autoři proto namíchali injektážní maltu, která se chová podle teploty: při 20 °C zůstává tekutá natolik, že se na podložce rozteče do kruhu o průměru 20 centimetrů, a proto zateče hluboko do puklin, ale jakmile narazí na místo teplejší než 40 °C, do tří minut zhoustne a chodbičku ucpe.",
+            "messageCs": "Tato věta má 67 slov a je moc dlouhá: „Uhlí ve vytěžených částech dolu se může samo vznítit, jakmile se k němu skulina…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[0,393]: Uhlí ve vytěžených částech dolu se může samo vznítit, jakmile se k němu skulinami dostane vzduch, a čínští autoři proto namíchali injektážní maltu, která se chová podle teploty: při 20 °C zůstává tekutá natolik, že se na podložce rozteče do kruhu o průměru 20 centimetrů, a proto zateče hluboko do puklin, ale jakmile narazí na místo teplejší než 40 °C, do tří minut zhoustne a chodbičku ucpe."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=37.45",
+            "messageCs": "Věty jsou v průměru moc dlouhé (37,5 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=37.45"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=7",
+            "messageCs": "Počet vět delších než 30 slov: 7. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=7"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=21.5",
+            "messageCs": "Text se celkově čte těžko (index 21 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=21.5"
+          }
+        ],
+        "soft": []
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W4412120521",
+        "title": "Analysis of Io's tidal response as a function of the properties of the partially molten layer",
+        "abstract": "Introduction Jupiter’s moon Io, the most volcanically active body in the Solar System [1][2], exhibits intense internal heating believed to be driven by tidal friction. While tidal dissipation is widely accepted as the primary mechanism powering this volcanic activity, the spatial distribution and depth of heating generation remain unresolved[3]. The tidal response of Io is characterized by the Love number k2 [4], where the real part describes the in-phase deformation due to Jupiter’s gravitational potential, and the imaginary part captures the delayed anelastic response associated with internal energy dissipation [5]. Methods We analyze Io’s tidal response by computing second-order Love numbers as functions of the radius at which mantle melting begins (RΦ0) and the latent heat of fusion (L) of the constituent materials. The Love number k2 is derived by solving the spheroidal oscillation equations for an initial three-layer structure (fluid core, viscoelastic mantle, and viscoelastic crust), using an adapted version of the California Planetary Geophysics Code (CPGC) [6]. Tidal dissipation is computed from radial and tangential displacements and stresses [7], and the resulting melt fraction is obtained following the approach in [8]. Viscosity, rigidity, and Andrade rheology parameters (β) are then updated based on the local melt fraction, and the mantle is discretized into 67 layers. This process is iterated until k2 converges and repeated across a range of RΦ0 and L values. The fluid core is modeled with a density of 5150 kg/m3 and a radius of 950 km. The mantle, 820 km thick with a density of 3259 kg/m3, follows Andrade rheology (α = 0.3, initial β = 10−12 Pa−1s−0.3). The overlying 50 km-thick crust shares the mantle’s density and is modeled with Maxwell rheology. Initial viscosities and rigidities are set to 1021 Pa · s and 40 GPa for the mantle, and 1025 Pa · s and 40 GPa for the crust. Two scenarios are explored: one with constant β, representing tidal heating concentrated in the deep mantle, and another with depth-dependent β, allowing dissipation to localize in the upper mantle. The agreement with the observed values of k2 [5] is verified using also the ALMA3 code [9]. ALMA3 was used to double-check whether the values we obtained with CPGC are consistent with an independent software. Results The results are presented in Figures 1-2-3. Figure 1 shows the behavior of k2 as a function of the melting radius (RΦ0) and latent heat of fusion (L), assuming a constant β throughout the mantle. Several combinations reproduce the real part of k2 (Re(k2) = 0.125 ± 0.047, [5]), while the imaginary part slightly exceeds the estimated value (Im(k2) = 0.0109 ± 0.0054) but remains within one standard deviation. Figure 2 illustrates results for a depth-dependent β. The real part of k2 remains consistent with observation over a broad range of RΦ0 and L, whereas the imaginary part lies marginally outside the 1-σ confidence interval but is within 2-σ. Figure 3 compares the trends in Im(k2): it increases with RΦ0 when β is constant, but decreases when β varies with depth. Ongoing refinements to the initial β values aim to improve agreement with the observed tidal dissipation. SummaryThe proposed methodology enables a detailed investigation of the possible configuration of Io’s mantle, by evaluating the influence of rigidity, viscosity, volumetric tidal heating rate, and melt fraction Φ, on Love Number k2 and its phase lag. Several internal structure models incorporating a partially molten mantle with Φ below the rheologically critical melt fraction (RCMF) [10] yield Re(k2) values consistent with estimates from NASA’s Juno. Assuming an initial β of 10−12, the corresponding Im(k2) values fall within the 2-σ uncertainty of observational constraints. These results highlight the importance of a sensitivity analysis of k2 with respect to the initial parameter β to better constrain Io’s interior using observational data acquired by Juno [5].Figure 1: Love number k2 as a function of melting radius (RΦ0) and latent heat of fusion (L), assuming constant β. In the first panel, the estimated value of Re(k2) from [5] (0.125 ± 0.047) is shown as a reference curve. The second panel omits the reference for Im(k2), as all computed values exceed 0.0109 but remain below 0.0163.Figure 2: Same as Figure 1 but assuming variable β. In the first panel, the estimated value of Re(k2) from [5] (0.125 ± 0.047) is shown as a reference. In the second panel, no reference is shown for Im(k2), as all values exceed 0.0163.Figure 3: Imaginary part of k2 as a function of melting radius (RΦ0) for different latent heat values (L), shown for constant (first) and variable (second) β. The trend of Im(k2) reverses between the two cases: it increases with increasing RΦ0when β is constant, and decreases when β is variable. AcknowledgmentsWe thank Agenzia Spaziale Italiana (ASI) for the support of the JIRAM contribution to the Juno mission; this work is supported by the ASI–INAF Addendum n. 2016-23-H.3-2023 to grant 2016-23 H.0.References[1] Lopes, R. M. C., and Spencer, J. R. (2007) Io after Galileo: A new view of Jupiter’s volcanic moon, Springer.[2] Lopes, R. M. C., De Kleer, K., and Keane, J. T. (2023) Io: A new view of Jupiter’s moon, Springer International Publishing.[3] Keane, J., et al. (2021) Bull. Am. Astron. Soc., 53:178.[4] Efroimsky, M., and Lainey, V. (2007) JGR: Planets, 112(E12).[5] Park, R. S., et al. (2025) Nature, 638(8049):69–73.[6] Ermakov, A., and Akiba, R. (2024) California Planetary Geophysics Code, GitHub repository.[7] Beuthe, M. (2013) Icarus, 223(1):308–329.[8] Bierson, C. J., and Nimmo, F. (2016) JGR: Planets, 121(11):2211–2224.[9] Melini, D., Saliby, C., and Spada, G. (2022) Geophys. J. Int., 231(3):1502–1517.[10] Breuer, D., Hamilton, C. W., and Khurana, K. (2022) Elements, 18(6):385–390.",
+        "date": "2026-09-03",
+        "url": "https://doi.org/10.1051/0004-6361/202660038",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1051/0004-6361/202660038",
+        "openAlexId": "W4412120521",
+        "subfield": {
+          "id": "subfields/2202",
+          "name": "Aerospace Engineering"
+        },
+        "field": {
+          "id": "fields/22",
+          "name": "Engineering"
+        },
+        "topic": {
+          "id": "T13200",
+          "name": "Spacecraft and Cryogenic Technologies"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Matteo Paris",
+          "A. Mura",
+          "F. Zambon",
+          "Antonio Genova",
+          "F. Tosi",
+          "A. Consorzi",
+          "G. Mitri",
+          "A. Cicchetti",
+          "S. Bolton",
+          "R. Noschese",
+          "G. Piccioni",
+          "C. Plainaki",
+          "G. Sindoni",
+          "R. Sordini"
+        ],
+        "venue": "Astronomy and Astrophysics",
+        "indexedDate": "2025-10-10",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.4203,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.7143,
+          "credibility": 0.745,
+          "total": 0.6716,
+          "explainDetail": {
+            "v": 1,
+            "s": 0,
+            "q": 0,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.4649
+          },
+          "everydayDomains": [
+            "energy",
+            "work",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2202",
+          "evidence": [
+            "total 0.6716 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.42 = P 0.49 − 0.45×t 0.00 − 0.15×j 0.46",
+            "outcome verbs (v 1.00): increases, improves, delayed, decreases, enables, associated with",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.46): 45/968 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 3 domain(s) — energy, work, mind",
+            "everyday terms (5): energy, heating, solar, work, stress",
+            "freshness 0.71: 2 day(s) old (effective date 2026-09-03)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Astronomy and Astrophysics",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1051/0004-6361/202660038)"
+      },
+      "summary": {
+        "souhrn": "Io, sopečně nejaktivnější těleso Sluneční soustavy, neustále hněte gravitace Jupiteru — kde přesně v jeho nitru vzniká teplo, se ale zatím neví. Italští vědci proto počítali, jak se měsíc pod tahem Jupiteru deformuje. Zkoušeli přitom různé hloubky, v nichž plášť začíná tát, i různá množství tepla potřebného k roztavení hornin. Řada kombinací dala stejnou míru vyboulení, jakou u Io naměřila sonda Juno (0,125 s nejistotou ±0,047), zatímco vypočtené vnitřní zahřívání vyšlo o něco vyšší než pozorované, pořád však v mezích měřicí nejistoty. Io tedy nejspíš má plášť jen zčásti roztavený, s tak malým podílem taveniny, že hornina zůstává pevná.",
+        "podrobneVysvetleni": "Vědci si Io rozdělili na tři části: tekuté jádro, poddajný plášť a tenkou kůru. Jádro má v modelu poloměr 950 kilometrů, tedy zhruba polovinu poloměru celého měsíce. Plášť je tlustý 820 kilometrů a vyplňuje skoro celý zbytek cesty k povrchu. Navrchu leží kůra tlustá 50 kilometrů, což je necelá třicetina poloměru. Plášť pak ještě rozkrájeli na 67 tenkých slupek, aby mohli počítat s tím, že v každé hloubce je hornina jinak měkká. Pro každou slupku spočítali, kolik tepla v ní vznikne třením, kolik horniny se tím roztaví a jak moc to horninu změkčí. Výpočet pak zopakovali s novými hodnotami, a tak dokola, dokud se výsledek neustálil. Takto prošli mnoho variant a pokaždé měnili hloubku tání i teplo nutné k roztavení hornin. Výsledek popisuje takzvané Loveovo číslo k2. Jeho první část říká, o kolik se měsíc přílivovým působením vyboulí. Druhá část říká, kolik energie se přitom promění v teplo. První část modely trefily dobře. Druhá vyšla vyšší, než ukazují data z Juno, ale zůstala uvnitř pásma nejistoty měření. Hodně přitom záleželo na jediném čísle označovaném β, které popisuje, jak ochotně hornina pomalu teče pod dlouhodobým zatížením. Právě jeho volba rozhodovala o tom, zda se teplo tvoří hluboko v plášti, nebo spíš blízko pod povrchem.",
+        "procJeToDulezite": "Do nitra cizího měsíce nikdo nikdy nedohlédne přímo, a tak je počítání z toho, jak se povrch ohýbá, jediná cesta, jak zjistit, co je pod ním. Io je navíc příklad tělesa, které zahřívá čistě mechanické hnětení gravitací sousední planety.",
+        "poznamkaKOmezenim": "Jde o průběžný výsledek konferenčního příspěvku: model stojí na několika zvolených vstupních hodnotách (hlavně na čísle β), autoři je sami dál upravují a vypočtené zahřívání se s měřením shoduje jen v širším pásmu nejistoty."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 345,
+              "end": 347
+            },
+            "matchedText": "67",
+            "messageCs": "Číslo „67“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „67 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[345,347]: 67"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 329,
+              "end": 541
+            },
+            "matchedText": "Řada kombinací dala stejnou míru vyboulení, jakou u Io naměřila sonda Juno (0,125 s nejistotou ±0,047), zatímco vypočtené vnitřní zahřívání vyšlo o něco vyšší než pozorované, pořád však v mezích měřicí nejistoty.",
+            "messageCs": "Tato věta má 34 slov a je moc dlouhá: „Řada kombinací dala stejnou míru vyboulení, jakou u Io naměřila sonda Juno (0,1…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[329,541]: Řada kombinací dala stejnou míru vyboulení, jakou u Io naměřila sonda Juno (0,125 s nejistotou ±0,047), zatímco vypočtené vnitřní zahřívání vyšlo o něco vyšší než pozorované, pořád však v mezích měřicí nejistoty."
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-09-05T08:32:29.299Z",
+  "generatedOn": "2026-09-05",
+  "schemaVersion": 1
+}

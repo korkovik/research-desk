@@ -776,6 +776,46 @@
       "titleKey": "pathwaysfromsocialmediausetolowselfesteemtheroleofbodydissatisfactionandsocialconnectedness",
       "publishedOn": "2026-09-04",
       "category": "society-economy-education"
+    },
+    {
+      "openalexId": "W7207873251",
+      "doi": "10.1007/s11119-026-10445-3",
+      "arxivId": null,
+      "titleKey": "sitespecificmechanicalweedingrobotwithautomaticselfadjustableindividuallycontrolledcultivator",
+      "publishedOn": "2026-09-05",
+      "category": "physics-space-engineering"
+    },
+    {
+      "openalexId": "W7207871604",
+      "doi": "10.26599/emd.2026.9370111",
+      "arxivId": null,
+      "titleKey": "interfacialengineeringenablesairstableli5feo4prelithiationadditivesforlonglifelifepo4graphitebatteries",
+      "publishedOn": "2026-09-05",
+      "category": "physics-space-engineering"
+    },
+    {
+      "openalexId": "W7207814743",
+      "doi": "10.1038/s41598-026-69295-8",
+      "arxivId": null,
+      "titleKey": "highfidelityupdatemethodformultitemporalpointcloudmodelswithsemanticgeometriccollaborativeconstraints",
+      "publishedOn": "2026-09-05",
+      "category": "physics-space-engineering"
+    },
+    {
+      "openalexId": "W7165173424",
+      "doi": "10.1038/s41598-026-69708-8",
+      "arxivId": null,
+      "titleKey": "thermoresponsivemineralgroutforautonomousoxygenisolationinundergroundcoalpillars",
+      "publishedOn": "2026-09-05",
+      "category": "physics-space-engineering"
+    },
+    {
+      "openalexId": "W4412120521",
+      "doi": "10.1051/0004-6361/202660038",
+      "arxivId": null,
+      "titleKey": "analysisofiostidalresponseasafunctionofthepropertiesofthepartiallymoltenlayer",
+      "publishedOn": "2026-09-05",
+      "category": "physics-space-engineering"
     }
   ]
 }
