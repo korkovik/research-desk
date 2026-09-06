@@ -1,0 +1,883 @@
+{
+  "date": "2026-09-06",
+  "categoryKey": "biology-food-agriculture",
+  "categoryLabel": "Biologie, jídlo a zemědělství",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7208724598",
+        "title": "Combined Animal and Plant Protein Enable High Fishmeal Replacement in Penaeus vannamei Under Biofloc Technology",
+        "abstract": "The increasing demand and limited availability of fishmeal (FM) have intensified the need for sustainable alternative protein sources in shrimp aquafeeds. This study evaluated high FM replacement in juvenile Penaeus vannamei reared under biofloc technology (BFT), integrating in vitro protein digestibility, growth performance, nutrient utilization and microbiome analyses. Six isoproteic and isolipidic diets combined two FM levels (0% and 7.5%) with animal (A), plant (P), or mixed (AP) protein sources, plus a 15% FM Control diet were assayed. Plant-based diets showed higher in vitro protein digestibility and amino acid release than animal-based diets. However, these differences were not reflected in shrimp performance, as final body weight, SGR and survival were similar among dietary treatments. Apparent feed conversion ratio, protein efficiency, and economic performance were improved in shrimp fed the A7.5 and AP7.5 diets, whereas complete FM replacement resulted in poorer performance. Biofloc and shrimp intestinal microbial community composition was primarily driven by temporal succession, whereas dietary protein source modulated the abundance of specific bacterial families. Biofloc and intestinal communities shared limited taxonomic overlap at the family level, suggesting restricted microbial exchange together with strong habitat and host mediated selection. Overall, these findings indicate that a diet containing 7.5% fishmeal (FM), supplemented with either animal-derived proteins or a combination of animal- and plant-derived protein sources, represents an optimal strategy for juvenile Penaeus vannamei cultured under BFT conditions, maintaining performance while preserving intestinal microbial stability and health.",
+        "date": "2026-09-04",
+        "url": "https://doi.org/10.3390/cimb48090904",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.3390/cimb48090904",
+        "openAlexId": "W7208724598",
+        "subfield": {
+          "id": "subfields/1104",
+          "name": "Aquatic Science"
+        },
+        "field": {
+          "id": "fields/11",
+          "name": "Agricultural and Biological Sciences"
+        },
+        "topic": {
+          "id": "T10450",
+          "name": "Aquaculture Nutrition and Growth"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "S. Ferrando-Juan",
+          "J. Gómez-Aguilera",
+          "A. Tomás-Vidal",
+          "Miguel Rodilla",
+          "M. Jover-Cerdá",
+          "Francisco Javier Moyano",
+          "David S. Peñaranda",
+          "Silvia Martínez‐Llorens"
+        ],
+        "venue": "Current Issues in Molecular Biology",
+        "indexedDate": "2026-09-05",
+        "referencedWorksCount": 73,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9184,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.9059,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.75,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.1277
+          },
+          "everydayDomains": [
+            "food",
+            "health",
+            "body",
+            "family"
+          ],
+          "subfieldKey": "subfields/1104",
+          "evidence": [
+            "total 0.9059 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.92 = P 0.94 − 0.45×t 0.00 − 0.15×j 0.13",
+            "outcome verbs (v 1.00): improved, enables (title, ×2), resulted in",
+            "recognisable subjects (s 0.75): families, plants (title, ×2)",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.13): 3/235 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 4 domain(s) — food, health, body, family",
+            "everyday terms (9): diet, dietary, nutrient, protein, health, treatment, body weight, family, families",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-05)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Current Issues in Molecular Biology",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.3390/cimb48090904)"
+      },
+      "summary": {
+        "souhrn": "Rybí moučka je v krmivu pro krevety drahá a pochází z lovených ryb. Vědci proto krmili krevety bílé (Penaeus vannamei) sedmi různými směsmi v tzv. biofloku — v nádržích, kde se záměrně množí shluky bakterií čistící vodu. Kontrolní krmivo mělo 15 % rybí moučky, tedy zhruba sedminu celé dávky; ostatní směsi měly buď poloviční podíl, nebo žádnou moučku. Krevety rostly i přežívaly ve všech skupinách podobně. Krmivo však nejlépe využívaly ty s polovičním podílem moučky doplněným živočišnými bílkovinami nebo jejich směsí s rostlinnými — úplné vynechání moučky výsledky zhoršilo.",
+        "podrobneVysvetleni": "Tým sestavil šest pokusných krmiv se stejným obsahem bílkovin i tuku. Lišila se dvěma věcmi. Za prvé podílem rybí moučky: buď žádná, nebo 7,5 %, tedy polovina obvyklé dávky. Za druhé zdrojem náhradních bílkovin: živočišné, rostlinné, nebo obojí dohromady. K tomu přidali kontrolní krmivo s 15 % rybí moučky, což odpovídá asi sedmině směsi.\n\nNejdřív bílkoviny natrávili ve zkumavce, aby zjistili, jak snadno se rozkládají. Rostlinné směsi z toho vyšly lépe a uvolnily víc aminokyselin, tedy stavebních kamenů bílkovin. V nádržích se to ale neprojevilo. Konečná hmotnost, rychlost růstu i přežití byly u všech krmiv podobné.\n\nRozdíly se ukázaly jinde. Krevety krmené směsí s poloviční dávkou moučky a živočišnými bílkovinami — nebo jejich kombinací s rostlinnými — potřebovaly na stejný přírůstek méně krmiva a lépe zužitkovaly bílkoviny. Vyšlo to i ekonomicky výhodněji. Naopak krmiva úplně bez rybí moučky vedla k horším výsledkům.\n\nVědci sledovali také bakterie ve vodě a ve střevě krevet. Jejich složení se měnilo hlavně s časem chovu, ne s krmivem. Krmivo ovlivnilo jen zastoupení některých skupin bakterií. Bakterie ve vodě a ve střevě se přitom překrývaly jen málo. Vypadá to tedy, že si střevo vybírá své osazenstvo samo a voda mu ho jen tak nevnutí.",
+        "procJeToDulezite": "Chov krevet dnes stojí na rybách vylovených z moře. Studie ukazuje, že spotřebu rybí moučky lze snížit zhruba na polovinu, aniž by chov ztratil na výnosu.",
+        "poznamkaKOmezenim": "Jde o jediný pokus s mladými krevetami v biofloku a abstrakt neuvádí velikost vzorku, takže závěry nemusí platit pro jiné způsoby chovu ani pro dospělá zvířata."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 290,
+              "end": 294
+            },
+            "matchedText": "15 %",
+            "messageCs": "Číslo „15 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „15 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[290,294]: 15 %"
+          },
+          {
+            "block": "procJeToDulezite",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 113,
+              "end": 121
+            },
+            "matchedText": "polovinu",
+            "messageCs": "Číslo „polovinu“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „polovinu — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ procJeToDulezite[113,121]: polovinu"
+          }
+        ],
+        "soft": []
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7208722057",
+        "title": "Strip Tillage with Straw Retention Alters the Associations Between Maize Yield Components and Grain Yield Across Seven Soil Types",
+        "abstract": "Soil degradation constrains cropland productivity in Northeast China, where conservation tillage has been widely adopted to improve soil structure and sustain maize (Zea mays L.) production. However, previous studies have focused mainly on single soil types or regional-scale assessments, and the applicability of conservation tillage across contrasting cultivated soil types remains inadequately characterized. From 2021 to 2023, field experiments were conducted across geo-ecological zones within mid-temperate sub-humid and mid-temperate sub-arid climatic regions, encompassing seven typical cultivated soil types: Aeolian sandy soil, Bielic, Black soil, Chernozem, Histosol, Inceptisol, and Mollisols. A strip-tillage with straw return treatment (ST) was compared against no-tillage with straw mulching treatment (CK) to systematically evaluate the effects of strip-tillage on (i) soil physical properties (bulk density and porosity), (ii) soil chemical properties (organic matter and total nutrient contents), and (iii) maize yield components. Across the full dataset, ST significantly reduced soil bulk density and increased total porosity relative to CK; however, soil-type-specific comparisons showed that significant responses were detected only in some soil types. By contrast, soil chemical properties were significantly influenced by the treatment × soil type interaction: SOM and STN contents increased significantly in Inceptisol under ST, STP increased significantly in Mollisols, and STK increased significantly in Histosol. A PCA-derived composite physicochemical score, based on six standardized soil indicators, was higher under ST than CK in six of the seven soil types relative to CK, with the most pronounced improvements occurring in Aeolian sandy soil (+1.23), Bielic (+0.87), and Black soil (+0.65); significant maize yield increases under ST were detected in Aeolian sandy soil and Black soil, with mean increases of 7.07% and 10.94%, respectively. The associations between maize yield components and grain yield differed between ST and CK, with 1000-kernel weight showing a stronger association with grain yield under ST. Collectively, these findings indicate that ST can improve soil physical structure, but its effects on soil chemical properties, maize yield, and yield-component associations are soil-type dependent.",
+        "date": "2026-09-04",
+        "url": "https://doi.org/10.3390/agriculture16171915",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.3390/agriculture16171915",
+        "openAlexId": "W7208722057",
+        "subfield": {
+          "id": "subfields/1111",
+          "name": "Soil Science"
+        },
+        "field": {
+          "id": "fields/11",
+          "name": "Agricultural and Biological Sciences"
+        },
+        "topic": {
+          "id": "T10004",
+          "name": "Soil Carbon and Nitrogen Dynamics"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Binghao LI",
+          "Long Zhang",
+          "Liang Wang",
+          "Liang Wang",
+          "Lichun Wang",
+          "Lichun Wang",
+          "Jinsheng YANG"
+        ],
+        "venue": "Agriculture",
+        "indexedDate": "2026-09-05",
+        "referencedWorksCount": 36,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9273,
+          "everydayRelevance": 0.9,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.8815,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.2181
+          },
+          "everydayDomains": [
+            "food",
+            "health",
+            "work"
+          ],
+          "subfieldKey": "subfields/1111",
+          "evidence": [
+            "total 0.8815 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.93 = P 0.96 − 0.45×t 0.00 − 0.15×j 0.22",
+            "outcome verbs (v 1.00): reduced, increased, increases, improves, improvement, detected",
+            "recognisable subjects (s 1.00): maize (title, ×2), soil (title, ×2)",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.80): −0.2 title is 19 words",
+            "jargon density (j 0.22): 7/321 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.90: 3 domain(s) — food, health, work",
+            "everyday terms (3): nutrient, treatment, productivity",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-05)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Agriculture",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.3390/agriculture16171915)"
+      },
+      "summary": {
+        "souhrn": "Pásové kypření s ponecháním slámy (strip tillage) na poli neprokypří celou plochu, ale jen úzké pruhy, do kterých se pak seje. Čínští vědci ho tři roky srovnávali s bezorebným setím na sedmi typech půd v severovýchodní Číně. Půda byla po pásovém kypření celkově méně ulehlá a měla víc pórů. Výnos kukuřice ale stoupl jen na dvou půdách ze sedmi — na písčité zhruba o čtrnáctinu, na černozemní přibližně o desetinu. Jinde se výnos statisticky nezměnil, takže odpověď na otázku „vyplatí se to?\" zní: záleží, na jaké půdě hospodaříte.",
+        "podrobneVysvetleni": "V letech 2021 až 2023 založili vědci polní pokusy v několika klimatických oblastech severovýchodní Číny a zahrnuli sedm typických zemědělských půd — od vátých písků přes černozemě až po rašelinné a mladé, málo vyvinuté půdy. Na každé z nich porovnávali dva postupy: pásové kypření se zapravením slámy proti bezorebnému setí, kdy sláma zůstává jako mulč na povrchu. Sledovali objemovou hmotnost půdy (jak je ulehlá), pórovitost, obsah organické hmoty a základních živin — dusíku, fosforu a draslíku — a rozbor sklizně.\n\nPřes celý soubor dat pásové kypření půdu nakypřilo: byla lehčí a měla víc pórů pro vodu a vzduch. Při pohledu na jednotlivé půdy se ale rozdíl potvrdil jen u některých. Chemie půdy reagovala ještě pestřeji: organická hmota a dusík přibyly u mladých půd, fosfor u černozemí typu mollisol, draslík u rašelinné půdy.\n\nZe šesti měřených vlastností vědci sestavili jedno souhrnné skóre. To se u šesti půd ze sedmi zlepšilo, nejvíc u váté písčité půdy (o 1,23 bodu tohoto skóre, tedy největší posun ze všech), pak u půdy typu bielic (o 0,87 bodu) a u černé půdy (o 0,65 bodu). Vyšší výnos kukuřice ale vyšel průkazně jen dvakrát: u písčité půdy o 7,07 % (asi o čtrnáctinu víc zrna) a u černé půdy o 10,94 % (zhruba o desetinu víc). Při pásovém kypření navíc s výnosem silněji souvisela hmotnost tisíce zrn — zrna byla těžší.",
+        "procJeToDulezite": "Ukazuje to, že i osvědčený a šetrný způsob hospodaření nefunguje všude stejně a že rada „takhle se to dělá\" musí být vždy vázaná na konkrétní typ půdy.",
+        "poznamkaKOmezenim": "Jde o tříletý pokus na omezeném počtu lokalit v jedné oblasti Číny, takže zlepšení půdy se nemuselo stihnout projevit na výnosu a výsledky nelze bez ověření přenášet na české podmínky."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 405,
+              "end": 413
+            },
+            "matchedText": "desetinu",
+            "messageCs": "Číslo „desetinu“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „desetinu — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[405,413]: desetinu"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 901,
+              "end": 1089
+            },
+            "matchedText": "To se u šesti půd ze sedmi zlepšilo, nejvíc u váté písčité půdy (o 1,23 bodu tohoto skóre, tedy největší posun ze všech), pak u půdy typu bielic (o 0,87 bodu) a u černé půdy (o 0,65 bodu).",
+            "messageCs": "Tato věta má 41 slov a je moc dlouhá: „To se u šesti půd ze sedmi zlepšilo, nejvíc u váté písčité půdy (o 1,23 bodu to…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[901,1089]: To se u šesti půd ze sedmi zlepšilo, nejvíc u váté písčité půdy (o 1,23 bodu tohoto skóre, tedy největší posun ze všech), pak u půdy typu bielic (o 0,87 bodu) a u černé půdy (o 0,65 bodu)."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=21.06",
+            "messageCs": "Věty jsou v průměru moc dlouhé (21,1 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=21.06"
+          }
+        ],
+        "soft": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=2",
+            "messageCs": "Počet vět delších než 30 slov: 2. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=2"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7208720751",
+        "title": "Efficacy evaluation of a fermented milk containing inactivated biomasses of Lacticaseibacillus rhamnosus and Saccharomyces cerevisiae to ameliorate the toxic effects of dietary aflatoxins and fumonisins in pigs: a pilot study",
+        "abstract": "Abstract Inactivated microorganisms may reduce mycotoxins’ bioavailability, although in vivo evidence is limited especially in farm animals. This pilot study evaluated whether a fermented milk (FM) containing heat-inactivated biomasses of Lacticaseibacillus rhamnosus and Saccharomyces cerevisiae at 1% ( w/w ) mitigated the toxic effects of dietary aflatoxins (AFs) and fumonisins (FBs) in weaned piglets. Twenty-four male crossbred piglets were assigned to a 2 × 2 × 2 factorial design ( n = 3 per group) with AFs (0; 1.11–1.28 mg/kg, sum of AFB 1 , AFB 2 , AFG 1 and AFG 2 ), FBs (0.78–0.99; 9.22–9.53 mg/kg, sum of FB 1 and FB 2 ), and FM (0; 39 g/animal/day, equivalent to 5% of basal diet) for 28 days. AFs reduced ( P < 0.05) the body weight gain and feed consumption. AFs or AFs + FBs exposure were associated with hepatic lesions, whereas FBs caused increased pulmonary and renal lesions ( P < 0.05). FM was associated with lower ( P < 0.05) scores of FBs’ lung lesions and AFs + FBs’ kidney lesions, but did not consistently improve growth performance or hepatic and renal biochemical parameters. Plasma AFP 1 and urinary FB 2 were lower ( P < 0.05) in AFs- or FBs-exposed animals receiving FM, while plasma and urinary AFM 1 or FB 1 were not reduced by the FM. In conclusion, FM containing inactivated L. rhamnosus and S. cerevisiae had partial protective effects against organ-specific mycotoxin injury, with limited evidence of AFs bioavailability reduction, considering n = 3 per experimental group. Further studies should evaluate different inclusion levels of microorganisms and mycotoxins, as well as other potentially adsorptive microorganisms, with a focus on microorganism–mycotoxin interactions within the gastrointestinal tract.",
+        "date": "2026-09-04",
+        "url": "https://doi.org/10.1007/s12550-026-00677-7",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1007/s12550-026-00677-7",
+        "openAlexId": "W7208720751",
+        "subfield": {
+          "id": "subfields/1110",
+          "name": "Plant Science"
+        },
+        "field": {
+          "id": "fields/11",
+          "name": "Agricultural and Biological Sciences"
+        },
+        "topic": {
+          "id": "T10520",
+          "name": "Mycotoxins in Agriculture and Food"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1007/s12550-026-00677-7",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Lucas Gabriel Dionísio Freire",
+          "Jennifer Rafaela Sá da Silva",
+          "Lucas Luiz Assis",
+          "Leandra Náira Zambelli Ramalho",
+          "Fernando Silva Ramalho",
+          "Fábio Enrique Lemos Budiño",
+          "Karina Nascimento Pereira",
+          "Rogério D’Antonio Pires",
+          "Sana Ullah",
+          "Sher Ali",
+          "Giovana Fumes Ghantous",
+          "Roice Eliana Rosim",
+          "Carlos Humberto Corassin",
+          "Carlos Augusto Fernandes de Oliveira"
+        ],
+        "venue": "Mycotoxin Research",
+        "indexedDate": "2026-09-05",
+        "referencedWorksCount": 68,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7854,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.8571,
+          "credibility": 0.6748,
+          "total": 0.8336,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.5,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.3309
+          },
+          "everydayDomains": [
+            "food",
+            "body",
+            "mind"
+          ],
+          "subfieldKey": "subfields/1110",
+          "evidence": [
+            "total 0.8336 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.79 = P 0.84 − 0.45×t 0.00 − 0.15×j 0.33",
+            "outcome verbs (v 1.00): reduced, reduces, reduction, increased, improves, lowers, caused, associated with",
+            "recognisable subjects (s 0.50): pigs (title, ×2)",
+            "quantified effect (q 1): percentage, p-value",
+            "title concreteness (c 0.80): −0.2 title is 30 words",
+            "jargon density (j 0.33): 9/272 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 3 domain(s) — food, body, mind",
+            "everyday terms (5): diet, dietary, milk, body weight, focus",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-05)",
+            "credibility 0.67 = 0.40×c1 1.00 + 0.25×c2 0.12 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Mycotoxin Research",
+            "c2 0.12: n = 3",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no tldr; falling back to the source abstract (§4.2)"
+      },
+      "summary": {
+        "souhrn": "Plísňové jedy v krmivu selatům prokazatelně škodí a kysané mléko s usmrcenými mikroby jim část škody ubralo. Vědci krmili 24 odstavených selat 28 dní krmivem, do kterého přidávali aflatoxiny a fumonisiny — jedovaté látky, jež na obilí a kukuřici vytvářejí plísně. Aflatoxiny zvířatům zbrzdily růst, snížily chuť k jídlu a poškodily játra, fumonisiny poškodily plíce a ledviny. Část selat navíc dostávala kysané mléko s tepelně usmrcenými bakteriemi a kvasinkami. U těchto zvířat našli patologové mírnější poškození plic a ledvin, ale růst ani krevní hodnoty se nezlepšily. Jde o pilotní pokus se třemi zvířaty ve skupině, takže výsledek je zatím jen náznak.",
+        "podrobneVysvetleni": "Aflatoxiny a fumonisiny jsou jedovaté látky, které v obilí a kukuřici vytvářejí plísně. V chovech hospodářských zvířat je to dlouho známý problém. Jednou z možností, jak škody zmírnit, je přidat do krmiva mikroorganismy, které jed na sebe navážou. Nemusejí být ani živé.\n\nVědci rozdělili 24 selat do osmi skupin po třech zvířatech. Vyzkoušeli všechny kombinace tří věcí. První byly aflatoxiny: buď žádné, nebo zhruba 1,1 až 1,3 miligramu na kilogram krmiva. Druhé byly fumonisiny: buď malé množství, nebo asi desetkrát více. Třetí bylo kysané mléko s tepelně usmrcenými bakteriemi Lacticaseibacillus rhamnosus a kvasinkami Saccharomyces cerevisiae. Zvířata ho dostávala 39 gramů denně, tedy asi dvacetinu (pět procent) denní dávky krmiva. Pokus trval 28 dní.\n\nAflatoxiny snížily přírůstek hmotnosti i množství snědeného krmiva a poškodily játra. Fumonisiny poškodily plíce a ledviny. U zvířat, která dostávala kysané mléko, byla poškození plic po fumonisinech mírnější. Mírnější byla i poškození ledvin tam, kde působily oba jedy zároveň. Růst se ale nezlepšil a jaterní ani ledvinové hodnoty v krvi také ne.\n\nVědci navíc měřili zbytky jedů v krvi a v moči. Dvě z těchto látek byly u zvířat s mlékem nižší: aflatoxin P1 v krvi a fumonisin B2 v moči. Dvě další se nezměnily. Ochrana tedy byla částečná a týkala se spíš jednotlivých orgánů než celkového stavu zvířat.",
+        "procJeToDulezite": "Plísňové jedy v krmivu se týkají zdraví hospodářských zvířat i kvality potravin, které z nich pocházejí. Levná přísada do krmiva, která by část škod ubrala, by v praxi pomohla chovatelům i spotřebitelům.",
+        "poznamkaKOmezenim": "Jde o pilotní pokus s pouhými třemi zvířaty v každé z osmi skupin, takže zjištění je předběžné a potřebuje ověření na větším počtu zvířat."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 288,
+              "end": 290
+            },
+            "matchedText": "24",
+            "messageCs": "Číslo „24“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „24 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[288,290]: 24"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 417,
+              "end": 420
+            },
+            "matchedText": "1,1",
+            "messageCs": "Číslo „1,1“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „1,1 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[417,420]: 1,1"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 424,
+              "end": 427
+            },
+            "matchedText": "1,3",
+            "messageCs": "Číslo „1,3“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „1,3 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[424,427]: 1,3"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 179,
+              "end": 189
+            },
+            "matchedText": " aflatoxin",
+            "messageCs": "Text opisuje původní název článku („ aflatoxin“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[179,189]:  aflatoxin"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 263,
+              "end": 273
+            },
+            "matchedText": " Aflatoxin",
+            "messageCs": "Text opisuje původní název článku („ Aflatoxin“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[263,273]:  Aflatoxin"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 338,
+              "end": 348
+            },
+            "matchedText": " fumonisin",
+            "messageCs": "Text opisuje původní název článku („ fumonisin“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[338,348]:  fumonisin"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 580,
+              "end": 611
+            },
+            "matchedText": " Lacticaseibacillus rhamnosus a",
+            "messageCs": "Text opisuje původní název článku („ Lacticaseibacillus rhamnosus a“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[580,611]:  Lacticaseibacillus rhamnosus a"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 622,
+              "end": 647
+            },
+            "matchedText": " Saccharomyces cerevisiae",
+            "messageCs": "Text opisuje původní název článku („ Saccharomyces cerevisiae“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[622,647]:  Saccharomyces cerevisiae"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 1206,
+              "end": 1216
+            },
+            "matchedText": " aflatoxin",
+            "messageCs": "Text opisuje původní název článku („ aflatoxin“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[1206,1216]:  aflatoxin"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 1228,
+              "end": 1238
+            },
+            "matchedText": " fumonisin",
+            "messageCs": "Text opisuje původní název článku („ fumonisin“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[1228,1238]:  fumonisin"
+          },
+          {
+            "block": "all",
+            "rule": "long-words",
+            "ruleId": "readability:R6",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "share5Syllables=0.068",
+            "messageCs": "Příliš mnoho abstraktních dlouhých slov (7 % slov má pět a více slabik). Nahraďte je konkrétními, kratšími slovy.",
+            "detail": "readability:R6 @ all[0,0]: share5Syllables=0.068"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7208709531",
+        "title": "Human milk-derived Limosilactobacillus reuteri improved growth performance of weaned pigs by modulating systemic immune responses and enhancing intestinal health",
+        "abstract": "This study aimed to evaluate the effects of dietary supplementation of human milk-derived Limosilactobacillus reuteri (REU) on growth performance, frequency of diarrhea, and systemic and intestinal health parameters of weaned pigs. Dietary supplementation of REU had greater (P = 0.046) average daily gain during d 1 to 7 and d 15 to 28, and feed efficiency over the overall period (d 1 to 28). Pigs in REU group had tended to lower (P = 0.060) frequency of diarrhea than non-supplemented group. Pigs fed REU tended to have lower concentrations of serum cortisol (P = 0.061) and had lower interleukin-6 (P = 0.014), and tumor necrosis factor-α (P = 0.033) on d 7, and also had lower serum interleukin-6 (P = 0.027) and transforming growth factor-β1 (P = 0.008) levels on day 14 than those fed control diet. Probiotic REU had greater (P = 0.034) serum total protein levels on d 28 than non-probiotic diet. Pigs in REU group tended to have increased (P = 0.062) villus height in the ileum compared with those in control group. Pigs fed REU had upregulated claudin-1 (P = 0.002) and interferon-γ (P = 0.032) genes expression in the ileum than those fed control diet, but downregulated interleukin-8 (P = 0.004) gene expression. Dietary supplementation of human milk-derived REU improved growth performance of weaned pigs by modulating inflammatory responses and enhancing intestinal barrier integrity. These results suggest that the potential of human milk-derived probiotics as an effective strategy for improving growth performance and health in antibiotic-free swine production system.",
+        "date": "2026-09-04",
+        "url": "https://doi.org/10.1093/jas/skag276",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1093/jas/skag276",
+        "openAlexId": "W7208709531",
+        "subfield": {
+          "id": "subfields/1103",
+          "name": "Animal Science and Zoology"
+        },
+        "field": {
+          "id": "fields/11",
+          "name": "Agricultural and Biological Sciences"
+        },
+        "topic": {
+          "id": "T10152",
+          "name": "Animal Nutrition and Physiology"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Hyunjin Kyoung",
+          "Sewon Ha",
+          "Kyeong Il Park",
+          "Jinmu Ahn",
+          "Yonggu Kang",
+          "Hansol Hwang",
+          "Hyung Wook Kim",
+          "Sangnam Oh",
+          "Jungwoo Yang",
+          "Jun‐Mo Kim",
+          "Younghoon Kim",
+          "Sangwoo Park",
+          "Yanhong Liu",
+          "Minho Song"
+        ],
+        "venue": "Journal of Animal Science",
+        "indexedDate": "2026-09-05",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7606,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.605,
+          "total": 0.8232,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.5,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.4959
+          },
+          "everydayDomains": [
+            "food",
+            "health",
+            "mind"
+          ],
+          "subfieldKey": "subfields/1103",
+          "evidence": [
+            "total 0.8232 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.76 = P 0.84 − 0.45×t 0.00 − 0.15×j 0.50",
+            "outcome verbs (v 1.00): increased, improved (title, ×2), lowers",
+            "recognisable subjects (s 0.50): pigs (title, ×2)",
+            "quantified effect (q 1): p-value",
+            "title concreteness (c 0.80): −0.2 title is 19 words",
+            "jargon density (j 0.50): 12/242 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — food, health, mind",
+            "everyday terms (7): diet, dietary, protein, milk, health, antibiotic, concentration",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-05)",
+            "credibility 0.61 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Journal of Animal Science",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no tldr; falling back to the source abstract (§4.2)"
+      },
+      "summary": {
+        "souhrn": "Bakterie z mateřského mléka pomohla selatům přestát odstav od prasnice — období, kdy jim mizí mléko, mění se krmivo a často přijde průjem. Vědci přidávali odstaveným selatům do krmiva probiotickou bakterii Limosilactobacillus reuteri pocházející z lidského mateřského mléka a srovnávali je se selaty, která ji nedostávala. Selata s probiotikem rychleji přibírala na váze, za celé čtyřtýdenní sledování lépe využívala krmivo a měla méně často průjem (tenhle rozdíl byl ale jen na hranici průkaznosti). V krvi jim vědci naměřili nižší hladiny látek, kterými tělo rozjíždí zánět, a ve střevě našli lepší stav sliznice a silnější těsnění mezi buňkami střevní stěny. Autoři v tom vidí možnou cestu, jak chovat prasata bez preventivního podávání antibiotik.",
+        "podrobneVysvetleni": "Vědci rozdělili čerstvě odstavená selata do dvou skupin: jedna dostávala do krmiva probiotickou bakterii z lidského mateřského mléka, druhá stejné krmivo bez ní. Čtyři týdny pak sledovali přírůstky, spotřebu krmiva, výskyt průjmu, látky v krvi a stav střevní sliznice. Selata s probiotikem přibírala rychleji v prvním týdnu po odstavu a znovu ve druhé polovině pokusu; za celé období také lépe zhodnotila krmivo, tedy ze stejného množství vyrostla o něco víc. Průjem měla méně často, ale tento rozdíl byl slabý — mohl vzniknout i náhodou. Sedmý den pokusu měla v krvi nižší hladiny dvou látek, kterými tělo spouští zánět, čtrnáctý den nižší hladiny dalších dvou zánětlivých ukazatelů a po celou dobu spíš nižší hladinu stresového hormonu kortizolu (i tady byl rozdíl na hranici průkaznosti). Poslední, dvacátý osmý den měla v krvi víc bílkovin celkem, což bývá znamení lepší výživy. Ve střevě, konkrétně v jeho poslední tenké části, měla selata s probiotikem o něco delší klky — drobné výběžky sliznice, kterými se vstřebává potrava — a aktivnější gen pro bílkovinu, jež utěsňuje spoje mezi buňkami střevní stěny. Naopak méně aktivní byl gen pro látku, která do střeva svolává zánětlivé buňky. Dohromady to vypadá, že bakterie zklidnila zánět a pomohla střevu lépe držet bariéru mezi trávenou potravou a tělem — a lepší růst byl důsledkem toho.",
+        "procJeToDulezite": "Chovy prasat hledají náhradu za preventivní antibiotika, protože jejich nadužívání pomáhá vzniku odolných bakterií, které pak ohrožují i lidi. Studie ukazuje jeden konkrétní směr, kterým se dá jít: obyčejnou bakterii z mateřského mléka.",
+        "poznamkaKOmezenim": "Jde o pokus na selatech, ne na lidech, abstrakt neuvádí počet zvířat ve skupinách a část rozdílů (průjem, hladina kortizolu, délka klků) byla jen na hranici statistické průkaznosti, takže je zatím třeba brát je jako naznačený trend."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 539,
+              "end": 791
+            },
+            "matchedText": "Sedmý den pokusu měla v krvi nižší hladiny dvou látek, kterými tělo spouští zánět, čtrnáctý den nižší hladiny dalších dvou zánětlivých ukazatelů a po celou dobu spíš nižší hladinu stresového hormonu kortizolu (i tady byl rozdíl na hranici průkaznosti).",
+            "messageCs": "Tato věta má 39 slov a je moc dlouhá: „Sedmý den pokusu měla v krvi nižší hladiny dvou látek, kterými tělo spouští zán…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[539,791]: Sedmý den pokusu měla v krvi nižší hladiny dvou látek, kterými tělo spouští zánět, čtrnáctý den nižší hladiny dalších dvou zánětlivých ukazatelů a po celou dobu spíš nižší hladinu stresového hormonu kortizolu (i tady byl rozdíl na hranici průkaznosti)."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=22.06",
+            "messageCs": "Věty jsou v průměru moc dlouhé (22,1 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=22.06"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 205,
+              "end": 234
+            },
+            "matchedText": " Limosilactobacillus reuteri ",
+            "messageCs": "Text opisuje původní název článku („ Limosilactobacillus reuteri “). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[205,234]:  Limosilactobacillus reuteri "
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 30 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=48.0",
+            "messageCs": "Text se celkově čte těžko (index 48 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=48.0"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7208713414",
+        "title": "Enhancing soil hydrothermal efficiency through spectral-selective mulching and drip irrigation in broccoli (Brassica oleracea var. italica L.)",
+        "abstract": "Water scarcity and declining soil fertility necessitate the adoption of sustainable agricultural practices that enhance crop productivity while maintaining soil health. Mulching is an effective strategy for regulating soil temperature, conserving soil moisture, and improving crop performance. This study was conducted during the 2022 Rabi season at the experimental farm of Sher-e-Kashmir University of Agricultural Sciences and Technology of Kashmir (SKUAST-K) to evaluate the effects of different mulching materials on soil temperature, soil moisture dynamics, growth, and yield of broccoli ( Brassica oleracea var. italica L.). The experiment was laid out in a randomized complete block design with three replications, comprising five mulching treatments (control, white plastic, black plastic, silver plastic, and organic mulch), with soil measurements recorded at three depths (5, 10, and 15 cm). Silver plastic mulch significantly improved soil moisture retention (30.61% at 15 cm), curd weight (791.99 g plant⁻¹), head diameter (17.97 cm), and total yield (52.80 t ha⁻¹), while also promoting earlier head initiation at 25 days after transplanting. Black plastic mulch produced the highest soil temperature (24.67 °C at 5 cm), whereas organic mulch enhanced soil organic carbon (1.3%) and organic matter content (2.24%). The HYDRUS-1D model was employed to simulate soil water content and heat transport under mulched and non-mulched conditions, showing strong agreement between observed and simulated values (RMSE: 0.718–1.161; R²: 0.8995–0.9445). Silver plastic mulch is the most effective treatment for improving broccoli yield and water use efficiency, whereas organic mulch contributes to long-term soil health. HYDRUS-1D proved to be a reliable tool for simulating root water uptake and soil heat dynamics under different mulching conditions.",
+        "date": "2026-09-04",
+        "url": "https://doi.org/10.1186/s12870-026-09860-5",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1186/s12870-026-09860-5",
+        "openAlexId": "W7208713414",
+        "subfield": {
+          "id": "subfields/1111",
+          "name": "Soil Science"
+        },
+        "field": {
+          "id": "fields/11",
+          "name": "Agricultural and Biological Sciences"
+        },
+        "topic": {
+          "id": "T11404",
+          "name": "Irrigation Practices and Water Management"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Adil Majeed Tantray",
+          "Owais Ahmad Bhat",
+          "Rohitashw Kumar",
+          "Zubair Ahmad Khan",
+          "Parshant Bakshi",
+          "Balbir Dhotra",
+          "Mohmmad Idrees Attar",
+          "Rizwan Yousuf",
+          "Zahid Nabi Sheikh",
+          "Fatimah Alshudukhi",
+          "Maqsood Ul Hussan",
+          "Bandar M. A. Al-Munqedhi",
+          "Manzer H. Siddiqui"
+        ],
+        "venue": "BMC Plant Biology",
+        "indexedDate": "2026-09-05",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.715,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.8153,
+          "explainDetail": {
+            "v": 0.25,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.1498
+          },
+          "everydayDomains": [
+            "school",
+            "health",
+            "water",
+            "work"
+          ],
+          "subfieldKey": "subfields/1111",
+          "evidence": [
+            "total 0.8153 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.72 = P 0.74 − 0.45×t 0.00 − 0.15×j 0.15",
+            "outcome verbs (v 0.25): improved",
+            "recognisable subjects (s 1.00): plants, crops, soil (title, ×2)",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.15): 4/267 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 4 domain(s) — school, health, water, work",
+            "everyday terms (5): university, health, treatment, irrigation, productivity",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-05)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in BMC Plant Biology",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1186/s12870-026-09860-5)"
+      },
+      "summary": {
+        "souhrn": "Brokolice roste líp, když se země kolem ní zakryje — a záleží na tom, čím. Vědci z Kašmíru vyzkoušeli na pokusném poli pět variant: holou půdu bez krytu, bílou, černou a stříbrnou fólii a organický kryt z rostlinných zbytků, a pod každou z nich měřili teplotu a vlhkost půdy v hloubkách 5, 10 a 15 centimetrů. Nejlépe dopadla stříbrná fólie: udržela v hloubce 15 cm vlhkost 30,61 procenta, růžice brokolice pod ní vážily necelých 792 gramů na rostlinu, měly v průměru téměř 18 centimetrů a celkový výnos vyšel na 52,8 tuny z hektaru. Černá fólie zase půdu nejvíc prohřála (24,67 °C v hloubce 5 cm) a organický kryt jediný zvýšil obsah humusu, tedy živné organické složky půdy. Pro zahrádkáře i pěstitele z toho plyne, že volba materiálu není kosmetická — každý kryt řeší něco jiného.",
+        "podrobneVysvetleni": "Pokus proběhl v zimní pěstitelské sezoně roku 2022 na pokusné farmě zemědělské univerzity v Kašmíru. Políčka byla rozdělená podle standardního schématu, kdy se každá varianta opakuje třikrát, aby náhoda a nerovnoměrnost pole výsledek nezkreslily. Vedle výnosů vědci sledovali i to, jak rychle brokolice vytvoří růžici: pod stříbrnou fólií to bylo 25 dní od vysazení sazenic, tedy dřív než u ostatních variant. Stříbrná fólie odráží světlo, takže půdu tolik nepřehřívá a zároveň z ní méně odpařuje vodu — a právě to se projevilo na vyšší vlhkosti i vyšším výnosu. Černá fólie naopak teplo pohlcuje a půdu ohřívá, což se hodí v chladných obdobích. Organický kryt výnosem nevynikl, ale zvýšil obsah organického uhlíku v půdě na 1,3 procenta a organické hmoty na 2,24 procenta, což je vklad do úrodnosti do dalších let. Vědci navíc naměřená data porovnali s počítačovým modelem HYDRUS-1D, který simuluje pohyb vody a tepla v půdě. Model se skutečnosti blížil dobře: shoda mezi vypočtenými a naměřenými hodnotami dosáhla přibližně 0,90 až 0,94 z jedné (jednička by znamenala dokonalý soulad). To znamená, že podobné situace lze do jisté míry předpovědět na počítači místo zdlouhavého měření na poli.",
+        "procJeToDulezite": "Voda na polích i na zahradách ubývá a mulčování je levný způsob, jak jí méně vypařit — tahle práce ukazuje, že barva a materiál krytu rozhodují o tom, jestli půdu spíš ohřejete, nebo v ní udržíte vlhkost.",
+        "poznamkaKOmezenim": "Jde o jediný pokus na jednom místě a v jediné sezoně, v konkrétních podmínkách Kašmíru, takže v jiném podnebí a na jiné půdě mohou čísla vypadat jinak."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 75,
+              "end": 309
+            },
+            "matchedText": "Vědci z Kašmíru vyzkoušeli na pokusném poli pět variant: holou půdu bez krytu, bílou, černou a stříbrnou fólii a organický kryt z rostlinných zbytků, a pod každou z nich měřili teplotu a vlhkost půdy v hloubkách 5, 10 a 15 centimetrů.",
+            "messageCs": "Tato věta má 41 slov a je moc dlouhá: „Vědci z Kašmíru vyzkoušeli na pokusném poli pět variant: holou půdu bez krytu, …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[75,309]: Vědci z Kašmíru vyzkoušeli na pokusném poli pět variant: holou půdu bez krytu, bílou, černou a stříbrnou fólii a organický kryt z rostlinných zbytků, a pod každou z nich měřili teplotu a vlhkost půdy v hloubkách 5, 10 a 15 centimetrů."
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 287,
+              "end": 288
+            },
+            "matchedText": "5",
+            "messageCs": "Číslo „5“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „5 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[287,288]: 5"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 290,
+              "end": 292
+            },
+            "matchedText": "10",
+            "messageCs": "Číslo „10“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „10 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[290,292]: 10"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 295,
+              "end": 297
+            },
+            "matchedText": "15",
+            "messageCs": "Číslo „15“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „15 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[295,297]: 15"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=24.13",
+            "messageCs": "Věty jsou v průměru moc dlouhé (24,1 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=24.13"
+          }
+        ],
+        "soft": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 30 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=46.3",
+            "messageCs": "Text se celkově čte těžko (index 46 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=46.3"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-09-06T08:50:57.702Z",
+  "generatedOn": "2026-09-06",
+  "schemaVersion": 1
+}
