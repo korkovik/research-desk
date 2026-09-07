@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Umělá inteligence a počítače – 7. září 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Umělá inteligence a počítače</h1>
+<p class="dateline"><time datetime="2026-09-07">7. září 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 5</p>
+<div class="summary"><p><span class="lead">Cvičení ve virtuální realitě zlepšilo soustředění a rychlost reakce ruky víc než běžné cvičení.</span> Autoři zapojili 33 dospělých se sedavým způsobem života, tedy jedenáct lidí v každé ze tří skupin: virtuální realita, běžné cvičení a srovnávací skupina, která nic neměnila a žila dál jako dosud. Obě cvičící skupiny chodily na hodiny třikrát týdně po dobu osmi týdnů. Reakce nohou se u obou zlepšila zhruba stejně, ohebnost si obě udržely, zatímco u nezapojených klesla; rovnováha se nezměnila nikde. Při jedenácti lidech na skupinu jde ale o předběžné zjištění, které musí potvrdit větší pokus.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Autoři pracovali s 33 dospělými, kteří vedou sedavý život. Náhodně je rozdělili do tří skupin po jedenácti. První cvičila ve virtuální realitě (anglicky virtual reality, VR). To znamená s brýlemi, které promítají počítačem vytvořené prostředí a nutí člověka reagovat pohybem. Druhá skupina chodila na běžné cvičení. Třetí nic neměnila a sloužila jen pro srovnání. Obě cvičící skupiny měly hodiny třikrát týdně pod dohledem, celkem osm týdnů. Před začátkem a po skončení vědci měřili soustředění, rychlost reakce ruky a nohy, ohebnost a rovnováhu ve třech variantách stoje.</p>
+<p>Rozdíly mezi skupinami se ukázaly u soustředění, u reakce ruky i nohy a u ohebnosti. Nejvíc se zlepšila skupina s virtuální realitou, a to v soustředění a v reakci ruky. Předstihla jak běžné cvičení, tak nezapojenou skupinu. Reakce nohou se zlepšila v obou cvičících skupinách zhruba stejně. Ohebnost zůstala u cvičících na stejné úrovni, u nezapojených se za osm týdnů zhoršila. Rovnováha se nezměnila v žádné skupině.</p>
+<p>Vysvětlení podle autorů je jednoduché. Ve virtuální realitě člověk nejen cvičí, ale musí zároveň sledovat, co se kolem něj děje, a rychle na to reagovat. Trénuje se tak tělo i pozornost naráz. Autoři sami upozorňují, že šlo o průzkumný pokus a že srovnání obou způsobů cvičení musí potvrdit větší studie.</p>
+<h3>Proč je to důležité</h3>
+<p>Kdo tráví většinu dne vsedě, ztrácí nejen kondici, ale i pozornost a rychlost reakcí — a tenhle pokus naznačuje, že pohyb spojený s reagováním na okolí může pomoci obojímu najednou.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Halil İbrahim ÇAKIR, Esranur Terzi</dd>
+<dt>Časopis</dt>
+<dd>BMC Sports Science Medicine and Rehabilitation</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-05">5. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1186/s13102-026-02022-y" rel="noreferrer">10.1186/s13102-026-02022-y</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7208835846" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1186/s13102-026-02022-y" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Ve studii bylo dohromady jen 33 lidí, tedy jedenáct v každé skupině, sami autoři ji označují za průzkumnou a její zaregistrování proběhlo až dodatečně, takže výsledky je třeba brát jako předběžné.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 5</p>
+<div class="summary"><p><span class="lead">Rozpoznat chorobu na listu papriky chilli umí spolehlivě jen odborník, a těch je v indických vesnicích málo.</span> Programy, které to zvládají z fotografie, jsou ale často tak velké, že se do běžného telefonu nevejdou. Autoři proto vzali model typu Vision Transformer (anglicky Vision Transformer) — počítačový program, který se rozpoznávání obrázků naučí z tisíců příkladů — a zkusili ho zmenšit třemi způsoby najednou: odstraněním málo užitečných částí, zjednodušením vnitřních výpočtů a učením malého modelu podle velkého. Nejúspornější verze zabrala 6 MB místo původních 327 MB, tedy asi 55krát méně, a přesnost zůstala na 95 %, což je přibližně devatenáct správně určených snímků z dvaceti. Zajímavější je druhé zjištění: stejně malý model, natrénovaný přímo a bez těchto triků, dosáhl 94,87 %, tedy prakticky téhož výsledku — složitá komprese se tu tak nevyplatila.</p></div>
+<p class="preprint">Jde o předběžnou verzi studie, takzvaný preprint – zatím neprošlo recenzním řízením, nezávislí odborníci výsledky ještě nezkontrolovali.</p>
+<h3>Podrobné vysvětlení</h3>
+<p>Autoři pracovali s fotografiemi listů papriky chilli. Snímky rozdělili do tří skupin podle zdravotního stavu listu. Testování si přitom nastavili záměrně nepohodlně. Model se učil na fotkách z jedněch vesnic a z jedněch přístrojů. Ověřovali ho na fotkách z jiných vesnic a jiných fotoaparátů. Tak se pozná, jestli obstojí i mimo pěkně připravené podmínky. Zmenšovali třemi cestami. První odstraňuje z modelu bloky, které k výsledku přispívají nejméně; k jejich výběru autoři použili matematický odhad citlivosti (metoda H-BAC). Druhá nahrazuje vnitřní čísla modelu hrubší, ale úspornější podobou. Třetí nechá velký model učit malý, který se od něj snaží přebírat i to, čemu na obrázku věnuje pozornost. Každý postup nejprve vyzkoušeli samostatně. Nejlepší varianty pak zapojili za sebe. Velikost modelu spadla podle nastavení o 74 až 98 procent, tedy na čtvrtinu až na padesátinu. Úplně zmenšená verze měřila 6 MB proti původním 327 MB. Přesnost zůstala na 95,13 % s rozptylem 2,32 procentního bodu, což je asi devatenáct správně určených snímků z dvaceti — stejně jako u nezmenšeného modelu. Pak přišel střízlivý test. Autoři natrénovali stejně malý model přímo, bez prořezávání a bez učitele. Dosáhl 94,87 %, tedy asi jednoho chybného určení z dvaceti, prakticky jako složitější postup. Na tomto souboru dat se náročná komprese nevyplatila.</p>
+<h3>Proč je to důležité</h3>
+<p>Pokud takový model běží přímo v telefonu, může pěstitel poznat chorobu na poli i bez internetu a bez odborníka. A pro každého, kdo se o umělou inteligenci zajímá, je tu poctivá lekce: složitější postup nemusí být lepší než jednoduchý.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Mahadev Sunil Kumar, Bhavika Gondi, Desaisetty Venkata Satya Sai Swapnith, Gangireddy Rahul Jogi, Sudheesh Manalil, Arnab Raha a další</dd>
+<dt>Preprintový server</dt>
+<dd>arXiv</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-04">4. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd>Studie zatím nemá DOI</dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://arxiv.org/pdf/2609.05334v1" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://arxiv.org/abs/2609.05334v1" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o preprint, tedy práci zveřejněnou před recenzním řízením, navíc jen na jedné plodině a třech skupinách snímků, takže rozdíl mezi 95,13 % a 94,87 % je v rámci naměřeného rozptylu a výsledek je zatím předběžný.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 5</p>
+<div class="summary"><p><span class="lead">Pracovní stres nemusí být hlavním důvodem, proč je někdo v práci zapálený a jiný vyhaslý.</span> Vědci se ve nigerijském státě Katsina zaměřili na neakademické zaměstnance tří univerzit, tedy na administrativu, techniky a správu. Z celkového počtu 3 251 takových zaměstnanců, což je celý personál těchto škol mimo vyučující, oslovili dotazníkem 343 lidí, tedy asi každého desátého. Množství práce, kvalita prostředí i vztahy s kolegy sice se zapálením pro práci souvisely mírně kladně, rozdíly ale byly tak malé, že je mohla způsobit náhoda. Všechny tři věci dohromady vysvětlily jen 2,1 % rozdílů mezi lidmi — zbylých téměř 98 % tedy stojí na něčem jiném, co studie neměřila.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Šlo o dotazníkové šetření. Zkoumaný celek tvořilo 3 251 neakademických zaměstnanců tří univerzit ve státě Katsina. Konkrétně to byly Federal University Dutsin-Ma, Umaru Musa Yar&#39;adua University a Al-Qalam University. Podle běžně používaného výpočtu velikosti vzorku z nich autoři vybrali 343 lidí, tedy asi každého desátého. Školy byly zastoupené poměrně podle své velikosti a jednotliví lidé se vybírali náhodně. Dotazník sledoval tři věci: kolik práce lidé mají, v jakém prostředí pracují a jak vycházejí s kolegy. Proti tomu autoři postavili míru zapálení pro práci (employee engagement), tedy jak moc se do práce opírají a jak jsou jí oddaní. Data pak zpracovali korelací a regresí. To jsou statistické postupy, které měří, nakolik jedna věc souvisí s druhou. Výsledek: všechny tři faktory šly stejným směrem. Kdo měl lepší podmínky, byl o něco víc zapálený. Rozdíly ale byly natolik malé, že je klidně mohla způsobit náhoda. Celý model vysvětlil 2,1 % rozdílů v zapálení mezi jednotlivými zaměstnanci. To je hodně málo — zbylých téměř 98 % má příčiny, které se v tomhle šetření vůbec neobjevily. Autoři z toho vyvozují, že u téhle skupiny lidí zapálení pro práci nestojí především na stresu z pracovních podmínek. Doporučují dál se dívat na styl vedení, firemní kulturu, jistotu zaměstnání, odměňování a možnosti kariérního postupu.</p>
+<h3>Proč je to důležité</h3>
+<p>Zlepšit lidem pracovní podmínky se vyplatí samo pro sebe, ale podle téhle studie to nemusí být páka, která zvedne jejich chuť do práce. Ta pravděpodobně závisí víc na vedení, jistotě místa a možnosti někam se posunout.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Aliyu Sani Ibrahim, Aminu Ibrahim Lawal</dd>
+<dt>Časopis</dt>
+<dd>Azman University International Journal of Management and Social Sciences</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-05">5. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.67523/auijmss.v1i1.011" rel="noreferrer">10.67523/auijmss.v1i1.011</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7208827010" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.67523/auijmss.v1i1.011" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jednorázový dotazník ze tří univerzit v jednom nigerijském státě a výsledek je statisticky nevýznamný, což znamená spíš „nenašli jsme souvislost&quot; než „souvislost neexistuje&quot;.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-4">
+<p class="paper-counter">Studie 4 z 5</p>
+<div class="summary"><p><span class="lead">Kamery na školních chodbách dnes většinou jen nahrávají.</span> Autoři systému CampusGuardAI chtějí z nich udělat něco, co si problému všimne samo. Program sleduje obraz dvěma nástroji: jeden v záběru hledá lidi a předměty (YOLO), druhý z každé postavy udělá jednoduchou „panáčkovou&quot; kostru z bodů a spojnic (PoseNet). Z pohybu takové kostry pak odhaduje potyčku, vstup do zakázané zóny, dlouhé bezdůvodné postávání nebo spánek při službě. Autoři uvádějí, že systém v testech reagoval do jedné sekundy a že tváře záměrně nerozpoznává.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Autoři postavili systém ze dvou hotových stavebních kamenů. YOLO je model, který v obraze rychle najde objekty — člověka, batoh, auto. PoseNet z každé postavy udělá schéma z bodů a spojnic, tedy jakousi kostru. Nad těmito kostrami pak běží pravidla. Rychlé vzájemné pohyby dvou postav blízko sebe označí jako potyčku. Nehybnou postavu v sedě nebo v leže na pracovišti vyhodnotí jako spánek při službě. Dlouhý pobyt v uzavřené zóně bere jako neoprávněný vstup nebo bezdůvodné vyčkávání. Když pravidlo zareaguje, systém pošle upozornění hned několika cestami: do aplikace, přes SMS a e-mailem. Všechno se sbíhá na jedné obrazovce, kde má ostraha přehled o všech kamerách.</p>
+<p>Zajímavý je přístup k soukromí. Systém nepracuje s rozpoznáváním tváří. Vychází jen z držení těla a z pohybu kostry. Nezjišťuje tedy, kdo je na záznamu — jen co ten člověk dělá. To autoři uvádějí jako důvod, proč je jejich řešení slučitelné s ochranou osobních údajů.</p>
+<p>Z výsledků zmiňují dvě věci: rozpoznávání fungovalo a odezva byla pod jednou sekundou. Konkrétní čísla v abstraktu chybí. Není jasné, kolik nahrávek systém dostal ani za jakých podmínek se testoval. Zůstává tak popis návrhu a první zkouška. Důkaz, že by systém obstál v běžném školním provozu, to není.</p>
+<h3>Proč je to důležité</h3>
+<p>Školy a univerzity o podobných systémech reálně uvažují a rodičů i učitelů se to přímo dotýká. Právě rozdíl mezi „počítač pozná tvář&quot; a „počítač pozná jen držení těla&quot; rozhoduje o tom, kolik soukromí ve škole zůstane.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Vipul Dubey, Archana Sharma, Joel Stephen Mathew, Smarth Jindal, Vansh Rathor</dd>
+<dt>Časopis</dt>
+<dd>International journal for current research and techniques.</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-05">5. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.5281/zenodo.22343753" rel="noreferrer">10.5281/zenodo.22343753</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7208819183" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.5281/zenodo.22343753" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Práce vyšla v málo známém časopise, popisuje spíš návrh systému než jeho ověření v praxi a u tvrzení o přesnosti a rychlosti neuvádí žádná konkrétní čísla ani rozsah testů.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-5">
+<p class="paper-counter">Studie 5 z 5</p>
+<div class="summary"><p><span class="lead">Server, který trénuje model společně s mnoha vzdálenými počítači, musí u každého ověřit, že tam patří.</span> Autoři navrhli dvoustupňovou kontrolu: nejdřív levný a rychlý předfiltr, teprve pak náročné ověření digitálního podpisu. Filtry zkoušeli na souboru 129 857 záznamů o zeměpisném původu IP adres a srovnávali je se šesti jinými způsoby ukládání seznamu. U 100 000 přihlašovacích údajů zabraly 1,9 MB a 3 MB paměti serveru, oproti 23,2 MB u struktury zvané trie — tedy asi o devět desetin méně. V simulaci, kde se třetina klientů chovala nepoctivě, ubylo ověřovacích zpráv i přenesených dat asi o třicet procent.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Federované učení (federated learning) znamená, že se model učí na mnoha zařízeních zvlášť. Na server pak putují jen dílčí úpravy, ne samotná data. Výhodou je soukromí, nevýhodou to, že se do trénování může vetřít někdo nezvaný a model pokazit. Obranou je digitální podpis. Ověřit podpis u každého žadatele ale server stojí čas a výpočetní výkon.</p>
+<p>Autoři proto předřadili předfiltr. Bloomův filtr (Bloom Filter) a jeho pružnější varianta pro měnící se skupiny klientů (Adaptive Quotient Filter) umí velmi rychle a s malou pamětí odpovědět, zda je klient na seznamu povolených. Občas propustí i někoho cizího; to je běžná vlastnost takových filtrů. Tyhle omyly zachytí druhý stupeň, tedy ověření podpisu metodou ECDSA.</p>
+<p>Měření vypadalo takto. Na 100 000 přihlašovacích údajů potřebovaly filtry 1,9 MB a 3 MB paměti. Struktura zvaná trie na totéž spotřebovala 23,2 MB, tedy asi o devět desetin víc. Vyhledávání bylo naopak pomalejší: 0,054 až 0,064 sekundy proti 0,003 až 0,006 sekundy u běžné hašovací tabulky (HashSet). V absolutních číslech jde ale jen o setiny sekundy.</p>
+<p>V simulovaném prostředí, kde se třetina klientů chovala nepoctivě, ubylo ověřovacích zpráv asi o třicet procent. Za 50 kol trénování klesl objem přenesených dat ze 125 000 KB na 87 537,5 KB, což je právě ta necelá třetina. Úspora se s dalšími koly nasčítává.</p>
+<h3>Proč je to důležité</h3>
+<p>Společné trénování modelů na cizích zařízeních se dnes používá i tam, kde se citlivá data nesmí posílat pryč, například u zdravotních nebo bankovních aplikací. Pokud jde ověřování účastníků udělat s menší pamětí a menším přenosem dat, zvládne server obsloužit víc klientů se stejným vybavením.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Prince Rana, Amritpal Singh</dd>
+<dt>Časopis</dt>
+<dd>Scientific Reports</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-05">5. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1038/s41598-026-68081-w" rel="noreferrer">10.1038/s41598-026-68081-w</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7208806523" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1038/s41598-026-68081-w" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o výsledky z jednoho datového souboru a ze simulovaného prostředí, ne z reálného provozu, takže úsporu asi třiceti procent je zatím třeba brát jako předběžnou.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 7. září 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>

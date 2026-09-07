@@ -856,6 +856,46 @@
       "titleKey": "enhancingsoilhydrothermalefficiencythroughspectralselectivemulchinganddripirrigationinbroccolibrassicaoleraceavaritalical",
       "publishedOn": "2026-09-06",
       "category": "biology-food-agriculture"
+    },
+    {
+      "openalexId": "W7208835846",
+      "doi": "10.1186/s13102-026-02022-y",
+      "arxivId": null,
+      "titleKey": "effectsofvirtualrealityandtraditionalexerciseoncognitiveandphysicalperformanceinsedentaryadultsarandomisedcontrolledtrial",
+      "publishedOn": "2026-09-07",
+      "category": "ai-computing"
+    },
+    {
+      "openalexId": null,
+      "doi": null,
+      "arxivId": "2609.05334",
+      "titleKey": "lightweightvisiontransformercompressionforondeviceplantdiseasedetectioninresourceconstrainedagriculturalfieldconditions",
+      "publishedOn": "2026-09-07",
+      "category": "ai-computing"
+    },
+    {
+      "openalexId": "W7208827010",
+      "doi": "10.67523/auijmss.v1i1.011",
+      "arxivId": null,
+      "titleKey": "occupationalstressfactorsandemployeeengagementamongnonacademicstaffofuniversitiesinkatsinastate",
+      "publishedOn": "2026-09-07",
+      "category": "ai-computing"
+    },
+    {
+      "openalexId": "W7208819183",
+      "doi": "10.5281/zenodo.22343753",
+      "arxivId": null,
+      "titleKey": "campusguardaianaipoweredrealtimeanomalydetectionsystemforenhancedcampussecurity",
+      "publishedOn": "2026-09-07",
+      "category": "ai-computing"
+    },
+    {
+      "openalexId": "W7208806523",
+      "doi": "10.1038/s41598-026-68081-w",
+      "arxivId": null,
+      "titleKey": "secureandscalableclientprefilteringandauthenticationframeworkforfederatedlearningsystems",
+      "publishedOn": "2026-09-07",
+      "category": "ai-computing"
     }
   ]
 }

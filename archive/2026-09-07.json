@@ -1,0 +1,720 @@
+{
+  "date": "2026-09-07",
+  "categoryKey": "ai-computing",
+  "categoryLabel": "Umělá inteligence a počítače",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7208835846",
+        "title": "Effects of virtual reality and traditional exercise on cognitive and physical performance in sedentary adults: a randomised controlled trial",
+        "abstract": "Sedentary lifestyles have become increasingly prevalent in modern society, negatively affecting physical and cognitive functioning. Although traditional exercise programs are widely used to improve health outcomes, maintaining long-term motivation and adherence remains challenging. VR-based exercise has emerged as an innovative approach that combines physical activity with cognitive engagement. This study aimed to compare the effects of VR-based and traditional exercise interventions on concentration, reaction time, balance, and flexibility in sedentary adults. A randomized controlled trial with a pre-test–post-test design was conducted involving 33 sedentary adults randomly allocated to a VR exercise group, a traditional exercise group, or a control group ( n = 11 per group). The intervention groups participated in supervised exercise programs three times weekly for eight weeks, whereas the control group maintained their usual lifestyle. Outcome measures included concentration, hand and foot reaction time, flexibility, and multidirectional balance. Data were analyzed using mixed-design repeated-measures ANOVA, followed by baseline-adjusted ANCOVA and Benjamini–Hochberg false discovery rate corrections. Significant Group × Time interaction effects were observed for concentration, hand reaction time, foot reaction time, and flexibility (all q ≤ 0.021), but not for bilateral, dominant-leg, or non-dominant-leg balance (all q > 0.05). Concentration and hand reaction time improved most in the VR group, which outperformed both the traditional exercise and control groups, with the traditional exercise group also outperforming control ( p < 0.05). Foot reaction time improved similarly in the VR and traditional exercise groups ( p < 0.05), both outperforming control, with no significant difference between the two intervention groups ( p > 0.05). Flexibility was maintained in the intervention groups, whereas a decline was observed in the control group ( p < 0.05). VR-based exercise appears effective for enhancing concentration and reaction performance in sedentary adults and may help preserve flexibility during physical inactivity. While balance outcomes remained unchanged, VR-based exercise showed significantly greater improvement than traditional exercise in concentration and hand reaction time in this sample; however, given the small sample size and exploratory nature of the trial, these comparative findings should be interpreted with caution and require confirmation in adequately powered trials. ClinicalTrials.gov NCT07567144, registered on 2026-04-21, retrospectively registered.",
+        "date": "2026-09-05",
+        "url": "https://doi.org/10.1186/s13102-026-02022-y",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1186/s13102-026-02022-y",
+        "openAlexId": "W7208835846",
+        "subfield": {
+          "id": "subfields/1709",
+          "name": "Human-Computer Interaction"
+        },
+        "field": {
+          "id": "fields/17",
+          "name": "Computer Science"
+        },
+        "topic": {
+          "id": "T10648",
+          "name": "Virtual Reality Applications and Impacts"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Halil İbrahim ÇAKIR",
+          "Esranur Terzi"
+        ],
+        "venue": "BMC Sports Science Medicine and Rehabilitation",
+        "indexedDate": "2026-09-06",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8044,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.7101,
+          "total": 0.8555,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.5,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.2041
+          },
+          "everydayDomains": [
+            "health",
+            "body",
+            "mind"
+          ],
+          "subfieldKey": "subfields/1709",
+          "evidence": [
+            "total 0.8555 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.80 = P 0.84 − 0.45×t 0.00 − 0.15×j 0.20",
+            "outcome verbs (v 1.00): improved, improves, improvement, outperformed",
+            "recognisable subjects (s 0.50): adults (title, ×2)",
+            "quantified effect (q 1): p-value, sample size",
+            "title concreteness (c 0.80): −0.2 title is 19 words",
+            "jargon density (j 0.20): 7/343 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — health, body, mind",
+            "everyday terms (6): health, exercise, physical activity, sedentary, concentration, motivation",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-06)",
+            "credibility 0.71 = 0.40×c1 1.00 + 0.25×c2 0.26 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in BMC Sports Science Medicine and Rehabilitation",
+            "c2 0.26: n = 11",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1186/s13102-026-02022-y)"
+      },
+      "summary": {
+        "souhrn": "Cvičení ve virtuální realitě zlepšilo soustředění a rychlost reakce ruky víc než běžné cvičení. Autoři zapojili 33 dospělých se sedavým způsobem života, tedy jedenáct lidí v každé ze tří skupin: virtuální realita, běžné cvičení a srovnávací skupina, která nic neměnila a žila dál jako dosud. Obě cvičící skupiny chodily na hodiny třikrát týdně po dobu osmi týdnů. Reakce nohou se u obou zlepšila zhruba stejně, ohebnost si obě udržely, zatímco u nezapojených klesla; rovnováha se nezměnila nikde. Při jedenácti lidech na skupinu jde ale o předběžné zjištění, které musí potvrdit větší pokus.",
+        "podrobneVysvetleni": "Autoři pracovali s 33 dospělými, kteří vedou sedavý život. Náhodně je rozdělili do tří skupin po jedenácti. První cvičila ve virtuální realitě (anglicky virtual reality, VR). To znamená s brýlemi, které promítají počítačem vytvořené prostředí a nutí člověka reagovat pohybem. Druhá skupina chodila na běžné cvičení. Třetí nic neměnila a sloužila jen pro srovnání. Obě cvičící skupiny měly hodiny třikrát týdně pod dohledem, celkem osm týdnů. Před začátkem a po skončení vědci měřili soustředění, rychlost reakce ruky a nohy, ohebnost a rovnováhu ve třech variantách stoje.\n\nRozdíly mezi skupinami se ukázaly u soustředění, u reakce ruky i nohy a u ohebnosti. Nejvíc se zlepšila skupina s virtuální realitou, a to v soustředění a v reakci ruky. Předstihla jak běžné cvičení, tak nezapojenou skupinu. Reakce nohou se zlepšila v obou cvičících skupinách zhruba stejně. Ohebnost zůstala u cvičících na stejné úrovni, u nezapojených se za osm týdnů zhoršila. Rovnováha se nezměnila v žádné skupině.\n\nVysvětlení podle autorů je jednoduché. Ve virtuální realitě člověk nejen cvičí, ale musí zároveň sledovat, co se kolem něj děje, a rychle na to reagovat. Trénuje se tak tělo i pozornost naráz. Autoři sami upozorňují, že šlo o průzkumný pokus a že srovnání obou způsobů cvičení musí potvrdit větší studie.",
+        "procJeToDulezite": "Kdo tráví většinu dne vsedě, ztrácí nejen kondici, ale i pozornost a rychlost reakcí — a tenhle pokus naznačuje, že pohyb spojený s reagováním na okolí může pomoci obojímu najednou.",
+        "poznamkaKOmezenim": "Ve studii bylo dohromady jen 33 lidí, tedy jedenáct v každé skupině, sami autoři ji označují za průzkumnou a její zaregistrování proběhlo až dodatečně, takže výsledky je třeba brát jako předběžné."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 19,
+              "end": 21
+            },
+            "matchedText": "33",
+            "messageCs": "Číslo „33“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „33 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[19,21]: 33"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 96,
+              "end": 291
+            },
+            "matchedText": "Autoři zapojili 33 dospělých se sedavým způsobem života, tedy jedenáct lidí v každé ze tří skupin: virtuální realita, běžné cvičení a srovnávací skupina, která nic neměnila a žila dál jako dosud.",
+            "messageCs": "Tato věta má 31 slov a je moc dlouhá: „Autoři zapojili 33 dospělých se sedavým způsobem života, tedy jedenáct lidí v k…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[96,291]: Autoři zapojili 33 dospělých se sedavým způsobem života, tedy jedenáct lidí v každé ze tří skupin: virtuální realita, běžné cvičení a srovnávací skupina, která nic neměnila a žila dál jako dosud."
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "arxiv:2609.05334",
+        "title": "Lightweight Vision Transformer Compression for On-Device Plant Disease Detection in Resource-Constrained Agricultural Field Conditions",
+        "abstract": "Chilli (Capsicum annuum) is one of India's most economically significant crops, yet its productivity is persistently threatened by diseases that are difficult to identify without expert intervention. While Vision Transformers (ViTs) have achieved high classification accuracy, their large computational footprint makes deployment on resource constrained devices challenging. Existing compression approaches typically address pruning, quantization, and knowledge distillation in isolation, leaving the potential benefits and interactions of their combined application insufficiently explored. We propose a unified Vision Transformer compression framework that combines Hessian-Balanced Adaptive Block Pruning (H-BAC), guided by second-order sensitivity estimation, with quantization and attention-based knowledge distillation. To systematically identify the most effective configuration within each compression family, each technique is first evaluated independently through controlled ablation studies, after which the best-performing components are integrated into a sequential deployment pipeline tailored to real-world agricultural constraints. On a chilli 3-class village-split dataset with a genuine cross-village, cross-device out-of-distribution test split, the resulting compressed models match or exceed the 95.13% FP32 baseline's accuracy, alongside 74-98% model size reduction, and the fully integrated compression pipeline achieves a 54.5x size reduction (327.42 MB to 6.01 MB) at 95.13 +/- 2.32% accuracy across four tested configurations. A direct comparison further reveals that, on this dataset, a directly-trained student of the same final size, without pruning or distillation, reaches comparable accuracy of 94.87%, at the same 6.01 MB INT8 size, indicating where H-BAC and knowledge distillation are, and are not yet shown to be, worth their computational cost.",
+        "date": "2026-09-04",
+        "url": "https://arxiv.org/abs/2609.05334v1",
+        "licence": "arxiv-nonexclusive",
+        "source": "arxiv",
+        "doi": null,
+        "openAlexId": null,
+        "subfield": {
+          "id": "arxiv:cs.CV",
+          "name": "cs.CV"
+        },
+        "field": null,
+        "topic": null,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://arxiv.org/pdf/2609.05334v1",
+        "isPreprint": true,
+        "isRetracted": false,
+        "authors": [
+          "Mahadev Sunil Kumar",
+          "Bhavika Gondi",
+          "Desaisetty Venkata Satya Sai Swapnith",
+          "Gangireddy Rahul Jogi",
+          "Sudheesh Manalil",
+          "Arnab Raha",
+          "Amitava Mukherjee",
+          "Parthasarathy Seethapathy",
+          "G. Gopakumar"
+        ],
+        "venue": "arXiv",
+        "indexedDate": "2026-09-04",
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8316,
+          "everydayRelevance": 1,
+          "freshness": 0.5714,
+          "credibility": 0.465,
+          "total": 0.7806,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.5394
+          },
+          "everydayDomains": [
+            "school",
+            "health",
+            "money",
+            "work",
+            "family",
+            "mind"
+          ],
+          "subfieldKey": "arxiv:cs.CV",
+          "evidence": [
+            "total 0.7806 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.83 = P 0.91 − 0.45×t 0.00 − 0.15×j 0.54",
+            "outcome verbs (v 0.75): reduction, detection (title, ×2)",
+            "recognisable subjects (s 1.00): students, plants (title, ×2), crops",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.54): 13/241 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 6 domain(s) — school, health, money, work, family, mind",
+            "everyday terms (8): student, students, disease, cost, costs, productivity, family, attention",
+            "freshness 0.57: 3 day(s) old (effective date 2026-09-04)",
+            "credibility 0.47 = 0.40×c1 0.40 + 0.25×c2 0.40 + 0.20×c3 0.80 + 0.15×c4 0.30",
+            "c1 0.40: preprint (arXiv)",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.80: open access without an open licence (repository copy)",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (arXiv:2609.05334)"
+      },
+      "summary": {
+        "souhrn": "Rozpoznat chorobu na listu papriky chilli umí spolehlivě jen odborník, a těch je v indických vesnicích málo. Programy, které to zvládají z fotografie, jsou ale často tak velké, že se do běžného telefonu nevejdou. Autoři proto vzali model typu Vision Transformer (anglicky Vision Transformer) — počítačový program, který se rozpoznávání obrázků naučí z tisíců příkladů — a zkusili ho zmenšit třemi způsoby najednou: odstraněním málo užitečných částí, zjednodušením vnitřních výpočtů a učením malého modelu podle velkého. Nejúspornější verze zabrala 6 MB místo původních 327 MB, tedy asi 55krát méně, a přesnost zůstala na 95 %, což je přibližně devatenáct správně určených snímků z dvaceti. Zajímavější je druhé zjištění: stejně malý model, natrénovaný přímo a bez těchto triků, dosáhl 94,87 %, tedy prakticky téhož výsledku — složitá komprese se tu tak nevyplatila.",
+        "podrobneVysvetleni": "Autoři pracovali s fotografiemi listů papriky chilli. Snímky rozdělili do tří skupin podle zdravotního stavu listu. Testování si přitom nastavili záměrně nepohodlně. Model se učil na fotkách z jedněch vesnic a z jedněch přístrojů. Ověřovali ho na fotkách z jiných vesnic a jiných fotoaparátů. Tak se pozná, jestli obstojí i mimo pěkně připravené podmínky. Zmenšovali třemi cestami. První odstraňuje z modelu bloky, které k výsledku přispívají nejméně; k jejich výběru autoři použili matematický odhad citlivosti (metoda H-BAC). Druhá nahrazuje vnitřní čísla modelu hrubší, ale úspornější podobou. Třetí nechá velký model učit malý, který se od něj snaží přebírat i to, čemu na obrázku věnuje pozornost. Každý postup nejprve vyzkoušeli samostatně. Nejlepší varianty pak zapojili za sebe. Velikost modelu spadla podle nastavení o 74 až 98 procent, tedy na čtvrtinu až na padesátinu. Úplně zmenšená verze měřila 6 MB proti původním 327 MB. Přesnost zůstala na 95,13 % s rozptylem 2,32 procentního bodu, což je asi devatenáct správně určených snímků z dvaceti — stejně jako u nezmenšeného modelu. Pak přišel střízlivý test. Autoři natrénovali stejně malý model přímo, bez prořezávání a bez učitele. Dosáhl 94,87 %, tedy asi jednoho chybného určení z dvaceti, prakticky jako složitější postup. Na tomto souboru dat se náročná komprese nevyplatila.",
+        "procJeToDulezite": "Pokud takový model běží přímo v telefonu, může pěstitel poznat chorobu na poli i bez internetu a bez odborníka. A pro každého, kdo se o umělou inteligenci zajímá, je tu poctivá lekce: složitější postup nemusí být lepší než jednoduchý.",
+        "poznamkaKOmezenim": "Jde o preprint, tedy práci zveřejněnou před recenzním řízením, navíc jen na jedné plodině a třech skupinách snímků, takže rozdíl mezi 95,13 % a 94,87 % je v rámci naměřeného rozptylu a výsledek je zatím předběžný."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 213,
+              "end": 519
+            },
+            "matchedText": "Autoři proto vzali model typu Vision Transformer (anglicky Vision Transformer) — počítačový program, který se rozpoznávání obrázků naučí z tisíců příkladů — a zkusili ho zmenšit třemi způsoby najednou: odstraněním málo užitečných částí, zjednodušením vnitřních výpočtů a učením malého modelu podle velkého.",
+            "messageCs": "Tato věta má 40 slov a je moc dlouhá: „Autoři proto vzali model typu Vision Transformer (anglicky Vision Transformer) …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[213,519]: Autoři proto vzali model typu Vision Transformer (anglicky Vision Transformer) — počítačový program, který se rozpoznávání obrázků naučí z tisíců příkladů — a zkusili ho zmenšit třemi způsoby najednou: odstraněním málo užitečných částí, zjednodušením vnitřních výpočtů a učením malého modelu podle velkého."
+          },
+          {
+            "block": "souhrn",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:transformer",
+            "span": {
+              "start": 250,
+              "end": 261
+            },
+            "matchedText": "Transformer",
+            "messageCs": "Termín „transformer“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:transformer @ souhrn[250,261]: Transformer"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 242,
+              "end": 262
+            },
+            "matchedText": " Vision Transformer ",
+            "messageCs": "Text opisuje původní název článku („ Vision Transformer “). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[242,262]:  Vision Transformer "
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7208827010",
+        "title": "Occupational Stress Factors and Employee Engagement among Non-Academic Staff of Universities in Katsina State",
+        "abstract": "Occupational stress remains an important organisational concern because workplace demands, working conditions and interpersonal experiences can influence employees' wellbeing and engagement. However, limited empirical evidence exists on whether occupational stress factors predict employee engagement among non-academic staff of universities in Katsina State. This study examined the effects of workload, work environment and interpersonal relations on employee engagement among non-academic staff of universities in Katsina State. A quantitative approach and descriptive survey design were adopted. The population comprised 3,251 non-academic staff from Federal University Dutsin-Ma, Umaru Musa Yar'adua University and Al-Qalam University, Katsina. A sample of 343 respondents was determined using the Krejcie and Morgan approach and selected through proportionate allocation and simple random sampling. Primary data were collected using a structured questionnaire and analysed using descriptive statistics, Pearson correlation and Ordinary Least Squares regression at the 5% significance level. Findings showed that workload, work environment and interpersonal relations had positive but statistically insignificant effects on employee engagement. The regression model explained 2.1% of the variance in engagement and was not statistically significant. These findings provide context-specific evidence that the occupational stress factors examined may not be the primary determinants of engagement among non-academic university staff in Katsina State. The study recommends continued attention to working conditions while prioritising factors such as leadership, organisational culture, job security, reward systems, psychological capital and career development in future research and engagement strategies.",
+        "date": "2026-09-05",
+        "url": "https://doi.org/10.67523/auijmss.v1i1.011",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.67523/auijmss.v1i1.011",
+        "openAlexId": "W7208827010",
+        "subfield": {
+          "id": "subfields/1710",
+          "name": "Information Systems"
+        },
+        "field": {
+          "id": "fields/17",
+          "name": "Computer Science"
+        },
+        "topic": {
+          "id": "T14103",
+          "name": "Educational Management and Quality"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Aliyu Sani Ibrahim",
+          "Aminu Ibrahim Lawal"
+        ],
+        "venue": "Azman University International Journal of Management and Social Sciences",
+        "indexedDate": "2026-09-06",
+        "referencedWorksCount": 18,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.5929,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.6635,
+          "total": 0.7643,
+          "explainDetail": {
+            "v": 0.25,
+            "s": 0.5,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.1304
+          },
+          "everydayDomains": [
+            "school",
+            "work",
+            "mind"
+          ],
+          "subfieldKey": "subfields/1710",
+          "evidence": [
+            "total 0.7643 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.59 = P 0.61 − 0.45×t 0.00 − 0.15×j 0.13",
+            "outcome verbs (v 0.25): predicts",
+            "recognisable subjects (s 0.50): employees (title, ×2)",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.13): 3/230 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — school, work, mind",
+            "everyday terms (8): university, work, workplace, employee, job, attention, stress, wellbeing",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-06)",
+            "credibility 0.66 = 0.40×c1 1.00 + 0.25×c2 0.63 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Azman University International Journal of Management and Social Sciences",
+            "c2 0.63: n = 343",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.67523/auijmss.v1i1.011)"
+      },
+      "summary": {
+        "souhrn": "Pracovní stres nemusí být hlavním důvodem, proč je někdo v práci zapálený a jiný vyhaslý. Vědci se ve nigerijském státě Katsina zaměřili na neakademické zaměstnance tří univerzit, tedy na administrativu, techniky a správu. Z celkového počtu 3 251 takových zaměstnanců, což je celý personál těchto škol mimo vyučující, oslovili dotazníkem 343 lidí, tedy asi každého desátého. Množství práce, kvalita prostředí i vztahy s kolegy sice se zapálením pro práci souvisely mírně kladně, rozdíly ale byly tak malé, že je mohla způsobit náhoda. Všechny tři věci dohromady vysvětlily jen 2,1 % rozdílů mezi lidmi — zbylých téměř 98 % tedy stojí na něčem jiném, co studie neměřila.",
+        "podrobneVysvetleni": "Šlo o dotazníkové šetření. Zkoumaný celek tvořilo 3 251 neakademických zaměstnanců tří univerzit ve státě Katsina. Konkrétně to byly Federal University Dutsin-Ma, Umaru Musa Yar'adua University a Al-Qalam University. Podle běžně používaného výpočtu velikosti vzorku z nich autoři vybrali 343 lidí, tedy asi každého desátého. Školy byly zastoupené poměrně podle své velikosti a jednotliví lidé se vybírali náhodně. Dotazník sledoval tři věci: kolik práce lidé mají, v jakém prostředí pracují a jak vycházejí s kolegy. Proti tomu autoři postavili míru zapálení pro práci (employee engagement), tedy jak moc se do práce opírají a jak jsou jí oddaní. Data pak zpracovali korelací a regresí. To jsou statistické postupy, které měří, nakolik jedna věc souvisí s druhou. Výsledek: všechny tři faktory šly stejným směrem. Kdo měl lepší podmínky, byl o něco víc zapálený. Rozdíly ale byly natolik malé, že je klidně mohla způsobit náhoda. Celý model vysvětlil 2,1 % rozdílů v zapálení mezi jednotlivými zaměstnanci. To je hodně málo — zbylých téměř 98 % má příčiny, které se v tomhle šetření vůbec neobjevily. Autoři z toho vyvozují, že u téhle skupiny lidí zapálení pro práci nestojí především na stresu z pracovních podmínek. Doporučují dál se dívat na styl vedení, firemní kulturu, jistotu zaměstnání, odměňování a možnosti kariérního postupu.",
+        "procJeToDulezite": "Zlepšit lidem pracovní podmínky se vyplatí samo pro sebe, ale podle téhle studie to nemusí být páka, která zvedne jejich chuť do práce. Ta pravděpodobně závisí víc na vedení, jistotě místa a možnosti někam se posunout.",
+        "poznamkaKOmezenim": "Jde o jednorázový dotazník ze tří univerzit v jednom nigerijském státě a výsledek je statisticky nevýznamný, což znamená spíš „nenašli jsme souvislost\" než „souvislost neexistuje\"."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 50,
+              "end": 55
+            },
+            "matchedText": "3 251",
+            "messageCs": "Číslo „3 251“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „3 251 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[50,55]: 3 251"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:korelace",
+            "span": {
+              "start": 667,
+              "end": 675
+            },
+            "matchedText": "korelací",
+            "messageCs": "Termín „korelace“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:korelace @ podrobneVysvetleni[667,675]: korelací"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:regrese",
+            "span": {
+              "start": 678,
+              "end": 685
+            },
+            "matchedText": "regresí",
+            "messageCs": "Termín „regrese“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:regrese @ podrobneVysvetleni[678,685]: regresí"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1040,
+              "end": 1044
+            },
+            "matchedText": "98 %",
+            "messageCs": "Číslo „98 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „98 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1040,1044]: 98 %"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 119,
+              "end": 128
+            },
+            "matchedText": " Katsina ",
+            "messageCs": "Text opisuje původní název článku („ Katsina “). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[119,128]:  Katsina "
+          },
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 375,
+              "end": 534
+            },
+            "matchedText": "Množství práce, kvalita prostředí i vztahy s kolegy sice se zapálením pro práci souvisely mírně kladně, rozdíly ale byly tak malé, že je mohla způsobit náhoda.",
+            "messageCs": "Tato věta má 26 slov a je moc dlouhá: „Množství práce, kvalita prostředí i vztahy s kolegy sice se zapálením pro práci…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[375,534]: Množství práce, kvalita prostředí i vztahy s kolegy sice se zapálením pro práci souvisely mírně kladně, rozdíly ale byly tak malé, že je mohla způsobit náhoda."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 140,
+              "end": 150
+            },
+            "matchedText": " Universit",
+            "messageCs": "Text opisuje původní název článku („ Universit“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[140,150]:  Universit"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 182,
+              "end": 192
+            },
+            "matchedText": " Universit",
+            "messageCs": "Text opisuje původní název článku („ Universit“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[182,192]:  Universit"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 204,
+              "end": 214
+            },
+            "matchedText": " Universit",
+            "messageCs": "Text opisuje původní název článku („ Universit“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[204,214]:  Universit"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7208819183",
+        "title": "CampusGuardAI: An AI-Powered Real-Time Anomaly Detection System For Enhanced Campus Security",
+        "abstract": "College and school campuses deserve next generation, proactive security systems that can anticipate incidents before they become rampant. Old solutions like CCTV cameras are still largely passive, recording for post facto analysis and depending on humans to watch it, which is error prone and slow. Introducing CampusGuardAI, an autonomous intelligent real-time surveillance framework driven by AI and computer vision. Built on deep learning models, YOLO for object detection and PoseNet for pose estimation, it detects outliers such as fights, trespassing, loitering in restricted areas, and abnormal behavior , including sleeping on duty. When it’s detected, the system sends automated, multi-channel alarms via a central app, SMS and email, so security response is fast. A unified dashboard aggregates data from disparate sources, giving administrators and security personnel a real-time comprehensive operational view. Designed for privacy, CampusGuardAI employs posture- and skeleton-based analysis rather than facial recognition, making it data protection-compliant. Experimental tests confirm detection accuracy and sub-second latency, demonstrating the system’s effectiveness in improving situational awareness and creating a safer campus.",
+        "date": "2026-09-05",
+        "url": "https://doi.org/10.5281/zenodo.22343753",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.5281/zenodo.22343753",
+        "openAlexId": "W7208819183",
+        "subfield": {
+          "id": "subfields/1702",
+          "name": "Artificial Intelligence"
+        },
+        "field": {
+          "id": "fields/17",
+          "name": "Computer Science"
+        },
+        "topic": {
+          "id": "T11512",
+          "name": "Anomaly Detection Techniques and Applications"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Vipul Dubey",
+          "Archana Sharma",
+          "Joel Stephen Mathew",
+          "Smarth Jindal",
+          "Vansh Rathor"
+        ],
+        "venue": "International journal for current research and techniques.",
+        "indexedDate": "2026-09-06",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.5857,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.7635,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.25,
+            "q": 0,
+            "c": 1,
+            "t": 0,
+            "j": 0.1786
+          },
+          "everydayDomains": [
+            "sleep",
+            "school",
+            "screens",
+            "body"
+          ],
+          "subfieldKey": "subfields/1702",
+          "evidence": [
+            "total 0.7635 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.59 = P 0.61 − 0.45×t 0.00 − 0.15×j 0.18",
+            "outcome verbs (v 1.00): slows, detected, detects, detection (title, ×2)",
+            "recognisable subjects (s 0.25): schools",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.18): 3/168 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 4 domain(s) — sleep, school, screens, body",
+            "everyday terms (5): sleeping, school, schools, app, posture",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-06)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in International journal for current research and techniques.",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.5281/zenodo.22343753)"
+      },
+      "summary": {
+        "souhrn": "Kamery na školních chodbách dnes většinou jen nahrávají. Autoři systému CampusGuardAI chtějí z nich udělat něco, co si problému všimne samo. Program sleduje obraz dvěma nástroji: jeden v záběru hledá lidi a předměty (YOLO), druhý z každé postavy udělá jednoduchou „panáčkovou\" kostru z bodů a spojnic (PoseNet). Z pohybu takové kostry pak odhaduje potyčku, vstup do zakázané zóny, dlouhé bezdůvodné postávání nebo spánek při službě. Autoři uvádějí, že systém v testech reagoval do jedné sekundy a že tváře záměrně nerozpoznává.",
+        "podrobneVysvetleni": "Autoři postavili systém ze dvou hotových stavebních kamenů. YOLO je model, který v obraze rychle najde objekty — člověka, batoh, auto. PoseNet z každé postavy udělá schéma z bodů a spojnic, tedy jakousi kostru. Nad těmito kostrami pak běží pravidla. Rychlé vzájemné pohyby dvou postav blízko sebe označí jako potyčku. Nehybnou postavu v sedě nebo v leže na pracovišti vyhodnotí jako spánek při službě. Dlouhý pobyt v uzavřené zóně bere jako neoprávněný vstup nebo bezdůvodné vyčkávání. Když pravidlo zareaguje, systém pošle upozornění hned několika cestami: do aplikace, přes SMS a e-mailem. Všechno se sbíhá na jedné obrazovce, kde má ostraha přehled o všech kamerách.\n\nZajímavý je přístup k soukromí. Systém nepracuje s rozpoznáváním tváří. Vychází jen z držení těla a z pohybu kostry. Nezjišťuje tedy, kdo je na záznamu — jen co ten člověk dělá. To autoři uvádějí jako důvod, proč je jejich řešení slučitelné s ochranou osobních údajů.\n\nZ výsledků zmiňují dvě věci: rozpoznávání fungovalo a odezva byla pod jednou sekundou. Konkrétní čísla v abstraktu chybí. Není jasné, kolik nahrávek systém dostal ani za jakých podmínek se testoval. Zůstává tak popis návrhu a první zkouška. Důkaz, že by systém obstál v běžném školním provozu, to není.",
+        "procJeToDulezite": "Školy a univerzity o podobných systémech reálně uvažují a rodičů i učitelů se to přímo dotýká. Právě rozdíl mezi „počítač pozná tvář\" a „počítač pozná jen držení těla\" rozhoduje o tom, kolik soukromí ve škole zůstane.",
+        "poznamkaKOmezenim": "Práce vyšla v málo známém časopise, popisuje spíš návrh systému než jeho ověření v praxi a u tvrzení o přesnosti a rychlosti neuvádí žádná konkrétní čísla ani rozsah testů."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "pass",
+        "hard": [],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 72,
+              "end": 85
+            },
+            "matchedText": "CampusGuardAI",
+            "messageCs": "Text opisuje původní název článku („CampusGuardAI“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[72,85]: CampusGuardAI"
+          },
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 141,
+              "end": 311
+            },
+            "matchedText": "Program sleduje obraz dvěma nástroji: jeden v záběru hledá lidi a předměty (YOLO), druhý z každé postavy udělá jednoduchou „panáčkovou\" kostru z bodů a spojnic (PoseNet).",
+            "messageCs": "Tato věta má 26 slov a je moc dlouhá: „Program sleduje obraz dvěma nástroji: jeden v záběru hledá lidi a předměty (YOL…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[141,311]: Program sleduje obraz dvěma nástroji: jeden v záběru hledá lidi a předměty (YOLO), druhý z každé postavy udělá jednoduchou „panáčkovou\" kostru z bodů a spojnic (PoseNet)."
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7208806523",
+        "title": "Secure and scalable client pre-filtering and authentication framework for federated learning systems",
+        "abstract": "Abstract A federated learning system, which emphasises decentralisation, allows cooperative model training to ensure the privacy and security of the data. Client authentication is an important factor in a decentralised system to prevent unauthorised access and unauthorised users from adding exceptions or irrelevant facts during model preparation. Due to which model becomes weak, poisoned, and inconsistent. The proposed framework adopts a two-stage client verification pipeline. In the first stage, probabilistic data structures serve as a lightweight admission pre-filter that screens candidate clients before any cryptographic operation is performed: a Bloom Filter (BF) is used for static client populations, and an Adaptive Quotient Filter (AQF) is used for dynamic client populations, enabling fast membership screening both before base-model distribution and during collection of gradient updates. In the second stage, clients admitted by the pre-filter undergo ECDSA-based signature verification, which constitutes the actual authentication step and compensates for the residual false positives inherent to probabilistic filtering. This design allows the server to reject the majority of unauthorized requests cheaply via BF/AQF while reserving expensive cryptographic verification for genuine candidates. The dataset used in this study is the IP Address Geographic Profiles dataset, comprising 129,857 entries. Evaluation covered memory utilisation, lookup time, and false-positive behaviour of BF and AQF against six alternative data structures. BF and AQF reduced server-side memory usage by up to 90% relative to a Trie (e.g., 1.9 MB and 3 MB versus 23.2 MB for 100,000 password-derived credentials), at the cost of a modest lookup-time overhead relative to hash-based structures (0.054–0.064 s versus 0.003–0.006 s for a HashSet on 100,000 records). At the protocol level, combining BF/AQF pre-filtering with ECDSA verification reduced authentication messages and communication cost by roughly 30% relative to ECDSA-only authentication under a simulated environment with 30% Byzantine clients, with the gain compounding over rounds (communication cost falling from 125,000 KB to 87,537.5 KB over 50 rounds). The study concluded that the proposed model provides a secure and scalable client screening and authentication framework by combining BF/AQF with ECDSA-based signature verification in a decentralised environment where multiple clients participate from different regions. Experimental results present significant changes in memory usage, performance analysis, and resistance to unauthorised clients.",
+        "date": "2026-09-05",
+        "url": "https://doi.org/10.1038/s41598-026-68081-w",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1038/s41598-026-68081-w",
+        "openAlexId": "W7208806523",
+        "subfield": {
+          "id": "subfields/1702",
+          "name": "Artificial Intelligence"
+        },
+        "field": {
+          "id": "fields/17",
+          "name": "Computer Science"
+        },
+        "topic": {
+          "id": "T10764",
+          "name": "Privacy-Preserving Technologies in Data"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Prince Rana",
+          "Amritpal Singh"
+        ],
+        "venue": "Scientific Reports",
+        "indexedDate": "2026-09-06",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.4827,
+          "everydayRelevance": 0.9333,
+          "freshness": 0.8571,
+          "credibility": 0.895,
+          "total": 0.734,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 0,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.2156
+          },
+          "everydayDomains": [
+            "health",
+            "money",
+            "mind"
+          ],
+          "subfieldKey": "subfields/1702",
+          "evidence": [
+            "total 0.7340 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.48 = P 0.52 − 0.45×t 0.00 − 0.15×j 0.22",
+            "outcome verbs (v 0.50): reduced, prevents",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.22): 8/371 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.93: 3 domain(s) — health, money, mind",
+            "everyday terms (4): screening, cost, costs, memory",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-06)",
+            "credibility 0.90 = 0.40×c1 1.00 + 0.25×c2 1.00 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Scientific Reports",
+            "c2 1.00: n = 100000",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1038/s41598-026-68081-w)"
+      },
+      "summary": {
+        "souhrn": "Server, který trénuje model společně s mnoha vzdálenými počítači, musí u každého ověřit, že tam patří. Autoři navrhli dvoustupňovou kontrolu: nejdřív levný a rychlý předfiltr, teprve pak náročné ověření digitálního podpisu. Filtry zkoušeli na souboru 129 857 záznamů o zeměpisném původu IP adres a srovnávali je se šesti jinými způsoby ukládání seznamu. U 100 000 přihlašovacích údajů zabraly 1,9 MB a 3 MB paměti serveru, oproti 23,2 MB u struktury zvané trie — tedy asi o devět desetin méně. V simulaci, kde se třetina klientů chovala nepoctivě, ubylo ověřovacích zpráv i přenesených dat asi o třicet procent.",
+        "podrobneVysvetleni": "Federované učení (federated learning) znamená, že se model učí na mnoha zařízeních zvlášť. Na server pak putují jen dílčí úpravy, ne samotná data. Výhodou je soukromí, nevýhodou to, že se do trénování může vetřít někdo nezvaný a model pokazit. Obranou je digitální podpis. Ověřit podpis u každého žadatele ale server stojí čas a výpočetní výkon.\n\nAutoři proto předřadili předfiltr. Bloomův filtr (Bloom Filter) a jeho pružnější varianta pro měnící se skupiny klientů (Adaptive Quotient Filter) umí velmi rychle a s malou pamětí odpovědět, zda je klient na seznamu povolených. Občas propustí i někoho cizího; to je běžná vlastnost takových filtrů. Tyhle omyly zachytí druhý stupeň, tedy ověření podpisu metodou ECDSA.\n\nMěření vypadalo takto. Na 100 000 přihlašovacích údajů potřebovaly filtry 1,9 MB a 3 MB paměti. Struktura zvaná trie na totéž spotřebovala 23,2 MB, tedy asi o devět desetin víc. Vyhledávání bylo naopak pomalejší: 0,054 až 0,064 sekundy proti 0,003 až 0,006 sekundy u běžné hašovací tabulky (HashSet). V absolutních číslech jde ale jen o setiny sekundy.\n\nV simulovaném prostředí, kde se třetina klientů chovala nepoctivě, ubylo ověřovacích zpráv asi o třicet procent. Za 50 kol trénování klesl objem přenesených dat ze 125 000 KB na 87 537,5 KB, což je právě ta necelá třetina. Úspora se s dalšími koly nasčítává.",
+        "procJeToDulezite": "Společné trénování modelů na cizích zařízeních se dnes používá i tam, kde se citlivá data nesmí posílat pryč, například u zdravotních nebo bankovních aplikací. Pokud jde ověřování účastníků udělat s menší pamětí a menším přenosem dat, zvládne server obsloužit víc klientů se stejným vybavením.",
+        "poznamkaKOmezenim": "Jde o výsledky z jednoho datového souboru a ze simulovaného prostředí, ne z reálného provozu, takže úsporu asi třiceti procent je zatím třeba brát jako předběžnou."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 931,
+              "end": 936
+            },
+            "matchedText": "0,054",
+            "messageCs": "Číslo „0,054“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „0,054 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[931,936]: 0,054"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 960,
+              "end": 965
+            },
+            "matchedText": "0,003",
+            "messageCs": "Číslo „0,003“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „0,003 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[960,965]: 0,003"
+          }
+        ],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 382,
+              "end": 575
+            },
+            "matchedText": "Bloomův filtr (Bloom Filter) a jeho pružnější varianta pro měnící se skupiny klientů (Adaptive Quotient Filter) umí velmi rychle a s malou pamětí odpovědět, zda je klient na seznamu povolených.",
+            "messageCs": "Tato věta má 30 slov a je moc dlouhá: „Bloomův filtr (Bloom Filter) a jeho pružnější varianta pro měnící se skupiny kl…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[382,575]: Bloomův filtr (Bloom Filter) a jeho pružnější varianta pro měnící se skupiny klientů (Adaptive Quotient Filter) umí velmi rychle a s malou pamětí odpovědět, zda je klient na seznamu povolených."
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-09-07T09:29:25.142Z",
+  "generatedOn": "2026-09-07",
+  "schemaVersion": 1
+}
