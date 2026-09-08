@@ -1,0 +1,761 @@
+{
+  "date": "2026-09-08",
+  "categoryKey": "health-medicine",
+  "categoryLabel": "Zdraví a medicína",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7210287624",
+        "title": "Copenhagen longitudinal study on quality of life in a young adult population with gliomas",
+        "abstract": "Abstract Background Patients diagnosed with glioma in the brain are prone to lowered quality of life (QoL). The risk of neurological symptoms and emotional burden may restrict participation in everyday life.The glioma diagnosis is considered chronic with a limited overall survival rate, which is particularly concerning for adolescent and young adults (AYA). Methods In a longitudinal and prospective study with consecutive inclusion, we followed the QoL in glioma patients aged 18–35 ( n = 46). Assessment was conducted online with the self-report measures Functional Assessment of Cancer Treatment-Brain (FACT-Br) and Major Depression Inventory (MDI). The assessment was performed consecutively pre- and postoperatively four times per year. Results On group level we found that the higher burden of pain, lack of energy and greater burden of seizures and decreased subjective cognitive functioning, significantly predicted the total level of QoL. Tumor grade, time since surgery, sex or number of neurosurgical interventions were not found to significant predict the overall QoL. Conclusion The results underline the importance of optimizing the seizure control and treating pain sufficiently as well as assessing fatigue and cognitive functions. By routinely screening the patients with a standardized QoL-questionnaire, unmet needs can be clarified, and rehabilitation be optimized to prevent deterioration in QoL.",
+        "date": "2026-09-07",
+        "url": "https://doi.org/10.1007/s00701-026-07028-6",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1007/s00701-026-07028-6",
+        "openAlexId": "W7210287624",
+        "subfield": {
+          "id": "subfields/2716",
+          "name": "Genetics"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T10129",
+          "name": "Glioma Diagnosis and Treatment"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Katrine Arnkjær",
+          "Mette Bruun-Pedersen",
+          "Esben Meulengracht Flachs",
+          "Anne Norup",
+          "Jane Skjøth‐Rasmussen"
+        ],
+        "venue": "Acta Neurochirurgica",
+        "indexedDate": "2026-09-07",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9704,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.7489,
+          "total": 0.9273,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.197
+          },
+          "everydayDomains": [
+            "screens",
+            "energy",
+            "health"
+          ],
+          "subfieldKey": "subfields/2716",
+          "evidence": [
+            "total 0.9273 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.97 = P 1.00 − 0.45×t 0.00 − 0.15×j 0.20",
+            "outcome verbs (v 1.00): lowered, prevents, predicted, predicts, decreased",
+            "recognisable subjects (s 1.00): patients, adolescents, adults (title, ×2)",
+            "quantified effect (q 1): sample size",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.20): 4/203 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — screens, energy, health",
+            "everyday terms (9): online, energy, patient, patients, cancer, depression, pain, treatment, screening",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-07)",
+            "credibility 0.75 = 0.40×c1 1.00 + 0.25×c2 0.42 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Acta Neurochirurgica",
+            "c2 0.42: n = 46",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1007/s00701-026-07028-6)"
+      },
+      "summary": {
+        "souhrn": "Kvalitu života mladých dospělých s nádorem mozku neurčuje stupeň nádoru ani počet operací. Dánští vědci sledovali 46 pacientů ve věku 18 až 35 let — na takový výzkum jde o malý soubor mladých dospělých. Ti čtyřikrát ročně vyplňovali online dotazníky o svých potížích a náladě, před operací i po ní. Nejvíc rozhodovaly bolest, nedostatek energie, epileptické záchvaty a pocit, že myšlení nefunguje jako dřív. Podle autorů to znamená, že tlumení bolesti a záchvatů ovlivní každodenní život víc než údaje v lékařské zprávě.",
+        "podrobneVysvetleni": "Gliom je nádor mozku, který vyrůstá z jeho podpůrné tkáně (glioma). Lékaři ho berou jako dlouhodobé onemocnění s omezenou nadějí na uzdravení. U mladých lidí to autoři považují za obzvlášť tíživé. Chtěli proto zjistit, co u nich nejvíc rozhoduje o kvalitě života. Postupně zařadili 46 pacientů ve věku 18 až 35 let, tedy lidí na začátku dospělosti. Sledovali je před operací i po ní. Každý z nich čtyřikrát ročně vyplnil online dva zavedené dotazníky. První se ptá na potíže typické pro nádor mozku (FACT-Br). Druhý měří příznaky deprese (MDI). Na úrovni celé skupiny vyšly jako podstatné čtyři věci: bolest, nedostatek energie, epileptické záchvaty a pocit, že paměť a soustředění nefungují jako dřív. Čím větší byly tyto potíže, tím nižší byla celková kvalita života. Naopak stupeň nádoru, doba od operace, pohlaví ani počet absolvovaných operací výsledek nepředpověděly. Jinými slovy: co stojí v lékařské zprávě, nemusí odpovídat tomu, jak se člověk cítí. Autoři z toho vyvozují dvě doporučení. Pečlivě tlumit bolest a záchvaty. A pravidelně se ptát na únavu a na potíže s myšlením, nejlépe pomocí jednotného dotazníku. Nenaplněné potřeby se tak dají odhalit dřív, než se stav člověka zhorší.",
+        "procJeToDulezite": "Ukazuje to, kde má péče největší prostor pomoct: bolest, záchvaty a únavu lze řešit, i když se se samotným nádorem udělat mnoho nedá. A často stačí se pacienta pravidelně a systematicky ptát, jak se mu žije.",
+        "poznamkaKOmezenim": "Studie sledovala jen 46 lidí z jedné země, stavěla výhradně na jejich vlastních výpovědích a abstrakt neuvádí, jak silné jednotlivé souvislosti byly — jde tedy o orientační zjištění."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "pass",
+        "hard": [],
+        "soft": []
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7211873004",
+        "title": "Impact of Osteoporosis Therapy in Geriatric Proximal Femur Fractures: A Retrospective Analysis from the German Registry for Geriatric Trauma (ATR-DGU®)",
+        "abstract": "Background: Each year, hundreds of thousands of geriatric patients suffer proximal femur fractures, which often result in irreversible functional decline. Although anti-osteoporotic medications have been shown to reduce the incidence of fragility fractures, the effects of pharmacotherapy on fracture injury patterns, postoperative ambulatory capacity, and survival outcomes are not yet fully understood. Methods: We conducted a retrospective cohort study using the AltersTraumaRegister DGU ® (ATR-DGU), a multicenter prospective registry spanning 196 certified geriatric trauma centers in Germany, Austria, and Switzerland (2016 through 2024). We included patients aged 70 years or older with isolated, surgically treated proximal femur fractures and stratified them by documented use of osteoporosis medication before the index fracture (OM group) versus no pre-fracture therapy (no-OM group). Primary endpoints were mortality during the acute hospital stay and at 120-day follow-up, as well as walking ability—defined as any functional ambulation versus none—at 7 and 120 days postoperatively. The main secondary endpoint was fracture morphology. We fitted multivariable logistic and linear regression models adjusted for age, sex, ASA classification, and anticoagulation; walking-ability models were additionally adjusted for pre-fracture ambulatory status. Results: Of 70,386 patients (mean age, 84.4 years; 70.4% female), 15,771 (22.4%) were receiving osteoporosis medication prior to the index fracture. Patients in the OM group were frailer with worse ASA Scores (80.3% vs. 72.5% with an ASA ≥3) and lower ambulation (62.5% vs. 50.4% requiring at least two crutches or not able to ambulate out of the home environment). Patients in the OM group had a 19% higher chance of sustaining a trochanteric versus a femoral neck fracture than patients in the no-OM group (51.9% vs. 46.8%; adjusted odds ratio 1.19; 95% CI, 1.15 to 1.24; p < 0.001). Pre-existing therapy showed no association with mortality during the acute hospital stay (adjusted OR, 0.93; 95% CI, 0.86 to 1.01; p = 0.098) or with walking ability at 7 days (adjusted OR, 1.03; 95% CI, 0.98 to 1.09; p = 0.198). At the 120-day follow-up (n = 19,544 in the adjusted model follow-up cohort), slightly higher odds of death were observed in the frailer OM group (adjusted OR, 1.12; 95% CI, 1.01 to 1.25; p = 0.04), though the lower confidence bound approached unity. A trend toward improved ambulation was seen in the OM group at 120-day follow-up (adjusted OR, 1.11; 95% CI, 0.99 to 1.25; p = 0.074). Conclusions: Pre-existing osteoporosis therapy was associated with lower odds of femoral neck versus trochanteric fracture patterns. A trend toward improved ambulation accompanied a slightly increased risk of mortality in patients with pre-existing osteoporosis therapy at 120-day follow-up, although this must be weighed against substantial loss to follow-up and residual confounding. More research is needed to understand the effects of anti-osteoporosis medications on patients who do suffer hip fractures despite osteoporotic therapy.",
+        "date": "2026-09-07",
+        "url": "https://doi.org/10.3390/jcm15176916",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.3390/jcm15176916",
+        "openAlexId": "W7211873004",
+        "subfield": {
+          "id": "subfields/2746",
+          "name": "Surgery"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T11509",
+          "name": "Hip and Femur Fractures"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Henrik Teuber",
+          "Lisa Rockenbauer",
+          "Lara Zankena",
+          "H Schmidt",
+          "Christoph Erichsen",
+          "Kai Oliver Jensen",
+          "Hans-Christoph Pape",
+          "Christian Hierholzer"
+        ],
+        "venue": "Journal of Clinical Medicine",
+        "indexedDate": "2026-09-08",
+        "referencedWorksCount": 21,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7982,
+          "everydayRelevance": 1,
+          "freshness": 1,
+          "credibility": 0.895,
+          "total": 0.9046,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.75,
+            "q": 1,
+            "c": 0.5,
+            "t": 0,
+            "j": 0.262
+          },
+          "everydayDomains": [
+            "health",
+            "body",
+            "housing"
+          ],
+          "subfieldKey": "subfields/2746",
+          "evidence": [
+            "total 0.9046 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.80 = P 0.84 − 0.45×t 0.00 − 0.15×j 0.26",
+            "outcome verbs (v 1.00): reduces, increased, improved, lowers, associated with",
+            "recognisable subjects (s 0.75): patients, hospitals, homes",
+            "quantified effect (q 1): percentage, p-value, 95% CI, sample size",
+            "title concreteness (c 0.50): −0.3 no outcome verb or recognisable subject in the title; −0.2 title is 20 words",
+            "jargon density (j 0.26): 12/458 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — health, body, housing",
+            "everyday terms (9): patient, patients, mortality, hospital, therapy, medication, walking, home, homes",
+            "freshness 1.00: 0 day(s) old (effective date 2026-09-08)",
+            "credibility 0.90 = 0.40×c1 1.00 + 0.25×c2 1.00 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Journal of Clinical Medicine",
+            "c2 1.00: n = 70386",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.3390/jcm15176916)"
+      },
+      "summary": {
+        "souhrn": "Léky na řídnutí kostí zlomeninu u nejstarších lidí zcela nevyloučí — a podle německých dat mění i to, kde přesně se kost zlomí. Vědci prošli přes 70 000 záznamů operovaných zlomenin horního konce stehenní kosti u lidí od sedmdesáti let výše. Zhruba každý pátý pacient bral léky na osteoporózu už před pádem. U těchto lidí se kost o něco častěji lámala níž, v oblasti velkého chocholíku, místo v krčku stehenní kosti. Přežití během hospitalizace ani schopnost chůze týden po operaci se mezi skupinami nelišily; léčení pacienti však byli od začátku křehčí, což srovnání komplikuje.",
+        "podrobneVysvetleni": "Data pocházejí z registru úrazů starších lidí ATR-DGU. Zapojilo se do něj 196 pracovišť, tedy téměř dvě stě nemocnic v Německu, Rakousku a Švýcarsku. Vědci prošli záznamy z let 2016 až 2024. Vybrali pacienty od sedmdesáti let výše s operovanou zlomeninou horního konce stehenní kosti. Dohromady jich bylo 70 386, průměrně čtyřiaosmdesátiletých, sedm z deseti byly ženy. Léky na osteoporózu bralo před úrazem 15 771 z nich, tedy zhruba každý pátý. Léčená skupina byla na tom hůř už před pádem. Horší celkový zdravotní stav mělo 80,3 % z nich, tedy asi čtyři z pěti. Mezi neléčenými to bylo 72,5 %, tedy necelé tři čtvrtiny. Zhoršenou chůzi mělo 62,5 % léčených, tedy zhruba tři z pěti. U neléčených 50,4 %, tedy asi polovina. Po zohlednění věku, pohlaví a zdravotního stavu vyšel jeden rozdíl jasně. Léčení měli asi o pětinu vyšší pravděpodobnost zlomeniny pod krčkem než v krčku samotném (51,9 % proti 46,8 %). Úmrtnost v nemocnici se nelišila. Chůze týden po operaci také ne. Po 120 dnech byla úmrtnost léčených mírně vyšší, asi o desetinu, ale výsledek je na hranici průkaznosti. Naopak chůze u nich byla o něco lepší, tady ale rozdíl statisticky neobstál.",
+        "procJeToDulezite": "Zlomenina krčku nebo horního konce stehenní kosti u starého člověka často znamená trvalou ztrátu soběstačnosti, a tahle práce ukazuje, že léčba osteoporózy riziko snižuje, ale nevymaže. I léčený člověk potřebuje prevenci pádů a rehabilitaci.",
+        "poznamkaKOmezenim": "Jde o zpětný pohled do registru, nikoli o řízený pokus: léčení pacienti byli od začátku křehčí, u části chybí údaje po 120 dnech (data měl jen zlomek souboru), takže z výsledků nelze vyvozovat, že by léky samy o sobě úmrtnost zvyšovaly."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 698,
+              "end": 704
+            },
+            "matchedText": "50,4 %",
+            "messageCs": "Číslo „50,4 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „50,4 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[698,704]: 50,4 %"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 889,
+              "end": 895
+            },
+            "matchedText": "51,9 %",
+            "messageCs": "Číslo „51,9 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „51,9 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[889,895]: 51,9 %"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 902,
+              "end": 908
+            },
+            "matchedText": "46,8 %",
+            "messageCs": "Číslo „46,8 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „46,8 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[902,908]: 46,8 %"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "hype",
+            "ruleId": "hype:zcela",
+            "span": {
+              "start": 51,
+              "end": 56
+            },
+            "matchedText": "zcela",
+            "messageCs": "Slovo „zcela“ zbytečně přehání (pravidlo §2). Zvažte střízlivější formulaci, nebo doplňte konkrétní číslo či příklad.",
+            "detail": "hype:zcela @ souhrn[51,56]: zcela"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 280,
+              "end": 289
+            },
+            "matchedText": " osteopor",
+            "messageCs": "Text opisuje původní název článku („ osteopor“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[280,289]:  osteopor"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 377,
+              "end": 386
+            },
+            "matchedText": " osteopor",
+            "messageCs": "Text opisuje původní název článku („ osteopor“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[377,386]:  osteopor"
+          },
+          {
+            "block": "procJeToDulezite",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 185
+            },
+            "matchedText": "Zlomenina krčku nebo horního konce stehenní kosti u starého člověka často znamená trvalou ztrátu soběstačnosti, a tahle práce ukazuje, že léčba osteoporózy riziko snižuje, ale nevymaže.",
+            "messageCs": "Tato věta má 26 slov a je moc dlouhá: „Zlomenina krčku nebo horního konce stehenní kosti u starého člověka často zname…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ procJeToDulezite[0,185]: Zlomenina krčku nebo horního konce stehenní kosti u starého člověka často znamená trvalou ztrátu soběstačnosti, a tahle práce ukazuje, že léčba osteoporózy riziko snižuje, ale nevymaže."
+          },
+          {
+            "block": "procJeToDulezite",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 143,
+              "end": 152
+            },
+            "matchedText": " osteopor",
+            "messageCs": "Text opisuje původní název článku („ osteopor“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ procJeToDulezite[143,152]:  osteopor"
+          },
+          {
+            "block": "poznamkaKOmezenim",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 22,
+              "end": 30
+            },
+            "matchedText": " registr",
+            "messageCs": "Text opisuje původní název článku („ registr“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ poznamkaKOmezenim[22,30]:  registr"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7210271255",
+        "title": "Contribution of social determinants of health to racial disparities in metabolic dysfunction-associated steatotic liver disease among US adults",
+        "abstract": "Abstract Background Racial and ethnic disparities in metabolic dysfunction-associated steatotic liver disease (MASLD) persist in the US population. We studied the impact of social determinants of health (SDOH) on the likelihood of developing MASLD and explored the contribution of SDOH to racial disparities in MASLD. Methods Data on self-reported SDOH domains and sub-items based on Healthy People 2030 were collected from the US National Health and Nutrition Examination Survey (NHANES) across 10 NHANES cycles from 1999 to 2000 to 2017–2018. The participants were divided into four racial and ethnic groups: White, Black, Hispanic, and other. The primary outcome was MASLD, characterized by a US fatty liver index score exceeding 30. Survey-weighted logistic regression models were used to examine the relationship between SDOH and MASLD. The results were further analysed by race and ethnicity. Results A total of 22,585 participants (10115 White, 4431 Black, 5978 Hispanic, and 2061 other) were included in our analyses, of whom 7798 had MASLD (survey-weighted prevalence 32.0%). The prevalence of USFLI-defined MASLD was significantly higher among Hispanic adults compared to other racial and ethnic groups ( p < 0.001). We found that unemployment, low income, food insecurity, low education level, absence of private health insurance, and renting a home were significantly and independently associated with higher odds of MASLD: odds ratios (ORs) were 1.506 (95% confidence intervals [CIs] 1.379–1.643) for those with unemployment, 1.269 (1.164–1.384) for those with low income, 1.460 (1.329–1.604) for those with food insecurity, 1.274 (1.162–1.398) for those with low education level, 1.130 (1.043–1.224) for those with absence of private health insurance, and 1.122 (1.017–1.237) for those with renting a home. Furthermore, White participants exposed to adverse SDOH seemed more prone to developing MASLD compared to other racial and ethnic groups. Conclusions Unfavorable SDOH are associated with an increased odds of MASLD and contribute to racial disparities in MASLD in the US population. Addressing SDOH through population-based strategies is essential to mitigate MASLD and address racial and ethnic disparities.",
+        "date": "2026-09-07",
+        "url": "https://doi.org/10.1186/s12876-026-05304-4",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1186/s12876-026-05304-4",
+        "openAlexId": "W7210271255",
+        "subfield": {
+          "id": "subfields/2713",
+          "name": "Epidemiology"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T10351",
+          "name": "Liver Disease Diagnosis and Treatment"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Pingping Hu",
+          "Qingling Chen",
+          "Baoli Zhong",
+          "Jun Li",
+          "Chuanlong Zhu"
+        ],
+        "venue": "BMC Gastroenterology",
+        "indexedDate": "2026-09-07",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8069,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.895,
+          "total": 0.8824,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.1205
+          },
+          "everydayDomains": [
+            "food",
+            "health",
+            "money",
+            "housing"
+          ],
+          "subfieldKey": "subfields/2713",
+          "evidence": [
+            "total 0.8824 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.81 = P 0.82 − 0.45×t 0.00 − 0.15×j 0.12",
+            "outcome verbs (v 0.50): increased, associated with",
+            "recognisable subjects (s 1.00): participants, adults (title, ×2), homes",
+            "quantified effect (q 1): percentage, p-value",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.12): 4/332 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 4 domain(s) — food, health, money, housing",
+            "everyday terms (9): food, nutrition, health, disease, income, unemployment, insurance, home, homes",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-07)",
+            "credibility 0.90 = 0.40×c1 1.00 + 0.25×c2 1.00 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in BMC Gastroenterology",
+            "c2 1.00: n = 22585",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1186/s12876-026-05304-4)"
+      },
+      "summary": {
+        "souhrn": "Ztukovatělá játra spojená s poruchami látkové výměny (metabolismu) — tedy toho, jak tělo zpracovává cukry a tuky — jsou v USA výrazně častější u lidí v horší sociální situaci. Vědci prošli data velkého amerického průzkumu zdraví a výživy z let 1999 až 2018, celkem 22 585 dospělých. Známky onemocnění mělo asi 32 % z nich, tedy zhruba každý třetí dospělý. Nezaměstnanost, nejistý přístup k jídlu, nízký příjem, nízké vzdělání, chybějící soukromé pojištění i bydlení v nájmu se pojily s vyšší pravděpodobností nemoci. Nejsilněji vyčnívala nezaměstnanost: šance na onemocnění byla asi o 51 % vyšší než u lidí, kteří práci měli.",
+        "podrobneVysvetleni": "Data pocházejí z amerického průzkumu zdraví a výživy NHANES, který probíhal opakovaně od roku 1999 do roku 2018. Účastníci v něm odpovídali i na otázky o svých životních podmínkách. Vědci je roztřídili podle národního programu Healthy People 2030. Patří sem práce, příjem, vzdělání, bydlení, zdravotní pojištění nebo dostupnost jídla. Stav jater vědci nezjišťovali přístrojem. Použili takzvaný index ztukovatění jater, tedy odhad vypočítaný z obvodu pasu a z krevních testů. Hodnotu nad 30 považovali za ztukovatělá játra. Ze všech 22 585 dospělých takový výsledek mělo 7 798 lidí. Po přepočtu na celou populaci to odpovídá 32 %, tedy zhruba každému třetímu. Nejčastější bylo onemocnění u dospělých hispánského původu. Po zohlednění dalších vlivů zůstalo šest okolností spojených s vyšší pravděpodobností nemoci. Nezaměstnaní měli šanci vyšší asi o 51 % než lidé se zaměstnáním. U lidí bez jistého přístupu k jídlu byla vyšší o 46 %. Nízký příjem i nízké vzdělání znamenaly zhruba o 27 % vyšší šanci. Chybějící soukromé pojištění přidalo 13 % a bydlení v nájmu 12 %, což byly nejmenší rozdíly. U bílých účastníků se přitom nepříznivé podmínky projevovaly silněji než u ostatních skupin. Práce ukazuje souvislost, nikoli přímou příčinu.",
+        "procJeToDulezite": "Nemocná játra nesouvisí jen s tím, co si člověk dá k jídlu, ale i s tím, jestli má práci, peníze a jistotu, že bude co jíst. Prevence proto nemůže stát jen na radách jednotlivcům.",
+        "poznamkaKOmezenim": "Jde o jednorázový průřez daty, ne o sledování lidí v čase, životní podmínky si účastníci hlásili sami a stav jater byl jen odhadnut z výpočtu — z takových dat nelze určit, co je příčina a co následek."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 487,
+              "end": 489
+            },
+            "matchedText": "30",
+            "messageCs": "Číslo „30“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „30 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[487,489]: 30"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 983,
+              "end": 987
+            },
+            "matchedText": "27 %",
+            "messageCs": "Číslo „27 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „27 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[983,987]: 27 %"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 175
+            },
+            "matchedText": "Ztukovatělá játra spojená s poruchami látkové výměny (metabolismu) — tedy toho, jak tělo zpracovává cukry a tuky — jsou v USA výrazně častější u lidí v horší sociální situaci.",
+            "messageCs": "Tato věta má 27 slov a je moc dlouhá: „Ztukovatělá játra spojená s poruchami látkové výměny (metabolismu) — tedy toho,…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[0,175]: Ztukovatělá játra spojená s poruchami látkové výměny (metabolismu) — tedy toho, jak tělo zpracovává cukry a tuky — jsou v USA výrazně častější u lidí v horší sociální situaci."
+          },
+          {
+            "block": "souhrn",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_english_original:metabolismus",
+            "span": {
+              "start": 54,
+              "end": 65
+            },
+            "matchedText": "metabolismu",
+            "messageCs": "U termínu „metabolismus“ chybí při prvním použití anglický originál v závorce (např. „metabolismus (metabolism)“). Čtenář ten anglický výraz potká jinde (§2).",
+            "detail": "jargon:no_english_original:metabolismus @ souhrn[54,65]: metabolismu"
+          },
+          {
+            "block": "all",
+            "rule": "long-words",
+            "ruleId": "readability:R6",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "share5Syllables=0.068",
+            "messageCs": "Příliš mnoho abstraktních dlouhých slov (7 % slov má pět a více slabik). Nahraďte je konkrétními, kratšími slovy.",
+            "detail": "readability:R6 @ all[0,0]: share5Syllables=0.068"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7211873755",
+        "title": "Pharmacy Utilization Patterns and Polypharmacy as Predictors of High-Cost Workers’ Compensation Claims: An Updated Cohort Study of Occupational Ankle Sprains",
+        "abstract": "Objective: Evaluate pharmacy utilization patterns as independent predictors of high-cost workers’ compensation claims (≥$50,000) for occupational ankle sprains. Methods: Pharmacy Benefit Management data were integrated into a 9-year cohort of 18,991 claims. Logistic regression modeled individual drug-class utilization and multi-class combinations, adjusting for demographics, industry, litigations, physical complications, treatments, and comorbidities. Results: High-cost risk increased significantly with individual utilization of opioids (OR: 2.19; 95% CI: 1.78–2.69) and antiseizure medications (OR: 4.21; 95% CI: 3.28–5.39). While exclusive nonsteroidals use demonstrated no elevated risk (OR: 0.96; 95% CI: 0.76–1.20), polypharmacy involving three or more flagged drug classes was associated with a 7.71-fold increase in cost escalation (CI: 6.08–9.77). Conclusions: Early multi-class prescription drug tracking provides a dynamic and real-time indicator of case complexity, allowing interventions from relevant parties to prevent severe financial escalation.",
+        "date": "2026-09-07",
+        "url": "https://doi.org/10.1097/jom.0000000000003875",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1097/jom.0000000000003875",
+        "openAlexId": "W7211873755",
+        "subfield": {
+          "id": "subfields/2739",
+          "name": "Public Health, Environmental and Occupational Health"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T10576",
+          "name": "Opioid Use Disorder Treatment"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Xu-Guang Tao",
+          "Marcos A. Iglesias",
+          "Nimisha Kalia",
+          "Nina Leung",
+          "Judith Green-McKenzie",
+          "Robyn Satterfield",
+          "Edward J. Bernacki"
+        ],
+        "venue": "Journal of Occupational and Environmental Medicine",
+        "indexedDate": "2026-09-08",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8131,
+          "everydayRelevance": 1,
+          "freshness": 1,
+          "credibility": 0.605,
+          "total": 0.8699,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.5,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.146
+          },
+          "everydayDomains": [
+            "health",
+            "money",
+            "work"
+          ],
+          "subfieldKey": "subfields/2739",
+          "evidence": [
+            "total 0.8699 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.81 = P 0.84 − 0.45×t 0.00 − 0.15×j 0.15",
+            "outcome verbs (v 1.00): increased, increases, prevents, associated with",
+            "recognisable subjects (s 0.50): workers (title, ×2)",
+            "quantified effect (q 1): percentage, effect ratio, 95% CI, fold change",
+            "title concreteness (c 0.80): −0.2 title is 20 words",
+            "jargon density (j 0.15): 2/137 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — health, money, work",
+            "everyday terms (6): treatment, drug, medication, cost, costs, worker",
+            "freshness 1.00: 0 day(s) old (effective date 2026-09-08)",
+            "credibility 0.61 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Journal of Occupational and Environmental Medicine",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1097/jom.0000000000003875)"
+      },
+      "summary": {
+        "souhrn": "Americká studie prošla 18 991 nároků na odškodnění za pracovní úraz kotníku z devíti let. Zajímalo ji, které případy skončí u pojišťovny účtem 50 000 dolarů a víc — a odpověď našla v předepsaných lécích. Samotné protizánětlivé léky typu ibuprofenu riziko nezvyšovaly, opioidy ho zhruba zdvojnásobily. Léky původně proti epilepsii, které se dnes předepisují i na nervovou bolest, ho zvýšily asi čtyřnásobně. A tři a více sledovaných skupin léků najednou znamenaly zhruba osmkrát vyšší riziko drahého případu.",
+        "podrobneVysvetleni": "Vědci propojili údaje o proplacených lécích s databází 18 991 pojistných nároků za devět let. Šlo výhradně o podvrtnutí kotníku při práci. To je běžný úraz, který se většinou zahojí za pár týdnů. Část případů se ale protáhne a náklady přesáhnou 50 000 dolarů. Autoři pak statistickým modelem počítali, jak s tímto rizikem souvisejí jednotlivé skupiny léků. Zohlednili přitom věk a pohlaví, obor podnikání, soudní spory, tělesné komplikace, způsob léčby i další nemoci.\n\nVýsledky uvádějí jako poměr šancí. Hodnota 1 znamená žádnou změnu oproti ostatním. Opioidy vyšly na 2,19 — šance na velmi drahý případ tedy byla zhruba dvojnásobná. Léky proti epilepsii, které lékaři předepisují i na nervovou bolest, vyšly na 4,21, tedy asi čtyřikrát vyšší šance. Samotné nesteroidní protizánětlivé léky měly hodnotu 0,96, což je prakticky totéž jako nic.\n\nNejsilnější signál dala kombinace léků. Tři a více sledovaných skupin najednou znamenaly hodnotu 7,71, tedy zhruba osmkrát vyšší šanci na drahý případ.\n\nAutoři z toho nevyvozují, že léky náklady způsobují. Berou je spíš jako průběžný ukazatel toho, že se případ komplikuje. Výhoda je v čase: recepty jsou vidět hned, kdežto vleklé potíže se ukážou až za měsíce.",
+        "procJeToDulezite": "Zdánlivě banální podvrtnutý kotník se u části lidí protáhne na dlouhé měsíce a seznam předepsaných léků může být první viditelnou stopou, že se to děje. Včasné zachycení takového případu pomáhá pacientovi i tomu, kdo léčbu platí.",
+        "poznamkaKOmezenim": "Jde o statistickou souvislost nalezenou v jedné databázi pojistných nároků, ne o důkaz, že léky drahé případy způsobují — silnější léčba může být prostě známkou toho, že je úraz od začátku vážnější."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 23,
+              "end": 29
+            },
+            "matchedText": "18 991",
+            "messageCs": "Číslo „18 991“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „18 991 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[23,29]: 18 991"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 55,
+              "end": 61
+            },
+            "matchedText": "18 991",
+            "messageCs": "Číslo „18 991“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „18 991 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[55,61]: 18 991"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 245,
+              "end": 251
+            },
+            "matchedText": "50 000",
+            "messageCs": "Číslo „50 000“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „50 000 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[245,251]: 50 000"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:pomer-sanci",
+            "span": {
+              "start": 492,
+              "end": 503
+            },
+            "matchedText": "poměr šancí",
+            "messageCs": "Termín „poměr šancí“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:pomer-sanci @ podrobneVysvetleni[492,503]: poměr šancí"
+          }
+        ],
+        "soft": []
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W4403627713",
+        "title": "Relative burden of neglected tropical diseases among school-age children in rural and urban slum settings in Eastern Ethiopia",
+        "abstract": "Abstract Introduction: Despite the determination to succeed in eliminating neglected tropical diseases, these have been increasing within certain endemicities, particularly in depriving region. Objective: This study aimed to assess the relative burden of neglected tropical diseases in rural and urban slum settings in Eastern Ethiopia. Methods: A comparative cross-sectional study was conducted from February 25 to April 30, 2024 with a multistage random sampling technique used. A survey tool with the integration of the spectrum was employed. Data were entered using Epi-Data version 3.1 and analyzed using STATA 16. Descriptive statistics and multivariable logistic regression analysis was used to identify the risk factors and the level for statistical significance was declared at p-value < 0.05 with 95 % CI. Result: The response rate was 93 % and the mean age of house heads was 31.6 (Range; 18. 63) with 5.7 average family size. The overall prevalence of NTDs among study participants was 22.6 % (95% CI; 20.2, 25.2); urban slum it was 15 % (95% CI; 12.2, 18.4) while it was 29.8 % (95% CI; 26, 33.9) in rural. Though there is no statistically significant difference, the relative prevalence of NTDs in rural to urban was two. The multivariable analysis provided that the risk factors associated with NTDs were government employment (AOR: 12.5 (1.17, 132.4)), good income (AOR: 0.13 (.03, 0.57)), Child playing with soil (AOR: 5.8 (1.52, 22.0)); child hand washing at critical times ( AOR: 11.2 (1.7, 74.9)), presence of flies in the child faces (AOR: 20.3 (4.7, 88.6)) and type of drinking water sources (AOR: 0.11 (0.02, 0.73)). Conclusion: the burden of NTDs was moderate in the study area dominated by STH, Trachoma, and scabies. Socio economic and WASH factors were found to be associated with NTDs. Collaborated efforts among stakeholders are crucial to prevent and control NTDs.",
+        "date": "2026-09-07",
+        "url": "https://doi.org/10.1038/s41598-026-66280-z",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1038/s41598-026-66280-z",
+        "openAlexId": "W4403627713",
+        "subfield": {
+          "id": "subfields/2916",
+          "name": "Nutrition and Dietetics"
+        },
+        "field": {
+          "id": "fields/29",
+          "name": "Nursing"
+        },
+        "topic": {
+          "id": "T10596",
+          "name": "Child Nutrition and Water Access"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Getachew Kabew Mekonnen",
+          "Fitsum Weldegebreal",
+          "Assefa Desalew",
+          "Temam Beshir Raru",
+          "Ukash Umer",
+          "Kedir Urgesa"
+        ],
+        "venue": "Scientific Reports",
+        "indexedDate": "2025-10-10",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8199,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.705,
+          "total": 0.8609,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.034
+          },
+          "everydayDomains": [
+            "school",
+            "health",
+            "money",
+            "water",
+            "family"
+          ],
+          "subfieldKey": "subfields/2916",
+          "evidence": [
+            "total 0.8609 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.82 = P 0.82 − 0.45×t 0.00 − 0.15×j 0.03",
+            "outcome verbs (v 0.50): prevents, associated with",
+            "recognisable subjects (s 1.00): participants, children (title, ×2), soil, schools (title, ×2)",
+            "quantified effect (q 1): percentage, 95% CI",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.03): 1/294 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 5 domain(s) — school, health, money, water, family",
+            "everyday terms (8): school, schools, disease, income, drinking water, child, children, family",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-07)",
+            "credibility 0.71 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.80 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Scientific Reports",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.80: open access without an open licence (repository copy)",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1038/s41598-026-66280-z)"
+      },
+      "summary": {
+        "souhrn": "Na venkově východní Etiopie mělo některou z opomíjených tropických nemocí (neglected tropical diseases) téměř každé třetí dítě školního věku — přesněji 29,8 %. V chudinských čtvrtích města to bylo 15 %, tedy asi jedno dítě ze sedmi. Jde o infekce, které se drží hlavně tam, kde chybí čistá voda a hygiena: červi přenášení půdou, trachom (očni infekce, která může vést až ke slepotě) a svrab. Dohromady měl některou z nich 22,6 % dětí, tedy přibližně každé páté. Rozdíl mezi venkovem a městem byl dvojnásobný, ale vzhledem k velikosti vzorku ho autoři nepovažují za statisticky potvrzený.",
+        "podrobneVysvetleni": "Vědci pracovali od konce února do konce dubna 2024. Použili takzvaný srovnávací průřezový výzkum (comparative cross-sectional) — tedy jednorázový snímek situace v daném období, nikoli dlouhodobé sledování dětí. Domácnosti vybírali losováním v několika krocích, aby vzorek zastupoval venkov i chudinské čtvrti města. Ochota se zúčastnit byla vysoká: z každé stovky oslovených domácností odpovědělo 93. Hlavy domácností měly v průměru necelých 32 let a v jedné domácnosti žilo průměrně necelých šest lidí. Na venkově mělo některou z nemocí 29,8 % dětí, tedy skoro každé třetí. V městských chudinských čtvrtích 15 %, tedy asi jedno dítě ze sedmi. Nejčastěji šlo o červy přenášené půdou, trachom a svrab. Autoři pak hledali, co s nemocemi souvisí. Vyšší riziko provázelo hraní dětí v hlíně a přítomnost much na tváři dítěte. Naopak nižší riziko měly děti z domácností s lepším příjmem a s bezpečnějším zdrojem pitné vody. U mytí rukou vyšel výsledek opačně, než by se čekalo, což autoři sami nevysvětlují. Všechny tyto odhady mají velmi široké rozpětí nejistoty, takže ukazují spíš směr než přesnou míru. Souhrnný obraz je nicméně srozumitelný: potíže dětí souvisejí s chudobou a s dostupností vody, mýdla a záchodů.",
+        "procJeToDulezite": "Nemoci, které jinde téměř vymizely, u části dětí dál brání učení i normálnímu růstu — a to hlavně tam, kde chybí čistá voda a hygiena. Studie ukazuje, že přístup k vodě a záchodům není jen otázka pohodlí, ale přímo zdraví dětí.",
+        "poznamkaKOmezenim": "Výzkum zachytil jediný okamžik v jedné oblasti, takže nemůže dokázat, co je příčina a co následek; rozdíl mezi venkovem a městem navíc nebyl statisticky potvrzen a odhady u rizikových faktorů mají velmi široké rozpětí nejistoty."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 496,
+              "end": 507
+            },
+            "matchedText": "dvojnásobný",
+            "messageCs": "Číslo „dvojnásobný“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „dvojnásobný — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[496,507]: dvojnásobný"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 397,
+              "end": 399
+            },
+            "matchedText": "93",
+            "messageCs": "Číslo „93“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „93 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[397,399]: 93"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 233,
+              "end": 391
+            },
+            "matchedText": "Jde o infekce, které se drží hlavně tam, kde chybí čistá voda a hygiena: červi přenášení půdou, trachom (očni infekce, která může vést až ke slepotě) a svrab.",
+            "messageCs": "Tato věta má 28 slov a je moc dlouhá: „Jde o infekce, které se drží hlavně tam, kde chybí čistá voda a hygiena: červi …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[233,391]: Jde o infekce, které se drží hlavně tam, kde chybí čistá voda a hygiena: červi přenášení půdou, trachom (očni infekce, která může vést až ke slepotě) a svrab."
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-09-08T09:02:44.160Z",
+  "generatedOn": "2026-09-08",
+  "schemaVersion": 1
+}

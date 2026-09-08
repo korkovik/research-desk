@@ -896,6 +896,46 @@
       "titleKey": "secureandscalableclientprefilteringandauthenticationframeworkforfederatedlearningsystems",
       "publishedOn": "2026-09-07",
       "category": "ai-computing"
+    },
+    {
+      "openalexId": "W7210287624",
+      "doi": "10.1007/s00701-026-07028-6",
+      "arxivId": null,
+      "titleKey": "copenhagenlongitudinalstudyonqualityoflifeinayoungadultpopulationwithgliomas",
+      "publishedOn": "2026-09-08",
+      "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7211873004",
+      "doi": "10.3390/jcm15176916",
+      "arxivId": null,
+      "titleKey": "impactofosteoporosistherapyingeriatricproximalfemurfracturesaretrospectiveanalysisfromthegermanregistryforgeriatrictraumaatrdgu",
+      "publishedOn": "2026-09-08",
+      "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7210271255",
+      "doi": "10.1186/s12876-026-05304-4",
+      "arxivId": null,
+      "titleKey": "contributionofsocialdeterminantsofhealthtoracialdisparitiesinmetabolicdysfunctionassociatedsteatoticliverdiseaseamongusadults",
+      "publishedOn": "2026-09-08",
+      "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7211873755",
+      "doi": "10.1097/jom.0000000000003875",
+      "arxivId": null,
+      "titleKey": "pharmacyutilizationpatternsandpolypharmacyaspredictorsofhighcostworkerscompensationclaimsanupdatedcohortstudyofoccupationalanklesprains",
+      "publishedOn": "2026-09-08",
+      "category": "health-medicine"
+    },
+    {
+      "openalexId": "W4403627713",
+      "doi": "10.1038/s41598-026-66280-z",
+      "arxivId": null,
+      "titleKey": "relativeburdenofneglectedtropicaldiseasesamongschoolagechildreninruralandurbanslumsettingsineasternethiopia",
+      "publishedOn": "2026-09-08",
+      "category": "health-medicine"
     }
   ]
 }
