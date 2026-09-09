@@ -1,0 +1,1018 @@
+{
+  "date": "2026-09-09",
+  "categoryKey": "nature-climate",
+  "categoryLabel": "Příroda a klima",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7211868728",
+        "title": "Energy Penalty, Financial Burden, and Fiscal Risk of Biosafety Ventilation Policies in Educational Buildings: A Probabilistic Analysis Under Market Volatility",
+        "abstract": "Enforcing aggressive outdoor ventilation in public schools across hot and humid regions creates a steep, often unmanageable financial burden. While high air change rates (such as 5.0 air changes per hour, ACH) lower pathogen transmission risks, the resulting moisture condensation loads substantially increase electricity bills. In this study, we assessed the energy demand, 10-year Life Cycle Cost (LCC), and budget risk of post-pandemic ventilation mandates in a university building in Montería, Colombia (Köppen Aw climate). We calibrated a transient building energy simulation (BES) model using empirical utility data (MBE = +1.8%, CV-RMSE = 4.2%) to compare four operational strategies: standard code baseline (Scenario A, 1.2 ACH under ASHRAE 62.1-2022), Outdoor Air Dilution (Scenario B, 5.0 ACH), in-room HEPA Cleaning (Scenario C, 1.2 ACH outdoor air plus 3.8 ACH clean recirculation), and Energy Recovery Ventilation (Scenario D, 5.0 ACH with a 65% sensible and latent enthalpy wheel). Outdoor Air Dilution triggered a 2.26-fold increase in HVAC electricity demand, generating an annual deficit of $115,725 and adding 135.3 metric tons of CO2eq per building because latent dehumidification represented 43.5% of total operating expenses. A 10,000-iteration Monte Carlo simulation under volatile electricity tariffs (sigma = 15%) revealed a 95% Value at Risk (VaR) of $148,438/year. Over a 10-year horizon, Outdoor Air Dilution accumulates $1.635 million in present-value costs, whereas localized HEPA Filtration delivers equivalent protection for $0.765 million, saving $0.870 million (a 90.3% policy deficit reduction). These results suggest that blanket outdoor ventilation mandates clash directly with public school decarbonization and fiscal solvency goals. Building codes in tropical regions should instead promote decoupled systems that combine baseline fresh air with localized particle filtration.",
+        "date": "2026-09-07",
+        "url": "https://doi.org/10.3390/buildings16173548",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.3390/buildings16173548",
+        "openAlexId": "W7211868728",
+        "subfield": {
+          "id": "subfields/2307",
+          "name": "Health, Toxicology and Mutagenesis"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T11002",
+          "name": "Indoor Air Quality and Microbial Exposure"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Jesús David Rhenals Julio",
+          "Deimer Ricardo Muñoz",
+          "Demóstenes Durango Álvarez",
+          "Samuel Bonilla Gracia",
+          "Miguel Doria Oviedo",
+          "Jorge Mario Mendoza Fandiño"
+        ],
+        "venue": "Buildings",
+        "indexedDate": "2026-09-08",
+        "referencedWorksCount": 14,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8588,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.8821,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.75,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.2583
+          },
+          "everydayDomains": [
+            "school",
+            "energy",
+            "money",
+            "weather"
+          ],
+          "subfieldKey": "subfields/2307",
+          "evidence": [
+            "total 0.8821 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.86 = P 0.90 − 0.45×t 0.00 − 0.15×j 0.26",
+            "outcome verbs (v 1.00): reduction, increases, lowers, triggered",
+            "recognisable subjects (s 0.75): schools, buildings (title, ×2)",
+            "quantified effect (q 1): percentage, fold change",
+            "title concreteness (c 0.80): −0.2 title is 20 words",
+            "jargon density (j 0.26): 7/271 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 4 domain(s) — school, energy, money, weather",
+            "everyday terms (9): school, schools, university, energy, electricity, cost, costs, savings, climate",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-08)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Buildings",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.3390/buildings16173548)"
+      },
+      "summary": {
+        "souhrn": "Vydatné větrání čerstvým vzduchem, které se po pandemii dostalo do řady předpisů, vyjde v horkém a vlhkém podnebí neúnosně draho. Autoři si vzali univerzitní budovu v kolumbijské Monteríi, sladili počítačový model s reálnými účty za elektřinu a porovnali čtyři způsoby, jak ve třídách udržet zdravý vzduch. Pětinásobná výměna vzduchu za hodinu zvedla spotřebu klimatizace 2,26krát, tedy víc než na dvojnásobek, a rozpočtu budovy by pak každý rok chybělo 115 725 dolarů — tolik by musel někdo doplatit, aby se účty zaplatily. Hlavním žroutem je odvlhčování: samo spolklo 43,5 % provozních nákladů, tedy bezmála polovinu peněz na provoz, a budova by navíc vypustila 135,3 tuny skleníkových plynů ročně nad dnešní stav. Čističky s filtrem HEPA přímo ve třídách přinesly podle výpočtu srovnatelnou ochranu a za deset let by ušetřily 0,870 milionu dolarů, tedy víc než polovinu toho, co by spolkla dražší varianta.",
+        "podrobneVysvetleni": "Tým postavil počítačový model budovy, který hodinu po hodině spočítá spotřebu klimatizace, a doladil ho podle skutečných účtů za elektřinu: od reality se odchyloval o 1,8 %, tedy necelé dvě koruny ze sta. Pak porovnal čtyři strategie: běžný předpis s 1,2 výměny vzduchu za hodinu (vzduch v místnosti se vymění asi jednou za hodinu); „ředění\" čerstvým vzduchem s pěti výměnami za hodinu; stejně málo čerstvého vzduchu jako v prvním případě, ale doplněné čističkami s filtrem HEPA, které vzduch v místnosti čistí a vracejí zpět; a nakonec pět výměn za hodinu s rekuperací, tedy zařízením, které z odváděného vzduchu zachytí 65 % tepla i vlhkosti, tedy asi dvě třetiny. Nejdráž vyšlo ředění čerstvým vzduchem: spotřeba klimatizace vzrostla 2,26krát, tedy víc než na dvojnásobek, roční díra v rozpočtu činila 115 725 dolarů a k tomu 135,3 tuny skleníkových plynů navíc. Důvodem je vlhkost — samotné odvlhčování nasávaného vzduchu tvořilo 43,5 % provozních výdajů, tedy skoro polovinu. Aby autoři podchytili nejistotu v ceně elektřiny, spustili 10 000 náhodných variant výpočtu s výkyvy tarifů kolem 15 %; v nejhorších pěti procentech případů, tedy přibližně jednou z dvaceti, by účet přesáhl 148 438 dolarů ročně. Za deset let stojí ředění čerstvým vzduchem 1,635 milionu dolarů, varianta s filtry 0,765 milionu — rozpočtová ztráta se tak zmenší o 90,3 %, tedy zbude z ní jen asi desetina.",
+        "procJeToDulezite": "Peníze, které škola v tropech utopí v klimatizaci kvůli přísně nastavenému větrání, chybí jinde — a podle těchto výpočtů lze podobnou ochranu proti šíření nemocí zajistit levněji kombinací základního přívodu čerstvého vzduchu a čističek přímo ve třídách.",
+        "poznamkaKOmezenim": "Jde o simulaci jediné budovy v jednom tropickém městě, nikoli o měření nemocnosti studentů, takže tvrzení o „srovnatelné ochraně\" vychází z předpokladů modelu a výsledky nelze bez dalšího přenášet do jiného podnebí."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 205,
+              "end": 666
+            },
+            "matchedText": "Pak porovnal čtyři strategie: běžný předpis s 1,2 výměny vzduchu za hodinu (vzduch v místnosti se vymění asi jednou za hodinu); „ředění\" čerstvým vzduchem s pěti výměnami za hodinu; stejně málo čerstvého vzduchu jako v prvním případě, ale doplněné čističkami s filtrem HEPA, které vzduch v místnosti čistí a vracejí zpět; a nakonec pět výměn za hodinu s rekuperací, tedy zařízením, které z odváděného vzduchu zachytí 65 % tepla i vlhkosti, tedy asi dvě třetiny.",
+            "messageCs": "Tato věta má 75 slov a je moc dlouhá: „Pak porovnal čtyři strategie: běžný předpis s 1,2 výměny vzduchu za hodinu (vzd…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[205,666]: Pak porovnal čtyři strategie: běžný předpis s 1,2 výměny vzduchu za hodinu (vzduch v místnosti se vymění asi jednou za hodinu); „ředění\" čerstvým vzduchem s pěti výměnami za hodinu; stejně málo čerstvého vzduchu jako v prvním případě, ale doplněné čističkami s filtrem HEPA, které vzduch v místnosti čistí a vracejí zpět; a nakonec pět výměn za hodinu s rekuperací, tedy zařízením, které z odváděného vzduchu zachytí 65 % tepla i vlhkosti, tedy asi dvě třetiny."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 805,
+              "end": 812
+            },
+            "matchedText": "115 725",
+            "messageCs": "Číslo „115 725“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „115 725 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[805,812]: 115 725"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 829,
+              "end": 834
+            },
+            "matchedText": "135,3",
+            "messageCs": "Číslo „135,3“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „135,3 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[829,834]: 135,3"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=33.42",
+            "messageCs": "Věty jsou v průměru moc dlouhé (33,4 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=33.42"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=8",
+            "messageCs": "Počet vět delších než 30 slov: 8. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=8"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=25.7",
+            "messageCs": "Text se celkově čte těžko (index 26 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=25.7"
+          }
+        ],
+        "soft": []
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7163353282",
+        "title": "Mortality and morbidity consequences of particulate matter in South Korea: evidence from transboundary air pollution",
+        "abstract": "Abstract Background: Exposure to fine particulate matter (PM 2.5 ) is harmful to people, leading to respiratory disease and even death. The association between PM 2.5 pollution and health outcomes has become a key foundation for public health policy development. This study aims to quantify the effects of PM 2.5 on health outcomes (mortality, morbidity) and estimate the benefits of reducing PM 2.5 levels in South Korea. Methods: This study uses Instrumental Variable (IV) analysis to estimate the causal effect of PM 2.5 on health outcomes in South Korea from 2015 to 2022. Local air pollution in South Korea is instrumented using a wind-direction indicator with air pollution levels measured at upwind Chinese monitors to address potential endogeneity concerns. Estimates of PM 2.5 -related death and the life-year loss are used to calculate the economic benefits of preventing PM 2.5 -related deaths. Results: The results indicate that a 1 μg/m³ increase in local PM 2.5 levels drives a 0.17% rise in older (65+) adult mortality rate and a 5.1% increase in respiratory hospitalizations. Significant rises in mortality and morbidity were observed for disease categories directly associated with PM 2.5 pollution. Considering only the avoided life years lost, the 5.58 μg/m³ reduction in PM 2.5 levels achieved in South Korea from 2015 to 2022 resulted in an estimated USD 14.14 billion in annual benefits. The study also found that a 1 μg/m³ increase in PM 2.5 raised hospital visits by 1.2% for acute upper respiratory infections and 2.6% for lower respiratory infections. Conclusion: These findings highlight the magnitude and cost of the health risks posed by air pollution, underscoring the importance of effective policies to manage air quality. This study provides clear evidence of the harmful effects of air pollution on human health, particularly on vulnerable groups and related diseases.",
+        "date": "2026-09-08",
+        "url": "https://doi.org/10.1186/s12889-026-29307-8",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1186/s12889-026-29307-8",
+        "openAlexId": "W7163353282",
+        "subfield": {
+          "id": "subfields/2307",
+          "name": "Health, Toxicology and Mutagenesis"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10190",
+          "name": "Air Quality and Health Impacts"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Osung Kwon",
+          "Taehyun Kim"
+        ],
+        "venue": "BMC Public Health",
+        "indexedDate": "2026-06-04",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7901,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.705,
+          "total": 0.849,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.5,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.1661
+          },
+          "everydayDomains": [
+            "health",
+            "money",
+            "weather"
+          ],
+          "subfieldKey": "subfields/2307",
+          "evidence": [
+            "total 0.8490 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.79 = P 0.82 − 0.45×t 0.00 − 0.15×j 0.17",
+            "outcome verbs (v 1.00): reduction, increases, lowers, raised, resulted in, associated with",
+            "recognisable subjects (s 0.50): adults, hospitals",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.17): 5/301 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — health, money, weather",
+            "everyday terms (10): health, disease, infection, mortality, hospital, cost, costs, air quality, air pollution, particulate",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-08)",
+            "credibility 0.71 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.80 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in BMC Public Health",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.80: open access without an open licence (repository copy)",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1186/s12889-026-29307-8)"
+      },
+      "summary": {
+        "souhrn": "Vyšší množství jemného prachu v ovzduší se v Jižní Koreji projevilo na počtu úmrtí i na počtu lidí v nemocnicích. Vědci propočítali data z let 2015 až 2022 a zjistili, že každý mikrogram prachu navíc v krychlovém metru vzduchu zvýšil úmrtnost lidí nad 65 let o 0,17 procenta — z tisíce úmrtí v této věkové skupině necelé dvě navíc. Hospitalizace kvůli nemocem dýchacích cest stouply o 5,1 procenta, tedy asi o jednu z dvaceti. Mezi lety 2015 a 2022 se přitom vzduch v zemi vyčistil o 5,58 mikrogramu na krychlový metr, což je zhruba pětinásobek zmíněného jednoho mikrogramu. Hodnotu let života, o které lidé díky tomu nepřišli, autoři vyčíslili na 14,14 miliardy dolarů ročně — to je jejich odhad přínosu čistšího vzduchu pro celou zemi za jeden rok.",
+        "podrobneVysvetleni": "Autoři pracovali se statistikami o znečištění a o zdraví obyvatel z let 2015 až 2022. Hlavní potíž takových studií je, že špinavý vzduch obvykle doprovázejí i další věci: hustá doprava, průmysl, chudší čtvrti. Pak není jasné, co za zdravotními problémy stojí. Vědci proto použili postup zvaný instrumentální proměnná (instrumental variable). Znamená to, že místo přímého porovnání sáhli po ukazateli, který ovlivňuje vzduch v Koreji, ale sám nesouvisí s tím, jak tam lidé žijí — po směru větru a naměřených hodnotách na čínských stanicích proti větru. Rozdíly ve zdraví se tak dají připsat samotnému vzduchu.\n\nVýsledky: každý mikrogram jemného prachu navíc v krychlovém metru vzduchu zvýšil úmrtnost lidí nad 65 let o 0,17 procenta, tedy z tisíce úmrtí v této skupině necelé dvě navíc. Hospitalizace kvůli dýchacím nemocem stouply o 5,1 procenta, přibližně o jednu z dvaceti. Návštěvy lékaře kvůli akutním infekcím horních cest dýchacích vzrostly o 1,2 procenta, tedy z tisíce návštěv asi dvanáct navíc. U dolních cest dýchacích to bylo 2,6 procenta, tedy z tisíce návštěv zhruba šestadvacet navíc. Nejsilněji se změny projevily u nemocí, které se špinavým vzduchem přímo souvisejí.\n\nZa sledované roky se průměrná koncentrace prachu v Koreji snížila o 5,58 mikrogramu na krychlový metr. Autoři pak spočítali jen hodnotu let života, o které lidé díky tomu nepřišli, a došli k částce 14,14 miliardy dolarů ročně.",
+        "procJeToDulezite": "Kvalita ovzduší se promítá do počtu hospitalizací a úmrtí, nejvíc u starších lidí a u nemocí dýchacích cest. Náklady na čistší vzduch se tak dají poměřit s tím, kolik zdraví se jimi ušetří.",
+        "poznamkaKOmezenim": "Jde o statistický propočet z jedné země za osm let a peněžní vyčíslení přínosů stojí na zvolených předpokladech, takže uvedené částky je třeba brát jako odhad."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 114,
+              "end": 331
+            },
+            "matchedText": "Vědci propočítali data z let 2015 až 2022 a zjistili, že každý mikrogram prachu navíc v krychlovém metru vzduchu zvýšil úmrtnost lidí nad 65 let o 0,17 procenta — z tisíce úmrtí v této věkové skupině necelé dvě navíc.",
+            "messageCs": "Tato věta má 39 slov a je moc dlouhá: „Vědci propočítali data z let 2015 až 2022 a zjistili, že každý mikrogram prachu…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[114,331]: Vědci propočítali data z let 2015 až 2022 a zjistili, že každý mikrogram prachu navíc v krychlovém metru vzduchu zvýšil úmrtnost lidí nad 65 let o 0,17 procenta — z tisíce úmrtí v této věkové skupině necelé dvě navíc."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:instrumentalni-promenna",
+            "span": {
+              "start": 293,
+              "end": 316
+            },
+            "matchedText": "instrumentální proměnná",
+            "messageCs": "Termín „instrumentální proměnná“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:instrumentalni-promenna @ podrobneVysvetleni[293,316]: instrumentální proměnná"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1252,
+              "end": 1256
+            },
+            "matchedText": "5,58",
+            "messageCs": "Číslo „5,58“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „5,58 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1252,1256]: 5,58"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1382,
+              "end": 1396
+            },
+            "matchedText": "14,14 miliardy",
+            "messageCs": "Číslo „14,14 miliardy“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „14,14 miliardy — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1382,1396]: 14,14 miliardy"
+          }
+        ],
+        "soft": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=19.35",
+            "messageCs": "Věty jsou v průměru moc dlouhé (19,4 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=19.35"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=2",
+            "messageCs": "Počet vět delších než 30 slov: 2. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=2"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7210282974",
+        "title": "Portable X-ray fluorescence spectrometry library for Brazilian soils: chemical characterization and prediction of soil particle size fractions across all biomes",
+        "abstract": "Sensor-based soil data libraries have proven valuable for a wide range of applications. Given the increasing adoption of portable X-ray fluorescence (pXRF) spectroscopy for soil-related studies, we aimed to create a library of soils characterized by pXRF and develop prediction models for soil particle size fractions (clay, silt, and sand contents) based on 16,989 samples collected at multiple soil horizons, from all Brazilian biomes (Amazon, Caatinga, Cerrado, Atlantic Forest, Pantanal, and Pampa), under multiple climate zones, land uses and derived from several parent materials. Random Forest (RF), Support Vector Machine (SVM), Gradient Boosting Machine (GBM), and Genetic Programming (GP) were used to train the models. The dataset was split into training (13,593) and independent validation (3,396) sets. The accuracy of models was assessed via root mean square error (RMSE) and coefficient of determination (R 2 ) values. Sand, silt and clay contents ranged from 0 to 100%, 0 to 96%, and 0 to 93%, respectively. Strong correlations were found between particle size fractions and Fe and Si contents, but some strong correlations were biome-dependent, such as those between K and silt (0.77) in Pantanal. Random Forest outperformed the other algorithms, achieving RMSE and R 2 values, respectively, of 8.2% and 0.89 for sand, 5.6% and 0.71 for silt, and 6.3% and 0.89 for clay contents. This pXRF library resulted in adequate predictions for sand and clay contents. This national library may contribute to establish a global library of soils characterized via pXRF. This dataset should be continuously increased to support soil chemical characterization and develop prediction models for varied soil properties.",
+        "date": "2026-09-07",
+        "url": "https://doi.org/10.1016/j.catena.2026.110531",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1016/j.catena.2026.110531",
+        "openAlexId": "W7210282974",
+        "subfield": {
+          "id": "subfields/2305",
+          "name": "Environmental Engineering"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10770",
+          "name": "Soil Geostatistics and Mapping"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Sérgio Henrique Godinho Silva",
+          "Eduane José de Pádua",
+          "Marcelo Mancini",
+          "Lucas Rezende Gomide",
+          "Luiz Felipe Mesquita",
+          "Wenceslau Geraldes Teixeira",
+          "Sebastião Andrade",
+          "Luiz Marcos Silva Matos",
+          "J. B. V. Gomes",
+          "Gustavo Ribas Curcio",
+          "Elias Frank de Araújo",
+          "Michele Duarte de Menezes",
+          "Paula Godinho Ribeiro",
+          "Sílvio Júnio Ramos",
+          "Cecílio Frois Caldeira Júnior",
+          "Antônio Rodrigues Fernandes",
+          "Bárbara Pereira Christófaro Silva",
+          "Vinícius Teixeira Andrade",
+          "Gladyston Rodrigues Carvalho",
+          "Alberto Vasconcellos Inda",
+          "Sharlles Christian Moreira Dias",
+          "Jolimar Antônio Schiavo",
+          "Fábio Luiz Melquiades",
+          "Graziela Moraes de Cesare Barbosa",
+          "José Francirlei de Oliveira",
+          "Elizio Ferreira Frade",
+          "Marcelo de Almeida Guimarães",
+          "Helon Hébano de Freitas Sousa",
+          "Mateus Rosas Ribeiro Filho",
+          "Marcos Gervasio Pereira",
+          "Carlos Henrique Lima de Matos",
+          "Carolina Malala Martins Souza",
+          "João Carlos Ker",
+          "Jussara Silva Dantas",
+          "Pablo Vidal‐Torrado",
+          "Alceu Linares Pádua",
+          "Igor Alexandre de Souza",
+          "Humberto Fontes",
+          "Jaime Antonio de Almeida",
+          "Maria Aparecida Pereira Pierangeli",
+          "Nilvan Carvalho Melo",
+          "Ronny Sobreira Barbosa",
+          "Walbert Júnior Reis dos Santos",
+          "José A.M. Demattê",
+          "Fernanda Almeida Bócoli",
+          "Natalia Salazar Baquero",
+          "José Coelho de Araújo Filho",
+          "Regla Toujaguez",
+          "Walane Maria Pereira de Mello Ivo",
+          "Tiago Rodrigues Tavares",
+          "Junior César Avanzi",
+          "Anita Fernanda dos Santos Teixeira",
+          "Rafaella Tatiane Silva de Sá",
+          "Bruno Montoani Silva",
+          "Milson Evaldo Serafim",
+          "Samara Martins Barbosa",
+          "Daiane Batista Silva",
+          "Renata Andrade Reis",
+          "Felipe Haenel Gomes",
+          "Rogério de Andrade Braga",
+          "Henrique Peres Cardoso",
+          "Felipe Soares da Silva",
+          "Somsubhra Chakraborty",
+          "Marco Aurélio Carbone Carneiro",
+          "Luiz Roberto Guimarães Guilherme",
+          "David C. Weindorf",
+          "Nilton Curi"
+        ],
+        "venue": "CATENA",
+        "indexedDate": "2026-09-07",
+        "referencedWorksCount": 69,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7986,
+          "everydayRelevance": 0.9333,
+          "freshness": 0.7143,
+          "credibility": 0.895,
+          "total": 0.8346,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 0.75,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.076
+          },
+          "everydayDomains": [
+            "weather",
+            "transport",
+            "family"
+          ],
+          "subfieldKey": "subfields/2305",
+          "evidence": [
+            "total 0.8346 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.80 = P 0.81 − 0.45×t 0.00 − 0.15×j 0.08",
+            "outcome verbs (v 0.75): increased, outperformed, resulted in",
+            "recognisable subjects (s 0.75): soil (title, ×2), forests",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.80): −0.2 title is 20 words",
+            "jargon density (j 0.08): 2/263 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.93: 3 domain(s) — weather, transport, family",
+            "everyday terms (4): climate, train, parent, parents",
+            "freshness 0.71: 2 day(s) old (effective date 2026-09-07)",
+            "credibility 0.90 = 0.40×c1 1.00 + 0.25×c2 1.00 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in CATENA",
+            "c2 1.00: n = 16989",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1016/j.catena.2026.110531)"
+      },
+      "summary": {
+        "souhrn": "Brazilští půdní vědci vzali přenosný rentgenový přístroj, který během chvilky změří, jaké chemické prvky se v půdě nacházejí, a prošli s ním 16 989 vzorků ze všech šesti brazilských biomů — od Amazonie po jižní pampy. Z naměřeného chemického složení pak nechali čtyři různé počítačové modely hádat, kolik je ve vzorku písku, prachu a jílu, tedy jak hrubá nebo jemná daná půda je. Nejlépe dopadl algoritmus zvaný náhodný les: u písku a jílu se trefil natolik, že vysvětlil zhruba devět desetin rozdílů mezi vzorky, u jemného prachu (siltu) to bylo znatelně horší. Ukázalo se také, že vztah mezi chemií a zrnitostí není všude stejný — v Pantanalu například zrnitost překvapivě dobře prozrazoval draslík. Vzniklá databáze je volně použitelná jako základ pro rychlejší popis půd i mimo Brazílii.",
+        "podrobneVysvetleni": "Zrnitost půdy — tedy poměr písku, prachu a jílu — rozhoduje o tom, jestli půda zadrží vodu a živiny, nebo všechno propustí. Zjišťuje se to laboratorně, což stojí čas i peníze. Autoři proto zkusili obejít cestu přes chemii: přenosná rentgenová fluorescenční spektrometrie (portable X-ray fluorescence, pXRF) je metoda, při které přístroj ozáří vzorek a z odpovědi pozná, které prvky v něm jsou a v jakém množství. Vědci takto proměřili 16 989 vzorků z různých hloubek, klimatických pásem, způsobů využití půdy i mateřských hornin. Data rozdělili na tréninkovou část (13 593 vzorků, na nich se modely učily) a nezávislou ověřovací část (3 396 vzorků, které modely předtím neviděly). Nejlépe si vedl náhodný les (Random Forest): u písku se jeho odhady lišily od skutečnosti typicky o 8,2 procentního bodu a model zachytil 89 % rozdílů mezi vzorky, u jílu o 6,3 bodu a rovněž 89 %, u prachu sice jen o 5,6 bodu, ale vysvětlil pouhých 71 % rozdílů — tedy podstatně méně spolehlivě. Nejsilnější vazbu měla zrnitost na obsah železa a křemíku. Některé vztahy ale platily jen místně: v mokřadním Pantanalu šel prach dobře odhadnout z draslíku, jinde ne. Prakticky to znamená, že chemický „otisk\" půdy zvládne nahradit část laboratorní práce u písku a jílu, u jemného prachu zatím jen orientačně.",
+        "procJeToDulezite": "Zrnitost půdy určuje, kolik vody a živin pole udrží, a rychlejší způsob, jak ji zjistit, usnadňuje plánování hospodaření i sledování stavu půdy na velkých plochách. Zároveň jde o ukázku, jak se z obyčejného měření chemických prvků dá spočítat vlastnost, která s chemií na první pohled nesouvisí.",
+        "poznamkaKOmezenim": "Modely vznikly na brazilských půdách a jejich přesnost jinde není ověřená, u obsahu jemného prachu navíc odhady zůstávají výrazně méně spolehlivé než u písku a jílu."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:algoritmus",
+            "span": {
+              "start": 395,
+              "end": 405
+            },
+            "matchedText": "algoritmus",
+            "messageCs": "Termín „algoritmus“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:algoritmus @ souhrn[395,405]: algoritmus"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 485,
+              "end": 492
+            },
+            "matchedText": "desetin",
+            "messageCs": "Číslo „desetin“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „desetin — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[485,492]: desetin"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 681,
+              "end": 976
+            },
+            "matchedText": "Nejlépe si vedl náhodný les (Random Forest): u písku se jeho odhady lišily od skutečnosti typicky o 8,2 procentního bodu a model zachytil 89 % rozdílů mezi vzorky, u jílu o 6,3 bodu a rovněž 89 %, u prachu sice jen o 5,6 bodu, ale vysvětlil pouhých 71 % rozdílů — tedy podstatně méně spolehlivě.",
+            "messageCs": "Tato věta má 54 slov a je moc dlouhá: „Nejlépe si vedl náhodný les (Random Forest): u písku se jeho odhady lišily od s…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[681,976]: Nejlépe si vedl náhodný les (Random Forest): u písku se jeho odhady lišily od skutečnosti typicky o 8,2 procentního bodu a model zachytil 89 % rozdílů mezi vzorky, u jílu o 6,3 bodu a rovněž 89 %, u prachu sice jen o 5,6 bodu, ale vysvětlil pouhých 71 % rozdílů — tedy podstatně méně spolehlivě."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=23.63",
+            "messageCs": "Věty jsou v průměru moc dlouhé (23,6 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=23.63"
+          }
+        ],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 242,
+              "end": 253
+            },
+            "matchedText": " fluorescen",
+            "messageCs": "Text opisuje původní název článku („ fluorescen“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[242,253]:  fluorescen"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 435,
+              "end": 441
+            },
+            "matchedText": "16 989",
+            "messageCs": "Číslo „16 989“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „16 989 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[435,441]: 16 989"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 30 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=47.9",
+            "messageCs": "Text se celkově čte těžko (index 48 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=47.9"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7160313353",
+        "title": "Disposal of household medication at Danish community pharmacies – a descriptive study",
+        "abstract": "A large share of health care spending is used on medications, but many medications end up not being used, which threatens patient safety, the environment, and the health economics. Medication waste can originate from many sources such as production, packaging, logistics, and use of medication in both hospitals and households. This study concerns discarded medications from households, and the objective was to describe the amount and type of medication waste delivered by citizens at community pharmacies.,At 33 Danish community pharmacies, all discarded medications received from citizens at the counter were documented for one or two weeks each, in total 39 periods of 1 week. Guidelines for handling medication waste were used to secure the work environment at the pharmacies.,In total, 4,384 registrations of discarded medications were completed, ranging from six to 546 medications per pharmacy (average 112). Of these medications, 21% were unopened packages and 57% had not expired. Most medications were tablets (55%). Of the discarded medications 3,655 (83%) were identified with item number, and these consisted of 1,614 different item numbers. The primary group of discarded medications were painkillers (9%). The price for the discarded medications totaled € 78,000; however, this figure is attached with uncertainties.,The amount and type of discarded medication delivered at community pharmacies was very fluctuating. However, if the same amount was delivered at all Danish pharmacies year-around, it would correspond to 5 discarded medications every minute, causing unnecessary costs to individuals and society. This highlights the need to reduce medication waste.",
+        "date": "2026-09-07",
+        "url": "https://doi.org/10.1016/j.scp.2026.102551",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1016/j.scp.2026.102551",
+        "openAlexId": "W7160313353",
+        "subfield": {
+          "id": "subfields/2310",
+          "name": "Pollution"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10419",
+          "name": "Pharmaceutical and Antibiotic Environmental Impacts"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Trine Graabaek",
+          "Birgitte Nørby Winther",
+          "Katrine Vinther Kloster",
+          "Peter Thøgersen",
+          "Lotte Stig Nørgaard"
+        ],
+        "venue": "Sustainable Chemistry and Pharmacy",
+        "indexedDate": "2026-05-06",
+        "referencedWorksCount": 22,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7375,
+          "everydayRelevance": 1,
+          "freshness": 0.7143,
+          "credibility": 0.745,
+          "total": 0.8079,
+          "explainDetail": {
+            "v": 0.25,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0
+          },
+          "everydayDomains": [
+            "health",
+            "money",
+            "work"
+          ],
+          "subfieldKey": "subfields/2310",
+          "evidence": [
+            "total 0.8079 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.74 = P 0.74 − 0.45×t 0.00 − 0.15×j 0.00",
+            "outcome verbs (v 0.25): reduces",
+            "recognisable subjects (s 1.00): patients, households (title, ×2), hospitals",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "everyday relevance 1.00: 3 domain(s) — health, money, work",
+            "everyday terms (11): health, patient, patients, hospital, medication, price, prices, cost, costs, spending, work",
+            "freshness 0.71: 2 day(s) old (effective date 2026-09-07)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Sustainable Chemistry and Pharmacy",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1016/j.scp.2026.102551)"
+      },
+      "summary": {
+        "souhrn": "Do dánských lékáren nosí lidé zbylé léky k likvidaci — a když si zaměstnanci 33 lékáren dali práci a týden či dva zapisovali všechno, co přes pult přišlo, nasbírali 4 384 záznamů. Překvapivá část odpadu vůbec nebyla odpad v obvyklém smyslu: každé pátý balení bylo neotevřené a víc než polovina léků měla stále platnou dobu použitelnosti. Nejčastěji šlo o tablety a největší jednotlivou skupinou byly léky proti bolesti. Cenu vyhozených léků autoři vyčíslili na přibližně 78 tisíc eur, i když sami upozorňují, že jde o odhad s velkou nejistotou. Kdyby stejné množství proudilo celý rok do všech dánských lékáren, znamenalo by to pět zlikvidovaných léků každou minutu — tedy peníze i zdroje, které bylo možné neutratit.",
+        "podrobneVysvetleni": "Vědci si vybrali jednoduchou, ale pracnou metodu: ve 33 dánských veřejných lékárnách zaměstnanci zapisovali každý lék, který jim lidé přinesli k likvidaci. Každá lékárna dokumentovala jeden nebo dva týdny, celkem tedy proběhlo 39 týdenních období, a při práci se postupovalo podle pravidel pro bezpečné zacházení s lékovým odpadem. Dohromady vznikly 4 384 záznamy. Množství se mezi lékárnami lišilo obrovsky — od šesti léků za týden až po 546, v průměru 112. Kde lidé nosí léky málo a kde hodně, se tedy nedá zprůměrovat na jedno číslo.\n\nZ nasbíraných léků bylo 21 % neotevřených, tedy asi jedno balení z pěti nikdo ani nezačal používat, a 57 % — víc než polovina — mělo ještě platnou dobu použitelnosti. Nejčastější formou byly tablety (55 %, tedy asi každý druhý lék). U 3 655 léků (83 %, tedy více než čtyři z pěti) se dal určit přesný kód přípravku; šlo o 1 614 různých položek, což ukazuje, jak pestrá domácí lékárnička v Dánsku je. Největší jednotlivou skupinou byly léky proti bolesti s 9 %, tedy necelou desetinou.\n\nAutoři z toho odhadli cenu okolo 78 tisíc eur a přepočet na celou zemi: pět zlikvidovaných léků za minutu. Oba údaje berou jako hrubý odhad, ne jako přesnou účetní položku.",
+        "procJeToDulezite": "Léky, které se koupí a nepoužijí, znamenají zbytečné výdaje domácností i státu a zátěž pro prostředí — a podle tohoto sčítání jich velká část byla ještě zcela v pořádku a nepoužitá. Ukazuje to, že smysl má i drobnost typu nekupovat velké balení „do zásoby\".",
+        "poznamkaKOmezenim": "Jde o popisné sčítání jen z několika týdnů ve 33 lékárnách, přičemž rozdíly mezi nimi byly velmi velké, takže přepočet na celou zemi i vyčíslení ceny jsou hrubé odhady, na jejichž nejistotu autoři sami upozorňují."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 285,
+              "end": 293
+            },
+            "matchedText": "polovina",
+            "messageCs": "Číslo „polovina“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „polovina — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[285,293]: polovina"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 227,
+              "end": 229
+            },
+            "matchedText": "39",
+            "messageCs": "Číslo „39“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „39 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[227,229]: 39"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 350,
+              "end": 355
+            },
+            "matchedText": "4 384",
+            "messageCs": "Číslo „4 384“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „4 384 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[350,355]: 4 384"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 860,
+              "end": 865
+            },
+            "matchedText": "1 614",
+            "messageCs": "Číslo „1 614“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „1 614 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[860,865]: 1 614"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 994,
+              "end": 997
+            },
+            "matchedText": "9 %",
+            "messageCs": "Číslo „9 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „9 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[994,997]: 9 %"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1057,
+              "end": 1065
+            },
+            "matchedText": "78 tisíc",
+            "messageCs": "Číslo „78 tisíc“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „78 tisíc — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1057,1065]: 78 tisíc"
+          }
+        ],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "hype",
+            "ruleId": "hype:obrovsk",
+            "span": {
+              "start": 399,
+              "end": 407
+            },
+            "matchedText": "obrovsky",
+            "messageCs": "Slovo „obrovsky“ zbytečně přehání (pravidlo §2). Zvažte střízlivější formulaci, nebo doplňte konkrétní číslo či příklad.",
+            "detail": "hype:obrovsk @ podrobneVysvetleni[399,407]: obrovsky"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 771,
+              "end": 937
+            },
+            "matchedText": "U 3 655 léků (83 %, tedy více než čtyři z pěti) se dal určit přesný kód přípravku; šlo o 1 614 různých položek, což ukazuje, jak pestrá domácí lékárnička v Dánsku je.",
+            "messageCs": "Tato věta má 32 slov a je moc dlouhá: „U 3 655 léků (83 %, tedy více než čtyři z pěti) se dal určit přesný kód příprav…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[771,937]: U 3 655 léků (83 %, tedy více než čtyři z pěti) se dal určit přesný kód přípravku; šlo o 1 614 různých položek, což ukazuje, jak pestrá domácí lékárnička v Dánsku je."
+          },
+          {
+            "block": "procJeToDulezite",
+            "rule": "hype",
+            "ruleId": "hype:zcela",
+            "span": {
+              "start": 153,
+              "end": 158
+            },
+            "matchedText": "zcela",
+            "messageCs": "Slovo „zcela“ zbytečně přehání (pravidlo §2). Zvažte střízlivější formulaci, nebo doplňte konkrétní číslo či příklad.",
+            "detail": "hype:zcela @ procJeToDulezite[153,158]: zcela"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=19.56",
+            "messageCs": "Věty jsou v průměru moc dlouhé (19,6 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=19.56"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=2",
+            "messageCs": "Počet vět delších než 30 slov: 2. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=2"
+          },
+          {
+            "block": "all",
+            "rule": "passive-voice",
+            "ruleId": "readability:R7",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "passiveShare=0.222",
+            "messageCs": "22 % vět je v trpném rodě. Pište činným rodem: „vědci změřili…“, ne „bylo změřeno…“.",
+            "detail": "readability:R7 @ all[0,0]: passiveShare=0.222"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7210273470",
+        "title": "Association of socioeconomic status on parental knowledge, attitudes, and practices regarding dental fluorosis in Salem, Tamil Nadu: a cross-sectional study",
+        "abstract": "Dental fluorosis is a significant public health burden in endemic regions like Salem, Tamil Nadu. While environmental fluoride levels are the primary cause, the severity of the condition is often mediated by parental awareness and preventive practices. Socioeconomic status (SES) plays a critical role in determining health literacy and access to resources, yet its specific association with fluorosis-related behaviour remains underexplored in this region. This study aimed to evaluate and compare the knowledge, attitudes, and practices (KAP) of parents from different socioeconomic classes regarding dental fluorosis. A cross-sectional KAP survey was conducted among 160 parents of schoolchildren using a stratified convenience sampling technique. Participants were categorized into five socioeconomic classes based on the Modified Kuppuswamy Scale 2024. Data were collected using a self-administered questionnaire containing 20 dichotomous questions; while content and face validity were established via expert review and piloting, formal reliability testing was not conducted. Statistical associations were analysed using the Chi-square test ( p < 0.05). Socioeconomic status (SES) was significantly associated with key awareness and practice domains. The sample distribution included upper lower ( n = 54), upper middle ( n = 45), lower middle ( n = 26), upper ( n = 18), and lower ( n = 17) socioeconomic classes. Parents from higher SES groups demonstrated significantly ( p < 0.05) higher awareness of fluoride in drinking water and a more positive attitude toward the necessity of treatment compared to lower SES groups. Furthermore, specific oral hygiene practices varied significantly by SES; most notably, children in the lower class had 16 times higher odds of ingesting toothpaste compared to the upper-class reference group (94.1% vs. 50.0%; OR = 16.0; 95% CI: 1.74–147.2; p < 0.001).Clinically, this indicates a substantially elevated risk of excessive systemic fluoride exposure and subsequent fluorosis severity among lower SES children due to high-risk brushing behaviours. The findings suggest that significant socioeconomic disparities exist in parental KAP regarding dental fluorosis, with lower SES groups exhibiting critical gaps in preventive practices. Current awareness programs appear insufficient. Public health policies could benefit from shifting from generalized information to targeted behavioural change interventions, including clearer guidance on age-appropriate toothpaste and the integration of oral health education into school curricula across all socioeconomic strata. However, it should be noted that these findings reflect self-reported data drawn from a convenience sample, which may introduce selection bias, and require future clinical correlation with actual disease severity.",
+        "date": "2026-09-07",
+        "url": "https://doi.org/10.1186/s12903-026-09489-8",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1186/s12903-026-09489-8",
+        "openAlexId": "W7210273470",
+        "subfield": {
+          "id": "subfields/2312",
+          "name": "Water Science and Technology"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T11969",
+          "name": "Fluoride Effects and Removal"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Raghavi Sampathraj",
+          "Arya Acca Varghese",
+          "Pradeep Daniel Gainneos",
+          "Nandhana Kumar"
+        ],
+        "venue": "BMC Oral Health",
+        "indexedDate": "2026-09-07",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7305,
+          "everydayRelevance": 1,
+          "freshness": 0.7143,
+          "credibility": 0.7533,
+          "total": 0.8062,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 0.75,
+            "q": 1,
+            "c": 0.5,
+            "t": 0,
+            "j": 0.1302
+          },
+          "everydayDomains": [
+            "school",
+            "health",
+            "water",
+            "family"
+          ],
+          "subfieldKey": "subfields/2312",
+          "evidence": [
+            "total 0.8062 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.73 = P 0.75 − 0.45×t 0.00 − 0.15×j 0.13",
+            "outcome verbs (v 0.75): lowers, causes, associated with",
+            "recognisable subjects (s 0.75): participants, children, schools",
+            "quantified effect (q 1): percentage, p-value, effect ratio, 95% CI, sample size, times higher/lower",
+            "title concreteness (c 0.50): −0.3 no outcome verb or recognisable subject in the title; −0.2 title is 20 words",
+            "jargon density (j 0.13): 5/384 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 4 domain(s) — school, health, water, family",
+            "everyday terms (10): school, schools, literacy, health, disease, treatment, drinking water, children, parent, parents",
+            "freshness 0.71: 2 day(s) old (effective date 2026-09-07)",
+            "credibility 0.75 = 0.40×c1 1.00 + 0.25×c2 0.43 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in BMC Oral Health",
+            "c2 0.43: n = 54",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1186/s12903-026-09489-8)"
+      },
+      "summary": {
+        "souhrn": "Zubní fluoróza — skvrny a poškození skloviny způsobené nadbytkem fluoru — je v indickém regionu Salem běžný problém, a tak se tamní badatelé zeptali 160 rodičů školáků, co o ní vědí a jak doma čistí dětem zuby. Rodiny rozdělili podle příjmu, vzdělání a zaměstnání do pěti sociálních vrstev a odpovědi porovnali. Rodiče z lépe zajištěných rodin častěji věděli, že fluor je v pitné vodě, a spíš považovali léčbu fluorózy za potřebnou. Největší rozdíl se ukázal u polykání zubní pasty: v nejchudší skupině to u svých dětí uvedlo 94,1 % rodičů, v nejbohatší 50 % — tedy zhruba šestnáctinásobně vyšší šance. Autoři z toho vyvozují, že obecné osvětové kampaně nestačí a že je potřeba konkrétní rada, kolik pasty dítěti dát a jak ho naučit ji vyplivnout.",
+        "podrobneVysvetleni": "Vědci použili takzvaný KAP dotazník (knowledge, attitudes, practices — znalosti, postoje, praxe): dvacet otázek s odpovědí ano/ne, které rodiče vyplňovali sami. Účastníky vybírali po vrstvách podle dostupnosti, celkem 160 rodičů školáků, a zařadili je do pěti sociálních tříd podle indické Kuppuswamyho škály z roku 2024. Nejpočetnější byla nižší střední vrstva v širším smyslu (54 rodičů) a vyšší střední (45 rodičů), dále 26 rodičů ze střední vrstvy, zatímco nejbohatší i nejchudší skupina byly nejmenší — dohromady jich bylo méně než čtyřicet. Výsledky porovnali statistickým testem, který ukazuje, zda je rozdíl mezi skupinami větší, než by se dal čekat náhodou.\n\nRozdíly vyšly hlavně ve dvou oblastech: povědomí o tom, že fluor je obsažen v pitné vodě, a přesvědčení, že fluorózu je vůbec potřeba řešit — obojí bylo častější u movitějších rodičů. Nejvýraznější byl návyk polykání zubní pasty při čištění: uvedlo ho 94,1 % rodičů z nejchudší skupiny oproti 50 % z nejbohatší. Statisticky to odpovídá šestnáctkrát vyšší šanci, ovšem s velmi širokým rozpětím spolehlivosti (1,74 až 147,2), což znamená, že skutečný rozdíl může být mnohem menší i mnohem větší. Protože polknutá pasta znamená další fluor navíc k tomu z vody, jde právě o návyk, který může fluorózu zhoršit.",
+        "procJeToDulezite": "Ukazuje, že u prevence nejde jen o to, co je ve vodě nebo v pastě, ale o každodenní návyk — a že rodiny s nižším vzděláním a příjmem se k srozumitelné radě dostanou hůř, i když se osvěta oficiálně dělá.",
+        "poznamkaKOmezenim": "Jde o jednorázový průzkum založený na tom, co rodiče sami uvedli, s nenáhodným výběrem účastníků a velmi malými krajními skupinami, takže hlavní číslo je jen orientační a skutečný stav zubů dětí nikdo neměřil."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "procJeToDulezite",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 202
+            },
+            "matchedText": "Ukazuje, že u prevence nejde jen o to, co je ve vodě nebo v pastě, ale o každodenní návyk — a že rodiny s nižším vzděláním a příjmem se k srozumitelné radě dostanou hůř, i když se osvěta oficiálně dělá.",
+            "messageCs": "Tato věta má 39 slov a je moc dlouhá: „Ukazuje, že u prevence nejde jen o to, co je ve vodě nebo v pastě, ale o každod…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ procJeToDulezite[0,202]: Ukazuje, že u prevence nejde jen o to, co je ve vodě nebo v pastě, ale o každodenní návyk — a že rodiny s nižším vzděláním a příjmem se k srozumitelné radě dostanou hůř, i když se osvěta oficiálně dělá."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=25.36",
+            "messageCs": "Věty jsou v průměru moc dlouhé (25,4 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=25.36"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 149,
+              "end": 152
+            },
+            "matchedText": "160",
+            "messageCs": "Číslo „160“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „160 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[149,152]: 160"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 218,
+              "end": 221
+            },
+            "matchedText": "160",
+            "messageCs": "Číslo „160“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „160 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[218,221]: 160"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 30 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=43.5",
+            "messageCs": "Text se celkově čte těžko (index 43 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=43.5"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-09-09T09:09:56.190Z",
+  "generatedOn": "2026-09-09",
+  "schemaVersion": 1
+}

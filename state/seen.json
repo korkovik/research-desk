@@ -936,6 +936,46 @@
       "titleKey": "relativeburdenofneglectedtropicaldiseasesamongschoolagechildreninruralandurbanslumsettingsineasternethiopia",
       "publishedOn": "2026-09-08",
       "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7211868728",
+      "doi": "10.3390/buildings16173548",
+      "arxivId": null,
+      "titleKey": "energypenaltyfinancialburdenandfiscalriskofbiosafetyventilationpoliciesineducationalbuildingsaprobabilisticanalysisundermarketvolatility",
+      "publishedOn": "2026-09-09",
+      "category": "nature-climate"
+    },
+    {
+      "openalexId": "W7163353282",
+      "doi": "10.1186/s12889-026-29307-8",
+      "arxivId": null,
+      "titleKey": "mortalityandmorbidityconsequencesofparticulatematterinsouthkoreaevidencefromtransboundaryairpollution",
+      "publishedOn": "2026-09-09",
+      "category": "nature-climate"
+    },
+    {
+      "openalexId": "W7210282974",
+      "doi": "10.1016/j.catena.2026.110531",
+      "arxivId": null,
+      "titleKey": "portablexrayfluorescencespectrometrylibraryforbraziliansoilschemicalcharacterizationandpredictionofsoilparticlesizefractionsacrossallbiomes",
+      "publishedOn": "2026-09-09",
+      "category": "nature-climate"
+    },
+    {
+      "openalexId": "W7160313353",
+      "doi": "10.1016/j.scp.2026.102551",
+      "arxivId": null,
+      "titleKey": "disposalofhouseholdmedicationatdanishcommunitypharmaciesadescriptivestudy",
+      "publishedOn": "2026-09-09",
+      "category": "nature-climate"
+    },
+    {
+      "openalexId": "W7210273470",
+      "doi": "10.1186/s12903-026-09489-8",
+      "arxivId": null,
+      "titleKey": "associationofsocioeconomicstatusonparentalknowledgeattitudesandpracticesregardingdentalfluorosisinsalemtamilnaduacrosssectionalstudy",
+      "publishedOn": "2026-09-09",
+      "category": "nature-climate"
     }
   ]
 }

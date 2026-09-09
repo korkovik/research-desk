@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Příroda a klima – 9. září 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Příroda a klima</h1>
+<p class="dateline"><time datetime="2026-09-09">9. září 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 5</p>
+<div class="summary"><p><span class="lead">Vydatné větrání čerstvým vzduchem, které se po pandemii dostalo do řady předpisů, vyjde v horkém a vlhkém podnebí neúnosně draho.</span> Autoři si vzali univerzitní budovu v kolumbijské Monteríi, sladili počítačový model s reálnými účty za elektřinu a porovnali čtyři způsoby, jak ve třídách udržet zdravý vzduch. Pětinásobná výměna vzduchu za hodinu zvedla spotřebu klimatizace 2,26krát, tedy víc než na dvojnásobek, a rozpočtu budovy by pak každý rok chybělo 115 725 dolarů — tolik by musel někdo doplatit, aby se účty zaplatily. Hlavním žroutem je odvlhčování: samo spolklo 43,5 % provozních nákladů, tedy bezmála polovinu peněz na provoz, a budova by navíc vypustila 135,3 tuny skleníkových plynů ročně nad dnešní stav. Čističky s filtrem HEPA přímo ve třídách přinesly podle výpočtu srovnatelnou ochranu a za deset let by ušetřily 0,870 milionu dolarů, tedy víc než polovinu toho, co by spolkla dražší varianta.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Tým postavil počítačový model budovy, který hodinu po hodině spočítá spotřebu klimatizace, a doladil ho podle skutečných účtů za elektřinu: od reality se odchyloval o 1,8 %, tedy necelé dvě koruny ze sta. Pak porovnal čtyři strategie: běžný předpis s 1,2 výměny vzduchu za hodinu (vzduch v místnosti se vymění asi jednou za hodinu); „ředění&quot; čerstvým vzduchem s pěti výměnami za hodinu; stejně málo čerstvého vzduchu jako v prvním případě, ale doplněné čističkami s filtrem HEPA, které vzduch v místnosti čistí a vracejí zpět; a nakonec pět výměn za hodinu s rekuperací, tedy zařízením, které z odváděného vzduchu zachytí 65 % tepla i vlhkosti, tedy asi dvě třetiny. Nejdráž vyšlo ředění čerstvým vzduchem: spotřeba klimatizace vzrostla 2,26krát, tedy víc než na dvojnásobek, roční díra v rozpočtu činila 115 725 dolarů a k tomu 135,3 tuny skleníkových plynů navíc. Důvodem je vlhkost — samotné odvlhčování nasávaného vzduchu tvořilo 43,5 % provozních výdajů, tedy skoro polovinu. Aby autoři podchytili nejistotu v ceně elektřiny, spustili 10 000 náhodných variant výpočtu s výkyvy tarifů kolem 15 %; v nejhorších pěti procentech případů, tedy přibližně jednou z dvaceti, by účet přesáhl 148 438 dolarů ročně. Za deset let stojí ředění čerstvým vzduchem 1,635 milionu dolarů, varianta s filtry 0,765 milionu — rozpočtová ztráta se tak zmenší o 90,3 %, tedy zbude z ní jen asi desetina.</p>
+<h3>Proč je to důležité</h3>
+<p>Peníze, které škola v tropech utopí v klimatizaci kvůli přísně nastavenému větrání, chybí jinde — a podle těchto výpočtů lze podobnou ochranu proti šíření nemocí zajistit levněji kombinací základního přívodu čerstvého vzduchu a čističek přímo ve třídách.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Jesús David Rhenals Julio, Deimer Ricardo Muñoz, Demóstenes Durango Álvarez, Samuel Bonilla Gracia, Miguel Doria Oviedo, Jorge Mario Mendoza Fandiño</dd>
+<dt>Časopis</dt>
+<dd>Buildings</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-07">7. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.3390/buildings16173548" rel="noreferrer">10.3390/buildings16173548</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7211868728" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.3390/buildings16173548" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o simulaci jediné budovy v jednom tropickém městě, nikoli o měření nemocnosti studentů, takže tvrzení o „srovnatelné ochraně&quot; vychází z předpokladů modelu a výsledky nelze bez dalšího přenášet do jiného podnebí.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 5</p>
+<div class="summary"><p><span class="lead">Vyšší množství jemného prachu v ovzduší se v Jižní Koreji projevilo na počtu úmrtí i na počtu lidí v nemocnicích.</span> Vědci propočítali data z let 2015 až 2022 a zjistili, že každý mikrogram prachu navíc v krychlovém metru vzduchu zvýšil úmrtnost lidí nad 65 let o 0,17 procenta — z tisíce úmrtí v této věkové skupině necelé dvě navíc. Hospitalizace kvůli nemocem dýchacích cest stouply o 5,1 procenta, tedy asi o jednu z dvaceti. Mezi lety 2015 a 2022 se přitom vzduch v zemi vyčistil o 5,58 mikrogramu na krychlový metr, což je zhruba pětinásobek zmíněného jednoho mikrogramu. Hodnotu let života, o které lidé díky tomu nepřišli, autoři vyčíslili na 14,14 miliardy dolarů ročně — to je jejich odhad přínosu čistšího vzduchu pro celou zemi za jeden rok.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Autoři pracovali se statistikami o znečištění a o zdraví obyvatel z let 2015 až 2022. Hlavní potíž takových studií je, že špinavý vzduch obvykle doprovázejí i další věci: hustá doprava, průmysl, chudší čtvrti. Pak není jasné, co za zdravotními problémy stojí. Vědci proto použili postup zvaný instrumentální proměnná (instrumental variable). Znamená to, že místo přímého porovnání sáhli po ukazateli, který ovlivňuje vzduch v Koreji, ale sám nesouvisí s tím, jak tam lidé žijí — po směru větru a naměřených hodnotách na čínských stanicích proti větru. Rozdíly ve zdraví se tak dají připsat samotnému vzduchu.</p>
+<p>Výsledky: každý mikrogram jemného prachu navíc v krychlovém metru vzduchu zvýšil úmrtnost lidí nad 65 let o 0,17 procenta, tedy z tisíce úmrtí v této skupině necelé dvě navíc. Hospitalizace kvůli dýchacím nemocem stouply o 5,1 procenta, přibližně o jednu z dvaceti. Návštěvy lékaře kvůli akutním infekcím horních cest dýchacích vzrostly o 1,2 procenta, tedy z tisíce návštěv asi dvanáct navíc. U dolních cest dýchacích to bylo 2,6 procenta, tedy z tisíce návštěv zhruba šestadvacet navíc. Nejsilněji se změny projevily u nemocí, které se špinavým vzduchem přímo souvisejí.</p>
+<p>Za sledované roky se průměrná koncentrace prachu v Koreji snížila o 5,58 mikrogramu na krychlový metr. Autoři pak spočítali jen hodnotu let života, o které lidé díky tomu nepřišli, a došli k částce 14,14 miliardy dolarů ročně.</p>
+<h3>Proč je to důležité</h3>
+<p>Kvalita ovzduší se promítá do počtu hospitalizací a úmrtí, nejvíc u starších lidí a u nemocí dýchacích cest. Náklady na čistší vzduch se tak dají poměřit s tím, kolik zdraví se jimi ušetří.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Osung Kwon, Taehyun Kim</dd>
+<dt>Časopis</dt>
+<dd>BMC Public Health</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-08">8. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1186/s12889-026-29307-8" rel="noreferrer">10.1186/s12889-026-29307-8</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7163353282" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1186/s12889-026-29307-8" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o statistický propočet z jedné země za osm let a peněžní vyčíslení přínosů stojí na zvolených předpokladech, takže uvedené částky je třeba brát jako odhad.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 5</p>
+<div class="summary"><p>Brazilští půdní vědci vzali přenosný rentgenový přístroj, který během chvilky změří, jaké chemické prvky se v půdě nacházejí, a prošli s ním 16 989 vzorků ze všech šesti brazilských biomů — od Amazonie po jižní pampy. Z naměřeného chemického složení pak nechali čtyři různé počítačové modely hádat, kolik je ve vzorku písku, prachu a jílu, tedy jak hrubá nebo jemná daná půda je. Nejlépe dopadl algoritmus zvaný náhodný les: u písku a jílu se trefil natolik, že vysvětlil zhruba devět desetin rozdílů mezi vzorky, u jemného prachu (siltu) to bylo znatelně horší. Ukázalo se také, že vztah mezi chemií a zrnitostí není všude stejný — v Pantanalu například zrnitost překvapivě dobře prozrazoval draslík. Vzniklá databáze je volně použitelná jako základ pro rychlejší popis půd i mimo Brazílii.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Zrnitost půdy — tedy poměr písku, prachu a jílu — rozhoduje o tom, jestli půda zadrží vodu a živiny, nebo všechno propustí. Zjišťuje se to laboratorně, což stojí čas i peníze. Autoři proto zkusili obejít cestu přes chemii: přenosná rentgenová fluorescenční spektrometrie (portable X-ray fluorescence, pXRF) je metoda, při které přístroj ozáří vzorek a z odpovědi pozná, které prvky v něm jsou a v jakém množství. Vědci takto proměřili 16 989 vzorků z různých hloubek, klimatických pásem, způsobů využití půdy i mateřských hornin. Data rozdělili na tréninkovou část (13 593 vzorků, na nich se modely učily) a nezávislou ověřovací část (3 396 vzorků, které modely předtím neviděly). Nejlépe si vedl náhodný les (Random Forest): u písku se jeho odhady lišily od skutečnosti typicky o 8,2 procentního bodu a model zachytil 89 % rozdílů mezi vzorky, u jílu o 6,3 bodu a rovněž 89 %, u prachu sice jen o 5,6 bodu, ale vysvětlil pouhých 71 % rozdílů — tedy podstatně méně spolehlivě. Nejsilnější vazbu měla zrnitost na obsah železa a křemíku. Některé vztahy ale platily jen místně: v mokřadním Pantanalu šel prach dobře odhadnout z draslíku, jinde ne. Prakticky to znamená, že chemický „otisk&quot; půdy zvládne nahradit část laboratorní práce u písku a jílu, u jemného prachu zatím jen orientačně.</p>
+<h3>Proč je to důležité</h3>
+<p>Zrnitost půdy určuje, kolik vody a živin pole udrží, a rychlejší způsob, jak ji zjistit, usnadňuje plánování hospodaření i sledování stavu půdy na velkých plochách. Zároveň jde o ukázku, jak se z obyčejného měření chemických prvků dá spočítat vlastnost, která s chemií na první pohled nesouvisí.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Sérgio Henrique Godinho Silva, Eduane José de Pádua, Marcelo Mancini, Lucas Rezende Gomide, Luiz Felipe Mesquita, Wenceslau Geraldes Teixeira a další</dd>
+<dt>Časopis</dt>
+<dd>CATENA</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-07">7. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1016/j.catena.2026.110531" rel="noreferrer">10.1016/j.catena.2026.110531</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7210282974" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1016/j.catena.2026.110531" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Modely vznikly na brazilských půdách a jejich přesnost jinde není ověřená, u obsahu jemného prachu navíc odhady zůstávají výrazně méně spolehlivé než u písku a jílu.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-4">
+<p class="paper-counter">Studie 4 z 5</p>
+<div class="summary"><p><span class="lead">Do dánských lékáren nosí lidé zbylé léky k likvidaci — a když si zaměstnanci 33 lékáren dali práci a týden či dva zapisovali všechno, co přes pult přišlo, nasbírali 4 384 záznamů.</span> Překvapivá část odpadu vůbec nebyla odpad v obvyklém smyslu: každé pátý balení bylo neotevřené a víc než polovina léků měla stále platnou dobu použitelnosti. Nejčastěji šlo o tablety a největší jednotlivou skupinou byly léky proti bolesti. Cenu vyhozených léků autoři vyčíslili na přibližně 78 tisíc eur, i když sami upozorňují, že jde o odhad s velkou nejistotou. Kdyby stejné množství proudilo celý rok do všech dánských lékáren, znamenalo by to pět zlikvidovaných léků každou minutu — tedy peníze i zdroje, které bylo možné neutratit.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Vědci si vybrali jednoduchou, ale pracnou metodu: ve 33 dánských veřejných lékárnách zaměstnanci zapisovali každý lék, který jim lidé přinesli k likvidaci. Každá lékárna dokumentovala jeden nebo dva týdny, celkem tedy proběhlo 39 týdenních období, a při práci se postupovalo podle pravidel pro bezpečné zacházení s lékovým odpadem. Dohromady vznikly 4 384 záznamy. Množství se mezi lékárnami lišilo obrovsky — od šesti léků za týden až po 546, v průměru 112. Kde lidé nosí léky málo a kde hodně, se tedy nedá zprůměrovat na jedno číslo.</p>
+<p>Z nasbíraných léků bylo 21 % neotevřených, tedy asi jedno balení z pěti nikdo ani nezačal používat, a 57 % — víc než polovina — mělo ještě platnou dobu použitelnosti. Nejčastější formou byly tablety (55 %, tedy asi každý druhý lék). U 3 655 léků (83 %, tedy více než čtyři z pěti) se dal určit přesný kód přípravku; šlo o 1 614 různých položek, což ukazuje, jak pestrá domácí lékárnička v Dánsku je. Největší jednotlivou skupinou byly léky proti bolesti s 9 %, tedy necelou desetinou.</p>
+<p>Autoři z toho odhadli cenu okolo 78 tisíc eur a přepočet na celou zemi: pět zlikvidovaných léků za minutu. Oba údaje berou jako hrubý odhad, ne jako přesnou účetní položku.</p>
+<h3>Proč je to důležité</h3>
+<p>Léky, které se koupí a nepoužijí, znamenají zbytečné výdaje domácností i státu a zátěž pro prostředí — a podle tohoto sčítání jich velká část byla ještě zcela v pořádku a nepoužitá. Ukazuje to, že smysl má i drobnost typu nekupovat velké balení „do zásoby&quot;.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Trine Graabaek, Birgitte Nørby Winther, Katrine Vinther Kloster, Peter Thøgersen, Lotte Stig Nørgaard</dd>
+<dt>Časopis</dt>
+<dd>Sustainable Chemistry and Pharmacy</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-07">7. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1016/j.scp.2026.102551" rel="noreferrer">10.1016/j.scp.2026.102551</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7160313353" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1016/j.scp.2026.102551" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o popisné sčítání jen z několika týdnů ve 33 lékárnách, přičemž rozdíly mezi nimi byly velmi velké, takže přepočet na celou zemi i vyčíslení ceny jsou hrubé odhady, na jejichž nejistotu autoři sami upozorňují.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-5">
+<p class="paper-counter">Studie 5 z 5</p>
+<div class="summary"><p>Zubní fluoróza — skvrny a poškození skloviny způsobené nadbytkem fluoru — je v indickém regionu Salem běžný problém, a tak se tamní badatelé zeptali 160 rodičů školáků, co o ní vědí a jak doma čistí dětem zuby. Rodiny rozdělili podle příjmu, vzdělání a zaměstnání do pěti sociálních vrstev a odpovědi porovnali. Rodiče z lépe zajištěných rodin častěji věděli, že fluor je v pitné vodě, a spíš považovali léčbu fluorózy za potřebnou. Největší rozdíl se ukázal u polykání zubní pasty: v nejchudší skupině to u svých dětí uvedlo 94,1 % rodičů, v nejbohatší 50 % — tedy zhruba šestnáctinásobně vyšší šance. Autoři z toho vyvozují, že obecné osvětové kampaně nestačí a že je potřeba konkrétní rada, kolik pasty dítěti dát a jak ho naučit ji vyplivnout.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Vědci použili takzvaný KAP dotazník (knowledge, attitudes, practices — znalosti, postoje, praxe): dvacet otázek s odpovědí ano/ne, které rodiče vyplňovali sami. Účastníky vybírali po vrstvách podle dostupnosti, celkem 160 rodičů školáků, a zařadili je do pěti sociálních tříd podle indické Kuppuswamyho škály z roku 2024. Nejpočetnější byla nižší střední vrstva v širším smyslu (54 rodičů) a vyšší střední (45 rodičů), dále 26 rodičů ze střední vrstvy, zatímco nejbohatší i nejchudší skupina byly nejmenší — dohromady jich bylo méně než čtyřicet. Výsledky porovnali statistickým testem, který ukazuje, zda je rozdíl mezi skupinami větší, než by se dal čekat náhodou.</p>
+<p>Rozdíly vyšly hlavně ve dvou oblastech: povědomí o tom, že fluor je obsažen v pitné vodě, a přesvědčení, že fluorózu je vůbec potřeba řešit — obojí bylo častější u movitějších rodičů. Nejvýraznější byl návyk polykání zubní pasty při čištění: uvedlo ho 94,1 % rodičů z nejchudší skupiny oproti 50 % z nejbohatší. Statisticky to odpovídá šestnáctkrát vyšší šanci, ovšem s velmi širokým rozpětím spolehlivosti (1,74 až 147,2), což znamená, že skutečný rozdíl může být mnohem menší i mnohem větší. Protože polknutá pasta znamená další fluor navíc k tomu z vody, jde právě o návyk, který může fluorózu zhoršit.</p>
+<h3>Proč je to důležité</h3>
+<p>Ukazuje, že u prevence nejde jen o to, co je ve vodě nebo v pastě, ale o každodenní návyk — a že rodiny s nižším vzděláním a příjmem se k srozumitelné radě dostanou hůř, i když se osvěta oficiálně dělá.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Raghavi Sampathraj, Arya Acca Varghese, Pradeep Daniel Gainneos, Nandhana Kumar</dd>
+<dt>Časopis</dt>
+<dd>BMC Oral Health</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-07">7. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1186/s12903-026-09489-8" rel="noreferrer">10.1186/s12903-026-09489-8</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7210273470" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1186/s12903-026-09489-8" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jednorázový průzkum založený na tom, co rodiče sami uvedli, s nenáhodným výběrem účastníků a velmi malými krajními skupinami, takže hlavní číslo je jen orientační a skutečný stav zubů dětí nikdo neměřil.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 9. září 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>
