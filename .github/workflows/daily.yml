@@ -62,7 +62,7 @@ jobs:
     if: github.event.schedule != '23 11 * * *' && inputs.run_watchdog != true
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       # Decide whether this firing is the real one BEFORE touching the app.
       # It cannot be left to the app: run.ts refuses a same-day republish with
@@ -108,10 +108,10 @@ jobs:
             decide false before-0600-prague
           fi
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         if: steps.gate.outputs.proceed == 'true'
         with:
-          node-version: '22'
+          node-version: '24'
           cache: npm
 
       - name: Install
@@ -319,7 +319,7 @@ jobs:
       contents: read
       issues: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - id: probe
         name: Is today's edition committed and served?
