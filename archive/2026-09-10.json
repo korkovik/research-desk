@@ -1,0 +1,859 @@
+{
+  "date": "2026-09-10",
+  "categoryKey": "psychology-behaviour",
+  "categoryLabel": "Psychologie a chování",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7211995212",
+        "title": "Motivational profiles and exercise in late adolescents: a cross-sectional study of autonomy and behavioral engagement",
+        "abstract": "Abstract Objective Physical inactivity among adolescents is a worldwide public health concern. This study investigated the psychological motivation of adolescent exercise and the mechanisms by which diverse motives translate into actual behavioral engagement. We aimed to provide evidence-based insights for health promotion through the lens of Self-Determination Theory. Methods Participants were high school students (Grades 10 and 11) recruited from the Zhejiang-Chinese Youth Health Study, encompassing diverse geographical regions and varying socioeconomic backgrounds across Zhejiang Province. We employed exploratory factor analysis to identify the latent structure of exercise motivations among Chinese high school students. Cluster analysis was subsequently used to describe the multidimensional motivation profile for the participants. Finally, multiple regression analysis and ANOVA were conducted to examine the associations between those profiles, demographic factors (gender, parental education, family affluence, living with parents, and BMI) and actual exercise frequency. Results Three factors were contracted, including autonomous (e.g. enjoyment, socializing, health improvement), controlled (e.g. parental expectations) and appearance (e.g. body shaping). 483 high school students (41.2% male, 58.8% female) were classified into four clusters, which were autonomous-driven cluster ( n = 107), appearance-driven cluster ( n = 75), externally pressured cluster ( n = 110) and amotivated cluster ( n = 191). Gender ( P < 0.0001) and parents education level ( P = 0.0231) were significantly related to the participants’ cluster membership while family wealth was not ( P = 0.0810). Notably, participants who were in autonomous cluster reported higher exercise frequency than other clusters (MEAN=3.29, SD = 2.27) and was followed by externally pressured cluster (MEAN=2.38, SD = 2.12, P = 0.0158), amotivated cluster (MEAN=2.28, SD = 2.00, P = 0.0010) and finally the appearance-driven cluster (MEAN=2.19, SD = 1.89, P = 0.0028). Crucially, no statistical differences in exercise frequency were found between the externally pressured, appearance-driven and amotivated cluster, indicating that profiles lacking autonomous motivation were associated with lower levels of actual exercise. Conclusion Our findings suggested that mere needs (e.g. appearance anxiety or parental pressure) does not correspond to higher exercise frequency. Internalized and autonomous motivation serves as a robust correlate of adolescent exercises frequency. Future interventions should move beyond external pressure and prioritize gender sensitive, autonomy supportive strategies.",
+        "date": "2026-09-09",
+        "url": "https://doi.org/10.1186/s12889-026-29323-8",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1186/s12889-026-29323-8",
+        "openAlexId": "W7211995212",
+        "subfield": {
+          "id": "subfields/3207",
+          "name": "Social Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T11400",
+          "name": "Motivation and Self-Concept in Sports"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Shuxian Wu",
+          "Yan Xu",
+          "Qingqing Wu",
+          "Lei Wang",
+          "Xiang Zhao",
+          "Qiaohong Lv",
+          "Yu Huang"
+        ],
+        "venue": "BMC Public Health",
+        "indexedDate": "2026-09-10",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9652,
+          "everydayRelevance": 1,
+          "freshness": 1,
+          "credibility": 0.7876,
+          "total": 0.9563,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.2319
+          },
+          "everydayDomains": [
+            "school",
+            "health",
+            "body",
+            "family",
+            "mind"
+          ],
+          "subfieldKey": "subfields/3207",
+          "evidence": [
+            "total 0.9563 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.97 = P 1.00 − 0.45×t 0.00 − 0.15×j 0.23",
+            "outcome verbs (v 1.00): improvement, lowers, associated with, was followed by",
+            "recognisable subjects (s 1.00): participants, adolescents (title, ×2), students, schools",
+            "quantified effect (q 1): percentage, p-value, sample size",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.23): 8/345 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 5 domain(s) — school, health, body, family, mind",
+            "everyday terms (11): school, schools, student, students, health, anxiety, exercise, parent, parents, family, motivation",
+            "freshness 1.00: 0 day(s) old (effective date 2026-09-10)",
+            "credibility 0.79 = 0.40×c1 1.00 + 0.25×c2 0.57 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in BMC Public Health",
+            "c2 0.57: n = 191",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1186/s12889-026-29323-8)"
+      },
+      "summary": {
+        "souhrn": "Nejsilnější pobídkou k pohybu není zrcadlo ani rodičovské kázání. Vědci se zeptali 483 čínských středoškoláků, proč cvičí, a podle odpovědí je rozdělili do čtyř skupin. Nejčastěji se hýbali ti, kdo cvičí pro radost, kvůli partě nebo kvůli zdraví. Studenti pod tlakem rodičů, studenti řešící postavu i studenti bez jakékoli motivace cvičili podobně málo. Jde o jednorázové dotazování, takže výsledek ukazuje souvislost, ne příčinu.",
+        "podrobneVysvetleni": "Data pocházejí ze studie zdraví mládeže v čínské provincii Če-ťiang. Zapojilo se 483 studentů prvního a druhého ročníku střední školy z různých regionů a rodinných prostředí. Dívek bylo o něco víc než chlapců (59 % proti 41 %). Studenti vyplnili dotazník o tom, proč se hýbou. Statistická analýza roztřídila důvody do tří skupin. První byla vnitřní motivace: radost z pohybu, kamarádi, zdraví. Druhá byl tlak zvenčí, typicky očekávání rodičů. Třetí byl vzhled a tvarování postavy. Další analýza pak rozdělila samotné studenty podle toho, které motivy u nich převažují. Vnitřní motivaci mělo 107 studentů, tedy asi pětina. Vzhled hnal 75 z nich, tedy přibližně jednoho ze sedmi. Pod vnějším tlakem bylo 110 studentů, opět asi pětina. Největší skupina, 191 studentů čili téměř dva z pěti, neuvedla motivaci žádnou. Rozdíly v četnosti cvičení byly zřetelné. Skupina s vnitřní motivací měla na použité škále průměr 3,29. Ostatní tři skupiny se pohybovaly mezi 2,19 a 2,38, tedy asi o třetinu níž. Mezi těmito třemi skupinami se rozdíly statisticky neprokázaly. Jinak řečeno: tlak rodičů ani starost o postavu nevedly k většímu množství pohybu než úplná nechuť. Se zařazením do skupin souviselo pohlaví a vzdělání rodičů. Majetek rodiny už žádnou souvislost neukázal.",
+        "procJeToDulezite": "Kdo chce dostat dospívající k pohybu, má podle těchto dat větší šanci, když mu pomůže najít vlastní důvod. Naléhání rodičů ani řeči o postavě s četností cvičení nesouvisely.",
+        "poznamkaKOmezenim": "Jde o jednorázové dotazníkové šetření mezi 483 studenty jedné čínské provincie se samostatně vykazovanou četností cvičení, takže výsledek popisuje souvislost, nikoli příčinu."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 83,
+              "end": 86
+            },
+            "matchedText": "483",
+            "messageCs": "Číslo „483“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „483 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[83,86]: 483"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 210,
+              "end": 214
+            },
+            "matchedText": "59 %",
+            "messageCs": "Číslo „59 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „59 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[210,214]: 59 %"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 221,
+              "end": 225
+            },
+            "matchedText": "41 %",
+            "messageCs": "Číslo „41 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „41 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[221,225]: 41 %"
+          }
+        ],
+        "soft": []
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7211988194",
+        "title": "Reminiscence Therapy to Improve Self-Esteem, Loneliness, and Stress in Rural Thai Older Adults: A Quasi-Experimental Study",
+        "abstract": "Background: Loneliness, psychological stress, and low self-esteem are important mental health concerns among community-dwelling older adults and may negatively affect healthy ageing and quality of life. This study examined psychosocial outcomes associated with participation in a 4-week Hybrid Happy Reminiscence Program among community-dwelling older adults. Methods: A quasi-experimental pretest–posttest control group study was conducted between September and November 2025 among community-dwelling older adults in Don Tako Subdistrict, Ratchaburi Province, Thailand. Participants were recruited using purposive sampling based on predefined eligibility criteria and were subsequently assigned to either an experimental group (n = 30), which received the Hybrid Happy Reminiscence Program combining bi-weekly face-to-face group sessions with a digital intervention delivered through the LINE application, or a control group (n = 30), which received routine community care. No statistically significant between-group differences were detected in the measured baseline demographic characteristics (all p > 0.05). Primary outcomes included self-esteem, loneliness, and psychological stress. Results: Within the experimental group, self-esteem increased from baseline to posttest (t(29) = −8.07, p < 0.001), while loneliness (t(29) = 5.11, p < 0.001, Cohen’s d = 0.93) and psychological stress (t(29) = 6.59, p < 0.001, Cohen’s d = 1.20) decreased. At posttest, the experimental group had higher self-esteem than the control group (mean difference = 4.73, 95% CI: 3.23–6.23, t(58) = 6.32, p < 0.001) and lower loneliness scores (mean difference = −2.13, 95% CI: −3.27 to −1.00, t(58) = −3.78, p < 0.001). For psychological stress, the experimental group also had a lower mean score than the control group at posttest, although the confidence interval included zero (mean difference = −0.73, 95% CI: −1.51 to 0.04, t(58) = −1.89, p = 0.063). Conclusions: Participants receiving the Hybrid Happy Reminiscence Program showed greater post-intervention self-esteem and lower loneliness scores than those receiving routine community care. Although psychological stress decreased within the intervention group, the post-intervention between-group difference was not statistically significant. Given the quasi-experimental design and the non-random allocation procedure, these findings should be interpreted as group differences consistent with a possible beneficial effect of the program rather than definitive evidence of causality. Larger randomized controlled studies with longer follow-up periods are needed to confirm these findings and to distinguish intervention-specific effects from non-specific influences.",
+        "date": "2026-09-09",
+        "url": "https://doi.org/10.3390/ijerph23091188",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.3390/ijerph23091188",
+        "openAlexId": "W7211988194",
+        "subfield": {
+          "id": "subfields/3204",
+          "name": "Developmental and Educational Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T11983",
+          "name": "Identity, Memory, and Therapy"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Yaowaluck Meebunmak",
+          "Kannika Kitnopkiat",
+          "Parinyaporn Thanaboonpuang"
+        ],
+        "venue": "International Journal of Environmental Research and Public Health",
+        "indexedDate": "2026-09-10",
+        "referencedWorksCount": 17,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.958,
+          "everydayRelevance": 1,
+          "freshness": 1,
+          "credibility": 0.7373,
+          "total": 0.9464,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.2801
+          },
+          "everydayDomains": [
+            "health",
+            "family",
+            "mind",
+            "ageing"
+          ],
+          "subfieldKey": "subfields/3204",
+          "evidence": [
+            "total 0.9464 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.96 = P 1.00 − 0.45×t 0.00 − 0.15×j 0.28",
+            "outcome verbs (v 1.00): increased, improves (title, ×2), lowers, detected, decreased, associated with",
+            "recognisable subjects (s 1.00): participants, adults (title, ×2), older adults (title, ×2)",
+            "quantified effect (q 1): percentage, p-value, 95% CI, sample size, Cohen's d",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.28): 10/357 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 4 domain(s) — health, family, mind, ageing",
+            "everyday terms (6): health, therapy, older adults, stress, loneliness, ageing",
+            "freshness 1.00: 0 day(s) old (effective date 2026-09-10)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.37 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in International Journal of Environmental Research and Public Health",
+            "c2 0.37: n = 30",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.3390/ijerph23091188)"
+      },
+      "summary": {
+        "souhrn": "Vzpomínání na hezké chvíle ve společnosti druhých pomohlo thajským seniorům z venkova zvednout sebeúctu a zmírnit pocity osamělosti. Šedesát lidí z jednoho venkovského obvodu v provincii Ratčaburi rozdělili výzkumníci na dvě skupiny: třicet z nich prošlo čtyřtýdenním programem, který kombinoval skupinová setkání tváří v tvář dvakrát týdně s doplňkovým obsahem posílaným přes mobilní aplikaci LINE, zbylých třicet dostávalo jen běžnou péči v komunitě. Po měsíci měli účastníci programu znatelně vyšší sebeúctu a nižší míru osamělosti než druhá skupina. Psychická zátěž jim sice také klesla, ale rozdíl oproti kontrolní skupině už nebyl dost jasný na to, aby se dal odlišit od náhody. Autoři sami zdůrazňují, že lidé nebyli do skupin rozděleni losem, takže jde spíš o slibný náznak než o důkaz, že za zlepšení může právě program.",
+        "podrobneVysvetleni": "Metoda se jmenuje reminiscenční terapie (reminiscence therapy) — jde o řízené vybavování a sdílení příjemných vzpomínek z vlastního života, obvykle ve skupině. Výzkumníci ji od září do listopadu 2025 nabídli seniorům žijícím doma v jednom venkovském obvodu v Thajsku. Účastníky vybírali cíleně podle předem daných podmínek, ne losem, a rozdělili je na skupinu s programem (30 lidí) a skupinu s běžnou komunitní péčí (30 lidí). Na začátku se obě skupiny v sledovaných údajích, jako je věk či vzdělání, výrazně nelišily.\n\nPo čtyřech týdnech vyšly u účastníků programu tři změny. Sebeúcta stoupla a oproti kontrolní skupině byla vyšší v průměru o 4,73 bodu použité škály, přičemž skutečný rozdíl se s velkou pravděpodobností pohybuje mezi 3,2 a 6,2 bodu — tedy jednoznačně na plusové straně. Osamělost klesla o 2,13 bodu proti druhé skupině, opět s rozsahem odhadu celým v záporných hodnotách. Síla obou změn uvnitř skupiny byla podle běžných měřítek velká.\n\nU psychické zátěže to bylo jinak: uvnitř skupiny sice klesla, ale rozdíl proti kontrolní skupině činil jen 0,73 bodu a odhad zahrnoval i nulu (p = 0,063). To znamená, že rozdíl mohl vzniknout i náhodou a nelze na něj spoléhat. Pomoct mohlo i prosté setkávání s lidmi, ne jen vzpomínání samotné.",
+        "procJeToDulezite": "Osamělost a ztráta sebedůvěry patří u starších lidí k častým a podceňovaným potížím a tenhle program nepotřeboval nic dražšího než pravidelná setkání a běžný mobil. To je něco, co si dokáže zorganizovat i malá obec nebo rodina.",
+        "poznamkaKOmezenim": "Šlo o pouhých šedesát lidí z jediné thajské obce, kteří nebyli do skupin rozděleni losem a nikdo je nesledoval déle než čtyři týdny, takže výsledek je předběžný a k potvrzení by bylo potřeba větší studie s náhodným rozdělením."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 133,
+              "end": 452
+            },
+            "matchedText": "Šedesát lidí z jednoho venkovského obvodu v provincii Ratčaburi rozdělili výzkumníci na dvě skupiny: třicet z nich prošlo čtyřtýdenním programem, který kombinoval skupinová setkání tváří v tvář dvakrát týdně s doplňkovým obsahem posílaným přes mobilní aplikaci LINE, zbylých třicet dostávalo jen běžnou péči v komunitě.",
+            "messageCs": "Tato věta má 45 slov a je moc dlouhá: „Šedesát lidí z jednoho venkovského obvodu v provincii Ratčaburi rozdělili výzku…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[133,452]: Šedesát lidí z jednoho venkovského obvodu v provincii Ratčaburi rozdělili výzkumníci na dvě skupiny: třicet z nich prošlo čtyřtýdenním programem, který kombinoval skupinová setkání tváří v tvář dvakrát týdně s doplňkovým obsahem posílaným přes mobilní aplikaci LINE, zbylých třicet dostávalo jen běžnou péči v komunitě."
+          },
+          {
+            "block": "souhrn",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:kontrolni-skupina",
+            "span": {
+              "start": 610,
+              "end": 627
+            },
+            "matchedText": "kontrolní skupině",
+            "messageCs": "Termín „kontrolní skupina“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:kontrolni-skupina @ souhrn[610,627]: kontrolní skupině"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 808,
+              "end": 817
+            },
+            "matchedText": "2,13 bodu",
+            "messageCs": "Číslo „2,13 bodu“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „2,13 bodu — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[808,817]: 2,13 bodu"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:p-hodnota",
+            "span": {
+              "start": 1099,
+              "end": 1106
+            },
+            "matchedText": "p = 0,0",
+            "messageCs": "Termín „p-hodnota“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:p-hodnota @ podrobneVysvetleni[1099,1106]: p = 0,0"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=20.33",
+            "messageCs": "Věty jsou v průměru moc dlouhé (20,3 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=20.33"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "hype",
+            "ruleId": "hype:slibn",
+            "span": {
+              "start": 768,
+              "end": 774
+            },
+            "matchedText": "slibný",
+            "messageCs": "Slovo „slibný“ zbytečně přehání (pravidlo §2). Zvažte střízlivější formulaci, nebo doplňte konkrétní číslo či příklad.",
+            "detail": "hype:slibn @ souhrn[768,774]: slibný"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 18,
+              "end": 28
+            },
+            "matchedText": "reminiscen",
+            "messageCs": "Text opisuje původní název článku („reminiscen“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[18,28]: reminiscen"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 373,
+              "end": 375
+            },
+            "matchedText": "30",
+            "messageCs": "Číslo „30“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „30 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[373,375]: 30"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 417,
+              "end": 419
+            },
+            "matchedText": "30",
+            "messageCs": "Číslo „30“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „30 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[417,419]: 30"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=2",
+            "messageCs": "Počet vět delších než 30 slov: 2. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=2"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7212000096",
+        "title": "Reduced sensorimotor lactate concentration and improved sleep efficiency following resistance training in older adults",
+        "abstract": "Abstract As populations age worldwide, pathological neurodegeneration with subsequent cognitive decline has emerged as a pressing public health challenge. As effective treatments remain limited once neurodegeneration has occurred, prevention and delay of decline onset are crucial. While physical exercise is associated with improved cognition, exercise-specific mechanisms remain unclear. We therefore examined the effects of 12 weeks explosive lower-body resistance training (RT) in community-dwelling older adults on proposed markers associated with brain metabolism and sleep. Thirty-six participants (64–81 years) completed pre and post assessments consisting of sensorimotor lactate and N-acetylaspartate (NAA) levels via 7 T magnetic resonance spectroscopy (analyzable lactate data: n = 24; NAA: n = 32), objective sleep architecture with wearable polysomnography ( n = 34), and subjective sleep quality of the recorded nights with the revised sleep questionnaire A ( n = 25) as well as of the preceding 4 weeks with the Pittsburgh Sleep Quality Index ( n = 36). Participants were assigned to RT (3 sessions per week) or a control group (CON; maintaining lifestyle). After significant Group × Time interactions via repeated-measures ANCOVA with sex as covariate, paired t -tests revealed that RT significantly ( p < 0.05) reduced resting lactate concentration ( d = 0.78), improved objective sleep efficiency ( d = 0.75), and prolonged total sleep time ( d = 0.61). Our findings suggest that resistance training may be particularly beneficial for older adults experiencing fragmented sleep and impaired neural oxidative metabolism.",
+        "date": "2026-09-09",
+        "url": "https://doi.org/10.1007/s11357-026-02519-x",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1007/s11357-026-02519-x",
+        "openAlexId": "W7212000096",
+        "subfield": {
+          "id": "subfields/3205",
+          "name": "Experimental and Cognitive Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T10316",
+          "name": "Sleep and related disorders"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Selin Scherrer",
+          "Sven Egger",
+          "Xinyu Liu",
+          "Anna Wick",
+          "Björn Rasch",
+          "Lijing Xin",
+          "Benedikt Lauber",
+          "Wolfgang Taube"
+        ],
+        "venue": "GeroScience",
+        "indexedDate": "2026-09-10",
+        "referencedWorksCount": 49,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9529,
+          "everydayRelevance": 1,
+          "freshness": 1,
+          "credibility": 0.7423,
+          "total": 0.9451,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.3139
+          },
+          "everydayDomains": [
+            "sleep",
+            "health",
+            "body",
+            "family",
+            "mind"
+          ],
+          "subfieldKey": "subfields/3205",
+          "evidence": [
+            "total 0.9451 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.95 = P 1.00 − 0.45×t 0.00 − 0.15×j 0.31",
+            "outcome verbs (v 1.00): reduced (title, ×2), improved (title, ×2), lowers, prevention, delays, associated with",
+            "recognisable subjects (s 1.00): participants, adults (title, ×2), older adults (title, ×2)",
+            "quantified effect (q 1): p-value, sample size",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.31): 7/223 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 5 domain(s) — sleep, health, body, family, mind",
+            "everyday terms (7): sleep, sleep quality, health, treatment, exercise, older adults, concentration",
+            "freshness 1.00: 0 day(s) old (effective date 2026-09-10)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.39 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in GeroScience",
+            "c2 0.39: n = 36",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1007/s11357-026-02519-x)"
+      },
+      "summary": {
+        "souhrn": "Dvanáct týdnů silového tréninku nohou třikrát týdně zlepšilo starším lidem spánek a změnilo jeden z ukazatelů látkové výměny v mozku. Vědci pracovali s 36 dobrovolníky ve věku 64 až 81 let, kteří žijí běžně doma; část z nich cvičila, část jen pokračovala v dosavadním způsobu života. Před začátkem a po skončení jim měřili velmi silným magnetickým rezonančním přístrojem koncentraci laktátu (kyseliny mléčné) v oblasti mozku řídící pohyb a smysly a zároveň jim přenosným přístrojem snímali spánek doma v posteli. U cvičící skupiny klidová hladina laktátu klesla, spánková efektivita — tedy podíl času v posteli, který člověk skutečně prospí — se zlepšila a celková doba spánku se prodloužila. Autoři z toho opatrně usuzují, že posilování by mohlo pomáhat hlavně těm starším lidem, kteří mají spánek roztříštěný a probouzejí se v noci.",
+        "podrobneVysvetleni": "Účastníky rozdělili do dvou skupin: jedna třikrát týdně absolvovala takzvaný explozivní silový trénink dolní poloviny těla (tedy posilování, kde jde o rychlé, důrazné provedení pohybu, ne o zvedání maximální váhy), druhá nic neměnila. Před tréninkovým blokem a po něm proběhla tři měření. Za prvé magnetická rezonanční spektroskopie na přístroji se sílou pole 7 tesla — což je zjednodušeně velmi citlivá varianta „magnetu\", která umí v konkrétní části mozku změřit množství jednotlivých látek. Sledovali laktát, tedy kyselinu mléčnou, jejíž vyšší klidová hladina se dává do souvislosti s méně účinným zpracováním kyslíku v mozkové tkáni, a dále NAA, látku považovanou za ukazatel stavu nervových buněk. Za druhé spánek měřený přenosným přístrojem přímo doma a za třetí dva dotazníky na to, jak spánek lidé sami hodnotí.\nPo tréninku klesla u cvičících klidová koncentrace laktátu, zvýšila se spánková efektivita a prodloužila se celková doba spánku. Síla těchto změn odpovídá tomu, co statistici označují za středně velký až velký účinek — tedy rozdíl, který není jen kosmetický. Ne všechna data se ale povedlo vyhodnotit u všech: laktát šlo posoudit u 24 lidí, NAA u 32, spánek z přístroje u 34. Vlastní pocit ze spánku se přitom výrazně nezměnil, což bývá u podobných studií časté — přístroj vidí něco jiného než ráno člověk sám.",
+        "procJeToDulezite": "Posilování nohou je něco, co zvládne většina lidí v seniorském věku i doma nebo v běžné tělocvičně, a tahle práce naznačuje, že se přitom nezlepší jen svaly, ale i kvalita spánku. Roztříštěný spánek přitom starší lidi trápí velmi často a možností, jak s ním něco udělat bez léků, je málo.",
+        "poznamkaKOmezenim": "Jde o malý vzorek — celkem 36 lidí, přičemž klíčové měření laktátu se povedlo vyhodnotit jen u 24 z nich — takže výsledek je předběžný a bude ho potřeba potvrdit na větší skupině, než z něj půjde dělat doporučení."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 152,
+              "end": 154
+            },
+            "matchedText": "36",
+            "messageCs": "Číslo „36“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „36 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[152,154]: 36"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 176,
+              "end": 178
+            },
+            "matchedText": "64",
+            "messageCs": "Číslo „64“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „64 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[176,178]: 64"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=23.94",
+            "messageCs": "Věty jsou v průměru moc dlouhé (23,9 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=23.94"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=4",
+            "messageCs": "Počet vět delších než 30 slov: 4. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=4"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 284,
+              "end": 512
+            },
+            "matchedText": "Před začátkem a po skončení jim měřili velmi silným magnetickým rezonančním přístrojem koncentraci laktátu (kyseliny mléčné) v oblasti mozku řídící pohyb a smysly a zároveň jim přenosným přístrojem snímali spánek doma v posteli.",
+            "messageCs": "Tato věta má 33 slov a je moc dlouhá: „Před začátkem a po skončení jim měřili velmi silným magnetickým rezonančním pří…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[284,512]: Před začátkem a po skončení jim měřili velmi silným magnetickým rezonančním přístrojem koncentraci laktátu (kyseliny mléčné) v oblasti mozku řídící pohyb a smysly a zároveň jim přenosným přístrojem snímali spánek doma v posteli."
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 372,
+              "end": 380
+            },
+            "matchedText": "oncentra",
+            "messageCs": "Text opisuje původní název článku („oncentra“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[372,380]: oncentra"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_english_original:spektroskopie",
+            "span": {
+              "start": 319,
+              "end": 332
+            },
+            "matchedText": "spektroskopie",
+            "messageCs": "U termínu „spektroskopie“ chybí při prvním použití anglický originál v závorce (např. „spektroskopie (spectroscopy)“). Čtenář ten anglický výraz potká jinde (§2).",
+            "detail": "jargon:no_english_original:spektroskopie @ podrobneVysvetleni[319,332]: spektroskopie"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 860,
+              "end": 868
+            },
+            "matchedText": "oncentra",
+            "messageCs": "Text opisuje původní název článku („oncentra“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[860,868]: oncentra"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=46.5",
+            "messageCs": "Text se celkově čte těžko (index 46 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=46.5"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7211930874",
+        "title": "Latent classes and determinants of depressive and anxiety symptoms among older adults with chronic diseases in rural China",
+        "abstract": "The mental health of older adults with chronic diseases in rural, underdeveloped regions of China poses a critical public health challenge. Comorbid depressive and anxiety symptoms are highly prevalent but exhibit substantial heterogeneity, necessitating person-centered approaches to identify meaningful subgroups and inform targeted interventions. A cross-sectional study was conducted from May to October 2024 among 3,200 older adults (age ≥ 60) with chronic diseases in rural Guizhou, Southwest China. Latent class analysis (LCA) was applied to symptoms assessed via the PHQ-9 and GAD-7 scales. Multinomial logistic regression was used to examine factors associated with class membership. LCA revealed a four-class model as optimal: Class 1 (34.31%) exhibited severe depressive-anxious symptoms, Class 2 (27.03%) moderate depressive-anxious symptoms, Class 3 (22.31%) moderate depressive with low anxiety, and Class 4 (16.34%) minimal symptoms. Based on any symptom endorsement (PHQ-9 ≥ 5 and GAD-7 ≥ 5), the prevalence rates were 66.7% for depressive and 56.0% for anxiety symptoms; using standard clinical cutoffs (PHQ-9 ≥ 10 and GAD-7 ≥ 10), the corresponding rates were 30.5% and 20.8%. Loneliness, impaired activities of daily living, and poor sleep quality were common risk factors across all symptomatic classes, with the effect sizes decreasing as symptom severity decreased. Social support showed a protective effect in the severe and moderate groups but was associated with increased risk in the mild symptom group. Self-efficacy was protective only in the mild symptom class. Demographic factors such as being underweight and having a lower income elevated risks primarily in the moderate and severe groups. Depressive and anxiety symptoms among rural older adults with chronic diseases are highly heterogeneous. A differentiated, class-specific intervention strategy is urgently needed, incorporating both universal risk factor management (targeting loneliness, sleep quality, and functional impairment) and tailored approaches aligned with distinct symptom profiles. These findings underscore the importance of precision public health in addressing mental health disparities in resource-limited settings.",
+        "date": "2026-09-09",
+        "url": "https://doi.org/10.1186/s40359-026-05301-y",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1186/s40359-026-05301-y",
+        "openAlexId": "W7211930874",
+        "subfield": {
+          "id": "subfields/3203",
+          "name": "Clinical Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T14313",
+          "name": "Health and Well-being Studies"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Qing Wu",
+          "Yi Liu",
+          "Li Liu",
+          "Xiaoxi Wang",
+          "Li Wang",
+          "Lie Wang"
+        ],
+        "venue": "BMC Psychology",
+        "indexedDate": "2026-09-09",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9316,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.9112,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.456
+          },
+          "everydayDomains": [
+            "sleep",
+            "health",
+            "money",
+            "family",
+            "mind"
+          ],
+          "subfieldKey": "subfields/3203",
+          "evidence": [
+            "total 0.9112 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.93 = P 1.00 − 0.45×t 0.00 − 0.15×j 0.46",
+            "outcome verbs (v 1.00): increased, lowers, decreased, associated with",
+            "recognisable subjects (s 1.00): adults (title, ×2), older adults (title, ×2)",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.46): 14/307 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 5 domain(s) — sleep, health, money, family, mind",
+            "everyday terms (8): sleep, sleep quality, health, disease, anxiety, income, older adults, loneliness",
+            "freshness 0.86: 1 day(s) old (effective date 2026-09-09)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in BMC Psychology",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1186/s40359-026-05301-y)"
+      },
+      "summary": {
+        "souhrn": "Výzkumníci oslovili 3 200 lidí starších 60 let s chronickou nemocí ve venkovské provincii Kuej-čou na jihozápadě Číny a ptali se jich na příznaky deprese a úzkosti. Místo jednoho průměru za všechny hledali skupiny lidí, kteří odpovídají podobně. Vyšly čtyři. Silné příznaky deprese i úzkosti mělo 34 % dotázaných, tedy zhruba každý třetí, mírnější potíže obojího druhu 27 %, tedy asi čtvrtina. Dalších 22 %, tedy zhruba pětinu, trápila hlavně skleslost bez výrazné úzkosti a jen 16 % dotázaných, tedy asi jeden ze šesti, bylo prakticky bez obtíží. Ve všech skupinách s příznaky se opakovaly tytéž tři věci: osamělost, špatný spánek a snížená soběstačnost v běžných denních úkonech.",
+        "podrobneVysvetleni": "Data vědci sbírali od května do října 2024. Použili dva běžné dotazníky: PHQ-9 na příznaky deprese a GAD-7 na příznaky úzkosti. Odpovědi pak zpracovali metodou zvanou analýza latentních tříd (latent class analysis). Ta nehledá průměr, ale skupiny lidí s podobným profilem odpovědí. Podle mírnějšího měřítka, tedy jakýchkoli zaznamenatelných příznaků, uvedlo depresivní potíže 66,7 % dotázaných, tedy dva lidé ze tří. Úzkostné potíže mělo 56,0 %, tedy o něco víc než polovina. Při přísnějším prahu, který lékaři berou jako středně silné obtíže, čísla klesla: 30,5 % u deprese, tedy zhruba tři lidé z deseti, a 20,8 % u úzkosti, tedy přibližně každý pátý. Ve všech skupinách s příznaky se opakovaly stejné tři rizikové faktory: osamělost, špatná kvalita spánku a snížená schopnost zvládat běžné denní činnosti. Čím mírnější byly příznaky, tím menší váhu tyto faktory měly. Podpora okolí souvisela s nižším rizikem u lidí se silnými a středně silnými potížemi. U skupiny s mírnými příznaky to bylo naopak: vyšší podpora šla ruku v ruce s vyšším rizikem. Víra ve vlastní schopnosti pomáhala jen ve skupině s mírnými příznaky. Podváha a nižší příjem zvyšovaly riziko hlavně u lidí se středními a silnými potížemi. Autoři z toho vyvozují, že plošná pomoc nestačí a že se hodí lišit podle profilu obtíží.",
+        "procJeToDulezite": "Duševní potíže starších lidí s chronickou nemocí se snadno přehlédnou, protože se schovají za tělesnou diagnózu. Studie ukazuje, že osamělost, špatný spánek a ztráta soběstačnosti jsou společné jmenovatele, na které se dá zaměřit i mimo ordinaci.",
+        "poznamkaKOmezenim": "Jde o jednorázový průřezový průzkum v jediné venkovské oblasti Číny, opřený o dotazníky a vlastní výpovědi, takže ukazuje souvislosti, ne příčiny, a nemusí platit jinde."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 77,
+              "end": 78
+            },
+            "matchedText": "9",
+            "messageCs": "Číslo „9“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „9 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[77,78]: 9"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 105,
+              "end": 106
+            },
+            "matchedText": "7",
+            "messageCs": "Číslo „7“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „7 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[105,106]: 7"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 20,
+              "end": 25
+            },
+            "matchedText": "3 200",
+            "messageCs": "Číslo „3 200“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „3 200 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[20,25]: 3 200"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 48,
+              "end": 56
+            },
+            "matchedText": " chronic",
+            "messageCs": "Text opisuje původní název článku („ chronic“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[48,56]:  chronic"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 476,
+              "end": 653
+            },
+            "matchedText": "Při přísnějším prahu, který lékaři berou jako středně silné obtíže, čísla klesla: 30,5 % u deprese, tedy zhruba tři lidé z deseti, a 20,8 % u úzkosti, tedy přibližně každý pátý.",
+            "messageCs": "Tato věta má 31 slov a je moc dlouhá: „Při přísnějším prahu, který lékaři berou jako středně silné obtíže, čísla klesl…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[476,653]: Při přísnějším prahu, který lékaři berou jako středně silné obtíže, čísla klesla: 30,5 % u deprese, tedy zhruba tři lidé z deseti, a 20,8 % u úzkosti, tedy přibližně každý pátý."
+          },
+          {
+            "block": "procJeToDulezite",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 30,
+              "end": 38
+            },
+            "matchedText": " chronic",
+            "messageCs": "Text opisuje původní název článku („ chronic“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ procJeToDulezite[30,38]:  chronic"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7212001798",
+        "title": "Older Adults share an agreement on experiences that elicit love: A study of consensus and individual differences in judgments",
+        "abstract": "Abstract Objectives Positive social connections are key ingredients for healthy aging. We studied older adults’ shared agreement on loving experiences and individual differences in their decisions-making to unlock critical information about how this developmental group connects socially. Methods To explore shared agreement on experiences of love, we surveyed a representative sample (N=400) of adults aged 65 years and older in the United States. They evaluated 61 experiences to determine whether older adults believe they typically evoke feelings of love in most people. We used a Bayesian decision tree model to account for individual differences in respondents’ knowledge and decision-making styles when deriving the consensus on these experiences. Results We found a consensus among older adults on experiences of love. In addition, individual differences in knowledge on love and decision-making styles were meaningfully linked to person-level characteristics: female participants and those with higher levels of compassion had higher levels of knowledge on the consensus, White male participants and those with higher levels of loneliness were more likely to guess the shared agreement when they were uncertain, and non-White participants were more likely to guess “True.” Discussion Experiences of love for older adults include both romantic and non-romantic settings. Older adults tended to have different knowledge levels regarding the consensus on these experiences. Future research could examine whether fostering compassion or raising awareness about these loving experiences in daily life might improve well-being for older adults. Increased knowledge regarding these experiences may decrease misunderstandings or loneliness by sharing more loving experiences with others.",
+        "date": "2026-09-09",
+        "url": "https://doi.org/10.1093/geronb/gbag192",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1093/geronb/gbag192",
+        "openAlexId": "W7212001798",
+        "subfield": {
+          "id": "subfields/3206",
+          "name": "Neuropsychology and Physiological Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T11265",
+          "name": "Aging and Gerontology Research"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Lindy Williams",
+          "Saina Salamati",
+          "Saida Heshmati",
+          "Zita Oravecz"
+        ],
+        "venue": "The Journals of Gerontology Series B",
+        "indexedDate": "2026-09-10",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9243,
+          "everydayRelevance": 0.9667,
+          "freshness": 1,
+          "credibility": 0.6676,
+          "total": 0.9138,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.2381
+          },
+          "everydayDomains": [
+            "family",
+            "mind",
+            "ageing"
+          ],
+          "subfieldKey": "subfields/3206",
+          "evidence": [
+            "total 0.9138 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.92 = P 0.96 − 0.45×t 0.00 − 0.15×j 0.24",
+            "outcome verbs (v 1.00): increased, improves, decreases, linked to",
+            "recognisable subjects (s 1.00): participants, adults (title, ×2), older adults (title, ×2)",
+            "quantified effect (q 1): sample size",
+            "title concreteness (c 0.80): −0.2 title is 19 words",
+            "jargon density (j 0.24): 6/252 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 3 domain(s) — family, mind, ageing",
+            "everyday terms (5): older adults, well-being, loneliness, decision making, aging",
+            "freshness 1.00: 0 day(s) old (effective date 2026-09-10)",
+            "credibility 0.67 = 0.40×c1 1.00 + 0.25×c2 0.65 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in The Journals of Gerontology Series B",
+            "c2 0.65: n = 400",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1093/geronb/gbag192)"
+      },
+      "summary": {
+        "souhrn": "Na čem se starší lidé shodnou, když mají říct, co v člověku probudí pocit lásky? Vědci se zeptali 400 Američanů ve věku 65 let a více. Každý posuzoval 61 zážitků, tedy více než šest desítek krátkých popisů běžných okamžiků, a rozhodoval, zda vyvolávají lásku u většiny lidí. Shoda byla zřetelná a netýkala se jen partnerství, ale i přátel, dětí a vnoučat. Zajímavý je ale rozdíl mezi lidmi: ženy a lidé se silnějším soucitem odpovídali blíž převládajícímu názoru, zatímco osamělí lidé si častěji jen tipovali.",
+        "podrobneVysvetleni": "Výzkumníci pracovali se vzorkem 400 lidí od 65 let výše. Vzorek sestavili tak, aby odpovídal americké populaci. Každý účastník dostal seznam zážitků. U každého řekl, jestli podle něj vyvolá lásku u většiny lidí. Odpovědi pak zpracovali statistickým modelem (Bayesian decision tree). Jde o postup, který se snaží odhadnout, kdy člověk odpovídá podle znalosti a kdy si jen tipuje. Model tedy rozlišuje dvě věci. Za prvé, jak dobře člověk zná převládající názor své skupiny. Za druhé, jak se zachová, když si není jistý.\n\nShoda mezi staršími lidmi se skutečně ukázala. Na seznam „milujících\" zážitků se dostaly romantické situace i takové, které s partnerstvím nemají nic společného. Rozdíly mezi lidmi byly ale dobře čitelné. Ženy a lidé s vyšší mírou soucitu znali shodu lépe. Bílí muži a lidé, kteří se cítili osaměle, si v nejistotě častěji tipovali. Účastníci jiné než bílé barvy pleti pak měli tendenci v nejistotě odpovídat „ano, vyvolává\".\n\nAutoři z toho nevyvozují, že by osamělí lidé lásku prožívali méně. Kladou jen otázku pro další výzkum. Mohlo by lidem pomoci, kdyby si takových okamžiků ve svém dni víc všímali? Zatím jde o hypotézu, ne o zjištění.",
+        "procJeToDulezite": "Dobré vztahy patří k tomu, co drží lidi ve vyšším věku v dobré kondici. Podle téhle práce si ale projevů blízkosti nevšímáme všichni stejně.",
+        "poznamkaKOmezenim": "Jde o jednorázový dotazník z jedné země, takže výsledky ukazují jen souvislosti, nikoli příčiny."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "pass",
+        "hard": [],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 32,
+              "end": 35
+            },
+            "matchedText": "400",
+            "messageCs": "Číslo „400“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „400 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[32,35]: 400"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-09-10T09:07:08.036Z",
+  "generatedOn": "2026-09-10",
+  "schemaVersion": 1
+}

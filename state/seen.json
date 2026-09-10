@@ -976,6 +976,46 @@
       "titleKey": "associationofsocioeconomicstatusonparentalknowledgeattitudesandpracticesregardingdentalfluorosisinsalemtamilnaduacrosssectionalstudy",
       "publishedOn": "2026-09-09",
       "category": "nature-climate"
+    },
+    {
+      "openalexId": "W7211995212",
+      "doi": "10.1186/s12889-026-29323-8",
+      "arxivId": null,
+      "titleKey": "motivationalprofilesandexerciseinlateadolescentsacrosssectionalstudyofautonomyandbehavioralengagement",
+      "publishedOn": "2026-09-10",
+      "category": "psychology-behaviour"
+    },
+    {
+      "openalexId": "W7211988194",
+      "doi": "10.3390/ijerph23091188",
+      "arxivId": null,
+      "titleKey": "reminiscencetherapytoimproveselfesteemlonelinessandstressinruralthaiolderadultsaquasiexperimentalstudy",
+      "publishedOn": "2026-09-10",
+      "category": "psychology-behaviour"
+    },
+    {
+      "openalexId": "W7212000096",
+      "doi": "10.1007/s11357-026-02519-x",
+      "arxivId": null,
+      "titleKey": "reducedsensorimotorlactateconcentrationandimprovedsleepefficiencyfollowingresistancetraininginolderadults",
+      "publishedOn": "2026-09-10",
+      "category": "psychology-behaviour"
+    },
+    {
+      "openalexId": "W7211930874",
+      "doi": "10.1186/s40359-026-05301-y",
+      "arxivId": null,
+      "titleKey": "latentclassesanddeterminantsofdepressiveandanxietysymptomsamongolderadultswithchronicdiseasesinruralchina",
+      "publishedOn": "2026-09-10",
+      "category": "psychology-behaviour"
+    },
+    {
+      "openalexId": "W7212001798",
+      "doi": "10.1093/geronb/gbag192",
+      "arxivId": null,
+      "titleKey": "olderadultsshareanagreementonexperiencesthatelicitloveastudyofconsensusandindividualdifferencesinjudgments",
+      "publishedOn": "2026-09-10",
+      "category": "psychology-behaviour"
     }
   ]
 }

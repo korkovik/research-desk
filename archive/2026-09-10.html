@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Psychologie a chování – 10. září 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Psychologie a chování</h1>
+<p class="dateline"><time datetime="2026-09-10">10. září 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 5</p>
+<div class="summary"><p><span class="lead">Nejsilnější pobídkou k pohybu není zrcadlo ani rodičovské kázání.</span> Vědci se zeptali 483 čínských středoškoláků, proč cvičí, a podle odpovědí je rozdělili do čtyř skupin. Nejčastěji se hýbali ti, kdo cvičí pro radost, kvůli partě nebo kvůli zdraví. Studenti pod tlakem rodičů, studenti řešící postavu i studenti bez jakékoli motivace cvičili podobně málo. Jde o jednorázové dotazování, takže výsledek ukazuje souvislost, ne příčinu.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Data pocházejí ze studie zdraví mládeže v čínské provincii Če-ťiang. Zapojilo se 483 studentů prvního a druhého ročníku střední školy z různých regionů a rodinných prostředí. Dívek bylo o něco víc než chlapců (59 % proti 41 %). Studenti vyplnili dotazník o tom, proč se hýbou. Statistická analýza roztřídila důvody do tří skupin. První byla vnitřní motivace: radost z pohybu, kamarádi, zdraví. Druhá byl tlak zvenčí, typicky očekávání rodičů. Třetí byl vzhled a tvarování postavy. Další analýza pak rozdělila samotné studenty podle toho, které motivy u nich převažují. Vnitřní motivaci mělo 107 studentů, tedy asi pětina. Vzhled hnal 75 z nich, tedy přibližně jednoho ze sedmi. Pod vnějším tlakem bylo 110 studentů, opět asi pětina. Největší skupina, 191 studentů čili téměř dva z pěti, neuvedla motivaci žádnou. Rozdíly v četnosti cvičení byly zřetelné. Skupina s vnitřní motivací měla na použité škále průměr 3,29. Ostatní tři skupiny se pohybovaly mezi 2,19 a 2,38, tedy asi o třetinu níž. Mezi těmito třemi skupinami se rozdíly statisticky neprokázaly. Jinak řečeno: tlak rodičů ani starost o postavu nevedly k většímu množství pohybu než úplná nechuť. Se zařazením do skupin souviselo pohlaví a vzdělání rodičů. Majetek rodiny už žádnou souvislost neukázal.</p>
+<h3>Proč je to důležité</h3>
+<p>Kdo chce dostat dospívající k pohybu, má podle těchto dat větší šanci, když mu pomůže najít vlastní důvod. Naléhání rodičů ani řeči o postavě s četností cvičení nesouvisely.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Shuxian Wu, Yan Xu, Qingqing Wu, Lei Wang, Xiang Zhao, Qiaohong Lv a další</dd>
+<dt>Časopis</dt>
+<dd>BMC Public Health</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-09">9. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1186/s12889-026-29323-8" rel="noreferrer">10.1186/s12889-026-29323-8</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7211995212" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1186/s12889-026-29323-8" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jednorázové dotazníkové šetření mezi 483 studenty jedné čínské provincie se samostatně vykazovanou četností cvičení, takže výsledek popisuje souvislost, nikoli příčinu.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 5</p>
+<div class="summary"><p><span class="lead">Vzpomínání na hezké chvíle ve společnosti druhých pomohlo thajským seniorům z venkova zvednout sebeúctu a zmírnit pocity osamělosti.</span> Šedesát lidí z jednoho venkovského obvodu v provincii Ratčaburi rozdělili výzkumníci na dvě skupiny: třicet z nich prošlo čtyřtýdenním programem, který kombinoval skupinová setkání tváří v tvář dvakrát týdně s doplňkovým obsahem posílaným přes mobilní aplikaci LINE, zbylých třicet dostávalo jen běžnou péči v komunitě. Po měsíci měli účastníci programu znatelně vyšší sebeúctu a nižší míru osamělosti než druhá skupina. Psychická zátěž jim sice také klesla, ale rozdíl oproti kontrolní skupině už nebyl dost jasný na to, aby se dal odlišit od náhody. Autoři sami zdůrazňují, že lidé nebyli do skupin rozděleni losem, takže jde spíš o slibný náznak než o důkaz, že za zlepšení může právě program.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Metoda se jmenuje reminiscenční terapie (reminiscence therapy) — jde o řízené vybavování a sdílení příjemných vzpomínek z vlastního života, obvykle ve skupině. Výzkumníci ji od září do listopadu 2025 nabídli seniorům žijícím doma v jednom venkovském obvodu v Thajsku. Účastníky vybírali cíleně podle předem daných podmínek, ne losem, a rozdělili je na skupinu s programem (30 lidí) a skupinu s běžnou komunitní péčí (30 lidí). Na začátku se obě skupiny v sledovaných údajích, jako je věk či vzdělání, výrazně nelišily.</p>
+<p>Po čtyřech týdnech vyšly u účastníků programu tři změny. Sebeúcta stoupla a oproti kontrolní skupině byla vyšší v průměru o 4,73 bodu použité škály, přičemž skutečný rozdíl se s velkou pravděpodobností pohybuje mezi 3,2 a 6,2 bodu — tedy jednoznačně na plusové straně. Osamělost klesla o 2,13 bodu proti druhé skupině, opět s rozsahem odhadu celým v záporných hodnotách. Síla obou změn uvnitř skupiny byla podle běžných měřítek velká.</p>
+<p>U psychické zátěže to bylo jinak: uvnitř skupiny sice klesla, ale rozdíl proti kontrolní skupině činil jen 0,73 bodu a odhad zahrnoval i nulu (p = 0,063). To znamená, že rozdíl mohl vzniknout i náhodou a nelze na něj spoléhat. Pomoct mohlo i prosté setkávání s lidmi, ne jen vzpomínání samotné.</p>
+<h3>Proč je to důležité</h3>
+<p>Osamělost a ztráta sebedůvěry patří u starších lidí k častým a podceňovaným potížím a tenhle program nepotřeboval nic dražšího než pravidelná setkání a běžný mobil. To je něco, co si dokáže zorganizovat i malá obec nebo rodina.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Yaowaluck Meebunmak, Kannika Kitnopkiat, Parinyaporn Thanaboonpuang</dd>
+<dt>Časopis</dt>
+<dd>International Journal of Environmental Research and Public Health</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-09">9. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.3390/ijerph23091188" rel="noreferrer">10.3390/ijerph23091188</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7211988194" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.3390/ijerph23091188" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Šlo o pouhých šedesát lidí z jediné thajské obce, kteří nebyli do skupin rozděleni losem a nikdo je nesledoval déle než čtyři týdny, takže výsledek je předběžný a k potvrzení by bylo potřeba větší studie s náhodným rozdělením.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 5</p>
+<div class="summary"><p><span class="lead">Dvanáct týdnů silového tréninku nohou třikrát týdně zlepšilo starším lidem spánek a změnilo jeden z ukazatelů látkové výměny v mozku.</span> Vědci pracovali s 36 dobrovolníky ve věku 64 až 81 let, kteří žijí běžně doma; část z nich cvičila, část jen pokračovala v dosavadním způsobu života. Před začátkem a po skončení jim měřili velmi silným magnetickým rezonančním přístrojem koncentraci laktátu (kyseliny mléčné) v oblasti mozku řídící pohyb a smysly a zároveň jim přenosným přístrojem snímali spánek doma v posteli. U cvičící skupiny klidová hladina laktátu klesla, spánková efektivita — tedy podíl času v posteli, který člověk skutečně prospí — se zlepšila a celková doba spánku se prodloužila. Autoři z toho opatrně usuzují, že posilování by mohlo pomáhat hlavně těm starším lidem, kteří mají spánek roztříštěný a probouzejí se v noci.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Účastníky rozdělili do dvou skupin: jedna třikrát týdně absolvovala takzvaný explozivní silový trénink dolní poloviny těla (tedy posilování, kde jde o rychlé, důrazné provedení pohybu, ne o zvedání maximální váhy), druhá nic neměnila. Před tréninkovým blokem a po něm proběhla tři měření. Za prvé magnetická rezonanční spektroskopie na přístroji se sílou pole 7 tesla — což je zjednodušeně velmi citlivá varianta „magnetu&quot;, která umí v konkrétní části mozku změřit množství jednotlivých látek. Sledovali laktát, tedy kyselinu mléčnou, jejíž vyšší klidová hladina se dává do souvislosti s méně účinným zpracováním kyslíku v mozkové tkáni, a dále NAA, látku považovanou za ukazatel stavu nervových buněk. Za druhé spánek měřený přenosným přístrojem přímo doma a za třetí dva dotazníky na to, jak spánek lidé sami hodnotí. Po tréninku klesla u cvičících klidová koncentrace laktátu, zvýšila se spánková efektivita a prodloužila se celková doba spánku. Síla těchto změn odpovídá tomu, co statistici označují za středně velký až velký účinek — tedy rozdíl, který není jen kosmetický. Ne všechna data se ale povedlo vyhodnotit u všech: laktát šlo posoudit u 24 lidí, NAA u 32, spánek z přístroje u 34. Vlastní pocit ze spánku se přitom výrazně nezměnil, což bývá u podobných studií časté — přístroj vidí něco jiného než ráno člověk sám.</p>
+<h3>Proč je to důležité</h3>
+<p>Posilování nohou je něco, co zvládne většina lidí v seniorském věku i doma nebo v běžné tělocvičně, a tahle práce naznačuje, že se přitom nezlepší jen svaly, ale i kvalita spánku. Roztříštěný spánek přitom starší lidi trápí velmi často a možností, jak s ním něco udělat bez léků, je málo.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Selin Scherrer, Sven Egger, Xinyu Liu, Anna Wick, Björn Rasch, Lijing Xin a další</dd>
+<dt>Časopis</dt>
+<dd>GeroScience</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-09">9. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1007/s11357-026-02519-x" rel="noreferrer">10.1007/s11357-026-02519-x</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7212000096" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1007/s11357-026-02519-x" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o malý vzorek — celkem 36 lidí, přičemž klíčové měření laktátu se povedlo vyhodnotit jen u 24 z nich — takže výsledek je předběžný a bude ho potřeba potvrdit na větší skupině, než z něj půjde dělat doporučení.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-4">
+<p class="paper-counter">Studie 4 z 5</p>
+<div class="summary"><p><span class="lead">Výzkumníci oslovili 3 200 lidí starších 60 let s chronickou nemocí ve venkovské provincii Kuej-čou na jihozápadě Číny a ptali se jich na příznaky deprese a úzkosti.</span> Místo jednoho průměru za všechny hledali skupiny lidí, kteří odpovídají podobně. Vyšly čtyři. Silné příznaky deprese i úzkosti mělo 34 % dotázaných, tedy zhruba každý třetí, mírnější potíže obojího druhu 27 %, tedy asi čtvrtina. Dalších 22 %, tedy zhruba pětinu, trápila hlavně skleslost bez výrazné úzkosti a jen 16 % dotázaných, tedy asi jeden ze šesti, bylo prakticky bez obtíží. Ve všech skupinách s příznaky se opakovaly tytéž tři věci: osamělost, špatný spánek a snížená soběstačnost v běžných denních úkonech.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Data vědci sbírali od května do října 2024. Použili dva běžné dotazníky: PHQ-9 na příznaky deprese a GAD-7 na příznaky úzkosti. Odpovědi pak zpracovali metodou zvanou analýza latentních tříd (latent class analysis). Ta nehledá průměr, ale skupiny lidí s podobným profilem odpovědí. Podle mírnějšího měřítka, tedy jakýchkoli zaznamenatelných příznaků, uvedlo depresivní potíže 66,7 % dotázaných, tedy dva lidé ze tří. Úzkostné potíže mělo 56,0 %, tedy o něco víc než polovina. Při přísnějším prahu, který lékaři berou jako středně silné obtíže, čísla klesla: 30,5 % u deprese, tedy zhruba tři lidé z deseti, a 20,8 % u úzkosti, tedy přibližně každý pátý. Ve všech skupinách s příznaky se opakovaly stejné tři rizikové faktory: osamělost, špatná kvalita spánku a snížená schopnost zvládat běžné denní činnosti. Čím mírnější byly příznaky, tím menší váhu tyto faktory měly. Podpora okolí souvisela s nižším rizikem u lidí se silnými a středně silnými potížemi. U skupiny s mírnými příznaky to bylo naopak: vyšší podpora šla ruku v ruce s vyšším rizikem. Víra ve vlastní schopnosti pomáhala jen ve skupině s mírnými příznaky. Podváha a nižší příjem zvyšovaly riziko hlavně u lidí se středními a silnými potížemi. Autoři z toho vyvozují, že plošná pomoc nestačí a že se hodí lišit podle profilu obtíží.</p>
+<h3>Proč je to důležité</h3>
+<p>Duševní potíže starších lidí s chronickou nemocí se snadno přehlédnou, protože se schovají za tělesnou diagnózu. Studie ukazuje, že osamělost, špatný spánek a ztráta soběstačnosti jsou společné jmenovatele, na které se dá zaměřit i mimo ordinaci.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Qing Wu, Yi Liu, Li Liu, Xiaoxi Wang, Li Wang, Lie Wang</dd>
+<dt>Časopis</dt>
+<dd>BMC Psychology</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-09">9. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1186/s40359-026-05301-y" rel="noreferrer">10.1186/s40359-026-05301-y</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7211930874" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1186/s40359-026-05301-y" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jednorázový průřezový průzkum v jediné venkovské oblasti Číny, opřený o dotazníky a vlastní výpovědi, takže ukazuje souvislosti, ne příčiny, a nemusí platit jinde.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-5">
+<p class="paper-counter">Studie 5 z 5</p>
+<div class="summary"><p><span class="lead">Na čem se starší lidé shodnou, když mají říct, co v člověku probudí pocit lásky?</span> Vědci se zeptali 400 Američanů ve věku 65 let a více. Každý posuzoval 61 zážitků, tedy více než šest desítek krátkých popisů běžných okamžiků, a rozhodoval, zda vyvolávají lásku u většiny lidí. Shoda byla zřetelná a netýkala se jen partnerství, ale i přátel, dětí a vnoučat. Zajímavý je ale rozdíl mezi lidmi: ženy a lidé se silnějším soucitem odpovídali blíž převládajícímu názoru, zatímco osamělí lidé si častěji jen tipovali.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Výzkumníci pracovali se vzorkem 400 lidí od 65 let výše. Vzorek sestavili tak, aby odpovídal americké populaci. Každý účastník dostal seznam zážitků. U každého řekl, jestli podle něj vyvolá lásku u většiny lidí. Odpovědi pak zpracovali statistickým modelem (Bayesian decision tree). Jde o postup, který se snaží odhadnout, kdy člověk odpovídá podle znalosti a kdy si jen tipuje. Model tedy rozlišuje dvě věci. Za prvé, jak dobře člověk zná převládající názor své skupiny. Za druhé, jak se zachová, když si není jistý.</p>
+<p>Shoda mezi staršími lidmi se skutečně ukázala. Na seznam „milujících&quot; zážitků se dostaly romantické situace i takové, které s partnerstvím nemají nic společného. Rozdíly mezi lidmi byly ale dobře čitelné. Ženy a lidé s vyšší mírou soucitu znali shodu lépe. Bílí muži a lidé, kteří se cítili osaměle, si v nejistotě častěji tipovali. Účastníci jiné než bílé barvy pleti pak měli tendenci v nejistotě odpovídat „ano, vyvolává&quot;.</p>
+<p>Autoři z toho nevyvozují, že by osamělí lidé lásku prožívali méně. Kladou jen otázku pro další výzkum. Mohlo by lidem pomoci, kdyby si takových okamžiků ve svém dni víc všímali? Zatím jde o hypotézu, ne o zjištění.</p>
+<h3>Proč je to důležité</h3>
+<p>Dobré vztahy patří k tomu, co drží lidi ve vyšším věku v dobré kondici. Podle téhle práce si ale projevů blízkosti nevšímáme všichni stejně.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Lindy Williams, Saina Salamati, Saida Heshmati, Zita Oravecz</dd>
+<dt>Časopis</dt>
+<dd>The Journals of Gerontology Series B</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-09">9. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1093/geronb/gbag192" rel="noreferrer">10.1093/geronb/gbag192</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7212001798" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1093/geronb/gbag192" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jednorázový dotazník z jedné země, takže výsledky ukazují jen souvislosti, nikoli příčiny.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 10. září 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>
