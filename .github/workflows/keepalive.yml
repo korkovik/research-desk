@@ -1,0 +1,81 @@
+name: keepalive
+
+# Keeps czech-product-verifier's Supabase project awake. Supabase pauses a free
+# project after about a week without database activity, and a paused project
+# can only be resumed from the dashboard: nothing here can wake one.
+#
+# This used to be a step in the digest job. The digest now runs once a week, on
+# Tuesday, and a week is the whole idle window, so one delayed or dropped firing
+# would let the project pause. It has its own schedule instead: daily, which
+# leaves six missed firings of margin.
+#
+# It stays in this repository rather than a repo of its own because GitHub
+# switches off a public repo's schedules after 60 days without activity, and a
+# repo holding nothing but this cron would have none. The weekly digest commits
+# a ledger line on every run, which keeps this repo, and so this schedule, alive.
+on:
+  schedule:
+    # Deliberately not on the hour: GitHub queues scheduled runs by load and the
+    # top of the hour is the worst minute to ask for.
+    - cron: '41 7 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      # continue-on-error: an outage is reported once, by the issue below, not
+      # by a red run every morning. An alert that repeats daily stops being read.
+      - name: Keep czech-product-verifier's database awake
+        id: keepalive
+        continue-on-error: true
+        env:
+          CPV_KEEPALIVE_DATABASE_URL: ${{ secrets.CPV_KEEPALIVE_DATABASE_URL }}
+        run: bash scripts/cpv-keepalive.sh
+
+      # One issue per outage: opened on the first failure, silent while it stays
+      # open, closed automatically on the first success.
+      - name: Report the keepalive
+        if: always() && steps.keepalive.outputs.status != ''
+        continue-on-error: true
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const status = '${{ steps.keepalive.outputs.status }}';
+            const title = 'czech-product-verifier keepalive is failing';
+            const { owner, repo } = context.repo;
+            const url = `${context.serverUrl}/${owner}/${repo}/actions/runs/${context.runId}`;
+            const open = (await github.rest.issues.listForRepo({ owner, repo, state: 'open', labels: 'keepalive' }))
+              .data.find((i) => i.title === title);
+            if (status === 'failed' && !open) {
+              await github.rest.issues.create({
+                owner, repo, title, labels: ['keepalive'],
+                body: [
+                  `The daily read that keeps czech-product-verifier's Supabase project awake failed.`,
+                  `Research Desk itself is unaffected: the keepalive is its own workflow.`,
+                  ``,
+                  `**If the project is already paused, nothing here can wake it.** Supabase resumes a`,
+                  `paused project only from the dashboard: project \`jhehbtkngdupweuqhnht\` → **Resume project**.`,
+                  `Once it is running, the next keepalive run (daily) reads it again and closes this issue.`,
+                  ``,
+                  `Other causes: the \`CPV_KEEPALIVE_DATABASE_URL\` secret is wrong or its password was`,
+                  `rotated, or \`cpv.products\` was renamed.`,
+                  ``,
+                  `Log: ${url}`,
+                ].join('\n'),
+              });
+            } else if (status === 'ok' && open) {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: open.number,
+                body: `The keepalive read succeeded again: ${url}. Closing.`,
+              });
+              await github.rest.issues.update({ owner, repo, issue_number: open.number, state: 'closed' });
+            }
+            // Failed while an issue is already open: say nothing. One notification
+            // per outage, not one per run.

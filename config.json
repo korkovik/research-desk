@@ -8,7 +8,9 @@
     "workingName": "Research Desk",
     "papersPerDay": 5,
     "minPapersToPublish": 3,
-    "timezone": "Europe/Prague"
+    "timezone": "Europe/Prague",
+    "_runWorkflowUrl": "Linked from the index footer. A plain link, so no token is ever near the page: GitHub shows its Run button only to people who can already run the workflow. Remove to hide the link.",
+    "runWorkflowUrl": "https://github.com/korkovik/research-desk/actions/workflows/daily.yml"
   },
 
   "paths": {
@@ -19,7 +21,8 @@
   },
 
   "windows": {
-    "freshnessDays": 7,
+    "_freshnessDays": "14, not 7, since the digest went weekly: a 7-day window on a 7-day schedule has no overlap left to absorb OpenAlex indexing lag, so a paper indexed a day late would be missed for good. Overlap cannot repeat a paper — dedupDays covers 180 days.",
+    "freshnessDays": 14,
     "dedupDays": 180
   },
 
@@ -161,14 +164,14 @@
 
   "categories": [
     {
-      "weekday": 1,
+      "slot": 1,
       "key": "ai-computing",
       "labelCs": "Umělá inteligence a počítače",
       "openalex": { "fieldIds": ["fields/17"], "fieldNames": ["Computer Science"] },
       "arxiv": { "categories": ["cs.AI", "cs.LG"] }
     },
     {
-      "weekday": 2,
+      "slot": 2,
       "key": "health-medicine",
       "labelCs": "Zdraví a medicína",
       "openalex": {
@@ -177,7 +180,7 @@
       }
     },
     {
-      "weekday": 3,
+      "slot": 3,
       "key": "nature-climate",
       "labelCs": "Příroda a klima",
       "openalex": {
@@ -186,13 +189,13 @@
       }
     },
     {
-      "weekday": 4,
+      "slot": 4,
       "key": "psychology-behaviour",
       "labelCs": "Psychologie a chování",
       "openalex": { "fieldIds": ["fields/32"], "fieldNames": ["Psychology"] }
     },
     {
-      "weekday": 5,
+      "slot": 5,
       "key": "society-economy-education",
       "labelCs": "Společnost, ekonomika a vzdělávání",
       "openalex": {
@@ -201,7 +204,7 @@
       }
     },
     {
-      "weekday": 6,
+      "slot": 6,
       "key": "physics-space-engineering",
       "labelCs": "Fyzika, vesmír a technika",
       "openalex": {
@@ -210,7 +213,7 @@
       }
     },
     {
-      "weekday": 7,
+      "slot": 7,
       "key": "biology-food-agriculture",
       "labelCs": "Biologie, jídlo a zemědělství",
       "openalex": {

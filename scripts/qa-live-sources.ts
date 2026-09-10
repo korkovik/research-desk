@@ -3,22 +3,24 @@
  *
  * This is the evidence for §11's acceptance checks 2, 4 and 5 that fixtures
  * cannot give: that the filters are accepted as constructed, that a real
- * seven-day window actually contains ten or more candidates, and that the
+ * window (config.windows.freshnessDays) actually contains ten or more
+ * candidates, and that the
  * Semantic Scholar pacing survives contact with the real rate limiter.
  *
- *   npm run qa:live-sources
+ *   npm run qa:live-sources        this week's category
+ *   npm run qa:live-sources -- 3   rotation slot 3, whatever the week
  *
  * COST: exactly one OpenAlex list query (10 credits of the 100/day unkeyed
  * allowance, or of 100,000 with a key), one arXiv query, and a handful of
  * Semantic Scholar lookups at the mandatory 1.1 s spacing. Do not run it in a
  * loop while the key is missing.
  */
-import { loadConfig, categoryForWeekday } from '../src/config.js';
+import { loadConfig, categoryForDate } from '../src/config.js';
 import { loadEnvFile, readSecrets } from '../src/env.js';
 import { createLogger } from '../src/util/log.js';
 import { adaptersForCategory } from '../src/adapters/registry.js';
 import { enrichWithTldr } from '../src/enrich/semanticScholar.js';
-import { localDateISO, localWeekday, shiftISODate } from '../src/util/dates.js';
+import { localDateISO, shiftISODate } from '../src/util/dates.js';
 import type { Candidate } from '../src/types.js';
 
 const repoRoot = new URL('..', import.meta.url).pathname;
@@ -27,16 +29,16 @@ const config = loadConfig(repoRoot);
 const secrets = readSecrets();
 const logger = createLogger();
 
-const requestedWeekday = Number(process.argv[2] ?? '');
+const requestedSlot = Number(process.argv[2] ?? '');
 const now = new Date();
 const today = localDateISO(now, config.output.timezone);
-const weekday = Number.isInteger(requestedWeekday) && requestedWeekday >= 1 && requestedWeekday <= 7
-  ? requestedWeekday
-  : localWeekday(now, config.output.timezone);
-const category = categoryForWeekday(config, weekday);
+// One edition a week, rotating by week: probe this week's category unless a
+// rotation slot (1…7) is named on the command line.
+const named = config.categories.find((c) => c.slot === requestedSlot);
+const category = named ?? categoryForDate(config, today);
 const since = shiftISODate(today, -config.windows.freshnessDays);
 
-console.log(`\n=== ${today} · weekday ${weekday} · ${category.labelCs} · since ${since} ===`);
+console.log(`\n=== ${today} · slot ${category.slot} · ${category.labelCs} · since ${since} ===`);
 console.log(`OpenAlex key: ${secrets.openAlexApiKey === null ? 'ABSENT (unkeyed allowance)' : 'present'}`);
 console.log(`Semantic Scholar key: ${secrets.semanticScholarApiKey === null ? 'absent' : 'present'}\n`);
 

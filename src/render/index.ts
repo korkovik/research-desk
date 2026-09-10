@@ -110,6 +110,21 @@ function previewOf(text: string): string {
   return trimmed.length > 160 ? `${trimmed.slice(0, 157).trimEnd()}…` : trimmed;
 }
 
+/**
+ * A plain link to the workflow's page on GitHub, where its Run button is.
+ *
+ * A link and nothing more, on purpose. The site is static, so a button that
+ * started a run itself would need a GitHub token in the page, and then anyone
+ * who opened the page could spend the Anthropic budget. GitHub shows the Run
+ * button only to people who can already run the workflow, so the link is safe
+ * to show everyone; to anyone else it is just a page of past runs.
+ */
+function renderRunByHand(config: Config, strings: ReturnType<typeof stringsFor>): string {
+  const url = config.output.runWorkflowUrl;
+  if (!url) return '';
+  return `\n<p class="run-by-hand"><a href="${escapeHtml(url)}">${escapeHtml(strings.footerRunByHand)}</a></p>`;
+}
+
 export function renderIndexPage(days: readonly ArchivedDay[], config: Config): string {
   const language = config.output.language;
   const strings = stringsFor(language);
@@ -126,7 +141,7 @@ export function renderIndexPage(days: readonly ArchivedDay[], config: Config): s
 ${days.length === 0 ? renderEmpty(strings) : renderFilter(days, strings, config) + '\n' + renderDays(days, strings, config)}
 </main>`,
     `<footer>
-<p>${escapeHtml(strings.footerHowItWorks)}</p>
+<p>${escapeHtml(strings.footerHowItWorks)}</p>${renderRunByHand(config, strings)}
 </footer>`,
   ].join('\n');
 

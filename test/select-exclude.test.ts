@@ -131,14 +131,18 @@ describe('RISK-SELECT-02/-03 — B.1 rule 3: an abstract too thin to explain', (
   });
 });
 
-describe('RISK-SELECT-11 — B.1 rule 4: the seven-day freshness window', () => {
+describe('RISK-SELECT-11 — B.1 rule 4: the freshness window', () => {
+  // Relative to the configured window, not a hard-coded seven. §3 said "last 7
+  // days" while the digest ran daily; the window became 14 when it went weekly
+  // (ASSUMPTIONS A45). The rule is the same either way: a paper from exactly
+  // D−window is still inside it (resolved defect X-3), and one day more is not.
+  const W = config.windows.freshnessDays;
   const cases: readonly [number, ExclusionReason | null][] = [
     [0, null],
-    [6, null],
-    // "last 7 days" is inclusive of D−7 (resolved defect X-3).
-    [7, null],
-    [8, 'EXCL_STALE'],
-    [30, 'EXCL_STALE'],
+    [W - 1, null],
+    [W, null],
+    [W + 1, 'EXCL_STALE'],
+    [W * 2 + 2, 'EXCL_STALE'],
   ];
 
   for (const [ageDays, expected] of cases) {
@@ -336,8 +340,10 @@ describe('B.1 — every drop is counted for the run log (§9)', () => {
   });
 
   test('every exclusion carries a human-readable detail line', () => {
-    const outcome = applyExclusions([makeCandidate({ ageDays: 20 })], options());
-    assert.equal(outcome.excluded[0]?.detail, '20 days old (window is 7)');
+    const window = config.windows.freshnessDays;
+    const age = window + 6;
+    const outcome = applyExclusions([makeCandidate({ ageDays: age })], options());
+    assert.equal(outcome.excluded[0]?.detail, `${String(age)} days old (window is ${String(window)})`);
   });
 
   test('an empty candidate set produces zero counts, not a crash', () => {

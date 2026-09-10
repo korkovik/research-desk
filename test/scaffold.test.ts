@@ -8,7 +8,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync, statSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { loadConfig, categoryForWeekday, displayName, ConfigSchema } from '../src/config.js';
+import { loadConfig, categoryForDate, ROTATION_EPOCH, displayName, ConfigSchema } from '../src/config.js';
 import { parseEnvFile, readSecrets } from '../src/env.js';
 import { localDateISO, localWeekday, shiftISODate, daysBetween, arxivStamp } from '../src/util/dates.js';
 
@@ -19,7 +19,7 @@ test('S11-01a: config.json loads and validates', () => {
   assert.equal(config.categories.length, 7);
   assert.equal(config.output.papersPerDay, 5);
   assert.equal(config.output.minPapersToPublish, 3);
-  assert.equal(config.windows.freshnessDays, 7);
+  assert.equal(config.windows.freshnessDays, 14);
   assert.equal(config.windows.dedupDays, 180);
 });
 
@@ -36,10 +36,10 @@ test('S11-01b: every directory the pipeline writes to exists', () => {
   }
 });
 
-test('every weekday 1..7 resolves to a category with real OpenAlex field IDs', () => {
+test('every rotation slot 1..7 comes up, one a week, with real OpenAlex field IDs', () => {
   const config = loadConfig(ROOT);
-  for (let weekday = 1; weekday <= 7; weekday++) {
-    const category = categoryForWeekday(config, weekday);
+  for (let week = 0; week < 7; week++) {
+    const category = categoryForDate(config, shiftISODate(ROTATION_EPOCH, week * 7 + 1));
     assert.ok(category.labelCs.length > 0);
     assert.ok(category.openalex.fieldIds.length > 0);
     for (const id of category.openalex.fieldIds) {

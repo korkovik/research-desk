@@ -25,7 +25,7 @@ interface LedgerLine {
   summary?: string;
   recordedBy?: string;
   anthropic?: { estimatedCostUsd: number | null };
-  workflow: { gate: string; build: string; keepalive: string };
+  workflow: { gate: string; build: string };
 }
 
 function record(env: Record<string, string>, runLog?: string): { lines: LedgerLine[]; status: number | null } {
@@ -103,11 +103,3 @@ test('a torn run.log does not stop the ledger from recording the run', () => {
   assert.equal(lines[1]!.outcome, 'aborted');
 });
 
-test('a failed keepalive is recorded but does not turn a published run into a failure', () => {
-  const { lines } = record(
-    { GATE_PROCEED: 'true', BUILD_OUTCOME: 'success', KEEPALIVE_STATUS: 'failed' },
-    thisRunsLine('published'),
-  );
-  assert.equal(lines[1]!.outcome, 'published');
-  assert.equal(lines[1]!.workflow.keepalive, 'failed');
-});

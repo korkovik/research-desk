@@ -195,10 +195,18 @@ describe('§3/§9 — a short day is short: the selector NEVER pads', () => {
       makeCandidate({ subfieldId: `subfields/${key}`, ageDays: 3 }),
     );
     const padding = [
-      // Yesterday's paper, but eight days old: outside §3's seven-day window.
-      makeCandidate({ id: 'pad:stale-8', subfieldId: 'subfields/D', ageDays: 8 }),
-      // A month old and otherwise perfect — the strongest pull towards padding.
-      makeCandidate({ id: 'pad:stale-30', subfieldId: 'subfields/E', ageDays: 30 }),
+      // One day outside the freshness window: the nearest a stale paper gets.
+      makeCandidate({
+        id: 'pad:stale-edge',
+        subfieldId: 'subfields/D',
+        ageDays: config.windows.freshnessDays + 1,
+      }),
+      // Far outside it and otherwise perfect: the strongest pull towards padding.
+      makeCandidate({
+        id: 'pad:stale-far',
+        subfieldId: 'subfields/E',
+        ageDays: config.windows.freshnessDays * 2 + 2,
+      }),
       // Fresh and excellent, but published in a previous digest.
       makeCandidate({ id: 'pad:seen', subfieldId: 'subfields/F', ageDays: 0, openAlexId: 'W777777' }),
       // Fresh, but nothing to summarise from.
@@ -221,7 +229,7 @@ describe('§3/§9 — a short day is short: the selector NEVER pads', () => {
 
   test('no stale candidate appears in the result, however well it would have scored', () => {
     const result = selectForDay(shortPool(), selectOptions({ isSeen }));
-    for (const padded of ['pad:stale-8', 'pad:stale-30']) {
+    for (const padded of ['pad:stale-edge', 'pad:stale-far']) {
       assert.equal(idsOf(result.selected).includes(padded), false, `${padded} was used as padding`);
       assert.equal(idsOf(result.ranked).includes(padded), false, `${padded} was scored at all`);
     }

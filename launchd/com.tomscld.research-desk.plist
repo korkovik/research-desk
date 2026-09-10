@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Daily run at 06:00 local time (assumption A3 — §12 suggested early morning so
-  the page is ready before the family wakes).
+  NOT the live schedule, and not installed on the Mac mini. GitHub Actions runs
+  the digest (.github/workflows/daily.yml), weekly on Tuesday. This is kept as a
+  local fallback and matches it — Tuesday 06:00 — so loading it never turns the
+  site back into a daily one. Never load it alongside the Actions schedule.
 
   StartCalendarInterval, not StartInterval: it fires at a wall-clock time and,
   unlike cron, launchd runs a missed job once the machine wakes rather than
@@ -32,6 +34,7 @@
 
     <key>StartCalendarInterval</key>
     <dict>
+        <key>Weekday</key><integer>2</integer>
         <key>Hour</key><integer>6</integer>
         <key>Minute</key><integer>0</integer>
     </dict>

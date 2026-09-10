@@ -29,7 +29,7 @@ import type {
   ScoredCandidate,
   Shortfall,
 } from './types.js';
-import { categoryForWeekday, displayName, type Config } from './config.js';
+import { categoryForDate, displayName, type Config } from './config.js';
 import type { Secrets } from './env.js';
 import { fetchCandidates } from './adapters/registry.js';
 import { enrichWithTldr } from './enrich/semanticScholar.js';
@@ -43,7 +43,7 @@ import { stringsFor } from './render/strings.js';
 import { AnthropicLlmClient, estimateCostUsd, type LlmClient } from './summarise/client.js';
 import { summarise } from './summarise/summarise.js';
 import type { SourceText } from './summarise/verify.js';
-import { localDateISO, localWeekday, shiftISODate } from './util/dates.js';
+import { localDateISO, shiftISODate } from './util/dates.js';
 import { appendRunLog, summarise as summariseRunLog, type Logger, type RunLogLine } from './util/log.js';
 
 export interface RunOptions {
@@ -107,8 +107,7 @@ export async function runDay(options: RunOptions): Promise<RunResult> {
   const { config, logger, repoRoot } = options;
   const clock = options.now ?? (() => new Date());
   const date = options.date ?? localDateISO(clock(), config.output.timezone);
-  const weekday = localWeekday(new Date(`${date}T12:00:00Z`), 'UTC');
-  const category = categoryForWeekday(config, weekday);
+  const category = categoryForDate(config, date);
   const since = shiftISODate(date, -config.windows.freshnessDays);
   const degradations: Degradation[] = [];
 

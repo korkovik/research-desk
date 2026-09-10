@@ -197,8 +197,9 @@ function excludeOne(
     };
   }
 
-  // 4 — outside the seven-day window of §3. Inclusive at the boundary: a paper
-  // from exactly D−7 is still "the last 7 days".
+  // 4 — outside the freshness window of §3 (config.windows.freshnessDays: seven
+  // days while the digest ran daily, fourteen since it went weekly; A45).
+  // Inclusive at the boundary: a paper from exactly D−window is still inside it.
   const age = ageInDays(candidate, options.today);
   if (age === null) {
     return { reason: 'EXCL_STALE', detail: 'no readable publication or index date' };

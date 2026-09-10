@@ -4,7 +4,7 @@
  *
  * "The five must not all be from the same subfield. Max two papers per subfield
  * per day." §6 states that as a rule, not a preference, and §5 explains why:
- * the whole point of the weekday rotation is that the archive "covers science
+ * the whole point of the weekly rotation is that the archive "covers science
  * broadly rather than drifting into AI-only". A day that cannot fill five slots
  * under the cap therefore publishes fewer and says so (§3, §9) — it does not
  * quietly raise the cap.

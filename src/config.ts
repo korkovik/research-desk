@@ -6,11 +6,12 @@
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { z } from 'zod';
+import { daysBetween } from './util/dates.js';
 
 const TopicIdList = z.array(z.string().min(1)).min(1);
 
 const CategorySchema = z.object({
-  weekday: z.number().int().min(1).max(7),
+  slot: z.number().int().min(1).max(7),
   key: z.string().min(1),
   labelCs: z.string().min(1),
   openalex: z.object({
@@ -98,6 +99,8 @@ export const ConfigSchema = z
       papersPerDay: z.number().int().min(1),
       minPapersToPublish: z.number().int().min(1),
       timezone: z.string().min(1),
+      /** The workflow's page on GitHub, linked from the index footer. Absent: no link. */
+      runWorkflowUrl: z.string().url().nullish(),
     }),
     paths: z.object({
       archiveDir: z.string().min(1),
@@ -198,12 +201,12 @@ export const ConfigSchema = z
         message: 'minPapersToPublish cannot exceed papersPerDay',
       });
     }
-    const weekdays = new Set(cfg.categories.map((c) => c.weekday));
-    if (weekdays.size !== 7) {
+    const slots = new Set(cfg.categories.map((c) => c.slot));
+    if (slots.size !== 7) {
       ctx.addIssue({
         code: 'custom',
         path: ['categories'],
-        message: 'categories must cover each weekday 1..7 exactly once',
+        message: 'categories must fill each rotation slot 1..7 exactly once',
       });
     }
     const keys = new Set(cfg.categories.map((c) => c.key));
@@ -262,10 +265,29 @@ export function loadConfig(repoRoot: string, filename = 'config.json'): Config {
   return parsed.data;
 }
 
-/** The category for a given weekday (1 = Monday … 7 = Sunday). */
-export function categoryForWeekday(config: Config, weekday: number): Config['categories'][number] {
-  const found = config.categories.find((c) => c.weekday === weekday);
-  if (!found) throw new Error(`no category configured for weekday ${weekday}`);
+/**
+ * The Monday the weekly rotation counts from: the week starting here takes
+ * slot 1, the next week slot 2, and so on round all seven.
+ *
+ * Whole weeks from a fixed date rather than the ISO week number, because an ISO
+ * year has 52 or 53 weeks and `week % 7` would jump at New Year, repeating or
+ * skipping a category.
+ */
+export const ROTATION_EPOCH = '2026-09-14';
+
+/**
+ * The category for the edition dated `isoDate` (YYYY-MM-DD).
+ *
+ * Chosen by the week, not the weekday. There is one edition a week, on Tuesday,
+ * and a weekday rotation would publish Tuesday's category forever. Every day
+ * of a week maps to the same category, so an edition run by hand on a Thursday
+ * stays on that week's theme.
+ */
+export function categoryForDate(config: Config, isoDate: string): Config['categories'][number] {
+  const weeks = Math.floor(daysBetween(ROTATION_EPOCH, isoDate) / 7);
+  const slot = (((weeks % 7) + 7) % 7) + 1;
+  const found = config.categories.find((c) => c.slot === slot);
+  if (!found) throw new Error(`no category configured for rotation slot ${slot}`);
   return found;
 }
 

@@ -27,7 +27,6 @@ const startedAt = Date.parse(env.RUN_STARTED_AT || '') || 0;
 const proceeded = env.GATE_PROCEED === 'true';
 const gate = proceeded ? 'proceed' : env.GATE_REASON || 'skipped';
 const build = env.BUILD_OUTCOME || 'not-run';
-const keepalive = env.KEEPALIVE_STATUS || 'not-run';
 
 /**
  * The newest run.log line, but only if THIS run wrote it. A line older than
@@ -86,7 +85,6 @@ line.workflow = {
   schedule: env.SCHEDULE || null,
   gate,
   build,
-  keepalive,
 };
 
 mkdirSync(dirname(ledgerPath), { recursive: true });
@@ -110,7 +108,6 @@ const md = [
   `| Tokens in / out | ${a.inputTokens || 0} / ${a.outputTokens || 0} |`,
   `| **Estimated cost** | **${money}** |`,
   `| Warnings / errors | ${(line.warnings || []).length} / ${(line.errors || []).length} |`,
-  `| czech-product-verifier keepalive | ${keepalive} |`,
 ].join('\n');
 console.log(md);
 if (env.GITHUB_STEP_SUMMARY) {

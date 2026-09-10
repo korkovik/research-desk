@@ -1,9 +1,9 @@
 # Research Desk
 
-Five newly published research papers a day, explained in plain Czech so that
+Five newly published research papers a week, explained in plain Czech so that
 someone with no scientific background understands what was found, why it
 matters, and what it looks like in real life. One self-contained HTML page a
-day, an archive, and always a link back to the original paper.
+week, an archive, and always a link back to the original paper.
 
 The success criterion, from the spec: **a secondary-school teacher or a family
 member with no research background reads the page and can explain the finding
@@ -12,7 +12,7 @@ to someone else afterwards.**
 **Live: https://korkovik.github.io/research-desk/**
 
 [![check](https://github.com/korkovik/research-desk/actions/workflows/ci.yml/badge.svg)](https://github.com/korkovik/research-desk/actions/workflows/ci.yml)
-[![daily digest](https://github.com/korkovik/research-desk/actions/workflows/daily.yml/badge.svg)](https://github.com/korkovik/research-desk/actions/workflows/daily.yml)
+[![weekly digest](https://github.com/korkovik/research-desk/actions/workflows/daily.yml/badge.svg)](https://github.com/korkovik/research-desk/actions/workflows/daily.yml)
 
 The specification, the design notes, the assumptions log and the handover live
 in `docs/` on the build machine and are deliberately **not** published here:
@@ -27,8 +27,9 @@ Running. Nine editions have been published from live data across all three
 sources, and deduplication has been proven across consecutive runs — the second
 run excluded nine papers it had already covered, with no overlap by ID or DOI.
 
-It now runs itself: GitHub Actions builds an edition every morning and GitHub
-Pages serves it. The Mac mini is no longer in the loop, which retires
+It now runs itself: GitHub Actions builds an edition every Tuesday morning and
+GitHub Pages serves it. Each edition takes one of the seven categories, in turn,
+week by week. The Mac mini is no longer in the loop, which retires
 assumption A1.
 
 What is still weak, in order: number anchoring is the least reliable of the §2
@@ -125,12 +126,13 @@ never overwrite a good archive. The ledger is marked `merge=union` in
 `.gitattributes`, so two runs appending at once both survive a push race.
 
 **It also keeps czech-product-verifier's database awake.** That project's Supabase
-database is paused after about a week without activity. Each run makes one
-read-only query against it, as the `cpv_web` role, inside a `READ ONLY`
-transaction. It lives here because this repository commits daily and so keeps
-its own schedule alive — a separate repo holding only a keepalive cron is
-exactly what the 60-day rule switches off. The step is non-fatal: it can never
-cost an edition. If it fails, one issue labelled `keepalive` opens, stays quiet
+database is paused after about a week without activity. A separate **keepalive**
+workflow makes one read-only query against it every day, as the `cpv_web` role,
+inside a `READ ONLY` transaction — daily rather than with the weekly digest,
+because a week is the whole idle window. It lives in this repository because the
+digest's weekly commits keep the repo, and so this schedule, alive; a separate
+repo holding only a keepalive cron is exactly what the 60-day rule switches off.
+It runs apart from the digest, so it can never cost an edition. If it fails, one issue labelled `keepalive` opens, stays quiet
 while open, and closes itself on the next success.
 
 It **prevents** a pause; it cannot **cure** one. A paused project's hostname
@@ -138,8 +140,9 @@ stops resolving, and only the Supabase dashboard can resume it. The connection
 string is the repository secret `CPV_KEEPALIVE_DATABASE_URL`; until it is set,
 the step logs a notice and does nothing.
 
-Run it by hand from the Actions tab → **daily digest** → *Run workflow*, with
-`force` ticked to replace an edition already published today.
+Run it by hand from the link at the foot of the site's front page, or from the
+Actions tab → **weekly digest** → *Run workflow*. A run that publishes costs about
+$0.90; tick `force` to replace an edition already published that day.
 
 ## Credentials
 

@@ -302,8 +302,11 @@ export interface SourceAdapter {
 // ---------------------------------------------------------------------------
 
 export interface CategoryConfig {
-  /** 1 = Monday … 7 = Sunday. Explicit, because JS `getDay()` puts Sunday at 0. */
-  weekday: number;
+  /**
+   * Position in the weekly rotation, 1…7. One edition a week takes one
+   * category, in this order, week by week — see `categoryForDate`.
+   */
+  slot: number;
   key: string;
   labelCs: string;
   openalex: {

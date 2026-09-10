@@ -58,7 +58,10 @@ export const stringsCs: StringTable = {
   // Shortened after seeing it rendered: it repeated "vědeckých studií" and
   // "běžnými slovy" from siteIntro directly above it, so the reader met the
   // same sentence twice.
-  indexIntro: 'Každý den vybíráme několik nových studií. Níže jsou všechna dosavadní vydání, od nejnovějšího.',
+  indexIntro: 'Každé úterý vybíráme několik nových studií. Níže jsou všechna dosavadní vydání, od nejnovějšího.',
+  // EN: "Run a new edition by hand (for the maintainer, on GitHub)". Index footer
+  // link to the workflow's Run page; shown only when config.output.runWorkflowUrl is set.
+  footerRunByHand: 'Spustit nové vydání ručně (pro správce, na GitHubu)',
 
   // EN: heading above the list of archived days on the index page.
   indexDaysHeading: 'Všechna vydání',

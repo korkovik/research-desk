@@ -23,6 +23,8 @@ export interface StringTable {
   readonly siteIntro: string;
   /** Longer lead paragraph, index page only. */
   readonly indexIntro: string;
+  /** Index footer link to the workflow's Run page; rendered only when config.output.runWorkflowUrl is set. */
+  readonly footerRunByHand: string;
   /** Heading above the list of archived days. */
   readonly indexDaysHeading: string;
   readonly filterHeading: string;

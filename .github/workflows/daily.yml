@@ -1,8 +1,9 @@
-name: daily digest
+name: weekly digest
 
 on:
   schedule:
-    # Target: 06:00 Europe/Prague, every day.
+    # Target: 06:00 Europe/Prague, every Tuesday. One edition a week of five
+    # papers, which at the measured ~$0.90 an edition is about $3.90 a month.
     #
     # GitHub cron is UTC and does not follow DST, so a single rule drifts by an
     # hour for half the year. The usual workaround is two month-scoped rules
@@ -11,7 +12,7 @@ on:
     # October, so a month-scoped pair is still an hour out for roughly the first
     # four weeks of March and the last week of October.
     #
-    # Instead both rules fire every day and a gate step decides, using the
+    # Instead both rules fire every Tuesday and a gate step decides, using the
     # runner's tzdata, whether this is the 06:00 Prague one. That is exact all
     # year with no switchover week to get wrong, and the losing run costs a few
     # seconds. Actions minutes are free on public repositories, so the second
@@ -19,12 +20,12 @@ on:
     # Deliberately not on the hour. GitHub queues scheduled runs by load and
     # the top of the hour is the worst minute to ask for; measured delays here
     # reached ten hours while these sat at ':00'.
-    - cron: '17 4 * * *'  # 06:17 Prague while CEST (UTC+2)
-    - cron: '17 5 * * *'  # 06:17 Prague while CET  (UTC+1)
+    - cron: '17 4 * * 2'  # Tuesday 06:17 Prague while CEST (UTC+2)
+    - cron: '17 5 * * 2'  # Tuesday 06:17 Prague while CET  (UTC+1)
     # Long after both firings have had their chance: did a page actually appear,
     # and is it actually being served? A run that skips is green, and a green
     # skip that produced nothing is the one failure nobody would notice.
-    - cron: '23 11 * * *' # 13:23 / 12:23 Prague
+    - cron: '23 11 * * 3' # Wednesday 13:23 / 12:23 Prague, the day after an edition
   workflow_dispatch:
     inputs:
       force:
@@ -58,8 +59,11 @@ concurrency:
 
 jobs:
   digest:
-    # The 11:00 firing is the stall check, not a digest attempt.
-    if: github.event.schedule != '23 11 * * *' && inputs.run_watchdog != true
+    # Wednesday's 11:23 UTC firing is the stall check, not a digest attempt.
+    # This line and the watchdog's `if:` compare that cron string exactly, so
+    # they have to move with the schedule; test/workflows.test.ts holds them
+    # together. If one drifted, the stall check's firing would start a paid run.
+    if: github.event.schedule != '23 11 * * 3' && inputs.run_watchdog != true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -144,66 +148,6 @@ jobs:
             npx tsx src/cli.ts run --skip-if-published 2>&1 | tee /tmp/build.log
           fi
 
-      # czech-product-verifier's Supabase project is paused after about a week
-      # without database activity. One genuine read per run keeps it above that
-      # threshold. It lives here rather than in a workflow of its own because
-      # this repository commits on every run and so keeps its own schedule
-      # alive — a standalone repo holding nothing but a keepalive cron is
-      # exactly what GitHub switches off after 60 idle days.
-      #
-      # continue-on-error: a keepalive failure can never cost an edition.
-      # Research Desk publishing matters more than the verifier's uptime.
-      - name: Keep czech-product-verifier's database awake
-        id: keepalive
-        if: always()
-        continue-on-error: true
-        env:
-          CPV_KEEPALIVE_DATABASE_URL: ${{ secrets.CPV_KEEPALIVE_DATABASE_URL }}
-        run: bash scripts/cpv-keepalive.sh
-
-      # Non-fatal must not mean unseen: a green run sends no notification, so a
-      # keepalive failing quietly for a week would end in exactly the pause it
-      # exists to prevent. One issue per outage — opened on the first failure,
-      # silent while it stays open, closed automatically on the first success.
-      - name: Report the keepalive
-        if: always() && steps.keepalive.outputs.status != ''
-        continue-on-error: true
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const status = '${{ steps.keepalive.outputs.status }}';
-            const title = 'czech-product-verifier keepalive is failing';
-            const { owner, repo } = context.repo;
-            const url = `${context.serverUrl}/${owner}/${repo}/actions/runs/${context.runId}`;
-            const open = (await github.rest.issues.listForRepo({ owner, repo, state: 'open', labels: 'keepalive' }))
-              .data.find((i) => i.title === title);
-            if (status === 'failed' && !open) {
-              await github.rest.issues.create({
-                owner, repo, title, labels: ['keepalive'],
-                body: [
-                  `The daily read that keeps czech-product-verifier's Supabase project awake failed.`,
-                  `Research Desk itself is unaffected: this step is non-fatal by design.`,
-                  ``,
-                  `**If the project is already paused, nothing here can wake it.** Supabase resumes a`,
-                  `paused project only from the dashboard: project \`jhehbtkngdupweuqhnht\` → **Resume project**.`,
-                  `Once it is running, the next Research Desk run reads it again and closes this issue.`,
-                  ``,
-                  `Other causes: the \`CPV_KEEPALIVE_DATABASE_URL\` secret is wrong or its password was`,
-                  `rotated, or \`cpv.products\` was renamed.`,
-                  ``,
-                  `Log: ${url}`,
-                ].join('\n'),
-              });
-            } else if (status === 'ok' && open) {
-              await github.rest.issues.createComment({
-                owner, repo, issue_number: open.number,
-                body: `The keepalive read succeeded again: ${url}. Closing.`,
-              });
-              await github.rest.issues.update({ owner, repo, issue_number: open.number, state: 'closed' });
-            }
-            // Failed while an issue is already open: say nothing. One notification
-            // per outage, not one per run — an alert that repeats daily stops being read.
-
       # One line per run, whatever happened, and a commit per run to carry it.
       # GitHub disables a public repo's schedule after 60 days without activity,
       # and when the ledger only moved on success a long outage made no commits
@@ -218,7 +162,6 @@ jobs:
           GATE_PROCEED: ${{ steps.gate.outputs.proceed }}
           GATE_REASON: ${{ steps.gate.outputs.reason }}
           BUILD_OUTCOME: ${{ steps.build.outcome }}
-          KEEPALIVE_STATUS: ${{ steps.keepalive.outputs.status }}
           SCHEDULE: ${{ github.event.schedule }}
         run: node scripts/record-run.mjs
 
@@ -249,7 +192,7 @@ jobs:
             // Running out of Anthropic budget is this project's most likely
             // recurring failure — it killed a week of editions in August, and
             // it will recur every month the spend outruns the cap. It deserves
-            // to be named in the title, because "Daily digest failed" sends you
+            // to be named in the title, because "Weekly digest failed" sends you
             // reading logs for a bug that is not there.
             let log = '';
             try { log = fs.readFileSync('/tmp/build.log', 'utf8'); } catch {}
@@ -258,7 +201,7 @@ jobs:
 
             const title = capped
               ? `Anthropic spend cap reached — no editions until it resets`
-              : `Daily digest failed: ${day}`;
+              : `Weekly digest failed: ${day}`;
             const url = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
             const body = capped ? [
               `The ${day} run stopped because the Anthropic account hit its`,
@@ -279,8 +222,8 @@ jobs:
               `Log: ${url}`,
               ``,
               `Only this run's line in \`state/runs.jsonl\` was committed. The archive`,
-              `and \`state/seen.json\` are untouched and yesterday's site is still being`,
-              `served. Per §9 the day is simply missing rather than padded with older papers.`,
+              `and \`state/seen.json\` are untouched and the previous edition is still being`,
+              `served. Per §9 the edition is simply missing rather than padded with older papers.`,
             ].join('\n');
             const existing = await github.rest.issues.listForRepo({
               owner: context.repo.owner, repo: context.repo.repo,
@@ -306,14 +249,14 @@ jobs:
   # run that never happened, or happened and never reached the reader: both
   # firings delayed out of their window, the schedule disabled, Pages failing to
   # deploy. Those all leave a green tick and a site quietly frozen on an old
-  # edition, which is the worst failure this project has — Tom reads it daily
+  # edition, which is the worst failure this project has — Tom reads every edition
   # and would assume silence meant success.
   #
   # It checks the two things that have to be true for him to have something to
   # read: the edition is committed, and the live origin actually serves it.
   # ---------------------------------------------------------------------------
   watchdog:
-    if: github.event.schedule == '23 11 * * *' || inputs.run_watchdog == true
+    if: github.event.schedule == '23 11 * * 3' || inputs.run_watchdog == true
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -333,7 +276,8 @@ jobs:
           # cost is that a stall is reported a day late, which is the right trade
           # for an alert that is only ever raised when something is genuinely
           # wrong. A digest run that fails outright still opens its own issue
-          # immediately, so a real failure is not waiting on this.
+          # immediately, so a real failure is not waiting on this. This job fires
+          # on Wednesday, so "yesterday" is the Tuesday edition.
           day="${{ inputs.watchdog_date }}"
           [ -z "$day" ] && day=$(TZ=Europe/Prague date -d 'yesterday' +%F 2>/dev/null || TZ=Europe/Prague date -v-1d +%F)
           echo "day=$day" >> "$GITHUB_OUTPUT"
@@ -385,7 +329,7 @@ jobs:
                 + ` this is a Pages deployment problem rather than a pipeline one.`
                 : `No page was produced. Either both firings were delayed past their`
                 + ` window, the schedule is disabled, or the digest run failed —`
-                + ` check for a separate "Daily digest failed" issue.`,
+                + ` check for a separate "Weekly digest failed" issue.`,
               ``,
               `Log: ${url}`,
             ].join('\n');
