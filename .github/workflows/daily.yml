@@ -39,6 +39,10 @@ on:
         description: 'Date for the stall check (default: today in Prague). Only for testing that it still detects a missing edition.'
         type: string
         default: ''
+      simulate_failure:
+        description: 'Testing only: run with the Anthropic key blanked, so the run fails before any API call and nothing is spent'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -72,29 +76,36 @@ jobs:
           day=$(TZ=Europe/Prague date +%F)
           hour=$(TZ=Europe/Prague date +%H)
           echo "day=$day" >> "$GITHUB_OUTPUT"
-          echo "Prague local time: $day ${hour}:00"
+          # When this job began, so the ledger can tell this run's run.log line
+          # from an older one.
+          echo "started=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_OUTPUT"
+          echo "Prague local time: $day, hour $hour"
 
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "Manual dispatch — proceeding."
-            echo "proceed=true" >> "$GITHUB_OUTPUT"
+          decide() {
+            echo "proceed=$1" >> "$GITHUB_OUTPUT"
+            echo "reason=$2" >> "$GITHUB_OUTPUT"
+            echo "Gate: proceed=$1 ($2)"
+          }
+
+          if [ "${{ inputs.force }}" = "true" ] || [ "${{ inputs.simulate_failure }}" = "true" ]; then
+            decide true dispatch-override
           elif [ -f "archive/$day.json" ]; then
-            # The other cron already did the work, or a manual run did.
-            echo "$day is already published — this firing has nothing to do."
-            echo "proceed=false" >> "$GITHUB_OUTPUT"
+            # Already published, by the other firing or by hand. A manual
+            # dispatch now takes this branch too, so dispatching on a published
+            # day exercises exactly the skip the second cron firing takes daily.
+            decide false already-published
+          elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            decide true dispatch
           elif [ "$((10#$hour))" -ge 6 ]; then
             # A floor, deliberately with no ceiling. The first version capped
             # this at 09:59 and that is what froze the site for a week: GitHub
             # delayed these crons by four to ten hours, every firing landed
             # past the ceiling, and each one skipped green having published
-            # nothing. A late edition is worth having; a silently skipped day
-            # is not. What stops the second firing double-publishing is the
-            # archive check above, which was always the real guard — the
-            # ceiling only ever added a way to fail.
-            echo "Proceeding."
-            echo "proceed=true" >> "$GITHUB_OUTPUT"
+            # nothing. What stops the second firing double-publishing is the
+            # archive check above.
+            decide true scheduled
           else
-            echo "Not the Prague-morning firing — skipping."
-            echo "proceed=false" >> "$GITHUB_OUTPUT"
+            decide false before-0600-prague
           fi
 
       - uses: actions/setup-node@v4
@@ -115,7 +126,14 @@ jobs:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: |
           set -o pipefail   # tee must not swallow the run's exit code
-          if [ "${{ inputs.force }}" = "true" ]; then
+          if [ "${{ inputs.simulate_failure }}" = "true" ]; then
+            # A real failure at no cost, for testing the non-success path. With
+            # the key blanked, run.ts stops before its first HTTP request — what
+            # a revoked key does — and crashes without writing a run.log line,
+            # the hardest case for the ledger. No papers fetched, no Claude
+            # calls, and the archive is never touched.
+            ANTHROPIC_API_KEY= npx tsx src/cli.ts run --skip-if-published 2>&1 | tee /tmp/build.log
+          elif [ "${{ inputs.force }}" = "true" ]; then
             npx tsx src/cli.ts run --force 2>&1 | tee /tmp/build.log
           else
             # --skip-if-published makes "today is already published" a calm exit 0
@@ -126,99 +144,102 @@ jobs:
             npx tsx src/cli.ts run --skip-if-published 2>&1 | tee /tmp/build.log
           fi
 
-      # §9 wants a line per run, and the brief wants real spend reported per run.
-      # run.ts writes both into logs/run.log, but logs/ is gitignored and a
-      # runner's disk is thrown away, so on Actions that record vanished. This
-      # lifts the line into the Actions summary where it is visible, and appends
-      # it to a committed history so the month's spend against the $40 cap can
-      # actually be totalled. Runs even on failure, because a failed run is
-      # exactly the one worth having a line for.
-      - name: Report the run and its spend
-        if: always() && steps.gate.outputs.proceed == 'true'
-        run: |
-          node -e '
-            const fs = require("fs");
-            let line;
-            try {
-              const lines = fs.readFileSync("logs/run.log", "utf8").trim().split("\n");
-              line = JSON.parse(lines[lines.length - 1]);
-            } catch {
-              console.log("No run.log line — the run failed before it could write one.");
-              process.exit(0);
+      # czech-product-verifier's Supabase project is paused after about a week
+      # without database activity. One genuine read per run keeps it above that
+      # threshold. It lives here rather than in a workflow of its own because
+      # this repository commits on every run and so keeps its own schedule
+      # alive — a standalone repo holding nothing but a keepalive cron is
+      # exactly what GitHub switches off after 60 idle days.
+      #
+      # continue-on-error: a keepalive failure can never cost an edition.
+      # Research Desk publishing matters more than the verifier's uptime.
+      - name: Keep czech-product-verifier's database awake
+        id: keepalive
+        if: always()
+        continue-on-error: true
+        env:
+          CPV_KEEPALIVE_DATABASE_URL: ${{ secrets.CPV_KEEPALIVE_DATABASE_URL }}
+        run: bash scripts/cpv-keepalive.sh
+
+      # Non-fatal must not mean unseen: a green run sends no notification, so a
+      # keepalive failing quietly for a week would end in exactly the pause it
+      # exists to prevent. One issue per outage — opened on the first failure,
+      # silent while it stays open, closed automatically on the first success.
+      - name: Report the keepalive
+        if: always() && steps.keepalive.outputs.status != ''
+        continue-on-error: true
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const status = '${{ steps.keepalive.outputs.status }}';
+            const title = 'czech-product-verifier keepalive is failing';
+            const { owner, repo } = context.repo;
+            const url = `${context.serverUrl}/${owner}/${repo}/actions/runs/${context.runId}`;
+            const open = (await github.rest.issues.listForRepo({ owner, repo, state: 'open', labels: 'keepalive' }))
+              .data.find((i) => i.title === title);
+            if (status === 'failed' && !open) {
+              await github.rest.issues.create({
+                owner, repo, title, labels: ['keepalive'],
+                body: [
+                  `The daily read that keeps czech-product-verifier's Supabase project awake failed.`,
+                  `Research Desk itself is unaffected: this step is non-fatal by design.`,
+                  ``,
+                  `**If the project is already paused, nothing here can wake it.** Supabase resumes a`,
+                  `paused project only from the dashboard: project \`jhehbtkngdupweuqhnht\` → **Resume project**.`,
+                  `Once it is running, the next Research Desk run reads it again and closes this issue.`,
+                  ``,
+                  `Other causes: the \`CPV_KEEPALIVE_DATABASE_URL\` secret is wrong or its password was`,
+                  `rotated, or \`cpv.products\` was renamed.`,
+                  ``,
+                  `Log: ${url}`,
+                ].join('\n'),
+              });
+            } else if (status === 'ok' && open) {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: open.number,
+                body: `The keepalive read succeeded again: ${url}. Closing.`,
+              });
+              await github.rest.issues.update({ owner, repo, issue_number: open.number, state: 'closed' });
             }
-            const a = line.anthropic ?? {};
-            const usd = a.estimatedCostUsd;
-            // A skipped run has no anthropic block at all. Its cost is not unknown,
-            // it is zero, and saying "unknown" reads as data we lost.
-            const money = typeof usd === "number" ? "$" + usd.toFixed(3)
-              : line.outcome === "skipped" ? "$0.000 (nothing ran)" : "unknown";
-            const md = [
-              "### " + (line.ts ?? "").slice(0, 10) + " — " + line.outcome,
-              "",
-              "| | |",
-              "|---|---|",
-              "| Summary | " + (line.summary ?? "-") + " |",
-              "| Claude calls | " + (a.callsTotal ?? 0) + " |",
-              "| Tokens in / out | " + (a.inputTokens ?? 0) + " / " + (a.outputTokens ?? 0) + " |",
-              "| Cache reads | " + (a.cacheReadTokens ?? 0) + " |",
-              "| **Estimated cost** | **" + money + "** |",
-              "| Warnings / errors | " + (line.warnings?.length ?? 0) + " / " + (line.errors?.length ?? 0) + " |",
-              "| Degradations | " + (line.degradations?.length ? line.degradations.join(", ") : "none") + " |",
-            ].join("\n");
-            console.log(md);
-            if (process.env.GITHUB_STEP_SUMMARY) {
-              fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, md + "\n");
-            }
-            fs.mkdirSync("state", { recursive: true });
-            fs.appendFileSync("state/runs.jsonl", JSON.stringify(line) + "\n");
-          '
+            // Failed while an issue is already open: say nothing. One notification
+            // per outage, not one per run — an alert that repeats daily stops being read.
 
-      # Only reached when the build step succeeded, so a failed or half-finished
-      # run never commits partial output. §9 wants a bad day to degrade visibly,
-      # not to quietly overwrite a good archive with a broken one.
-      - name: Publish and persist state
-        if: steps.gate.outputs.proceed == 'true' && steps.build.outcome == 'success'
-        run: |
-          set -euo pipefail
-          git config user.name  "research-desk-bot"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      # One line per run, whatever happened, and a commit per run to carry it.
+      # GitHub disables a public repo's schedule after 60 days without activity,
+      # and when the ledger only moved on success a long outage made no commits
+      # at all — the outage itself would eventually switch off the schedule
+      # meant to recover from it. See scripts/record-run.mjs and commit-run.sh.
+      - name: Record the run in the ledger
+        id: record
+        if: always()
+        env:
+          DAY: ${{ steps.gate.outputs.day }}
+          RUN_STARTED_AT: ${{ steps.gate.outputs.started }}
+          GATE_PROCEED: ${{ steps.gate.outputs.proceed }}
+          GATE_REASON: ${{ steps.gate.outputs.reason }}
+          BUILD_OUTCOME: ${{ steps.build.outcome }}
+          KEEPALIVE_STATUS: ${{ steps.keepalive.outputs.status }}
+          SCHEDULE: ${{ github.event.schedule }}
+        run: node scripts/record-run.mjs
 
-          git add -A archive index.html state/seen.json state/runs.jsonl
-          if git diff --cached --quiet; then
-            echo "Nothing changed — not committing."
-            exit 0
-          fi
-
-          git commit -m "digest: ${{ steps.gate.outputs.day }}"
-
-          # Push race: Tom may push to main while this runs. Rebase our single
-          # output commit on top of whatever arrived and retry. If the rebase
-          # cannot apply cleanly, abort it and fail the job — a conflicted
-          # seen.json half-merged by a bot is worse than a visible red X,
-          # because it would silently break the dedup for every later run.
-          pushed=false
-          for attempt in 1 2 3 4 5; do
-            if git pull --rebase --autostash origin main; then
-              if git push origin main; then pushed=true; break; fi
-            else
-              git rebase --abort || true
-              echo "::error::Rebase onto origin/main conflicted; refusing to merge generated state by hand."
-              exit 1
-            fi
-            echo "Push attempt $attempt lost the race; retrying."
-            sleep $((attempt * 5))
-          done
-          if [ "$pushed" != "true" ]; then
-            echo "::error::Could not push after 5 attempts."
-            exit 1
-          fi
+      # Always commits the ledger line; commits the edition only when the build
+      # published one. A run that did not publish has every edition path put
+      # back exactly as main has it first, so the old guarantee — a failed run
+      # never overwrites a good archive — still holds underneath the new one.
+      - name: Commit the ledger, and the edition if one was published
+        if: always()
+        env:
+          DAY: ${{ steps.gate.outputs.day || 'unknown-day' }}
+          PUBLISH: ${{ steps.gate.outputs.proceed == 'true' && steps.build.outcome == 'success' && inputs.simulate_failure != true }}
+          OUTCOME: ${{ steps.record.outputs.outcome || 'recorded' }}
+        run: bash scripts/commit-run.sh
 
       # §9 failure visibility without a daily email: nothing is sent on a good
       # day, and a bad day opens (or comments on) a single dated issue, which
       # GitHub notifies on. A run that fails is also a red X in the Actions tab
       # and turns the README badge red.
       - name: Report a failure
-        if: failure() && steps.gate.outputs.proceed == 'true'
+        if: failure() && steps.gate.outputs.proceed == 'true' && inputs.simulate_failure != true
         uses: actions/github-script@v7
         with:
           script: |
@@ -257,9 +278,9 @@ jobs:
               ``,
               `Log: ${url}`,
               ``,
-              `Nothing was committed, so the archive and \`state/seen.json\` are`,
-              `untouched and yesterday's site is still being served. Per §9 the`,
-              `day is simply missing rather than padded with older papers.`,
+              `Only this run's line in \`state/runs.jsonl\` was committed. The archive`,
+              `and \`state/seen.json\` are untouched and yesterday's site is still being`,
+              `served. Per §9 the day is simply missing rather than padded with older papers.`,
             ].join('\n');
             const existing = await github.rest.issues.listForRepo({
               owner: context.repo.owner, repo: context.repo.repo,

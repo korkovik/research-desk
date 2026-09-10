@@ -1,0 +1,6 @@
+# The run ledger is append-only: each run adds one self-contained JSON line.
+# When two runs append concurrently, keeping both lines IS the right merge,
+# so let git do it rather than fail the push and lose a run from the record.
+# Deliberately NOT applied to state/seen.json, which is one JSON object and
+# would be corrupted by a line-wise union.
+state/runs.jsonl merge=union

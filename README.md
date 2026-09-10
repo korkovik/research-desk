@@ -104,13 +104,39 @@ so calmly and exits 0. Reporting that as a failure would send a notification on
 a morning when everything worked, and a red signal that usually means "probably
 fine" is worse than no signal at all.
 
-**The run that never happens.** A third cron at 11:00 UTC checks the two things
-that must be true for there to be anything to read: today's edition is committed,
-and the live Pages origin actually serves it. Both firings delayed out of their
+**The run that never happens.** A third cron at 11:23 UTC checks the two things
+that must be true for there to be anything to read: *yesterday's* edition is
+committed, and the live Pages origin actually serves it. Yesterday, because
+today's digest may still be sitting in GitHub's scheduler queue, and asking about
+a run that hasn't had its turn would only produce false alarms. Both firings delayed out of their
 window, a disabled schedule, or a failed Pages deploy would otherwise leave a
 green tick and a site quietly frozen on an old edition — the worst failure this
 project has, because silence reads as success. Either check failing opens an
 issue and fails the run.
+
+**Every run leaves a commit.** Each firing — published, skipped at the gate,
+or failed — appends one line to `state/runs.jsonl` and commits it. GitHub
+disables a public repository's schedule after 60 days without activity, and
+while the ledger only moved on good days, a long outage made no commits at all:
+the outage itself would eventually have switched off the schedule meant to
+recover from it. A failed run still commits *only* its ledger line — any edition
+file it half-wrote is put back exactly as `main` has it first, so a bad day can
+never overwrite a good archive. The ledger is marked `merge=union` in
+`.gitattributes`, so two runs appending at once both survive a push race.
+
+**It also keeps czech-product-verifier's database awake.** That project's Supabase
+database is paused after about a week without activity. Each run makes one
+read-only query against it, as the `cpv_web` role, inside a `READ ONLY`
+transaction. It lives here because this repository commits daily and so keeps
+its own schedule alive — a separate repo holding only a keepalive cron is
+exactly what the 60-day rule switches off. The step is non-fatal: it can never
+cost an edition. If it fails, one issue labelled `keepalive` opens, stays quiet
+while open, and closes itself on the next success.
+
+It **prevents** a pause; it cannot **cure** one. A paused project's hostname
+stops resolving, and only the Supabase dashboard can resume it. The connection
+string is the repository secret `CPV_KEEPALIVE_DATABASE_URL`; until it is set,
+the step logs a notice and does nothing.
 
 Run it by hand from the Actions tab → **daily digest** → *Run workflow*, with
 `force` ticked to replace an edition already published today.

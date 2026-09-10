@@ -65,6 +65,19 @@ export default tseslint.config(
     rules: { '@typescript-eslint/no-floating-promises': 'off' },
   },
   {
+    // Plain-JS workflow scripts (scripts/record-run.mjs) run on the runner's own
+    // node before `npm ci` — so they are dependency-free JavaScript, belong to no
+    // tsconfig, and need Node's globals declared for no-undef.
+    files: ['scripts/**/*.mjs'],
+    ...tseslint.configs.disableTypeChecked,
+    // Merge, do not replace: disableTypeChecked carries its parser reset
+    // (projectService off) inside languageOptions, and replacing the key drops it.
+    languageOptions: {
+      ...tseslint.configs.disableTypeChecked.languageOptions,
+      globals: { process: 'readonly', console: 'readonly' },
+    },
+  },
+  {
     // This file configures the linter and belongs to no tsconfig, so the
     // type-aware rules have no program for it. Must come last to win.
     files: ['**/*.js'],
