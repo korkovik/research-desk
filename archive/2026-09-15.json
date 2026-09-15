@@ -1,0 +1,728 @@
+{
+  "date": "2026-09-15",
+  "categoryKey": "ai-computing",
+  "categoryLabel": "Umělá inteligence a počítače",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7212748336",
+        "title": "MHF-Net: Multi-Modal Residual Fusion Object Detection Network Based on High-Frequency Gated Convolution",
+        "abstract": "This paper aims to address image degradation caused by adverse weather conditions and partial occlusion in autonomous driving scenarios. The network adopts a dual-branch architecture, which utilizes a residual fusion block (ResFuse) to achieve the deep fusion of cross-modal features. A dual-path attention mechanism (DualAtt) and an integrated high-frequency attention module (HFAtt) were designed to capture key information in feature maps. Additionally, this study designs a spatial-channel downsampling module (SCDown). This module implements spatial-to-channel image downsampling. Experimental results demonstrate that the proposed network achieves a detection speed of 61 frames per second (FPS) and precision (P) of up to 87.4% on the M3FD dataset. Comparative experimental results show that MHF-Net achieves 84.3% in the mAP50 evaluation metric. Compared to the baseline model, the number of parameters was reduced by 95% and the computational complexity was reduced by 88%. Compared with other mainstream object detection algorithms, MHF-Net strikes a favorable balance regarding performance in autonomous driving scenarios.",
+        "date": "2026-09-14",
+        "url": "https://doi.org/10.3390/s26185816",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.3390/s26185816",
+        "openAlexId": "W7212748336",
+        "subfield": {
+          "id": "subfields/1707",
+          "name": "Computer Vision and Pattern Recognition"
+        },
+        "field": {
+          "id": "fields/17",
+          "name": "Computer Science"
+        },
+        "topic": {
+          "id": "T10036",
+          "name": "Advanced Neural Network Applications"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Bailin Chen",
+          "Bo Qian"
+        ],
+        "venue": "Sensors",
+        "indexedDate": "2026-09-15",
+        "referencedWorksCount": 27,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.6219,
+          "everydayRelevance": 0.9,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.7851,
+          "explainDetail": {
+            "v": 1,
+            "s": 0,
+            "q": 1,
+            "c": 0.6,
+            "t": 0,
+            "j": 0.3205
+          },
+          "everydayDomains": [
+            "weather",
+            "transport",
+            "mind"
+          ],
+          "subfieldKey": "subfields/1707",
+          "evidence": [
+            "total 0.7851 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.62 = P 0.67 − 0.45×t 0.00 − 0.15×j 0.32",
+            "outcome verbs (v 1.00): reduced, detection (title, ×2), caused",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.60): −0.4 method-word subtitle",
+            "jargon density (j 0.32): 5/156 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.90: 3 domain(s) — weather, transport, mind",
+            "everyday terms (3): weather, driving, attention",
+            "freshness 1.00: 0 day(s) old (effective date 2026-09-15)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Sensors",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.3390/s26185816)"
+      },
+      "summary": {
+        "souhrn": "Kamera v autě vidí v dešti, mlze nebo při sněžení mnohem hůř než v poledním slunci — a co jí zbývá, to jí ještě často zakryje jiné auto. Autoři proto sestavili detekční síť MHF-Net, která zpracovává dva různé druhy snímků téže scény ve dvou paralelních větvích a pak je spojuje do jednoho obrazu, přičemž zvlášť si všímá ostrých hran a obrysů, které bývají pro rozpoznání objektu nejdůležitější. Na veřejné sadě dopravních snímků M3FD síť zvládla 61 snímků za sekundu, tedy scénu vyhodnotí jednašedesátkrát během jediné sekundy, což je rychlejší než přehrávání běžného filmu, a dosáhla přesnosti 87,4 % — přibližně sedm z osmi objektů, které označí, tam skutečně je. Proti výchozímu modelu, ze kterého autoři vyšli, přitom ubylo 95 % parametrů, tedy vnitřních nastavitelných hodnot, které se síť během učení naučí — zbyla jich asi dvacetina.",
+        "podrobneVysvetleni": "Základní myšlenka je jednoduchá: místo jednoho pohledu na scénu má síť pohledy dva a učí se je propojit. Každý vstup jde vlastní větví a takzvaný spojovací blok (ResFuse) pak z obou vytvoří společnou reprezentaci, aby se informace z jednoho zdroje nepřebila informací z druhého. K tomu autoři přidali dva mechanismy pozornosti, které rozhodují, kterým místům v obraze a kterým vlastnostem se vyplatí věnovat víc výpočtů; jeden z nich se soustředí právě na vysoké frekvence, tedy na ostré přechody, hrany a obrysy. Zmenšování obrazu během zpracování řeší modul SCDown, který informaci z plochy snímku nezahodí, ale přesune ji do dalších datových vrstev. Výsledky: v souhrnné známce úspěšnosti detekce (mAP50) dosáhla síť 84,3 %, přesnost označených objektů byla až 87,4 % a rychlost 61 snímků za sekundu. Zajímavější než samotná čísla je poměr: výpočetní náročnost klesla o 88 %, počítač tedy na jeden snímek odvede přibližně osmkrát méně práce než výchozí model, a přesnost přitom neutrpěla. Pro autonomní řízení to má praktický důvod — model musí běžet na malém počítači ve vozidle, ne v serverové hale, a musí odpovědět dřív, než auto ujede několik metrů.",
+        "procJeToDulezite": "Bezpečnost asistenčních systémů v autě se láme právě v mlze, dešti a šeru, kdy obyčejná kamera selhává. A protože nová síť potřebuje mnohem méně výpočtů, může podobné rozpoznávání běžet i na levném hardwaru přímo ve vozidle.",
+        "poznamkaKOmezenim": "Jde o výsledky na jedné veřejné testovací sadě snímků, ne o provoz ve skutečných ulicích — jak si síť poradí v reálném autě a v situacích, které v datech nebyly, zůstává otevřené."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 396,
+              "end": 666
+            },
+            "matchedText": "Na veřejné sadě dopravních snímků M3FD síť zvládla 61 snímků za sekundu, tedy scénu vyhodnotí jednašedesátkrát během jediné sekundy, což je rychlejší než přehrávání běžného filmu, a dosáhla přesnosti 87,4 % — přibližně sedm z osmi objektů, které označí, tam skutečně je.",
+            "messageCs": "Tato věta má 41 slov a je moc dlouhá: „Na veřejné sadě dopravních snímků M3FD síť zvládla 61 snímků za sekundu, tedy s…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[396,666]: Na veřejné sadě dopravních snímků M3FD síť zvládla 61 snímků za sekundu, tedy scénu vyhodnotí jednašedesátkrát během jediné sekundy, což je rychlejší než přehrávání běžného filmu, a dosáhla přesnosti 87,4 % — přibližně sedm z osmi objektů, které označí, tam skutečně je."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=26.85",
+            "messageCs": "Věty jsou v průměru moc dlouhé (26,8 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=26.85"
+          }
+        ],
+        "soft": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 30 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=41.6",
+            "messageCs": "Text se celkově čte těžko (index 42 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=41.6"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7212724491",
+        "title": "Artificial intelligence in higher education: The interplay of competence, perception, and artificial intelligence influence on self-learning outcomes",
+        "abstract": "The quick adoption of artificial intelligence (AI) in higher education has changed how students learn and cultivate their capacity for self-directed learning. Although previous research has looked at the adoption of AI, few have investigated the ways in which perception, competency, and AI's behavioural effect, all work together to shape self-learning outcomes in emerging nations. These dynamics were examined in this study among 509 students from two of Ghana's largest universities of teacher education with distance education programmes. The study used a cross-sectional survey approach, and Partial Least Squares Structural Equation Modeling to evaluate the data. The results revealed three key insights. First, competence in using generative AI particularly skills in prompt creation, error detection, and ethical awareness were significant but modestly predicted self-learning outcomes. Second, perception of AI's usefulness and ease of use showed no significant direct effect, suggesting that positive attitudes alone were insufficient to generate academic benefits. Collectively, the model explained 57.4% of the variance in self-learning outcomes and demonstrated strong predictive relevance. Practically, the study underscored the need for higher education institutions to embed AI literacy into curricula for improved learning outcomes.",
+        "date": "2026-09-14",
+        "url": "https://doi.org/10.1016/j.ssaho.2026.103597",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1016/j.ssaho.2026.103597",
+        "openAlexId": "W7212724491",
+        "subfield": {
+          "id": "subfields/1702",
+          "name": "Artificial Intelligence"
+        },
+        "field": {
+          "id": "fields/17",
+          "name": "Computer Science"
+        },
+        "topic": {
+          "id": "T12128",
+          "name": "AI in Service Interactions"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Mac-Anthony Cobblah",
+          "Gloria Tachie-Donkor",
+          "Diana Atuase",
+          "Theophilus  Kwasi Odame Danso",
+          "Jacob Owusu Sarfo",
+          "Beatrice Asante Somuah"
+        ],
+        "venue": "Social Sciences & Humanities Open",
+        "indexedDate": "2026-09-15",
+        "referencedWorksCount": 78,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7194,
+          "everydayRelevance": 0.7333,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.7774,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 0.5,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.0538
+          },
+          "everydayDomains": [
+            "school",
+            "work"
+          ],
+          "subfieldKey": "subfields/1702",
+          "evidence": [
+            "total 0.7774 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.72 = P 0.73 − 0.45×t 0.00 − 0.15×j 0.05",
+            "outcome verbs (v 0.75): improved, predicted, detection",
+            "recognisable subjects (s 0.50): students, teachers",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.05): 1/186 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.73: 2 domain(s) — school, work",
+            "everyday terms (7): student, students, teacher, teachers, learning outcomes, literacy, work",
+            "freshness 1.00: 0 day(s) old (effective date 2026-09-15)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Social Sciences & Humanities Open",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1016/j.ssaho.2026.103597)"
+      },
+      "summary": {
+        "souhrn": "Umět s umělou inteligencí pracovat pomáhá při samostudiu víc než ji mít rád. Vědci se zeptali 509 studentů dálkového učitelského studia ze dvou ghanských univerzit — je to vzorek asi jako jedna menší střední škola. Studenti hodnotili své dovednosti, svůj názor na AI i to, jak jim mění zvyky při učení. Dovednosti jako psaní dobrých zadání, odhalování chyb v odpovědích a povědomí o etice se ve výsledcích učení projevily, ale jen mírně. Samotný kladný postoj, tedy „AI je užitečná a snadná\", se neprojevil vůbec.",
+        "podrobneVysvetleni": "Výzkumníci rozdali dotazník studentům dálkového studia na dvou největších ghanských univerzitách, které připravují učitele. Šlo o jednorázové šetření (cross-sectional survey): vše se měřilo v jediném okamžiku, nikdo studenty nesledoval v čase. Data pak zpracovali metodou, která hledá vzájemné vazby mezi více faktory naráz. Odborně se jí říká Partial Least Squares Structural Equation Modeling. Zajímaly je tři věci: jak studenti AI vnímají, jak dobře ji ovládají a jak jim mění chování při učení. Nejzřetelnější byl vliv dovedností. Kdo umí formulovat zadání pro chatbota, pozná v odpovědi chybu a ví, co je při používání AI etické, ten si v samostudiu vedl lépe. Souvislost ale byla jen mírná. Není to tedy hlavní faktor, spíš jeden z mnoha. Naopak samotný názor na AI neznamenal nic. Studenti, kteří ji považovali za užitečnou a snadnou, neměli lepší výsledky učení než ostatní. Nadšení bez dovednosti nestačí. Celý model vysvětlil 57,4 % rozdílů mezi studenty, tedy něco přes polovinu. O zbytku rozhodují věci, které dotazník nezachytil. Autoři z toho vyvozují, že by vysoké školy měly práci s AI učit přímo, jako součást výuky. Nechat ji na samouku podle nich nestačí.",
+        "procJeToDulezite": "Pro školy i rodiny z toho plyne jednoduchá věc: dát dětem přístup k AI nestačí. Rozdíl dělá až to, když se naučí dobře ptát, kontrolovat odpovědi a znát hranice toho, co je v pořádku.",
+        "poznamkaKOmezenim": "Vzorek pochází z jedné země a dvou škol, studenti hodnotili sami sebe a měření proběhlo v jediném okamžiku, takže výsledek ukazuje souvislosti, ne příčiny."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "pass",
+        "hard": [],
+        "soft": []
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7212692156",
+        "title": "Human-centered design based on federated learning to optimize user experience on blockchain platforms",
+        "abstract": "In modern decentralized environments, designing systems that are not only efficient and secure but also understandable and trustworthy for end-users has emerged as the central challenge. Blockchain and Federated Learning (FL) have become two seminal technologies that facilitate privacy-preserving and transparent processing of data over distributed networks. Nevertheless, although most current Blockchain-FL architectures possess technical strengths, they are still complex, opaque, and challenging for end-users to engage with, causing low trust and limited usage. In order to fill the gap, this study discusses a Human-Centered Design (HCD)–based framework that couples blockchain and federated learning to reconcile technological robustness with human usability. The framework starts by exploring user needs and designing usable, translucent interfaces, then distributing model training without raw data sharing, while blockchain provides transparency and immutability of updates. User feedback gathered by standard User Experience (UX) metrics—System Usability Scale (SUS) and User Experience Questionnaire (UEQ)—instruct iterative interface and training workflow refinements. Experimental assessments performed over three real-world healthcare datasets—Heart Disease, Breast Cancer Wisconsin, and COVID-19 CT—show that the proposed framework enhances model accuracy by 4.1%, reduces latency by 12.5%, decreases communication cost by 24.6%, and improves the fairness index by 9.7% compared with the FL-only and FL + Blockchain without HCD baselines. In addition, the UX evaluation achieved an SUS score of 89 and a UEQ value of 6.3, indicating a 23% improvement in user satisfaction and trust. In totality, the result verifies that incorporating HCD wisdom into Blockchain-FL systems closes the gap between technical robustness and human experience, preparing the path toward transparent, secure, and user-friendly decentralized systems.",
+        "date": "2026-09-14",
+        "url": "https://doi.org/10.1038/s41598-026-71153-6",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1038/s41598-026-71153-6",
+        "openAlexId": "W7212692156",
+        "subfield": {
+          "id": "subfields/1710",
+          "name": "Information Systems"
+        },
+        "field": {
+          "id": "fields/17",
+          "name": "Computer Science"
+        },
+        "topic": {
+          "id": "T10270",
+          "name": "Blockchain Technology Applications and Security"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Alireza Koshgizadeh",
+          "Nahideh Derakhshanfard",
+          "Asghar Mohammadian",
+          "Abbas Mirzaei",
+          "Ali Asghar Pourhaji Kazem",
+          "Neda Dadashkhani",
+          "Mehdi Hosseinzadeh"
+        ],
+        "venue": "Scientific Reports",
+        "indexedDate": "2026-09-15",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.6673,
+          "everydayRelevance": 0.7,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.7472,
+          "explainDetail": {
+            "v": 1,
+            "s": 0,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.1515
+          },
+          "everydayDomains": [
+            "health",
+            "money"
+          ],
+          "subfieldKey": "subfields/1710",
+          "evidence": [
+            "total 0.7472 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.67 = P 0.69 − 0.45×t 0.00 − 0.15×j 0.15",
+            "outcome verbs (v 1.00): reduces, improves, improvement, decreases",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.15): 4/264 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.70: 2 domain(s) — health, money",
+            "everyday terms (5): disease, cancer, covid, cost, costs",
+            "freshness 1.00: 0 day(s) old (effective date 2026-09-15)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Scientific Reports",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1038/s41598-026-71153-6)"
+      },
+      "summary": {
+        "souhrn": "Technicky vyspělé systémy často selhávají na té nejprostší věci: lidé jim nerozumějí a nedůvěřují jim. Autoři práce proto spojili federované učení (federated learning, tedy trénování umělé inteligence přímo na jednotlivých zařízeních, bez odesílání samotných dat) s blockchainem (řetězec záznamů, do kterého se nedá zpětně zasahovat). A přidali k tomu něco, co se v takových projektech obvykle odbývá — návrh podle potřeb lidí, kteří to mají používat. Na třech zdravotnických datových sadách jim vyšla o 4,1 % vyšší přesnost modelu, o 12,5 % kratší odezva a o necelou čtvrtinu menší objem přenášených dat než u srovnávaných systémů bez tohoto návrhu. Uživatelé ohodnotili použitelnost 89 body na běžné stobodové škále, tedy blízko horní hranici, a spokojenost i důvěra podle autorů stouply zhruba o pětinu.",
+        "podrobneVysvetleni": "Postup měl několik kroků. Nejprve si tým zjistil, co uživatelé od systému potřebují, a podle toho navrhl srozumitelné obrazovky. Teprve pak přišla technika. Model umělé inteligence se učil rozdělený mezi jednotlivá zařízení, takže citlivá data nemusela nikam putovat. Blockchain zároveň zaznamenával každou úpravu modelu tak, aby ji nešlo dodatečně přepsat. Zpětnou vazbu od uživatelů autoři sbírali dvěma zavedenými dotazníky a podle ní rozhraní i postup učení opakovaně upravovali.\n\nOtestovali to na třech veřejných zdravotnických sadách dat: o srdečních onemocněních, o nádorech prsu a o snímcích plic z počítačové tomografie při covidu. Proti systémům, které federované učení a blockchain používají bez ohledu na uživatele, vyšly tyto rozdíly: přesnost o 4,1 % vyšší, tedy zhruba o čtyři správné odpovědi navíc ze sta; odezva o 12,5 % kratší, tedy asi o osminu; objem komunikace mezi zařízeními menší o 24,6 %, tedy zhruba o čtvrtinu. Zlepšil se i ukazatel spravedlnosti, který sleduje, zda systém nezvýhodňuje jednu skupinu dat na úkor jiné — o 9,7 %, tedy zhruba o desetinu.\n\nHlavní sdělení je jednoduché: ohled na uživatele nešel proti technickému výkonu. Naopak, v tomto měření mu pomohl. Když lidé rozumějí tomu, co systém dělá, ochotněji ho používají — a systém pak má s čím pracovat.",
+        "procJeToDulezite": "Bezpečné nakládání s citlivými daty, třeba zdravotními, nezáleží jen na technice, ale i na tom, jestli výsledku lidé rozumějí a chtějí ho používat. Tahle práce ukazuje, že obojí se nemusí vylučovat.",
+        "poznamkaKOmezenim": "Jde o testy na třech veřejných datových sadách v kontrolovaných podmínkách, nikoli o skutečný provoz v nemocnici, a u hodnocení spokojenosti není ve zdroji uvedeno, kolik lidí se ho zúčastnilo."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:datova-sada",
+            "span": {
+              "start": 476,
+              "end": 491
+            },
+            "matchedText": "datových sadách",
+            "messageCs": "Termín „datová sada“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:datova-sada @ souhrn[476,491]: datových sadách"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 641,
+              "end": 938
+            },
+            "matchedText": "Proti systémům, které federované učení a blockchain používají bez ohledu na uživatele, vyšly tyto rozdíly: přesnost o 4,1 % vyšší, tedy zhruba o čtyři správné odpovědi navíc ze sta; odezva o 12,5 % kratší, tedy asi o osminu; objem komunikace mezi zařízeními menší o 24,6 %, tedy zhruba o čtvrtinu.",
+            "messageCs": "Tato věta má 50 slov a je moc dlouhá: „Proti systémům, které federované učení a blockchain používají bez ohledu na uži…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[641,938]: Proti systémům, které federované učení a blockchain používají bez ohledu na uživatele, vyšly tyto rozdíly: přesnost o 4,1 % vyšší, tedy zhruba o čtyři správné odpovědi navíc ze sta; odezva o 12,5 % kratší, tedy asi o osminu; objem komunikace mezi zařízeními menší o 24,6 %, tedy zhruba o čtvrtinu."
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 265,
+              "end": 276
+            },
+            "matchedText": " blockchain",
+            "messageCs": "Text opisuje původní název článku („ blockchain“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[265,276]:  blockchain"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 681,
+              "end": 694
+            },
+            "matchedText": " blockchain p",
+            "messageCs": "Text opisuje původní název článku („ blockchain p“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[681,694]:  blockchain p"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=18.42",
+            "messageCs": "Věty jsou v průměru moc dlouhé (18,4 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=18.42"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=2",
+            "messageCs": "Počet vět delších než 30 slov: 2. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=2"
+          },
+          {
+            "block": "all",
+            "rule": "long-words",
+            "ruleId": "readability:R6",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "share5Syllables=0.086",
+            "messageCs": "Příliš mnoho abstraktních dlouhých slov (9 % slov má pět a více slabik). Nahraďte je konkrétními, kratšími slovy.",
+            "detail": "readability:R6 @ all[0,0]: share5Syllables=0.086"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7212673462",
+        "title": "AI Accelerated Chemical Screening Integrates ChemBERTa to Identify Repositionable CASP4 Inhibitors via MD Simulations and MM/PBSA Analysis",
+        "abstract": "Abstract This study employed an integrated ligand-based virtual screening pipeline to identify potential CASP4 inhibitors from the DrugBank database, leveraging docking-score prioritization, SMILES-derived ChemBERTa embeddings, and key physicochemical descriptors. Building on this foundation, the workflow incorporated virtual screening, cheminformatics modeling, PK–PD evaluation, molecular docking, molecular dynamics simulations, and MM/PBSA free-energy analysis to systematically prioritize repurposed DrugBank compounds for CASP4-targeted Alzheimer’s disease therapy. A Random Forest classifier trained on the hybrid ChemBERTa physicochemical feature set distinguished active from inactive compounds with ∼95% accuracy (ROC–AUC = 0.73) and achieved a ∼3.5-fold enrichment of active compounds among the top-ranked hits, while a companion Random Forest regressor, trained on the experimental pIC50 values of active compounds, ranked candidates by predicted potency. In addition, integrated cheminformatics modeling, PK–PD analysis, and molecular docking further narrowed the selection to the top five candidate compounds: DB00519, DB01068, DB06202, DB08882, and DB05316. Finally, MD simulations and MM/PBSA calculations established clear thermodynamic support for DB05316 and DB00519, whose binding free energies (−21.4 and −20.9 kcal/mol, respectively) exceeded even the reference compound donepezil, highlighting them as the most promising CASP4 inhibitors. Overall, this workflow provides an efficient and robust strategy for prioritizing repositioned DrugBank compounds as potential CASP4 inhibitors against Alzheimer’s disease.",
+        "date": "2026-09-15",
+        "url": "https://doi.org/10.1021/acs.jcim.6c02284",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1021/acs.jcim.6c02284",
+        "openAlexId": "W7212673462",
+        "subfield": {
+          "id": "subfields/1703",
+          "name": "Computational Theory and Mathematics"
+        },
+        "field": {
+          "id": "fields/17",
+          "name": "Computer Science"
+        },
+        "topic": {
+          "id": "T10211",
+          "name": "Computational Drug Discovery Methods"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Mubashir Hassan",
+          "Sidra Ghayour Bhatti",
+          "Muhammad Yasir",
+          "Wanjoo Chun",
+          "Andrzej Kloczkowski"
+        ],
+        "venue": "Journal of Chemical Information and Modeling",
+        "indexedDate": "2026-09-15",
+        "referencedWorksCount": 68,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.6419,
+          "everydayRelevance": 0.7,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.737,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 0.5,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.9709
+          },
+          "everydayDomains": [
+            "energy",
+            "health"
+          ],
+          "subfieldKey": "subfields/1703",
+          "evidence": [
+            "total 0.7370 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.64 = P 0.79 − 0.45×t 0.00 − 0.15×j 0.97",
+            "outcome verbs (v 0.75): accelerated (title, ×2), predicted",
+            "recognisable subjects (s 0.50): forests, buildings",
+            "quantified effect (q 1): percentage, fold change",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.97): 20/206 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.70: 2 domain(s) — energy, health",
+            "everyday terms (5): energy, disease, alzheimer, therapy, screening",
+            "freshness 1.00: 0 day(s) old (effective date 2026-09-15)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Journal of Chemical Information and Modeling",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1021/acs.jcim.6c02284)"
+      },
+      "summary": {
+        "souhrn": "Vědci prohledávali databázi už schválených léků DrugBank a hledali látky, které by mohly zablokovat CASP4 — enzym, tedy bílkovinu, která v těle spouští chemické reakce. CASP4 se podílí na zánětu v mozku u Alzheimerovy nemoci. Program natrénovaný na chemických strukturách odlišil nadějné látky od nenadějných s přesností asi 95 % a mezi nejvýše hodnocenými se sešlo asi 3,5krát víc účinných látek než při náhodném výběru. Podrobné simulace pak vybraly dva favority: DB05316 a DB00519 se na CASP4 vázaly pevněji než dnes běžně užívaný donepezil. Zatím ovšem jde jen o výpočty v počítači, do zkumavky se látky nedostaly.",
+        "podrobneVysvetleni": "Postup měl několik kroků. Nejdřív počítač převedl chemické struktury léků z DrugBanku do číselné podoby. Použil k tomu model ChemBERTa, který se učí ze zápisů molekul podobně, jako se jazykové modely učí z textu. K tomu přidal základní vlastnosti molekul, například velikost nebo rozpustnost. Na těchto datech vědci natrénovali klasifikátor typu random forest, tedy „les rozhodovacích stromů“. Rozlišoval účinné a neúčinné látky s přesností asi 95 %. To znamená, že chybil přibližně u jedné látky z dvaceti. Druhý ukazatel, ROC–AUC, ale vyšel jen 0,73. Na této stupnici znamená 0,5 náhodu a 1,0 dokonalost. Model tedy není tak dobrý, jak by se z přesnosti zdálo. Bývá to tím, že neúčinných látek je v datech mnohonásobně víc. Další model odhadoval, jak silně budou látky působit. Po dalším sítu — posouzení chování léku v těle a výpočtu ukotvení molekuly v cílové bílkovině — zůstalo pět kandidátů. Nejnadějnější byly DB05316 a DB00519. Delší simulace pohybu molekul a výpočet vazebné energie u nich daly −21,4 a −20,9 kilokalorie na mol. Čím nižší číslo, tím pevnější vazba. Oba překonaly donepezil, lék podávaný při Alzheimerově nemoci, který autoři použili pro srovnání. Celý postup je návod, jak z tisíců hotových léků vybrat hrstku, kterou má smysl zkoušet v laboratoři.",
+        "procJeToDulezite": "Hledat nové využití pro léky, které už existují, je rychlejší a levnější než vyvíjet lék od nuly — a u Alzheimerovy nemoci zatím účinná léčba chybí. Práce zároveň ukazuje, k čemu se dnes umělá inteligence ve výzkumu léků opravdu používá.",
+        "poznamkaKOmezenim": "Všechny výsledky vznikly jen na počítači a nikdo je dosud neověřil v laboratoři ani na pacientech, takže jde o předběžný návrh, které látky zkoušet dál."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 547,
+              "end": 551
+            },
+            "matchedText": "0,73",
+            "messageCs": "Číslo „0,73“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „0,73 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[547,551]: 0,73"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1005,
+              "end": 1010
+            },
+            "matchedText": "−21,4",
+            "messageCs": "Číslo „−21,4“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „−21,4 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1005,1010]: −21,4"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1013,
+              "end": 1018
+            },
+            "matchedText": "−20,9",
+            "messageCs": "Číslo „−20,9“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „−20,9 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1013,1018]: −20,9"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 226,
+              "end": 421
+            },
+            "matchedText": "Program natrénovaný na chemických strukturách odlišil nadějné látky od nenadějných s přesností asi 95 % a mezi nejvýše hodnocenými se sešlo asi 3,5krát víc účinných látek než při náhodném výběru.",
+            "messageCs": "Tato věta má 30 slov a je moc dlouhá: „Program natrénovaný na chemických strukturách odlišil nadějné látky od nenadějn…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[226,421]: Program natrénovaný na chemických strukturách odlišil nadějné látky od nenadějných s přesností asi 95 % a mezi nejvýše hodnocenými se sešlo asi 3,5krát víc účinných látek než při náhodném výběru."
+          },
+          {
+            "block": "souhrn",
+            "rule": "hype",
+            "ruleId": "hype:nadějn",
+            "span": {
+              "start": 280,
+              "end": 287
+            },
+            "matchedText": "nadějné",
+            "messageCs": "Slovo „nadějné“ zbytečně přehání (pravidlo §2). Zvažte střízlivější formulaci, nebo doplňte konkrétní číslo či příklad.",
+            "detail": "hype:nadějn @ souhrn[280,287]: nadějné"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 124,
+              "end": 134
+            },
+            "matchedText": " ChemBERTa",
+            "messageCs": "Text opisuje původní název článku („ ChemBERTa“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[124,134]:  ChemBERTa"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7211907692",
+        "title": "Universal Intelligent Document Management System Using OCR, Retrieval-Augmented Generation, and Large Language Models",
+        "abstract": "Abstract The rapid growth of digital information has significantly increased the need for intelligent systems capable of managing, understanding, and retrieving knowledge from diverse document formats. Traditional document management systems primarily focus on storage and indexing, requiring users to manually search for relevant information, which becomes inefficient when handling large collections of scanned documents, images, and PDFs. This paper presents Universal Doc AI, a multimodal intelligent document management system that integrates Optical Character Recognition (OCR), Retrieval-Augmented Generation (RAG), vector-based semantic search, and Large Language Models (LLMs) to enable context-aware question answering over user-uploaded documents and images. The proposed framework automatically extracts textual content from scanned documents and images using OCR, preprocesses and segments the extracted information into semantic chunks, and generates dense vector embeddings for efficient indexing within a vector database. When users submit natural language queries, the system retrieves the most relevant document segments through semantic similarity search and augments the retrieved context before passing it to an LLM to generate accurate, context-grounded responses. This RAG-based architecture minimizes hallucinations by restricting responses to the knowledge contained within the uploaded documents while supporting conversational interactions and multilingual document understanding. Unlike conventional document management solutions, Universal Doc AI combines secure document organization, intelligent semantic retrieval, OCR-driven knowledge extraction, and conversational AI into a unified platform. The system supports multiple document formats, including PDFs, scanned images, handwritten notes, and photographs of printed documents, making it suitable for educational institutions, enterprises, healthcare organizations, legal firms, and government agencies. Experimental evaluation demonstrates improvements in document retrieval accuracy, response relevance, and user interaction efficiency compared with traditional keyword-based search methods. The proposed framework provides a scalable, extensible, and cost-effective solution for intelligent document management by leveraging modern AI technologies, thereby enhancing accessibility, knowledge discovery, and decision-making from large-scale unstructured document repositories. Keywords: Universal Document Management, Optical Character Recognition (OCR), Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), Multimodal AI, Document Intelligence, Semantic Search, Vector Database, Natural Language Processing (NLP), Question Answering (QA), Knowledge Retrieval, Document Understanding, Artificial Intelligence (AI), Information Retrieval, Context-Aware Conversational Systems. 1. Introduction The exponential growth of digital documents across educational institutions, enterprises, healthcare organizations, legal firms, and government agencies has created an increasing demand for intelligent document management systems. Organizations routinely store information in the form of PDF files, scanned documents, handwritten notes, invoices, reports, contracts, and images. Although these documents contain valuable knowledge, locating specific information often requires manual searching, making the retrieval process time-consuming and inefficient. Traditional document management systems primarily focus on document storage, indexing, and keyword-based search, which frequently fail to understand the semantic meaning and contextual relationships within documents. Recent advances in Artificial Intelligence (AI), particularly Large Language Models (LLMs), have significantly improved natural language understanding and human-computer interaction. Users can now ask questions in natural language instead of relying on exact keyword matching. However, standalone LLMs are limited by static training data and may generate inaccurate or fabricated responses, commonly referred to as hallucinations. These limitations reduce their reliability for applications that require factual responses derived from user-specific documents. Retrieval-Augmented Generation (RAG) addresses this challenge by retrieving relevant information from external knowledge sources before generating responses, thereby improving factual accuracy and transparency. Optical Character Recognition (OCR) has become another key technology for document intelligence by converting printed and scanned documents into machine-readable text. Modern OCR techniques enable knowledge extraction from images, scanned PDFs, and handwritten documents, allowing information that was previously inaccessible to become searchable and analyzable. When OCR is integrated with semantic retrieval and LLM-based reasoning, users can interact with uploaded documents conversationally, obtaining precise answers without manually reviewing lengthy files. Recent studies demonstrate that combining OCR with RAG substantially enhances document understanding and contextual question answering across heterogeneous document collections. Despite these technological advancements, many existing document management systems continue to depend on metadata or keyword matching and lack intelligent semantic retrieval capabilities. Furthermore, several available AI-based systems either support only textual documents or require extensive preprocessing, limiting their applicability to real-world document repositories containing scanned images, photographs, and mixed-format documents. These limitations motivate the development of a unified framework capable of managing multiple document formats while providing reliable knowledge retrieval and conversational assistance. To address these challenges, this paper proposes UniversalDocAI, an intelligent multimodal document management system that combines OCR, Retrieval-Augmented Generation (RAG), vector-based semantic search, and Large Language Models. The proposed system automatically extracts textual content from uploaded documents and images, preprocesses the extracted information into semantic chunks, generates vector embeddings for efficient indexing, and retrieves the most relevant document passages in response to user queries. The retrieved information is then supplied to an LLM to generate context-aware answers that are grounded exclusively in the uploaded documents, thereby reducing hallucinations and improving response reliability. The proposed framework supports multiple document formats, including PDFs, scanned documents, printed images, and handwritten notes. In addition to secure document storage and management, the system enables semantic search, conversational question answering, multilingual document processing, and efficient knowledge discovery through a unified interface. Such capabilities make the framework applicable to educational institutions, corporate organizations, legal offices, healthcare providers, and government departments where rapid access to document knowledge is essential. The major contributions of this work are summarized as follows: Development of a unified AI-based document management framework capable of handling both textual and image-based documents. Integration of Optical Character Recognition (OCR) for automatic extraction of textual information from scanned and image documents. Implementation of a Retrieval-Augmented Generation (RAG) pipeline with vector-based semantic retrieval for accurate context selection. Deployment of a Large Language Model to provide conversational, document-grounded question answering while minimizing hallucinations. Design of a scalable and extensible architecture suitable for enterprise-scale document repositories and intelligent knowledge management. The remainder of this paper is organized as follows. Section II reviews the existing literature on intelligent document management, OCR, Retrieval-Augmented Generation, and Large Language Models. Section III describes the proposed methodology and system architecture. Section IV presents the implementation details and experimental evaluation. Section V discusses the obtained results, and Section VI concludes the paper with future research directions. 2. Literature Review The rapid advancement of Artificial Intelligence (AI), Optical Character Recognition (OCR), Retrieval-Augmented Generation (RAG), and Large Language Models (LLMs) has transformed intelligent document processing and knowledge retrieval. Several researchers have proposed AI-assisted document understanding systems; however, existing approaches continue to face challenges in handling heterogeneous document formats, multimodal content, retrieval accuracy, and hallucination-free response generation. Lewis et al. [1] introduced the Retrieval-Augmented Generation (RAG) framework, which combines neural retrieval with sequence generation to improve the factual correctness of language models. The proposed architecture demonstrated significant improvements in open-domain question answering by retrieving relevant external knowledge before generating responses. Although the framework reduced hallucinations and improved answer reliability, it primarily focused on textual knowledge sources and did not address document management, OCR-based document extraction, or multimodal document processing. Karakurt and Akbulut [2] presented a systematic literature review on integrating Retrieval-Augmented Generation with Large Language Models for enterprise knowledge management and document automation. Their study analyzed existing RAG architectures, retrieval techniques, embedding models, evaluation metrics, and enterprise applications. The review highlighted that RAG significantly enhances document automation by grounding responses in enterprise knowledge bases. However, the authors also identified several open research challenges, including effici",
+        "date": "2026-09-15",
+        "url": "https://doi.org/10.5281/zenodo.22644649",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.5281/zenodo.22644649",
+        "openAlexId": "W7211907692",
+        "subfield": {
+          "id": "subfields/1707",
+          "name": "Computer Vision and Pattern Recognition"
+        },
+        "field": {
+          "id": "fields/17",
+          "name": "Computer Science"
+        },
+        "topic": {
+          "id": "T10601",
+          "name": "Handwritten Text Recognition Techniques"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Dr. K R Shylaja",
+          "Praveen H"
+        ],
+        "venue": "Journal of Zhejiang University(Science Edition)",
+        "indexedDate": "2026-09-08",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.4486,
+          "everydayRelevance": 0.9667,
+          "freshness": 1,
+          "credibility": 0.745,
+          "total": 0.7344,
+          "explainDetail": {
+            "v": 1,
+            "s": 0,
+            "q": 0,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.2759
+          },
+          "everydayDomains": [
+            "money",
+            "work",
+            "mind"
+          ],
+          "subfieldKey": "subfields/1707",
+          "evidence": [
+            "total 0.7344 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.45 = P 0.49 − 0.45×t 0.00 − 0.15×j 0.28",
+            "outcome verbs (v 1.00): reduced, reduces, increased, improved, improves, improvement, enables",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.28): 33/1196 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 3 domain(s) — money, work, mind",
+            "everyday terms (5): cost, costs, work, focus, decision making",
+            "freshness 1.00: 0 day(s) old (effective date 2026-09-15)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Journal of Zhejiang University(Science Edition)",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.5281/zenodo.22644649)"
+      },
+      "summary": {
+        "souhrn": "Najít jednu informaci ve stovkách naskenovaných papírů umí zabrat celé odpoledne. Autoři proto postavili systém Universal Doc AI, který dokumenty přečte za uživatele. Nejdřív z obrázků a skenů vytáhne text (OCR, tedy optické rozpoznávání znaků), rozdělí ho na menší úseky a uloží je podle významu. Na otázky pak odpovídá jazykový model — program vycvičený na obrovském množství textů — a smí čerpat jen z nahraných dokumentů. Podle testů autorů takové hledání trefí správnou pasáž častěji než klasické vyhledávání podle klíčových slov, konkrétní čísla ale v práci chybí.",
+        "podrobneVysvetleni": "Postup má několik kroků. Uživatel nahraje PDF, fotku smlouvy nebo ručně psanou poznámku. Program z obrázku nejprve vytáhne text pomocí OCR. Ten pak rozseká na menší úseky — odstavce či jejich části, které drží jednu myšlenku. Každý úsek dostane číselný záznam, tzv. vektor, který zachycuje jeho význam. Tyto záznamy se ukládají do zvláštní databáze. Když se uživatel na něco zeptá běžnou větou, systém spočítá vektor i pro otázku. Potom vyhledá úseky, jejichž význam je otázce nejblíž. Tenhle postup se označuje jako RAG (retrieval-augmented generation), tedy generování odpovědi opřené o vyhledaná data. Nalezené úseky se přidají k otázce a předají jazykovému modelu. Model z nich sestaví odpověď. Protože má k dispozici jen texty z nahraných souborů, méně často si domýšlí údaje, které nikde nestojí — takovým výmyslům se říká halucinace. Autoři svůj systém srovnali s obvyklým hledáním podle klíčových slov. Uvádějí, že jejich řešení našlo vhodnější pasáže a odpovědi lépe odpovídaly dotazu. Přesná čísla ani popis testovací sady však v dostupném textu nejsou. Systém podle autorů zvládne více jazyků, různé formáty i rozhovor, kdy se uživatel postupně doptává. Jako možné uživatele jmenují školy, firmy, zdravotnická zařízení, advokátní kanceláře a úřady.",
+        "procJeToDulezite": "Podobné nástroje se začínají objevovat i ve školách a kancelářích. Kdo ví, jak fungují, snadněji pozná, kdy se na jejich odpověď dá spolehnout a kdy ne.",
+        "poznamkaKOmezenim": "Práce popisuje hlavně návrh systému; výsledky měření autoři zmiňují jen obecně, bez čísel a bez popisu toho, na jakých dokumentech testovali."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "pass",
+        "hard": [],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 112,
+              "end": 122
+            },
+            "matchedText": "Universal ",
+            "messageCs": "Text opisuje původní název článku („Universal “). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[112,122]: Universal "
+          },
+          {
+            "block": "souhrn",
+            "rule": "hype",
+            "ruleId": "hype:obrovsk",
+            "span": {
+              "start": 359,
+              "end": 368
+            },
+            "matchedText": "obrovském",
+            "messageCs": "Slovo „obrovském“ zbytečně přehání (pravidlo §2). Zvažte střízlivější formulaci, nebo doplňte konkrétní číslo či příklad.",
+            "detail": "hype:obrovsk @ souhrn[359,368]: obrovském"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [
+    {
+      "source": "arxiv",
+      "message": "Server, kde vědci zveřejňují práce ještě před recenzí, dnes neodpovídal. Dnešní výběr proto obsahuje jen práce z recenzovaných časopisů.",
+      "detail": "This operation was aborted while fetching https://export.arxiv.org/api/query?search_query=%28cat%3Acs.AI+OR+cat%3Acs.LG%29+AND+submittedDate%3A%5B202609010000+TO+202609150930%5D&start=0&max_results=50&sortBy=submittedDate&sortOrder=descending"
+    }
+  ],
+  "generatedAt": "2026-09-15T09:41:59.256Z",
+  "generatedOn": "2026-09-15",
+  "schemaVersion": 1
+}

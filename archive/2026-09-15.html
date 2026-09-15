@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Umělá inteligence a počítače – 15. září 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Umělá inteligence a počítače</h1>
+<p class="dateline"><time datetime="2026-09-15">15. září 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 5</p>
+<div class="summary"><p><span class="lead">Kamera v autě vidí v dešti, mlze nebo při sněžení mnohem hůř než v poledním slunci — a co jí zbývá, to jí ještě často zakryje jiné auto.</span> Autoři proto sestavili detekční síť MHF-Net, která zpracovává dva různé druhy snímků téže scény ve dvou paralelních větvích a pak je spojuje do jednoho obrazu, přičemž zvlášť si všímá ostrých hran a obrysů, které bývají pro rozpoznání objektu nejdůležitější. Na veřejné sadě dopravních snímků M3FD síť zvládla 61 snímků za sekundu, tedy scénu vyhodnotí jednašedesátkrát během jediné sekundy, což je rychlejší než přehrávání běžného filmu, a dosáhla přesnosti 87,4 % — přibližně sedm z osmi objektů, které označí, tam skutečně je. Proti výchozímu modelu, ze kterého autoři vyšli, přitom ubylo 95 % parametrů, tedy vnitřních nastavitelných hodnot, které se síť během učení naučí — zbyla jich asi dvacetina.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Základní myšlenka je jednoduchá: místo jednoho pohledu na scénu má síť pohledy dva a učí se je propojit. Každý vstup jde vlastní větví a takzvaný spojovací blok (ResFuse) pak z obou vytvoří společnou reprezentaci, aby se informace z jednoho zdroje nepřebila informací z druhého. K tomu autoři přidali dva mechanismy pozornosti, které rozhodují, kterým místům v obraze a kterým vlastnostem se vyplatí věnovat víc výpočtů; jeden z nich se soustředí právě na vysoké frekvence, tedy na ostré přechody, hrany a obrysy. Zmenšování obrazu během zpracování řeší modul SCDown, který informaci z plochy snímku nezahodí, ale přesune ji do dalších datových vrstev. Výsledky: v souhrnné známce úspěšnosti detekce (mAP50) dosáhla síť 84,3 %, přesnost označených objektů byla až 87,4 % a rychlost 61 snímků za sekundu. Zajímavější než samotná čísla je poměr: výpočetní náročnost klesla o 88 %, počítač tedy na jeden snímek odvede přibližně osmkrát méně práce než výchozí model, a přesnost přitom neutrpěla. Pro autonomní řízení to má praktický důvod — model musí běžet na malém počítači ve vozidle, ne v serverové hale, a musí odpovědět dřív, než auto ujede několik metrů.</p>
+<h3>Proč je to důležité</h3>
+<p>Bezpečnost asistenčních systémů v autě se láme právě v mlze, dešti a šeru, kdy obyčejná kamera selhává. A protože nová síť potřebuje mnohem méně výpočtů, může podobné rozpoznávání běžet i na levném hardwaru přímo ve vozidle.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Bailin Chen, Bo Qian</dd>
+<dt>Časopis</dt>
+<dd>Sensors</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-14">14. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.3390/s26185816" rel="noreferrer">10.3390/s26185816</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7212748336" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.3390/s26185816" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o výsledky na jedné veřejné testovací sadě snímků, ne o provoz ve skutečných ulicích — jak si síť poradí v reálném autě a v situacích, které v datech nebyly, zůstává otevřené.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 5</p>
+<div class="summary"><p><span class="lead">Umět s umělou inteligencí pracovat pomáhá při samostudiu víc než ji mít rád.</span> Vědci se zeptali 509 studentů dálkového učitelského studia ze dvou ghanských univerzit — je to vzorek asi jako jedna menší střední škola. Studenti hodnotili své dovednosti, svůj názor na AI i to, jak jim mění zvyky při učení. Dovednosti jako psaní dobrých zadání, odhalování chyb v odpovědích a povědomí o etice se ve výsledcích učení projevily, ale jen mírně. Samotný kladný postoj, tedy „AI je užitečná a snadná&quot;, se neprojevil vůbec.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Výzkumníci rozdali dotazník studentům dálkového studia na dvou největších ghanských univerzitách, které připravují učitele. Šlo o jednorázové šetření (cross-sectional survey): vše se měřilo v jediném okamžiku, nikdo studenty nesledoval v čase. Data pak zpracovali metodou, která hledá vzájemné vazby mezi více faktory naráz. Odborně se jí říká Partial Least Squares Structural Equation Modeling. Zajímaly je tři věci: jak studenti AI vnímají, jak dobře ji ovládají a jak jim mění chování při učení. Nejzřetelnější byl vliv dovedností. Kdo umí formulovat zadání pro chatbota, pozná v odpovědi chybu a ví, co je při používání AI etické, ten si v samostudiu vedl lépe. Souvislost ale byla jen mírná. Není to tedy hlavní faktor, spíš jeden z mnoha. Naopak samotný názor na AI neznamenal nic. Studenti, kteří ji považovali za užitečnou a snadnou, neměli lepší výsledky učení než ostatní. Nadšení bez dovednosti nestačí. Celý model vysvětlil 57,4 % rozdílů mezi studenty, tedy něco přes polovinu. O zbytku rozhodují věci, které dotazník nezachytil. Autoři z toho vyvozují, že by vysoké školy měly práci s AI učit přímo, jako součást výuky. Nechat ji na samouku podle nich nestačí.</p>
+<h3>Proč je to důležité</h3>
+<p>Pro školy i rodiny z toho plyne jednoduchá věc: dát dětem přístup k AI nestačí. Rozdíl dělá až to, když se naučí dobře ptát, kontrolovat odpovědi a znát hranice toho, co je v pořádku.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Mac-Anthony Cobblah, Gloria Tachie-Donkor, Diana Atuase, Theophilus  Kwasi Odame Danso, Jacob Owusu Sarfo, Beatrice Asante Somuah</dd>
+<dt>Časopis</dt>
+<dd>Social Sciences &amp; Humanities Open</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-14">14. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1016/j.ssaho.2026.103597" rel="noreferrer">10.1016/j.ssaho.2026.103597</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7212724491" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1016/j.ssaho.2026.103597" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Vzorek pochází z jedné země a dvou škol, studenti hodnotili sami sebe a měření proběhlo v jediném okamžiku, takže výsledek ukazuje souvislosti, ne příčiny.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 5</p>
+<div class="summary"><p><span class="lead">Technicky vyspělé systémy často selhávají na té nejprostší věci: lidé jim nerozumějí a nedůvěřují jim.</span> Autoři práce proto spojili federované učení (federated learning, tedy trénování umělé inteligence přímo na jednotlivých zařízeních, bez odesílání samotných dat) s blockchainem (řetězec záznamů, do kterého se nedá zpětně zasahovat). A přidali k tomu něco, co se v takových projektech obvykle odbývá — návrh podle potřeb lidí, kteří to mají používat. Na třech zdravotnických datových sadách jim vyšla o 4,1 % vyšší přesnost modelu, o 12,5 % kratší odezva a o necelou čtvrtinu menší objem přenášených dat než u srovnávaných systémů bez tohoto návrhu. Uživatelé ohodnotili použitelnost 89 body na běžné stobodové škále, tedy blízko horní hranici, a spokojenost i důvěra podle autorů stouply zhruba o pětinu.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Postup měl několik kroků. Nejprve si tým zjistil, co uživatelé od systému potřebují, a podle toho navrhl srozumitelné obrazovky. Teprve pak přišla technika. Model umělé inteligence se učil rozdělený mezi jednotlivá zařízení, takže citlivá data nemusela nikam putovat. Blockchain zároveň zaznamenával každou úpravu modelu tak, aby ji nešlo dodatečně přepsat. Zpětnou vazbu od uživatelů autoři sbírali dvěma zavedenými dotazníky a podle ní rozhraní i postup učení opakovaně upravovali.</p>
+<p>Otestovali to na třech veřejných zdravotnických sadách dat: o srdečních onemocněních, o nádorech prsu a o snímcích plic z počítačové tomografie při covidu. Proti systémům, které federované učení a blockchain používají bez ohledu na uživatele, vyšly tyto rozdíly: přesnost o 4,1 % vyšší, tedy zhruba o čtyři správné odpovědi navíc ze sta; odezva o 12,5 % kratší, tedy asi o osminu; objem komunikace mezi zařízeními menší o 24,6 %, tedy zhruba o čtvrtinu. Zlepšil se i ukazatel spravedlnosti, který sleduje, zda systém nezvýhodňuje jednu skupinu dat na úkor jiné — o 9,7 %, tedy zhruba o desetinu.</p>
+<p>Hlavní sdělení je jednoduché: ohled na uživatele nešel proti technickému výkonu. Naopak, v tomto měření mu pomohl. Když lidé rozumějí tomu, co systém dělá, ochotněji ho používají — a systém pak má s čím pracovat.</p>
+<h3>Proč je to důležité</h3>
+<p>Bezpečné nakládání s citlivými daty, třeba zdravotními, nezáleží jen na technice, ale i na tom, jestli výsledku lidé rozumějí a chtějí ho používat. Tahle práce ukazuje, že obojí se nemusí vylučovat.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Alireza Koshgizadeh, Nahideh Derakhshanfard, Asghar Mohammadian, Abbas Mirzaei, Ali Asghar Pourhaji Kazem, Neda Dadashkhani a další</dd>
+<dt>Časopis</dt>
+<dd>Scientific Reports</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-14">14. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1038/s41598-026-71153-6" rel="noreferrer">10.1038/s41598-026-71153-6</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7212692156" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1038/s41598-026-71153-6" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o testy na třech veřejných datových sadách v kontrolovaných podmínkách, nikoli o skutečný provoz v nemocnici, a u hodnocení spokojenosti není ve zdroji uvedeno, kolik lidí se ho zúčastnilo.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-4">
+<p class="paper-counter">Studie 4 z 5</p>
+<div class="summary"><p><span class="lead">Vědci prohledávali databázi už schválených léků DrugBank a hledali látky, které by mohly zablokovat CASP4 — enzym, tedy bílkovinu, která v těle spouští chemické reakce.</span> CASP4 se podílí na zánětu v mozku u Alzheimerovy nemoci. Program natrénovaný na chemických strukturách odlišil nadějné látky od nenadějných s přesností asi 95 % a mezi nejvýše hodnocenými se sešlo asi 3,5krát víc účinných látek než při náhodném výběru. Podrobné simulace pak vybraly dva favority: DB05316 a DB00519 se na CASP4 vázaly pevněji než dnes běžně užívaný donepezil. Zatím ovšem jde jen o výpočty v počítači, do zkumavky se látky nedostaly.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Postup měl několik kroků. Nejdřív počítač převedl chemické struktury léků z DrugBanku do číselné podoby. Použil k tomu model ChemBERTa, který se učí ze zápisů molekul podobně, jako se jazykové modely učí z textu. K tomu přidal základní vlastnosti molekul, například velikost nebo rozpustnost. Na těchto datech vědci natrénovali klasifikátor typu random forest, tedy „les rozhodovacích stromů“. Rozlišoval účinné a neúčinné látky s přesností asi 95 %. To znamená, že chybil přibližně u jedné látky z dvaceti. Druhý ukazatel, ROC–AUC, ale vyšel jen 0,73. Na této stupnici znamená 0,5 náhodu a 1,0 dokonalost. Model tedy není tak dobrý, jak by se z přesnosti zdálo. Bývá to tím, že neúčinných látek je v datech mnohonásobně víc. Další model odhadoval, jak silně budou látky působit. Po dalším sítu — posouzení chování léku v těle a výpočtu ukotvení molekuly v cílové bílkovině — zůstalo pět kandidátů. Nejnadějnější byly DB05316 a DB00519. Delší simulace pohybu molekul a výpočet vazebné energie u nich daly −21,4 a −20,9 kilokalorie na mol. Čím nižší číslo, tím pevnější vazba. Oba překonaly donepezil, lék podávaný při Alzheimerově nemoci, který autoři použili pro srovnání. Celý postup je návod, jak z tisíců hotových léků vybrat hrstku, kterou má smysl zkoušet v laboratoři.</p>
+<h3>Proč je to důležité</h3>
+<p>Hledat nové využití pro léky, které už existují, je rychlejší a levnější než vyvíjet lék od nuly — a u Alzheimerovy nemoci zatím účinná léčba chybí. Práce zároveň ukazuje, k čemu se dnes umělá inteligence ve výzkumu léků opravdu používá.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Mubashir Hassan, Sidra Ghayour Bhatti, Muhammad Yasir, Wanjoo Chun, Andrzej Kloczkowski</dd>
+<dt>Časopis</dt>
+<dd>Journal of Chemical Information and Modeling</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-15">15. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1021/acs.jcim.6c02284" rel="noreferrer">10.1021/acs.jcim.6c02284</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7212673462" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1021/acs.jcim.6c02284" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Všechny výsledky vznikly jen na počítači a nikdo je dosud neověřil v laboratoři ani na pacientech, takže jde o předběžný návrh, které látky zkoušet dál.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-5">
+<p class="paper-counter">Studie 5 z 5</p>
+<div class="summary"><p><span class="lead">Najít jednu informaci ve stovkách naskenovaných papírů umí zabrat celé odpoledne.</span> Autoři proto postavili systém Universal Doc AI, který dokumenty přečte za uživatele. Nejdřív z obrázků a skenů vytáhne text (OCR, tedy optické rozpoznávání znaků), rozdělí ho na menší úseky a uloží je podle významu. Na otázky pak odpovídá jazykový model — program vycvičený na obrovském množství textů — a smí čerpat jen z nahraných dokumentů. Podle testů autorů takové hledání trefí správnou pasáž častěji než klasické vyhledávání podle klíčových slov, konkrétní čísla ale v práci chybí.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Postup má několik kroků. Uživatel nahraje PDF, fotku smlouvy nebo ručně psanou poznámku. Program z obrázku nejprve vytáhne text pomocí OCR. Ten pak rozseká na menší úseky — odstavce či jejich části, které drží jednu myšlenku. Každý úsek dostane číselný záznam, tzv. vektor, který zachycuje jeho význam. Tyto záznamy se ukládají do zvláštní databáze. Když se uživatel na něco zeptá běžnou větou, systém spočítá vektor i pro otázku. Potom vyhledá úseky, jejichž význam je otázce nejblíž. Tenhle postup se označuje jako RAG (retrieval-augmented generation), tedy generování odpovědi opřené o vyhledaná data. Nalezené úseky se přidají k otázce a předají jazykovému modelu. Model z nich sestaví odpověď. Protože má k dispozici jen texty z nahraných souborů, méně často si domýšlí údaje, které nikde nestojí — takovým výmyslům se říká halucinace. Autoři svůj systém srovnali s obvyklým hledáním podle klíčových slov. Uvádějí, že jejich řešení našlo vhodnější pasáže a odpovědi lépe odpovídaly dotazu. Přesná čísla ani popis testovací sady však v dostupném textu nejsou. Systém podle autorů zvládne více jazyků, různé formáty i rozhovor, kdy se uživatel postupně doptává. Jako možné uživatele jmenují školy, firmy, zdravotnická zařízení, advokátní kanceláře a úřady.</p>
+<h3>Proč je to důležité</h3>
+<p>Podobné nástroje se začínají objevovat i ve školách a kancelářích. Kdo ví, jak fungují, snadněji pozná, kdy se na jejich odpověď dá spolehnout a kdy ne.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Dr. K R Shylaja, Praveen H</dd>
+<dt>Časopis</dt>
+<dd>Journal of Zhejiang University(Science Edition)</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-15">15. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.5281/zenodo.22644649" rel="noreferrer">10.5281/zenodo.22644649</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7211907692" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.5281/zenodo.22644649" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Práce popisuje hlavně návrh systému; výsledky měření autoři zmiňují jen obecně, bez čísel a bez popisu toho, na jakých dokumentech testovali.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<h2>Poznámka k dnešnímu vydání</h2>
+<ul class="degradations">
+<li>Server, kde vědci zveřejňují práce ještě před recenzí, dnes neodpovídal. Dnešní výběr proto obsahuje jen práce z recenzovaných časopisů.</li>
+</ul>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 15. září 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>

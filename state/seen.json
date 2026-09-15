@@ -1016,6 +1016,46 @@
       "titleKey": "olderadultsshareanagreementonexperiencesthatelicitloveastudyofconsensusandindividualdifferencesinjudgments",
       "publishedOn": "2026-09-10",
       "category": "psychology-behaviour"
+    },
+    {
+      "openalexId": "W7212748336",
+      "doi": "10.3390/s26185816",
+      "arxivId": null,
+      "titleKey": "mhfnetmultimodalresidualfusionobjectdetectionnetworkbasedonhighfrequencygatedconvolution",
+      "publishedOn": "2026-09-15",
+      "category": "ai-computing"
+    },
+    {
+      "openalexId": "W7212724491",
+      "doi": "10.1016/j.ssaho.2026.103597",
+      "arxivId": null,
+      "titleKey": "artificialintelligenceinhighereducationtheinterplayofcompetenceperceptionandartificialintelligenceinfluenceonselflearningoutcomes",
+      "publishedOn": "2026-09-15",
+      "category": "ai-computing"
+    },
+    {
+      "openalexId": "W7212692156",
+      "doi": "10.1038/s41598-026-71153-6",
+      "arxivId": null,
+      "titleKey": "humancentereddesignbasedonfederatedlearningtooptimizeuserexperienceonblockchainplatforms",
+      "publishedOn": "2026-09-15",
+      "category": "ai-computing"
+    },
+    {
+      "openalexId": "W7212673462",
+      "doi": "10.1021/acs.jcim.6c02284",
+      "arxivId": null,
+      "titleKey": "aiacceleratedchemicalscreeningintegrateschembertatoidentifyrepositionablecasp4inhibitorsviamdsimulationsandmmpbsaanalysis",
+      "publishedOn": "2026-09-15",
+      "category": "ai-computing"
+    },
+    {
+      "openalexId": "W7211907692",
+      "doi": "10.5281/zenodo.22644649",
+      "arxivId": null,
+      "titleKey": "universalintelligentdocumentmanagementsystemusingocrretrievalaugmentedgenerationandlargelanguagemodels",
+      "publishedOn": "2026-09-15",
+      "category": "ai-computing"
     }
   ]
 }
