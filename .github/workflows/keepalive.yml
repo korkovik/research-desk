@@ -1,8 +1,9 @@
 name: keepalive
 
-# Keeps czech-product-verifier's Supabase project awake. Supabase pauses a free
-# project after about a week without database activity, and a paused project
-# can only be resumed from the dashboard: nothing here can wake one.
+# Keeps two Supabase projects awake: czech-product-verifier's and buddymind's.
+# Supabase pauses a free project after about a week without database activity,
+# and a paused project can only be resumed from the dashboard: nothing here can
+# wake one. Each project is its own job, so one failing never affects the other.
 #
 # This used to be a step in the digest job. The digest now runs once a week, on
 # Tuesday, and a week is the whole idle window, so one delayed or dropped firing
@@ -13,6 +14,8 @@ name: keepalive
 # switches off a public repo's schedules after 60 days without activity, and a
 # repo holding nothing but this cron would have none. The weekly digest commits
 # a ledger line on every run, which keeps this repo, and so this schedule, alive.
+# buddymind has no schedule or regular commits of its own, so a cron there would
+# be switched off by that rule; that is why its keepalive lives here too.
 on:
   schedule:
     # Deliberately not on the hour: GitHub queues scheduled runs by load and the
@@ -79,3 +82,55 @@ jobs:
             }
             // Failed while an issue is already open: say nothing. One notification
             // per outage, not one per run.
+
+  buddymind:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Keep buddymind's database awake
+        id: keepalive
+        continue-on-error: true
+        env:
+          BUDDYMIND_SUPABASE_URL: ${{ secrets.BUDDYMIND_SUPABASE_URL }}
+          BUDDYMIND_SUPABASE_ANON_KEY: ${{ secrets.BUDDYMIND_SUPABASE_ANON_KEY }}
+        run: bash scripts/buddymind-keepalive.sh
+
+      # Same one-issue-per-outage rule as the job above, with its own title.
+      - name: Report the keepalive
+        if: always() && steps.keepalive.outputs.status != ''
+        continue-on-error: true
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const status = '${{ steps.keepalive.outputs.status }}';
+            const title = 'buddymind keepalive is failing';
+            const { owner, repo } = context.repo;
+            const url = `${context.serverUrl}/${owner}/${repo}/actions/runs/${context.runId}`;
+            const open = (await github.rest.issues.listForRepo({ owner, repo, state: 'open', labels: 'keepalive' }))
+              .data.find((i) => i.title === title);
+            if (status === 'failed' && !open) {
+              await github.rest.issues.create({
+                owner, repo, title, labels: ['keepalive'],
+                body: [
+                  `The daily read that keeps buddymind's Supabase project awake failed.`,
+                  `Research Desk itself is unaffected: the keepalive is its own workflow.`,
+                  ``,
+                  `**If the project is already paused, nothing here can wake it**, and the buddymind`,
+                  `site is down until it is resumed. Supabase resumes a paused project only from the`,
+                  `dashboard: project \`ndnxtkrbaewqlmvsnduh\` → **Resume project**.`,
+                  `Once it is running, the next keepalive run (daily) reads it again and closes this issue.`,
+                  ``,
+                  `Other causes: the \`BUDDYMIND_SUPABASE_ANON_KEY\` secret was rotated in Supabase, or`,
+                  `the RLS policy letting anon read \`behavioral_health_categories\` was changed.`,
+                  ``,
+                  `Log: ${url}`,
+                ].join('\n'),
+              });
+            } else if (status === 'ok' && open) {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: open.number,
+                body: `The keepalive read succeeded again: ${url}. Closing.`,
+              });
+              await github.rest.issues.update({ owner, repo, issue_number: open.number, state: 'closed' });
+            }
