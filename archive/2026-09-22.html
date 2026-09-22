@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Zdraví a medicína – 22. září 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Zdraví a medicína</h1>
+<p class="dateline"><time datetime="2026-09-22">22. září 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 5</p>
+<div class="summary"><p>Lidé, kteří už jednou prodělali infarkt, mrtvici nebo jinou vážnou srdečně-cévní příhodu, mají podle rozsáhlého britského sledování nižší riziko, že se jim podobná příhoda vrátí, pokud žijí ve stylu blízkém tradičnímu středomořskému životu — a nejde jen o jídlo. Vědci sledovali 5 851 Britů ve věku 40 až 70 let od let 2009–2012 až do roku 2024 a hodnotili je pomocí indexu MEDLIFE, který sleduje 25 doporučení rozdělených do tří okruhů: co lidé jedí, jak jedí (třeba v klidu a ve společnosti) a jak odpočívají, hýbou se a tráví čas s druhými. Během zhruba deseti až dvanácti let přišlo 2 401 opakovaných příhod; ti, kdo se středomořskému stylu blížili nejvíc, měli oproti čtvrtině s nejmenší shodou o 25 % nižší riziko další příhody, o 31 % nižší riziko úmrtí z jakékoli příčiny a zhruba poloviční riziko úmrtí na nemoc srdce a cév. Ke každému z těchto rozdílů přispěly všechny tři okruhy, tedy nejen strava. Jde o pozorování, ne o experiment, takže výsledek ukazuje souvislost, nikoli jistý důkaz příčiny.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Data pocházejí z britské databáze UK Biobank, kde statisíce lidí vyplnily dotazníky o svém životě a pak je bylo možné dlouhodobě sledovat přes nemocniční záznamy a národní registr úmrtí. Autoři z nich vybrali jen ty, kdo už na začátku měli za sebou vážnou srdečně-cévní příhodu — infarkt, mrtvici a podobně. Každému spočítali skóre MEDLIFE, tedy počet splněných doporučení z pětadvaceti položek: od zeleniny, olivového oleje a luštěnin přes zvyk jíst v klidu a s ostatními až po pohyb, dostatek spánku a čas strávený s přáteli. Účastníky pak rozdělili na čtyři stejně velké skupiny podle dosaženého skóre.</p>
+<p>Čím výš člověk skončil, tím nižší riziko: druhá čtvrtina měla riziko opakované příhody nižší o 9 % (rozdíl tak malý, že mohl vzniknout náhodou), třetí o 17 % a nejlépe hodnocená čtvrtina o 25 % — tedy zhruba o čtvrtinu méně případů než u těch s nejnižší shodou. U úmrtí na nemoci srdce a cév byl rozdíl větší: riziko kleslo na polovinu. Výsledky zůstaly podobné i po zohlednění dalších vlivů, jako jsou věk, kouření či sociální postavení, a po kontrolních propočtech.</p>
+<p>Pro čtenáře z toho plyne hlavně jedno: středomořský styl tu nefiguruje jen jako jídelníček, ale jako soubor běžných denních zvyků, a přínos se ukázal i mimo Středomoří, u lidí, kteří už jsou po nemoci.</p>
+<h3>Proč je to důležité</h3>
+<p>Kdo už jednou prodělal infarkt nebo mrtvici, řeší, co ještě může sám ovlivnit — a tahle práce naznačuje, že vedle léků hraje roli i to, jak se člověk stravuje, hýbe, odpočívá a s kým tráví čas. Pro učitele i rodiny je to připomínka, že zdravý životní styl není jen otázka talíře.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Melchor Riera, Jesús Díaz-Gutiérrez, Rosario Ortolá, Juan Luis Romero‐Cabrera, José López‐Miranda, Pablo Pérez-Martínez a další</dd>
+<dt>Časopis</dt>
+<dd>International Journal of Behavioral Nutrition and Physical Activity</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-21">21. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1186/s12966-026-01982-1" rel="noreferrer">10.1186/s12966-026-01982-1</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7213781839" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1186/s12966-026-01982-1" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o pozorovací studii, která umí ukázat souvislost, ale ne dokázat příčinu — lidé s vyšším skóre mohli být zdravější či majetnější už předem, a informace o životním stylu navíc pocházejí z jejich vlastních dotazníků vyplněných jen na začátku sledování.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 5</p>
+<div class="summary"><p><span class="lead">Chůze venku nestojí starší lidi víc energie než mladší, i když měření na běžeckém pásu to tvrdí už desítky let.</span> Šestnáct mladších dospělých (kolem 26 let) a jedenáct starších (kolem 74 let) ušlo osm venkovních úseků různou rychlostí. Nejpomalejší tempo bylo 0,8 metru za sekundu, tedy asi 3 kilometry v hodině — loudavá chůze; nejrychlejší dvakrát tolik, tempo spěchu na vlak. Starší skupina nespotřebovala víc energie ani při jedné rychlosti, její spotřeba byla naopak pokaždé spíš nižší. Statisticky jistý byl ten rozdíl jen při nejpomalejší chůzi, takže jde o předběžný výsledek z malého vzorku.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Většina poznatků o energii chůze pochází z běžeckého pásu. Tam starším lidem vychází spotřeba energie výš než mladším. Autoři chtěli zjistit, jestli to platí i na skutečné cestě venku.</p>
+<p>Účastníci ušli osm úseků. Tři měly pevně danou rychlost: 0,8 metru za sekundu (asi 3 kilometry v hodině, tedy hodně pomalá chůze), 1,2 metru za sekundu (asi 4,3 kilometru v hodině, běžné tempo na chodníku) a 1,6 metru za sekundu (necelých 6 kilometrů v hodině, tempo, kdy člověk spěchá). Další úseky šli svou oblíbenou rychlostí a pak o 5 a 10 procent pomaleji či rychleji — tedy jen o malý kousek mimo své zvyklé tempo. Přístroje jim přitom měřily spotřebu kyslíku, z níž se dá spočítat, kolik energie tělo spálilo.</p>
+<p>Starší účastníci neměli vyšší spotřebu ani při jedné rychlosti. Ve všech měřeních vycházeli spíš pod mladšími. Dost velký na to, aby ho šlo považovat za jistý, byl rozdíl pouze při nejpomalejší chůzi. Autoři také ověřili, že jejich starší skupina nebyla neobvykle trénovaná: klidový metabolismus i dýchací ukazatele odpovídaly dřívějším srovnávacím skupinám.</p>
+<p>Nezávisle na věku platilo jedno: pomalá chůze spotřebuje víc energie než chůze v běžném či svižném tempu. Dřívější „zdražení&quot; chůze ve vyšším věku tak podle autorů může být spíš důsledkem pásu, kterému se člověk musí přizpůsobit, než samotného stárnutí.</p>
+<h3>Proč je to důležité</h3>
+<p>Chůze je nejjednodušší pohyb, podle kterého se poměřuje zdatnost i úspěšnost léčby. Jestli starším lidem chůze venku nebere víc síly, než se čekalo, mění to představu o tom, co k pohybu ve vyšším věku patří a co ne.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Eline van der Kruk, Koen Jongbloed, Monica Orlandi, M. E Miller, Anne Silverman</dd>
+<dt>Časopis</dt>
+<dd>Journal of Experimental Biology</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-21">21. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1242/jeb.252654" rel="noreferrer">10.1242/jeb.252654</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7171496501" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://www.biorxiv.org/content/biorxiv/early/2026/07/28/2026.07.27.740899.full.pdf" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1242/jeb.252654" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Šlo o malý vzorek zdravých dobrovolníků — jedenáct starších a šestnáct mladších — a výsledek ukazuje zatím jen trend; přímé srovnání pásu a venkovní chůze u týchž lidí teprve chybí.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 5</p>
+<div class="summary"><p><span class="lead">U žen, které v těhotenství bojují s vysokým krevním tlakem, se depresivní ladění na kvalitě života podepisuje hlavně nepřímo — přes zvýšený stres a oslabenou psychickou odolnost.</span> Autoři vyšli ze záznamů 301 těhotných, tedy zhruba tří stovek žen z jediné nemocnice, které vyplnily dotazníky na depresivní příznaky, vnímaný stres, odolnost a celkovou kvalitu života. U 26,25 % z nich, tedy asi u každé čtvrté, byly příznaky depresivity nad hranicí, kdy se doporučuje odborné posouzení. Statistický model ukázal, že přes polovinu celého vlivu depresivity na kvalitu života (53,7 %, tedy víc než polovinu) zprostředkuje právě vyšší stres a nižší odolnost; u podskupiny žen s mírnou preeklampsií, kterých bylo 123 — necelá polovina vzorku — se tento nepřímý podíl zvedl na 70,0 %, tedy na sedm desetin. Pro praxi to znamená, že u těchto žen nestačí sledovat jen tlak a náladu: pomoc se stresem a posilování odolnosti může mít na jejich každodenní život srovnatelný vliv.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Šlo o zpětný pohled do dat z jednoho pracoviště: 301 těhotných žen — tedy asi tři stovky — s hypertenzními poruchami v těhotenství (hypertensive disorders of pregnancy), což je souhrnný název pro stavy s vysokým krevním tlakem v těhotenství včetně preeklampsie. Každá vyplnila čtyři standardní dotazníky: na depresivní příznaky, na vnímaný stres, na psychickou odolnost (tedy schopnost zvládat zátěž) a na kvalitu života. Průměrné skóre depresivity bylo 7,17 bodu, přičemž nad hranicí 9,5 bodu, od které se doporučuje odborné posouzení, se ocitla čtvrtina žen. Vztah mezi depresivitou a kvalitou života byl jasně negativní: celkový efekt −0,788 znamená, že s každým bodem navíc v dotazníku depresivity klesalo hodnocení kvality života, znaménko minus je tedy pokles, ne vzestup. Zajímavější je ale to, kudy vliv teče. Když autoři rozdělili cestu na části, ukázalo se, že nepřímé cesty tvoří 53,7 % celku — tedy víc než polovinu: samotný stres 30,0 % (necelá třetina), snížená odolnost 17,1 % (asi šestina) a řetězec, kde stres nejdřív podlomí odolnost, dalších 6,7 % (jedna patnáctina). Zbytek, tedy necelá polovina, působí přímo. U žen s mírnou preeklampsií byl podíl nepřímých cest ještě větší, 70,0 % — sedm desetin. Autoři z toho vyvozují, že péče by měla řešit depresivní příznaky, zvládání stresu i posilování odolnosti společně, ne odděleně.</p>
+<h3>Proč je to důležité</h3>
+<p>Vysoký tlak v těhotenství se běžně měří a léčí, psychická zátěž ale často zůstává mimo pozornost — a přitom právě ona podle těchto dat rozhoduje o tom, jak žena své těhotenství prožívá. Pro rodiny i zdravotníky je to argument, že rozhovor o stresu a podpoře patří do prenatální péče stejně jako tonometr.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Yan -Gui, Daiya Liao, Haiqing Huang, Liyi Zhang</dd>
+<dt>Časopis</dt>
+<dd>African Journal of Reproductive Health</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-21">21. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.29063/ajrh2026/v30i17.11" rel="noreferrer">10.29063/ajrh2026/v30i17.11</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7213612393" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.29063/ajrh2026/v30i17.11" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o zpětné vyhodnocení dotazníků od tří stovek žen v jediné nemocnici, takže výsledek ukazuje souvislosti, ne prokázanou příčinu, a na jiné populaci může vypadat jinak.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-4">
+<p class="paper-counter">Studie 4 z 5</p>
+<div class="summary"><p><span class="lead">V devíti vesnicích venkovské obce Ratlou v Jihoafrické republice se vědci ptali dospívajících dívek, zda při prvním pohlavním styku použily antikoncepci.</span> Ze 290 dotázaných — tedy necelých tří stovek — odpovědělo ano 41 %, přibližně dvě z pěti; zbylé tři z pěti tuto ochranu neměly. Nižší šance na použití antikoncepce se pojila se středním vzděláním, s domácností, jejíž hlava pracovala, s bydlištěm v konkrétní vesnici Kraaipan a také s věkem prvního styku: u dívek, které jej měly mezi 14 a 16 lety, tedy v polovině dospívání, i u těch mezi 17 a 19 lety, tedy na jeho konci, byla šance nižší než u srovnávané skupiny. Autoři na základě toho doporučují posílit výuku o sexuálním zdraví ve školách, podporovat rozhovory mezi rodiči a dospívajícími a zpřístupnit poradny vstřícné k mladým lidem ve všech vesnicích stejně.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Šlo o jednorázové šetření, které zachycuje stav v jediném okamžiku a nesleduje dívky v čase (anglicky cross-sectional). Výzkumníci získali odpovědi od 290 dospívajících dívek, tedy od necelých tří stovek, z devíti vybraných vesnic obce Ratlou. Ptali se, zda při prvním pohlavním styku použily antikoncepci, a odpovědi porovnávali s údaji o vzdělání, o zaměstnání hlavy domácnosti, o bydlišti a o věku, kdy k prvnímu styku došlo. Nejprve srovnávali vždy dva údaje proti sobě, potom použili statistický model, který umí vzít několik vlivů zároveň.</p>
+<p>Antikoncepci uvedlo 41 % dívek, tedy dvě z pěti. Model pracuje s tzv. poměrem šancí: hodnota menší než jednička znamená nižší šanci, že dívka antikoncepci použila. Střední vzdělání mělo hodnotu 0,40 — šance nižší asi o 60 %, tedy necelá polovina. Pracující hlava domácnosti 0,47, opět přibližně poloviční šance. Vesnice Kraaipan 0,18, tedy šance nižší asi o 80 %. Zkušenost s používáním dvou metod antikoncepce současně 0,21. A věk prvního styku: 14 až 16 let (0,16), tedy v polovině dospívání, a 17 až 19 let (0,39), tedy na jeho konci — obě skupiny měly nižší šanci než skupina, s níž je model srovnával.</p>
+<p>Z toho autoři vyvozují, že samotné navštěvování školy nestačí; rozhoduje, co se tam dívky skutečně dozví, jak o tom mluví doma a jak blízko mají ke službám, kde se s nimi někdo v klidu baví.</p>
+<h3>Proč je to důležité</h3>
+<p>Bez ochrany při prvním styku hrozí dívkám neplánované těhotenství, nebezpečně provedený potrat i pohlavně přenosné infekce — a studie ukazuje, že rozdíly jsou i mezi vesnicemi ležícími blízko sebe. Pro rodiče i učitele je to připomínka, že informace a dostupná poradna musí přijít dřív než první zkušenost.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Boitshwarelo Km Ngake, Mluleki Tsawe, Ishmael Kalule‐Sabiti, Frank Ofosu-Asante, Kolletsane Motshehare, Stephina Kgomotso Mbele a další</dd>
+<dt>Časopis</dt>
+<dd>African Journal of Reproductive Health</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-21">21. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.29063/ajrh2026/v30i17.2" rel="noreferrer">10.29063/ajrh2026/v30i17.2</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7213503517" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.29063/ajrh2026/v30i17.2" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jednorázové šetření na necelých třech stovkách dívek z jedné venkovské obce, založené na jejich vlastních výpovědích o minulosti, takže ukazuje pouze souvislosti — ne to, co je příčinou čeho — a výsledky nelze bez dalšího přenášet na jiné oblasti.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-5">
+<p class="paper-counter">Studie 5 z 5</p>
+<div class="summary"><p><span class="lead">Děti, které chrápou nebo jim ve spánku vynechává dech, na tom bývají horší, když k tomu mají ještě alergickou rýmu (allergic rhinitis) — tedy ucpaný a tekoucí nos z alergie.</span> Tchajwanští lékaři prošli záznamy nočních spánkových měření u 643 dětí do dvanácti let, které v letech 2009 až 2020 prošly vyšetřením v nemocnici. Děti s obstrukční spánkovou apnoí (obstructive sleep apnea — opakované zastavení dechu ve spánku kvůli uzavření dýchacích cest), které měly navíc alergickou rýmu, měly víc dechových přestávek a častěji se kvůli dýchání v noci krátce probouzely. Samotná apnoe přitom zvyšovala počet takových probuzení asi dvanáctinásobně a hlásilo se k ní i noční pomočování. Autoři z toho vyvozují, že u dětí s alergickou rýmou se vyplatí ptát se i na spánek — a naopak u dětí se špatným spánkem myslet na neléčenou alergii.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Vědci nic nového neměřili, jen zpětně prošli už existující výsledky polysomnografie — celonočního vyšetření, při kterém se dítěti sledují dech, mozkové vlny, pohyby a hladina kyslíku. Šlo o 643 dětí mladších dvanácti let z jedné velké tchajwanské nemocnice, rozdělených do čtyř skupin podle toho, zda šlo jen o chrápání, nebo o skutečnou spánkovou apnoi, a zda měly navíc alergickou rýmu. Ukázalo se, že ve skupině s apnoí mají děti s alergií výrazně víc dechových přestávek a vyšší počet krátkých probuzení vyvolaných dýcháním. Když autoři spočítali vliv jednotlivých faktorů zvlášť, největší roli hrála samotná apnoe: zvyšovala počet dechových probuzení přibližně dvanáctkrát. Chlapci jich měli asi o 60 % víc než děvčata, u dětí s vyšší tělesnou hmotností jich bylo mírně víc, u starších dětí naopak trochu méně, a děti, které se v noci pomočovaly, jich měly zhruba dvojnásobek. Zajímavý je jeden obrácený nález: děti s alergickou rýmou měly méně probuzení vyvolaných opakovanými pohyby nohou ve spánku — přibližně o 60 % nižší počet. Autoři to čtou tak, že alergie může do řízení nočních probuzení zasahovat složitěji, než se čekalo, ne že by dětem prospívala. Praktický závěr je střízlivý: léčba ucpaného nosu patří k péči o dětský spánek.</p>
+<h3>Proč je to důležité</h3>
+<p>Špatně spící dítě bývá přes den podrážděné, nesoustředěné a hůř zvládá školu — a jednou z příčin může být docela obyčejná, přehlížená alergická rýma, se kterou jde něco dělat.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Tzu-Yuan Kang, Chang-Ching Wei, Liang-Wen Hang, Yi-Hua Li, Hung‐Rong Yen, Jiu-Yao Wang a další</dd>
+<dt>Časopis</dt>
+<dd>BMC Pediatrics</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-21">21. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1186/s12887-026-07684-8" rel="noreferrer">10.1186/s12887-026-07684-8</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7213753205" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1186/s12887-026-07684-8" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o zpětný pohled do zdravotních záznamů z jedné tchajwanské nemocnice, kam přicházejí už vybrané děti s potížemi, takže studie ukazuje jen souvislost, nikoli důkaz, že alergie spánek zhoršuje; nález u pohybů nohou stojí na malých počtech a je předběžný.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 22. září 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>

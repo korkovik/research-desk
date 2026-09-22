@@ -1056,6 +1056,46 @@
       "titleKey": "universalintelligentdocumentmanagementsystemusingocrretrievalaugmentedgenerationandlargelanguagemodels",
       "publishedOn": "2026-09-15",
       "category": "ai-computing"
+    },
+    {
+      "openalexId": "W7213781839",
+      "doi": "10.1186/s12966-026-01982-1",
+      "arxivId": null,
+      "titleKey": "mediterraneanlifestyleandriskofrecurrentcardiovasculareventsaprospectivestudyfromtheukbiobank",
+      "publishedOn": "2026-09-22",
+      "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7171496501",
+      "doi": "10.1242/jeb.252654",
+      "arxivId": null,
+      "titleKey": "olderadultsdonothaveahighermetaboliccostthanyoungeradultsinoutdoorovergroundwalking",
+      "publishedOn": "2026-09-22",
+      "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7213612393",
+      "doi": "10.29063/ajrh2026/v30i17.11",
+      "arxivId": null,
+      "titleKey": "associationbetweenantenataldepressionandqualityoflifeinpregnantwomenwithhypertensivedisordersofpregnancymediatingeffectsofpregnancystressandpsychologicalresilience",
+      "publishedOn": "2026-09-22",
+      "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7213503517",
+      "doi": "10.29063/ajrh2026/v30i17.2",
+      "arxivId": null,
+      "titleKey": "predictorsofcontraceptiveuseatfirstsexualintercourseamongadolescentgirlsinratloulocalmunicipalitysouthafrica",
+      "publishedOn": "2026-09-22",
+      "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7213753205",
+      "doi": "10.1186/s12887-026-07684-8",
+      "arxivId": null,
+      "titleKey": "associationofallergicrhinitiswithpolysomnographicarousalindicesinchildrenwithsleepdisorderedbreathing",
+      "publishedOn": "2026-09-22",
+      "category": "health-medicine"
     }
   ]
 }

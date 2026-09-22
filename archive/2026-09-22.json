@@ -1,0 +1,896 @@
+{
+  "date": "2026-09-22",
+  "categoryKey": "health-medicine",
+  "categoryLabel": "Zdraví a medicína",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7213781839",
+        "title": "Mediterranean lifestyle and risk of recurrent cardiovascular events: a prospective study from the UK biobank",
+        "abstract": "Abstract Background The Mediterranean Lifestyle Index (MEDLIFE) evaluates adherence to traditional Mediterranean living, encompassing diet, physical activity, rest and conviviality. Although it has been linked to reduced risk of cardiovascular disease (CVD), diabetes, and other chronic diseases, evidence supporting its role in secondary CVD prevention outside the Mediterranean region remains limited. Objective To evaluate the association between the MEDLIFE score and risk of major cardiovascular events (MACE) and death from CVD and all causes in British adults with previous MACE. Methods This analysis included 5,851 individuals aged 40–70 years from the UK Biobank, with history of MACE at baseline (2009–2012), who were followed-up until 2024. The MEDLIFE score was computed based on adherence to 25 item recommendations that included three main blocks: (1) “Mediterranean food consumption”, (2) “Mediterranean dietary habits”, (3) “Physical activity, rest, social habits, and conviviality”. Incident MACE was ascertained through hospital admissions data, while mortality data was obtained from the national death index. Cox proportional-hazards regression models were used to estimate hazard ratios (HRs) and 95% confidence intervals (CIs), adjusting for key confounders. Results During a median follow-up of 10.2–12.1 years, 2,401 recurrent MACE were identified. Compared to participants in the lowest quartile of adherence to MEDLIFE, the HR (95% CI) for MACE was 0.91 (0.82, 1.01) for the second quartile, 0.83 (0.75, 0.93) for the third quartile, and 0.75 (0.65, 0.86) for the fourth quartile ( p -trend < 0.001). This association (Q4 vs. Q1: HR, 95% CI) was even more pronounced for mortality from CVD (0.50, 0.35–0.71) and all-causes (0.69, 0.57–0.83). Each MEDLIFE block contributed significantly to the observed associations. Sensitivity analyses confirmed the robustness of these results. Conclusion In this cohort of British adults with previous MACE, higher adherence to a modified MEDLIFE was associated with lower risk of recurrent MACE and CVD and all-cause mortality. These findings support the potential value of interventions promoting Mediterranean-like healthy lifestyle behaviors as part of comprehensive secondary cardiovascular prevention strategies.",
+        "date": "2026-09-21",
+        "url": "https://doi.org/10.1186/s12966-026-01982-1",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1186/s12966-026-01982-1",
+        "openAlexId": "W7213781839",
+        "subfield": {
+          "id": "subfields/2739",
+          "name": "Public Health, Environmental and Occupational Health"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T10866",
+          "name": "Nutritional Studies and Diet"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Melchor Riera",
+          "Jesús Díaz-Gutiérrez",
+          "Rosario Ortolá",
+          "Juan Luis Romero‐Cabrera",
+          "José López‐Miranda",
+          "Pablo Pérez-Martínez",
+          "Stefanos N. Kales",
+          "Fernando Rodríguez-Artalejo",
+          "Mercedes Sotos‐Prieto"
+        ],
+        "venue": "International Journal of Behavioral Nutrition and Physical Activity",
+        "indexedDate": "2026-09-21",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8409,
+          "everydayRelevance": 1,
+          "freshness": 0.9286,
+          "credibility": 0.8805,
+          "total": 0.9068,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.75,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.2439
+          },
+          "everydayDomains": [
+            "food",
+            "health",
+            "body",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2739",
+          "evidence": [
+            "total 0.9068 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.84 = P 0.88 − 0.45×t 0.00 − 0.15×j 0.24",
+            "outcome verbs (v 1.00): reduced, lowers, prevention, causes, associated with, linked to",
+            "recognisable subjects (s 0.75): participants, adults, hospitals",
+            "quantified effect (q 1): percentage, 95% CI",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.24): 8/328 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 4 domain(s) — food, health, body, mind",
+            "everyday terms (9): food, diet, dietary, disease, diabetes, mortality, hospital, physical activity, habit",
+            "freshness 0.93: 1 day(s) old (effective date 2026-09-21)",
+            "credibility 0.88 = 0.40×c1 1.00 + 0.25×c2 0.94 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in International Journal of Behavioral Nutrition and Physical Activity",
+            "c2 0.94: n = 5851",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1186/s12966-026-01982-1)"
+      },
+      "summary": {
+        "souhrn": "Lidé, kteří už jednou prodělali infarkt, mrtvici nebo jinou vážnou srdečně-cévní příhodu, mají podle rozsáhlého britského sledování nižší riziko, že se jim podobná příhoda vrátí, pokud žijí ve stylu blízkém tradičnímu středomořskému životu — a nejde jen o jídlo. Vědci sledovali 5 851 Britů ve věku 40 až 70 let od let 2009–2012 až do roku 2024 a hodnotili je pomocí indexu MEDLIFE, který sleduje 25 doporučení rozdělených do tří okruhů: co lidé jedí, jak jedí (třeba v klidu a ve společnosti) a jak odpočívají, hýbou se a tráví čas s druhými. Během zhruba deseti až dvanácti let přišlo 2 401 opakovaných příhod; ti, kdo se středomořskému stylu blížili nejvíc, měli oproti čtvrtině s nejmenší shodou o 25 % nižší riziko další příhody, o 31 % nižší riziko úmrtí z jakékoli příčiny a zhruba poloviční riziko úmrtí na nemoc srdce a cév. Ke každému z těchto rozdílů přispěly všechny tři okruhy, tedy nejen strava. Jde o pozorování, ne o experiment, takže výsledek ukazuje souvislost, nikoli jistý důkaz příčiny.",
+        "podrobneVysvetleni": "Data pocházejí z britské databáze UK Biobank, kde statisíce lidí vyplnily dotazníky o svém životě a pak je bylo možné dlouhodobě sledovat přes nemocniční záznamy a národní registr úmrtí. Autoři z nich vybrali jen ty, kdo už na začátku měli za sebou vážnou srdečně-cévní příhodu — infarkt, mrtvici a podobně. Každému spočítali skóre MEDLIFE, tedy počet splněných doporučení z pětadvaceti položek: od zeleniny, olivového oleje a luštěnin přes zvyk jíst v klidu a s ostatními až po pohyb, dostatek spánku a čas strávený s přáteli. Účastníky pak rozdělili na čtyři stejně velké skupiny podle dosaženého skóre.\n\nČím výš člověk skončil, tím nižší riziko: druhá čtvrtina měla riziko opakované příhody nižší o 9 % (rozdíl tak malý, že mohl vzniknout náhodou), třetí o 17 % a nejlépe hodnocená čtvrtina o 25 % — tedy zhruba o čtvrtinu méně případů než u těch s nejnižší shodou. U úmrtí na nemoci srdce a cév byl rozdíl větší: riziko kleslo na polovinu. Výsledky zůstaly podobné i po zohlednění dalších vlivů, jako jsou věk, kouření či sociální postavení, a po kontrolních propočtech.\n\nPro čtenáře z toho plyne hlavně jedno: středomořský styl tu nefiguruje jen jako jídelníček, ale jako soubor běžných denních zvyků, a přínos se ukázal i mimo Středomoří, u lidí, kteří už jsou po nemoci.",
+        "procJeToDulezite": "Kdo už jednou prodělal infarkt nebo mrtvici, řeší, co ještě může sám ovlivnit — a tahle práce naznačuje, že vedle léků hraje roli i to, jak se člověk stravuje, hýbe, odpočívá a s kým tráví čas. Pro učitele i rodiny je to připomínka, že zdravý životní styl není jen otázka talíře.",
+        "poznamkaKOmezenim": "Jde o pozorovací studii, která umí ukázat souvislost, ale ne dokázat příčinu — lidé s vyšším skóre mohli být zdravější či majetnější už předem, a informace o životním stylu navíc pocházejí z jejich vlastních dotazníků vyplněných jen na začátku sledování."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 263,
+              "end": 543
+            },
+            "matchedText": "Vědci sledovali 5 851 Britů ve věku 40 až 70 let od let 2009–2012 až do roku 2024 a hodnotili je pomocí indexu MEDLIFE, který sleduje 25 doporučení rozdělených do tří okruhů: co lidé jedí, jak jedí (třeba v klidu a ve společnosti) a jak odpočívají, hýbou se a tráví čas s druhými.",
+            "messageCs": "Tato věta má 54 slov a je moc dlouhá: „Vědci sledovali 5 851 Britů ve věku 40 až 70 let od let 2009–2012 až do roku 20…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[263,543]: Vědci sledovali 5 851 Britů ve věku 40 až 70 let od let 2009–2012 až do roku 2024 a hodnotili je pomocí indexu MEDLIFE, který sleduje 25 doporučení rozdělených do tří okruhů: co lidé jedí, jak jedí (třeba v klidu a ve společnosti) a jak odpočívají, hýbou se a tráví čas s druhými."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 934,
+              "end": 942
+            },
+            "matchedText": "polovinu",
+            "messageCs": "Číslo „polovinu“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „polovinu — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[934,942]: polovinu"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=28.13",
+            "messageCs": "Věty jsou v průměru moc dlouhé (28,1 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=28.13"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=7",
+            "messageCs": "Počet vět delších než 30 slov: 7. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=7"
+          }
+        ],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 32,
+              "end": 44
+            },
+            "matchedText": "e UK Biobank",
+            "messageCs": "Text opisuje původní název článku („e UK Biobank“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[32,44]: e UK Biobank"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=40.3",
+            "messageCs": "Text se celkově čte těžko (index 40 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=40.3"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7171496501",
+        "title": "Older adults do not have a higher metabolic cost than younger adults in outdoor overground walking",
+        "abstract": "The metabolic cost of walking is widely used to evaluate human performance and effectiveness of clinical interventions. Decades of laboratory research, largely based on treadmill experiments, have established a canonical relationship between walking speed and metabolic cost, and suggested that ageing shifts this relationship upward, implying reduced efficiency in older adults. However, this relationship has not been well tested during overground walking across matched speeds. We compared healthy younger (n=16; 26±2yr) and older (n=11; 74±3yr) adults across eight outdoor overground walking trials at different speeds: preferred walking speed (PWS), three fixed speeds (0.8, 1.2, 1.6 m·s⁻¹), and four speeds at ±5% and ±10% of PWS. Contrary to our hypothesis, older adults did not show higher gross or net metabolic cost of walking (GCOW and NCOW) than younger adults at any speed; rather, both trended consistently lower in older adults, reaching significance for GCOW at 0.8 m·s⁻¹ only. Comparisons of resting metabolic rate and respiratory exchange ratio to prior reference groups did not indicate that our older cohort was unusually fit. Independent of age, GCOW was significantly higher at 0.8 m·s⁻¹ than at the remaining speeds (1.2-1.6 m·s⁻¹), confirming that walking at slower speeds increases GCOW. These findings challenge the view that ageing intrinsically increases the energetic cost of walking, suggesting instead that previously reported upward shifts in cost may reflect treadmill-specific constraints or speed effects. Future work is needed to explore direct comparisons of outdoor, overground walking with treadmill walking at fixed speeds in both younger and older adults.",
+        "date": "2026-09-21",
+        "url": "https://doi.org/10.1242/jeb.252654",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1242/jeb.252654",
+        "openAlexId": "W7171496501",
+        "subfield": {
+          "id": "subfields/3612",
+          "name": "Physical Therapy, Sports Therapy and Rehabilitation"
+        },
+        "field": {
+          "id": "fields/36",
+          "name": "Health Professions"
+        },
+        "topic": {
+          "id": "T10114",
+          "name": "Balance, Gait, and Falls Prevention"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://www.biorxiv.org/content/biorxiv/early/2026/07/28/2026.07.27.740899.full.pdf",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Eline van der Kruk",
+          "Koen Jongbloed",
+          "Monica Orlandi",
+          "M. E Miller",
+          "Anne Silverman"
+        ],
+        "venue": "Journal of Experimental Biology",
+        "indexedDate": "2026-07-29",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8953,
+          "everydayRelevance": 1,
+          "freshness": 0.9286,
+          "credibility": 0.6803,
+          "total": 0.9005,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.1149
+          },
+          "everydayDomains": [
+            "money",
+            "body",
+            "work",
+            "family",
+            "ageing"
+          ],
+          "subfieldKey": "subfields/3612",
+          "evidence": [
+            "total 0.9005 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.90 = P 0.91 − 0.45×t 0.00 − 0.15×j 0.11",
+            "outcome verbs (v 0.75): reduced, increases, lowers",
+            "recognisable subjects (s 1.00): adults (title, ×2), older adults (title, ×2)",
+            "quantified effect (q 1): percentage, sample size",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.11): 3/261 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 5 domain(s) — money, body, work, family, ageing",
+            "everyday terms (6): cost, costs, walking, work, older adults, ageing",
+            "freshness 0.93: 1 day(s) old (effective date 2026-09-21)",
+            "credibility 0.68 = 0.40×c1 1.00 + 0.25×c2 0.30 + 0.20×c3 0.80 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Journal of Experimental Biology",
+            "c2 0.30: n = 16",
+            "c3 0.80: open access without an open licence (repository copy)",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1242/jeb.252654)"
+      },
+      "summary": {
+        "souhrn": "Chůze venku nestojí starší lidi víc energie než mladší, i když měření na běžeckém pásu to tvrdí už desítky let. Šestnáct mladších dospělých (kolem 26 let) a jedenáct starších (kolem 74 let) ušlo osm venkovních úseků různou rychlostí. Nejpomalejší tempo bylo 0,8 metru za sekundu, tedy asi 3 kilometry v hodině — loudavá chůze; nejrychlejší dvakrát tolik, tempo spěchu na vlak. Starší skupina nespotřebovala víc energie ani při jedné rychlosti, její spotřeba byla naopak pokaždé spíš nižší. Statisticky jistý byl ten rozdíl jen při nejpomalejší chůzi, takže jde o předběžný výsledek z malého vzorku.",
+        "podrobneVysvetleni": "Většina poznatků o energii chůze pochází z běžeckého pásu. Tam starším lidem vychází spotřeba energie výš než mladším. Autoři chtěli zjistit, jestli to platí i na skutečné cestě venku.\n\nÚčastníci ušli osm úseků. Tři měly pevně danou rychlost: 0,8 metru za sekundu (asi 3 kilometry v hodině, tedy hodně pomalá chůze), 1,2 metru za sekundu (asi 4,3 kilometru v hodině, běžné tempo na chodníku) a 1,6 metru za sekundu (necelých 6 kilometrů v hodině, tempo, kdy člověk spěchá). Další úseky šli svou oblíbenou rychlostí a pak o 5 a 10 procent pomaleji či rychleji — tedy jen o malý kousek mimo své zvyklé tempo. Přístroje jim přitom měřily spotřebu kyslíku, z níž se dá spočítat, kolik energie tělo spálilo.\n\nStarší účastníci neměli vyšší spotřebu ani při jedné rychlosti. Ve všech měřeních vycházeli spíš pod mladšími. Dost velký na to, aby ho šlo považovat za jistý, byl rozdíl pouze při nejpomalejší chůzi. Autoři také ověřili, že jejich starší skupina nebyla neobvykle trénovaná: klidový metabolismus i dýchací ukazatele odpovídaly dřívějším srovnávacím skupinám.\n\nNezávisle na věku platilo jedno: pomalá chůze spotřebuje víc energie než chůze v běžném či svižném tempu. Dřívější „zdražení\" chůze ve vyšším věku tak podle autorů může být spíš důsledkem pásu, kterému se člověk musí přizpůsobit, než samotného stárnutí.",
+        "procJeToDulezite": "Chůze je nejjednodušší pohyb, podle kterého se poměřuje zdatnost i úspěšnost léčby. Jestli starším lidem chůze venku nebere víc síly, než se čekalo, mění to představu o tom, co k pohybu ve vyšším věku patří a co ne.",
+        "poznamkaKOmezenim": "Šlo o malý vzorek zdravých dobrovolníků — jedenáct starších a šestnáct mladších — a výsledek ukazuje zatím jen trend; přímé srovnání pásu a venkovní chůze u týchž lidí teprve chybí."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 212,
+              "end": 473
+            },
+            "matchedText": "Tři měly pevně danou rychlost: 0,8 metru za sekundu (asi 3 kilometry v hodině, tedy hodně pomalá chůze), 1,2 metru za sekundu (asi 4,3 kilometru v hodině, běžné tempo na chodníku) a 1,6 metru za sekundu (necelých 6 kilometrů v hodině, tempo, kdy člověk spěchá).",
+            "messageCs": "Tato věta má 49 slov a je moc dlouhá: „Tři měly pevně danou rychlost: 0,8 metru za sekundu (asi 3 kilometry v hodině, …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[212,473]: Tři měly pevně danou rychlost: 0,8 metru za sekundu (asi 3 kilometry v hodině, tedy hodně pomalá chůze), 1,2 metru za sekundu (asi 4,3 kilometru v hodině, běžné tempo na chodníku) a 1,6 metru za sekundu (necelých 6 kilometrů v hodině, tempo, kdy člověk spěchá)."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:metabolismus",
+            "span": {
+              "start": 987,
+              "end": 999
+            },
+            "matchedText": "metabolismus",
+            "messageCs": "Termín „metabolismus“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:metabolismus @ podrobneVysvetleni[987,999]: metabolismus"
+          }
+        ],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 986,
+              "end": 995
+            },
+            "matchedText": " metaboli",
+            "messageCs": "Text opisuje původní název článku („ metaboli“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[986,995]:  metaboli"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=17.20",
+            "messageCs": "Věty jsou v průměru moc dlouhé (17,2 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=17.20"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7213612393",
+        "title": "Association between antenatal depression and quality of life in pregnant women with hypertensive disorders of pregnancy: Mediating effects of pregnancy stress and psychological resilience",
+        "abstract": "Hypertensive disorders of pregnancy (HDP) are associated with an increased risk of antenatal depression (AD), but the pathways linking AD to quality of life (QoL) remain insufficiently understood. In this single-center retrospective study, 301 pregnant women with HDP completed the Edinburgh Postnatal Depression Scale (EPDS), Perceived Stress Scale, Resilience Scale, and 36-Item Short Form Health Survey (SF-36). Correlation and linear regression analyses were performed, and a chain mediation model (PROCESS Model 6; 5,000 bootstrap samples) was tested with adjustment for age, education, and adverse pregnancy history. The mean EPDS score was 7.17±3.48, and 26.25% exceeded the clinical cut-off (>9.5). AD was significantly associated with poorer QoL (total effect = -0.788, P<0.001). Pregnancy stress and psychological resilience jointly mediated this association, with indirect effects accounting for 53.7% of the total effect via stress (30.0%), resilience (17.1%), and the stress→resilience chain pathway (6.7%). In women with mild preeclampsia (n=123), the total indirect effect increased to 70.0%. We conclude that antenatal depression appears to impair quality of life in women with hypertensive disease of pregnancy largely through heightened pregnancy stress and reduced resilience, supporting integrated interventions that address depressive symptoms, stress management, and resilience enhancement.",
+        "date": "2026-09-21",
+        "url": "https://doi.org/10.29063/ajrh2026/v30i17.11",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.29063/ajrh2026/v30i17.11",
+        "openAlexId": "W7213612393",
+        "subfield": {
+          "id": "subfields/2739",
+          "name": "Public Health, Environmental and Occupational Health"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T10786",
+          "name": "Maternal Mental Health During Pregnancy and Postpartum"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Yan -Gui",
+          "Daiya Liao",
+          "Haiqing Huang",
+          "Liyi Zhang"
+        ],
+        "venue": "African Journal of Reproductive Health",
+        "indexedDate": "2026-09-19",
+        "referencedWorksCount": 0,
+        "tldr": "It is concluded that antenatal depression appears to impair quality of life in women with hypertensive disease of pregnancy largely through heightened pregnancy stress and reduced resilience, supporting integrated interventions that address depressive symptoms, stress management, and resilience enhancement.",
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.812,
+          "everydayRelevance": 1,
+          "freshness": 0.9286,
+          "credibility": 0.7356,
+          "total": 0.8749,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.5,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.1531
+          },
+          "everydayDomains": [
+            "health",
+            "family",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2739",
+          "evidence": [
+            "total 0.8749 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.81 = P 0.84 − 0.45×t 0.00 − 0.15×j 0.15",
+            "outcome verbs (v 1.00): reduced, increased, cut, associated with",
+            "recognisable subjects (s 0.50): women (title, ×2)",
+            "quantified effect (q 1): percentage, p-value, sample size",
+            "title concreteness (c 0.80): −0.2 title is 24 words",
+            "jargon density (j 0.15): 3/196 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — health, family, mind",
+            "everyday terms (6): health, disease, depression, pregnancy, pregnant, stress",
+            "freshness 0.93: 1 day(s) old (effective date 2026-09-21)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.52 + 0.20×c3 0.80 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in African Journal of Reproductive Health",
+            "c2 0.52: n = 123",
+            "c3 0.80: open access without an open licence (repository copy)",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        }
+      },
+      "summary": {
+        "souhrn": "U žen, které v těhotenství bojují s vysokým krevním tlakem, se depresivní ladění na kvalitě života podepisuje hlavně nepřímo — přes zvýšený stres a oslabenou psychickou odolnost. Autoři vyšli ze záznamů 301 těhotných, tedy zhruba tří stovek žen z jediné nemocnice, které vyplnily dotazníky na depresivní příznaky, vnímaný stres, odolnost a celkovou kvalitu života. U 26,25 % z nich, tedy asi u každé čtvrté, byly příznaky depresivity nad hranicí, kdy se doporučuje odborné posouzení. Statistický model ukázal, že přes polovinu celého vlivu depresivity na kvalitu života (53,7 %, tedy víc než polovinu) zprostředkuje právě vyšší stres a nižší odolnost; u podskupiny žen s mírnou preeklampsií, kterých bylo 123 — necelá polovina vzorku — se tento nepřímý podíl zvedl na 70,0 %, tedy na sedm desetin. Pro praxi to znamená, že u těchto žen nestačí sledovat jen tlak a náladu: pomoc se stresem a posilování odolnosti může mít na jejich každodenní život srovnatelný vliv.",
+        "podrobneVysvetleni": "Šlo o zpětný pohled do dat z jednoho pracoviště: 301 těhotných žen — tedy asi tři stovky — s hypertenzními poruchami v těhotenství (hypertensive disorders of pregnancy), což je souhrnný název pro stavy s vysokým krevním tlakem v těhotenství včetně preeklampsie. Každá vyplnila čtyři standardní dotazníky: na depresivní příznaky, na vnímaný stres, na psychickou odolnost (tedy schopnost zvládat zátěž) a na kvalitu života. Průměrné skóre depresivity bylo 7,17 bodu, přičemž nad hranicí 9,5 bodu, od které se doporučuje odborné posouzení, se ocitla čtvrtina žen. Vztah mezi depresivitou a kvalitou života byl jasně negativní: celkový efekt −0,788 znamená, že s každým bodem navíc v dotazníku depresivity klesalo hodnocení kvality života, znaménko minus je tedy pokles, ne vzestup. Zajímavější je ale to, kudy vliv teče. Když autoři rozdělili cestu na části, ukázalo se, že nepřímé cesty tvoří 53,7 % celku — tedy víc než polovinu: samotný stres 30,0 % (necelá třetina), snížená odolnost 17,1 % (asi šestina) a řetězec, kde stres nejdřív podlomí odolnost, dalších 6,7 % (jedna patnáctina). Zbytek, tedy necelá polovina, působí přímo. U žen s mírnou preeklampsií byl podíl nepřímých cest ještě větší, 70,0 % — sedm desetin. Autoři z toho vyvozují, že péče by měla řešit depresivní příznaky, zvládání stresu i posilování odolnosti společně, ne odděleně.",
+        "procJeToDulezite": "Vysoký tlak v těhotenství se běžně měří a léčí, psychická zátěž ale často zůstává mimo pozornost — a přitom právě ona podle těchto dat rozhoduje o tom, jak žena své těhotenství prožívá. Pro rodiny i zdravotníky je to argument, že rozhovor o stresu a podpoře patří do prenatální péče stejně jako tonometr.",
+        "poznamkaKOmezenim": "Jde o zpětné vyhodnocení dotazníků od tří stovek žen v jediné nemocnici, takže výsledek ukazuje souvislosti, ne prokázanou příčinu, a na jiné populaci může vypadat jinak."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 484,
+              "end": 797
+            },
+            "matchedText": "Statistický model ukázal, že přes polovinu celého vlivu depresivity na kvalitu života (53,7 %, tedy víc než polovinu) zprostředkuje právě vyšší stres a nižší odolnost; u podskupiny žen s mírnou preeklampsií, kterých bylo 123 — necelá polovina vzorku — se tento nepřímý podíl zvedl na 70,0 %, tedy na sedm desetin.",
+            "messageCs": "Tato věta má 49 slov a je moc dlouhá: „Statistický model ukázal, že přes polovinu celého vlivu depresivity na kvalitu …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[484,797]: Statistický model ukázal, že přes polovinu celého vlivu depresivity na kvalitu života (53,7 %, tedy víc než polovinu) zprostředkuje právě vyšší stres a nižší odolnost; u podskupiny žen s mírnou preeklampsií, kterých bylo 123 — necelá polovina vzorku — se tento nepřímý podíl zvedl na 70,0 %, tedy na sedm desetin."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1107,
+              "end": 1115
+            },
+            "matchedText": "polovina",
+            "messageCs": "Číslo „polovina“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „polovina — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1107,1115]: polovina"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1197,
+              "end": 1203
+            },
+            "matchedText": "70,0 %",
+            "messageCs": "Číslo „70,0 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „70,0 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1197,1203]: 70,0 %"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1211,
+              "end": 1218
+            },
+            "matchedText": "desetin",
+            "messageCs": "Číslo „desetin“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „desetin — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1211,1218]: desetin"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=25.50",
+            "messageCs": "Věty jsou v průměru moc dlouhé (25,5 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=25.50"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=5",
+            "messageCs": "Počet vět delších než 30 slov: 5. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=5"
+          }
+        ],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 92,
+              "end": 101
+            },
+            "matchedText": " hyperten",
+            "messageCs": "Text opisuje původní název článku („ hyperten“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[92,101]:  hyperten"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=42.6",
+            "messageCs": "Text se celkově čte těžko (index 43 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=42.6"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7213503517",
+        "title": "Predictors of contraceptive use at first sexual intercourse among adolescent girls in Ratlou local municipality, South Africa",
+        "abstract": "Adolescent girls are vulnerable to unintended pregnancies, unsafe abortions, and sexually transmitted infections when contraception is not used at sexual debut. Understanding the factors influencing contraceptive use at first sex is important for informing adolescent sexual and reproductive health and rights interventions, especially in rural settings where there is limited evidence. The study adopted a cross-sectional design. The sample of 290 adolescent girls was drawn from nine selected villages in the Ratlou local municipality of South Africa. Bivariate analysis, with a chi-square test, and binary logistic regression were conducted. Overall, 41.0% of adolescent girls reported contraceptive use at first sex. The regression model revealed that secondary education [AOR=0.40], a working household head [AOR=0.47], having first sex at 14-16 [AOR=0.16] and at 17-19 [AOR=0.39], ever use of dual methods of contraception [AOR=0.21], and living in Kraaipan village [AOR=0.18] were associated with lower odds of contraceptive use at first sex. Strengthening school-based sexual and reproductive health and rights education, improving parent-adolescent communication, and ensuring equitable access to youth-friendly services are important for improving contraceptive use at first sexual intercourse among adolescents in Ratlou local municipality.",
+        "date": "2026-09-21",
+        "url": "https://doi.org/10.29063/ajrh2026/v30i17.2",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.29063/ajrh2026/v30i17.2",
+        "openAlexId": "W7213503517",
+        "subfield": {
+          "id": "subfields/3600",
+          "name": "General Health Professions"
+        },
+        "field": {
+          "id": "fields/36",
+          "name": "Health Professions"
+        },
+        "topic": {
+          "id": "T10327",
+          "name": "Adolescent Sexual and Reproductive Health"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Boitshwarelo Km Ngake",
+          "Mluleki Tsawe",
+          "Ishmael Kalule‐Sabiti",
+          "Frank Ofosu-Asante",
+          "Kolletsane Motshehare",
+          "Stephina Kgomotso Mbele",
+          "Leonard Marevhula"
+        ],
+        "venue": "African Journal of Reproductive Health",
+        "indexedDate": "2026-09-18",
+        "referencedWorksCount": 0,
+        "tldr": "Strengthening school-based sexual and reproductive health and reproductive health and rights education, improving parent-adolescent communication, and ensuring equitable access to youth-friendly services are important for improving contraceptive use at first sexual intercourse among adolescents in Ratlou local municipality.",
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8012,
+          "everydayRelevance": 1,
+          "freshness": 0.9286,
+          "credibility": 0.705,
+          "total": 0.8663,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.1587
+          },
+          "everydayDomains": [
+            "school",
+            "health",
+            "family"
+          ],
+          "subfieldKey": "subfields/3600",
+          "evidence": [
+            "total 0.8663 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.80 = P 0.82 − 0.45×t 0.00 − 0.15×j 0.16",
+            "outcome verbs (v 0.50): lowers, associated with",
+            "recognisable subjects (s 1.00): adolescents (title, ×2), households, schools",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.16): 3/189 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — school, health, family",
+            "everyday terms (6): school, schools, health, infection, parent, parents",
+            "freshness 0.93: 1 day(s) old (effective date 2026-09-21)",
+            "credibility 0.71 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.80 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in African Journal of Reproductive Health",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.80: open access without an open licence (repository copy)",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        }
+      },
+      "summary": {
+        "souhrn": "V devíti vesnicích venkovské obce Ratlou v Jihoafrické republice se vědci ptali dospívajících dívek, zda při prvním pohlavním styku použily antikoncepci. Ze 290 dotázaných — tedy necelých tří stovek — odpovědělo ano 41 %, přibližně dvě z pěti; zbylé tři z pěti tuto ochranu neměly. Nižší šance na použití antikoncepce se pojila se středním vzděláním, s domácností, jejíž hlava pracovala, s bydlištěm v konkrétní vesnici Kraaipan a také s věkem prvního styku: u dívek, které jej měly mezi 14 a 16 lety, tedy v polovině dospívání, i u těch mezi 17 a 19 lety, tedy na jeho konci, byla šance nižší než u srovnávané skupiny. Autoři na základě toho doporučují posílit výuku o sexuálním zdraví ve školách, podporovat rozhovory mezi rodiči a dospívajícími a zpřístupnit poradny vstřícné k mladým lidem ve všech vesnicích stejně.",
+        "podrobneVysvetleni": "Šlo o jednorázové šetření, které zachycuje stav v jediném okamžiku a nesleduje dívky v čase (anglicky cross-sectional). Výzkumníci získali odpovědi od 290 dospívajících dívek, tedy od necelých tří stovek, z devíti vybraných vesnic obce Ratlou. Ptali se, zda při prvním pohlavním styku použily antikoncepci, a odpovědi porovnávali s údaji o vzdělání, o zaměstnání hlavy domácnosti, o bydlišti a o věku, kdy k prvnímu styku došlo. Nejprve srovnávali vždy dva údaje proti sobě, potom použili statistický model, který umí vzít několik vlivů zároveň.\n\nAntikoncepci uvedlo 41 % dívek, tedy dvě z pěti. Model pracuje s tzv. poměrem šancí: hodnota menší než jednička znamená nižší šanci, že dívka antikoncepci použila. Střední vzdělání mělo hodnotu 0,40 — šance nižší asi o 60 %, tedy necelá polovina. Pracující hlava domácnosti 0,47, opět přibližně poloviční šance. Vesnice Kraaipan 0,18, tedy šance nižší asi o 80 %. Zkušenost s používáním dvou metod antikoncepce současně 0,21. A věk prvního styku: 14 až 16 let (0,16), tedy v polovině dospívání, a 17 až 19 let (0,39), tedy na jeho konci — obě skupiny měly nižší šanci než skupina, s níž je model srovnával.\n\nZ toho autoři vyvozují, že samotné navštěvování školy nestačí; rozhoduje, co se tam dívky skutečně dozví, jak o tom mluví doma a jak blízko mají ke službám, kde se s nimi někdo v klidu baví.",
+        "procJeToDulezite": "Bez ochrany při prvním styku hrozí dívkám neplánované těhotenství, nebezpečně provedený potrat i pohlavně přenosné infekce — a studie ukazuje, že rozdíly jsou i mezi vesnicemi ležícími blízko sebe. Pro rodiče i učitele je to připomínka, že informace a dostupná poradna musí přijít dřív než první zkušenost.",
+        "poznamkaKOmezenim": "Jde o jednorázové šetření na necelých třech stovkách dívek z jedné venkovské obce, založené na jejich vlastních výpovědích o minulosti, takže ukazuje pouze souvislosti — ne to, co je příčinou čeho — a výsledky nelze bez dalšího přenášet na jiné oblasti."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 282,
+              "end": 619
+            },
+            "matchedText": "Nižší šance na použití antikoncepce se pojila se středním vzděláním, s domácností, jejíž hlava pracovala, s bydlištěm v konkrétní vesnici Kraaipan a také s věkem prvního styku: u dívek, které jej měly mezi 14 a 16 lety, tedy v polovině dospívání, i u těch mezi 17 a 19 lety, tedy na jeho konci, byla šance nižší než u srovnávané skupiny.",
+            "messageCs": "Tato věta má 60 slov a je moc dlouhá: „Nižší šance na použití antikoncepce se pojila se středním vzděláním, s domácnos…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[282,619]: Nižší šance na použití antikoncepce se pojila se středním vzděláním, s domácností, jejíž hlava pracovala, s bydlištěm v konkrétní vesnici Kraaipan a také s věkem prvního styku: u dívek, které jej měly mezi 14 a 16 lety, tedy v polovině dospívání, i u těch mezi 17 a 19 lety, tedy na jeho konci, byla šance nižší než u srovnávané skupiny."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 766,
+              "end": 770
+            },
+            "matchedText": "60 %",
+            "messageCs": "Číslo „60 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „60 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[766,770]: 60 %"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 905,
+              "end": 909
+            },
+            "matchedText": "80 %",
+            "messageCs": "Číslo „80 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „80 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[905,909]: 80 %"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=22.11",
+            "messageCs": "Věty jsou v průměru moc dlouhé (22,1 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=22.11"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 33,
+              "end": 41
+            },
+            "matchedText": " Ratlou ",
+            "messageCs": "Text opisuje původní název článku („ Ratlou “). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[33,41]:  Ratlou "
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 30 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=49.3",
+            "messageCs": "Text se celkově čte těžko (index 49 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=49.3"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7213753205",
+        "title": "Association of allergic rhinitis with polysomnographic arousal indices in children with sleep-disordered breathing",
+        "abstract": "Abstract Background Children with allergic rhinitis (AR) frequently experience sleep disruption and have a higher prevalence of sleep-disordered breathing (SDB). However, the specific impact of AR on sleep architecture across different SDB subtypes, such as obstructive sleep apnea (OSA) and snoring, remains under-explored. This study examined the associations between AR, arousal indices, and sleep architecture in children with OSA and snoring. Methods This retrospective study analyzed polysomnography (PSG) data from children (< 12 years) evaluated for SDB at a tertiary hospital in Taiwan (2009–2020). Participants were classified into four groups based on PSG findings and clinical diagnosis. Multivariable regression was used to analyze the associations between AR and OSA-related parameters. Results Among 643 children (mean age < 12 years), those with OSA and comorbid AR exhibited significantly more respiratory events and a higher respiratory arousal index (RAI) than those without AR (both P < 0.001). Multivariable negative binomial regression revealed that AR was independently associated with a lower periodic limb movement arousal rate (aIRR = 0.393, 95% CI: 0.183–0.848, P = 0.017), even after adjusting for comorbid asthma and OSA status. Additionally, older age (aIRR = 0.914, P = 0.011), male sex (aIRR = 1.643, P = 0.006), higher BMI (aIRR = 1.048, P = 0.018), presence of OSA (aIRR = 12.382, P < 0.0001), and enuresis (aIRR = 2.065, P = 0.029) were significantly associated with respiratory arousal rates. Conclusions This study provides the first evidence of a significant link between AR and impaired arousal regulation in pediatric SDB. These findings underscore the necessity of screening for sleep disturbances in children with AR and suggest that managing comorbid AR is a critical component of pediatric sleep disorder therapy.",
+        "date": "2026-09-21",
+        "url": "https://doi.org/10.1186/s12887-026-07684-8",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1186/s12887-026-07684-8",
+        "openAlexId": "W7213753205",
+        "subfield": {
+          "id": "subfields/2737",
+          "name": "Physiology"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T10234",
+          "name": "Obstructive Sleep Apnea Research"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Tzu-Yuan Kang",
+          "Chang-Ching Wei",
+          "Liang-Wen Hang",
+          "Yi-Hua Li",
+          "Hung‐Rong Yen",
+          "Jiu-Yao Wang",
+          "Chien‐Heng Lin",
+          "W. M. Lai"
+        ],
+        "venue": "BMC Pediatrics",
+        "indexedDate": "2026-09-21",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7681,
+          "everydayRelevance": 1,
+          "freshness": 0.9286,
+          "credibility": 0.8205,
+          "total": 0.8692,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 1,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.1128
+          },
+          "everydayDomains": [
+            "sleep",
+            "health",
+            "family"
+          ],
+          "subfieldKey": "subfields/2737",
+          "evidence": [
+            "total 0.8692 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.77 = P 0.79 − 0.45×t 0.00 − 0.15×j 0.11",
+            "outcome verbs (v 0.50): lowers, associated with",
+            "recognisable subjects (s 1.00): participants, children (title, ×2), hospitals",
+            "quantified effect (q 1): percentage, p-value, 95% CI",
+            "title concreteness (c 0.80): −0.2 2 technical strings in the title",
+            "jargon density (j 0.11): 3/266 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — sleep, health, family",
+            "everyday terms (6): sleep, asthma, hospital, therapy, screening, children",
+            "freshness 0.93: 1 day(s) old (effective date 2026-09-21)",
+            "credibility 0.82 = 0.40×c1 1.00 + 0.25×c2 0.70 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in BMC Pediatrics",
+            "c2 0.70: n = 643",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1186/s12887-026-07684-8)"
+      },
+      "summary": {
+        "souhrn": "Děti, které chrápou nebo jim ve spánku vynechává dech, na tom bývají horší, když k tomu mají ještě alergickou rýmu (allergic rhinitis) — tedy ucpaný a tekoucí nos z alergie. Tchajwanští lékaři prošli záznamy nočních spánkových měření u 643 dětí do dvanácti let, které v letech 2009 až 2020 prošly vyšetřením v nemocnici. Děti s obstrukční spánkovou apnoí (obstructive sleep apnea — opakované zastavení dechu ve spánku kvůli uzavření dýchacích cest), které měly navíc alergickou rýmu, měly víc dechových přestávek a častěji se kvůli dýchání v noci krátce probouzely. Samotná apnoe přitom zvyšovala počet takových probuzení asi dvanáctinásobně a hlásilo se k ní i noční pomočování. Autoři z toho vyvozují, že u dětí s alergickou rýmou se vyplatí ptát se i na spánek — a naopak u dětí se špatným spánkem myslet na neléčenou alergii.",
+        "podrobneVysvetleni": "Vědci nic nového neměřili, jen zpětně prošli už existující výsledky polysomnografie — celonočního vyšetření, při kterém se dítěti sledují dech, mozkové vlny, pohyby a hladina kyslíku. Šlo o 643 dětí mladších dvanácti let z jedné velké tchajwanské nemocnice, rozdělených do čtyř skupin podle toho, zda šlo jen o chrápání, nebo o skutečnou spánkovou apnoi, a zda měly navíc alergickou rýmu. Ukázalo se, že ve skupině s apnoí mají děti s alergií výrazně víc dechových přestávek a vyšší počet krátkých probuzení vyvolaných dýcháním. Když autoři spočítali vliv jednotlivých faktorů zvlášť, největší roli hrála samotná apnoe: zvyšovala počet dechových probuzení přibližně dvanáctkrát. Chlapci jich měli asi o 60 % víc než děvčata, u dětí s vyšší tělesnou hmotností jich bylo mírně víc, u starších dětí naopak trochu méně, a děti, které se v noci pomočovaly, jich měly zhruba dvojnásobek. Zajímavý je jeden obrácený nález: děti s alergickou rýmou měly méně probuzení vyvolaných opakovanými pohyby nohou ve spánku — přibližně o 60 % nižší počet. Autoři to čtou tak, že alergie může do řízení nočních probuzení zasahovat složitěji, než se čekalo, ne že by dětem prospívala. Praktický závěr je střízlivý: léčba ucpaného nosu patří k péči o dětský spánek.",
+        "procJeToDulezite": "Špatně spící dítě bývá přes den podrážděné, nesoustředěné a hůř zvládá školu — a jednou z příčin může být docela obyčejná, přehlížená alergická rýma, se kterou jde něco dělat.",
+        "poznamkaKOmezenim": "Jde o zpětný pohled do zdravotních záznamů z jedné tchajwanské nemocnice, kam přicházejí už vybrané děti s potížemi, takže studie ukazuje jen souvislost, nikoli důkaz, že alergie spánek zhoršuje; nález u pohybů nohou stojí na malých počtech a je předběžný."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 679,
+              "end": 881
+            },
+            "matchedText": "Chlapci jich měli asi o 60 % víc než děvčata, u dětí s vyšší tělesnou hmotností jich bylo mírně víc, u starších dětí naopak trochu méně, a děti, které se v noci pomočovaly, jich měly zhruba dvojnásobek.",
+            "messageCs": "Tato věta má 36 slov a je moc dlouhá: „Chlapci jich měli asi o 60 % víc než děvčata, u dětí s vyšší tělesnou hmotností…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[679,881]: Chlapci jich měli asi o 60 % víc než děvčata, u dětí s vyšší tělesnou hmotností jich bylo mírně víc, u starších dětí naopak trochu méně, a děti, které se v noci pomočovaly, jich měly zhruba dvojnásobek."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=25.14",
+            "messageCs": "Věty jsou v průměru moc dlouhé (25,1 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=25.14"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 236,
+              "end": 239
+            },
+            "matchedText": "643",
+            "messageCs": "Číslo „643“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „643 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[236,239]: 643"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 67,
+              "end": 80
+            },
+            "matchedText": " polysomnogra",
+            "messageCs": "Text opisuje původní název článku („ polysomnogra“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[67,80]:  polysomnogra"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 190,
+              "end": 193
+            },
+            "matchedText": "643",
+            "messageCs": "Číslo „643“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „643 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[190,193]: 643"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 30 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=44.1",
+            "messageCs": "Text se celkově čte těžko (index 44 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=44.1"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-09-22T09:31:29.270Z",
+  "generatedOn": "2026-09-22",
+  "schemaVersion": 1
+}
