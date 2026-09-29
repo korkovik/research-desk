@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Příroda a klima – 29. září 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Příroda a klima</h1>
+<p class="dateline"><time datetime="2026-09-29">29. září 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 5</p>
+<div class="summary"><p><span class="lead">Mořské vlny horka — nezvykle teplá období ve vodě (marine heatwaves) — podle nové studie uberou z života v oceánu víc, než způsobí samotné pozvolné oteplování.</span> Vědci spojili model toku biomasy v mořských potravních sítích s výstupy dvou klimatických modelů. Počítali celý oceán, pole po poli o hraně jednoho stupně zeměpisné šířky a délky, a to ve scénáři, kdy lidstvo emise nijak neomezí. Vlny horka podle výpočtů ubírají navíc 1,3 až 6,7 procenta biomasy na každý stupeň oteplení, podle toho, jak dobře si morští živočichové zvyknou. Nejvíc ztrácejí horní patra potravní sítě a autoři dodávají, že udržet oteplení pod dvěma stupni by dopady výrazně zmenšilo.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Model funguje jako účetnictví života v moři. Sleduje, kolik hmoty drží plankton, malé ryby, velké ryby a dravci, a jak mezi nimi hmota putuje. Vědci ho nakrmili teplotami ze dvou klimatických modelů Země do konce století. Pak porovnali dva světy: jeden, kde se voda jen pozvolna ohřívá, a druhý, kde navíc přicházejí krátká období extrémního tepla. Rozdíl mezi nimi je cena vln horka. Při nejhorším předpokladu o schopnosti přizpůsobit se ubírají vlny horka 6,7 procenta biomasy na každý stupeň globálního oteplení — tedy skoro sedm kilogramů živé hmoty ze sta. Když si organismy zvyknou dobře, je to 1,3 procenta, tedy jen něco přes jeden kilogram ze sta. Mezi „zvyknou si&quot; a „nezvyknou si&quot; je tedy velký rozdíl. Autoři zkoušeli i druhou možnost: co když se společenstva postupně srovnají s novými, teplejšími podmínkami a za normál začnou brát je (moving baseline)? Pak ztráta klesá v průměru o 3,7 procenta na každý stupeň oteplení, tedy o necelé čtyři kilogramy ze sta. Dopad není v potravní síti rovnoměrný. Horní patra, tedy větší ryby a dravci, ztrácejí o 0,8 procenta víc než patra spodní. To je necelý kilogram ze sta navíc — rozdíl malý, ale týká se právě těch živočichů, o které se opírá rybolov.</p>
+<h3>Proč je to důležité</h3>
+<p>Odhady dopadů oteplování na rybí populace zatím většinou pracují s pozvolným ohříváním, a krátké vlny horka do nich přidávají další ztráty — což se dotýká toho, kolik ryb budou moře vůbec schopna dát. Studie zároveň ukazuje, že udržení oteplení pod dvěma stupni tenhle rozdíl podstatně zmenšuje.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Vianney Guibourd de Luzinais, William W. L. Cheung, Thomas Frölicher, Laurent Bopp, Gabriel Reygondeau, Didier Gascuel</dd>
+<dt>Časopis</dt>
+<dd>Global Change Biology</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-27">27. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1111/gcb.71123" rel="noreferrer">10.1111/gcb.71123</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7214540540" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://doi.org/10.1111/gcb.71123" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1111/gcb.71123" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o výpočty z počítačových modelů, ne o měření v přírodě, a rozptyl výsledků je velký — právě proto, že se dnes neví, jak dobře si mořští živočichové na opakované vlny horka zvyknou.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 5</p>
+<div class="summary"><p><span class="lead">Uhlíková stopa jídelníčku se výrazně liší podle věku — a hlavním rozdílem je, kolik masa a mléčných výrobků na talíři končí.</span> Vědci přepočítali dotazníky o stravování malých dětí a dospělých na množství skleníkových plynů, které se uvolní při výrobě snědených potravin. Nejvyšší stopu měli nejmladší dospělí, kteří jedli nejvíc červeného a zpracovaného masa a průmyslově zpracovaných jídel; nejstarší účastníci jedli víc rostlinné stravy a jejich stopa byla nižší. Zajímavé je, že ne každé „zdravé&quot; skóre jídelníčku jde ruku v ruce s nižšími emisemi — nejlépe to vystihly jen některé hodnotící indexy. Jde o popisnou studii, která ukazuje souvislosti, nikoli příčinu a následek.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Vědci vyšli z dotazníků o tom, jak často lidé jedí jednotlivé potraviny (food frequency questionnaire). Sešlo se jich něco přes šest set — konkrétně 653 vyplněných přehledů jídelníčku. Část pocházela od malých dětí, jejichž stravu rodiče popisovali opakovaně: nejprve v půl roce věku, pak v jednom roce, ve dvou, ve třech a ve čtyřech letech. Zbytek vyplnili dospělí rozdělení do tří skupin — mladší (osmnáct až padesát let), střední (jednapadesát až pětašedesát) a nejstarší (šestašedesát až pětadevadesát let). Ke každé potravině pak badatelé přiřadili, kolik skleníkových plynů přepočtených na oxid uhličitý se uvolní při výrobě jednoho kilogramu, a sečetli to. Největší podíl na stopě měly potraviny živočišného původu, především maso a mléčné výrobky. Nejvyšší emise vycházely nejmladším dospělým, což souviselo s vyšší spotřebou červeného a zpracovaného masa a průmyslově zpracovaných jídel. Starší účastníci jedli více rostlinné stravy a jejich jídelníček zatěžoval klima méně. Autoři také porovnali několik způsobů, jak se hodnotí kvalita stravy, a zjistili, že se v tomto ohledu liší: nejtěsněji s nižšími emisemi souvisel index planetárně zdravé stravy (Planetary Health Diet Index) a index Americké onkologické společnosti z roku 2020 — čím lepší skóre, tím nižší uhlíková stopa. Jinými slovy, jídelníček bohatý na rostliny a chudý na průmyslově zpracovaná jídla prospívá podle autorů zdraví i prostředí zároveň.</p>
+<h3>Proč je to důležité</h3>
+<p>Ukazuje, že běžná rozhodnutí u nákupního vozíku — kolik masa a hotových jídel koupíme — mají měřitelný dopad nejen na zdraví, ale i na množství skleníkových plynů, a že obojí se často dá zlepšit současně.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>María Gil-Matos, Aida Zapico, Silvia García, Cristina Bouzas, Marina Ródenas-Munar, Miguel Gueimonde a další</dd>
+<dt>Časopis</dt>
+<dd>Journal of Health Population and Nutrition</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-27">27. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1186/s41043-026-01460-1" rel="noreferrer">10.1186/s41043-026-01460-1</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7214529527" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1186/s41043-026-01460-1" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o pozorovací a popisnou studii, která neprokazuje příčinu a následek, a některé věkové skupiny byly velmi malé — nejmladších dospělých se zúčastnila jen zhruba dvacítka lidí, takže jejich výsledky je třeba brát jako předběžné.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 5</p>
+<div class="summary"><p><span class="lead">Australští badatelé prošli 11 177 hospitalizací dětí a dospívajících kvůli astmatu z let 2003 až 2019.</span> Porovnávali tři australské okresy s odlišným podnebím a k tomu počasí, znečištění ovzduší a to, jak zelená byla okolní krajina. Ve všech třech přibývalo hospitalizací v obdobích s bujnější zelení; nejvíc v tropické oblasti s monzuny a deštným lesem, asi 1,65krát víc než obvykle. S vyšší průměrnou teplotou jich naopak ubývalo, o 5 až 8 % na každý stupeň Celsia — tedy zhruba o jednu hospitalizaci z dvaceti až z dvanácti. Špinavý vzduch se projevil jen v některých oblastech a ročních obdobích, takže jedno společné varování pro celou zemi by podle autorů nestačilo.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Vědci pracovali s úředními záznamy nemocnic o všech přijetích kvůli astmatu u dětí a dospívajících ve třech okresech Austrálie. Ty byly vybrány už dřív jako rizikové a mají odlišné podnebí. Ke každému dni přiřadili teplotu, vlhkost, koncentrace znečišťujících látek a takzvanou zelenost krajiny, tedy satelitní údaj o tom, kolik je kolem živé vegetace. Souvislosti počítali modely, které umějí zachytit i opožděný účinek — dnešní počasí se totiž na počtu přijetí může projevit až za několik dní. Vedle toho použili metodu zvanou náhodný les (random forest), počítačový postup, který porovná, který faktor počty předpovídá nejlépe. Zelenost a teplota skončily na prvních místech ve všech třech oblastech. Vyšší zelenost šla ruku v ruce s vyšším počtem hospitalizací; v tropické oblasti s monzuny byl odhad 1,65násobku, přičemž nejistota výpočtu sahá zhruba od 1,3 do 2,1 násobku. Naopak teplejší dny znamenaly hospitalizací méně. U znečištění se výsledky lišily podle místa i sezony. Největší hodnota vyšla pro oxid siřičitý (SO₂) v deštivém období tropické savany, a to přes dvojnásobek běžného počtu. Autoři z toho nevyvozují, že by za astma mohla zeleň sama o sobě; zelenost spíš zastupuje období, kdy je v ovzduší hodně pylu a plísní. Praktický závěr zní, že předpovědi rizika a preventivní opatření dávají smysl spíš po regionech a ročních obdobích než plošně.</p>
+<h3>Proč je to důležité</h3>
+<p>Rodiče dětí s astmatem i školy tak vědí, že rizikové období není všude stejné a že se řídí místním počasím a vegetací, ne jedním celostátním kalendářem.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Jialu Wang, Javier Cortés-Ramírez, Janet Davies, Wenbiao Hu</dd>
+<dt>Časopis</dt>
+<dd>Scientific Reports</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-27">27. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1038/s41598-026-73019-3" rel="noreferrer">10.1038/s41598-026-73019-3</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7214545904" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1038/s41598-026-73019-3" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o srovnání celkových počtů a průměrů ve třech vybraných okresech, ne o sledování jednotlivých dětí, takže výsledky ukazují souvislost, nikoli prokázanou příčinu, a jinde nemusí platit stejně.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-4">
+<p class="paper-counter">Studie 4 z 5</p>
+<div class="summary"><p><span class="lead">Jestli na jihoafrických pastvinách naroste dost trávy, se dá tušit už na Vánoce — podle toho, co dělá Tichý oceán.</span> Vědci porovnali data z let 1999 až 2024 pro deset míst v provincii Limpopo. Sledovali satelitní odhady množství suché rostlinné hmoty, srážky a index El Niño (Oceanic Niño Index), který popisuje střídání teplejší a chladnější fáze Tichého oceánu. V letech s chladnou fází (La Niña) pršelo od listopadu do ledna nadprůměrně a pastviny pak od února do dubna vyprodukovaly víc hmoty. V letech s teplou fází (El Niño) to bylo naopak. Samotné srážky přitom za těch pětadvacet let nikde výrazně neubývaly ani nepřibývaly — jedinou výjimkou bylo město Lephalale, kde je pokles průkazný.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Autoři vybrali deset míst napříč provincií Limpopo a pro každé stáhli družicové odhady takzvané produkce suché hmoty, tedy kolik kilogramů rostlinného materiálu pastvina vytvoří na hektar za den. K tomu přidali naměřené srážky a index El Niño. Trendy hodnotili statistickými testy, které umí rozlišit skutečnou změnu od běžného kolísání mezi roky.</p>
+<p>U srážek vyšly trendy většinou slabé a statisticky neprůkazné, i když rozdíly mezi jednotlivými roky byly velké. Naproti tomu produkce rostlinné hmoty rostla na třech místech — v Mhinze, Mooketsi a Marble Hall — zhruba o půl kilogramu až jeden kilogram suché hmoty na hektar a den každým rokem. Za dvacet pět let se to nasčítá do znatelného rozdílu.</p>
+<p>Roční rytmus je zřetelný: zelenání na začátku léta, vrchol od ledna do dubna a usychání v suché zimě. Klíčové je, že po deštivém přelomu roku následovala vydatnější produkce, po suchém slabší. Rozdíly jsou i v prostoru — východ a jih provincie jsou stabilně úrodnější než sušší sever a západ.</p>
+<p>Pro chovatele dobytka z toho plyne praktický závěr: informace o fázi El Niño spolu s družicovým sledováním porostů dávají několikaměsíční předstih. Dost na to, aby se dalo přizpůsobit počty zvířat nebo zásoby krmiva dřív, než přijde nedostatek pastvy.</p>
+<h3>Proč je to důležité</h3>
+<p>Miliony lidí v jižní Africe závisejí na dobytku, který se pase na volných pastvinách, a sucho tam znamená hubené roky i pro rodiny, které samy žádný dobytek nemají. Když se dá nedostatek pastvy odhadnout s několikaměsíčním předstihem, dá se na něj aspoň částečně připravit.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Phumzile Maluleke, Mokhele Edmond Moeletsi, Mitsuru Tsubo</dd>
+<dt>Časopis</dt>
+<dd>International Journal of Climatology</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-27">27. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1002/joc.70608" rel="noreferrer">10.1002/joc.70608</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7214542142" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1002/joc.70608" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o deset vybraných míst v jedné provincii za pětadvacet let, takže závěry nemusí platit jinde, a rostoucí produkce rostlinné hmoty na třech místech může mít i jiné příčiny než počasí — třeba změny ve způsobu hospodaření, které studie nesledovala.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-5">
+<p class="paper-counter">Studie 5 z 5</p>
+<div class="summary"><p><span class="lead">V indickém státě Urísa stoupl podíl domácností původních obyvatel, které vaří na čistém palivu, z 5,3 % na 12,6 %.</span> Je to posun zhruba z jedné domácnosti z dvaceti na jednu z osmi. Přesto většina rodin dál vaří na dřevě a jiné biomase. Vědci porovnali dva celostátní průzkumy zdraví rodin, mezi nimiž uplynulo pět let, a prošli data od 14 542 domácností. Ukázalo se, že vládní program rozdávající chudým rodinám připojení k plynové lahvi adopci plynu skutečně zrychlil, samotné připojení ale k trvalé změně nestačí.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Autoři pracovali s údaji o jednotlivých domácnostech ze čtvrtého a pátého kola indického Národního průzkumu zdraví rodin. Zaměřili se na domácnosti z takzvaných registrovaných kmenů (Scheduled Tribes), což je oficiální indická kategorie pro původní obyvatelstvo. Statistickými modely hledali, co odlišuje rodiny, které přešly na čisté palivo, od těch ostatních. Čisté palivo tu znamená hlavně zkapalněný plyn v lahvi (LPG) místo dřeva, sušeného trusu či zbytků z polí.</p>
+<p>Pravděpodobnost přechodu zvyšoval život ve městě, vyšší vzdělání, větší majetek domácnosti a také to, když byla hlavou rodiny žena. Naopak klesala u početnějších rodin, u majitelů půdy nebo dobytka a tam, kde se vaří venku. Není divu: kdo má vlastní pole a zvířata, má i palivo zadarmo, zatímco plyn se musí kupovat.</p>
+<p>Účinek vládního programu Pradhan Mantri Ujjwala Yojana, který chudým rodinám hradí připojení k plynové lahvi, autoři odhadli metodou, jež porovnává podobné domácnosti s podporou a bez ní. Mezi rodinami pod hranicí chudoby vzrostlo používání plynu v době programu více než u srovnatelných domácností mimo něj.</p>
+<p>Závěr autorů je střízlivý. Rozdat připojení je snadné, těžší je zajistit, aby si rodiny lahev opakovaně kupovaly, aby byla dostupná i v odlehlých vesnicích a aby se změnily zvyklosti při vaření.</p>
+<h3>Proč je to důležité</h3>
+<p>Kouř z vaření na dřevě poškozuje plíce hlavně ženám a dětem, které tráví nejvíc času u ohniště. Studie ukazuje, že samotné rozdání plynových přípojek problém neřeší, pokud si rodiny nemohou dovolit palivo znovu a znovu kupovat.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Diptimayee Naik, Ranajit Bera, Munmun Mohapatra, Rashmi Ranjan Behera, Ramya Ranjan Behera</dd>
+<dt>Časopis</dt>
+<dd>Discover Sustainability</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-09-27">27. září 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1007/s43621-026-04857-4" rel="noreferrer">10.1007/s43621-026-04857-4</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7214549324" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1007/s43621-026-04857-4" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o vyhodnocení dotazníkových dat z jednoho indického státu, takže zjištěné souvislosti nemusí platit jinde a odhad účinku programu se opírá o statistické srovnání podobných domácností, nikoli o kontrolovaný experiment.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 29. září 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>

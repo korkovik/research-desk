@@ -1,0 +1,876 @@
+{
+  "date": "2026-09-29",
+  "categoryKey": "nature-climate",
+  "categoryLabel": "Příroda a klima",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7214540540",
+        "title": "Projecting Impacts of Marine Heatwaves and Their Effects on Long‐Term Changes in Marine Ecosystems Over the 21st Century",
+        "abstract": "ABSTRACT Marine heatwaves (MHWs) are increasing in frequency, duration and intensity under climate change. Although current MHWs trigger broad ecological impacts, such as coral bleaching, mass mortality of seagrass meadows, and declines in important fish stocks, the cascading effects of MHWs on ecosystem structure and functions in the 21st century remain unclear. In this study, we utilise a global biomass flow modelling framework to analyse these impacts. Leveraging climate projections from two Earth system models (ESMs), we project marine food webs dynamics at a spatial resolution of 1° latitude and longitude for the global ocean under a high‐emission ‘no mitigation’ scenario, two MHW baseline definitions (fixed vs. moving baseline), and five organismal acclimation capacity scenarios to MHWs. We project that MHWs exacerbate declines in total consumer biomass under intensifying Global Warming Level (GWL), with spatial variations. Globally, under a scenario assuming a fixed baseline, MHWs' additional biomass decline increases with GWL at a rate ranging from 1.3% to 6.7% biomass loss per Celsius degree of warming, according to best‐to‐worst acclimation capacity scenarios to MHWs. Furthermore, the projected impacts of MHWs on marine biomass vary across the food web, with higher trophic levels being impacted by 0.8% more than lower trophic level compartments. Moreover, under a scenario that assumes a moving baseline, reflecting marine communities' capacity to adapt or acclimatise to climate change, the projected biomass loss from MHWs is reduced by an average of 3.7% per °C of global warming compared to fixed baseline simulations. We conclude that it is essential to incorporate extreme temperature events into climate change impact and risk assessments and examine the potential role of adaptive capacities of marine communities to inform robust climate responses and adaptations for biodiversity and fisheries. We emphasise that limiting global warming to below +2°C would significantly reduce MHWs' impacts.",
+        "date": "2026-09-27",
+        "url": "https://doi.org/10.1111/gcb.71123",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1111/gcb.71123",
+        "openAlexId": "W7214540540",
+        "subfield": {
+          "id": "subfields/2306",
+          "name": "Global and Planetary Change"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10230",
+          "name": "Marine and fisheries research"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1111/gcb.71123",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Vianney Guibourd de Luzinais",
+          "William W. L. Cheung",
+          "Thomas Frölicher",
+          "Laurent Bopp",
+          "Gabriel Reygondeau",
+          "Didier Gascuel"
+        ],
+        "venue": "Global Change Biology",
+        "indexedDate": "2026-09-28",
+        "referencedWorksCount": 63,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.81,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.9286,
+          "credibility": 0.745,
+          "total": 0.8661,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.5,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.033
+          },
+          "everydayDomains": [
+            "food",
+            "health",
+            "weather"
+          ],
+          "subfieldKey": "subfields/2306",
+          "evidence": [
+            "total 0.8661 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.81 = P 0.82 − 0.45×t 0.00 − 0.15×j 0.03",
+            "outcome verbs (v 1.00): reduced, reduces, increases, lowers",
+            "recognisable subjects (s 0.50): consumers, fish",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.03): 1/303 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 3 domain(s) — food, health, weather",
+            "everyday terms (5): food, mortality, climate, heatwave, warming",
+            "freshness 0.93: 1 day(s) old (effective date 2026-09-28)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Global Change Biology",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no tldr; falling back to the source abstract (§4.2)"
+      },
+      "summary": {
+        "souhrn": "Mořské vlny horka — nezvykle teplá období ve vodě (marine heatwaves) — podle nové studie uberou z života v oceánu víc, než způsobí samotné pozvolné oteplování. Vědci spojili model toku biomasy v mořských potravních sítích s výstupy dvou klimatických modelů. Počítali celý oceán, pole po poli o hraně jednoho stupně zeměpisné šířky a délky, a to ve scénáři, kdy lidstvo emise nijak neomezí. Vlny horka podle výpočtů ubírají navíc 1,3 až 6,7 procenta biomasy na každý stupeň oteplení, podle toho, jak dobře si morští živočichové zvyknou. Nejvíc ztrácejí horní patra potravní sítě a autoři dodávají, že udržet oteplení pod dvěma stupni by dopady výrazně zmenšilo.",
+        "podrobneVysvetleni": "Model funguje jako účetnictví života v moři. Sleduje, kolik hmoty drží plankton, malé ryby, velké ryby a dravci, a jak mezi nimi hmota putuje. Vědci ho nakrmili teplotami ze dvou klimatických modelů Země do konce století. Pak porovnali dva světy: jeden, kde se voda jen pozvolna ohřívá, a druhý, kde navíc přicházejí krátká období extrémního tepla. Rozdíl mezi nimi je cena vln horka. Při nejhorším předpokladu o schopnosti přizpůsobit se ubírají vlny horka 6,7 procenta biomasy na každý stupeň globálního oteplení — tedy skoro sedm kilogramů živé hmoty ze sta. Když si organismy zvyknou dobře, je to 1,3 procenta, tedy jen něco přes jeden kilogram ze sta. Mezi „zvyknou si\" a „nezvyknou si\" je tedy velký rozdíl. Autoři zkoušeli i druhou možnost: co když se společenstva postupně srovnají s novými, teplejšími podmínkami a za normál začnou brát je (moving baseline)? Pak ztráta klesá v průměru o 3,7 procenta na každý stupeň oteplení, tedy o necelé čtyři kilogramy ze sta. Dopad není v potravní síti rovnoměrný. Horní patra, tedy větší ryby a dravci, ztrácejí o 0,8 procenta víc než patra spodní. To je necelý kilogram ze sta navíc — rozdíl malý, ale týká se právě těch živočichů, o které se opírá rybolov.",
+        "procJeToDulezite": "Odhady dopadů oteplování na rybí populace zatím většinou pracují s pozvolným ohříváním, a krátké vlny horka do nich přidávají další ztráty — což se dotýká toho, kolik ryb budou moře vůbec schopna dát. Studie zároveň ukazuje, že udržení oteplení pod dvěma stupni tenhle rozdíl podstatně zmenšuje.",
+        "poznamkaKOmezenim": "Jde o výpočty z počítačových modelů, ne o měření v přírodě, a rozptyl výsledků je velký — právě proto, že se dnes neví, jak dobře si mořští živočichové na opakované vlny horka zvyknou."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 429,
+              "end": 432
+            },
+            "matchedText": "1,3",
+            "messageCs": "Číslo „1,3“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „1,3 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[429,432]: 1,3"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 436,
+              "end": 448
+            },
+            "matchedText": "6,7 procenta",
+            "messageCs": "Číslo „6,7 procenta“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „6,7 procenta — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[436,448]: 6,7 procenta"
+          }
+        ],
+        "soft": [
+          {
+            "block": "procJeToDulezite",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 200
+            },
+            "matchedText": "Odhady dopadů oteplování na rybí populace zatím většinou pracují s pozvolným ohříváním, a krátké vlny horka do nich přidávají další ztráty — což se dotýká toho, kolik ryb budou moře vůbec schopna dát.",
+            "messageCs": "Tato věta má 32 slov a je moc dlouhá: „Odhady dopadů oteplování na rybí populace zatím většinou pracují s pozvolným oh…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ procJeToDulezite[0,200]: Odhady dopadů oteplování na rybí populace zatím většinou pracují s pozvolným ohříváním, a krátké vlny horka do nich přidávají další ztráty — což se dotýká toho, kolik ryb budou moře vůbec schopna dát."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=17.65",
+            "messageCs": "Věty jsou v průměru moc dlouhé (17,6 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=17.65"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7214529527",
+        "title": "Diet quality and environmental sustainability: integrating dietary indices and planetary impacts",
+        "abstract": "Dietary patterns are major determinants of nutritional status and environmental sustainability. Despite growing interest in sustainable diets, limited research has examined how dietary carbon footprints differ across age groups and how age-specific dietary behaviors interact with diet quality to shape environmental impact. To assess dietary carbon footprints across age groups and determine how differences in food consumption patterns contribute to variation in CO 2 -equivalent emissions, while examining the relationship between diet quality and environmental impact across the lifespan to identify age-specific contributors to dietary emissions. This observational, descriptive study estimated diet-related CO 2 -equivalent emissions from dietary intake data obtained from 653 food frequency questionnaires (FFQs) collected from children assessed at 6, 12, 24, 36, and 48 months ( n = 114, 110, 93, 85, and 45, respectively; 54.4–62.2% male) and adults aged 18–50, 51–65, and 66–95 years ( n = 21, 102 and 83, respectively; 32.4–33.3% male). Demographic, lifestyle, anthropometric, and dietary intake data were collected, and CO 2 -equivalent emissions per kilogram of food consumed and dietary indices were calculated. Dietary CO 2 -equivalent emissions varied across age and BMI groups and were strongly associated with dietary composition. Animal-source foods, particularly meat and dairy, were the main contributors. Younger adults had the highest emissions, associated with greater consumption of red and processed meat and ultra-processed foods, whereas older adults showed more plant-based dietary patterns associated with lower emissions. Diet quality indices differed in their ability to capture environmentally sustainable dietary patterns, with the Planetary Health Diet Index (PHDI) and American Cancer Society 2020 (ACS-2020) dietary index, showing the strongest inverse associations with emissions. These findings highlight the importance of promoting plant-rich, minimally processed dietary patterns across the lifespan to support both human health and environmental sustainability.",
+        "date": "2026-09-27",
+        "url": "https://doi.org/10.1186/s41043-026-01460-1",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1186/s41043-026-01460-1",
+        "openAlexId": "W7214529527",
+        "subfield": {
+          "id": "subfields/2303",
+          "name": "Ecology"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T11259",
+          "name": "Agriculture Sustainability and Environmental Impact"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "María Gil-Matos",
+          "Aida Zapico",
+          "Silvia García",
+          "Cristina Bouzas",
+          "Marina Ródenas-Munar",
+          "Miguel Gueimonde",
+          "Josep A. Tur",
+          "Sónia González"
+        ],
+        "venue": "Journal of Health Population and Nutrition",
+        "indexedDate": "2026-09-28",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7288,
+          "everydayRelevance": 1,
+          "freshness": 0.9286,
+          "credibility": 0.895,
+          "total": 0.864,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 1,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.2414
+          },
+          "everydayDomains": [
+            "food",
+            "health",
+            "family",
+            "ageing"
+          ],
+          "subfieldKey": "subfields/2303",
+          "evidence": [
+            "total 0.8640 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.73 = P 0.77 − 0.45×t 0.00 − 0.15×j 0.24",
+            "outcome verbs (v 0.50): lowers, associated with",
+            "recognisable subjects (s 1.00): children, adults, older adults, plants",
+            "quantified effect (q 1): percentage, sample size",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.24): 7/290 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 4 domain(s) — food, health, family, ageing",
+            "everyday terms (11): food, diet, dietary, meat, dairy, ultra-processed, health, cancer, children, older adults, lifespan",
+            "freshness 0.93: 1 day(s) old (effective date 2026-09-28)",
+            "credibility 0.90 = 0.40×c1 1.00 + 0.25×c2 1.00 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Journal of Health Population and Nutrition",
+            "c2 1.00: n = 114110",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1186/s41043-026-01460-1)"
+      },
+      "summary": {
+        "souhrn": "Uhlíková stopa jídelníčku se výrazně liší podle věku — a hlavním rozdílem je, kolik masa a mléčných výrobků na talíři končí. Vědci přepočítali dotazníky o stravování malých dětí a dospělých na množství skleníkových plynů, které se uvolní při výrobě snědených potravin. Nejvyšší stopu měli nejmladší dospělí, kteří jedli nejvíc červeného a zpracovaného masa a průmyslově zpracovaných jídel; nejstarší účastníci jedli víc rostlinné stravy a jejich stopa byla nižší. Zajímavé je, že ne každé „zdravé\" skóre jídelníčku jde ruku v ruce s nižšími emisemi — nejlépe to vystihly jen některé hodnotící indexy. Jde o popisnou studii, která ukazuje souvislosti, nikoli příčinu a následek.",
+        "podrobneVysvetleni": "Vědci vyšli z dotazníků o tom, jak často lidé jedí jednotlivé potraviny (food frequency questionnaire). Sešlo se jich něco přes šest set — konkrétně 653 vyplněných přehledů jídelníčku. Část pocházela od malých dětí, jejichž stravu rodiče popisovali opakovaně: nejprve v půl roce věku, pak v jednom roce, ve dvou, ve třech a ve čtyřech letech. Zbytek vyplnili dospělí rozdělení do tří skupin — mladší (osmnáct až padesát let), střední (jednapadesát až pětašedesát) a nejstarší (šestašedesát až pětadevadesát let). Ke každé potravině pak badatelé přiřadili, kolik skleníkových plynů přepočtených na oxid uhličitý se uvolní při výrobě jednoho kilogramu, a sečetli to. Největší podíl na stopě měly potraviny živočišného původu, především maso a mléčné výrobky. Nejvyšší emise vycházely nejmladším dospělým, což souviselo s vyšší spotřebou červeného a zpracovaného masa a průmyslově zpracovaných jídel. Starší účastníci jedli více rostlinné stravy a jejich jídelníček zatěžoval klima méně. Autoři také porovnali několik způsobů, jak se hodnotí kvalita stravy, a zjistili, že se v tomto ohledu liší: nejtěsněji s nižšími emisemi souvisel index planetárně zdravé stravy (Planetary Health Diet Index) a index Americké onkologické společnosti z roku 2020 — čím lepší skóre, tím nižší uhlíková stopa. Jinými slovy, jídelníček bohatý na rostliny a chudý na průmyslově zpracovaná jídla prospívá podle autorů zdraví i prostředí zároveň.",
+        "procJeToDulezite": "Ukazuje, že běžná rozhodnutí u nákupního vozíku — kolik masa a hotových jídel koupíme — mají měřitelný dopad nejen na zdraví, ale i na množství skleníkových plynů, a že obojí se často dá zlepšit současně.",
+        "poznamkaKOmezenim": "Jde o pozorovací a popisnou studii, která neprokazuje příčinu a následek, a některé věkové skupiny byly velmi malé — nejmladších dospělých se zúčastnila jen zhruba dvacítka lidí, takže jejich výsledky je třeba brát jako předběžné."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 149,
+              "end": 152
+            },
+            "matchedText": "653",
+            "messageCs": "Číslo „653“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „653 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[149,152]: 653"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 985,
+              "end": 1290
+            },
+            "matchedText": "Autoři také porovnali několik způsobů, jak se hodnotí kvalita stravy, a zjistili, že se v tomto ohledu liší: nejtěsněji s nižšími emisemi souvisel index planetárně zdravé stravy (Planetary Health Diet Index) a index Americké onkologické společnosti z roku 2020 — čím lepší skóre, tím nižší uhlíková stopa.",
+            "messageCs": "Tato věta má 46 slov a je moc dlouhá: „Autoři také porovnali několik způsobů, jak se hodnotí kvalita stravy, a zjistil…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[985,1290]: Autoři také porovnali několik způsobů, jak se hodnotí kvalita stravy, a zjistili, že se v tomto ohledu liší: nejtěsněji s nižšími emisemi souvisel index planetárně zdravé stravy (Planetary Health Diet Index) a index Americké onkologické společnosti z roku 2020 — čím lepší skóre, tím nižší uhlíková stopa."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=21.19",
+            "messageCs": "Věty jsou v průměru moc dlouhé (21,2 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=21.19"
+          }
+        ],
+        "soft": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=2",
+            "messageCs": "Počet vět delších než 30 slov: 2. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=2"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=48.4",
+            "messageCs": "Text se celkově čte těžko (index 48 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=48.4"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7214545904",
+        "title": "Local climate modifies associations between environmental exposures and paediatric asthma hospitalisation",
+        "abstract": "Paediatric asthma hospitalisations have marked seasonal peaks, but it remains unclear whether associations with environmental exposures vary under different local climatic conditions. This study aimed to quantify regional- and season-specific associations between environmental factors and paediatric asthma hospitalisations. We conducted a retrospective ecological time-series study in Australia using statewide inpatient administrative records, including all asthma hospitalisations among children and adolescents from 2003 to 2019 in three previously identified high-risk local government areas with contrasting climatic characteristics. Environmental exposures included meteorological variables, air pollutants, and vegetation greenness. Associations were estimated using distributed lag non-linear models, and random forest was used to assess predictor importance. A total of 11,177 hospitalisations were analysed. Environmental associations showed substantial regional and seasonal heterogeneity. Higher vegetation greenness was associated with increased hospitalisation risk across all regions, with the strongest association observed in the tropical monsoon/rainforest region (IRR 1.65, 95% CI 1.29–2.11). Higher mean temperature was inversely associated with risk in all regions, with an estimated 5–8% lower risk per 1 °C increase. By contrast, air pollutant effects were region- and season-dependent, with the largest estimates observed in the tropical savannah wet season, particularly for SO₂ (IRR 2.11, 95% CI 1.56–2.85). Variable-importance analyses consistently identified vegetation greenness and temperature as leading predictors across climatic settings. These findings suggest that associations between environmental exposures and paediatric asthma hospitalisations vary by region and season. Local climatic context may partly explain this heterogeneity, supporting further investigation of region- and season-specific approaches to asthma risk surveillance and prevention.",
+        "date": "2026-09-27",
+        "url": "https://doi.org/10.1038/s41598-026-73019-3",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1038/s41598-026-73019-3",
+        "openAlexId": "W7214545904",
+        "subfield": {
+          "id": "subfields/2307",
+          "name": "Health, Toxicology and Mutagenesis"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T11244",
+          "name": "Climate Change and Health Impacts"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Jialu Wang",
+          "Javier Cortés-Ramírez",
+          "Janet Davies",
+          "Wenbiao Hu"
+        ],
+        "venue": "Scientific Reports",
+        "indexedDate": "2026-09-28",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7942,
+          "everydayRelevance": 0.9,
+          "freshness": 0.9286,
+          "credibility": 0.745,
+          "total": 0.8411,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.75,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.5556
+          },
+          "everydayDomains": [
+            "health",
+            "weather",
+            "family"
+          ],
+          "subfieldKey": "subfields/2307",
+          "evidence": [
+            "total 0.8411 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.79 = P 0.88 − 0.45×t 0.00 − 0.15×j 0.56",
+            "outcome verbs (v 1.00): increased, increases, lowers, prevention, associated with",
+            "recognisable subjects (s 0.75): children, adolescents, forests",
+            "quantified effect (q 1): percentage, 95% CI",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.56): 14/252 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.90: 3 domain(s) — health, weather, family",
+            "everyday terms (3): asthma, climate, children",
+            "freshness 0.93: 1 day(s) old (effective date 2026-09-28)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Scientific Reports",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1038/s41598-026-73019-3)"
+      },
+      "summary": {
+        "souhrn": "Australští badatelé prošli 11 177 hospitalizací dětí a dospívajících kvůli astmatu z let 2003 až 2019. Porovnávali tři australské okresy s odlišným podnebím a k tomu počasí, znečištění ovzduší a to, jak zelená byla okolní krajina. Ve všech třech přibývalo hospitalizací v obdobích s bujnější zelení; nejvíc v tropické oblasti s monzuny a deštným lesem, asi 1,65krát víc než obvykle. S vyšší průměrnou teplotou jich naopak ubývalo, o 5 až 8 % na každý stupeň Celsia — tedy zhruba o jednu hospitalizaci z dvaceti až z dvanácti. Špinavý vzduch se projevil jen v některých oblastech a ročních obdobích, takže jedno společné varování pro celou zemi by podle autorů nestačilo.",
+        "podrobneVysvetleni": "Vědci pracovali s úředními záznamy nemocnic o všech přijetích kvůli astmatu u dětí a dospívajících ve třech okresech Austrálie. Ty byly vybrány už dřív jako rizikové a mají odlišné podnebí. Ke každému dni přiřadili teplotu, vlhkost, koncentrace znečišťujících látek a takzvanou zelenost krajiny, tedy satelitní údaj o tom, kolik je kolem živé vegetace. Souvislosti počítali modely, které umějí zachytit i opožděný účinek — dnešní počasí se totiž na počtu přijetí může projevit až za několik dní. Vedle toho použili metodu zvanou náhodný les (random forest), počítačový postup, který porovná, který faktor počty předpovídá nejlépe. Zelenost a teplota skončily na prvních místech ve všech třech oblastech. Vyšší zelenost šla ruku v ruce s vyšším počtem hospitalizací; v tropické oblasti s monzuny byl odhad 1,65násobku, přičemž nejistota výpočtu sahá zhruba od 1,3 do 2,1 násobku. Naopak teplejší dny znamenaly hospitalizací méně. U znečištění se výsledky lišily podle místa i sezony. Největší hodnota vyšla pro oxid siřičitý (SO₂) v deštivém období tropické savany, a to přes dvojnásobek běžného počtu. Autoři z toho nevyvozují, že by za astma mohla zeleň sama o sobě; zelenost spíš zastupuje období, kdy je v ovzduší hodně pylu a plísní. Praktický závěr zní, že předpovědi rizika a preventivní opatření dávají smysl spíš po regionech a ročních obdobích než plošně.",
+        "procJeToDulezite": "Rodiče dětí s astmatem i školy tak vědí, že rizikové období není všude stejné a že se řídí místním počasím a vegetací, ne jedním celostátním kalendářem.",
+        "poznamkaKOmezenim": "Jde o srovnání celkových počtů a průměrů ve třech vybraných okresech, ne o sledování jednotlivých dětí, takže výsledky ukazují souvislost, nikoli prokázanou příčinu, a jinde nemusí platit stejně."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 859,
+              "end": 862
+            },
+            "matchedText": "1,3",
+            "messageCs": "Číslo „1,3“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „1,3 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[859,862]: 1,3"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 866,
+              "end": 869
+            },
+            "matchedText": "2,1",
+            "messageCs": "Číslo „2,1“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „2,1 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[866,869]: 2,1"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1075,
+              "end": 1086
+            },
+            "matchedText": "dvojnásobek",
+            "messageCs": "Číslo „dvojnásobek“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „dvojnásobek — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1075,1086]: dvojnásobek"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 27,
+              "end": 33
+            },
+            "matchedText": "11 177",
+            "messageCs": "Číslo „11 177“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „11 177 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[27,33]: 11 177"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 33,
+              "end": 43
+            },
+            "matchedText": " hospitali",
+            "messageCs": "Text opisuje původní název článku („ hospitali“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[33,43]:  hospitali"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 255,
+              "end": 265
+            },
+            "matchedText": " hospitali",
+            "messageCs": "Text opisuje původní název článku („ hospitali“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[255,265]:  hospitali"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 486,
+              "end": 496
+            },
+            "matchedText": " hospitali",
+            "messageCs": "Text opisuje původní název článku („ hospitali“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[486,496]:  hospitali"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 704,
+              "end": 878
+            },
+            "matchedText": "Vyšší zelenost šla ruku v ruce s vyšším počtem hospitalizací; v tropické oblasti s monzuny byl odhad 1,65násobku, přičemž nejistota výpočtu sahá zhruba od 1,3 do 2,1 násobku.",
+            "messageCs": "Tato věta má 31 slov a je moc dlouhá: „Vyšší zelenost šla ruku v ruce s vyšším počtem hospitalizací; v tropické oblast…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[704,878]: Vyšší zelenost šla ruku v ruce s vyšším počtem hospitalizací; v tropické oblasti s monzuny byl odhad 1,65násobku, přičemž nejistota výpočtu sahá zhruba od 1,3 do 2,1 násobku."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 750,
+              "end": 760
+            },
+            "matchedText": " hospitali",
+            "messageCs": "Text opisuje původní název článku („ hospitali“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[750,760]:  hospitali"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 908,
+              "end": 918
+            },
+            "matchedText": " hospitali",
+            "messageCs": "Text opisuje původní název článku („ hospitali“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[908,918]:  hospitali"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=19.22",
+            "messageCs": "Věty jsou v průměru moc dlouhé (19,2 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=19.22"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7214542142",
+        "title": "Investigating the Impact of El Niño–Southern Oscillation on Rangeland Productivity in the Limpopo Province, South Africa",
+        "abstract": "ABSTRACT The El Niño–Southern Oscillation (ENSO) is a major driver of climate variability that influences rainfall patterns and vegetation productivity across semi‐arid regions of southern Africa. Understanding how ENSO affects rangeland productivity is essential for improving climate adaptation and sustainable livestock management in Limpopo Province, South Africa. This study investigated the influence of ENSO on rangeland productivity between 1999 and 2024 across 10 representative sites in Limpopo Province. Dry Matter Productivity (DMP) derived from the Copernicus Global Land Service was analysed together with seasonal rainfall and the Oceanic Niño Index (ONI). Long‐term trends were evaluated using the Mann–Kendall trend test and Sen's slope estimator, while standardized anomaly analyses and ENSO phase comparisons were used to assess rainfall and vegetation variability. Rainfall trends were generally weak and statistically non‐significant, with a significant decrease detected only at Lephalale (τ = −0.34, p = 0.017), despite pronounced interannual variability. In contrast, significant increasing trends in annual DMP were observed at Mhinga (τ = 0.343, p = 0.015), Mooketsi (τ = 0.415, p = 0.003), and Marble Hall (τ = 0.394, p = 0.005), with Sen's slope estimates ranging from 0.53 to 0.98 kg DM ha⁻¹ day⁻¹ year⁻¹ across these sites. Long‐term mean monthly DMP revealed a distinct seasonal cycle, with greening during early summer, peak productivity from January to April, and senescence during the dry winter months. ENSO phase comparisons showed that La Niña years were generally associated with above‐average November–December–January (NDJ) rainfall, whereas El Niño years exhibited below‐average rainfall. Higher February–March–April (FMA) DMP anomalies followed above‐normal NDJ rainfall conditions, while lower productivity occurred following below‐normal conditions. Spatial differences were evident, with the eastern and southern regions consistently exhibiting higher productivity than the drier northern and western regions. These findings demonstrate that ENSO influences rangeland productivity primarily through its effect on seasonal rainfall. Integrating ENSO‐based climate information with satellite‐derived vegetation monitoring can strengthen drought preparedness, improve seasonal grazing management, and support climate‐resilient rangeland management in semi‐arid South Africa.",
+        "date": "2026-09-27",
+        "url": "https://doi.org/10.1002/joc.70608",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1002/joc.70608",
+        "openAlexId": "W7214542142",
+        "subfield": {
+          "id": "subfields/2308",
+          "name": "Management, Monitoring, Policy and Law"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T12467",
+          "name": "Rangeland Management and Livestock Ecology"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Phumzile Maluleke",
+          "Mokhele Edmond Moeletsi",
+          "Mitsuru Tsubo"
+        ],
+        "venue": "International Journal of Climatology",
+        "indexedDate": "2026-09-28",
+        "referencedWorksCount": 32,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7481,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.9286,
+          "credibility": 0.745,
+          "total": 0.8413,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.25,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.0296
+          },
+          "everydayDomains": [
+            "weather",
+            "transport",
+            "work"
+          ],
+          "subfieldKey": "subfields/2308",
+          "evidence": [
+            "total 0.8413 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.75 = P 0.75 − 0.45×t 0.00 − 0.15×j 0.03",
+            "outcome verbs (v 1.00): improves, lowers, detected, decreases, associated with",
+            "recognisable subjects (s 0.25): drivers",
+            "quantified effect (q 1): p-value",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.03): 1/338 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 3 domain(s) — weather, transport, work",
+            "everyday terms (5): climate, drought, rainfall, driver, productivity",
+            "freshness 0.93: 1 day(s) old (effective date 2026-09-28)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in International Journal of Climatology",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1002/joc.70608)"
+      },
+      "summary": {
+        "souhrn": "Jestli na jihoafrických pastvinách naroste dost trávy, se dá tušit už na Vánoce — podle toho, co dělá Tichý oceán. Vědci porovnali data z let 1999 až 2024 pro deset míst v provincii Limpopo. Sledovali satelitní odhady množství suché rostlinné hmoty, srážky a index El Niño (Oceanic Niño Index), který popisuje střídání teplejší a chladnější fáze Tichého oceánu. V letech s chladnou fází (La Niña) pršelo od listopadu do ledna nadprůměrně a pastviny pak od února do dubna vyprodukovaly víc hmoty. V letech s teplou fází (El Niño) to bylo naopak. Samotné srážky přitom za těch pětadvacet let nikde výrazně neubývaly ani nepřibývaly — jedinou výjimkou bylo město Lephalale, kde je pokles průkazný.",
+        "podrobneVysvetleni": "Autoři vybrali deset míst napříč provincií Limpopo a pro každé stáhli družicové odhady takzvané produkce suché hmoty, tedy kolik kilogramů rostlinného materiálu pastvina vytvoří na hektar za den. K tomu přidali naměřené srážky a index El Niño. Trendy hodnotili statistickými testy, které umí rozlišit skutečnou změnu od běžného kolísání mezi roky.\n\nU srážek vyšly trendy většinou slabé a statisticky neprůkazné, i když rozdíly mezi jednotlivými roky byly velké. Naproti tomu produkce rostlinné hmoty rostla na třech místech — v Mhinze, Mooketsi a Marble Hall — zhruba o půl kilogramu až jeden kilogram suché hmoty na hektar a den každým rokem. Za dvacet pět let se to nasčítá do znatelného rozdílu.\n\nRoční rytmus je zřetelný: zelenání na začátku léta, vrchol od ledna do dubna a usychání v suché zimě. Klíčové je, že po deštivém přelomu roku následovala vydatnější produkce, po suchém slabší. Rozdíly jsou i v prostoru — východ a jih provincie jsou stabilně úrodnější než sušší sever a západ.\n\nPro chovatele dobytka z toho plyne praktický závěr: informace o fázi El Niño spolu s družicovým sledováním porostů dávají několikaměsíční předstih. Dost na to, aby se dalo přizpůsobit počty zvířat nebo zásoby krmiva dřív, než přijde nedostatek pastvy.",
+        "procJeToDulezite": "Miliony lidí v jižní Africe závisejí na dobytku, který se pase na volných pastvinách, a sucho tam znamená hubené roky i pro rodiny, které samy žádný dobytek nemají. Když se dá nedostatek pastvy odhadnout s několikaměsíčním předstihem, dá se na něj aspoň částečně připravit.",
+        "poznamkaKOmezenim": "Jde o deset vybraných míst v jedné provincii za pětadvacet let, takže závěry nemusí platit jinde, a rostoucí produkce rostlinné hmoty na třech místech může mít i jiné příčiny než počasí — třeba změny ve způsobu hospodaření, které studie nesledovala."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "warn",
+        "hard": [],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 264,
+              "end": 272
+            },
+            "matchedText": " El Niño",
+            "messageCs": "Text opisuje původní název článku („ El Niño“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[264,272]:  El Niño"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 42,
+              "end": 51
+            },
+            "matchedText": " Limpopo ",
+            "messageCs": "Text opisuje původní název článku („ Limpopo “). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[42,51]:  Limpopo "
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 234,
+              "end": 242
+            },
+            "matchedText": " El Niño",
+            "messageCs": "Text opisuje původní název článku („ El Niño“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[234,242]:  El Niño"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 462,
+              "end": 643
+            },
+            "matchedText": "Naproti tomu produkce rostlinné hmoty rostla na třech místech — v Mhinze, Mooketsi a Marble Hall — zhruba o půl kilogramu až jeden kilogram suché hmoty na hektar a den každým rokem.",
+            "messageCs": "Tato věta má 30 slov a je moc dlouhá: „Naproti tomu produkce rostlinné hmoty rostla na třech místech — v Mhinze, Mooke…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[462,643]: Naproti tomu produkce rostlinné hmoty rostla na třech místech — v Mhinze, Mooketsi a Marble Hall — zhruba o půl kilogramu až jeden kilogram suché hmoty na hektar a den každým rokem."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 1062,
+              "end": 1070
+            },
+            "matchedText": " El Niño",
+            "messageCs": "Text opisuje původní název článku („ El Niño“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[1062,1070]:  El Niño"
+          },
+          {
+            "block": "poznamkaKOmezenim",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 34,
+              "end": 42
+            },
+            "matchedText": " provinc",
+            "messageCs": "Text opisuje původní název článku („ provinc“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ poznamkaKOmezenim[34,42]:  provinc"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=18.37",
+            "messageCs": "Věty jsou v průměru moc dlouhé (18,4 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=18.37"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7214549324",
+        "title": "Clean cooking fuel transitions among tribal households in Odisha under the Pradhan Mantri Ujjwala Yojana",
+        "abstract": "The sustainable transition from traditional biomass to clean cooking fuels remains one of the most pressing yet unresolved challenges for development in the Global South. Despite considerable policy effort, marginalized communities continue to lag behind in cleaner energy transitions. Against this backdrop, the study examines trends, determinants, and policy interventions associated with clean cooking fuel use among Scheduled Tribe (ST) households in Odisha, with particular emphasis on the Pradhan Mantri Ujjwala Yojana (PMUY). The analysis draws on unit-level data from the fourth (2015–16) and fifth (2019–21) rounds of the National Family Health Survey, covering 14,542 households. Despite a notable increase in clean fuel adoption from 5.3 percent in NFHS-4 to 12.6 percent in NFHS-5, overall penetration remains critically low. Binary probit and logit models reveal that urban residence, female headship, higher educational attainment, and greater household wealth significantly increase the likelihood of clean cooking fuel adoption. Conversely, larger family size, ownership of agricultural land or livestock, and outdoor cooking practices significantly reduce the probability of transition. Further, the Propensity Score Matching—Difference-in-Differences (PSM-DID) analysis indicates a higher increase in LPG adoption among BPL households during the PMUY period. These findings indicate the need for integrated, context-sensitive policy interventions that extend beyond connection-based targets to address affordability, supply-side challenges, behavioural change, and women’s empowerment within tribal communities.",
+        "date": "2026-09-27",
+        "url": "https://doi.org/10.1007/s43621-026-04857-4",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1007/s43621-026-04857-4",
+        "openAlexId": "W7214549324",
+        "subfield": {
+          "id": "subfields/2310",
+          "name": "Pollution"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T11336",
+          "name": "Energy and Environment Impacts"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Diptimayee Naik",
+          "Ranajit Bera",
+          "Munmun Mohapatra",
+          "Rashmi Ranjan Behera",
+          "Ramya Ranjan Behera"
+        ],
+        "venue": "Discover Sustainability",
+        "indexedDate": "2026-09-28",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7033,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.9286,
+          "credibility": 0.895,
+          "total": 0.8444,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.75,
+            "q": 0,
+            "c": 1,
+            "t": 0,
+            "j": 0.2283
+          },
+          "everydayDomains": [
+            "food",
+            "energy",
+            "health",
+            "family"
+          ],
+          "subfieldKey": "subfields/2310",
+          "evidence": [
+            "total 0.8444 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.70 = P 0.74 − 0.45×t 0.00 − 0.15×j 0.23",
+            "outcome verbs (v 1.00): reduces, increases, extends, associated with",
+            "recognisable subjects (s 0.75): women, households (title, ×2)",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.23): 5/219 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 4 domain(s) — food, energy, health, family",
+            "everyday terms (5): cooking, energy, fuel, health, family",
+            "freshness 0.93: 1 day(s) old (effective date 2026-09-28)",
+            "credibility 0.90 = 0.40×c1 1.00 + 0.25×c2 1.00 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Discover Sustainability",
+            "c2 1.00: n = 14542",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1007/s43621-026-04857-4)"
+      },
+      "summary": {
+        "souhrn": "V indickém státě Urísa stoupl podíl domácností původních obyvatel, které vaří na čistém palivu, z 5,3 % na 12,6 %. Je to posun zhruba z jedné domácnosti z dvaceti na jednu z osmi. Přesto většina rodin dál vaří na dřevě a jiné biomase. Vědci porovnali dva celostátní průzkumy zdraví rodin, mezi nimiž uplynulo pět let, a prošli data od 14 542 domácností. Ukázalo se, že vládní program rozdávající chudým rodinám připojení k plynové lahvi adopci plynu skutečně zrychlil, samotné připojení ale k trvalé změně nestačí.",
+        "podrobneVysvetleni": "Autoři pracovali s údaji o jednotlivých domácnostech ze čtvrtého a pátého kola indického Národního průzkumu zdraví rodin. Zaměřili se na domácnosti z takzvaných registrovaných kmenů (Scheduled Tribes), což je oficiální indická kategorie pro původní obyvatelstvo. Statistickými modely hledali, co odlišuje rodiny, které přešly na čisté palivo, od těch ostatních. Čisté palivo tu znamená hlavně zkapalněný plyn v lahvi (LPG) místo dřeva, sušeného trusu či zbytků z polí.\n\nPravděpodobnost přechodu zvyšoval život ve městě, vyšší vzdělání, větší majetek domácnosti a také to, když byla hlavou rodiny žena. Naopak klesala u početnějších rodin, u majitelů půdy nebo dobytka a tam, kde se vaří venku. Není divu: kdo má vlastní pole a zvířata, má i palivo zadarmo, zatímco plyn se musí kupovat.\n\nÚčinek vládního programu Pradhan Mantri Ujjwala Yojana, který chudým rodinám hradí připojení k plynové lahvi, autoři odhadli metodou, jež porovnává podobné domácnosti s podporou a bez ní. Mezi rodinami pod hranicí chudoby vzrostlo používání plynu v době programu více než u srovnatelných domácností mimo něj.\n\nZávěr autorů je střízlivý. Rozdat připojení je snadné, těžší je zajistit, aby si rodiny lahev opakovaně kupovaly, aby byla dostupná i v odlehlých vesnicích a aby se změnily zvyklosti při vaření.",
+        "procJeToDulezite": "Kouř z vaření na dřevě poškozuje plíce hlavně ženám a dětem, které tráví nejvíc času u ohniště. Studie ukazuje, že samotné rozdání plynových přípojek problém neřeší, pokud si rodiny nemohou dovolit palivo znovu a znovu kupovat.",
+        "poznamkaKOmezenim": "Jde o vyhodnocení dotazníkových dat z jednoho indického státu, takže zjištěné souvislosti nemusí platit jinde a odhad účinku programu se opírá o statistické srovnání podobných domácností, nikoli o kontrolovaný experiment."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "warn",
+        "hard": [],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 335,
+              "end": 341
+            },
+            "matchedText": "14 542",
+            "messageCs": "Číslo „14 542“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „14 542 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[335,341]: 14 542"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 788,
+              "end": 975
+            },
+            "matchedText": "Účinek vládního programu Pradhan Mantri Ujjwala Yojana, který chudým rodinám hradí připojení k plynové lahvi, autoři odhadli metodou, jež porovnává podobné domácnosti s podporou a bez ní.",
+            "messageCs": "Tato věta má 27 slov a je moc dlouhá: „Účinek vládního programu Pradhan Mantri Ujjwala Yojana, který chudým rodinám hr…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[788,975]: Účinek vládního programu Pradhan Mantri Ujjwala Yojana, který chudým rodinám hradí připojení k plynové lahvi, autoři odhadli metodou, jež porovnává podobné domácnosti s podporou a bez ní."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 812,
+              "end": 842
+            },
+            "matchedText": " Pradhan Mantri Ujjwala Yojana",
+            "messageCs": "Text opisuje původní název článku („ Pradhan Mantri Ujjwala Yojana“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[812,842]:  Pradhan Mantri Ujjwala Yojana"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=17.56",
+            "messageCs": "Věty jsou v průměru moc dlouhé (17,6 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=17.56"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-09-29T10:52:21.824Z",
+  "generatedOn": "2026-09-29",
+  "schemaVersion": 1
+}

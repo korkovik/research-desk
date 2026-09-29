@@ -1096,6 +1096,46 @@
       "titleKey": "associationofallergicrhinitiswithpolysomnographicarousalindicesinchildrenwithsleepdisorderedbreathing",
       "publishedOn": "2026-09-22",
       "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7214540540",
+      "doi": "10.1111/gcb.71123",
+      "arxivId": null,
+      "titleKey": "projectingimpactsofmarineheatwavesandtheireffectsonlongtermchangesinmarineecosystemsoverthe21stcentury",
+      "publishedOn": "2026-09-29",
+      "category": "nature-climate"
+    },
+    {
+      "openalexId": "W7214529527",
+      "doi": "10.1186/s41043-026-01460-1",
+      "arxivId": null,
+      "titleKey": "dietqualityandenvironmentalsustainabilityintegratingdietaryindicesandplanetaryimpacts",
+      "publishedOn": "2026-09-29",
+      "category": "nature-climate"
+    },
+    {
+      "openalexId": "W7214545904",
+      "doi": "10.1038/s41598-026-73019-3",
+      "arxivId": null,
+      "titleKey": "localclimatemodifiesassociationsbetweenenvironmentalexposuresandpaediatricasthmahospitalisation",
+      "publishedOn": "2026-09-29",
+      "category": "nature-climate"
+    },
+    {
+      "openalexId": "W7214542142",
+      "doi": "10.1002/joc.70608",
+      "arxivId": null,
+      "titleKey": "investigatingtheimpactofelninosouthernoscillationonrangelandproductivityinthelimpopoprovincesouthafrica",
+      "publishedOn": "2026-09-29",
+      "category": "nature-climate"
+    },
+    {
+      "openalexId": "W7214549324",
+      "doi": "10.1007/s43621-026-04857-4",
+      "arxivId": null,
+      "titleKey": "cleancookingfueltransitionsamongtribalhouseholdsinodishaunderthepradhanmantriujjwalayojana",
+      "publishedOn": "2026-09-29",
+      "category": "nature-climate"
     }
   ]
 }
