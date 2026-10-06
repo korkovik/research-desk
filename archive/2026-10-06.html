@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Psychologie a chování – 6. října 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Psychologie a chování</h1>
+<p class="dateline"><time datetime="2026-10-06">6. října 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 5</p>
+<div class="summary"><p><span class="lead">Klasická hudba se v nemocnicích používá k uklidnění pacientů.</span> Na nádražích a čerpacích stanicích ji ale někde pouštějí nahlas proto, aby odtud vyhnala lidi bez domova. Americký tým proto pozval houslistu do jídelen zařízení pro lidi bez domova i do nemocniční jídelny a před hraním a po něm se lidí ptal, jak se cítí. Obě skupiny — 66 lidí bez domova a 47 lidí z nemocnice, tedy zaměstnanců, pacientů a jejich blízkých, kteří sloužili pro srovnání — po hudbě uváděly lepší pocity. U pocitu „mám starosti&quot; se zlepšení projevilo výrazněji u lidí bez domova. Jde o malou pozorovací studii založenou na tom, co lidé sami o sobě řekli, takže výsledek berme jako předběžný.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Jeden hudebník hrál šedesát minut na housle nebo violu. Posluchači vyplnili krátký anonymní dotazník před hraním a znovu poté, co poslouchali alespoň patnáct minut. Dotazník vycházel z běžně používaného testu úzkosti (State-Trait Anxiety Inventory) a obsahoval pět položek: spokojený, ustaraný, napjatý, klidný a rozrušený. Každou lidé hodnotili na čtyřstupňové škále, kde nejnižší stupeň znamenal „vůbec ne&quot; a nejvyšší „velmi silně&quot;. Odpovědí přišlo 66 od lidí bez domova a 47 od lidí v nemocnici. Po hudbě se průměrné hodnocení zlepšilo v obou skupinách. Když autoři porovnali, o kolik se která skupina zlepšila, u většiny pocitů mezi nimi nebyl rozdíl, který by se dal odlišit od náhody — platilo to pro klid, napětí, rozrušení i spokojenost. Jediná výjimka byl pocit starostí: ten u lidí bez domova klesl výrazněji. Autoři tu udávají pravděpodobnost 3,7 procenta, že by takový rozdíl vznikl jen náhodou, což se obvykle bere jako hranice pro statisticky významný nález. Rozdíl se neprojevil ani podle pohlaví, ani podle toho, jak dlouho člověk neměl bydlení. Závěr je střízlivý: živá klasická hudba podle vlastních výpovědí krátkodobě zmírnila úzkost u lidí bez domova zhruba stejně jako u lidí v nemocnici.</p>
+<h3>Proč je to důležité</h3>
+<p>Stejná hudba, kterou někde pouštějí proto, aby lidi bez domova odehnala, na ně podle této studie působí uklidňujícím způsobem — stejně jako na kohokoliv jiného.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Joseph S Wang, Nader Wehbi, Natalie Briggs, Helena Yip, Esteban Hernandez Parra</dd>
+<dt>Časopis</dt>
+<dd>Cureus</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-10-03">3. října 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.7759/cureus.117394" rel="noreferrer">10.7759/cureus.117394</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7218596767" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://www.cureus.com/articles/526990-effect-of-live-classical-music-in-homeless-and-hospital-settings.pdf" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.7759/cureus.117394" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o malou pozorovací studii bez srovnání s tichem či jinou hudbou, postavenou na tom, jak se lidé sami ohodnotili bezprostředně po poslechu, takže o dlouhodobém účinku neříká nic.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 5</p>
+<div class="summary"><p><span class="lead">Dánští vědci se zeptali 2459 dospělých s cukrovkou druhého typu na jejich vztah k jídlu.</span> Použili dotazník na záchvatovité přejídání (binge eating disorder) — tedy opakované epizody, kdy člověk sní velké množství jídla a nedokáže se zastavit. Příznaky vyšly u 72 z nich, tedy u 2,9 % — zhruba u tří lidí ze sta. Nejčastěji šlo o ženy, o lidi s těžkou obezitou a o ty, kdo se cítili psychicky hůř. Lidé s příznaky se navíc o své cukrovce dozvěděli dřív: typicky kolem 52 let věku, zatímco ostatní až kolem 60 let, tedy zhruba o osm let později.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Data pocházejí z dánské studie DD2, která dlouhodobě sleduje lidi s cukrovkou druhého typu. Účastníci vyplnili krátký dotazník na záchvatovité přejídání. Ostatní údaje — hmotnost, léčbu, výsledky krevních testů i další nemoci — vědci dohledali ve státních zdravotních registrech. Šlo o jednorázový snímek situace, ne o sledování v čase.</p>
+<p>Z 2459 oslovených mělo příznaky přejídání 72 lidí, tedy 2,9 % — asi tři ze sta. Dalších 76 lidí, tedy 3,1 % (opět zhruba tři ze sta), mělo potíže v mírnější podobě. Dohromady jde přibližně o každého šestnáctého.</p>
+<p>Zajímavější než samotný počet je profil těchto lidí. Častěji šlo o ženy — příznaky se u nich objevovaly asi o polovinu častěji než u mužů. Nejsilnější souvislost se ukázala u těžké obezity, tedy u indexu tělesné hmotnosti nad 35. Tam byly příznaky mnohonásobně častější, jenže odhad je kvůli malému počtu případů velmi nejistý: statistické rozpětí sahá od zhruba trojnásobku po více než čtyřicetinásobek. Lidé s horší duševní pohodou měli příznaky zhruba dvakrát častěji než ostatní.</p>
+<p>Studie neříká, co je příčina a co následek. Nevíme, jestli přejídání přispělo k dřívějšímu nástupu cukrovky, nebo jestli život s nemocí zhoršil vztah k jídlu. Ukazuje ale, kterým pacientům by lékaři měli věnovat víc pozornosti.</p>
+<h3>Proč je to důležité</h3>
+<p>Potíže s jídlem se u lidí s cukrovkou snadno přehlédnou, protože se schovají za doporučení „zhubněte a jezte méně&quot;. Přitom bez jejich řešení může být léčba cukrovky marná.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Pernille Fiil Nybo, Sidsel Louise Domazet, Michael Einar Røder, Jakob Linnet</dd>
+<dt>Časopis</dt>
+<dd>Diabetic Medicine</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-10-03">3. října 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1111/dme.70489" rel="noreferrer">10.1111/dme.70489</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7218830110" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/dme.70489" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1111/dme.70489" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jednorázové dotazníkové šetření v jedné zemi, které neprokazuje příčinu a následek, a počet lidí s příznaky byl tak malý, že zejména odhad u těžké obezity je velmi nepřesný.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 5</p>
+<div class="summary"><p><span class="lead">Kanadští výzkumníci sledovali 211 dětí, které zažily násilí mezi rodiči; v průměru jim bylo deset let.</span> Jejich rodiče nebo pečující osoby vyplnili dotazníky ve třech časových bodech. Na začátku se dařilo nejlépe dětem s dobrým zdravím a podporou celé rodiny. Při dalších dvou měřeních vystoupila do popředí pomoc zvenčí: vstřícná sociálně-právní ochrana dětí, finanční podpora, později dostupná terapie a opora azylového domu pro ženy. Odolnost dítěte tedy stojí i na službách, které má rodina po ruce.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Studie vychází z takzvané teorie odolnosti (resiliency theory). Ta předpokládá, že dítě zvládne těžkou zkušenost lépe, když má kolem sebe ochranné faktory — vlastní zdroje i oporu okolí. Výzkumníci oslovili pečující osoby 211 dětí z celé Kanady. Dotazníky se vyplňovaly online, a to třikrát v průběhu sledování. Děti pak rozdělili podle míry odolnosti do čtyř skupin: nízká, střední, vysoká a mimořádná.</p>
+<p>Data zpracovali metodou rozhodovacího stromu (decision tree). Ta funguje jako série otázek. Program hledá, která odpověď nejlépe rozdělí děti na odolnější a méně odolné. Při vstupním měření se na prvním místě objevilo zdraví dítěte. Děti v lepším zdravotním stavu patřily častěji mezi mimořádně odolné. Pokud k tomu měly podporu celé rodiny, odolnost ještě stoupala.</p>
+<p>Při druhém měření se nejsilnějším ukazatelem stalo to, jak pečující osoba vnímala sociálně-právní ochranu dětí. Když ji popisovala jako vstřícnou, dítě bývalo odolnější. Přidala-li se ekonomická pomoc, výsledek byl ještě lepší. Při třetím měření hrála hlavní roli dostupná terapie. Doplňovala ji podpora azylového domu pro ženy.</p>
+<p>Všechny tyto souvislosti byly statisticky velmi silné, náhodou se vysvětlit nedají. Nejde ale o důkaz příčiny a následku. Údaje navíc hlásili rodiče, nikoli děti samotné. Autoři z toho vyvozují, že pomoc dětem po zkušenosti s násilím mezi rodiči nemůže stát jen na práci s dítětem a rodinou. Potřebné jsou i fungující služby.</p>
+<h3>Proč je to důležité</h3>
+<p>Pokud dítě zažilo násilí mezi rodiči, nezáleží jen na tom, jak je samo silné. Hodně rozhoduje, zda má rodina po ruce dostupnou terapii, finanční pomoc a úřady, které vnímá jako oporu.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Julia Yates, Glorieuse Uwizeye, C. Nadine Wathen, Tara Mantler</dd>
+<dt>Časopis</dt>
+<dd>Child Abuse &amp; Neglect</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-10-03">3. října 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1016/j.chiabu.2026.108351" rel="noreferrer">10.1016/j.chiabu.2026.108351</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7216479658" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://doi.org/10.1016/j.chiabu.2026.108351" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1016/j.chiabu.2026.108351" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Údaje pocházejí z výpovědí pečujících osob u jednoho vzorku 211 kanadských dětí a ukazují jen souvislosti, nikoli to, že podpora odolnost skutečně způsobila.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-4">
+<p class="paper-counter">Studie 4 z 5</p>
+<div class="summary"><p><span class="lead">Hravá výuka matematiky pomohla páťákům k lepším výsledkům — ale chytrý „učící se společník&quot; (AI Learning Companion) k nim nic navíc nepřidal.</span> Čínští výzkumníci náhodně rozdělili 174 žáků pátých tříd do tří skupin: hra s podporou umělé inteligence, stejná hra bez ní a běžný výklad u tabule. Po dvou týdnech obě herní skupiny počítaly lépe než ta klasická, zatímco mezi sebou se v počtech prakticky nelišily. Rozdíl se ukázal jinde: děti s AI společníkem měly menší úzkost z matematiky a vyšší chuť se učit než obě zbylé skupiny, a to hlavně v tom, že je počítání víc bavilo a víc si na ně věřily. Autoři sami dodávají, že proč to tak funguje, neměřili — jen že to tak vyšlo.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Studie použila experiment s náhodným zařazením jednotlivých žáků, což je u školních výzkumů poctivý postup: o tom, kdo bude v které skupině, nerozhodoval učitel ani výsledky dětí. Zapojilo se 174 čínských žáků pátých tříd, výuka trvala dva týdny a čtyři týdny poté následoval ještě odložený test, aby se vidělo, co z efektu vydrželo. Úzkost z matematiky, motivaci a znalosti měřili vědci třikrát — před začátkem, hned po konci a s odstupem.</p>
+<p>U úzkosti a motivace vyšel rozdíl mezi skupinami statisticky průkazný a podle autorů vysvětlovalo zařazení do skupiny zhruba pětinu rozdílů mezi dětmi (partial η² = ,208 a ,184) — na školní výzkum je to rozdíl, který je vidět. U samotných výsledků v matematice ale AI verze nad hrou bez AI nevyhrála: rozdíl odpovídal Cohenovu d = 0,19, tedy malému posunu, který se snadno ztratí v běžném kolísání výkonu. Motivační náskok se navíc soustředil do dvou věcí — že děti počítání dělaly rády a připadaly si na ně dost dobré. V tom, kolik úsilí matematice věnovaly a jak důležitou ji považovaly, se skupiny nelišily. Při odloženém testu zůstalo pořadí průměrů stejné, ale autoři přiznávají, že párové srovnání v tomto bodě formálně neprovedli.</p>
+<h3>Proč je to důležité</h3>
+<p>Úzkost z matematiky brzdí spoustu dětí víc než nedostatek nadání, a tahle studie naznačuje, kde přesně hledat pomoc: hra zlepší výsledky, ale na strach a chuť do učení možná zabírá spíš to, že má dítě po ruce někoho (či něco) trpělivého. Pro učitele i rodiče to znamená, že „nasadit aplikaci&quot; a „zmírnit úzkost&quot; nejsou totéž.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Jiawei Shao, Jinming Ju, Shupeng Tang</dd>
+<dt>Časopis</dt>
+<dd>BMC Psychology</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-10-03">3. října 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1186/s40359-026-05367-8" rel="noreferrer">10.1186/s40359-026-05367-8</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7218919442" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://doi.org/10.1186/s40359-026-05367-8" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1186/s40359-026-05367-8" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jediný dvoutýdenní experiment se 174 dětmi z jedné země a jednoho ročníku, výhoda v samotných počtech byla malá a autoři sami upozorňují, že vysvětlení, proč AI společník pomohl, přímo neověřovali.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-5">
+<p class="paper-counter">Studie 5 z 5</p>
+<div class="summary"><p><span class="lead">Nedostatek spánku v kombinaci s pravidelným pitím kávy se u dospělých mužů pojí se změnami v drobných regulačních molekulách, které v buňkách tlumí zánět.</span> Vědci porovnali dvě stě mužů ve věku 30 až 50 let rozdělených do čtyř stejně velkých skupin: vyspalí nekávaři, kávaři, nevyspalí a nevyspalí kávaři. U poslední skupiny byly oba sledované „ztlumovače&quot; (miR-30c a miR-127) výrazně potlačené a zánětlivé látky v krvi vyšší. Cukr nalačno jim vyšel v průměru 108,5 mg/dl proti 89,2 mg/dl u kontrolní skupiny — tedy posun z normálu do pásma mírně zvýšených hodnot. Horší byly i hodnoty cholesterolu a tuků v krvi, přičemž samotná káva bez nevyspání se od kontrol lišila jen v hladině cukru.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Vědci odebrali účastníkům krev a změřili v ní jednak hladinu cukru nalačno, tuků a cholesterolu, jednak několik bílkovin, kterými si tělo mezi sebou předává zprávu „probíhá zánět&quot;, i jednu, která zánět naopak tlumí. K tomu přidali měření genové aktivity: sledovali dvě malé regulační molekuly (microRNA), které fungují jako brzdy zánětlivých genů, a dva geny, jež zánět naopak rozjíždějí — NLRP3 a NF-κB p65. U nevyspalých mužů, kteří navíc pravidelně pili kávu, byly obě brzdy výrazně utlumené, zatímco aktivita NF-κB p65 byla zhruba čtyřikrát vyšší než u vyspalých nekávařů. Souběžně jim stouply zánětlivé bílkoviny a klesla ta protizánětlivá. Zvýšený byl i celkový cholesterol, „zlý&quot; LDL cholesterol a triglyceridy, naopak „hodný&quot; HDL cholesterol byl nižší. Zajímavé je, že samotná káva u vyspalých mužů skoro nic nezměnila — jediný rozdíl oproti kontrolám byl v cukru nalačno. Statistická analýza navíc ukázala, že u řady ukazatelů se obě návyky navzájem posilují: dohromady působí víc než součet jejich jednotlivých vlivů. Autoři výslovně mluví o souvislosti, ne o prokázané příčině. Jejich výsledky ale naznačují, kudy by vedla cesta od nedostatku spánku k vyššímu riziku cukrovky a onemocnění srdce a cév — přes dlouhodobě podrážděný zánětlivý systém.</p>
+<h3>Proč je to důležité</h3>
+<p>Chronické nevyspání není jen otázka únavy — podle téhle práce se pojí s měřitelnými změnami v krevním cukru, tucích a zánětu, a káva, kterou si člověk nedostatek spánku vynahrazuje, situaci nejspíš nezlepšuje.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Rasha Muzahem Hatem, Mervat Kamel Kadhom, Hadeel Jabar Neama Almuoswi</dd>
+<dt>Časopis</dt>
+<dd>Scientific Reports</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-10-03">3. října 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1038/s41598-026-74053-x" rel="noreferrer">10.1038/s41598-026-74053-x</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7219075121" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://www.nature.com/articles/s41598-026-74053-x_reference.pdf" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1038/s41598-026-74053-x" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jednorázové měření u dvou set mužů ve věku 30 až 50 let, takže výsledky neplatí automaticky pro ženy ani jiné věkové skupiny a neprokazují příčinu a následek — jen souvislost.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 6. října 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>

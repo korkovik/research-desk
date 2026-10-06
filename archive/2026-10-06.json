@@ -1,0 +1,761 @@
+{
+  "date": "2026-10-06",
+  "categoryKey": "psychology-behaviour",
+  "categoryLabel": "Psychologie a chování",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7218596767",
+        "title": "Effect of Live Classical Music in Homeless and Hospital Settings",
+        "abstract": "IntroductionThe therapeutic effects of classical music in reducing stress have been well documented, particularly in healthcare settings.However, classical music has also been used to discourage unhoused individuals from remaining in public spaces.For example, loud classical music is sometimes played at gas stations and train stations to deter unhoused individuals from lingering in these areas.Our study sought to answer the question of whether exposure to live classical music in an unhoused or homeless population would lead to a similar reduction in anxiety levels compared with staff, patients, and patients' families in a hospital setting. MethodsBrief anonymous surveys were based on the State-Trait Anxiety Inventory (STAI), a validated anxiety questionnaire.A shortened five-item survey was administered to participants seated in the cafeteria of the hospital and also in dining areas of facilities serving the unhoused.A single musician played the violin/viola for 60 minutes, while audience members were asked to rate themselves on a scale of 1 to 4 in categories including content, worried, tense, calm, and upset before and after listening to at least 15 minutes of classical music. ResultsTwo groups were surveyed, including the Hospital Group (N = 47) as the comparison group and the Unhoused Group (N = 66).A Student's t-test was used for analysis.Classical music was associated with improved feelings in both groups.When comparing change scores between groups, improvements were similar for \"calm\" (p = 0.092), \"tense\" (p = 0.678), \"upset\" (p = 0.183), and \"content\" (p = 0.123).\"Worried\" feelings decreased significantly more in the Unhoused Group than in the Hospital Group (p = 0.037).When stratified by gender or duration of housing insecurity, there was no difference in the improvement scores. ConclusionsThis observational study suggests that exposure to live classical music is associated with a self-reported short-term improvement in anxiety levels in the unhoused population.",
+        "date": "2026-10-03",
+        "url": "https://doi.org/10.7759/cureus.117394",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.7759/cureus.117394",
+        "openAlexId": "W7218596767",
+        "subfield": {
+          "id": "subfields/3207",
+          "name": "Social Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T11768",
+          "name": "Music Therapy and Health"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://www.cureus.com/articles/526990-effect-of-live-classical-music-in-homeless-and-hospital-settings.pdf",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Joseph S Wang",
+          "Nader Wehbi",
+          "Natalie Briggs",
+          "Helena Yip",
+          "Esteban Hernandez Parra"
+        ],
+        "venue": "Cureus",
+        "indexedDate": "2026-10-04",
+        "referencedWorksCount": 15,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9743,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.7587,
+          "total": 0.9302,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.1712
+          },
+          "everydayDomains": [
+            "school",
+            "health",
+            "transport",
+            "housing",
+            "family",
+            "mind"
+          ],
+          "subfieldKey": "subfields/3207",
+          "evidence": [
+            "total 0.9302 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.97 = P 1.00 − 0.45×t 0.00 − 0.15×j 0.17",
+            "outcome verbs (v 1.00): reduction, improved, improvement, shortened, decreased, associated with",
+            "recognisable subjects (s 1.00): participants, patients, students, families, hospitals (title, ×2)",
+            "quantified effect (q 1): p-value, sample size",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.17): 5/292 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 6 domain(s) — school, health, transport, housing, family, mind",
+            "everyday terms (10): student, students, patient, patients, anxiety, hospital, train, housing, families, stress",
+            "freshness 0.86: 2 day(s) old (effective date 2026-10-04)",
+            "credibility 0.76 = 0.40×c1 1.00 + 0.25×c2 0.45 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Cureus",
+            "c2 0.45: n = 66",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no tldr; falling back to the source abstract (§4.2)"
+      },
+      "summary": {
+        "souhrn": "Klasická hudba se v nemocnicích používá k uklidnění pacientů. Na nádražích a čerpacích stanicích ji ale někde pouštějí nahlas proto, aby odtud vyhnala lidi bez domova. Americký tým proto pozval houslistu do jídelen zařízení pro lidi bez domova i do nemocniční jídelny a před hraním a po něm se lidí ptal, jak se cítí. Obě skupiny — 66 lidí bez domova a 47 lidí z nemocnice, tedy zaměstnanců, pacientů a jejich blízkých, kteří sloužili pro srovnání — po hudbě uváděly lepší pocity. U pocitu „mám starosti\" se zlepšení projevilo výrazněji u lidí bez domova. Jde o malou pozorovací studii založenou na tom, co lidé sami o sobě řekli, takže výsledek berme jako předběžný.",
+        "podrobneVysvetleni": "Jeden hudebník hrál šedesát minut na housle nebo violu. Posluchači vyplnili krátký anonymní dotazník před hraním a znovu poté, co poslouchali alespoň patnáct minut. Dotazník vycházel z běžně používaného testu úzkosti (State-Trait Anxiety Inventory) a obsahoval pět položek: spokojený, ustaraný, napjatý, klidný a rozrušený. Každou lidé hodnotili na čtyřstupňové škále, kde nejnižší stupeň znamenal „vůbec ne\" a nejvyšší „velmi silně\". Odpovědí přišlo 66 od lidí bez domova a 47 od lidí v nemocnici. Po hudbě se průměrné hodnocení zlepšilo v obou skupinách. Když autoři porovnali, o kolik se která skupina zlepšila, u většiny pocitů mezi nimi nebyl rozdíl, který by se dal odlišit od náhody — platilo to pro klid, napětí, rozrušení i spokojenost. Jediná výjimka byl pocit starostí: ten u lidí bez domova klesl výrazněji. Autoři tu udávají pravděpodobnost 3,7 procenta, že by takový rozdíl vznikl jen náhodou, což se obvykle bere jako hranice pro statisticky významný nález. Rozdíl se neprojevil ani podle pohlaví, ani podle toho, jak dlouho člověk neměl bydlení. Závěr je střízlivý: živá klasická hudba podle vlastních výpovědí krátkodobě zmírnila úzkost u lidí bez domova zhruba stejně jako u lidí v nemocnici.",
+        "procJeToDulezite": "Stejná hudba, kterou někde pouštějí proto, aby lidi bez domova odehnala, na ně podle této studie působí uklidňujícím způsobem — stejně jako na kohokoliv jiného.",
+        "poznamkaKOmezenim": "Jde o malou pozorovací studii bez srovnání s tichem či jinou hudbou, postavenou na tom, jak se lidé sami ohodnotili bezprostředně po poslechu, takže o dlouhodobém účinku neříká nic."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 854,
+              "end": 866
+            },
+            "matchedText": "3,7 procenta",
+            "messageCs": "Číslo „3,7 procenta“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „3,7 procenta — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[854,866]: 3,7 procenta"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:statisticky-vyznamny",
+            "span": {
+              "start": 945,
+              "end": 965
+            },
+            "matchedText": "statisticky významný",
+            "messageCs": "Termín „statisticky významný“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:statisticky-vyznamny @ podrobneVysvetleni[945,965]: statisticky významný"
+          }
+        ],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 451,
+              "end": 453
+            },
+            "matchedText": "66",
+            "messageCs": "Číslo „66“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „66 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[451,453]: 66"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 475,
+              "end": 477
+            },
+            "matchedText": "47",
+            "messageCs": "Číslo „47“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „47 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[475,477]: 47"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 557,
+              "end": 745
+            },
+            "matchedText": "Když autoři porovnali, o kolik se která skupina zlepšila, u většiny pocitů mezi nimi nebyl rozdíl, který by se dal odlišit od náhody — platilo to pro klid, napětí, rozrušení i spokojenost.",
+            "messageCs": "Tato věta má 31 slov a je moc dlouhá: „Když autoři porovnali, o kolik se která skupina zlepšila, u většiny pocitů mezi…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[557,745]: Když autoři porovnali, o kolik se která skupina zlepšila, u většiny pocitů mezi nimi nebyl rozdíl, který by se dal odlišit od náhody — platilo to pro klid, napětí, rozrušení i spokojenost."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=17.83",
+            "messageCs": "Věty jsou v průměru moc dlouhé (17,8 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=17.83"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7218830110",
+        "title": "Prevalence of binge eating disorder symptoms and associated characteristics in Danish adults with type 2 diabetes: A cross‐sectional study",
+        "abstract": "Abstract Aims Coexistence of binge eating disorder (BED) and type 2 diabetes is linked to poor health outcomes, but data on the prevalence and clinical profile of BED symptoms remain limited and inconsistent. We estimated the prevalence of BED symptoms and examined their associated clinical characteristics in Danish adults with type 2 diabetes. Methods We conducted a cross‐sectional study within the Danish Centre for Strategic Research in Type 2 Diabetes (DD2) cohort. Adults with type 2 diabetes completed the Binge Eating Disorder Questionnaire (BED‐Q) to determine the presence of BED symptoms. Data on well‐being, comorbidities, treatment and biomarkers were retrieved from national health registers. Associations between participant characteristics and BED symptoms were examined using Poisson regression to estimate prevalence ratios (PRs). Results Among 2459 individuals, 72 (2.9%) screened positive for BED symptoms, and 76 (3.1%) showed subclinical BED symptoms. Individuals with BED symptoms had an earlier age at diagnosis of type 2 diabetes (median 51.8 years, IQR: 41.3–57.6) than adults without BED symptoms (median 59.5 years, IQR: 52.1–66.2). BED symptoms were also associated with severe obesity (BMI ≥35 kg/m 2 ) (PR 11.37, 95% CI: 2.78–46.49), female sex (PR 1.54, 95% CI: 1.12–2.10), and lower well‐being (PR 1.83, 95% CI: 1.15–2.92). Conclusions BED symptoms were associated with a distinct clinical and psychosocial profile in Danish adults with type 2 diabetes. These findings support clinical awareness of BED symptoms in this population, particularly among women, individuals with obesity, those with lower well‐being and those diagnosed with diabetes at a younger age.",
+        "date": "2026-10-03",
+        "url": "https://doi.org/10.1111/dme.70489",
+        "licence": "cc-by-nc",
+        "source": "openalex",
+        "doi": "10.1111/dme.70489",
+        "openAlexId": "W7218830110",
+        "subfield": {
+          "id": "subfields/3203",
+          "name": "Clinical Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T10263",
+          "name": "Eating Disorders and Behaviors"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/dme.70489",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Pernille Fiil Nybo",
+          "Sidsel Louise Domazet",
+          "Michael Einar Røder",
+          "Jakob Linnet"
+        ],
+        "venue": "Diabetic Medicine",
+        "indexedDate": "2026-10-04",
+        "referencedWorksCount": 26,
+        "tldr": "Clinical awareness of BED symptoms in this population of Danish adults with type 2 diabetes is supported, particularly among women, individuals with obesity, those with lower well-being and those diagnosed with diabetes at a younger age.",
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8552,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.8569,
+          "total": 0.8963,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 1,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.1154
+          },
+          "everydayDomains": [
+            "food",
+            "health",
+            "mind"
+          ],
+          "subfieldKey": "subfields/3203",
+          "evidence": [
+            "total 0.8963 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.86 = P 0.87 − 0.45×t 0.00 − 0.15×j 0.12",
+            "outcome verbs (v 0.75): lowers, associated with, linked to",
+            "recognisable subjects (s 1.00): participants, adults (title, ×2), women",
+            "quantified effect (q 1): percentage, 95% CI",
+            "title concreteness (c 0.80): −0.2 title is 19 words",
+            "jargon density (j 0.12): 3/260 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — food, health, mind",
+            "everyday terms (6): eating, obesity, health, diabetes, treatment, well-being",
+            "freshness 0.86: 2 day(s) old (effective date 2026-10-04)",
+            "credibility 0.86 = 0.40×c1 1.00 + 0.25×c2 0.85 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Diabetic Medicine",
+            "c2 0.85: n = 2459",
+            "c3 1.00: open access under cc-by-nc",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        }
+      },
+      "summary": {
+        "souhrn": "Dánští vědci se zeptali 2459 dospělých s cukrovkou druhého typu na jejich vztah k jídlu. Použili dotazník na záchvatovité přejídání (binge eating disorder) — tedy opakované epizody, kdy člověk sní velké množství jídla a nedokáže se zastavit. Příznaky vyšly u 72 z nich, tedy u 2,9 % — zhruba u tří lidí ze sta. Nejčastěji šlo o ženy, o lidi s těžkou obezitou a o ty, kdo se cítili psychicky hůř. Lidé s příznaky se navíc o své cukrovce dozvěděli dřív: typicky kolem 52 let věku, zatímco ostatní až kolem 60 let, tedy zhruba o osm let později.",
+        "podrobneVysvetleni": "Data pocházejí z dánské studie DD2, která dlouhodobě sleduje lidi s cukrovkou druhého typu. Účastníci vyplnili krátký dotazník na záchvatovité přejídání. Ostatní údaje — hmotnost, léčbu, výsledky krevních testů i další nemoci — vědci dohledali ve státních zdravotních registrech. Šlo o jednorázový snímek situace, ne o sledování v čase.\n\nZ 2459 oslovených mělo příznaky přejídání 72 lidí, tedy 2,9 % — asi tři ze sta. Dalších 76 lidí, tedy 3,1 % (opět zhruba tři ze sta), mělo potíže v mírnější podobě. Dohromady jde přibližně o každého šestnáctého.\n\nZajímavější než samotný počet je profil těchto lidí. Častěji šlo o ženy — příznaky se u nich objevovaly asi o polovinu častěji než u mužů. Nejsilnější souvislost se ukázala u těžké obezity, tedy u indexu tělesné hmotnosti nad 35. Tam byly příznaky mnohonásobně častější, jenže odhad je kvůli malému počtu případů velmi nejistý: statistické rozpětí sahá od zhruba trojnásobku po více než čtyřicetinásobek. Lidé s horší duševní pohodou měli příznaky zhruba dvakrát častěji než ostatní.\n\nStudie neříká, co je příčina a co následek. Nevíme, jestli přejídání přispělo k dřívějšímu nástupu cukrovky, nebo jestli život s nemocí zhoršil vztah k jídlu. Ukazuje ale, kterým pacientům by lékaři měli věnovat víc pozornosti.",
+        "procJeToDulezite": "Potíže s jídlem se u lidí s cukrovkou snadno přehlédnou, protože se schovají za doporučení „zhubněte a jezte méně\". Přitom bez jejich řešení může být léčba cukrovky marná.",
+        "poznamkaKOmezenim": "Jde o jednorázové dotazníkové šetření v jedné zemi, které neprokazuje příčinu a následek, a počet lidí s příznaky byl tak malý, že zejména odhad u těžké obezity je velmi nepřesný."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "pass",
+        "hard": [],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 396,
+              "end": 542
+            },
+            "matchedText": "Lidé s příznaky se navíc o své cukrovce dozvěděli dřív: typicky kolem 52 let věku, zatímco ostatní až kolem 60 let, tedy zhruba o osm let později.",
+            "messageCs": "Tato věta má 27 slov a je moc dlouhá: „Lidé s příznaky se navíc o své cukrovce dozvěděli dřív: typicky kolem 52 let vě…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[396,542]: Lidé s příznaky se navíc o své cukrovce dozvěděli dřív: typicky kolem 52 let věku, zatímco ostatní až kolem 60 let, tedy zhruba o osm let později."
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7216479658",
+        "title": "Resilience profiles of children previously exposed to parental gender-based violence: A longitudinal decision tree analysis",
+        "abstract": "Background Children exposed to parental violence (CEPV) may experience a range of adverse outcomes compared to non-exposed peers yet may demonstrate resilience shaped by both internal and external protective factors. Objective To longitudinally explore the profiles of protective factors in children across the continuum of resilience (i.e., low, moderate, high, and exceptional). Participants and setting Parent-reported data were collected on behalf of 211 CEPV ( M age = 10.11, SD = 2.21) residing across Canada. Methods Grounded in Resiliency Theory, this longitudinal study used online surveys administered at three timepoints to assess children's resilience and protective factors. Results Decision tree modelling at baseline found that children with exceptional resilience were more likely to have better health ( χ 2 = 56.23, p < 0.001), with whole-family support further bolstering resilience ( χ 2 = 20.66, p < 0.001; χ 2 = 21.76, p < 0.001). At T2, exceptional resilience was associated with perceiving child welfare services as supportive ( χ 2 = 76.55, p < 0.001), with additional benefits from economic support ( χ 2 = 35.08, p < 0.001). At T3, high resilience was linked to perceived supportiveness of therapy services ( χ 2 = 122.91, p < 0.001), further strengthened by caregiver perceptions of women's shelter support ( χ 2 = 25.55, p < 0.001). Conclusions These findings suggest that supporting CEPV resilience requires attention to individual assets, safety and stability needs, and access to supportive services addressing violence exposure. This underscores the necessity of trauma- and violence-informed, integrated approaches that extend beyond individual- and family-level factors.",
+        "date": "2026-10-03",
+        "url": "https://doi.org/10.1016/j.chiabu.2026.108351",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1016/j.chiabu.2026.108351",
+        "openAlexId": "W7216479658",
+        "subfield": {
+          "id": "subfields/3203",
+          "name": "Clinical Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T10426",
+          "name": "Child Abuse and Trauma"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1016/j.chiabu.2026.108351",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Julia Yates",
+          "Glorieuse Uwizeye",
+          "C. Nadine Wathen",
+          "Tara Mantler"
+        ],
+        "venue": "Child Abuse & Neglect",
+        "indexedDate": "2026-10-03",
+        "referencedWorksCount": 42,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8744,
+          "everydayRelevance": 1,
+          "freshness": 0.7857,
+          "credibility": 0.745,
+          "total": 0.8755,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.2542
+          },
+          "everydayDomains": [
+            "screens",
+            "health",
+            "family",
+            "mind"
+          ],
+          "subfieldKey": "subfields/3203",
+          "evidence": [
+            "total 0.8755 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.87 = P 0.91 − 0.45×t 0.00 − 0.15×j 0.25",
+            "outcome verbs (v 0.75): extends, associated with, linked to",
+            "recognisable subjects (s 1.00): participants, children (title, ×2), women",
+            "quantified effect (q 1): p-value",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.25): 6/236 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 4 domain(s) — screens, health, family, mind",
+            "everyday terms (10): online, health, therapy, child, children, parent, parents, caregiver, family, attention",
+            "freshness 0.79: 3 day(s) old (effective date 2026-10-03)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Child Abuse & Neglect",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no tldr; falling back to the source abstract (§4.2)"
+      },
+      "summary": {
+        "souhrn": "Kanadští výzkumníci sledovali 211 dětí, které zažily násilí mezi rodiči; v průměru jim bylo deset let. Jejich rodiče nebo pečující osoby vyplnili dotazníky ve třech časových bodech. Na začátku se dařilo nejlépe dětem s dobrým zdravím a podporou celé rodiny. Při dalších dvou měřeních vystoupila do popředí pomoc zvenčí: vstřícná sociálně-právní ochrana dětí, finanční podpora, později dostupná terapie a opora azylového domu pro ženy. Odolnost dítěte tedy stojí i na službách, které má rodina po ruce.",
+        "podrobneVysvetleni": "Studie vychází z takzvané teorie odolnosti (resiliency theory). Ta předpokládá, že dítě zvládne těžkou zkušenost lépe, když má kolem sebe ochranné faktory — vlastní zdroje i oporu okolí. Výzkumníci oslovili pečující osoby 211 dětí z celé Kanady. Dotazníky se vyplňovaly online, a to třikrát v průběhu sledování. Děti pak rozdělili podle míry odolnosti do čtyř skupin: nízká, střední, vysoká a mimořádná.\n\nData zpracovali metodou rozhodovacího stromu (decision tree). Ta funguje jako série otázek. Program hledá, která odpověď nejlépe rozdělí děti na odolnější a méně odolné. Při vstupním měření se na prvním místě objevilo zdraví dítěte. Děti v lepším zdravotním stavu patřily častěji mezi mimořádně odolné. Pokud k tomu měly podporu celé rodiny, odolnost ještě stoupala.\n\nPři druhém měření se nejsilnějším ukazatelem stalo to, jak pečující osoba vnímala sociálně-právní ochranu dětí. Když ji popisovala jako vstřícnou, dítě bývalo odolnější. Přidala-li se ekonomická pomoc, výsledek byl ještě lepší. Při třetím měření hrála hlavní roli dostupná terapie. Doplňovala ji podpora azylového domu pro ženy.\n\nVšechny tyto souvislosti byly statisticky velmi silné, náhodou se vysvětlit nedají. Nejde ale o důkaz příčiny a následku. Údaje navíc hlásili rodiče, nikoli děti samotné. Autoři z toho vyvozují, že pomoc dětem po zkušenosti s násilím mezi rodiči nemůže stát jen na práci s dítětem a rodinou. Potřebné jsou i fungující služby.",
+        "procJeToDulezite": "Pokud dítě zažilo násilí mezi rodiči, nezáleží jen na tom, jak je samo silné. Hodně rozhoduje, zda má rodina po ruce dostupnou terapii, finanční pomoc a úřady, které vnímá jako oporu.",
+        "poznamkaKOmezenim": "Údaje pocházejí z výpovědí pečujících osob u jednoho vzorku 211 kanadských dětí a ukazují jen souvislosti, nikoli to, že podpora odolnost skutečně způsobila."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "warn",
+        "hard": [],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 30,
+              "end": 33
+            },
+            "matchedText": "211",
+            "messageCs": "Číslo „211“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „211 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[30,33]: 211"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 222,
+              "end": 225
+            },
+            "matchedText": "211",
+            "messageCs": "Číslo „211“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „211 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[222,225]: 211"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "hype",
+            "ruleId": "hype:mimořádn",
+            "span": {
+              "start": 393,
+              "end": 402
+            },
+            "matchedText": "mimořádná",
+            "messageCs": "Slovo „mimořádná“ zbytečně přehání (pravidlo §2). Zvažte střízlivější formulaci, nebo doplňte konkrétní číslo či příklad.",
+            "detail": "hype:mimořádn @ podrobneVysvetleni[393,402]: mimořádná"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "hype",
+            "ruleId": "hype:mimořádn",
+            "span": {
+              "start": 690,
+              "end": 699
+            },
+            "matchedText": "mimořádně",
+            "messageCs": "Slovo „mimořádně“ zbytečně přehání (pravidlo §2). Zvažte střízlivější formulaci, nebo doplňte konkrétní číslo či příklad.",
+            "detail": "hype:mimořádn @ podrobneVysvetleni[690,699]: mimořádně"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7218919442",
+        "title": "The effects of an AI-supported gamified learning program on elementary students' mathematics anxiety, learning motivation, and achievement",
+        "abstract": "Although gamified learning can enhance motivation, many systems rely on uniform feedback and provide limited personalized and supportive interaction. Evidence regarding the incremental effects of AI-supported gamification in elementary mathematics remains limited. This study examined the effects of an AI-supported Gamified Learning Program (AI-GILP) on elementary students’ mathematics anxiety, learning motivation, and achievement. Using an experimental design with individual-level random assignment, 174 Chinese fifth-grade students were assigned to AI-GILP, gamified learning without AI support (GILP), or traditional lecture-based instruction (TL). The intervention lasted two weeks and was followed by a delayed posttest four weeks later. Mathematics anxiety, learning motivation, and achievement were assessed at pretest, posttest, and delayed posttest. Data were analyzed using analysis of covariance and mixed-design analyses of variance. AI-GILP produced significantly lower mathematics anxiety and higher learning motivation than both GILP and TL, with overall group effects of partial η 2 = .208 and .184, respectively. At the delayed posttest, the descriptive means for anxiety and motivation retained the same favorable ordering for AI-GILP, although pairwise significance at that assessment was not formally tested. For mathematics achievement, both gamified conditions outperformed TL, whereas AI-GILP did not significantly differ from GILP (Cohen’s d = 0.19). The motivational advantage of AI-GILP was concentrated in intrinsic motivation and perceived competence, with no significant difference in effort/importance. The findings suggest that gamification primarily accounted for the observed achievement gains, whereas the AI Learning Companion may have provided additional benefits for mathematics anxiety and selected dimensions of learning motivation. The proposed mechanisms involving psychological-need support, emotional regulation, adaptive feedback, and motivational internalization were not directly tested and require further process-oriented research.",
+        "date": "2026-10-03",
+        "url": "https://doi.org/10.1186/s40359-026-05367-8",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1186/s40359-026-05367-8",
+        "openAlexId": "W7218919442",
+        "subfield": {
+          "id": "subfields/3204",
+          "name": "Developmental and Educational Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T10731",
+          "name": "Educational Games and Gamification"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1186/s40359-026-05367-8",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Jiawei Shao",
+          "Jinming Ju",
+          "Shupeng Tang"
+        ],
+        "venue": "BMC Psychology",
+        "indexedDate": "2026-10-04",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8526,
+          "everydayRelevance": 0.9333,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.861,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.5,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.1493
+          },
+          "everydayDomains": [
+            "school",
+            "health",
+            "mind"
+          ],
+          "subfieldKey": "subfields/3204",
+          "evidence": [
+            "total 0.8610 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.85 = P 0.88 − 0.45×t 0.00 − 0.15×j 0.15",
+            "outcome verbs (v 1.00): lowers, delayed, outperformed, was followed by",
+            "recognisable subjects (s 0.50): students (title, ×2)",
+            "quantified effect (q 1): Cohen's d",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.15): 4/268 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.93: 3 domain(s) — school, health, mind",
+            "everyday terms (4): student, students, anxiety, motivation",
+            "freshness 0.86: 2 day(s) old (effective date 2026-10-04)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in BMC Psychology",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no tldr; falling back to the source abstract (§4.2)"
+      },
+      "summary": {
+        "souhrn": "Hravá výuka matematiky pomohla páťákům k lepším výsledkům — ale chytrý „učící se společník\" (AI Learning Companion) k nim nic navíc nepřidal. Čínští výzkumníci náhodně rozdělili 174 žáků pátých tříd do tří skupin: hra s podporou umělé inteligence, stejná hra bez ní a běžný výklad u tabule. Po dvou týdnech obě herní skupiny počítaly lépe než ta klasická, zatímco mezi sebou se v počtech prakticky nelišily. Rozdíl se ukázal jinde: děti s AI společníkem měly menší úzkost z matematiky a vyšší chuť se učit než obě zbylé skupiny, a to hlavně v tom, že je počítání víc bavilo a víc si na ně věřily. Autoři sami dodávají, že proč to tak funguje, neměřili — jen že to tak vyšlo.",
+        "podrobneVysvetleni": "Studie použila experiment s náhodným zařazením jednotlivých žáků, což je u školních výzkumů poctivý postup: o tom, kdo bude v které skupině, nerozhodoval učitel ani výsledky dětí. Zapojilo se 174 čínských žáků pátých tříd, výuka trvala dva týdny a čtyři týdny poté následoval ještě odložený test, aby se vidělo, co z efektu vydrželo. Úzkost z matematiky, motivaci a znalosti měřili vědci třikrát — před začátkem, hned po konci a s odstupem.\n\nU úzkosti a motivace vyšel rozdíl mezi skupinami statisticky průkazný a podle autorů vysvětlovalo zařazení do skupiny zhruba pětinu rozdílů mezi dětmi (partial η² = ,208 a ,184) — na školní výzkum je to rozdíl, který je vidět. U samotných výsledků v matematice ale AI verze nad hrou bez AI nevyhrála: rozdíl odpovídal Cohenovu d = 0,19, tedy malému posunu, který se snadno ztratí v běžném kolísání výkonu. Motivační náskok se navíc soustředil do dvou věcí — že děti počítání dělaly rády a připadaly si na ně dost dobré. V tom, kolik úsilí matematice věnovaly a jak důležitou ji považovaly, se skupiny nelišily. Při odloženém testu zůstalo pořadí průměrů stejné, ale autoři přiznávají, že párové srovnání v tomto bodě formálně neprovedli.",
+        "procJeToDulezite": "Úzkost z matematiky brzdí spoustu dětí víc než nedostatek nadání, a tahle studie naznačuje, kde přesně hledat pomoc: hra zlepší výsledky, ale na strach a chuť do učení možná zabírá spíš to, že má dítě po ruce někoho (či něco) trpělivého. Pro učitele i rodiče to znamená, že „nasadit aplikaci\" a „zmírnit úzkost\" nejsou totéž.",
+        "poznamkaKOmezenim": "Jde o jediný dvoutýdenní experiment se 174 dětmi z jedné země a jednoho ročníku, výhoda v samotných počtech byla malá a autoři sami upozorňují, že vysvětlení, proč AI společník pomohl, přímo neověřovali."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 192,
+              "end": 195
+            },
+            "matchedText": "174",
+            "messageCs": "Číslo „174“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „174 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[192,195]: 174"
+          },
+          {
+            "block": "procJeToDulezite",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 237
+            },
+            "matchedText": "Úzkost z matematiky brzdí spoustu dětí víc než nedostatek nadání, a tahle studie naznačuje, kde přesně hledat pomoc: hra zlepší výsledky, ale na strach a chuť do učení možná zabírá spíš to, že má dítě po ruce někoho (či něco) trpělivého.",
+            "messageCs": "Tato věta má 41 slov a je moc dlouhá: „Úzkost z matematiky brzdí spoustu dětí víc než nedostatek nadání, a tahle studi…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ procJeToDulezite[0,237]: Úzkost z matematiky brzdí spoustu dětí víc než nedostatek nadání, a tahle studie naznačuje, kde přesně hledat pomoc: hra zlepší výsledky, ale na strach a chuť do učení možná zabírá spíš to, že má dítě po ruce někoho (či něco) trpělivého."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=24.00",
+            "messageCs": "Věty jsou v průměru moc dlouhé (24,0 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=24.00"
+          }
+        ],
+        "soft": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 30 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=48.4",
+            "messageCs": "Text se celkově čte těžko (index 48 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=48.4"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7219075121",
+        "title": "Altered miR-30c and miR-127 expression and NF-κB/NLRP3-related transcriptional changes are associated with metabolic and inflammatory dysregulation in adult males with sleep deprivation and habitual coffee consumption",
+        "abstract": "Abstract Background Chronic sleep deprivation and habitual coffee consumption are common overlapping behaviours, yet the post-transcriptional expression patterns associated with their metabolic and inflammatory correlates remain poorly defined. This study examined alterations in the regulatory microRNAs miR-30c and miR-127 and transcript-level expression changes consistent with involvement of the NF-κB/NLRP3 inflammatory axis, together with their metabolic and inflammatory correlates, in adult males. Methods Two hundred male volunteers aged 30–50 years were classified into four groups of 50 according to sleep pattern and coffee intake: healthy controls (HC; normal sleep, no habitual coffee consumption), habitual coffee consumers (CF), sleep-deprived subjects (SD), and a combined sleep-deprived, coffee-consuming group (SD + CF). Expression of miR-30c, miR-127, NLRP3, and NF-κB p65 (RELA) was assessed by quantitative real-time PCR. Fasting glucose was measured by the glucose oxidase method, the lipid profile by enzymatic colorimetry, and serum IL-6, IL-1β, TNF-α, and IL-10 by ELISA. Results Compared with healthy controls, the SD + CF group showed marked downregulation of miR-30c and miR-127 and pronounced upregulation of NLRP3 mRNA (all p < 0.001), accompanied by increased NF-κB p65 expression (3.79-fold; p < 0.001). These molecular changes were paralleled by significantly elevated IL-6, IL-1β, and TNF-α and reduced IL-10, as well as higher fasting glucose (108.5 ± 12.3 vs. 89.2 ± 8.6 mg/dL; p < 0.001), total cholesterol, LDL-cholesterol, and triglycerides, with reduced HDL-cholesterol (all p < 0.05). In pairwise comparisons, the CF group differed significantly from HC only in fasting glucose, whereas the combined SD + CF group showed the most pronounced metabolic, inflammatory, and molecular alterations. Two-way factorial analysis identified significant Sleep × Coffee interactions for LDL-cholesterol, triglycerides, IL-6, IL-1β, TNF-α, NF-κB p65, miR-30c, miR-127, and NLRP3. Conclusions Chronic sleep deprivation, particularly when accompanied by habitual coffee consumption, is associated with altered miR-30c and miR-127 expression and an expression pattern consistent with involvement of the NF-κB/NLRP3 axis, alongside metabolic and inflammatory dysregulation in adult males, with statistical evidence of a combined, potentiating association between the two exposures for several inflammatory and molecular outcomes. These findings add a post-transcriptional dimension to the understanding of how insufficient sleep and habitual coffee consumption relate to cardiometabolic risk.",
+        "date": "2026-10-03",
+        "url": "https://doi.org/10.1038/s41598-026-74053-x",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1038/s41598-026-74053-x",
+        "openAlexId": "W7219075121",
+        "subfield": {
+          "id": "subfields/3205",
+          "name": "Experimental and Cognitive Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T11373",
+          "name": "Sleep and Work-Related Fatigue"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://www.nature.com/articles/s41598-026-74053-x_reference.pdf",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Rasha Muzahem Hatem",
+          "Mervat Kamel Kadhom",
+          "Hadeel Jabar Neama Almuoswi"
+        ],
+        "venue": "Scientific Reports",
+        "indexedDate": "2026-10-04",
+        "referencedWorksCount": 0,
+        "tldr": "Chronic sleep deprivation, particularly when accompanied by habitual coffee consumption, is associated with altered miR-30c and miR-127 expression and an expression pattern consistent with involvement of the NF-κB/NLRP3 axis, alongside metabolic and inflammatory dysregulation in adult males, with statistical evidence of a combined, potentiating association between the two exposures for several inflammatory and molecular outcomes.",
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.81,
+          "everydayRelevance": 0.9,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.8346,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 1
+          },
+          "everydayDomains": [
+            "food",
+            "sleep",
+            "health"
+          ],
+          "subfieldKey": "subfields/3205",
+          "evidence": [
+            "total 0.8346 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.81 = P 0.96 − 0.45×t 0.00 − 0.15×j 1.00",
+            "outcome verbs (v 1.00): reduced, increased, associated with (title, ×2)",
+            "recognisable subjects (s 1.00): volunteers, subjects, adults (title, ×2), consumers",
+            "quantified effect (q 1): p-value, fold change",
+            "title concreteness (c 0.80): −0.2 title is 26 words",
+            "jargon density (j 1.00): 38/350 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.90: 3 domain(s) — food, sleep, health",
+            "everyday terms (3): coffee, sleep, cholesterol",
+            "freshness 0.86: 2 day(s) old (effective date 2026-10-04)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Scientific Reports",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        }
+      },
+      "summary": {
+        "souhrn": "Nedostatek spánku v kombinaci s pravidelným pitím kávy se u dospělých mužů pojí se změnami v drobných regulačních molekulách, které v buňkách tlumí zánět. Vědci porovnali dvě stě mužů ve věku 30 až 50 let rozdělených do čtyř stejně velkých skupin: vyspalí nekávaři, kávaři, nevyspalí a nevyspalí kávaři. U poslední skupiny byly oba sledované „ztlumovače\" (miR-30c a miR-127) výrazně potlačené a zánětlivé látky v krvi vyšší. Cukr nalačno jim vyšel v průměru 108,5 mg/dl proti 89,2 mg/dl u kontrolní skupiny — tedy posun z normálu do pásma mírně zvýšených hodnot. Horší byly i hodnoty cholesterolu a tuků v krvi, přičemž samotná káva bez nevyspání se od kontrol lišila jen v hladině cukru.",
+        "podrobneVysvetleni": "Vědci odebrali účastníkům krev a změřili v ní jednak hladinu cukru nalačno, tuků a cholesterolu, jednak několik bílkovin, kterými si tělo mezi sebou předává zprávu „probíhá zánět\", i jednu, která zánět naopak tlumí. K tomu přidali měření genové aktivity: sledovali dvě malé regulační molekuly (microRNA), které fungují jako brzdy zánětlivých genů, a dva geny, jež zánět naopak rozjíždějí — NLRP3 a NF-κB p65. U nevyspalých mužů, kteří navíc pravidelně pili kávu, byly obě brzdy výrazně utlumené, zatímco aktivita NF-κB p65 byla zhruba čtyřikrát vyšší než u vyspalých nekávařů. Souběžně jim stouply zánětlivé bílkoviny a klesla ta protizánětlivá. Zvýšený byl i celkový cholesterol, „zlý\" LDL cholesterol a triglyceridy, naopak „hodný\" HDL cholesterol byl nižší. Zajímavé je, že samotná káva u vyspalých mužů skoro nic nezměnila — jediný rozdíl oproti kontrolám byl v cukru nalačno. Statistická analýza navíc ukázala, že u řady ukazatelů se obě návyky navzájem posilují: dohromady působí víc než součet jejich jednotlivých vlivů. Autoři výslovně mluví o souvislosti, ne o prokázané příčině. Jejich výsledky ale naznačují, kudy by vedla cesta od nedostatku spánku k vyššímu riziku cukrovky a onemocnění srdce a cév — přes dlouhodobě podrážděný zánětlivý systém.",
+        "procJeToDulezite": "Chronické nevyspání není jen otázka únavy — podle téhle práce se pojí s měřitelnými změnami v krevním cukru, tucích a zánětu, a káva, kterou si člověk nedostatek spánku vynahrazuje, situaci nejspíš nezlepšuje.",
+        "poznamkaKOmezenim": "Jde o jednorázové měření u dvou set mužů ve věku 30 až 50 let, takže výsledky neplatí automaticky pro ženy ani jiné věkové skupiny a neprokazují příčinu a následek — jen souvislost."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 192,
+              "end": 194
+            },
+            "matchedText": "30",
+            "messageCs": "Číslo „30“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „30 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[192,194]: 30"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=22.13",
+            "messageCs": "Věty jsou v průměru moc dlouhé (22,1 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=22.13"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_english_original:kontrolni-skupina",
+            "span": {
+              "start": 489,
+              "end": 506
+            },
+            "matchedText": "kontrolní skupiny",
+            "messageCs": "U termínu „kontrolní skupina“ chybí při prvním použití anglický originál v závorce (např. „kontrolní skupina (control group)“). Čtenář ten anglický výraz potká jinde (§2).",
+            "detail": "jargon:no_english_original:kontrolni-skupina @ souhrn[489,506]: kontrolní skupiny"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 215
+            },
+            "matchedText": "Vědci odebrali účastníkům krev a změřili v ní jednak hladinu cukru nalačno, tuků a cholesterolu, jednak několik bílkovin, kterými si tělo mezi sebou předává zprávu „probíhá zánět\", i jednu, která zánět naopak tlumí.",
+            "messageCs": "Tato věta má 33 slov a je moc dlouhá: „Vědci odebrali účastníkům krev a změřili v ní jednak hladinu cukru nalačno, tuk…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[0,215]: Vědci odebrali účastníkům krev a změřili v ní jednak hladinu cukru nalačno, tuků a cholesterolu, jednak několik bílkovin, kterými si tělo mezi sebou předává zprávu „probíhá zánět\", i jednu, která zánět naopak tlumí."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=2",
+            "messageCs": "Počet vět delších než 30 slov: 2. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=2"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=48.4",
+            "messageCs": "Text se celkově čte těžko (index 48 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=48.4"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-10-06T04:41:04.557Z",
+  "generatedOn": "2026-10-06",
+  "schemaVersion": 1
+}
