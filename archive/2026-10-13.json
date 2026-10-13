@@ -1,0 +1,792 @@
+{
+  "date": "2026-10-13",
+  "categoryKey": "society-economy-education",
+  "categoryLabel": "Společnost, ekonomika a vzdělávání",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7221458874",
+        "title": "Adolescent Worry About Experiencing Firearm Violence and Its Association With Mental Health",
+        "abstract": "OBJECTIVE To examine the associations between worrying about experiencing firearm violence, past-month psychological distress, and past-year suicide ideation among California adolescents. METHODS Cross-sectional analysis of a representative California adolescent sample (n = 2154), using 2021 and 2022 California Health Interview Survey data. The predictor is worrying about experiencing firearm violence, and outcomes are past-month psychological distress and past-year suicide ideation. RESULTS Thirty-nine percent of California adolescents reported worrying about experiencing firearm violence, which was positively correlated with several characteristics: female, diverse gender identity, lower socioeconomic status, frequent social media use, perceiving unsafe neighborhood, having access to firearms, and knowing peers who have a firearm. In contrast, worrying about experiencing firearm violence was negatively correlated with having a firearm at home and ever using a firearm. Worrying about experiencing firearm violence was associated with 1.6 times greater odds of past-month psychological distress and 1.7 times greater odds of past-year suicide ideation. CONCLUSIONS Among California adolescents, worrying about experiencing firearm violence is relatively common and associated with a higher risk of psychological distress and suicide ideation.",
+        "date": "2026-10-12",
+        "url": "https://doi.org/10.1542/peds.2025-074683",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1542/peds.2025-074683",
+        "openAlexId": "W7221458874",
+        "subfield": {
+          "id": "subfields/3306",
+          "name": "Health"
+        },
+        "field": {
+          "id": "fields/33",
+          "name": "Social Sciences"
+        },
+        "topic": {
+          "id": "T12265",
+          "name": "Gun Ownership and Violence Research"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Grace Hindmarch",
+          "Jocelyn I. Meza",
+          "Roberto López",
+          "D. Imelda Padilla-Frausto",
+          "Joan Rosenbaum Asarnow",
+          "Daniel Eisenberg"
+        ],
+        "venue": "PEDIATRICS",
+        "indexedDate": "2026-10-12",
+        "referencedWorksCount": 22,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.824,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.9286,
+          "credibility": 0.7133,
+          "total": 0.8673,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 0.75,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.1734
+          },
+          "everydayDomains": [
+            "screens",
+            "health",
+            "housing"
+          ],
+          "subfieldKey": "subfields/3306",
+          "evidence": [
+            "total 0.8673 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.82 = P 0.85 − 0.45×t 0.00 − 0.15×j 0.17",
+            "outcome verbs (v 0.75): lowers, associated with, correlated with",
+            "recognisable subjects (s 0.75): adolescents (title, ×2), homes",
+            "quantified effect (q 1): sample size, times higher/lower",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.17): 3/173 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 3 domain(s) — screens, health, housing",
+            "everyday terms (5): social media, health, home, homes, neighborhood",
+            "freshness 0.93: 1 day(s) old (effective date 2026-10-12)",
+            "credibility 0.71 = 0.40×c1 1.00 + 0.25×c2 0.83 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in PEDIATRICS",
+            "c2 0.83: n = 2154",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1542/peds.2025-074683)"
+      },
+      "summary": {
+        "souhrn": "Téměř čtyři z deseti kalifornských dospívajících se bojí, že je zasáhne násilí se střelnou zbraní. Ukázal to rozbor odpovědí 2 154 mladých lidí, tedy vzorku sestaveného tak, aby zastupoval celý stát. Data pocházejí z kalifornského zdravotního průzkumu z let 2021 a 2022. Ti, kdo takový strach uvedli, měli zhruba 1,6krát vyšší šanci, že budou mít psychické potíže. A asi 1,7krát vyšší šanci, že během uplynulého roku mysleli na sebevraždu.",
+        "podrobneVysvetleni": "Výzkumníci pracovali s odpověďmi z běžného zdravotního průzkumu domácností. Zúčastnilo se 2 154 dospívajících — tedy vzorek vybraný tak, aby odpovídal složení kalifornské mládeže. Mladí lidé odpovídali, zda se obávají, že zažijí násilí se střelnou zbraní. Dále uváděli, jak se cítili psychicky v posledním měsíci. A zda během posledního roku přemýšleli o sebevraždě.\n\nObavu uvedlo 39 procent dotázaných, tedy zhruba čtyři z deseti. Častěji šlo o dívky a o mladé lidi s jinou genderovou identitou. Objevovala se také častěji u rodin s nižšími příjmy. Souvisela i s častým používáním sociálních sítí a s pocitem, že okolí domova není bezpečné. Vyšší byla i u těch, kdo měli ke zbrani přístup nebo znali vrstevníky se zbraní. Naopak ti, kdo zbraň měli doma nebo už s ní někdy stříleli, se báli méně.\n\nMladí se strachem z ozbrojeného násilí měli 1,6krát vyšší šanci na psychické potíže. U myšlenek na sebevraždu byla šance 1,7krát vyšší. Zjednodušeně: tyto potíže se u nich objevovaly výrazně častěji než u ostatních. Studie ale nemůže říct, co je příčina a co následek. Je možné, že strach zhoršuje duševní stav. Stejně tak je možné, že člověk v tísni vnímá hrozby silněji.",
+        "procJeToDulezite": "Strach z násilí není navenek vidět. Přitom jde podle téhle studie ruku v ruce s horším duševním stavem dospívajících. Je to tedy téma, na které se rodiče i učitelé mohou zeptat včas.",
+        "poznamkaKOmezenim": "Jde o jednorázové dotazování v jednom americkém státě, takže z něj nelze určit, co je příčina a co následek."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 371,
+              "end": 378
+            },
+            "matchedText": "1,7krát",
+            "messageCs": "Číslo „1,7krát“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „1,7krát — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[371,378]: 1,7krát"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 842,
+              "end": 849
+            },
+            "matchedText": "1,6krát",
+            "messageCs": "Číslo „1,6krát“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „1,6krát — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[842,849]: 1,6krát"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 919,
+              "end": 926
+            },
+            "matchedText": "1,7krát",
+            "messageCs": "Číslo „1,7krát“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „1,7krát — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[919,926]: 1,7krát"
+          }
+        ],
+        "soft": []
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7221361479",
+        "title": "Factors associated with health service utilisation in rural Victoria: a multilevel analysis informed by Andersen’s behavioral model",
+        "abstract": "Abstract Background Access to health services in rural areas can be hampered by a variety of factors contributing to reduced utilisation and poorer health outcomes. Andersen’s behavioral model was developed to understand how people utilise health services by assessing associations with predisposing factors, needs factors and enabling factors. The aims of this study were to determine the relative contribution of these factors to utilisation of general practice, medical specialists and dental services in a rural area and also to identify the nature of barriers to health service access. Methods A cross-sectional survey design was used. Households were randomly selected from local government lists. Respondents were asked about their health, use of health services, barriers to health service access and demographic details by trained research assistants. Multilevel regression analysis informed by the Andersen model was used to identify factors associated with health service utilisation, and impact of access barriers on utilisation as per Yeatt’s expansion. Results Household respondents ( n = 2680) provided data about their health and service utilisation. General practice utilisation was lower for males than females (OR 0.57 [0.40, 0.8]). The use of specialists was lower for those without Year 12 educational attainment than those with Year 12 (OR 0.81 [0.66, 0.996]), for those born overseas compared with those born in Australia (OR 0.67 [0.51, 0.88]) or residing in small towns compared with those residing in the regional centre (OR 0.82 [0.67, 0.99]). Dental use was lower for males than females (OR 0.71 [0.50, 0.996]) and those not employed compared with employed people (OR 0.51 ([0.35, 0.76]). Respondents reported barriers to general health service access including cost, distance and waiting time, but these barriers were not associated with reduced utilisation. Access barriers to dental care included cost and no perceived need, and these were associated with reduced utilisation. Conclusions A variety of healthcare service barriers were identified, but largely did not preclude utilisation of medical services in this rural area, suggesting that barriers may delay, inconvenience or complicate the patient journey. However, barriers to dental care, including its cost and perceived need, did restrict use.",
+        "date": "2026-10-11",
+        "url": "https://doi.org/10.1186/s12913-026-15773-8",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1186/s12913-026-15773-8",
+        "openAlexId": "W7221361479",
+        "subfield": {
+          "id": "subfields/3306",
+          "name": "Health"
+        },
+        "field": {
+          "id": "fields/33",
+          "name": "Social Sciences"
+        },
+        "topic": {
+          "id": "T13633",
+          "name": "Public Health and Social Inequalities"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Kristen Glenister",
+          "Andrew John Hamilton",
+          "Lisa Bourke",
+          "Robyn McNeil",
+          "David Simmons"
+        ],
+        "venue": "BMC Health Services Research",
+        "indexedDate": "2026-10-11",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8532,
+          "everydayRelevance": 0.7,
+          "freshness": 0.8571,
+          "credibility": 0.8593,
+          "total": 0.8118,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.75,
+            "q": 1,
+            "c": 0.6,
+            "t": 0,
+            "j": 0.029
+          },
+          "everydayDomains": [
+            "health",
+            "money"
+          ],
+          "subfieldKey": "subfields/3306",
+          "evidence": [
+            "total 0.8118 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.85 = P 0.86 − 0.45×t 0.00 − 0.15×j 0.03",
+            "outcome verbs (v 1.00): reduced, lowers, delays, associated with (title, ×2)",
+            "recognisable subjects (s 0.75): patients, households, towns",
+            "quantified effect (q 1): sample size",
+            "title concreteness (c 0.60): −0.4 method-word subtitle",
+            "jargon density (j 0.03): 1/345 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.70: 2 domain(s) — health, money",
+            "everyday terms (5): health, patient, patients, cost, costs",
+            "freshness 0.86: 2 day(s) old (effective date 2026-10-11)",
+            "credibility 0.86 = 0.40×c1 1.00 + 0.25×c2 0.86 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in BMC Health Services Research",
+            "c2 0.86: n = 2680",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1186/s12913-026-15773-8)"
+      },
+      "summary": {
+        "souhrn": "Na venkově v australském státě Victoria se tazatelé zeptali 2680 lidí, jak využívají zdravotní péči a co jim v tom brání. Muži chodili k praktickému lékaři i k zubaři méně často než ženy. Ke specialistovi se hůř dostávali lidé bez dokončené střední školy, lidé narození v zahraničí a obyvatelé malých měst. Překážky jako cena, vzdálenost a čekání lidé popisovali často, ale návštěvu lékaře jim nakonec nepřekazily. U zubaře to bylo jiné: cena a pocit, že to není potřeba, péči skutečně omezily.",
+        "podrobneVysvetleni": "Autoři použili dotazníkové šetření. Domácnosti vybrali náhodně ze seznamů místních úřadů. Vyškolení tazatelé se ptali na zdraví, využívání služeb, překážky v přístupu k nim a základní údaje o člověku. Odpovědi poskytlo 2680 lidí. Při vyhodnocení se opřeli o takzvaný Andersenův model chování (Andersen's behavioral model). Ten rozděluje vlivy do tří skupin: kdo člověk je, co potřebuje a co mu využití služby usnadňuje.\n\nVýsledky autoři uvádějí jako srovnání šancí mezi skupinami. Muži měli oproti ženám zhruba o 43 % nižší šanci, že byli u praktického lékaře — tedy necelé dvě třetiny toho co ženy. U zubaře byla šance mužů asi o třetinu nižší. Lidé bez zaměstnání měli oproti pracujícím zhruba poloviční šanci, že k zubaři zašli. Ke specialistovi se méně často dostali lidé bez dokončené střední školy, zhruba o pětinu. U lidí narozených mimo Austrálii to byla asi třetina a u obyvatel malých měst oproti lidem z regionálního centra opět zhruba pětina.\n\nPřekážky lidé jmenovali: cenu, vzdálenost a čekací dobu. U lékařských služeb se ale tyto překážky nepojily s menším využitím péče. Autoři z toho usuzují, že cestu k lékaři spíš zdrží a zkomplikují, než aby ji zavřely. U zubní péče to platilo jinak. Cena a přesvědčení, že ošetření není potřeba, se s nižším využitím služeb pojily přímo.",
+        "procJeToDulezite": "Ukazuje to, že dostupnost péče mimo velká města není jen otázka vzdálenosti — roli hraje i vzdělání, původ a práce. A zubní péče je přitom zranitelnější než ta lékařská, protože ji cena dokáže odříznout úplně.",
+        "poznamkaKOmezenim": "Jde o jednorázové dotazníkové šetření v jedné venkovské oblasti Austrálie, opřené o to, co lidé sami uvedli, takže ukazuje souvislosti, ne příčiny — a jinde to může vypadat jinak."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 867,
+              "end": 874
+            },
+            "matchedText": "třetina",
+            "messageCs": "Číslo „třetina“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „třetina — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[867,874]: třetina"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 947,
+              "end": 953
+            },
+            "matchedText": "pětina",
+            "messageCs": "Číslo „pětina“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „pětina — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[947,953]: pětina"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 30,
+              "end": 39
+            },
+            "matchedText": " Victoria",
+            "messageCs": "Text opisuje původní název článku („ Victoria“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[30,39]:  Victoria"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 266,
+              "end": 275
+            },
+            "matchedText": " Andersen",
+            "messageCs": "Text opisuje původní název článku („ Andersen“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[266,275]:  Andersen"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7163049508",
+        "title": "TEKNIK PENGAWASAN PADA LEMBAGA PENDIDIKAN ISLAM SEBAGAI MEKANISME PENJAMINAN MUTU DI MA ROUDLOTUL MUTA'ALIMIN CLURING BANYUWANGI",
+        "abstract": "The main objective of this study is to analyse the effectiveness of supervision techniques in Islamic educational institutions as a quality assurance mechanism at MA Roudlotul Muta'alimin Cluring Banyuwangi. This research employs a qualitative approach with a case study design to understand the supervision techniques at MA Roudlotul Muta'alimin Cluring Banyuwangi as a quality assurance mechanism. Primary data were obtained through in-depth interviews with the principal, teachers, the school committee, and students, while secondary data were drawn from school documents and reports. Data were collected through semi-structured interviews, participatory observations, and document studies. Data analysis was conducted thematically through coding, categorisation, and interpretation based on administrative and social aspects. Validity was maintained through triangulation and member checking, resulting in a holistic understanding and practical recommendations for quality assurance in Islamic education.The study at MA Roudlotul Muta'alimin Cluring Banyuwangi shows that supervision techniques play a strategic role in assuring the quality of Islamic education. The implementation of structured supervision improves the quality of learning, with teachers planning material more systematically and adjusting instructional methods to students' needs, thereby enhancing students' understanding and participation. Participatory supervision involving teachers, students, and the school committee strengthens the academic culture, encourages teacher motivation, increases creativity in teaching methods, and fosters student discipline and responsibility. The integration of administrative and social aspects produces a holistic and adaptive supervision mechanism, enabling objective performance evaluation, effective communication with parents, and relevant instructional strategies. The findings affirm that supervision functions as an instrument for teacher professional development, improvement of instructional quality, and the establishment of a sustainable academic culture",
+        "date": "2026-10-12",
+        "url": "https://doi.org/10.30821/hijri.v14i2.28082",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.30821/hijri.v14i2.28082",
+        "openAlexId": "W7163049508",
+        "subfield": {
+          "id": "subfields/3304",
+          "name": "Education"
+        },
+        "field": {
+          "id": "fields/33",
+          "name": "Social Sciences"
+        },
+        "topic": {
+          "id": "T12952",
+          "name": "School Leadership and Teacher Performance"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Ghofur, Mahmud Abdul; Universitas KH Mukhtar Syafaat Banyuwangi, Indonesia",
+          "Purnomo, M Sidiq; Universitas KH Mukhtar Syafaat Banyuwangi, Indonesia"
+        ],
+        "venue": "Hijri",
+        "indexedDate": "2026-06-02",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.5381,
+          "everydayRelevance": 1,
+          "freshness": 0.9286,
+          "credibility": 0.745,
+          "total": 0.7667,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 0.75,
+            "q": 0,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.3462
+          },
+          "everydayDomains": [
+            "school",
+            "family",
+            "mind"
+          ],
+          "subfieldKey": "subfields/3304",
+          "evidence": [
+            "total 0.7667 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.54 = P 0.59 − 0.45×t 0.00 − 0.15×j 0.35",
+            "outcome verbs (v 0.75): increases, improves, improvement",
+            "recognisable subjects (s 0.75): students, teachers, schools",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.35): 9/260 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — school, family, mind",
+            "everyday terms (9): school, schools, student, students, teacher, teachers, parent, parents, motivation",
+            "freshness 0.93: 1 day(s) old (effective date 2026-10-12)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Hijri",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.30821/hijri.v14i2.28082)"
+      },
+      "summary": {
+        "souhrn": "Pravidelné hospitace nemusí být lovem na chyby. Indonéští autoři to zkoumali v jedné islámské střední škole (madrase) v okrese Banyuwangi. Mluvili s ředitelem, učiteli, žáky i školskou radou, sledovali výuku a pročítali školní dokumenty. Když vedení kontrolovalo podle jasného plánu a zapojilo do toho i učitele a žáky, učitelé si podle výpovědí lépe plánovali látku a víc přizpůsobovali metody tomu, co třída zvládá. Autoři zároveň popisují vyšší motivaci učitelů a lepší kázeň žáků, i když nic z toho neměřili čísly.",
+        "podrobneVysvetleni": "Jde o případovou studii jediné školy. To znamená, že autoři nesbírali data z mnoha míst. Místo toho šli do hloubky na jednom místě. Použili takzvaný kvalitativní přístup (qualitative approach). Nepočítají tedy procenta, ale popisují, co lidé říkají a dělají.\n\nData sbírali třemi způsoby. Vedli polostrukturované rozhovory, tedy hovory podle připravených okruhů, ale s prostorem pro odbočky. Dál pozorovali dění přímo ve škole. A prostudovali školní dokumenty a zprávy. Mluvili s ředitelem, učiteli, členy školské rady i se žáky.\n\nZáznamy pak roztřídili podle opakujících se témat. Výsledky ověřovali dvěma způsoby. Porovnávali zjištění z různých zdrojů navzájem. A vraceli je účastníkům ke kontrole, zda se v nich poznávají.\n\nCo z toho vyšlo? Strukturovaný dohled, tedy pravidelný a předem domluvený, podle autorů zlepšil přípravu výuky. Učitelé plánovali látku systematičtěji. Metody víc ladili podle potřeb žáků.\n\nDruhé zjištění se týká zapojení ostatních. Když se na hodnocení podíleli učitelé, žáci i školská rada, posílilo to podle autorů studijní atmosféru. Rostla chuť učitelů zkoušet nové postupy. Zlepšila se kázeň a odpovědnost žáků.\n\nTřetí bod je propojení dvou rovin. Vedle administrativy, tedy papírů a hodnocení výkonu, hrála roli i rovina vztahová. Sem patří komunikace s rodiči. Dohled tu nefunguje jako kontrola, ale spíš jako nástroj profesního rozvoje učitelů.",
+        "procJeToDulezite": "Hospitace a kontroly zná každá škola a většina učitelů je nemá v lásce. Tahle práce ukazuje, že záleží hlavně na tom, jestli se dělají pravidelně a společně s učiteli, nebo jen jako hledání chyb.",
+        "poznamkaKOmezenim": "Jde o jedinou školu a o popisnou studii založenou na rozhovorech a pozorování, takže zlepšení nikdo nezměřil čísly a závěry nelze bez dalšího ověření přenášet na jiné školy."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "pass",
+        "hard": [],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 126,
+              "end": 137
+            },
+            "matchedText": " Banyuwangi",
+            "messageCs": "Text opisuje původní název článku („ Banyuwangi“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[126,137]:  Banyuwangi"
+          },
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 238,
+              "end": 417
+            },
+            "matchedText": "Když vedení kontrolovalo podle jasného plánu a zapojilo do toho i učitele a žáky, učitelé si podle výpovědí lépe plánovali látku a víc přizpůsobovali metody tomu, co třída zvládá.",
+            "messageCs": "Tato věta má 29 slov a je moc dlouhá: „Když vedení kontrolovalo podle jasného plánu a zapojilo do toho i učitele a žák…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[238,417]: Když vedení kontrolovalo podle jasného plánu a zapojilo do toho i učitele a žáky, učitelé si podle výpovědí lépe plánovali látku a víc přizpůsobovali metody tomu, co třída zvládá."
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7221472208",
+        "title": "First year student teachers’ perceptions of technology education: The relationship between general teaching, functional learning goals and technical learning",
+        "abstract": "Abstract The aim of this article is to examine first year student teachers’ perceptions of technology education. Being aware of the perceptions needed for teacher education to support their growth in comprehensive technology education teaching and developing the teacher educations. Student teachers’ perceptions are studied in the contexts of general teaching focus, functional learning goals, and the goals of technical learning content. The research question asks about the relationship between the general teaching focus of technology education and the functional learning goals and technical learning among first year craft student teachers ( n = 214) when they first start studying? The empirical data are from Finland, where technology education is associated with the craft subject in comprehensive schools and craft teacher education. The study employed a quantitative survey design using a structured questionnaire. Data were analysed using correlation, regression and mediation analysis to examine the relationships between general teaching focus, functional learning goals, and technical learning. The results highlight the central role of functional learning goals in mediating the relationship between the general teaching focus and technical learning. The direct effect of general teaching focus on technical learning was not significant. Overall, the first year students’ understanding of these areas of technology education and the connections between them was comprehensive and provides positive grounds on which to develop craft and technology teacher education.",
+        "date": "2026-10-12",
+        "url": "https://doi.org/10.1007/s10798-026-10114-6",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1007/s10798-026-10114-6",
+        "openAlexId": "W7221472208",
+        "subfield": {
+          "id": "subfields/3304",
+          "name": "Education"
+        },
+        "field": {
+          "id": "fields/33",
+          "name": "Social Sciences"
+        },
+        "topic": {
+          "id": "T10008",
+          "name": "Teacher Education and Leadership Studies"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Mika Metsärinne",
+          "Anssi Salonen",
+          "Kalle Virta"
+        ],
+        "venue": "International Journal of Technology and Design Education",
+        "indexedDate": "2026-10-12",
+        "referencedWorksCount": 39,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.6975,
+          "everydayRelevance": 0.7333,
+          "freshness": 0.9286,
+          "credibility": 0.7907,
+          "total": 0.7622,
+          "explainDetail": {
+            "v": 0.25,
+            "s": 1,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0
+          },
+          "everydayDomains": [
+            "school",
+            "mind"
+          ],
+          "subfieldKey": "subfields/3304",
+          "evidence": [
+            "total 0.7622 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.70 = P 0.70 − 0.45×t 0.00 − 0.15×j 0.00",
+            "outcome verbs (v 0.25): associated with",
+            "recognisable subjects (s 1.00): subjects, students (title, ×2), teachers (title, ×2), schools",
+            "quantified effect (q 1): sample size",
+            "title concreteness (c 0.80): −0.2 title is 19 words",
+            "everyday relevance 0.73: 2 domain(s) — school, mind",
+            "everyday terms (7): school, schools, student, students, teacher, teachers, focus",
+            "freshness 0.93: 1 day(s) old (effective date 2026-10-12)",
+            "credibility 0.79 = 0.40×c1 1.00 + 0.25×c2 0.58 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in International Journal of Technology and Design Education",
+            "c2 0.58: n = 214",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1007/s10798-026-10114-6)"
+      },
+      "summary": {
+        "souhrn": "Finští výzkumníci se zeptali 214 studentů prvního ročníku učitelství — tedy budoucích učitelů řemeslné a technické výchovy — co si vlastně představují pod výukou techniky. Ukázalo se, že obecná představa o učitelské práci sama o sobě s technickým obsahem výuky nesouvisí. Spojnicí je něco jiného: praktické cíle učení, tedy to, co má žák po hodině umět udělat vlastníma rukama. Jinými slovy, studenti si technické znalosti nespojují s abstraktní pedagogikou, ale s tím, co se v dílně skutečně dělá. Autoři to berou jako dobrý základ pro přípravu učitelů — studenti přicházejí s ucelenou představou už na začátku studia.",
+        "podrobneVysvetleni": "Ve Finsku je technická výchova součástí předmětu zvaného craft, tedy řemeslná a pracovní výchova. Učitelé se na ni připravují ve vysokoškolském studiu. Výzkumníci oslovili 214 studentů hned na začátku prvního ročníku a předložili jim dotazník s pevně danými otázkami. Sledovali tři věci. První bylo obecné zaměření výuky, tedy jak student chápe učitelskou práci jako takovou. Druhou byly funkční cíle učení (anglicky functional learning goals) — tedy to, co mají žáci díky výuce zvládnout prakticky. Třetí byly cíle technického obsahu, tedy konkrétní technické znalosti a dovednosti. Odpovědi pak prohnali statistikou, která hledá, jak spolu jednotlivé oblasti souvisejí a která z nich je případně prostředníkem mezi dvěma dalšími. Výsledek byl jednoznačný. Přímá vazba mezi obecným pohledem na učení a technickým obsahem nevyšla statisticky významná — jinak řečeno, z toho, jak student uvažuje o učitelství obecně, se nedá odhadnout, jak uvažuje o technickém učivu. Jakmile ale do hry vstoupily praktické cíle, spojení se objevilo. Praktické dovednosti tu fungují jako most mezi oběma břehy. Autoři zároveň upozorňují, že studenti měli představu o technické výchově překvapivě ucelenou už před prvním semestrem. Nepřicházejí tedy s prázdnou hlavou a příprava učitelů na to může navázat, místo aby začínala od nuly.",
+        "procJeToDulezite": "Pokud mají děti ve škole dílny nebo pracovní výchovu, záleží na tom, jak o nich jejich učitel přemýšlí — a ta představa se formuje dřív, než vůbec začne studovat. Studie napovídá, že cestou k technickým znalostem vede praktická práce, ne obecné pedagogické poučky.",
+        "poznamkaKOmezenim": "Jde o dotazníkové šetření mezi 214 finskými studenty na začátku studia, takže zachycuje jejich názory v jednom okamžiku a v jednom vzdělávacím systému — neříká nic o tom, jak pak doopravdy učí, ani nakolik to platí v českých školách."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "warn",
+        "hard": [],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 32,
+              "end": 40
+            },
+            "matchedText": " student",
+            "messageCs": "Text opisuje původní název článku („ student“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[32,40]:  student"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 391,
+              "end": 399
+            },
+            "matchedText": " student",
+            "messageCs": "Text opisuje původní název článku („ student“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[391,399]:  student"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 555,
+              "end": 563
+            },
+            "matchedText": " student",
+            "messageCs": "Text opisuje původní název článku („ student“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[555,563]:  student"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 172,
+              "end": 175
+            },
+            "matchedText": "214",
+            "messageCs": "Číslo „214“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „214 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[172,175]: 214"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 330,
+              "end": 339
+            },
+            "matchedText": " student ",
+            "messageCs": "Text opisuje původní název článku („ student “). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[330,339]:  student "
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 758,
+              "end": 966
+            },
+            "matchedText": "Přímá vazba mezi obecným pohledem na učení a technickým obsahem nevyšla statisticky významná — jinak řečeno, z toho, jak student uvažuje o učitelství obecně, se nedá odhadnout, jak uvažuje o technickém učivu.",
+            "messageCs": "Tato věta má 31 slov a je moc dlouhá: „Přímá vazba mezi obecným pohledem na učení a technickým obsahem nevyšla statist…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[758,966]: Přímá vazba mezi obecným pohledem na učení a technickým obsahem nevyšla statisticky významná — jinak řečeno, z toho, jak student uvažuje o učitelství obecně, se nedá odhadnout, jak uvažuje o technickém učivu."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_english_original:statisticky-vyznamny",
+            "span": {
+              "start": 830,
+              "end": 850
+            },
+            "matchedText": "statisticky významná",
+            "messageCs": "U termínu „statisticky významný“ chybí při prvním použití anglický originál v závorce (např. „statisticky významný (statistically significant)“). Čtenář ten anglický výraz potká jinde (§2).",
+            "detail": "jargon:no_english_original:statisticky-vyznamny @ podrobneVysvetleni[830,850]: statisticky významná"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 878,
+              "end": 887
+            },
+            "matchedText": " student ",
+            "messageCs": "Text opisuje původní název článku („ student “). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[878,887]:  student "
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 1122,
+              "end": 1130
+            },
+            "matchedText": " student",
+            "messageCs": "Text opisuje původní název článku („ student“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[1122,1130]:  student"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 1148,
+              "end": 1156
+            },
+            "matchedText": " technic",
+            "messageCs": "Text opisuje původní název článku („ technic“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[1148,1156]:  technic"
+          },
+          {
+            "block": "procJeToDulezite",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 191,
+              "end": 199
+            },
+            "matchedText": " technic",
+            "messageCs": "Text opisuje původní název článku („ technic“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ procJeToDulezite[191,199]:  technic"
+          },
+          {
+            "block": "poznamkaKOmezenim",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 43,
+              "end": 51
+            },
+            "matchedText": " student",
+            "messageCs": "Text opisuje původní název článku („ student“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ poznamkaKOmezenim[43,51]:  student"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7221478266",
+        "title": "What Factors Drive Female Surgeons to Change Jobs or Leave Medicine Altogether?",
+        "abstract": "Objective: To explore reasons female surgeons change jobs or leave medicine entirely. Summary of Background Data: Only a quarter of physicians in surgical specialties are female. Identifying reasons for career dissatisfaction is crucial to improve retention. Methods: An anonymous survey was distributed via private female physician social media groups (physician credentials required) and email communication from 2/2024 to 5/2024. Respondents’ demographics, personal and professional characteristics, and job transitions were collected. Respondents who have not changed jobs or left medicine were excluded. Respondents were categorized into female surgeons or female nonsurgeons, and responses were compared between the 2 groups. Results: A total of 593 surveys were included: 170 (28.7%) female surgeons and 423 (71.3%) female nonsurgeons. Among surgeons, 10 (5.9%) left medicine and 167 (99.4%) changed jobs at least once. Compared with nonsurgeons, surgeons were more frequently non-Hispanic/Latino ethnicity (97.6% vs. 92.3%, P =0.016), more frequently completed fellowship training (58.8% vs. 40.4%, P <0.001), and a higher proportion currently worked in an academic clinical job (44.1% vs. 30%, P =0.002). All other demographics, personal and professional characteristics were comparable between the 2 groups. Surgeons more frequently identified pay inequity (5.3% vs. 1.2%, P =0.005) and harassment/bullying/discrimination (15.3% vs. 6.4%, P <0.001) as the primary reasons for their job change, while nonsurgeons more frequently cited long hours (39.5% vs. 28.7%, P =0.015). Conclusions: Pay inequity and harassment/bullying/discrimination emerged as primary factors driving job changes among female surgeons compared with nonsurgeons. Nearly half of all surgeons indicated an improved work environment and culture could have prevented them from leaving. Efforts are needed to address these concerns and improve retention. Level of evidence: Level III.",
+        "date": "2026-10-12",
+        "url": "https://doi.org/10.1097/sla.0000000000007236",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1097/sla.0000000000007236",
+        "openAlexId": "W7221478266",
+        "subfield": {
+          "id": "subfields/3318",
+          "name": "Gender Studies"
+        },
+        "field": {
+          "id": "fields/33",
+          "name": "Social Sciences"
+        },
+        "topic": {
+          "id": "T10843",
+          "name": "Diversity and Career in Medicine"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Stephanie F. Brierley",
+          "Kathleen Heller",
+          "Kathleen van Leeuwen",
+          "Gwen M. Grimsby"
+        ],
+        "venue": "Annals of Surgery",
+        "indexedDate": "2026-10-12",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.5755,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.9286,
+          "credibility": 0.605,
+          "total": 0.7527,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 0,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.1799
+          },
+          "everydayDomains": [
+            "screens",
+            "transport",
+            "work"
+          ],
+          "subfieldKey": "subfields/3318",
+          "evidence": [
+            "total 0.7527 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.58 = P 0.60 − 0.45×t 0.00 − 0.15×j 0.18",
+            "outcome verbs (v 0.75): improved, improves, prevented",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 1): percentage, p-value",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.18): 5/278 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 3 domain(s) — screens, transport, work",
+            "everyday terms (5): social media, driving, work, job, jobs",
+            "freshness 0.93: 1 day(s) old (effective date 2026-10-12)",
+            "credibility 0.61 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Annals of Surgery",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1097/sla.0000000000007236)"
+      },
+      "summary": {
+        "souhrn": "Anonymní dotazník vyplnilo 593 lékařek, které aspoň jednou změnily práci nebo z medicíny odešly úplně. Chirurgyň mezi nimi bylo 170, tedy necelá třetina. Právě ony uváděly jako hlavní důvod změny práce nerovné odměňování a obtěžování, šikanu či diskriminaci podstatně častěji než ostatní lékařky. Nechirurgyně naopak častěji zmiňovaly dlouhou pracovní dobu: uvedlo ji 39,5 % z nich, tedy zhruba dvě z pěti, proti 28,7 % chirurgyň, tedy necelým třem z deseti. Téměř polovina chirurgyň, tedy skoro každá druhá, napsala, že lepší prostředí a vztahy na pracovišti by je byly udržely.",
+        "podrobneVysvetleni": "V chirurgických oborech tvoří ženy jen asi čtvrtinu lékařů, tedy jednu ze čtyř. Autoři chtěli zjistit, proč lékařky z těchto oborů odcházejí. Od února do května 2024 rozeslali anonymní dotazník přes uzavřené skupiny lékařek na sociálních sítích a e-mailem. Do skupin se dostal jen ten, kdo doložil lékařskou kvalifikaci. Hodnotili pouze odpovědi těch, které práci opravdu změnily nebo medicínu opustily. Zůstalo 593 dotazníků: 170 chirurgyň a 423 lékařek z jiných oborů. Deset chirurgyň, tedy zhruba jedna z sedmnácti, opustilo medicínu úplně. Téměř všechny ostatní změnily zaměstnání aspoň jednou. Obě skupiny si byly v osobních i pracovních poměrech dost podobné. Lišily se v několika bodech. Chirurgyně častěji absolvovaly nástavbovou specializaci, a také častěji pracovaly na akademickém pracovišti: 44,1 %, tedy necelá polovina, proti 30 %, tedy necelé třetině. Hlavní rozdíl byl ale v důvodech odchodu. Nerovné odměňování uvedlo jako hlavní důvod 5,3 % chirurgyň, tedy asi jedna z dvaceti, proti 1,2 % ostatních lékařek, tedy zhruba jedné ze sta. Obtěžování, šikanu nebo diskriminaci uvedlo 15,3 % chirurgyň, tedy zhruba každá sedmá, proti 6,4 % ostatních, tedy zhruba jedné z šestnácti. Autoři z toho vyvozují, že u chirurgyň nejde jen o únavu z dlouhých služeb. Jde o peníze a o chování kolegů.",
+        "procJeToDulezite": "Nedostatek chirurgů se netýká jen nemocnic, ale i pacientů, kteří čekají na operaci. Pokud lékařky odcházejí kvůli nerovným platům a chování okolí, jsou to věci, které lze na pracovišti změnit.",
+        "poznamkaKOmezenim": "Dotazník vyplnily jen lékařky, které samy narazily na výzvu v online skupinách, takže vzorek není náhodný a výsledky nelze bez výhrad přenést na všechny lékařky; autoři sami řadí práci mezi slabší typy důkazů a příčinu a následek z ní vyčíst nelze."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 27,
+              "end": 30
+            },
+            "matchedText": "593",
+            "messageCs": "Číslo „593“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „593 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[27,30]: 593"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 128,
+              "end": 131
+            },
+            "matchedText": "170",
+            "messageCs": "Číslo „170“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „170 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[128,131]: 170"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 840,
+              "end": 844
+            },
+            "matchedText": "30 %",
+            "messageCs": "Číslo „30 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „30 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[840,844]: 30 %"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 297,
+              "end": 458
+            },
+            "matchedText": "Nechirurgyně naopak častěji zmiňovaly dlouhou pracovní dobu: uvedlo ji 39,5 % z nich, tedy zhruba dvě z pěti, proti 28,7 % chirurgyň, tedy necelým třem z deseti.",
+            "messageCs": "Tato věta má 27 slov a je moc dlouhá: „Nechirurgyně naopak častěji zmiňovaly dlouhou pracovní dobu: uvedlo ji 39,5 % z…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[297,458]: Nechirurgyně naopak častěji zmiňovaly dlouhou pracovní dobu: uvedlo ji 39,5 % z nich, tedy zhruba dvě z pěti, proti 28,7 % chirurgyň, tedy necelým třem z deseti."
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-10-13T04:46:28.778Z",
+  "generatedOn": "2026-10-13",
+  "schemaVersion": 1
+}

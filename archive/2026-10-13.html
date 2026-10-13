@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Společnost, ekonomika a vzdělávání – 13. října 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Společnost, ekonomika a vzdělávání</h1>
+<p class="dateline"><time datetime="2026-10-13">13. října 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 5</p>
+<div class="summary"><p><span class="lead">Téměř čtyři z deseti kalifornských dospívajících se bojí, že je zasáhne násilí se střelnou zbraní.</span> Ukázal to rozbor odpovědí 2 154 mladých lidí, tedy vzorku sestaveného tak, aby zastupoval celý stát. Data pocházejí z kalifornského zdravotního průzkumu z let 2021 a 2022. Ti, kdo takový strach uvedli, měli zhruba 1,6krát vyšší šanci, že budou mít psychické potíže. A asi 1,7krát vyšší šanci, že během uplynulého roku mysleli na sebevraždu.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Výzkumníci pracovali s odpověďmi z běžného zdravotního průzkumu domácností. Zúčastnilo se 2 154 dospívajících — tedy vzorek vybraný tak, aby odpovídal složení kalifornské mládeže. Mladí lidé odpovídali, zda se obávají, že zažijí násilí se střelnou zbraní. Dále uváděli, jak se cítili psychicky v posledním měsíci. A zda během posledního roku přemýšleli o sebevraždě.</p>
+<p>Obavu uvedlo 39 procent dotázaných, tedy zhruba čtyři z deseti. Častěji šlo o dívky a o mladé lidi s jinou genderovou identitou. Objevovala se také častěji u rodin s nižšími příjmy. Souvisela i s častým používáním sociálních sítí a s pocitem, že okolí domova není bezpečné. Vyšší byla i u těch, kdo měli ke zbrani přístup nebo znali vrstevníky se zbraní. Naopak ti, kdo zbraň měli doma nebo už s ní někdy stříleli, se báli méně.</p>
+<p>Mladí se strachem z ozbrojeného násilí měli 1,6krát vyšší šanci na psychické potíže. U myšlenek na sebevraždu byla šance 1,7krát vyšší. Zjednodušeně: tyto potíže se u nich objevovaly výrazně častěji než u ostatních. Studie ale nemůže říct, co je příčina a co následek. Je možné, že strach zhoršuje duševní stav. Stejně tak je možné, že člověk v tísni vnímá hrozby silněji.</p>
+<h3>Proč je to důležité</h3>
+<p>Strach z násilí není navenek vidět. Přitom jde podle téhle studie ruku v ruce s horším duševním stavem dospívajících. Je to tedy téma, na které se rodiče i učitelé mohou zeptat včas.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Grace Hindmarch, Jocelyn I. Meza, Roberto López, D. Imelda Padilla-Frausto, Joan Rosenbaum Asarnow, Daniel Eisenberg</dd>
+<dt>Časopis</dt>
+<dd>PEDIATRICS</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-10-12">12. října 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1542/peds.2025-074683" rel="noreferrer">10.1542/peds.2025-074683</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7221458874" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1542/peds.2025-074683" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jednorázové dotazování v jednom americkém státě, takže z něj nelze určit, co je příčina a co následek.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 5</p>
+<div class="summary"><p><span class="lead">Na venkově v australském státě Victoria se tazatelé zeptali 2680 lidí, jak využívají zdravotní péči a co jim v tom brání.</span> Muži chodili k praktickému lékaři i k zubaři méně často než ženy. Ke specialistovi se hůř dostávali lidé bez dokončené střední školy, lidé narození v zahraničí a obyvatelé malých měst. Překážky jako cena, vzdálenost a čekání lidé popisovali často, ale návštěvu lékaře jim nakonec nepřekazily. U zubaře to bylo jiné: cena a pocit, že to není potřeba, péči skutečně omezily.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Autoři použili dotazníkové šetření. Domácnosti vybrali náhodně ze seznamů místních úřadů. Vyškolení tazatelé se ptali na zdraví, využívání služeb, překážky v přístupu k nim a základní údaje o člověku. Odpovědi poskytlo 2680 lidí. Při vyhodnocení se opřeli o takzvaný Andersenův model chování (Andersen&#39;s behavioral model). Ten rozděluje vlivy do tří skupin: kdo člověk je, co potřebuje a co mu využití služby usnadňuje.</p>
+<p>Výsledky autoři uvádějí jako srovnání šancí mezi skupinami. Muži měli oproti ženám zhruba o 43 % nižší šanci, že byli u praktického lékaře — tedy necelé dvě třetiny toho co ženy. U zubaře byla šance mužů asi o třetinu nižší. Lidé bez zaměstnání měli oproti pracujícím zhruba poloviční šanci, že k zubaři zašli. Ke specialistovi se méně často dostali lidé bez dokončené střední školy, zhruba o pětinu. U lidí narozených mimo Austrálii to byla asi třetina a u obyvatel malých měst oproti lidem z regionálního centra opět zhruba pětina.</p>
+<p>Překážky lidé jmenovali: cenu, vzdálenost a čekací dobu. U lékařských služeb se ale tyto překážky nepojily s menším využitím péče. Autoři z toho usuzují, že cestu k lékaři spíš zdrží a zkomplikují, než aby ji zavřely. U zubní péče to platilo jinak. Cena a přesvědčení, že ošetření není potřeba, se s nižším využitím služeb pojily přímo.</p>
+<h3>Proč je to důležité</h3>
+<p>Ukazuje to, že dostupnost péče mimo velká města není jen otázka vzdálenosti — roli hraje i vzdělání, původ a práce. A zubní péče je přitom zranitelnější než ta lékařská, protože ji cena dokáže odříznout úplně.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Kristen Glenister, Andrew John Hamilton, Lisa Bourke, Robyn McNeil, David Simmons</dd>
+<dt>Časopis</dt>
+<dd>BMC Health Services Research</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-10-11">11. října 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1186/s12913-026-15773-8" rel="noreferrer">10.1186/s12913-026-15773-8</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7221361479" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1186/s12913-026-15773-8" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jednorázové dotazníkové šetření v jedné venkovské oblasti Austrálie, opřené o to, co lidé sami uvedli, takže ukazuje souvislosti, ne příčiny — a jinde to může vypadat jinak.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 5</p>
+<div class="summary"><p><span class="lead">Pravidelné hospitace nemusí být lovem na chyby.</span> Indonéští autoři to zkoumali v jedné islámské střední škole (madrase) v okrese Banyuwangi. Mluvili s ředitelem, učiteli, žáky i školskou radou, sledovali výuku a pročítali školní dokumenty. Když vedení kontrolovalo podle jasného plánu a zapojilo do toho i učitele a žáky, učitelé si podle výpovědí lépe plánovali látku a víc přizpůsobovali metody tomu, co třída zvládá. Autoři zároveň popisují vyšší motivaci učitelů a lepší kázeň žáků, i když nic z toho neměřili čísly.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Jde o případovou studii jediné školy. To znamená, že autoři nesbírali data z mnoha míst. Místo toho šli do hloubky na jednom místě. Použili takzvaný kvalitativní přístup (qualitative approach). Nepočítají tedy procenta, ale popisují, co lidé říkají a dělají.</p>
+<p>Data sbírali třemi způsoby. Vedli polostrukturované rozhovory, tedy hovory podle připravených okruhů, ale s prostorem pro odbočky. Dál pozorovali dění přímo ve škole. A prostudovali školní dokumenty a zprávy. Mluvili s ředitelem, učiteli, členy školské rady i se žáky.</p>
+<p>Záznamy pak roztřídili podle opakujících se témat. Výsledky ověřovali dvěma způsoby. Porovnávali zjištění z různých zdrojů navzájem. A vraceli je účastníkům ke kontrole, zda se v nich poznávají.</p>
+<p>Co z toho vyšlo? Strukturovaný dohled, tedy pravidelný a předem domluvený, podle autorů zlepšil přípravu výuky. Učitelé plánovali látku systematičtěji. Metody víc ladili podle potřeb žáků.</p>
+<p>Druhé zjištění se týká zapojení ostatních. Když se na hodnocení podíleli učitelé, žáci i školská rada, posílilo to podle autorů studijní atmosféru. Rostla chuť učitelů zkoušet nové postupy. Zlepšila se kázeň a odpovědnost žáků.</p>
+<p>Třetí bod je propojení dvou rovin. Vedle administrativy, tedy papírů a hodnocení výkonu, hrála roli i rovina vztahová. Sem patří komunikace s rodiči. Dohled tu nefunguje jako kontrola, ale spíš jako nástroj profesního rozvoje učitelů.</p>
+<h3>Proč je to důležité</h3>
+<p>Hospitace a kontroly zná každá škola a většina učitelů je nemá v lásce. Tahle práce ukazuje, že záleží hlavně na tom, jestli se dělají pravidelně a společně s učiteli, nebo jen jako hledání chyb.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Ghofur, Mahmud Abdul; Universitas KH Mukhtar Syafaat Banyuwangi, Indonesia, Purnomo, M Sidiq; Universitas KH Mukhtar Syafaat Banyuwangi, Indonesia</dd>
+<dt>Časopis</dt>
+<dd>Hijri</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-10-12">12. října 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.30821/hijri.v14i2.28082" rel="noreferrer">10.30821/hijri.v14i2.28082</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7163049508" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.30821/hijri.v14i2.28082" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jedinou školu a o popisnou studii založenou na rozhovorech a pozorování, takže zlepšení nikdo nezměřil čísly a závěry nelze bez dalšího ověření přenášet na jiné školy.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-4">
+<p class="paper-counter">Studie 4 z 5</p>
+<div class="summary"><p><span class="lead">Finští výzkumníci se zeptali 214 studentů prvního ročníku učitelství — tedy budoucích učitelů řemeslné a technické výchovy — co si vlastně představují pod výukou techniky.</span> Ukázalo se, že obecná představa o učitelské práci sama o sobě s technickým obsahem výuky nesouvisí. Spojnicí je něco jiného: praktické cíle učení, tedy to, co má žák po hodině umět udělat vlastníma rukama. Jinými slovy, studenti si technické znalosti nespojují s abstraktní pedagogikou, ale s tím, co se v dílně skutečně dělá. Autoři to berou jako dobrý základ pro přípravu učitelů — studenti přicházejí s ucelenou představou už na začátku studia.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Ve Finsku je technická výchova součástí předmětu zvaného craft, tedy řemeslná a pracovní výchova. Učitelé se na ni připravují ve vysokoškolském studiu. Výzkumníci oslovili 214 studentů hned na začátku prvního ročníku a předložili jim dotazník s pevně danými otázkami. Sledovali tři věci. První bylo obecné zaměření výuky, tedy jak student chápe učitelskou práci jako takovou. Druhou byly funkční cíle učení (anglicky functional learning goals) — tedy to, co mají žáci díky výuce zvládnout prakticky. Třetí byly cíle technického obsahu, tedy konkrétní technické znalosti a dovednosti. Odpovědi pak prohnali statistikou, která hledá, jak spolu jednotlivé oblasti souvisejí a která z nich je případně prostředníkem mezi dvěma dalšími. Výsledek byl jednoznačný. Přímá vazba mezi obecným pohledem na učení a technickým obsahem nevyšla statisticky významná — jinak řečeno, z toho, jak student uvažuje o učitelství obecně, se nedá odhadnout, jak uvažuje o technickém učivu. Jakmile ale do hry vstoupily praktické cíle, spojení se objevilo. Praktické dovednosti tu fungují jako most mezi oběma břehy. Autoři zároveň upozorňují, že studenti měli představu o technické výchově překvapivě ucelenou už před prvním semestrem. Nepřicházejí tedy s prázdnou hlavou a příprava učitelů na to může navázat, místo aby začínala od nuly.</p>
+<h3>Proč je to důležité</h3>
+<p>Pokud mají děti ve škole dílny nebo pracovní výchovu, záleží na tom, jak o nich jejich učitel přemýšlí — a ta představa se formuje dřív, než vůbec začne studovat. Studie napovídá, že cestou k technickým znalostem vede praktická práce, ne obecné pedagogické poučky.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Mika Metsärinne, Anssi Salonen, Kalle Virta</dd>
+<dt>Časopis</dt>
+<dd>International Journal of Technology and Design Education</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-10-12">12. října 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1007/s10798-026-10114-6" rel="noreferrer">10.1007/s10798-026-10114-6</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7221472208" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1007/s10798-026-10114-6" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o dotazníkové šetření mezi 214 finskými studenty na začátku studia, takže zachycuje jejich názory v jednom okamžiku a v jednom vzdělávacím systému — neříká nic o tom, jak pak doopravdy učí, ani nakolik to platí v českých školách.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-5">
+<p class="paper-counter">Studie 5 z 5</p>
+<div class="summary"><p><span class="lead">Anonymní dotazník vyplnilo 593 lékařek, které aspoň jednou změnily práci nebo z medicíny odešly úplně.</span> Chirurgyň mezi nimi bylo 170, tedy necelá třetina. Právě ony uváděly jako hlavní důvod změny práce nerovné odměňování a obtěžování, šikanu či diskriminaci podstatně častěji než ostatní lékařky. Nechirurgyně naopak častěji zmiňovaly dlouhou pracovní dobu: uvedlo ji 39,5 % z nich, tedy zhruba dvě z pěti, proti 28,7 % chirurgyň, tedy necelým třem z deseti. Téměř polovina chirurgyň, tedy skoro každá druhá, napsala, že lepší prostředí a vztahy na pracovišti by je byly udržely.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>V chirurgických oborech tvoří ženy jen asi čtvrtinu lékařů, tedy jednu ze čtyř. Autoři chtěli zjistit, proč lékařky z těchto oborů odcházejí. Od února do května 2024 rozeslali anonymní dotazník přes uzavřené skupiny lékařek na sociálních sítích a e-mailem. Do skupin se dostal jen ten, kdo doložil lékařskou kvalifikaci. Hodnotili pouze odpovědi těch, které práci opravdu změnily nebo medicínu opustily. Zůstalo 593 dotazníků: 170 chirurgyň a 423 lékařek z jiných oborů. Deset chirurgyň, tedy zhruba jedna z sedmnácti, opustilo medicínu úplně. Téměř všechny ostatní změnily zaměstnání aspoň jednou. Obě skupiny si byly v osobních i pracovních poměrech dost podobné. Lišily se v několika bodech. Chirurgyně častěji absolvovaly nástavbovou specializaci, a také častěji pracovaly na akademickém pracovišti: 44,1 %, tedy necelá polovina, proti 30 %, tedy necelé třetině. Hlavní rozdíl byl ale v důvodech odchodu. Nerovné odměňování uvedlo jako hlavní důvod 5,3 % chirurgyň, tedy asi jedna z dvaceti, proti 1,2 % ostatních lékařek, tedy zhruba jedné ze sta. Obtěžování, šikanu nebo diskriminaci uvedlo 15,3 % chirurgyň, tedy zhruba každá sedmá, proti 6,4 % ostatních, tedy zhruba jedné z šestnácti. Autoři z toho vyvozují, že u chirurgyň nejde jen o únavu z dlouhých služeb. Jde o peníze a o chování kolegů.</p>
+<h3>Proč je to důležité</h3>
+<p>Nedostatek chirurgů se netýká jen nemocnic, ale i pacientů, kteří čekají na operaci. Pokud lékařky odcházejí kvůli nerovným platům a chování okolí, jsou to věci, které lze na pracovišti změnit.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Stephanie F. Brierley, Kathleen Heller, Kathleen van Leeuwen, Gwen M. Grimsby</dd>
+<dt>Časopis</dt>
+<dd>Annals of Surgery</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-10-12">12. října 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1097/sla.0000000000007236" rel="noreferrer">10.1097/sla.0000000000007236</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7221478266" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1097/sla.0000000000007236" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Dotazník vyplnily jen lékařky, které samy narazily na výzvu v online skupinách, takže vzorek není náhodný a výsledky nelze bez výhrad přenést na všechny lékařky; autoři sami řadí práci mezi slabší typy důkazů a příčinu a následek z ní vyčíst nelze.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 13. října 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>
