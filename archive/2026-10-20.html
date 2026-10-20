@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Fyzika, vesmír a technika – 20. října 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Fyzika, vesmír a technika</h1>
+<p class="dateline"><time datetime="2026-10-20">20. října 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 5</p>
+<div class="summary"><p><span class="lead">Baterie elektromobilů se při rychlém vybíjení zahřívají a aktivní chlazení ventilátory či čerpadly samo spotřebovává energii.</span> Indičtí autoři zkusili jinou cestu: články obalili parafínem, který teplo pohlcuje tím, že taje. Aby parafín teplo lépe rozváděl, přimíchali do něj pětinu expandovaného grafitu, a jeho tepelná vodivost tím stoupla téměř třicetkrát. Osmičlánkový modul se pak při vybíjení trvajícím zhruba půl hodiny zahřál nejvýš na 38,2 °C, zatímco srovnávací modul chlazený jen vzduchem na 52,3 °C. Rozdíly mezi jednotlivými články klesly na ±1,1 °C a po 500 nabitích a vybitích materiál podle měření neztratil schopnost teplo pohlcovat.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Princip je jednoduchý. Některé látky při tání pohltí hodně tepla, aniž by se samy výrazně ohřály. Odborně se jim říká materiály s fázovou změnou (anglicky phase change materials, PCM). Jejich slabinou je, že teplo vedou špatně: roztaje jen tenká vrstva u článku a zbytek hmoty se nezapojí. Autoři proto do běžného parafínu RT42 přidali ve vakuu 20 % expandovaného grafitu, tedy pětinu objemu lehkého pórovitého uhlíku. Vodivost směsi vzrostla na 5,9 W/m·K, což je 29,5krát víc než u samotného parafínu. Schopnost pohlcovat teplo při tání přitom zůstala vysoká, 182 joulů na gram.</p>
+<p>Směsí pak obalili osm článků LG Chem M50S poskládaných do krychle 2×2×2. Testovali vybíjení rychlostmi 1C až 5C; 1C znamená, že se baterie vyprázdní za hodinu, 5C zhruba za dvanáct minut. Přidali i krátké proudové špičky 3C, které napodobují zrychlení a brzdění. Při vybíjení 2C a pokojové teplotě 25 °C se články zahřály nejvýš na 38,2 °C místo 52,3 °C u modulu chlazeného vzduchem. Rozdíl mezi nejteplejším a nejchladnějším místem činil ±1,1 °C, aktivní kapalinové chlazení s čerpadlem dosáhlo ±0,3 °C. Po 500 úplných nabitích a vybitích měl materiál stále stejnou schopnost pohlcovat teplo a baterie nestárla rychleji. Od teploty, kdy u článků hrozí nezvladatelné přehřívání (asi 70 °C), zbývala rezerva kolem 28 °C.</p>
+<h3>Proč je to důležité</h3>
+<p>Přehřátá baterie rychleji stárne a v krajním případě se může vznítit, takže každé chlazení, které nepotřebuje čerpadlo ani proud, prodlužuje dojezd i životnost. Výsledky také ukazují, že pasivní řešení se může teplotně vyrovnat složitějším systémům s kapalinou.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Aarush Gupta, K M Veerabadran</dd>
+<dt>Časopis</dt>
+<dd>Indian Journal of Science and Technology</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-10-18">18. října 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.17485/ijst/v19i35.220" rel="noreferrer">10.17485/ijst/v19i35.220</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7221901369" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.17485/ijst/v19i35.220" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o laboratorní test osmi článků, nikoli celé automobilové baterie, a autoři sami uvádějí, že nezkoušeli záměrné poškození článků ani extrémní poruchové stavy, takže ochranu před vznícením studie přímo neprokazuje.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 5</p>
+<div class="summary"><p><span class="lead">Sodíkové baterie lákají tím, že jejich suroviny jsou levné a běžně dostupné, jenže chybí dost dobrý materiál pro zápornou elektrodu.</span> Tým si proto vzal běžně dostupný plast poly(dicyklopentadien), zuhelnatěl ho při vysokých teplotách a část vzorků navíc nechal projít takzvanou aktivací — úpravou, která z uhlíku odstraňuje nepravidelnosti. Ukázalo se, že aktivace pomůže jen tehdy, když byl uhlík předtím vypálený při vyšší teplotě: v takovém případě se uhlíkové vrstvičky uspořádají do struktury, kde jsou sice rovnoběžné, ale vůči sobě pootočené, a navíc od sebe dál. Nejlepší vzorek si po 500 nabíjecích cyklech udržel 88,1 % původní kapacity, tedy ztratil zhruba osminu, a to v běžném levném elektrolytu na bázi uhličitanů. Je to laboratorní výsledek, ne hotová baterie do telefonu, ale ukazuje levnou cestu k materiálu, který vydrží dlouho.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Záporná elektroda je ta část baterie, která při nabíjení pojme přicházející ionty. U sodíkových baterií se na ni používá takzvaný tvrdý uhlík (hard carbon) — uhlíkatý materiál, který na rozdíl od grafitu nemá úhledně poskládané vrstvy. Autoři ho vyrobili z polymeru poly(dicyklopentadien), který je komerčně dostupný a levný. Postupovali ve dvou krocích: nejdřív materiál zuhelnatěli (karbonizace) při různých teplotách, pak ho u části vzorků ještě aktivovali. Klíčové zjištění je, že oba kroky spolu souvisejí. U vzorků vypálených při nižší teplotě aktivace mnoho nepřinesla; u těch z vyšších teplot naopak odstranila poruchy ve struktuře a zvětšila mezery mezi uhlíkovými vrstvami. Vznikla tím struktura, které se říká turbostratická (turbostratic) — vrstvy leží nad sebou rovnoběžně, ale každá je náhodně pootočená, podobně jako nedbale složený štos papírů. Takto upravené vzorky zvládaly rychlejší nabíjení a lépe si držely kapacitu než vzorky bez aktivace. Nejlepší z nich dosáhl při pomalém nabíjení kapacity 352 mAh (tedy množství náboje, které materiál dokáže opakovaně přijmout a vydat) a po 500 cyklech měl ještě 88,1 % výchozí hodnoty. Důležité je, že k tomu stačil běžný elektrolyt na bázi uhličitanů, tedy ta levnější a v průmyslu zavedená varianta. Práce tak nabízí návod, jak z dostupné suroviny udělat uhlík s dlouhou životností.</p>
+<h3>Proč je to důležité</h3>
+<p>Sodík je oproti lithiu laciný a všude ho dost, takže levný a trvanlivý materiál pro elektrody je jedna z podmínek, aby sodíkové baterie zlevnily ukládání elektřiny z větru a slunce. Pro čtenáře to může jednou znamenat levnější domácí úložiště i levnější elektroniku.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>David Schuster, Glen J. Smales, Max Schmallegger, Julian M. Rosalie, Konstantin Kraushaar, Andreas Lißner a další</dd>
+<dt>Časopis</dt>
+<dd>Advanced Science</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-10-18">18. října 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1002/advs.78311" rel="noreferrer">10.1002/advs.78311</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7162694951" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://doi.org/10.1002/advs.78311" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1002/advs.78311" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o laboratorní měření na malých článcích, nikoli o hotovou baterii — 500 cyklů je slušný test, ale skutečné nasazení vyžaduje tisíce cyklů a ověření výroby ve velkém.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 5</p>
+<div class="summary"><p><span class="lead">Hnojivo, které si samo pozná, kdy je rostlině teplo — tak nějak vypadá nápad čínsko-mezinárodního týmu, který popsal obal na granule hnojiva reagující na teplotu.</span> Vědci smíchali polyuretan vyrobený z ricinového oleje s látkou zvanou poloxamer 407, jež při zhruba 20 °C mění své uspořádání a funguje jako vratný přepínač: ve studeném obalu drží živiny uvnitř, v teple je pustí ven. U nejlepší varianty, kde obal tvořil 3 % hmotnosti granule a poloxamer 10 % obalu, se za třicet dní při 10 °C uvolnilo jen 9,22 % dusíku — tedy necelá desetina —, kdežto při 30 °C to bylo 80,32 %, tedy zhruba osmkrát až devětkrát víc. Teplota 20 °C zhruba odpovídá tomu, kdy ozimé plodiny po zimě znovu začínají růst, takže by hnojivo mohlo dodávat dusík přesně tehdy, kdy ho rostlina potřebuje. Zatím ale jde o laboratorní měření, ne o pokus na poli.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Běžná obalovaná hnojiva uvolňují živiny difuzí — tedy prostým prosakováním obalem — a to probíhá pořád, ať je venku mráz nebo vedro. Rostliny si ovšem o dusík řeknou hlavně na jaře, když se rozběhne růst; co se uvolní v zimě, často odteče do podzemní vody nebo potoků. Autoři proto hledali obal, který by se choval jako ventil ovládaný teplotou.</p>
+<p>Základem obalu je polyuretan připravený z ricinového oleje, tedy z obnovitelné suroviny, a ne z ropy. Do něj přidali poloxamer 407 (v literatuře označovaný F127), což je látka měnící kolem 20 °C své uspořádání, a to vratně — ochladí-li se, vrátí se do původního stavu. Uvolňování dusíku měřili digitálním refraktometrem, přístrojem, který podle lomu světla zjistí, kolik látky je rozpuštěno ve vodě.</p>
+<p>Nejlepší vzorek, označený TRBF10, měl obal tvořící 3 % hmotnosti granule a v obalu 10 % poloxameru. Za třicet dní při 10 °C, což odpovídá období, kdy ozimy odpočívají, uvolnil 9,22 % dusíku — tedy méně než desetinu. Při 30 °C, tedy v době aktivního růstu, to bylo 80,32 %, zhruba čtyři pětiny, což je 8,7krát víc.</p>
+<p>Autoři technologii označují za dobře škálovatelnou, tedy vyrobitelnou ve větším množství, a vidí v ní cestu k hnojivům, která se přizpůsobí počasí.</p>
+<h3>Proč je to důležité</h3>
+<p>Dusík, který se z polí vyplaví do vody, je jedním z hlavních důvodů zarůstání rybníků řasami a znečištění podzemních vod — hnojivo, které v chladu počká, by tyhle ztráty mohlo omezit a zároveň ušetřit zemědělcům část nákladů.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Jiahui Liu, Li J, Ziyao Li, Xiangjie Zhao, Fengyan Fang, Yan Liu a další</dd>
+<dt>Časopis</dt>
+<dd>Advanced Science</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-10-18">18. října 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1002/advs.78371" rel="noreferrer">10.1002/advs.78371</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7222872607" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1002/advs.78371" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o laboratorní měření uvolňování dusíku ve vodě při stálých teplotách, nikoli o pokus na poli, kde teplota kolísá během dne i hloubkou půdy, takže skutečný přínos pro výnosy i životní prostředí zůstává zatím neověřený.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-4">
+<p class="paper-counter">Studie 4 z 5</p>
+<div class="summary"><p><span class="lead">Zinko-vzdušné baterie potřebují mezi zinkem a vzduchovou elektrodou gel, který vede ionty a nevyteče.</span> Vědci ho místo obvyklého chemického síťování nebo zahřívání zpevnili tím, že do směsi polyvinylalkoholu a kyseliny polyakrylové přimíchali glycerol nebo ethylenglykol — běžné sirupovité kapaliny, které se na polymer navážou slabými vodíkovými můstky. Varianta s glycerolem nasákla nejvíc louhu (1080 % vlastní hmotnosti, tedy skoro jedenáctinásobek) a nejlépe vedla elektrický proud. Baterie s ní vydržela 500 nabíjecích cyklů, tedy asi 80 hodin provozu, a fungovala i při 85 °C. Daň je menší pružnost: pásek gelu se před přetržením protáhne o 82 % své délky, tedy skoro na dvojnásobek, zatímco zahřívaná verze o 121 %, tedy o něco víc než na dvojnásobek.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Zinko-vzdušná baterie bere kyslík přímo ze vzduchu a elektřinu získává z reakce se zinkem. Mezi elektrodami musí být prostředí vedoucí ionty, obvykle louh (hydroxid draselný), který se kvůli bezpečnosti zahušťuje do gelu z polyvinylalkoholu a kyseliny polyakrylové. Ten se běžně zpevňuje chemickým síťováním nebo tepelným vytvrzením, což výrobu komplikuje a může zhoršit průchod iontů. Tým proto do směsi přimíchal glycerol nebo ethylenglykol — malé molekuly, které se na polymerní řetězce navážou vodíkovými můstky, tedy slabými, ale velmi početnými vazbami, a drží síť pohromadě bez dalšího kroku. Nejlépe dopadl glycerol. Gel s ním pojal 1080 % louhu, tedy téměř jedenáctinásobek vlastní hmotnosti, a měl nejvyšší vodivost ze srovnávaných vzorků (208 mS/cm). Baterie s tímto elektrolytem dodala 54 miliwattu na čtvereční centimetr, tedy z každého centimetru čtverečního zhruba dvacetinu wattu, a kapacitu 10 miliampérhodin na čtvereční centimetr, což odpovídá proudu 10 miliampér po dobu jedné hodiny z každého čtverečního centimetru plochy. Vydržela 500 cyklů nabití a vybití, dohromady 80 hodin, a pracovala i při 85 °C — právě proto, že z gelu se díky glycerolu tolik neodpařuje voda. Zaplatilo se to pružností: materiál se před přetržením protáhne o 82 % délky, tedy skoro na dvojnásobek, proti 121 % u tepelně vytvrzené verze, která se natáhne na víc než dvojnásobek. Autoři zmiňují, že takový elektrolyt by mohl fungovat i tam, kde je k dispozici odpadní teplo z provozu.</p>
+<h3>Proč je to důležité</h3>
+<p>Levnější a jednodušší výroba gelu pro baterie znamená nižší cenu úložišť energie, a elektrolyt, který nevyschne ani v horku, otevírá použití tam, kde dnešní vodní baterie selhávají.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Alejandro Arredondo‐Espínola, Carlos Manuel Ramos-Castillo, Beatriz Liliana España‐Sánchez, Lorena Álvarez‐Contreras, Noé Arjona</dd>
+<dt>Časopis</dt>
+<dd>Batteries &amp; Supercaps</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-10-18">18. října 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1002/batt.70513" rel="noreferrer">10.1002/batt.70513</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7222872859" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1002/batt.70513" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o laboratorní vzorky a testování po 500 cyklech (asi 80 hodin) je stále krátká doba, takže o chování baterie po měsících nebo letech provozu práce nic neříká.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-5">
+<p class="paper-counter">Studie 5 z 5</p>
+<div class="summary"><p><span class="lead">Velká solární elektrárna může mít panelů dost, ale když vypadne cesta, kterou elektřina odchází do sítě, je výroba k ničemu.</span> Autoři proto spočítali, kolik energie se ztratí u čtyř způsobů, jak vyvést zdroj se špičkovým výkonem 100 MW: jednou cestou 100 MW, dvěma po 60 MW, třemi po 40 MW a dvěma po 100 MW. Pokud je každá cesta mimo provoz 1 % času (tedy asi jeden den ze sta) a společná část 0,1 % času, vycházejí roční ztráty energie 1,0990 %, 0,5919 %, 0,3638 % a 0,1100 %. Zajímavý je výsledek, že tři cesty po 40 MW uchrání víc energie než dvě po 60 MW, přestože u nich je menší šance udržet plný výkon. Jde o výpočtové scénáře pro projektanty, ne o měření na skutečných saudských elektrárnách.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Autoři sestavili počtářský model: ke každému možnému stavu poruch (jedna cesta mimo provoz, dvě najednou, výpadek společné části) spočítali přesnou pravděpodobnost a vynásobili ji tím, kolik by se v takovou chvíli dalo vyrobit — k tomu použili běžný denní průběh výroby solární elektrárny. Do modelu přidali dvě věci, které se často opomíjejí. První je společný výpadek (shared outage), tedy porucha prvku, který je pro všechny cesty stejný, takže ho žádná záloha nenahradí. Druhá je přepojení sběrnice (collector-bus reconfiguration) — možnost převést odpojenou část elektrárny na cestu, která je v pořádku. Výsledky pro čtyři uspořádání jsou 1,0990 %, 0,5919 %, 0,3638 % a 0,1100 % ztracené energie; poslední číslo znamená, že se ztratí zhruba jedna tisícina roční výroby. Bez možnosti přepojení ztrácejí všechna uspořádání stejně, tedy 1,0990 %, protože záloha, na kterou se výroba nedá převést, je k ničemu. A u nejlépe zálohovaného uspořádání (dvě cesty po 100 MW) připadá 90,9 % zbylé ztráty na společné výpadky — téměř všechno, co ještě zbývá ztratit, tedy způsobí prvek, který je pro obě cesty společný. Citlivostní rozbor navíc ukazuje podmínky, za kterých se pořadí některých variant obrátí. Praktický závěr: instalovaný výkon a skutečně využitelná výroba nejsou totéž.</p>
+<h3>Proč je to důležité</h3>
+<p>Ukazuje, že u velkých elektráren nerozhoduje jen počet panelů, ale i to, kolika cestami se elektřina dostane do sítě a zda jde při poruše přepojit — a tohle rozhodnutí se dělá na papíře, roky před stavbou.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Ibrahim Syed</dd>
+<dt>Časopis</dt>
+<dd>Zenodo (CERN European Organization for Nuclear Research)</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-10-18">18. října 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.5281/zenodo.23442846" rel="noreferrer">10.5281/zenodo.23442846</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7222848273" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.5281/zenodo.23442846" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jsou to vypočtené modelové scénáře s předem zvolenými vstupy, nikoli naměřený provoz skutečných elektráren, a práce vyšla v otevřeném repozitáři Zenodo, tedy bez klasického recenzního řízení.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 20. října 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>

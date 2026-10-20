@@ -1216,6 +1216,46 @@
       "titleKey": "whatfactorsdrivefemalesurgeonstochangejobsorleavemedicinealtogether",
       "publishedOn": "2026-10-13",
       "category": "society-economy-education"
+    },
+    {
+      "openalexId": "W7221901369",
+      "doi": "10.17485/ijst/v19i35.220",
+      "arxivId": null,
+      "titleKey": "passivethermalmanagementofelectricvehiclebatteriesusingenhancedphasechangematerials",
+      "publishedOn": "2026-10-20",
+      "category": "physics-space-engineering"
+    },
+    {
+      "openalexId": "W7162694951",
+      "doi": "10.1002/advs.78311",
+      "arxivId": null,
+      "titleKey": "activationinducedturbostraticorderinginpdcpdderivedhardcarbonenablesstablecarbonatebasedsodiumionstorage",
+      "publishedOn": "2026-10-20",
+      "category": "physics-space-engineering"
+    },
+    {
+      "openalexId": "W7222872607",
+      "doi": "10.1002/advs.78371",
+      "arxivId": null,
+      "titleKey": "poloxamerenabledthermoresponsivebiobasedcontrolledreleasefertilizerforondemandnutrientdelivery",
+      "publishedOn": "2026-10-20",
+      "category": "physics-space-engineering"
+    },
+    {
+      "openalexId": "W7222872859",
+      "doi": "10.1002/batt.70513",
+      "arxivId": null,
+      "titleKey": "crosslinkerfreestabilizationofpolyvinylalcoholpolyacrylicacidgelpolymerelectrolytesusingmultifunctionaladditivesforrechargeablezincairbatteries",
+      "publishedOn": "2026-10-20",
+      "category": "physics-space-engineering"
+    },
+    {
+      "openalexId": "W7222848273",
+      "doi": "10.5281/zenodo.23442846",
+      "arxivId": null,
+      "titleKey": "transformerredundancyandexportavailabilityinsaudiutilityscalesolarpowerplantsananalyticalscenariostudyofoutagestatesandcollectorbusreconfiguration",
+      "publishedOn": "2026-10-20",
+      "category": "physics-space-engineering"
     }
   ]
 }

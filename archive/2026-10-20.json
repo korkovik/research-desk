@@ -1,0 +1,923 @@
+{
+  "date": "2026-10-20",
+  "categoryKey": "physics-space-engineering",
+  "categoryLabel": "Fyzika, vesmír a technika",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7221901369",
+        "title": "Passive Thermal Management of Electric Vehicle Batteries Using Enhanced Phase Change Materials",
+        "abstract": "Background/Objectives: This research aims to create, improve, and test a passive thermal management system (TMS) for lithium-ion EV batteries. The goal is to keep cell temperatures below 50°C during high-rate discharges without using extra power. The study focuses on improving the low thermal conductivity of standard phase change materials (PCMs) by developing a composite with expanded graphite (EG) and evaluating its ability to reduce thermal runaway risks and temperature differences within the battery module. Methods: To make the composite PCM, 20% expanded graphite was added to commercial paraffin wax (RT42) using a vacuum process to keep the structure strong and reduce empty spaces. The team measured its properties using Differential Scanning Calorimetry (DSC) and the transient plane source method. They tested the material in an 8-cell LG Chem M50S module set up in a 2×2×2 cube. The tests included constant-rate discharges (1C to 5C), high-current pulses (3C) to mimic acceleration and braking, and a long-term test of 500 charge-discharge cycles. Findings: The optimized EG-PCM composite exhibited a thermal conductivity of 5.9 W/m·K, a 29.5-fold increase over pure paraffin, while maintaining a latent heat capacity of 182 J/g. Module-level testing at a 2C discharge rate and 25°C ambient temperature showed a 50% reduction in peak cell temperatures (38.2°C) compared to the air-cooled baseline (52.3°C). Temperature uniformity improved to ±1.1°C, closely matching the performance of active liquid-cooled systems (±0.3°C). Long-term cycling demonstrated stable latent heat capacity, with no significant material degradation or accelerated battery ageing over 500 cycles. Novelty: This study stands out because it fully tests a high-conductivity composite PCM under sudden fault conditions, like 3C pulse discharges that mimic thermal spikes before a short circuit. Unlike earlier research that focused only on material production or steady-state tests, this work includes long-term reliability data (500 cycles) and a cost analysis. It shows a calculated thermal buffer of ~28°C below the nominal thermal runaway onset temperature (~70°C) under tested conditions. Abuse testing was not conducted. Keywords: Phase Change Materials (PCM), Lithium-Ion Battery, Passive Thermal Management, Expanded Graphite Composite (EG), Thermal Runaway Prevention, Electric Vehicles (EV)",
+        "date": "2026-10-18",
+        "url": "https://doi.org/10.17485/ijst/v19i35.220",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.17485/ijst/v19i35.220",
+        "openAlexId": "W7221901369",
+        "subfield": {
+          "id": "subfields/2203",
+          "name": "Automotive Engineering"
+        },
+        "field": {
+          "id": "fields/22",
+          "name": "Engineering"
+        },
+        "topic": {
+          "id": "T10663",
+          "name": "Advanced Battery Technologies Research"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Aarush Gupta",
+          "K M Veerabadran"
+        ],
+        "venue": "Indian Journal of Science and Technology",
+        "indexedDate": "2026-10-16",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8288,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.8701,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.5,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.3081
+          },
+          "everydayDomains": [
+            "energy",
+            "money",
+            "transport",
+            "work",
+            "mind",
+            "ageing"
+          ],
+          "subfieldKey": "subfields/2203",
+          "evidence": [
+            "total 0.8701 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.83 = P 0.88 − 0.45×t 0.00 − 0.15×j 0.31",
+            "outcome verbs (v 1.00): reduces, reduction, increases, improved, improves, prevention, accelerated",
+            "recognisable subjects (s 0.50): batteries (title, ×2)",
+            "quantified effect (q 1): percentage, fold change",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.31): 11/357 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 6 domain(s) — energy, money, transport, work, mind, ageing",
+            "everyday terms (9): battery, batteries, cost, costs, cycling, electric vehicle, work, focus, ageing",
+            "freshness 0.86: 2 day(s) old (effective date 2026-10-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Indian Journal of Science and Technology",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.17485/ijst/v19i35.220)"
+      },
+      "summary": {
+        "souhrn": "Baterie elektromobilů se při rychlém vybíjení zahřívají a aktivní chlazení ventilátory či čerpadly samo spotřebovává energii. Indičtí autoři zkusili jinou cestu: články obalili parafínem, který teplo pohlcuje tím, že taje. Aby parafín teplo lépe rozváděl, přimíchali do něj pětinu expandovaného grafitu, a jeho tepelná vodivost tím stoupla téměř třicetkrát. Osmičlánkový modul se pak při vybíjení trvajícím zhruba půl hodiny zahřál nejvýš na 38,2 °C, zatímco srovnávací modul chlazený jen vzduchem na 52,3 °C. Rozdíly mezi jednotlivými články klesly na ±1,1 °C a po 500 nabitích a vybitích materiál podle měření neztratil schopnost teplo pohlcovat.",
+        "podrobneVysvetleni": "Princip je jednoduchý. Některé látky při tání pohltí hodně tepla, aniž by se samy výrazně ohřály. Odborně se jim říká materiály s fázovou změnou (anglicky phase change materials, PCM). Jejich slabinou je, že teplo vedou špatně: roztaje jen tenká vrstva u článku a zbytek hmoty se nezapojí. Autoři proto do běžného parafínu RT42 přidali ve vakuu 20 % expandovaného grafitu, tedy pětinu objemu lehkého pórovitého uhlíku. Vodivost směsi vzrostla na 5,9 W/m·K, což je 29,5krát víc než u samotného parafínu. Schopnost pohlcovat teplo při tání přitom zůstala vysoká, 182 joulů na gram.\n\nSměsí pak obalili osm článků LG Chem M50S poskládaných do krychle 2×2×2. Testovali vybíjení rychlostmi 1C až 5C; 1C znamená, že se baterie vyprázdní za hodinu, 5C zhruba za dvanáct minut. Přidali i krátké proudové špičky 3C, které napodobují zrychlení a brzdění. Při vybíjení 2C a pokojové teplotě 25 °C se články zahřály nejvýš na 38,2 °C místo 52,3 °C u modulu chlazeného vzduchem. Rozdíl mezi nejteplejším a nejchladnějším místem činil ±1,1 °C, aktivní kapalinové chlazení s čerpadlem dosáhlo ±0,3 °C. Po 500 úplných nabitích a vybitích měl materiál stále stejnou schopnost pohlcovat teplo a baterie nestárla rychleji. Od teploty, kdy u článků hrozí nezvladatelné přehřívání (asi 70 °C), zbývala rezerva kolem 28 °C.",
+        "procJeToDulezite": "Přehřátá baterie rychleji stárne a v krajním případě se může vznítit, takže každé chlazení, které nepotřebuje čerpadlo ani proud, prodlužuje dojezd i životnost. Výsledky také ukazují, že pasivní řešení se může teplotně vyrovnat složitějším systémům s kapalinou.",
+        "poznamkaKOmezenim": "Jde o laboratorní test osmi článků, nikoli celé automobilové baterie, a autoři sami uvádějí, že nezkoušeli záměrné poškození článků ani extrémní poruchové stavy, takže ochranu před vznícením studie přímo neprokazuje."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 358,
+              "end": 648
+            },
+            "matchedText": "Osmičlánkový modul se pak při vybíjení trvajícím zhruba půl hodiny zahřál nejvýš na 38,2 °C, zatímco srovnávací modul chlazený jen vzduchem na 52,3 °C. Rozdíly mezi jednotlivými články klesly na ±1,1 °C a po 500 nabitích a vybitích materiál podle měření neztratil schopnost teplo pohlcovat.",
+            "messageCs": "Tato věta má 48 slov a je moc dlouhá: „Osmičlánkový modul se pak při vybíjení trvajícím zhruba půl hodiny zahřál nejvý…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[358,648]: Osmičlánkový modul se pak při vybíjení trvajícím zhruba půl hodiny zahřál nejvýš na 38,2 °C, zatímco srovnávací modul chlazený jen vzduchem na 52,3 °C. Rozdíly mezi jednotlivými články klesly na ±1,1 °C a po 500 nabitích a vybitích materiál podle měření neztratil schopnost teplo pohlcovat."
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 566,
+              "end": 569
+            },
+            "matchedText": "500",
+            "messageCs": "Číslo „500“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „500 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[566,569]: 500"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 561,
+              "end": 564
+            },
+            "matchedText": "182",
+            "messageCs": "Číslo „182“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „182 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[561,564]: 182"
+          }
+        ],
+        "soft": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=18.37",
+            "messageCs": "Věty jsou v průměru moc dlouhé (18,4 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=18.37"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=2",
+            "messageCs": "Počet vět delších než 30 slov: 2. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=2"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7162694951",
+        "title": "Activation‐Induced Turbostratic Ordering in pDCPD‐Derived Hard Carbon Enables Stable Carbonate‐Based Sodium‐Ion Storage",
+        "abstract": "ABSTRACT Sodium–ion batteries are widely considered a promising alternative to lithium‐ion batteries, due to the abundance and low cost of their raw materials. However, the development of high‐performance and cost‐effective electrode materials remains a significant challenge, particularly when competing with lithium iron phosphate systems. Herein, we present a hard carbon material derived from readily available poly(dicyclopentadiene) for use as a negative electrode in SIBs. This study investigates the influence of carbonization temperature and subsequent activation on the hard carbon structure and electrochemical performance. The impact of activation proved to be dependent upon the first stage carbonization temperature, creating greater local ordering for samples carbonized at higher temperatures. The removal of defects and increase in interlayer distance resulted in a turbostratic structure that enhanced rate performance and capacity retention when compared with non‐activated samples. The optimized hard carbon exhibits a reversible capacity of 352 mAh at 0.1 C and a capacity retention of 88.1% after 500 cycles with a carbonate based electrolyte. This work introduces a cost‐effective approach for producing hard carbon materials with distinctive nanostructure and provides valuable insights into achieving long cycle life in sodium–ion batteries.",
+        "date": "2026-10-18",
+        "url": "https://doi.org/10.1002/advs.78311",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1002/advs.78311",
+        "openAlexId": "W7162694951",
+        "subfield": {
+          "id": "subfields/2208",
+          "name": "Electrical and Electronic Engineering"
+        },
+        "field": {
+          "id": "fields/22",
+          "name": "Engineering"
+        },
+        "topic": {
+          "id": "T10018",
+          "name": "Advancements in Battery Materials"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1002/advs.78311",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "David Schuster",
+          "Glen J. Smales",
+          "Max Schmallegger",
+          "Julian M. Rosalie",
+          "Konstantin Kraushaar",
+          "Andreas Lißner",
+          "Julia Bohdal",
+          "Pia Winter",
+          "Bernd Fuchsbichler",
+          "Stefan Koller",
+          "Sebastijan Kovačič",
+          "Christian Slugovc"
+        ],
+        "venue": "Advanced Science",
+        "indexedDate": "2026-05-29",
+        "referencedWorksCount": 61,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7971,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.8481,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.25,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.1026
+          },
+          "everydayDomains": [
+            "food",
+            "energy",
+            "money",
+            "work"
+          ],
+          "subfieldKey": "subfields/2208",
+          "evidence": [
+            "total 0.8481 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.80 = P 0.81 − 0.45×t 0.00 − 0.15×j 0.10",
+            "outcome verbs (v 1.00): increases, enables (title, ×2), resulted in",
+            "recognisable subjects (s 0.25): batteries",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.10): 2/195 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 4 domain(s) — food, energy, money, work",
+            "everyday terms (5): sodium, batteries, cost, costs, work",
+            "freshness 0.86: 2 day(s) old (effective date 2026-10-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Advanced Science",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no tldr; falling back to the source abstract (§4.2)"
+      },
+      "summary": {
+        "souhrn": "Sodíkové baterie lákají tím, že jejich suroviny jsou levné a běžně dostupné, jenže chybí dost dobrý materiál pro zápornou elektrodu. Tým si proto vzal běžně dostupný plast poly(dicyklopentadien), zuhelnatěl ho při vysokých teplotách a část vzorků navíc nechal projít takzvanou aktivací — úpravou, která z uhlíku odstraňuje nepravidelnosti. Ukázalo se, že aktivace pomůže jen tehdy, když byl uhlík předtím vypálený při vyšší teplotě: v takovém případě se uhlíkové vrstvičky uspořádají do struktury, kde jsou sice rovnoběžné, ale vůči sobě pootočené, a navíc od sebe dál. Nejlepší vzorek si po 500 nabíjecích cyklech udržel 88,1 % původní kapacity, tedy ztratil zhruba osminu, a to v běžném levném elektrolytu na bázi uhličitanů. Je to laboratorní výsledek, ne hotová baterie do telefonu, ale ukazuje levnou cestu k materiálu, který vydrží dlouho.",
+        "podrobneVysvetleni": "Záporná elektroda je ta část baterie, která při nabíjení pojme přicházející ionty. U sodíkových baterií se na ni používá takzvaný tvrdý uhlík (hard carbon) — uhlíkatý materiál, který na rozdíl od grafitu nemá úhledně poskládané vrstvy. Autoři ho vyrobili z polymeru poly(dicyklopentadien), který je komerčně dostupný a levný. Postupovali ve dvou krocích: nejdřív materiál zuhelnatěli (karbonizace) při různých teplotách, pak ho u části vzorků ještě aktivovali. Klíčové zjištění je, že oba kroky spolu souvisejí. U vzorků vypálených při nižší teplotě aktivace mnoho nepřinesla; u těch z vyšších teplot naopak odstranila poruchy ve struktuře a zvětšila mezery mezi uhlíkovými vrstvami. Vznikla tím struktura, které se říká turbostratická (turbostratic) — vrstvy leží nad sebou rovnoběžně, ale každá je náhodně pootočená, podobně jako nedbale složený štos papírů. Takto upravené vzorky zvládaly rychlejší nabíjení a lépe si držely kapacitu než vzorky bez aktivace. Nejlepší z nich dosáhl při pomalém nabíjení kapacity 352 mAh (tedy množství náboje, které materiál dokáže opakovaně přijmout a vydat) a po 500 cyklech měl ještě 88,1 % výchozí hodnoty. Důležité je, že k tomu stačil běžný elektrolyt na bázi uhličitanů, tedy ta levnější a v průmyslu zavedená varianta. Práce tak nabízí návod, jak z dostupné suroviny udělat uhlík s dlouhou životností.",
+        "procJeToDulezite": "Sodík je oproti lithiu laciný a všude ho dost, takže levný a trvanlivý materiál pro elektrody je jedna z podmínek, aby sodíkové baterie zlevnily ukládání elektřiny z větru a slunce. Pro čtenáře to může jednou znamenat levnější domácí úložiště i levnější elektroniku.",
+        "poznamkaKOmezenim": "Jde o laboratorní měření na malých článcích, nikoli o hotovou baterii — 500 cyklů je slušný test, ale skutečné nasazení vyžaduje tisíce cyklů a ověření výroby ve velkém."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 340,
+              "end": 569
+            },
+            "matchedText": "Ukázalo se, že aktivace pomůže jen tehdy, když byl uhlík předtím vypálený při vyšší teplotě: v takovém případě se uhlíkové vrstvičky uspořádají do struktury, kde jsou sice rovnoběžné, ale vůči sobě pootočené, a navíc od sebe dál.",
+            "messageCs": "Tato věta má 37 slov a je moc dlouhá: „Ukázalo se, že aktivace pomůže jen tehdy, když byl uhlík předtím vypálený při v…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[340,569]: Ukázalo se, že aktivace pomůže jen tehdy, když byl uhlík předtím vypálený při vyšší teplotě: v takovém případě se uhlíkové vrstvičky uspořádají do struktury, kde jsou sice rovnoběžné, ale vůči sobě pootočené, a navíc od sebe dál."
+          },
+          {
+            "block": "souhrn",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:elektrolyt",
+            "span": {
+              "start": 696,
+              "end": 707
+            },
+            "matchedText": "elektrolytu",
+            "messageCs": "Termín „elektrolyt“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:elektrolyt @ souhrn[696,707]: elektrolytu"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=20.56",
+            "messageCs": "Věty jsou v průměru moc dlouhé (20,6 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=20.56"
+          }
+        ],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 720,
+              "end": 733
+            },
+            "matchedText": " turbostratic",
+            "messageCs": "Text opisuje původní název článku („ turbostratic“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[720,733]:  turbostratic"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=49.2",
+            "messageCs": "Text se celkově čte těžko (index 49 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=49.2"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7222872607",
+        "title": "Poloxamer‐Enabled Thermoresponsive Biobased Controlled‐Release Fertilizer for On‐Demand Nutrient Delivery",
+        "abstract": "ABSTRACT Synchronizing nutrient release of fertilizers with crop uptake remains a central challenge in precision agriculture. Here, we present a novel temperature‐responsive biobased controlled‐release fertilizer (TRBFs) incorporating Poloxamer 407 (F127) as a thermal switch within a castor oil‐derived polyurethane coating. The optimized TRBF10 (3 wt.% coating rate, 10 wt.% F127 in coating) exhibits a sharp, reversible phase transition at ∼20°C, matching the phenological requirements of overwintering crops. As quantified by digital refractometry, the 30‐day cumulative nitrogen release is suppressed to 9.22% at 10°C (crop dormancy) and increases 8.7‐fold to 80.32% at 30°C (active growth). This scalable technology overcomes intrinsic limitations of conventional diffusion‐controlled coated fertilizers and offers potential for on‐demand nutrient delivery with reduced environmental loss. Our work establishes sustainable strategies for climate‐adaptive precision agriculture and offers new insights and design paradigms for intelligent controlled‐release materials.",
+        "date": "2026-10-18",
+        "url": "https://doi.org/10.1002/advs.78371",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1002/advs.78371",
+        "openAlexId": "W7222872607",
+        "subfield": {
+          "id": "subfields/2204",
+          "name": "Biomedical Engineering"
+        },
+        "field": {
+          "id": "fields/22",
+          "name": "Engineering"
+        },
+        "topic": {
+          "id": "T12642",
+          "name": "Polymer-Based Agricultural Enhancements"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Jiahui Liu",
+          "Li J",
+          "Ziyao Li",
+          "Xiangjie Zhao",
+          "Fengyan Fang",
+          "Yan Liu",
+          "Songyuan Wang",
+          "Boning Su",
+          "Yuanyuan Yao",
+          "Bin Gao",
+          "Shugang Zhang",
+          "Yuechao Yang"
+        ],
+        "venue": "Advanced Science",
+        "indexedDate": "2026-10-19",
+        "referencedWorksCount": 58,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7821,
+          "everydayRelevance": 0.9,
+          "freshness": 0.9286,
+          "credibility": 0.745,
+          "total": 0.8363,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.25,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.2027
+          },
+          "everydayDomains": [
+            "food",
+            "weather",
+            "work"
+          ],
+          "subfieldKey": "subfields/2204",
+          "evidence": [
+            "total 0.8363 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.78 = P 0.81 − 0.45×t 0.00 − 0.15×j 0.20",
+            "outcome verbs (v 1.00): reduced, increases, enabled (title, ×2)",
+            "recognisable subjects (s 0.25): crops",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.20): 3/148 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.90: 3 domain(s) — food, weather, work",
+            "everyday terms (3): nutrient, climate, work",
+            "freshness 0.93: 1 day(s) old (effective date 2026-10-19)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Advanced Science",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1002/advs.78371)"
+      },
+      "summary": {
+        "souhrn": "Hnojivo, které si samo pozná, kdy je rostlině teplo — tak nějak vypadá nápad čínsko-mezinárodního týmu, který popsal obal na granule hnojiva reagující na teplotu. Vědci smíchali polyuretan vyrobený z ricinového oleje s látkou zvanou poloxamer 407, jež při zhruba 20 °C mění své uspořádání a funguje jako vratný přepínač: ve studeném obalu drží živiny uvnitř, v teple je pustí ven. U nejlepší varianty, kde obal tvořil 3 % hmotnosti granule a poloxamer 10 % obalu, se za třicet dní při 10 °C uvolnilo jen 9,22 % dusíku — tedy necelá desetina —, kdežto při 30 °C to bylo 80,32 %, tedy zhruba osmkrát až devětkrát víc. Teplota 20 °C zhruba odpovídá tomu, kdy ozimé plodiny po zimě znovu začínají růst, takže by hnojivo mohlo dodávat dusík přesně tehdy, kdy ho rostlina potřebuje. Zatím ale jde o laboratorní měření, ne o pokus na poli.",
+        "podrobneVysvetleni": "Běžná obalovaná hnojiva uvolňují živiny difuzí — tedy prostým prosakováním obalem — a to probíhá pořád, ať je venku mráz nebo vedro. Rostliny si ovšem o dusík řeknou hlavně na jaře, když se rozběhne růst; co se uvolní v zimě, často odteče do podzemní vody nebo potoků. Autoři proto hledali obal, který by se choval jako ventil ovládaný teplotou.\n\nZákladem obalu je polyuretan připravený z ricinového oleje, tedy z obnovitelné suroviny, a ne z ropy. Do něj přidali poloxamer 407 (v literatuře označovaný F127), což je látka měnící kolem 20 °C své uspořádání, a to vratně — ochladí-li se, vrátí se do původního stavu. Uvolňování dusíku měřili digitálním refraktometrem, přístrojem, který podle lomu světla zjistí, kolik látky je rozpuštěno ve vodě.\n\nNejlepší vzorek, označený TRBF10, měl obal tvořící 3 % hmotnosti granule a v obalu 10 % poloxameru. Za třicet dní při 10 °C, což odpovídá období, kdy ozimy odpočívají, uvolnil 9,22 % dusíku — tedy méně než desetinu. Při 30 °C, tedy v době aktivního růstu, to bylo 80,32 %, zhruba čtyři pětiny, což je 8,7krát víc.\n\nAutoři technologii označují za dobře škálovatelnou, tedy vyrobitelnou ve větším množství, a vidí v ní cestu k hnojivům, která se přizpůsobí počasí.",
+        "procJeToDulezite": "Dusík, který se z polí vyplaví do vody, je jedním z hlavních důvodů zarůstání rybníků řasami a znečištění podzemních vod — hnojivo, které v chladu počká, by tyhle ztráty mohlo omezit a zároveň ušetřit zemědělcům část nákladů.",
+        "poznamkaKOmezenim": "Jde o laboratorní měření uvolňování dusíku ve vodě při stálých teplotách, nikoli o pokus na poli, kde teplota kolísá během dne i hloubkou půdy, takže skutečný přínos pro výnosy i životní prostředí zůstává zatím neověřený."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 381,
+              "end": 615
+            },
+            "matchedText": "U nejlepší varianty, kde obal tvořil 3 % hmotnosti granule a poloxamer 10 % obalu, se za třicet dní při 10 °C uvolnilo jen 9,22 % dusíku — tedy necelá desetina —, kdežto při 30 °C to bylo 80,32 %, tedy zhruba osmkrát až devětkrát víc.",
+            "messageCs": "Tato věta má 42 slov a je moc dlouhá: „U nejlepší varianty, kde obal tvořil 3 % hmotnosti granule a poloxamer 10 % oba…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[381,615]: U nejlepší varianty, kde obal tvořil 3 % hmotnosti granule a poloxamer 10 % obalu, se za třicet dní při 10 °C uvolnilo jen 9,22 % dusíku — tedy necelá desetina —, kdežto při 30 °C to bylo 80,32 %, tedy zhruba osmkrát až devětkrát víc."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=23.13",
+            "messageCs": "Věty jsou v průměru moc dlouhé (23,1 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=23.13"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 233,
+              "end": 242
+            },
+            "matchedText": "poloxamer",
+            "messageCs": "Text opisuje původní název článku („poloxamer“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[233,242]: poloxamer"
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 442,
+              "end": 451
+            },
+            "matchedText": "poloxamer",
+            "messageCs": "Text opisuje původní název článku („poloxamer“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[442,451]: poloxamer"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 464,
+              "end": 473
+            },
+            "matchedText": "poloxamer",
+            "messageCs": "Text opisuje původní název článku („poloxamer“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[464,473]: poloxamer"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 836,
+              "end": 845
+            },
+            "matchedText": "poloxamer",
+            "messageCs": "Text opisuje původní název článku („poloxamer“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[836,845]: poloxamer"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 30 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          },
+          {
+            "block": "all",
+            "rule": "long-words",
+            "ruleId": "readability:R6",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "share5Syllables=0.060",
+            "messageCs": "Příliš mnoho abstraktních dlouhých slov (6 % slov má pět a více slabik). Nahraďte je konkrétními, kratšími slovy.",
+            "detail": "readability:R6 @ all[0,0]: share5Syllables=0.060"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=48.4",
+            "messageCs": "Text se celkově čte těžko (index 48 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=48.4"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7222872859",
+        "title": "Crosslinker‐Free Stabilization of Poly(vinyl Alcohol)‐Poly(acrylic Acid) Gel Polymer Electrolytes Using Multifunctional Additives for Rechargeable Zinc–Air Batteries",
+        "abstract": "Gel polymer electrolytes (GPEs) for rechargeable zinc–air batteries (ZABs) are commonly stabilized through chemical crosslinking or thermal treatments, which increase processing complexity and may compromise electrolyte transport. Herein, we demonstrate an alternative stabilization strategy based on hydrogen‐bond engineering through the incorporation of low‐molecular‐weight polyols into poly(vinyl alcohol)–poly(acrylic acid) (PVA–PAA) matrices. Glycerol (G) and ethylene glycol (EG) were incorporated to produce crosslinker‐free GPEs without thermal curing (PP‐G and PP‐EG), which were compared with thermally treated PVA–PAA (PP‐T). PP‐G exhibited a higher degree of local chain ordering, a larger electrostatic potential ( μ = 13.64 D), the highest KOH uptake (1080%), and the highest ionic conductivity (208 mS cm −1 ). Although glycerol reduced the strain at break from 121% (PP‐T) to 82%, the resulting polymer network maintained excellent structural integrity while significantly improving electrochemical performance. Rechargeable ZABs assembled with PP‐G delivered a power density of 54 mW cm −2 , an areal capacity of 10 mAh cm −2 , and stable cycling over 500 charge–discharge cycles (80 h). More importantly, the enhanced electrolyte retention enabled stable battery operation at temperatures up to 85 °C, demonstrating that multifunctional additive‐induced stabilization provides a simple route toward high‐temperature ZABs capable of exploiting low‐grade waste heat.",
+        "date": "2026-10-18",
+        "url": "https://doi.org/10.1002/batt.70513",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1002/batt.70513",
+        "openAlexId": "W7222872859",
+        "subfield": {
+          "id": "subfields/2208",
+          "name": "Electrical and Electronic Engineering"
+        },
+        "field": {
+          "id": "fields/22",
+          "name": "Engineering"
+        },
+        "topic": {
+          "id": "T11690",
+          "name": "Advanced battery technologies research"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Alejandro Arredondo‐Espínola",
+          "Carlos Manuel Ramos-Castillo",
+          "Beatriz Liliana España‐Sánchez",
+          "Lorena Álvarez‐Contreras",
+          "Noé Arjona"
+        ],
+        "venue": "Batteries & Supercaps",
+        "indexedDate": "2026-10-19",
+        "referencedWorksCount": 52,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7736,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.9286,
+          "credibility": 0.605,
+          "total": 0.832,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 0.5,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.0926
+          },
+          "everydayDomains": [
+            "food",
+            "energy",
+            "health",
+            "transport"
+          ],
+          "subfieldKey": "subfields/2208",
+          "evidence": [
+            "total 0.8320 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.77 = P 0.79 − 0.45×t 0.00 − 0.15×j 0.09",
+            "outcome verbs (v 0.75): reduced, increases, enabled",
+            "recognisable subjects (s 0.50): batteries (title, ×2)",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.09): 2/216 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 4 domain(s) — food, energy, health, transport",
+            "everyday terms (5): alcohol, battery, batteries, treatment, cycling",
+            "freshness 0.93: 1 day(s) old (effective date 2026-10-19)",
+            "credibility 0.61 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Batteries & Supercaps",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1002/batt.70513)"
+      },
+      "summary": {
+        "souhrn": "Zinko-vzdušné baterie potřebují mezi zinkem a vzduchovou elektrodou gel, který vede ionty a nevyteče. Vědci ho místo obvyklého chemického síťování nebo zahřívání zpevnili tím, že do směsi polyvinylalkoholu a kyseliny polyakrylové přimíchali glycerol nebo ethylenglykol — běžné sirupovité kapaliny, které se na polymer navážou slabými vodíkovými můstky. Varianta s glycerolem nasákla nejvíc louhu (1080 % vlastní hmotnosti, tedy skoro jedenáctinásobek) a nejlépe vedla elektrický proud. Baterie s ní vydržela 500 nabíjecích cyklů, tedy asi 80 hodin provozu, a fungovala i při 85 °C. Daň je menší pružnost: pásek gelu se před přetržením protáhne o 82 % své délky, tedy skoro na dvojnásobek, zatímco zahřívaná verze o 121 %, tedy o něco víc než na dvojnásobek.",
+        "podrobneVysvetleni": "Zinko-vzdušná baterie bere kyslík přímo ze vzduchu a elektřinu získává z reakce se zinkem. Mezi elektrodami musí být prostředí vedoucí ionty, obvykle louh (hydroxid draselný), který se kvůli bezpečnosti zahušťuje do gelu z polyvinylalkoholu a kyseliny polyakrylové. Ten se běžně zpevňuje chemickým síťováním nebo tepelným vytvrzením, což výrobu komplikuje a může zhoršit průchod iontů. Tým proto do směsi přimíchal glycerol nebo ethylenglykol — malé molekuly, které se na polymerní řetězce navážou vodíkovými můstky, tedy slabými, ale velmi početnými vazbami, a drží síť pohromadě bez dalšího kroku. Nejlépe dopadl glycerol. Gel s ním pojal 1080 % louhu, tedy téměř jedenáctinásobek vlastní hmotnosti, a měl nejvyšší vodivost ze srovnávaných vzorků (208 mS/cm). Baterie s tímto elektrolytem dodala 54 miliwattu na čtvereční centimetr, tedy z každého centimetru čtverečního zhruba dvacetinu wattu, a kapacitu 10 miliampérhodin na čtvereční centimetr, což odpovídá proudu 10 miliampér po dobu jedné hodiny z každého čtverečního centimetru plochy. Vydržela 500 cyklů nabití a vybití, dohromady 80 hodin, a pracovala i při 85 °C — právě proto, že z gelu se díky glycerolu tolik neodpařuje voda. Zaplatilo se to pružností: materiál se před přetržením protáhne o 82 % délky, tedy skoro na dvojnásobek, proti 121 % u tepelně vytvrzené verze, která se natáhne na víc než dvojnásobek. Autoři zmiňují, že takový elektrolyt by mohl fungovat i tam, kde je k dispozici odpadní teplo z provozu.",
+        "procJeToDulezite": "Levnější a jednodušší výroba gelu pro baterie znamená nižší cenu úložišť energie, a elektrolyt, který nevyschne ani v horku, otevírá použití tam, kde dnešní vodní baterie selhávají.",
+        "poznamkaKOmezenim": "Jde o laboratorní vzorky a testování po 500 cyklech (asi 80 hodin) je stále krátká doba, takže o chování baterie po měsících nebo letech provozu práce nic neříká."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 486,
+              "end": 757
+            },
+            "matchedText": "Baterie s ní vydržela 500 nabíjecích cyklů, tedy asi 80 hodin provozu, a fungovala i při 85 °C. Daň je menší pružnost: pásek gelu se před přetržením protáhne o 82 % své délky, tedy skoro na dvojnásobek, zatímco zahřívaná verze o 121 %, tedy o něco víc než na dvojnásobek.",
+            "messageCs": "Tato věta má 48 slov a je moc dlouhá: „Baterie s ní vydržela 500 nabíjecích cyklů, tedy asi 80 hodin provozu, a fungov…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[486,757]: Baterie s ní vydržela 500 nabíjecích cyklů, tedy asi 80 hodin provozu, a fungovala i při 85 °C. Daň je menší pružnost: pásek gelu se před přetržením protáhne o 82 % své délky, tedy skoro na dvojnásobek, zatímco zahřívaná verze o 121 %, tedy o něco víc než na dvojnásobek."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 908,
+              "end": 910
+            },
+            "matchedText": "10",
+            "messageCs": "Číslo „10“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „10 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[908,910]: 10"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 970,
+              "end": 972
+            },
+            "matchedText": "10",
+            "messageCs": "Číslo „10“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „10 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[970,972]: 10"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1302,
+              "end": 1307
+            },
+            "matchedText": "121 %",
+            "messageCs": "Číslo „121 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „121 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1302,1307]: 121 %"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=23.93",
+            "messageCs": "Věty jsou v průměru moc dlouhé (23,9 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=23.93"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=4",
+            "messageCs": "Počet vět delších než 30 slov: 4. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=4"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 309,
+              "end": 318
+            },
+            "matchedText": " polymer ",
+            "messageCs": "Text opisuje původní název článku („ polymer “). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[309,318]:  polymer "
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 471,
+              "end": 479
+            },
+            "matchedText": " polymer",
+            "messageCs": "Text opisuje původní název článku („ polymer“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[471,479]:  polymer"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=40.5",
+            "messageCs": "Text se celkově čte těžko (index 41 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=40.5"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7222848273",
+        "title": "Transformer Redundancy and Export Availability in Saudi Utility Scale Solar Power Plants: An Analytical Scenario Study of Outage States and Collector Bus Reconfiguration",
+        "abstract": "Recovering generation from a disconnected collector section requires a healthy export path and a feasible electrical transfer route. This paper develops an analytical scenario model to examine that condition in utility scale photovoltaic plants, with implications for electrical design in Saudi Arabia. Exact outage-state probabilities are combined with a normalized production profile, a shared-outage state and a parameter for completed collector-bus reconfiguration. Four arrangements serve a 100 MW peak source: one 100 MW path, two 60 MW paths, three 40 MW paths and two 100 MW paths. At independent path unavailability of 1% and shared unavailability of 0.1%, calculated energy losses with full reconfiguration are 1.0990%, 0.5919%, 0.3638% and 0.1100%, respectively. Three 40 MW paths preserve more energy than two 60 MW paths, despite a lower probability of retaining full peak capacity. Without reconfiguration, all arrangements lose 1.0990% under the equal-block assumptions. Shared outages account for 90.9% of residual loss in the fully redundant arrangement. Sensitivity analysis identifies conditions that reverse selected comparisons. The contribution is a reproducible screening method that separates installed capacity from recoverable generation. Results are conditional scenarios, not measured Saudi plant performance; the model inputs, equations and verification method are reported in the article.",
+        "date": "2026-10-18",
+        "url": "https://doi.org/10.5281/zenodo.23442846",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.5281/zenodo.23442846",
+        "openAlexId": "W7222848273",
+        "subfield": {
+          "id": "subfields/2213",
+          "name": "Safety, Risk, Reliability and Quality"
+        },
+        "field": {
+          "id": "fields/22",
+          "name": "Engineering"
+        },
+        "topic": {
+          "id": "T11941",
+          "name": "Power System Reliability and Maintenance"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Ibrahim Syed"
+        ],
+        "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+        "indexedDate": "2026-10-18",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.5346,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.7431,
+          "explainDetail": {
+            "v": 0.25,
+            "s": 0.5,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.2525
+          },
+          "everydayDomains": [
+            "energy",
+            "health",
+            "transport"
+          ],
+          "subfieldKey": "subfields/2213",
+          "evidence": [
+            "total 0.7431 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.53 = P 0.57 − 0.45×t 0.00 − 0.15×j 0.25",
+            "outcome verbs (v 0.25): lowers",
+            "recognisable subjects (s 0.50): plants (title, ×2)",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.80): −0.2 title is 23 words",
+            "jargon density (j 0.25): 5/198 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 3 domain(s) — energy, health, transport",
+            "everyday terms (5): energy, solar, photovoltaic, screening, bus",
+            "freshness 0.86: 2 day(s) old (effective date 2026-10-18)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Zenodo (CERN European Organization for Nuclear Research)",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.5281/zenodo.23442846)"
+      },
+      "summary": {
+        "souhrn": "Velká solární elektrárna může mít panelů dost, ale když vypadne cesta, kterou elektřina odchází do sítě, je výroba k ničemu. Autoři proto spočítali, kolik energie se ztratí u čtyř způsobů, jak vyvést zdroj se špičkovým výkonem 100 MW: jednou cestou 100 MW, dvěma po 60 MW, třemi po 40 MW a dvěma po 100 MW. Pokud je každá cesta mimo provoz 1 % času (tedy asi jeden den ze sta) a společná část 0,1 % času, vycházejí roční ztráty energie 1,0990 %, 0,5919 %, 0,3638 % a 0,1100 %. Zajímavý je výsledek, že tři cesty po 40 MW uchrání víc energie než dvě po 60 MW, přestože u nich je menší šance udržet plný výkon. Jde o výpočtové scénáře pro projektanty, ne o měření na skutečných saudských elektrárnách.",
+        "podrobneVysvetleni": "Autoři sestavili počtářský model: ke každému možnému stavu poruch (jedna cesta mimo provoz, dvě najednou, výpadek společné části) spočítali přesnou pravděpodobnost a vynásobili ji tím, kolik by se v takovou chvíli dalo vyrobit — k tomu použili běžný denní průběh výroby solární elektrárny. Do modelu přidali dvě věci, které se často opomíjejí. První je společný výpadek (shared outage), tedy porucha prvku, který je pro všechny cesty stejný, takže ho žádná záloha nenahradí. Druhá je přepojení sběrnice (collector-bus reconfiguration) — možnost převést odpojenou část elektrárny na cestu, která je v pořádku. Výsledky pro čtyři uspořádání jsou 1,0990 %, 0,5919 %, 0,3638 % a 0,1100 % ztracené energie; poslední číslo znamená, že se ztratí zhruba jedna tisícina roční výroby. Bez možnosti přepojení ztrácejí všechna uspořádání stejně, tedy 1,0990 %, protože záloha, na kterou se výroba nedá převést, je k ničemu. A u nejlépe zálohovaného uspořádání (dvě cesty po 100 MW) připadá 90,9 % zbylé ztráty na společné výpadky — téměř všechno, co ještě zbývá ztratit, tedy způsobí prvek, který je pro obě cesty společný. Citlivostní rozbor navíc ukazuje podmínky, za kterých se pořadí některých variant obrátí. Praktický závěr: instalovaný výkon a skutečně využitelná výroba nejsou totéž.",
+        "procJeToDulezite": "Ukazuje, že u velkých elektráren nerozhoduje jen počet panelů, ale i to, kolika cestami se elektřina dostane do sítě a zda jde při poruše přepojit — a tohle rozhodnutí se dělá na papíře, roky před stavbou.",
+        "poznamkaKOmezenim": "Jsou to vypočtené modelové scénáře s předem zvolenými vstupy, nikoli naměřený provoz skutečných elektráren, a práce vyšla v otevřeném repozitáři Zenodo, tedy bez klasického recenzního řízení."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 552,
+              "end": 554
+            },
+            "matchedText": "60",
+            "messageCs": "Číslo „60“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „60 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[552,554]: 60"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 289
+            },
+            "matchedText": "Autoři sestavili počtářský model: ke každému možnému stavu poruch (jedna cesta mimo provoz, dvě najednou, výpadek společné části) spočítali přesnou pravděpodobnost a vynásobili ji tím, kolik by se v takovou chvíli dalo vyrobit — k tomu použili běžný denní průběh výroby solární elektrárny.",
+            "messageCs": "Tato věta má 42 slov a je moc dlouhá: „Autoři sestavili počtářský model: ke každému možnému stavu poruch (jedna cesta …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[0,289]: Autoři sestavili počtářský model: ke každému možnému stavu poruch (jedna cesta mimo provoz, dvě najednou, výpadek společné části) spočítali přesnou pravděpodobnost a vynásobili ji tím, kolik by se v takovou chvíli dalo vyrobit — k tomu použili běžný denní průběh výroby solární elektrárny."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=23.53",
+            "messageCs": "Věty jsou v průměru moc dlouhé (23,5 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=23.53"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=5",
+            "messageCs": "Počet vět delších než 30 slov: 5. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=5"
+          }
+        ],
+        "soft": [
+          {
+            "block": "all",
+            "rule": "passive-voice",
+            "ruleId": "readability:R7",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "passiveShare=0.267",
+            "messageCs": "27 % vět je v trpném rodě. Pište činným rodem: „vědci změřili…“, ne „bylo změřeno…“.",
+            "detail": "readability:R7 @ all[0,0]: passiveShare=0.267"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=48.4",
+            "messageCs": "Text se celkově čte těžko (index 48 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=48.4"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-10-20T04:41:55.797Z",
+  "generatedOn": "2026-10-20",
+  "schemaVersion": 1
+}
