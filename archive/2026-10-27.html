@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Biologie, jídlo a zemědělství – 27. října 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Biologie, jídlo a zemědělství</h1>
+<p class="dateline"><time datetime="2026-10-27">27. října 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 5</p>
+<div class="summary"><p><span class="lead">Méně intenzivní zpracování půdy vyšlo u sóji lépe než klasická orba.</span> Vědci to zkoušeli na poli v jihoafrické provincii Limpopo, kde se hospodaří jen na dešti, bez závlahy. Při šetrném kypření sklidili 3 348 kilogramů zrna z hektaru, při klasické orbě 2 061 kilogramů. Rozdíl autoři vyčíslili na 62 procent, tedy víc než jedenapůlnásobek. V šetrně zpracované půdě navíc zůstalo víc organického uhlíku: 0,51 procenta proti 0,43 procenta její hmotnosti, tedy zhruba o pětinu víc. Přidaný kompost ale sám o sobě výnos nezvedl — záleželo na tom, s jakým zpracováním půdy se potkal.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Pokus měl jednoduchou stavbu. Plocha se rozdělila na bloky, ty na menší dílce, a každá kombinace se opakovala třikrát. Hlavní rozdíl byl ve zpracování půdy. Šetrná varianta znamenala jediný průjezd kypřičem (anglicky chisel plough), tedy nástrojem, který půdu jen nakypří a nepřevrací. Klasická varianta znamenala tři operace za sebou: kypřič, pak radličný pluh a nakonec talířové brány. Půda se tak rozdrobila a srovnala do hladkého seťového lůžka. Do obou variant vědci zapravili kompost ve třech dávkách: žádný, 10 tun na hektar a 20 tun na hektar.</p>
+<p>Růst rostlin, celková hmota, výnos zrna i obsah fosforu v půdě nezáviselý jen na jednom z obou faktorů. Rozhodovala jejich kombinace. Jinak řečeno: stejná dávka kompostu dopadla různě podle toho, jak se s půdou zacházelo. Autoři proto upozorňují, že u kompostu neplatí „čím víc, tím líp&quot;. Při nevhodném dávkování může výnos i snížit.</p>
+<p>Sledovali také, jestli se vlastnosti půdy liší podle hloubky odběru vzorku. Tady průkazné rozdíly nenašli. Zajímavý je naopak obsah organického uhlíku, tedy zbytků rostlin a dalších organických látek, které drží v půdě vodu a živiny. V šetrně zpracované půdě ho bylo 0,51 procenta, v klasicky zorané 0,43 procenta. Zdá se tedy, že méně hrabání v půdě pomáhá organické hmotě zůstat na místě.</p>
+<h3>Proč je to důležité</h3>
+<p>Rozdíl ve výnosu i v kvalitě půdy vyšel z jednoduché změny: méně průjezdů technikou po poli. To je pro zemědělce levnější a šetrnější zároveň, takže stojí za to vědět, že to nemusí být na úkor sklizně.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Johanah Mmasekeli Thema, Mussie G. Zerizghy, Phesheya Eugine Dlamini, Manare Maxson Masowa</dd>
+<dt>Časopis</dt>
+<dd>Discover Soil.</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-10-25">25. října 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1007/s44378-026-00356-0" rel="noreferrer">10.1007/s44378-026-00356-0</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7223550025" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://link.springer.com/content/pdf/10.1007/s44378-026-00356-0.pdf" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1007/s44378-026-00356-0" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o krátkodobý pokus na jediném místě se třemi opakováními, takže výsledky je potřeba brát jako předběžné a ověřit je v dalších sezonách i jiných půdních podmínkách.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 5</p>
+<div class="summary"><p>Tříletý polní pokus s kukuřicí v Dolním Rakousku porovnával klasické minerální hnojivo s kompostem a digestátem (zbytkem z bioplynové stanice) a sledoval, kolik dusíku z půdy unikne do vzduchu. Kompost snížil únik oxidu dusného i amoniaku zhruba o dvě třetiny, digestát je naopak zvýšil asi o pětinu až třetinu. Když vědci do půdy zapravili biouhel, tedy zuhelnatělou rostlinnou hmotu podobnou dřevěnému uhlí, úniky plynů klesly u obou typů hnojení. Háček je ve výnosu: digestát minerální hnojivo nahradil, kompost ne, protože se z něj dusík uvolňoval příliš pomalu. Pro praxi z toho plyne, že organická hnojiva a biouhel pomáhají půdě i ovzduší, ale samy o sobě nemusí stačit k plné úrodě.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Pokus běžel tři roky na poli s kukuřicí v Dolním Rakousku. Minerální hnojivo dodalo 175 kilogramů dusíku na hektar; hektar je zhruba plocha fotbalového hřiště. Kompost i digestát dostaly dvojnásobnou dávku celkového dusíku, tedy 350 kilogramů. Důvod je prostý: jejich dusík je vázaný v organické hmotě a rostlinám se zpřístupňuje jen postupně. K části políček vědci navíc zapravili asi 7,5 tuny biouhlu na hektar. Měřili dva plyny: oxid dusný, což je silný skleníkový plyn, a amoniak, který znečišťuje ovzduší. Kompost oproti minerálnímu hnojivu snížil celkový únik oxidu dusného o 66 % a amoniaku o 68 % — tedy zhruba o dvě třetiny. Digestát naopak úniky zvýšil, o 21 % u oxidu dusného a o 32 % u amoniaku, tedy přibližně o pětinu a o třetinu. Biouhel pomohl v obou případech. U minerálního hnojiva klesl oxid dusný o 48 %, tedy skoro na polovinu, u kompostu o 39 %, tedy zhruba o dvě pětiny. Amoniak se u minerálního hnojiva snížil o 51 %, tedy také asi na polovinu, u kompostu o 26 %, tedy zhruba o čtvrtinu. Rozbory půdy naznačují, že za nižšími úniky stojí utlumený mikrobiální proces, při kterém se dusičnany mění na plyn. Množství živin dostupných rostlinám přitom biouhel nezměnil. Výnos kukuřice byl u digestátu srovnatelný s minerálním hnojivem, u kompostu nižší. Obě organická hnojiva ale zvýšila obsah uhlíku a dusíku v půdě.</p>
+<h3>Proč je to důležité</h3>
+<p>Oxid dusný je silný skleníkový plyn a amoniak zhoršuje kvalitu ovzduší, takže způsob hnojení na polích se týká i lidí, kteří v životě nic nezaseli. Studie zároveň ukazuje, že šetrnější hnojení nemusí automaticky znamenat stejnou úrodu.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Ferdinand Hartmann, Heide Spiegel, Gerhard Soja, Eugenio Díaz‐Pinés, Simon Weldon, Markus Gorfer a další</dd>
+<dt>Časopis</dt>
+<dd>European Journal of Soil Science</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-10-25">25. října 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1111/ejss.70438" rel="noreferrer">10.1111/ejss.70438</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7223568294" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1111/ejss.70438" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jediný tříletý pokus na jednom poli s jednou plodinou, takže výsledky nemusí platit pro jiné půdy, podnebí ani jiné typy kompostu a digestátu.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 5</p>
+<div class="summary"><p><span class="lead">Postřik sójových listů jemnými částicemi oxidu zinku zvedl výnos semen o 59 až 80 procent, tedy zhruba jedenapůlkrát až dvakrát více.</span> Vědci pěstovali sóju v nádobách venku; část rostlin zalévali dostatečně, část nechali v suchu zhruba na polovině plné zásoby vody v půdě. Listy pak stříkali nanočásticemi (anglicky nanoparticles) oxidu zinku nebo oxidu mědi v různých koncentracích. U mědi pomohla jen nejnižší dávka, vyšší dávky výnos naopak srážely. Samotné sucho ubralo na výnosu zhruba 15 až 25 procent, tedy asi pětinu úrody, a zinek část téhle ztráty vrátil zpět.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Pokus probíhal venku v nádobách uspořádaných do náhodných bloků, aby se vyrovnaly rozdíly v půdě a osvitu. Část rostlin měla vody dost, část jen zhruba polovinu toho, co půda udrží. Na listy vědci stříkali oxid měďnatý nebo oxid zinečnatý v podobě nanočástic, tedy drobečků tak malých, že projdou povrchem listu. Koncentrace sahaly od nuly do 200 miligramů na litr. Pro srovnání použili i běžnou rozpuštěnou (iontovou) formu mědi a zinku v dávce 400 miligramů na litr. Při dostatku vody zvýšila nejnižší dávka mědi výnos semen o čtvrtinu a obsah bílkovin o 11 procent, tedy zhruba o desetinu. Dvojnásobná a čtyřnásobná dávka ale výnos snížila o 8 až 24 procent. Zinek ve vyšších dávkách zvedl výnos o 59 a 80 procent a počet semen o 39 a 48 procent, tedy zhruba o dvě pětiny až polovinu. Sucho samo snížilo výnos zhruba o 15 až 25 procent, tedy asi o pětinu úrody. Hmotnost semen klesla o 15 procent, tedy asi o sedminu, a obsah stopových živin o 34 až 46 procent, tedy skoro o polovinu. Zinek v suchu výnos zvedl o 25 až 39 procent a obsah bílkovin i oleje zhruba o čtvrtinu. Měď ve vyšších dávkách v suchu naopak škodila: výnos klesl o 37 až 47 procent, tedy skoro na polovinu.</p>
+<h3>Proč je to důležité</h3>
+<p>Sucha ubírají na úrodě sóji, která je jedním z hlavních zdrojů bílkovin pro lidi i hospodářská zvířata, a levný postřik listů by mohl část ztráty vyrovnat. Zároveň je vidět, že u mikroživin platí míra: stejná látka ve vyšší dávce úrodu nezvedne, ale sníží.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Sina Fallah, Shahin Shirvani-Naghani, Lok Raj Pokhrel, José R. Peralta-Videa, Nubia Zuverza‐Mena</dd>
+<dt>Časopis</dt>
+<dd>Discover Plants.</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-10-25">25. října 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1007/s44372-026-00968-4" rel="noreferrer">10.1007/s44372-026-00968-4</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7223558953" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://link.springer.com/content/pdf/10.1007/s44372-026-00968-4.pdf" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1007/s44372-026-00968-4" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jediný pokus s rostlinami v nádobách, ne na běžném poli, takže výsledky je zatím třeba brát jako předběžné a ověřit je ve velkém měřítku i na dalších odrůdách.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-4">
+<p class="paper-counter">Studie 4 z 5</p>
+<div class="summary"><p>Nigerijští zemědělci, kteří pěstují plodiny na poli, se o počasí a změnách klimatu dozvídají hlavně z mobilu, rádia a televize — internet a chytré aplikace v tom hrají mnohem menší roli. Výzkumníci se ptali 180 hospodářů ve třech okresech státu Osun a zjistili, že mobilní telefon používá k získávání informací asi dvě třetiny z nich, rádio necelých šest z deseti a televizi dva z pěti. Vysokou míru využívání těchto zařízení přitom vykázal jen zhruba každý třetí dotázaný. Největší brzdou je podle samotných zemědělců cena techniky, chudoba na venkově a nespolehlivé dodávky elektřiny. Autoři proto doporučují školení, která by hospodářům pomohla techniku skutečně využít — protože samotné vlastnictví telefonu ještě neznamená, že se k člověku dostane užitečná předpověď.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Výzkumníci vybrali vzorek postupně po krocích — nejdřív dvě zemědělské zóny státu Osun (Ife-Ijesha a Iwo), pak tři okresy a nakonec konkrétní hospodáře, celkem 180 lidí. S těmi vyplnili dotazník: jaká zařízení používají, co si o nich myslí, jak často je k hledání informací o počasí a klimatu skutečně zapojují a co jim v tom brání. Odpovědi pak shrnuli do průměrů a podílů a ověřili, jestli se skupiny zemědělců mezi sebou liší víc, než by odpovídalo náhodě.</p>
+<p>Nejčastějším pomocníkem byl mobilní telefon, který uvedly zhruba dvě třetiny dotázaných. Následovalo rádio (necelých šest z deseti) a televize (dva z pěti). Vysokou míru využívání techniky ale vykázalo jen asi 36 procent lidí, tedy něco přes každého třetího — zbytek ji používá jen občas, nebo skoro vůbec.</p>
+<p>Jako nejtíživější překážku zemědělci označili vysokou cenu techniky a jejího provozu, hned za ní chudobu na venkově a nepravidelné dodávky elektřiny. Z osobních charakteristik se ukázaly jako podstatné dvě: dosažené vzdělání a to, čím se člověk živí vedle hospodaření. U obou byl rozdíl mezi skupinami natolik výrazný, že ho autoři nepovažují za náhodu — vzdělanější hospodáři sahají po technice častěji.</p>
+<p>Závěr práce zní střízlivě: využívání je zatím jen střední a samotné rozšíření mobilů problém nevyřeší. Autoři doporučují školení, aby zemědělci s informacemi o počasí uměli pracovat.</p>
+<h3>Proč je to důležité</h3>
+<p>Zemědělci v rozvojových zemích čelí nevyzpytatelnému počasí a včasná informace o něm může rozhodnout o úrodě celé rodiny — studie ukazuje, že technika sama o sobě nestačí, pokud chybí peníze, elektřina a schopnost ji využít.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>T. F. Ojo, S. A. Adesoji, M. J. Bello</dd>
+<dt>Časopis</dt>
+<dd>AgEcon Search (University of Minnesota, USA)</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-10-25">25. října 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.22004/ag.econ.415907" rel="noreferrer">10.22004/ag.econ.415907</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7223553403" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.22004/ag.econ.415907" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o dotazníkové šetření mezi 180 hospodáři z jediného nigerijského státu, takže zjištění popisuje konkrétní region a nelze je bez dalšího přenášet jinam; navíc všechny údaje pocházejí z toho, co lidé sami uvedli.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-5">
+<p class="paper-counter">Studie 5 z 5</p>
+<div class="summary"><p><span class="lead">Ve skleníku v Beninu rostly tři pícní trávy při čtyřech různých dávkách vody.</span> Nejlépe zásobené rostliny dostaly plnou zálivku, další už jen tři čtvrtiny, polovinu a čtvrtinu toho množství, které půda dokáže udržet. Výška stébel zůstala u všech tří druhů zhruba stejná, nejcitlivěji reagoval počet odnoží, tedy nových výhonků vyrážejících od země. Druh Andropogon gayanus při suchu znatelně ztratil na hmotnosti, Brachiaria falcifera si ji udržela a u Hyparrhenia smithiana ubylo hlavně kořenů. Pro pastviny západní Afriky to znamená vodítko, které trávy mají šanci přežít stále častější období sucha.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Pokus proběhl ve skleníku, kde vědci mohli zálivku přesně řídit. Porovnávali tři druhy trav a čtyři úrovně vláhy v půdě: plnou zásobu vody a pak tři čtvrtiny, polovinu a čtvrtinu této zásoby. U rostlin měřili výšku, tloušťku stébla u země, počet odnoží a nakonec hmotnost nadzemní i podzemní části. Odpověď na sucho se lišila druh od druhu. Výška se držela u všech tří trav, jen Brachiaria falcifera při nejsilnějším suchu mírně zakrněla. Tloušťka u země se u Andropogon gayanus při mírném nedostatku vody dokonce zvětšila, u Brachiaria falcifera naopak zmenšila a u Hyparrhenia smithiana zůstala víceméně beze změny. Nejspolehlivěji na sucho reagoval počet odnoží, a to u všech tří druhů. Množství vyprodukované hmoty u Andropogon gayanus průkazně kleslo, u Brachiaria falcifera zůstalo zhruba stejné a u Hyparrhenia smithiana ubylo především pod zemí, tedy v kořenech. Poměr mezi nadzemní a podzemní částí se měnil podle dávky vody u všech tří trav. Autoři z toho usuzují, že Andropogon gayanus a Hyparrhenia smithiana mají vlastnosti, které jim při nedostatku vody mohou pomoci. Abstrakt neuvádí, o kolik přesně se jednotlivé hodnoty změnily, takže jde spíš o směr změny než o přesná čísla.</p>
+<h3>Proč je to důležité</h3>
+<p>Srážky v západní Africe jsou stále nevyzpytatelnější a na pastvinách tam závisí obživa mnoha rodin, které chovají dobytek. Výběr trav, jež sucho snesou, rozhoduje o tom, zda bude mít dobytek co žrát.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Agbatan Marc Koutchoro, Elononyi D. Basile Fagninou, Sissou Zakari, Alain Sèakpo Yaoitcha, Pierrot Lionel Yemadje, Laurent Gbenato Houessou</dd>
+<dt>Časopis</dt>
+<dd>Discover Sustainability</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-10-25">25. října 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1007/s43621-026-05109-1" rel="noreferrer">10.1007/s43621-026-05109-1</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7223557638" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1007/s43621-026-05109-1" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o skleníkový pokus s pěstovanými rostlinami, nikoli o měření na skutečné pastvině, a abstrakt neuvádí počet rostlin ani přesné hodnoty poklesů, takže výsledky je třeba brát jako předběžné vodítko.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 27. října 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,854 @@
+{
+  "date": "2026-10-27",
+  "categoryKey": "biology-food-agriculture",
+  "categoryLabel": "Biologie, jídlo a zemědělství",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7223550025",
+        "title": "Short-term interactive effects of tillage system and compost rate on soya bean growth, yield, and physico-chemical characteristics of soil",
+        "abstract": "Tillage systems and compost application play important roles in improving soil conditions, nutrient availability, and crop growth and productivity. Although numerous studies demonstrating that compost application and minimum tillage (MT) systems are effective in mitigating soil degradation, their interaction effects on crop performance and soil properties at various depths remain poorly explored and require further investigation. Hence, this study assessed the effect of tillage system and compost application rate on soya bean performance and selected soil physico-chemical properties under rainfed conditions in Limpopo province, South Africa. The trial was conducted using a split-plot arrangement within a randomized complete block design with three replications. Main treatments were two tillage systems [MT and conventional tillage (CT)], while the sub-treatments were three compost rates (0, 10 and 20 t ha− 1). The MT involved the use of chisel-plough to provide minimal disturbance of soil, whereas CT involved sequential use of chisel-plough, mouldboard-plough and a disc-harrow to pulverize and level the soil. Plant growth parameters, total biomass, grain yield and soil phosphorus (P) were affected by the tillage system and compost rate interaction. Grain yield from the CT plot (2061 kg ha− 1) was 62% lower than that obtained from the MT plot (3348 kg ha− 1). Higher soil organic carbon in the MT system (0.51%) than in CT system (0.43%) showed that reducing tillage intensity increases the organic matter accumulation. Tillage system, compost rate and soil depth interaction had no significant effects on selected soil properties. The results of this study indicate that while MT enhances soya bean productivity, the tillage system and compost application interaction influences grain yield and soil P, with compost application requiring careful management to prevent yield reduction.",
+        "date": "2026-10-25",
+        "url": "https://doi.org/10.1007/s44378-026-00356-0",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1007/s44378-026-00356-0",
+        "openAlexId": "W7223550025",
+        "subfield": {
+          "id": "subfields/1111",
+          "name": "Soil Science"
+        },
+        "field": {
+          "id": "fields/11",
+          "name": "Agricultural and Biological Sciences"
+        },
+        "topic": {
+          "id": "T12792",
+          "name": "Soil Management and Crop Yield"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://link.springer.com/content/pdf/10.1007/s44378-026-00356-0.pdf",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Johanah Mmasekeli Thema",
+          "Mussie G. Zerizghy",
+          "Phesheya Eugine Dlamini",
+          "Manare Maxson Masowa"
+        ],
+        "venue": "Discover Soil.",
+        "indexedDate": "2026-10-26",
+        "referencedWorksCount": 63,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9039,
+          "everydayRelevance": 0.9,
+          "freshness": 0.9286,
+          "credibility": 0.745,
+          "total": 0.885,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 0.6,
+            "t": 0,
+            "j": 0.1075
+          },
+          "everydayDomains": [
+            "food",
+            "health",
+            "work"
+          ],
+          "subfieldKey": "subfields/1111",
+          "evidence": [
+            "total 0.8850 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.90 = P 0.92 − 0.45×t 0.00 − 0.15×j 0.11",
+            "outcome verbs (v 1.00): reduction, increases, lowers, prevents",
+            "recognisable subjects (s 1.00): plants, crops, soil (title, ×2)",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.60): −0.2 title is 19 words; −0.2 2 technical strings in the title",
+            "jargon density (j 0.11): 3/279 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.90: 3 domain(s) — food, health, work",
+            "everyday terms (3): nutrient, treatment, productivity",
+            "freshness 0.93: 1 day(s) old (effective date 2026-10-26)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Discover Soil.",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no tldr; falling back to the source abstract (§4.2)"
+      },
+      "summary": {
+        "souhrn": "Méně intenzivní zpracování půdy vyšlo u sóji lépe než klasická orba. Vědci to zkoušeli na poli v jihoafrické provincii Limpopo, kde se hospodaří jen na dešti, bez závlahy. Při šetrném kypření sklidili 3 348 kilogramů zrna z hektaru, při klasické orbě 2 061 kilogramů. Rozdíl autoři vyčíslili na 62 procent, tedy víc než jedenapůlnásobek. V šetrně zpracované půdě navíc zůstalo víc organického uhlíku: 0,51 procenta proti 0,43 procenta její hmotnosti, tedy zhruba o pětinu víc. Přidaný kompost ale sám o sobě výnos nezvedl — záleželo na tom, s jakým zpracováním půdy se potkal.",
+        "podrobneVysvetleni": "Pokus měl jednoduchou stavbu. Plocha se rozdělila na bloky, ty na menší dílce, a každá kombinace se opakovala třikrát. Hlavní rozdíl byl ve zpracování půdy. Šetrná varianta znamenala jediný průjezd kypřičem (anglicky chisel plough), tedy nástrojem, který půdu jen nakypří a nepřevrací. Klasická varianta znamenala tři operace za sebou: kypřič, pak radličný pluh a nakonec talířové brány. Půda se tak rozdrobila a srovnala do hladkého seťového lůžka. Do obou variant vědci zapravili kompost ve třech dávkách: žádný, 10 tun na hektar a 20 tun na hektar.\n\nRůst rostlin, celková hmota, výnos zrna i obsah fosforu v půdě nezáviselý jen na jednom z obou faktorů. Rozhodovala jejich kombinace. Jinak řečeno: stejná dávka kompostu dopadla různě podle toho, jak se s půdou zacházelo. Autoři proto upozorňují, že u kompostu neplatí „čím víc, tím líp\". Při nevhodném dávkování může výnos i snížit.\n\nSledovali také, jestli se vlastnosti půdy liší podle hloubky odběru vzorku. Tady průkazné rozdíly nenašli. Zajímavý je naopak obsah organického uhlíku, tedy zbytků rostlin a dalších organických látek, které drží v půdě vodu a živiny. V šetrně zpracované půdě ho bylo 0,51 procenta, v klasicky zorané 0,43 procenta. Zdá se tedy, že méně hrabání v půdě pomáhá organické hmotě zůstat na místě.",
+        "procJeToDulezite": "Rozdíl ve výnosu i v kvalitě půdy vyšel z jednoduché změny: méně průjezdů technikou po poli. To je pro zemědělce levnější a šetrnější zároveň, takže stojí za to vědět, že to nemusí být na úkor sklizně.",
+        "poznamkaKOmezenim": "Jde o krátkodobý pokus na jediném místě se třemi opakováními, takže výsledky je potřeba brát jako předběžné a ověřit je v dalších sezonách i jiných půdních podmínkách."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 515,
+              "end": 517
+            },
+            "matchedText": "10",
+            "messageCs": "Číslo „10“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „10 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[515,517]: 10"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 534,
+              "end": 536
+            },
+            "matchedText": "20",
+            "messageCs": "Číslo „20“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „20 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[534,536]: 20"
+          }
+        ],
+        "soft": []
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7223568294",
+        "title": "Biochar Mitigates N 2 O and NH 3 Emissions for Organic and Inorganic Fertilizers in an Austrian Field Experiment",
+        "abstract": "ABSTRACT Biochar is a promising soil management strategy to reduce reactive nitrogen (N r ) losses from agricultural soils, and replacing mineral fertilizers with organic amendments (OAs) can improve soil health and enhance nutrient recycling. We conducted a three‐year field experiment with maize ( Zea mays ) in Lower Austria to compare organic waste compost and digestates with mineral nitrogen–phosphorus–potassium (NPK) fertilization (175 kg N ha −1 , 39 kg P ha −1 , 187 kg K ha −1 ) and to evaluate the effects of biochar application on nitrous oxide (N 2 O), ammonia (NH 3 ) emissions, and crop yield. Compost and digestates were applied at higher total N rates (350 kg N ha −1 ). Biochar (approximately 7.5 t ha −1 ) was applied in combination with NPK or compost at the same fertilizer application rates as the respective non‐biochar treatments to assess its potential to mitigate gaseous N r losses. Treatment effects on soil properties and microbial functional gene abundances were also evaluated. Overall, compost reduced cumulative N 2 O and NH 3 emissions by 66% and 68%, respectively, whereas digestate increased emissions by 21% (N 2 O) and 32% (NH 3 ) compared to NPK. Biochar‐amended soils mitigated N 2 O emissions by 48% under NPK and 39% under compost. Moreover, NH 3 volatilization was reduced by 51% for NPK and 26% for compost when biochar was added. In reference to yield, digestates successfully substituted NPK, whereas compost did not provide equivalent short‐term nutrient supply due to limited N‐mineralization rates. Soil organic carbon and total nitrogen (TN) increased under OAs, indicating long‐term fertility benefits. Reduced N 2 O emissions under biochar amendment could be linked to a lower denitrification potential in these treatments, while the availability of nitrate () and ammonium () was not affected by biochar amendment, as confirmed by analysis of abundance of N cycling genes and soil extractions. Our research demonstrates that both OAs and biochar can serve as climate‐smart agriculture tools by improving soil fertility and supporting C sequestration while reducing direct N 2 O and NH 3 emissions. However, effective fertilization management is necessary to maintain high yields, requiring integrated nutrient management strategies that strategically combine OAs with mineral N fertilization.",
+        "date": "2026-10-25",
+        "url": "https://doi.org/10.1111/ejss.70438",
+        "licence": "cc-by-nc",
+        "source": "openalex",
+        "doi": "10.1111/ejss.70438",
+        "openAlexId": "W7223568294",
+        "subfield": {
+          "id": "subfields/1111",
+          "name": "Soil Science"
+        },
+        "field": {
+          "id": "fields/11",
+          "name": "Agricultural and Biological Sciences"
+        },
+        "topic": {
+          "id": "T10004",
+          "name": "Soil Carbon and Nitrogen Dynamics"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Ferdinand Hartmann",
+          "Heide Spiegel",
+          "Gerhard Soja",
+          "Eugenio Díaz‐Pinés",
+          "Simon Weldon",
+          "Markus Gorfer",
+          "Paola Gregur",
+          "Rebecca Clare Hood-Nowotny"
+        ],
+        "venue": "European Journal of Soil Science",
+        "indexedDate": "2026-10-26",
+        "referencedWorksCount": 80,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8253,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.9286,
+          "credibility": 0.745,
+          "total": 0.8722,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.75,
+            "q": 1,
+            "c": 0.5,
+            "t": 0,
+            "j": 0.0815
+          },
+          "everydayDomains": [
+            "food",
+            "health",
+            "weather",
+            "transport"
+          ],
+          "subfieldKey": "subfields/1111",
+          "evidence": [
+            "total 0.8722 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.83 = P 0.84 − 0.45×t 0.00 − 0.15×j 0.08",
+            "outcome verbs (v 1.00): reduced, reduces, increased, improves, lowers, linked to",
+            "recognisable subjects (s 0.75): crops, maize, soil",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.50): −0.3 no outcome verb or recognisable subject in the title; −0.2 title is 19 words",
+            "jargon density (j 0.08): 3/368 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 4 domain(s) — food, health, weather, transport",
+            "everyday terms (5): nutrient, health, treatment, climate, cycling",
+            "freshness 0.93: 1 day(s) old (effective date 2026-10-26)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in European Journal of Soil Science",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1111/ejss.70438)"
+      },
+      "summary": {
+        "souhrn": "Tříletý polní pokus s kukuřicí v Dolním Rakousku porovnával klasické minerální hnojivo s kompostem a digestátem (zbytkem z bioplynové stanice) a sledoval, kolik dusíku z půdy unikne do vzduchu. Kompost snížil únik oxidu dusného i amoniaku zhruba o dvě třetiny, digestát je naopak zvýšil asi o pětinu až třetinu. Když vědci do půdy zapravili biouhel, tedy zuhelnatělou rostlinnou hmotu podobnou dřevěnému uhlí, úniky plynů klesly u obou typů hnojení. Háček je ve výnosu: digestát minerální hnojivo nahradil, kompost ne, protože se z něj dusík uvolňoval příliš pomalu. Pro praxi z toho plyne, že organická hnojiva a biouhel pomáhají půdě i ovzduší, ale samy o sobě nemusí stačit k plné úrodě.",
+        "podrobneVysvetleni": "Pokus běžel tři roky na poli s kukuřicí v Dolním Rakousku. Minerální hnojivo dodalo 175 kilogramů dusíku na hektar; hektar je zhruba plocha fotbalového hřiště. Kompost i digestát dostaly dvojnásobnou dávku celkového dusíku, tedy 350 kilogramů. Důvod je prostý: jejich dusík je vázaný v organické hmotě a rostlinám se zpřístupňuje jen postupně. K části políček vědci navíc zapravili asi 7,5 tuny biouhlu na hektar. Měřili dva plyny: oxid dusný, což je silný skleníkový plyn, a amoniak, který znečišťuje ovzduší. Kompost oproti minerálnímu hnojivu snížil celkový únik oxidu dusného o 66 % a amoniaku o 68 % — tedy zhruba o dvě třetiny. Digestát naopak úniky zvýšil, o 21 % u oxidu dusného a o 32 % u amoniaku, tedy přibližně o pětinu a o třetinu. Biouhel pomohl v obou případech. U minerálního hnojiva klesl oxid dusný o 48 %, tedy skoro na polovinu, u kompostu o 39 %, tedy zhruba o dvě pětiny. Amoniak se u minerálního hnojiva snížil o 51 %, tedy také asi na polovinu, u kompostu o 26 %, tedy zhruba o čtvrtinu. Rozbory půdy naznačují, že za nižšími úniky stojí utlumený mikrobiální proces, při kterém se dusičnany mění na plyn. Množství živin dostupných rostlinám přitom biouhel nezměnil. Výnos kukuřice byl u digestátu srovnatelný s minerálním hnojivem, u kompostu nižší. Obě organická hnojiva ale zvýšila obsah uhlíku a dusíku v půdě.",
+        "procJeToDulezite": "Oxid dusný je silný skleníkový plyn a amoniak zhoršuje kvalitu ovzduší, takže způsob hnojení na polích se týká i lidí, kteří v životě nic nezaseli. Studie zároveň ukazuje, že šetrnější hnojení nemusí automaticky znamenat stejnou úrodu.",
+        "poznamkaKOmezenim": "Jde o jediný tříletý pokus na jednom poli s jednou plodinou, takže výsledky nemusí platit pro jiné půdy, podnebí ani jiné typy kompostu a digestátu."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 187,
+              "end": 199
+            },
+            "matchedText": "dvojnásobnou",
+            "messageCs": "Číslo „dvojnásobnou“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „dvojnásobnou — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[187,199]: dvojnásobnou"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 229,
+              "end": 232
+            },
+            "matchedText": "350",
+            "messageCs": "Číslo „350“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „350 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[229,232]: 350"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 193
+            },
+            "matchedText": "Tříletý polní pokus s kukuřicí v Dolním Rakousku porovnával klasické minerální hnojivo s kompostem a digestátem (zbytkem z bioplynové stanice) a sledoval, kolik dusíku z půdy unikne do vzduchu.",
+            "messageCs": "Tato věta má 29 slov a je moc dlouhá: „Tříletý polní pokus s kukuřicí v Dolním Rakousku porovnával klasické minerální …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[0,193]: Tříletý polní pokus s kukuřicí v Dolním Rakousku porovnával klasické minerální hnojivo s kompostem a digestátem (zbytkem z bioplynové stanice) a sledoval, kolik dusíku z půdy unikne do vzduchu."
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 593,
+              "end": 601
+            },
+            "matchedText": " organic",
+            "messageCs": "Text opisuje původní název článku („ organic“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[593,601]:  organic"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 285,
+              "end": 293
+            },
+            "matchedText": " organic",
+            "messageCs": "Text opisuje původní název článku („ organic“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[285,293]:  organic"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 1277,
+              "end": 1285
+            },
+            "matchedText": " organic",
+            "messageCs": "Text opisuje původní název článku („ organic“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[1277,1285]:  organic"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=16.45",
+            "messageCs": "Věty jsou v průměru moc dlouhé (16,5 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=16.45"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7223558953",
+        "title": "Optimized zinc oxide and copper oxide nanoparticle applications increase soybean productivity and drought resiliency",
+        "abstract": "Climate-induced water stress is projected to hamper soybean yield and seed/grain quality globally, unless climate adaptive management practices are adopted. Soybean ( Glycine max L.) was cultivated under field conditions using pots following randomized complete block design and subjected to well-watered or drought stress (40–50% water capacity). Plants were foliar-sprayed with 0–200 mg L −1 copper oxide (CuONPs) or zinc oxide (ZnONPs) nanoparticles, or with 400 mg L −1 of ionic Cu/Zn form. Under well-watered conditions, 50 mg L −1 CuONPs increased seed yield and protein content by 25% and 11%, respectively; whereas increasing concentrations of CuONPs to 100 or 200 mg L −1 reduced yield by 8–24%. On the other hand, ZnONPs at 100 and 200 mg L −1 increased average seed yield by 59% and 80%, and seed number by 39% and 48%, respectively. Drought stress reduced seed yield, seed weight, and micronutrient content by approximately 15–25%, 15%, and 34–46%, respectively, compared to well-watered conditions. Under drought stress, ZnONPs at 100–200 mg L −1 improved seed yield by 25–39%, protein content by 20–31%, and oil content by 24–29%; while CuONPs above 50 mg L −1 reduced seed number and yield by 24–54% and 37–47%, respectively. At 400 mg L −1 , ionic Cu or Zn had no adverse effects on seed quality, except for ionic Zn that increased average protein under drought stress. Overall, CuONPs at 50 mg L −1 and ZnONPs at 100–200 mg L −1 increased soybean productivity and seed quality under both well-watered and drought conditions, likely due to improved micronutrient (Cu & Zn) and nitrogen assimilations. Low dose CuONP or moderate dose ZnONP foliar applications represent promising and sustainable approaches for enhancing soybean productivity while maintaining seed nutritional quality under varying water availability.",
+        "date": "2026-10-25",
+        "url": "https://doi.org/10.1007/s44372-026-00968-4",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1007/s44372-026-00968-4",
+        "openAlexId": "W7223558953",
+        "subfield": {
+          "id": "subfields/1110",
+          "name": "Plant Science"
+        },
+        "field": {
+          "id": "fields/11",
+          "name": "Agricultural and Biological Sciences"
+        },
+        "topic": {
+          "id": "T11418",
+          "name": "Plant Micronutrient Interactions and Effects"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://link.springer.com/content/pdf/10.1007/s44372-026-00968-4.pdf",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Sina Fallah",
+          "Shahin Shirvani-Naghani",
+          "Lok Raj Pokhrel",
+          "José R. Peralta-Videa",
+          "Nubia Zuverza‐Mena"
+        ],
+        "venue": "Discover Plants.",
+        "indexedDate": "2026-10-26",
+        "referencedWorksCount": 39,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7975,
+          "everydayRelevance": 1,
+          "freshness": 0.9286,
+          "credibility": 0.745,
+          "total": 0.8704,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.25,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.1
+          },
+          "everydayDomains": [
+            "food",
+            "weather",
+            "work",
+            "mind"
+          ],
+          "subfieldKey": "subfields/1110",
+          "evidence": [
+            "total 0.8704 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.80 = P 0.81 − 0.45×t 0.00 − 0.15×j 0.10",
+            "outcome verbs (v 1.00): reduced, increased, increases (title, ×2), improved",
+            "recognisable subjects (s 0.25): plants",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.10): 3/300 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 4 domain(s) — food, weather, work, mind",
+            "everyday terms (6): protein, climate, drought, productivity, concentration, stress",
+            "freshness 0.93: 1 day(s) old (effective date 2026-10-26)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Discover Plants.",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no tldr; falling back to the source abstract (§4.2)"
+      },
+      "summary": {
+        "souhrn": "Postřik sójových listů jemnými částicemi oxidu zinku zvedl výnos semen o 59 až 80 procent, tedy zhruba jedenapůlkrát až dvakrát více. Vědci pěstovali sóju v nádobách venku; část rostlin zalévali dostatečně, část nechali v suchu zhruba na polovině plné zásoby vody v půdě. Listy pak stříkali nanočásticemi (anglicky nanoparticles) oxidu zinku nebo oxidu mědi v různých koncentracích. U mědi pomohla jen nejnižší dávka, vyšší dávky výnos naopak srážely. Samotné sucho ubralo na výnosu zhruba 15 až 25 procent, tedy asi pětinu úrody, a zinek část téhle ztráty vrátil zpět.",
+        "podrobneVysvetleni": "Pokus probíhal venku v nádobách uspořádaných do náhodných bloků, aby se vyrovnaly rozdíly v půdě a osvitu. Část rostlin měla vody dost, část jen zhruba polovinu toho, co půda udrží. Na listy vědci stříkali oxid měďnatý nebo oxid zinečnatý v podobě nanočástic, tedy drobečků tak malých, že projdou povrchem listu. Koncentrace sahaly od nuly do 200 miligramů na litr. Pro srovnání použili i běžnou rozpuštěnou (iontovou) formu mědi a zinku v dávce 400 miligramů na litr. Při dostatku vody zvýšila nejnižší dávka mědi výnos semen o čtvrtinu a obsah bílkovin o 11 procent, tedy zhruba o desetinu. Dvojnásobná a čtyřnásobná dávka ale výnos snížila o 8 až 24 procent. Zinek ve vyšších dávkách zvedl výnos o 59 a 80 procent a počet semen o 39 a 48 procent, tedy zhruba o dvě pětiny až polovinu. Sucho samo snížilo výnos zhruba o 15 až 25 procent, tedy asi o pětinu úrody. Hmotnost semen klesla o 15 procent, tedy asi o sedminu, a obsah stopových živin o 34 až 46 procent, tedy skoro o polovinu. Zinek v suchu výnos zvedl o 25 až 39 procent a obsah bílkovin i oleje zhruba o čtvrtinu. Měď ve vyšších dávkách v suchu naopak škodila: výnos klesl o 37 až 47 procent, tedy skoro na polovinu.",
+        "procJeToDulezite": "Sucha ubírají na úrodě sóji, která je jedním z hlavních zdrojů bílkovin pro lidi i hospodářská zvířata, a levný postřik listů by mohl část ztráty vyrovnat. Zároveň je vidět, že u mikroživin platí míra: stejná látka ve vyšší dávce úrodu nezvedne, ale sníží.",
+        "poznamkaKOmezenim": "Jde o jediný pokus s rostlinami v nádobách, ne na běžném poli, takže výsledky je zatím třeba brát jako předběžné a ověřit je ve velkém měřítku i na dalších odrůdách."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 238,
+              "end": 246
+            },
+            "matchedText": "polovině",
+            "messageCs": "Číslo „polovině“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „polovině — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[238,246]: polovině"
+          }
+        ],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 662,
+              "end": 787
+            },
+            "matchedText": "Zinek ve vyšších dávkách zvedl výnos o 59 a 80 procent a počet semen o 39 a 48 procent, tedy zhruba o dvě pětiny až polovinu.",
+            "messageCs": "Tato věta má 26 slov a je moc dlouhá: „Zinek ve vyšších dávkách zvedl výnos o 59 a 80 procent a počet semen o 39 a 48 …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[662,787]: Zinek ve vyšších dávkách zvedl výnos o 59 a 80 procent a počet semen o 39 a 48 procent, tedy zhruba o dvě pětiny až polovinu."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=18.00",
+            "messageCs": "Věty jsou v průměru moc dlouhé (18,0 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=18.00"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7223553403",
+        "title": "Arable Crop Farmers' Utilization of ICT Devices in Accessing Climate Change Information for Agricultural Production in Osun State, Nigeria",
+        "abstract": "This study assessed arable crop farmers' utilization of Information Communication Technology (ICT) devices in accessing climate change information for agricultural production in Osun State, Nigeria. Specifically, it identified ICT devices used, assessed farmers' perceptions, determined the extent of ICT utilization and identified benefits and challenges associated with the usage of ICT for climate change information for food security. A multistage sampling technique was used to select 180 respondents from three LGAs across two agricultural zones (Ife-Ijesha and Iwo). Data were analyzed using frequency distribution, mean, percentage, and Chi-square. Results showed that mobile phones (66.7%), radio (58.3%), and television (41.7%) were the most frequently used ICT tools. Also, 36% of respondents had a high level of ICT utilization. Major constraints were high costs of ICT facilities (mean =2.76), rural poverty (mean =2.60), and erratic power supply (mean =2.42). Education (χ²=154.3, P=0.041) and type of occupation (χ²=30.2, P=0.006) influenced ICT use. The study concludes that moderate ICT utilization exists among farmers and recommends training programmes to enhance farmers’ ICT proficiency and climate change information access for increased food security in the nation.",
+        "date": "2026-10-25",
+        "url": "https://doi.org/10.22004/ag.econ.415907",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.22004/ag.econ.415907",
+        "openAlexId": "W7223553403",
+        "subfield": {
+          "id": "subfields/1100",
+          "name": "General Agricultural and Biological Sciences"
+        },
+        "field": {
+          "id": "fields/11",
+          "name": "Agricultural and Biological Sciences"
+        },
+        "topic": {
+          "id": "T13478",
+          "name": "Agricultural Development and Management"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "T. F. Ojo",
+          "S. A. Adesoji",
+          "M. J. Bello"
+        ],
+        "venue": "AgEcon Search (University of Minnesota, USA)",
+        "indexedDate": "2026-10-26",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7687,
+          "everydayRelevance": 1,
+          "freshness": 0.9286,
+          "credibility": 0.746,
+          "total": 0.8591,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 1,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.1087
+          },
+          "everydayDomains": [
+            "food",
+            "screens",
+            "money",
+            "weather"
+          ],
+          "subfieldKey": "subfields/1100",
+          "evidence": [
+            "total 0.8591 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.77 = P 0.79 − 0.45×t 0.00 − 0.15×j 0.11",
+            "outcome verbs (v 0.50): increased, associated with",
+            "recognisable subjects (s 1.00): farmers (title, ×2), crops (title, ×2), phones",
+            "quantified effect (q 1): percentage, p-value",
+            "title concreteness (c 0.80): −0.2 title is 19 words",
+            "jargon density (j 0.11): 2/184 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 4 domain(s) — food, screens, money, weather",
+            "everyday terms (6): food, mobile phone, cost, costs, poverty, climate",
+            "freshness 0.93: 1 day(s) old (effective date 2026-10-26)",
+            "credibility 0.75 = 0.40×c1 1.00 + 0.25×c2 0.56 + 0.20×c3 0.80 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in AgEcon Search (University of Minnesota, USA)",
+            "c2 0.56: n = 180",
+            "c3 0.80: open access without an open licence (repository copy)",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.22004/ag.econ.415907)"
+      },
+      "summary": {
+        "souhrn": "Nigerijští zemědělci, kteří pěstují plodiny na poli, se o počasí a změnách klimatu dozvídají hlavně z mobilu, rádia a televize — internet a chytré aplikace v tom hrají mnohem menší roli. Výzkumníci se ptali 180 hospodářů ve třech okresech státu Osun a zjistili, že mobilní telefon používá k získávání informací asi dvě třetiny z nich, rádio necelých šest z deseti a televizi dva z pěti. Vysokou míru využívání těchto zařízení přitom vykázal jen zhruba každý třetí dotázaný. Největší brzdou je podle samotných zemědělců cena techniky, chudoba na venkově a nespolehlivé dodávky elektřiny. Autoři proto doporučují školení, která by hospodářům pomohla techniku skutečně využít — protože samotné vlastnictví telefonu ještě neznamená, že se k člověku dostane užitečná předpověď.",
+        "podrobneVysvetleni": "Výzkumníci vybrali vzorek postupně po krocích — nejdřív dvě zemědělské zóny státu Osun (Ife-Ijesha a Iwo), pak tři okresy a nakonec konkrétní hospodáře, celkem 180 lidí. S těmi vyplnili dotazník: jaká zařízení používají, co si o nich myslí, jak často je k hledání informací o počasí a klimatu skutečně zapojují a co jim v tom brání. Odpovědi pak shrnuli do průměrů a podílů a ověřili, jestli se skupiny zemědělců mezi sebou liší víc, než by odpovídalo náhodě.\n\nNejčastějším pomocníkem byl mobilní telefon, který uvedly zhruba dvě třetiny dotázaných. Následovalo rádio (necelých šest z deseti) a televize (dva z pěti). Vysokou míru využívání techniky ale vykázalo jen asi 36 procent lidí, tedy něco přes každého třetího — zbytek ji používá jen občas, nebo skoro vůbec.\n\nJako nejtíživější překážku zemědělci označili vysokou cenu techniky a jejího provozu, hned za ní chudobu na venkově a nepravidelné dodávky elektřiny. Z osobních charakteristik se ukázaly jako podstatné dvě: dosažené vzdělání a to, čím se člověk živí vedle hospodaření. U obou byl rozdíl mezi skupinami natolik výrazný, že ho autoři nepovažují za náhodu — vzdělanější hospodáři sahají po technice častěji.\n\nZávěr práce zní střízlivě: využívání je zatím jen střední a samotné rozšíření mobilů problém nevyřeší. Autoři doporučují školení, aby zemědělci s informacemi o počasí uměli pracovat.",
+        "procJeToDulezite": "Zemědělci v rozvojových zemích čelí nevyzpytatelnému počasí a včasná informace o něm může rozhodnout o úrodě celé rodiny — studie ukazuje, že technika sama o sobě nestačí, pokud chybí peníze, elektřina a schopnost ji využít.",
+        "poznamkaKOmezenim": "Jde o dotazníkové šetření mezi 180 hospodáři z jediného nigerijského státu, takže zjištění popisuje konkrétní region a nelze je bez dalšího přenášet jinam; navíc všechny údaje pocházejí z toho, co lidé sami uvedli."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=20.94",
+            "messageCs": "Věty jsou v průměru moc dlouhé (20,9 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=20.94"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 187,
+              "end": 386
+            },
+            "matchedText": "Výzkumníci se ptali 180 hospodářů ve třech okresech státu Osun a zjistili, že mobilní telefon používá k získávání informací asi dvě třetiny z nich, rádio necelých šest z deseti a televizi dva z pěti.",
+            "messageCs": "Tato věta má 34 slov a je moc dlouhá: „Výzkumníci se ptali 180 hospodářů ve třech okresech státu Osun a zjistili, že m…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[187,386]: Výzkumníci se ptali 180 hospodářů ve třech okresech státu Osun a zjistili, že mobilní telefon používá k získávání informací asi dvě třetiny z nich, rádio necelých šest z deseti a televizi dva z pěti."
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 300,
+              "end": 308
+            },
+            "matchedText": " informa",
+            "messageCs": "Text opisuje původní název článku („ informa“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[300,308]:  informa"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 160,
+              "end": 163
+            },
+            "matchedText": "180",
+            "messageCs": "Číslo „180“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „180 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[160,163]: 180"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 263,
+              "end": 271
+            },
+            "matchedText": " informa",
+            "messageCs": "Text opisuje původní název článku („ informa“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[263,271]:  informa"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 1320,
+              "end": 1328
+            },
+            "matchedText": " informa",
+            "messageCs": "Text opisuje původní název článku („ informa“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[1320,1328]:  informa"
+          },
+          {
+            "block": "procJeToDulezite",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 68,
+              "end": 76
+            },
+            "matchedText": " informa",
+            "messageCs": "Text opisuje původní název článku („ informa“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ procJeToDulezite[68,76]:  informa"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=2",
+            "messageCs": "Počet vět delších než 30 slov: 2. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=2"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=47.8",
+            "messageCs": "Text se celkově čte těžko (index 48 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=47.8"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7223557638",
+        "title": "Growth performance and biomass production of Andropogon gayanus, Brachiaria falcifera, and Hyparrhenia smithiana under water deficit conditions",
+        "abstract": "Increasing rainfall variability and recurrent droughts associated with climate change threaten the productivity and stability of West African rangelands, which support livestock production and rural livelihoods. Identifying forage species with adaptive responses to water limitation is therefore important for improving the resilience of forage systems. This study evaluated the effects of water deficit on the growth and biomass production of Andropogon gayanus , Brachiaria falcifera , and Hyparrhenia smithiana under greenhouse conditions in Benin. A factorial experiment was conducted using three species and four water regimes (100%, 75%, 50%, and 25% field capacity). Plant height, collar diameter, tiller production, and aboveground and belowground biomass was measured. Results showed species-specific responses to water deficit. Plant height remained relatively stable in the three species across treatments, although B. falcifera showed a slight reduction under severe water deficit. Collar diameter increased under moderate water deficit in A. gayanus , decreased in B. falcifera , and remained relatively stable in H. smithiana . Tiller production was the most consistently responsive growth trait across the three species. Biomass production declined significantly in A. gayanus , remained relatively stable in B. falcifera , and was mainly affected in the belowground fraction of H. smithiana . The shoot-to-root biomass ratio varied significantly among water treatments in all three species. These contrasting responses suggest that A. gayanus and H. smithiana exhibit potentially useful adaptive traits under water limitation. This provides a scientific basis for selecting forage species that can enhance the long-term sustainability of West African rangelands under increasing climate variability.",
+        "date": "2026-10-25",
+        "url": "https://doi.org/10.1007/s43621-026-05109-1",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1007/s43621-026-05109-1",
+        "openAlexId": "W7223557638",
+        "subfield": {
+          "id": "subfields/1102",
+          "name": "Agronomy and Crop Science"
+        },
+        "field": {
+          "id": "fields/11",
+          "name": "Agricultural and Biological Sciences"
+        },
+        "topic": {
+          "id": "T13628",
+          "name": "Agricultural Productivity and Crop Improvement"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Agbatan Marc Koutchoro",
+          "Elononyi D. Basile Fagninou",
+          "Sissou Zakari",
+          "Alain Sèakpo Yaoitcha",
+          "Pierrot Lionel Yemadje",
+          "Laurent Gbenato Houessou"
+        ],
+        "venue": "Discover Sustainability",
+        "indexedDate": "2026-10-26",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7403,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.9286,
+          "credibility": 0.745,
+          "total": 0.8382,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.25,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.0816
+          },
+          "everydayDomains": [
+            "health",
+            "weather",
+            "work"
+          ],
+          "subfieldKey": "subfields/1102",
+          "evidence": [
+            "total 0.8382 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.74 = P 0.75 − 0.45×t 0.00 − 0.15×j 0.08",
+            "outcome verbs (v 1.00): reduction, increased, decreased, associated with",
+            "recognisable subjects (s 0.25): plants",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.08): 2/245 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 3 domain(s) — health, weather, work",
+            "everyday terms (5): treatment, climate, drought, rainfall, productivity",
+            "freshness 0.93: 1 day(s) old (effective date 2026-10-26)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Discover Sustainability",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1007/s43621-026-05109-1)"
+      },
+      "summary": {
+        "souhrn": "Ve skleníku v Beninu rostly tři pícní trávy při čtyřech různých dávkách vody. Nejlépe zásobené rostliny dostaly plnou zálivku, další už jen tři čtvrtiny, polovinu a čtvrtinu toho množství, které půda dokáže udržet. Výška stébel zůstala u všech tří druhů zhruba stejná, nejcitlivěji reagoval počet odnoží, tedy nových výhonků vyrážejících od země. Druh Andropogon gayanus při suchu znatelně ztratil na hmotnosti, Brachiaria falcifera si ji udržela a u Hyparrhenia smithiana ubylo hlavně kořenů. Pro pastviny západní Afriky to znamená vodítko, které trávy mají šanci přežít stále častější období sucha.",
+        "podrobneVysvetleni": "Pokus proběhl ve skleníku, kde vědci mohli zálivku přesně řídit. Porovnávali tři druhy trav a čtyři úrovně vláhy v půdě: plnou zásobu vody a pak tři čtvrtiny, polovinu a čtvrtinu této zásoby. U rostlin měřili výšku, tloušťku stébla u země, počet odnoží a nakonec hmotnost nadzemní i podzemní části. Odpověď na sucho se lišila druh od druhu. Výška se držela u všech tří trav, jen Brachiaria falcifera při nejsilnějším suchu mírně zakrněla. Tloušťka u země se u Andropogon gayanus při mírném nedostatku vody dokonce zvětšila, u Brachiaria falcifera naopak zmenšila a u Hyparrhenia smithiana zůstala víceméně beze změny. Nejspolehlivěji na sucho reagoval počet odnoží, a to u všech tří druhů. Množství vyprodukované hmoty u Andropogon gayanus průkazně kleslo, u Brachiaria falcifera zůstalo zhruba stejné a u Hyparrhenia smithiana ubylo především pod zemí, tedy v kořenech. Poměr mezi nadzemní a podzemní částí se měnil podle dávky vody u všech tří trav. Autoři z toho usuzují, že Andropogon gayanus a Hyparrhenia smithiana mají vlastnosti, které jim při nedostatku vody mohou pomoci. Abstrakt neuvádí, o kolik přesně se jednotlivé hodnoty změnily, takže jde spíš o směr změny než o přesná čísla.",
+        "procJeToDulezite": "Srážky v západní Africe jsou stále nevyzpytatelnější a na pastvinách tam závisí obživa mnoha rodin, které chovají dobytek. Výběr trav, jež sucho snesou, rozhoduje o tom, zda bude mít dobytek co žrát.",
+        "poznamkaKOmezenim": "Jde o skleníkový pokus s pěstovanými rostlinami, nikoli o měření na skutečné pastvině, a abstrakt neuvádí počet rostlin ani přesné hodnoty poklesů, takže výsledky je třeba brát jako předběžné vodítko."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 149,
+              "end": 157
+            },
+            "matchedText": "čtvrtiny",
+            "messageCs": "Číslo „čtvrtiny“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „čtvrtiny — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[149,157]: čtvrtiny"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 159,
+              "end": 167
+            },
+            "matchedText": "polovinu",
+            "messageCs": "Číslo „polovinu“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „polovinu — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[159,167]: polovinu"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 170,
+              "end": 178
+            },
+            "matchedText": "čtvrtinu",
+            "messageCs": "Číslo „čtvrtinu“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „čtvrtinu — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[170,178]: čtvrtinu"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 450,
+              "end": 474
+            },
+            "matchedText": " Hyparrhenia smithiana u",
+            "messageCs": "Text opisuje původní název článku („ Hyparrhenia smithiana u“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[450,474]:  Hyparrhenia smithiana u"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 439,
+              "end": 617
+            },
+            "matchedText": "Tloušťka u země se u Andropogon gayanus při mírném nedostatku vody dokonce zvětšila, u Brachiaria falcifera naopak zmenšila a u Hyparrhenia smithiana zůstala víceméně beze změny.",
+            "messageCs": "Tato věta má 26 slov a je moc dlouhá: „Tloušťka u země se u Andropogon gayanus při mírném nedostatku vody dokonce zvět…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[439,617]: Tloušťka u země se u Andropogon gayanus při mírném nedostatku vody dokonce zvětšila, u Brachiaria falcifera naopak zmenšila a u Hyparrhenia smithiana zůstala víceméně beze změny."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 805,
+              "end": 829
+            },
+            "matchedText": " Hyparrhenia smithiana u",
+            "messageCs": "Text opisuje původní název článku („ Hyparrhenia smithiana u“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[805,829]:  Hyparrhenia smithiana u"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 998,
+              "end": 1021
+            },
+            "matchedText": " Hyparrhenia smithiana ",
+            "messageCs": "Text opisuje původní název článku („ Hyparrhenia smithiana “). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[998,1021]:  Hyparrhenia smithiana "
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=17.17",
+            "messageCs": "Věty jsou v průměru moc dlouhé (17,2 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=17.17"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-10-27T05:37:41.518Z",
+  "generatedOn": "2026-10-27",
+  "schemaVersion": 1
+}

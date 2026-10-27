@@ -1256,6 +1256,46 @@
       "titleKey": "transformerredundancyandexportavailabilityinsaudiutilityscalesolarpowerplantsananalyticalscenariostudyofoutagestatesandcollectorbusreconfiguration",
       "publishedOn": "2026-10-20",
       "category": "physics-space-engineering"
+    },
+    {
+      "openalexId": "W7223550025",
+      "doi": "10.1007/s44378-026-00356-0",
+      "arxivId": null,
+      "titleKey": "shortterminteractiveeffectsoftillagesystemandcompostrateonsoyabeangrowthyieldandphysicochemicalcharacteristicsofsoil",
+      "publishedOn": "2026-10-27",
+      "category": "biology-food-agriculture"
+    },
+    {
+      "openalexId": "W7223568294",
+      "doi": "10.1111/ejss.70438",
+      "arxivId": null,
+      "titleKey": "biocharmitigatesn2oandnh3emissionsfororganicandinorganicfertilizersinanaustrianfieldexperiment",
+      "publishedOn": "2026-10-27",
+      "category": "biology-food-agriculture"
+    },
+    {
+      "openalexId": "W7223558953",
+      "doi": "10.1007/s44372-026-00968-4",
+      "arxivId": null,
+      "titleKey": "optimizedzincoxideandcopperoxidenanoparticleapplicationsincreasesoybeanproductivityanddroughtresiliency",
+      "publishedOn": "2026-10-27",
+      "category": "biology-food-agriculture"
+    },
+    {
+      "openalexId": "W7223553403",
+      "doi": "10.22004/ag.econ.415907",
+      "arxivId": null,
+      "titleKey": "arablecropfarmersutilizationofictdevicesinaccessingclimatechangeinformationforagriculturalproductioninosunstatenigeria",
+      "publishedOn": "2026-10-27",
+      "category": "biology-food-agriculture"
+    },
+    {
+      "openalexId": "W7223557638",
+      "doi": "10.1007/s43621-026-05109-1",
+      "arxivId": null,
+      "titleKey": "growthperformanceandbiomassproductionofandropogongayanusbrachiariafalciferaandhyparrheniasmithianaunderwaterdeficitconditions",
+      "publishedOn": "2026-10-27",
+      "category": "biology-food-agriculture"
     }
   ]
 }
