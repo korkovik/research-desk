@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Umělá inteligence a počítače – 3. listopadu 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Umělá inteligence a počítače</h1>
+<p class="dateline"><time datetime="2026-11-03">3. listopadu 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 5</p>
+<div class="summary"><p>Páťáci často mluví o umělé inteligenci jako o někom, kdo „přemýšlí&quot; nebo „se rozhodl&quot; — a přesně tahle představa se po čtyřech hodinách práce s hmatatelnou technikou výrazně proměnila. Výzkumníci vedli na jedné veřejné základní škole čtyřtýdenní program (čtyři lekce po hodině) pro 36 žáků páté třídy a jejich učitele, kde děti pracovaly s fyzickými zařízeními se senzory místo pouhého výkladu. Počet dětí, které dokázaly vysvětlit, jak se model strojového učení učí z dat, stoupl z 28 % na 83 % — tedy zhruba ze čtyř dětí z patnácti na pět ze šesti. Popisů, kde AI vystupuje jako živá bytost, ubylo z 89 % na 25 % žáků; děti místo toho začaly mluvit o senzorech, datech a trénování. Jedna schopnost se ale nezlepšila vůbec: abstrakce, tedy umění odhlédnout od detailů a popsat podstatu problému.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Program stál na dvou existujících rámcích pro výuku o umělé inteligenci a trval čtyři týdny, vždy jednu šedesátiminutovou lekci. Zapojilo se 36 žáků páté třídy a jeden učitel. Děti nejdřív vyplnily test před výukou a pak stejný po ní — tomuhle uspořádání se říká jednoskupinový předtest–potest (single-group pretest–posttest), tedy měření jedné skupiny před a po, bez srovnávací třídy. Výzkumníci přitom brali v potaz, kolik zkušeností s počítači děti měly už předtím. Zároveň vedli rozhovory s učitelem během programu i po něm a pozorovali všechny čtyři lekce.</p>
+<p>Zlepšení se ukázalo ve všech čtyřech sledovaných oblastech: ve znalostech o AI, v tzv. informatickém myšlení (computational thinking — schopnost rozložit problém na kroky, které zvládne stroj), v motivaci k učení i v důvěře dětí ve vlastní schopnost programovat. Největší posun nastal ve znalostech o AI: průměrné skóre vzrostlo z 8,4 na 15,1 bodu, tedy skoro na dvojnásobek. Výjimkou byla abstrakce, kde průměr dokonce mírně klesl z 2,3 na 2,1 — rozdíl tak malý, že spíš znamená „beze změny&quot;.</p>
+<p>Z rozhovorů s učitelem vyplynuly tři věci: cítil se jistě jako pedagog, ale chyběly mu znalosti o samotné AI; školu brzdilo technické vybavení; a jeho obavy z techniky postupně opadaly, jak si zvykal.</p>
+<h3>Proč je to důležité</h3>
+<p>Děti si o umělé inteligenci běžně vytvářejí představu, že jde o cosi živého nebo kouzelného, a tahle studie ukazuje, že i pouhé čtyři hodiny práce s hmatatelnými zařízeními tu představu dokážou posunout k senzorům, datům a trénování. Pro učitele je zajímavé i zjištění, že hlavní překážkou nebyla pedagogika, ale chybějící znalosti o AI a nedostatečné vybavení školy.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Harsa Wara Prabawa, Jajang Kusnendar, Yuli Sopianti, Andhin Dyas Fitriani, Rohati</dd>
+<dt>Časopis</dt>
+<dd>Journal of General Education and Humanities</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-11-01">1. listopadu 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.58421/gehu.v5i5.1993" rel="noreferrer">10.58421/gehu.v5i5.1993</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7225017082" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://journal-gehu.com/index.php/gehu/article/download/1993/2343" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.58421/gehu.v5i5.1993" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Výsledky jsou předběžné: šlo o jednu třídu na jediné škole, bez srovnávací skupiny dětí, které by program neabsolvovaly, takže zlepšení nelze s jistotou připsat právě této výuce — část posunu může jít na vrub běžnému zrání dětí nebo tomu, že test už jednou viděly.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 5</p>
+<div class="summary"><p><span class="lead">Dětem na základní škole nejvíc vadí to, co je na výukové aplikaci nejméně vidět — jak rychle a srozumitelně reaguje na jejich kliknutí.</span> Vědci se zeptali 120 žáků základní školy, tedy zhruba pěti běžných tříd, z nižších i vyšších ročníků, a u pěti vlastností rozhraní (snadnost ovládání, vzhled, orientace v nabídce, kvalita interakce a celková spokojenost) zjišťovali zvlášť to, jak dobře je aplikace podle dětí zvládá, a zvlášť to, jak důležitá pro ně daná vlastnost je. U všech pěti oblastí vyšla důležitost výš než skutečný výkon, nejlépe dopadl vzhled a nejhůř právě interakce — na pětibodové stupnici, kde pět je nejlepší známka, dostala 3,38 bodu, přestože ji děti označily za jednu z nejdůležitějších věcí vůbec (4,18 bodu z pěti). Tvůrci dětských vzdělávacích aplikací z toho mají docela jasné zadání: míň ladit barvičky, víc hlídat, aby aplikace dítěti vždy srozumitelně odpověděla.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Autoři upozorňují, že se spokojenost s ovládáním digitálních aplikací zkoumá hlavně u vysokoškoláků a středoškoláků, zatímco mladší děti zůstávají stranou. Udělali proto jednorázové dotazníkové šetření mezi 120 žáky základní školy, které vybírali náhodně tak, aby poměrně zastupovali nižší i vyšší ročníky. Dotazník byl upravený věku dětí a měl pětadvacet otázek, tedy po pěti na každou z pěti sledovaných oblastí; každou otázku děti hodnotily dvakrát — jak to aplikace zvládá teď a jak moc jim na té věci záleží. Nástroj autoři ověřili statisticky: všech pětadvacet otázek měřilo to, co měřit mělo, a vnitřní soudržnost jednotlivých částí dotazníku byla přijatelná až dobrá. Výsledky na pětibodové stupnici, kde pětka znamená nejlepší hodnocení: nejlépe dopadl vzhled aplikace s 3,77 bodu, nejhůře kvalita interakce s 3,38 bodu, přestože důležitost interakce děti ohodnotily 4,18 bodu z pěti, tedy jako jednu z nejvyšších vůbec. Když autoři obě hodnoty porovnali metodou, která vlastnosti rozděluje podle poměru důležitosti a skutečného stavu, skončila kvalita interakce jediná v políčku „soustřeďte se sem&quot;. Snadnost ovládání a celková spokojenost patří do „pokračujte v dobré práci&quot;, orientace v nabídce je málo naléhavá a do vzhledu se podle dat investuje spíš víc, než by bylo potřeba. Jinými slovy: děti ocení, když jim aplikace hned a srozumitelně odpoví na to, co udělaly, víc než pěkné obrázky.</p>
+<h3>Proč je to důležité</h3>
+<p>Školy i rodiny dnes vybírají výukové aplikace často podle toho, jak hezky vypadají — a tahle data naznačují, že dětem víc záleží na tom, zda jim program srozumitelně odpovídá na jejich kroky. Zároveň ukazuje, že i mladší školáci dokážou kvalitu aplikace rozumně ohodnotit, když se jich někdo zeptá správně.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Alim Jaizul Wahid, Andri Zainul Romdhoni, Rifki Saefullah</dd>
+<dt>Časopis</dt>
+<dd>International Journal of Ethno-Sciences and Education Research</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-11-01">1. listopadu 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.46336/ijeer.v6i4.1442" rel="noreferrer">10.46336/ijeer.v6i4.1442</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7225040432" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.46336/ijeer.v6i4.1442" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jednorázové dotazníkové šetření u 120 dětí z omezeného prostředí, takže výsledky ukazují názor konkrétní skupiny žáků v jednom okamžiku a nelze je bez dalšího ověření zobecnit na všechny děti a všechny výukové aplikace.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 5</p>
+<div class="summary"><p><span class="lead">Úsporné bezdrátové sítě, které propojují senzory a chytrá zařízení, řídí protokol RPL — a ten jde snadno oklamat.</span> Nepoctivý uzel může zprávy místo předávání tiše zahazovat (útok černé díry, blackhole attack), jiný útočník zase odposlouchává tok dat. Autoři proto navrhli systém NRTRD: pomocí fuzzy logiky, tedy hodnocení ve škále místo prostého ano/ne, průběžně počítá, nakolik je který uzel důvěryhodný. Podezřelé uzly pak obejde a data posílá prioritní, ověřenou cestou. V simulacích rozpoznal útoky s přesností 96,44 % — tedy zhruba 96 případů ze sta — a vedl si lépe než starší metody.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>RPL je dohodnutý postup, podle kterého si předávají data zařízení s malou baterií a slabým signálem. Patří sem senzory teploty, měřiče spotřeby nebo čidla v zemědělství. Data putují od uzlu k uzlu až do sběrného místa, takže každý článek řetězu musí fungovat. Právě to je slabina. Uzel ovládnutý útočníkem se může hlásit jako nejlepší cesta dál a pak všechny zprávy zahodit. Jiný typ útoku data nemaže, ale sleduje jejich tok a z provozu sítě vyčte, co se děje. Navržený systém NRTRD pracuje ve dvou krocích. Nejdřív hodnotí spolehlivost jednotlivých uzlů fuzzy logikou. Ta nepracuje jen s odpovědí ano, nebo ne, ale s mírou — uzel tedy může být třeba „spíš důvěryhodný&quot;. Pak systém sestaví trasu z uzlů, kterým věří, a dá jí přednost. Tím zároveň rozloží provoz tak, aby z něj šlo méně vyčíst. Autoři systém zkoušeli v simulacích. Měnili umístění sběrného uzlu, velikost plochy, počet zařízení na metr čtvereční i to, jak často útok nastane. Sledovali tři věci: zda metoda zvládne i velké sítě, jak dobře útok pozná a jak kvalitní zůstane spojení. Uváděná přesnost rozpoznání útoku je 96,44 %, tedy asi 96 správných posouzení ze sta. Pro provozovatele takových sítí to znamená, že se dá hlídat spolehlivost uzlů bez velkého odběru energie, což je u zařízení na baterie hlavní omezení.</p>
+<h3>Proč je to důležité</h3>
+<p>Úsporné sítě senzorů dnes měří spotřebu, hlídají budovy i provoz ve firmách, a když je někdo nenápadně napadne, data prostě zmizí nebo se dostanou k cizím lidem.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>K. K. Devi Sowndarya, Rajganesh Nagarajan</dd>
+<dt>Časopis</dt>
+<dd>The Computer Journal</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-11-01">1. listopadu 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1093/comjnl/bxag119" rel="noreferrer">10.1093/comjnl/bxag119</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7225037556" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1093/comjnl/bxag119" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o výsledky z počítačových simulací, ne z reálného provozu, a uváděná přesnost 96,44 % platí pro testovací prostředí, které si autoři sami nastavili.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-4">
+<p class="paper-counter">Studie 4 z 5</p>
+<div class="summary"><p><span class="lead">Nejsilnějším vodítkem k tomu, jak maturant zvládne matematiku, zůstává jeho předchozí známka z matematiky.</span> Íránští vědci sbírali v Isfahánu dotazníky od maturantů přírodovědného zaměření a doplnili je skutečnými známkami. Z 187 rozdaných dotazníků zůstalo po vyřazení neúplných a rozporných odpovědí 84 použitelných. Nejlepší z porovnávaných počítačových modelů se ve svých odhadech minul v průměru o 0,93 bodu, tedy zhruba o jeden bod. Dokázal vysvětlit 72 % rozdílů mezi žáky, tedy necelé tři čtvrtiny, a kromě dřívějších známek na výsledku záležely i sebedůvěra v matematice, pravidelnost učení a zpětná vazba od učitele.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Šlo o takzvanou průřezovou studii: data z jednoho okamžiku, bez sledování žáků v čase. Dotazník se ptal na tři skupiny věcí. První byl žák sám: motivace, pravidelnost učení, sebedůvěra v matematice a úzkost u testů. Druhá byly podmínky výuky, tedy její kvalita a zpětná vazba od učitele. Třetí byly technologie: jestli je žák používá k učení, nebo se jimi spíš nechá rozptylovat. K dotazníkům vědci přidali skutečné známky z matematiky. Data rozdělili na část, na které se počítačový model učil, a část, na které ho pak ověřovali. Porovnali osm statistických postupů, takzvaných regresí (anglicky regression) — metod, které z údajů o žákovi vypočítají odhad čísla. Nejlépe dopadlo takzvané gradientní boostování, které skládá odhad z mnoha jednoduchých rozhodovacích pravidel. Průměrně se minulo o 0,93 bodu, tedy zhruba o jeden bod. Zajímavý je postupný přírůstek přesnosti. Samotné údaje o žákovi vysvětlily 54 % rozdílů mezi ním a spolužáky, tedy něco přes polovinu. Po přidání podmínek výuky to bylo 65 %, tedy skoro dvě třetiny. Po přidání technologií 72 %, tedy necelé tři čtvrtiny. Úzkost u testů a rozptylování digitálními zařízeními souvisely s horšími výsledky. Zbytek rozdílů mezi žáky model nevysvětlí vůbec.</p>
+<h3>Proč je to důležité</h3>
+<p>Ukazuje, že na výsledcích v matematice se vedle dřívějších známek podílejí i věci, které může škola i rodina ovlivnit — pravidelnost učení, zpětná vazba od učitele a to, jestli jsou technologie pomocníkem, nebo rušivým prvkem.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Najmeh Yosefi, Mahdi Azhini, Hamidreza Kashefi, Nourooz Hashemi</dd>
+<dt>Časopis</dt>
+<dd>International Journal of Education and Cognitive Sciences</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-11-01">1. listopadu 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd>Studie zatím nemá DOI</dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7217882599" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://journalecs.com/index.php/ecs/article/download/428/419" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://journalecs.com/index.php/ecs/article/view/428" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Výsledek je předběžný: vychází jen z 84 žáků jednoho města a jednoho zaměření, data pocházejí z jediného okamžiku, takže ukazují souvislosti, nikoli příčiny.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-5">
+<p class="paper-counter">Studie 5 z 5</p>
+<div class="summary"><p>Žáci jedné indonéské odborné školy, kteří na sociálních sítích častěji narážejí na angličtinu, dopadli v testu čtení s porozuměním v průměru o něco lépe než jejich spolužáci — souvislost je ale slabá. Autoři nechali studenty vyplnit dotazník o tom, jak často sledují anglický obsah na sítích, a pak jim dali test porozumění psanému textu. Zhruba čtyři žáci z deseti spadli do kategorie s vysokou mírou kontaktu s angličtinou a dva ze tří zvládli test na „velmi dobře“. Míra souběhu obou věcí ale byla nízká, takže sítě samy rozdíly ve čtení nevysvětlí; svou roli hraje slovní zásoba, čtenářské návyky, motivace i kvalita výuky. Pro rodiče a učitele z toho plyne střízlivý závěr: anglický obsah na mobilu je příjemný bonus navíc, ne náhrada učení.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Výzkumníci oslovili 68 žáků prvního ročníku odborné školy v indonéském Mataramu — tedy zhruba tři školní třídy. Každý vyplnil dotazník s dvaceti otázkami, kde na pětistupňové škále (od „nikdy“ po „velmi často“) uváděl, jak často na sociálních sítích potkává obsah v angličtině. Potom psali test čtení s porozuměním: patnáct otázek s výběrem z několika možností. Obě pomůcky předem posoudili odborníci na jazykové testování.</p>
+<p>Přibližně čtyři žáci z deseti spadli do kategorie „vysoká“ míra kontaktu s angličtinou a necelý jeden z deseti do kategorie „velmi vysoká“. V testu čtení dosáhli dva ze tří žáků hodnocení „velmi dobré“, takže školu rozhodně netvoří samí tápající začátečníci.</p>
+<p>Protože se výsledky testu nerozložily do obvyklého tvaru zvonu, sáhli autoři po Spearmanově pořadovém koeficientu — způsobu, jak změřit, nakolik dvě věci jdou ruku v ruce. Vyšla jim slabá, ale nenáhodná korelace, tedy souběh dvou jevů: kdo potkává angličtinu častěji, čte v průměru o něco lépe. Slovo „souběh“ je tu podstatné — z čísel nijak neplyne, že by sítě lepší čtení způsobovaly. Klidně to může být naopak: kdo už anglicky rozumí, raději si anglické video pustí. Sami autoři upozorňují, že neměřili slovní zásobu, čtenářské návyky, motivaci ani kvalitu výuky, a právě ty mohou za většinu rozdílů mezi žáky.</p>
+<h3>Proč je to důležité</h3>
+<p>Angličtina z videí a příspěvků na sítích dětem zřejmě trochu pomáhá. Sama o sobě ale výuku ani čtení nenahradí — a to je dobré vědět dřív, než si od ní rodiče a učitelé začnou slibovat příliš mnoho.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Ahmad Zamroni Putra, Kamaluddin Yusra, Arafiq, Dewi Satria Elmiana</dd>
+<dt>Časopis</dt>
+<dd>Journal of Authentic Research</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-11-01">1. listopadu 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.36312/jar.v5i4.7086" rel="noreferrer">10.36312/jar.v5i4.7086</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7225006046" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.36312/jar.v5i4.7086" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jednorázové měření na jediné škole s vybraným, nikoli náhodným vzorkem, přičemž míru kontaktu s angličtinou žáci sami odhadovali v dotazníku — výsledek je proto předběžný a nelze z něj vyvozovat, co je příčina a co následek.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<h2>Poznámka k dnešnímu vydání</h2>
+<ul class="degradations">
+<li>Server, kde vědci zveřejňují práce ještě před recenzí, dnes neodpovídal. Dnešní výběr proto obsahuje jen práce z recenzovaných časopisů.</li>
+<li>Automatická krátká shrnutí dnes nebyla dostupná. Vysvětlení jsou proto napsaná přímo podle abstraktů, tedy podle shrnutí od samotných autorů.</li>
+</ul>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 3. listopadu 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>

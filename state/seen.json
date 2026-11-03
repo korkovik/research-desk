@@ -1296,6 +1296,46 @@
       "titleKey": "growthperformanceandbiomassproductionofandropogongayanusbrachiariafalciferaandhyparrheniasmithianaunderwaterdeficitconditions",
       "publishedOn": "2026-10-27",
       "category": "biology-food-agriculture"
+    },
+    {
+      "openalexId": "W7225017082",
+      "doi": "10.58421/gehu.v5i5.1993",
+      "arxivId": null,
+      "titleKey": "tangibleaiintheelementaryclassroomeffectsonailiteracycomputationalthinkingandlearnerdispositions",
+      "publishedOn": "2026-11-03",
+      "category": "ai-computing"
+    },
+    {
+      "openalexId": "W7225040432",
+      "doi": "10.46336/ijeer.v6i4.1442",
+      "arxivId": null,
+      "titleKey": "quantitativeevaluationofyounguserssatisfactionwiththeinterfaceofadigitallearningplatform",
+      "publishedOn": "2026-11-03",
+      "category": "ai-computing"
+    },
+    {
+      "openalexId": "W7225037556",
+      "doi": "10.1093/comjnl/bxag119",
+      "arxivId": null,
+      "titleKey": "energyawarenodereliabilityandrouteobfuscationmechanismfortrafficanalysisattackdetectioninscalablerplbasediotllns",
+      "publishedOn": "2026-11-03",
+      "category": "ai-computing"
+    },
+    {
+      "openalexId": "W7217882599",
+      "doi": null,
+      "arxivId": null,
+      "titleKey": "designandevaluationofanartificialintelligencebasedmodelforpredictingtwelfthgradestudentsmathematicsperformancebasedonindividualeducationalandlearningtechnologyfactors",
+      "publishedOn": "2026-11-03",
+      "category": "ai-computing"
+    },
+    {
+      "openalexId": "W7225006046",
+      "doi": "10.36312/jar.v5i4.7086",
+      "arxivId": null,
+      "titleKey": "exposuretoenglishcontentonsocialmediaandstudentsreadingcomprehensionastudyof10thgradestudentsatsmkn2mataram",
+      "publishedOn": "2026-11-03",
+      "category": "ai-computing"
     }
   ]
 }

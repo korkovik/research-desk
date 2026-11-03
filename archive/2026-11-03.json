@@ -1,0 +1,780 @@
+{
+  "date": "2026-11-03",
+  "categoryKey": "ai-computing",
+  "categoryLabel": "Umělá inteligence a počítače",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7225017082",
+        "title": "Tangible AI in the Elementary Classroom: Effects on AI Literacy, Computational Thinking, and Learner Dispositions",
+        "abstract": "Artificial intelligence (AI) is increasingly ubiquitous, yet AI literacy remains underdeveloped in elementary education, where young learners often view AI in anthropomorphic or magical terms. This study examined changes in computational thinking (CT), AI concept mastery, learning motivation, and programming self-efficacy following a tangible AI intervention, and explored the teacher's implementation experience. Guided by a framework integrating the AI Literacy Framework and the SEAME Model, a four-week intervention (4 × 60 minutes) was implemented with 36 fifth-grade students and one teacher in a public elementary school, using a single-group pretest–posttest design within a mixed-methods approach. Quantitative data were analyzed using repeated-measures ANCOVA, with prior computing experience as a covariate; qualitative data from semi-structured teacher interviews (during and after the intervention) and observations of all four sessions were analyzed thematically. Significant pre–post gains were found for all four composite outcomes, largest for AI concept mastery (M = 8.4 to 15.1; η²p = .70) and total CT score (η²p = .56), although the CT abstraction subdimension did not improve (M = 2.3 to 2.1). Students able to explain how machine learning models learn from data rose from 28% to 83%. Anthropomorphic descriptions of AI decreased from 89% to 25% of students, with post-intervention explanations increasingly referring to sensors, data, and training. Three qualitative themes emerged: strong pedagogical confidence but limited AI content knowledge, persistent infrastructural constraints, and reduced technical anxiety through gradual mastery. Tangible AI may offer a promising bridge to early AI literacy; however, without a control group, changes cannot be causally attributed to the intervention, and these single-school findings are preliminary.",
+        "date": "2026-11-01",
+        "url": "https://doi.org/10.58421/gehu.v5i5.1993",
+        "licence": "cc-by-sa",
+        "source": "openalex",
+        "doi": "10.58421/gehu.v5i5.1993",
+        "openAlexId": "W7225017082",
+        "subfield": {
+          "id": "subfields/1706",
+          "name": "Computer Science Applications"
+        },
+        "field": {
+          "id": "fields/17",
+          "name": "Computer Science"
+        },
+        "topic": {
+          "id": "T10533",
+          "name": "Teaching and Learning Programming"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://journal-gehu.com/index.php/gehu/article/download/1993/2343",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Harsa Wara Prabawa",
+          "Jajang Kusnendar",
+          "Yuli Sopianti",
+          "Andhin Dyas Fitriani",
+          "Rohati"
+        ],
+        "venue": "Journal of General Education and Humanities",
+        "indexedDate": "2026-11-01",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7319,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.8313,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 0.75,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.3876
+          },
+          "everydayDomains": [
+            "school",
+            "health",
+            "mind"
+          ],
+          "subfieldKey": "subfields/1706",
+          "evidence": [
+            "total 0.8313 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.73 = P 0.79 − 0.45×t 0.00 − 0.15×j 0.39",
+            "outcome verbs (v 0.75): reduced, improves, decreased",
+            "recognisable subjects (s 0.75): students, teachers, schools",
+            "quantified effect (q 1): percentage, p-value",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.39): 10/258 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — school, health, mind",
+            "everyday terms (10): school, schools, student, students, classroom, teacher, teachers, literacy, anxiety, motivation",
+            "freshness 0.86: 2 day(s) old (effective date 2026-11-01)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Journal of General Education and Humanities",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-sa",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.58421/gehu.v5i5.1993)"
+      },
+      "summary": {
+        "souhrn": "Páťáci často mluví o umělé inteligenci jako o někom, kdo „přemýšlí\" nebo „se rozhodl\" — a přesně tahle představa se po čtyřech hodinách práce s hmatatelnou technikou výrazně proměnila. Výzkumníci vedli na jedné veřejné základní škole čtyřtýdenní program (čtyři lekce po hodině) pro 36 žáků páté třídy a jejich učitele, kde děti pracovaly s fyzickými zařízeními se senzory místo pouhého výkladu. Počet dětí, které dokázaly vysvětlit, jak se model strojového učení učí z dat, stoupl z 28 % na 83 % — tedy zhruba ze čtyř dětí z patnácti na pět ze šesti. Popisů, kde AI vystupuje jako živá bytost, ubylo z 89 % na 25 % žáků; děti místo toho začaly mluvit o senzorech, datech a trénování. Jedna schopnost se ale nezlepšila vůbec: abstrakce, tedy umění odhlédnout od detailů a popsat podstatu problému.",
+        "podrobneVysvetleni": "Program stál na dvou existujících rámcích pro výuku o umělé inteligenci a trval čtyři týdny, vždy jednu šedesátiminutovou lekci. Zapojilo se 36 žáků páté třídy a jeden učitel. Děti nejdřív vyplnily test před výukou a pak stejný po ní — tomuhle uspořádání se říká jednoskupinový předtest–potest (single-group pretest–posttest), tedy měření jedné skupiny před a po, bez srovnávací třídy. Výzkumníci přitom brali v potaz, kolik zkušeností s počítači děti měly už předtím. Zároveň vedli rozhovory s učitelem během programu i po něm a pozorovali všechny čtyři lekce.\n\nZlepšení se ukázalo ve všech čtyřech sledovaných oblastech: ve znalostech o AI, v tzv. informatickém myšlení (computational thinking — schopnost rozložit problém na kroky, které zvládne stroj), v motivaci k učení i v důvěře dětí ve vlastní schopnost programovat. Největší posun nastal ve znalostech o AI: průměrné skóre vzrostlo z 8,4 na 15,1 bodu, tedy skoro na dvojnásobek. Výjimkou byla abstrakce, kde průměr dokonce mírně klesl z 2,3 na 2,1 — rozdíl tak malý, že spíš znamená „beze změny\".\n\nZ rozhovorů s učitelem vyplynuly tři věci: cítil se jistě jako pedagog, ale chyběly mu znalosti o samotné AI; školu brzdilo technické vybavení; a jeho obavy z techniky postupně opadaly, jak si zvykal.",
+        "procJeToDulezite": "Děti si o umělé inteligenci běžně vytvářejí představu, že jde o cosi živého nebo kouzelného, a tahle studie ukazuje, že i pouhé čtyři hodiny práce s hmatatelnými zařízeními tu představu dokážou posunout k senzorům, datům a trénování. Pro učitele je zajímavé i zjištění, že hlavní překážkou nebyla pedagogika, ale chybějící znalosti o AI a nedostatečné vybavení školy.",
+        "poznamkaKOmezenim": "Výsledky jsou předběžné: šlo o jednu třídu na jediné škole, bez srovnávací skupiny dětí, které by program neabsolvovaly, takže zlepšení nelze s jistotou připsat právě této výuce — část posunu může jít na vrub běžnému zrání dětí nebo tomu, že test už jednou viděly."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 563,
+              "end": 825
+            },
+            "matchedText": "Zlepšení se ukázalo ve všech čtyřech sledovaných oblastech: ve znalostech o AI, v tzv. informatickém myšlení (computational thinking — schopnost rozložit problém na kroky, které zvládne stroj), v motivaci k učení i v důvěře dětí ve vlastní schopnost programovat.",
+            "messageCs": "Tato věta má 38 slov a je moc dlouhá: „Zlepšení se ukázalo ve všech čtyřech sledovaných oblastech: ve znalostech o AI,…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[563,825]: Zlepšení se ukázalo ve všech čtyřech sledovaných oblastech: ve znalostech o AI, v tzv. informatickém myšlení (computational thinking — schopnost rozložit problém na kroky, které zvládne stroj), v motivaci k učení i v důvěře dětí ve vlastní schopnost programovat."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=24.13",
+            "messageCs": "Věty jsou v průměru moc dlouhé (24,1 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=24.13"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=5",
+            "messageCs": "Počet vět delších než 30 slov: 5. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=5"
+          }
+        ],
+        "soft": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=46.0",
+            "messageCs": "Text se celkově čte těžko (index 46 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=46.0"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7225040432",
+        "title": "Quantitative Evaluation of Young Users' Satisfaction with the Interface of a Digital Learning Platform",
+        "abstract": "This study evaluated elementary school students' satisfaction with the user interface of digital learning platforms, addressing a persistent gap in interface-satisfaction research that has predominantly focused on university and secondary-school populations. Using a quantitative descriptive cross-sectional design, data were collected from 120 elementary school students selected through proportionate stratified random sampling across lower grades (1–3) and upper grades (4–6). A structured, age-adapted questionnaire measured five interface dimensions ease of use, visual appearance, navigation, interaction quality, and overall satisfaction—on both performance and importance scales. Instrument validity, assessed through corrected item-total Pearson correlations, was confirmed for all twenty-five items (r = 0.536–0.741, p < .001), and Cronbach's alpha indicated acceptable to strong reliability across dimensions (α = 0.698–0.854). Descriptive results showed that importance scores exceeded performance scores for every dimension, with Visual Appearance rated highest in current performance (M = 3.77) and Interaction Quality lowest (M = 3.38), despite the latter carrying one of the highest importance ratings (M = 4.18). Importance–Performance Analysis identified Interaction Quality as the sole dimension in the \"Concentrate Here\" quadrant, marking it as the foremost priority for improvement, while Ease of Use and Overall Satisfaction fell within \"Keep Up the Good Work,\" Navigation within \"Low Priority,\" and Visual Appearance within \"Possibly Overkill.\" These findings demonstrate that a carefully validated, child-appropriate instrument can reliably capture young learners' interface perceptions and that responsive, feedback-rich interaction features, rather than visual or navigational elements, represent the most urgent target for enhancing children's digital learning experiences.",
+        "date": "2026-11-01",
+        "url": "https://doi.org/10.46336/ijeer.v6i4.1442",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.46336/ijeer.v6i4.1442",
+        "openAlexId": "W7225040432",
+        "subfield": {
+          "id": "subfields/1709",
+          "name": "Human-Computer Interaction"
+        },
+        "field": {
+          "id": "fields/17",
+          "name": "Computer Science"
+        },
+        "topic": {
+          "id": "T10470",
+          "name": "Usability and User Interface Design"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Alim Jaizul Wahid",
+          "Andri Zainul Romdhoni",
+          "Rifki Saefullah"
+        ],
+        "venue": "International Journal of Ethno-Sciences and Education Research",
+        "indexedDate": "2026-11-02",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.6779,
+          "everydayRelevance": 1,
+          "freshness": 0.9286,
+          "credibility": 0.745,
+          "total": 0.8226,
+          "explainDetail": {
+            "v": 0.5,
+            "s": 0.75,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.1639
+          },
+          "everydayDomains": [
+            "school",
+            "work",
+            "family"
+          ],
+          "subfieldKey": "subfields/1709",
+          "evidence": [
+            "total 0.8226 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.68 = P 0.70 − 0.45×t 0.00 − 0.15×j 0.16",
+            "outcome verbs (v 0.50): improvement, lowers",
+            "recognisable subjects (s 0.75): children, students, schools",
+            "quantified effect (q 1): p-value",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.16): 4/244 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — school, work, family",
+            "everyday terms (8): school, schools, student, students, university, work, child, children",
+            "freshness 0.93: 1 day(s) old (effective date 2026-11-02)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in International Journal of Ethno-Sciences and Education Research",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "Semantic Scholar unavailable (§9)"
+      },
+      "summary": {
+        "souhrn": "Dětem na základní škole nejvíc vadí to, co je na výukové aplikaci nejméně vidět — jak rychle a srozumitelně reaguje na jejich kliknutí. Vědci se zeptali 120 žáků základní školy, tedy zhruba pěti běžných tříd, z nižších i vyšších ročníků, a u pěti vlastností rozhraní (snadnost ovládání, vzhled, orientace v nabídce, kvalita interakce a celková spokojenost) zjišťovali zvlášť to, jak dobře je aplikace podle dětí zvládá, a zvlášť to, jak důležitá pro ně daná vlastnost je. U všech pěti oblastí vyšla důležitost výš než skutečný výkon, nejlépe dopadl vzhled a nejhůř právě interakce — na pětibodové stupnici, kde pět je nejlepší známka, dostala 3,38 bodu, přestože ji děti označily za jednu z nejdůležitějších věcí vůbec (4,18 bodu z pěti). Tvůrci dětských vzdělávacích aplikací z toho mají docela jasné zadání: míň ladit barvičky, víc hlídat, aby aplikace dítěti vždy srozumitelně odpověděla.",
+        "podrobneVysvetleni": "Autoři upozorňují, že se spokojenost s ovládáním digitálních aplikací zkoumá hlavně u vysokoškoláků a středoškoláků, zatímco mladší děti zůstávají stranou. Udělali proto jednorázové dotazníkové šetření mezi 120 žáky základní školy, které vybírali náhodně tak, aby poměrně zastupovali nižší i vyšší ročníky. Dotazník byl upravený věku dětí a měl pětadvacet otázek, tedy po pěti na každou z pěti sledovaných oblastí; každou otázku děti hodnotily dvakrát — jak to aplikace zvládá teď a jak moc jim na té věci záleží. Nástroj autoři ověřili statisticky: všech pětadvacet otázek měřilo to, co měřit mělo, a vnitřní soudržnost jednotlivých částí dotazníku byla přijatelná až dobrá. Výsledky na pětibodové stupnici, kde pětka znamená nejlepší hodnocení: nejlépe dopadl vzhled aplikace s 3,77 bodu, nejhůře kvalita interakce s 3,38 bodu, přestože důležitost interakce děti ohodnotily 4,18 bodu z pěti, tedy jako jednu z nejvyšších vůbec. Když autoři obě hodnoty porovnali metodou, která vlastnosti rozděluje podle poměru důležitosti a skutečného stavu, skončila kvalita interakce jediná v políčku „soustřeďte se sem\". Snadnost ovládání a celková spokojenost patří do „pokračujte v dobré práci\", orientace v nabídce je málo naléhavá a do vzhledu se podle dat investuje spíš víc, než by bylo potřeba. Jinými slovy: děti ocení, když jim aplikace hned a srozumitelně odpoví na to, co udělaly, víc než pěkné obrázky.",
+        "procJeToDulezite": "Školy i rodiny dnes vybírají výukové aplikace často podle toho, jak hezky vypadají — a tahle data naznačují, že dětem víc záleží na tom, zda jim program srozumitelně odpovídá na jejich kroky. Zároveň ukazuje, že i mladší školáci dokážou kvalitu aplikace rozumně ohodnotit, když se jich někdo zeptá správně.",
+        "poznamkaKOmezenim": "Jde o jednorázové dotazníkové šetření u 120 dětí z omezeného prostředí, takže výsledky ukazují názor konkrétní skupiny žáků v jednom okamžiku a nelze je bez dalšího ověření zobecnit na všechny děti a všechny výukové aplikace."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 136,
+              "end": 471
+            },
+            "matchedText": "Vědci se zeptali 120 žáků základní školy, tedy zhruba pěti běžných tříd, z nižších i vyšších ročníků, a u pěti vlastností rozhraní (snadnost ovládání, vzhled, orientace v nabídce, kvalita interakce a celková spokojenost) zjišťovali zvlášť to, jak dobře je aplikace podle dětí zvládá, a zvlášť to, jak důležitá pro ně daná vlastnost je.",
+            "messageCs": "Tato věta má 53 slov a je moc dlouhá: „Vědci se zeptali 120 žáků základní školy, tedy zhruba pěti běžných tříd, z nižš…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[136,471]: Vědci se zeptali 120 žáků základní školy, tedy zhruba pěti běžných tříd, z nižších i vyšších ročníků, a u pěti vlastností rozhraní (snadnost ovládání, vzhled, orientace v nabídce, kvalita interakce a celková spokojenost) zjišťovali zvlášť to, jak dobře je aplikace podle dětí zvládá, a zvlášť to, jak důležitá pro ně daná vlastnost je."
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 643,
+              "end": 652
+            },
+            "matchedText": "3,38 bodu",
+            "messageCs": "Číslo „3,38 bodu“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „3,38 bodu — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[643,652]: 3,38 bodu"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 720,
+              "end": 729
+            },
+            "matchedText": "4,18 bodu",
+            "messageCs": "Číslo „4,18 bodu“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „4,18 bodu — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[720,729]: 4,18 bodu"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=28.57",
+            "messageCs": "Věty jsou v průměru moc dlouhé (28,6 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=28.57"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=5",
+            "messageCs": "Počet vět delších než 30 slov: 5. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=5"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=35.0",
+            "messageCs": "Text se celkově čte těžko (index 35 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=35.0"
+          }
+        ],
+        "soft": []
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7225037556",
+        "title": "Energy-aware node reliability and route obfuscation mechanism for traffic analysis attack detection in scalable RPL-based IoT–LLNs",
+        "abstract": "Abstract In the digital era, the IPv6 routing protocol for low-power and lossy networks (RPL) has found a prevalent application in the Internet of Things–low power and lossy networks (IoT–LLN) environment. However, the RPLs are deeply vulnerable to Blackhole and traffic analysis attacks. Blackhole attacks may drop all received packets instead of forwarding them to relay nodes, whereas the traffic analysis attacks introduce the network traffic intentionally. These attacks pose serious threats to the confidentiality, energy efficiency, and reliability of the IoT–LLNs environment. Therefore, this work presents a novel energy-aware node reliability and trusted route detection (NRTRD) framework to alleviate the various routing and security problems. Primarily, the proposed NRTRD framework executes the fuzzy logic-based reliable node identification method to detect black hole attacks. The priority-enabled trusted route mechanism is then invoked in the proposed framework to control the network traffic that provides a secure route between the nodes. Three different performance evaluations with respect to scalability, attack diagnosis, and Quality of Service (QoS) can be carried out to test the suggested systems. The scalability analysis has been accomplished by varying the sink location, simulation area, node density, and attack probability rates. The results demonstrate that the proposed NRTRD achieves an enhanced accuracy of 96.44% when compared to existing techniques.",
+        "date": "2026-11-01",
+        "url": "https://doi.org/10.1093/comjnl/bxag119",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1093/comjnl/bxag119",
+        "openAlexId": "W7225037556",
+        "subfield": {
+          "id": "subfields/1705",
+          "name": "Computer Networks and Communications"
+        },
+        "field": {
+          "id": "fields/17",
+          "name": "Computer Science"
+        },
+        "topic": {
+          "id": "T11498",
+          "name": "Security in Wireless Sensor Networks"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "K. K. Devi Sowndarya",
+          "Rajganesh Nagarajan"
+        ],
+        "venue": "The Computer Journal",
+        "indexedDate": "2026-11-02",
+        "referencedWorksCount": 18,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7218,
+          "everydayRelevance": 0.9333,
+          "freshness": 0.9286,
+          "credibility": 0.605,
+          "total": 0.8019,
+          "explainDetail": {
+            "v": 1,
+            "s": 0,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.1878
+          },
+          "everydayDomains": [
+            "energy",
+            "transport",
+            "work"
+          ],
+          "subfieldKey": "subfields/1705",
+          "evidence": [
+            "total 0.8019 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.72 = P 0.75 − 0.45×t 0.00 − 0.15×j 0.19",
+            "outcome verbs (v 1.00): detects, detection (title, ×2), enabled",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.19): 4/213 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.93: 3 domain(s) — energy, transport, work",
+            "everyday terms (4): energy, energy efficiency, traffic, work",
+            "freshness 0.93: 1 day(s) old (effective date 2026-11-02)",
+            "credibility 0.61 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in The Computer Journal",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "enrichment stopped earlier this run (§9)"
+      },
+      "summary": {
+        "souhrn": "Úsporné bezdrátové sítě, které propojují senzory a chytrá zařízení, řídí protokol RPL — a ten jde snadno oklamat. Nepoctivý uzel může zprávy místo předávání tiše zahazovat (útok černé díry, blackhole attack), jiný útočník zase odposlouchává tok dat. Autoři proto navrhli systém NRTRD: pomocí fuzzy logiky, tedy hodnocení ve škále místo prostého ano/ne, průběžně počítá, nakolik je který uzel důvěryhodný. Podezřelé uzly pak obejde a data posílá prioritní, ověřenou cestou. V simulacích rozpoznal útoky s přesností 96,44 % — tedy zhruba 96 případů ze sta — a vedl si lépe než starší metody.",
+        "podrobneVysvetleni": "RPL je dohodnutý postup, podle kterého si předávají data zařízení s malou baterií a slabým signálem. Patří sem senzory teploty, měřiče spotřeby nebo čidla v zemědělství. Data putují od uzlu k uzlu až do sběrného místa, takže každý článek řetězu musí fungovat. Právě to je slabina. Uzel ovládnutý útočníkem se může hlásit jako nejlepší cesta dál a pak všechny zprávy zahodit. Jiný typ útoku data nemaže, ale sleduje jejich tok a z provozu sítě vyčte, co se děje. Navržený systém NRTRD pracuje ve dvou krocích. Nejdřív hodnotí spolehlivost jednotlivých uzlů fuzzy logikou. Ta nepracuje jen s odpovědí ano, nebo ne, ale s mírou — uzel tedy může být třeba „spíš důvěryhodný\". Pak systém sestaví trasu z uzlů, kterým věří, a dá jí přednost. Tím zároveň rozloží provoz tak, aby z něj šlo méně vyčíst. Autoři systém zkoušeli v simulacích. Měnili umístění sběrného uzlu, velikost plochy, počet zařízení na metr čtvereční i to, jak často útok nastane. Sledovali tři věci: zda metoda zvládne i velké sítě, jak dobře útok pozná a jak kvalitní zůstane spojení. Uváděná přesnost rozpoznání útoku je 96,44 %, tedy asi 96 správných posouzení ze sta. Pro provozovatele takových sítí to znamená, že se dá hlídat spolehlivost uzlů bez velkého odběru energie, což je u zařízení na baterie hlavní omezení.",
+        "procJeToDulezite": "Úsporné sítě senzorů dnes měří spotřebu, hlídají budovy i provoz ve firmách, a když je někdo nenápadně napadne, data prostě zmizí nebo se dostanou k cizím lidem.",
+        "poznamkaKOmezenim": "Jde o výsledky z počítačových simulací, ne z reálného provozu, a uváděná přesnost 96,44 % platí pro testovací prostředí, které si autoři sami nastavili."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "pass",
+        "hard": [],
+        "soft": [
+          {
+            "block": "procJeToDulezite",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 161
+            },
+            "matchedText": "Úsporné sítě senzorů dnes měří spotřebu, hlídají budovy i provoz ve firmách, a když je někdo nenápadně napadne, data prostě zmizí nebo se dostanou k cizím lidem.",
+            "messageCs": "Tato věta má 27 slov a je moc dlouhá: „Úsporné sítě senzorů dnes měří spotřebu, hlídají budovy i provoz ve firmách, a …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ procJeToDulezite[0,161]: Úsporné sítě senzorů dnes měří spotřebu, hlídají budovy i provoz ve firmách, a když je někdo nenápadně napadne, data prostě zmizí nebo se dostanou k cizím lidem."
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7217882599",
+        "title": "Design and Evaluation of an Artificial Intelligence–Based Model for Predicting Twelfth-Grade Students’ Mathematics Performance Based on Individual, Educational, and Learning Technology Factors",
+        "abstract": "Purpose: This study aimed to design and evaluate an artificial intelligence–based model for predicting the mathematics performance of twelfth-grade experimental sciences students based on individual, educational, and learning technology factors. Methods and Materials: This applied, quantitative, cross-sectional, and predictive study was conducted among twelfth-grade experimental sciences students in Isfahan, Iran. A total of 187 questionnaires were distributed, and after removing incomplete, inconsistent, and invalid records, data from 84 students were retained for analysis. Data were collected using a structured questionnaire assessing individual factors, educational conditions, and learning technology variables, together with students’ recorded mathematics scores. The dataset was divided into training and testing subsets, and repeated five-fold cross-validation was used for internal model development. Multiple linear regression, ridge regression, lasso regression, elastic net regression, decision tree regression, random forest regression, gradient boosting regression, and support vector regression were compared. Model performance was evaluated using mean absolute error, root mean squared error, and the coefficient of determination. Findings: Previous mathematics achievement had the strongest positive correlation with current mathematics performance, followed by mathematics self-efficacy, study regularity, academic motivation, teacher feedback, instructional quality, and educational use of learning technologies. Test anxiety and digital distraction were negatively associated with mathematics performance. Among the evaluated algorithms, gradient boosting regression achieved the best predictive performance, with a test-set mean absolute error of 0.93, root mean squared error of 1.26, and coefficient of determination of .72. Previous mathematics achievement, mathematics self-efficacy, study regularity, teacher feedback, educational use of learning technologies, test anxiety, and instructional quality were the most influential predictors. Adding educational factors increased explained variance from .54 to .65, while including learning technology factors further increased it to .72. Conclusion: The findings indicate that mathematics performance can be predicted with acceptable accuracy by integrating students’ prior achievement, psychological and behavioral characteristics, instructional experiences, and learning technology use within an interpretable artificial intelligence model.",
+        "date": "2026-11-01",
+        "url": "https://journalecs.com/index.php/ecs/article/view/428",
+        "licence": "cc-by-nc",
+        "source": "openalex",
+        "doi": null,
+        "openAlexId": "W7217882599",
+        "subfield": {
+          "id": "subfields/1706",
+          "name": "Computer Science Applications"
+        },
+        "field": {
+          "id": "fields/17",
+          "name": "Computer Science"
+        },
+        "topic": {
+          "id": "T11122",
+          "name": "Online Learning and Analytics"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://journalecs.com/index.php/ecs/article/download/428/419",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Najmeh Yosefi",
+          "Mahdi Azhini",
+          "Hamidreza Kashefi",
+          "Nourooz Hashemi"
+        ],
+        "venue": "International Journal of Education and Cognitive Sciences",
+        "indexedDate": "2026-10-03",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.6531,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.7998,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 1,
+            "q": 0,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.1294
+          },
+          "everydayDomains": [
+            "school",
+            "health",
+            "mind"
+          ],
+          "subfieldKey": "subfields/1706",
+          "evidence": [
+            "total 0.7998 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.65 = P 0.67 − 0.45×t 0.00 − 0.15×j 0.13",
+            "outcome verbs (v 0.75): increased, predicted, associated with",
+            "recognisable subjects (s 1.00): students (title, ×2), teachers, forests",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 0.80): −0.2 title is 22 words",
+            "jargon density (j 0.13): 4/309 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — school, health, mind",
+            "everyday terms (6): student, students, teacher, teachers, anxiety, motivation",
+            "freshness 0.86: 2 day(s) old (effective date 2026-11-01)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in International Journal of Education and Cognitive Sciences",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "enrichment stopped earlier this run (§9)"
+      },
+      "summary": {
+        "souhrn": "Nejsilnějším vodítkem k tomu, jak maturant zvládne matematiku, zůstává jeho předchozí známka z matematiky. Íránští vědci sbírali v Isfahánu dotazníky od maturantů přírodovědného zaměření a doplnili je skutečnými známkami. Z 187 rozdaných dotazníků zůstalo po vyřazení neúplných a rozporných odpovědí 84 použitelných. Nejlepší z porovnávaných počítačových modelů se ve svých odhadech minul v průměru o 0,93 bodu, tedy zhruba o jeden bod. Dokázal vysvětlit 72 % rozdílů mezi žáky, tedy necelé tři čtvrtiny, a kromě dřívějších známek na výsledku záležely i sebedůvěra v matematice, pravidelnost učení a zpětná vazba od učitele.",
+        "podrobneVysvetleni": "Šlo o takzvanou průřezovou studii: data z jednoho okamžiku, bez sledování žáků v čase. Dotazník se ptal na tři skupiny věcí. První byl žák sám: motivace, pravidelnost učení, sebedůvěra v matematice a úzkost u testů. Druhá byly podmínky výuky, tedy její kvalita a zpětná vazba od učitele. Třetí byly technologie: jestli je žák používá k učení, nebo se jimi spíš nechá rozptylovat. K dotazníkům vědci přidali skutečné známky z matematiky. Data rozdělili na část, na které se počítačový model učil, a část, na které ho pak ověřovali. Porovnali osm statistických postupů, takzvaných regresí (anglicky regression) — metod, které z údajů o žákovi vypočítají odhad čísla. Nejlépe dopadlo takzvané gradientní boostování, které skládá odhad z mnoha jednoduchých rozhodovacích pravidel. Průměrně se minulo o 0,93 bodu, tedy zhruba o jeden bod. Zajímavý je postupný přírůstek přesnosti. Samotné údaje o žákovi vysvětlily 54 % rozdílů mezi ním a spolužáky, tedy něco přes polovinu. Po přidání podmínek výuky to bylo 65 %, tedy skoro dvě třetiny. Po přidání technologií 72 %, tedy necelé tři čtvrtiny. Úzkost u testů a rozptylování digitálními zařízeními souvisely s horšími výsledky. Zbytek rozdílů mezi žáky model nevysvětlí vůbec.",
+        "procJeToDulezite": "Ukazuje, že na výsledcích v matematice se vedle dřívějších známek podílejí i věci, které může škola i rodina ovlivnit — pravidelnost učení, zpětná vazba od učitele a to, jestli jsou technologie pomocníkem, nebo rušivým prvkem.",
+        "poznamkaKOmezenim": "Výsledek je předběžný: vychází jen z 84 žáků jednoho města a jednoho zaměření, data pocházejí z jediného okamžiku, takže ukazují souvislosti, nikoli příčiny."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:prurezovy",
+            "span": {
+              "start": 16,
+              "end": 26
+            },
+            "matchedText": "průřezovou",
+            "messageCs": "Termín „průřezová studie“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:prurezovy @ podrobneVysvetleni[16,26]: průřezovou"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:regrese",
+            "span": {
+              "start": 579,
+              "end": 586
+            },
+            "matchedText": "regresí",
+            "messageCs": "Termín „regrese“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:regrese @ podrobneVysvetleni[579,586]: regresí"
+          }
+        ],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 298,
+              "end": 308
+            },
+            "matchedText": " technolog",
+            "messageCs": "Text opisuje původní název článku („ technolog“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[298,308]:  technolog"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 1044,
+              "end": 1054
+            },
+            "matchedText": " technolog",
+            "messageCs": "Text opisuje původní název článku („ technolog“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[1044,1054]:  technolog"
+          },
+          {
+            "block": "procJeToDulezite",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 226
+            },
+            "matchedText": "Ukazuje, že na výsledcích v matematice se vedle dřívějších známek podílejí i věci, které může škola i rodina ovlivnit — pravidelnost učení, zpětná vazba od učitele a to, jestli jsou technologie pomocníkem, nebo rušivým prvkem.",
+            "messageCs": "Tato věta má 34 slov a je moc dlouhá: „Ukazuje, že na výsledcích v matematice se vedle dřívějších známek podílejí i vě…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ procJeToDulezite[0,226]: Ukazuje, že na výsledcích v matematice se vedle dřívějších známek podílejí i věci, které může škola i rodina ovlivnit — pravidelnost učení, zpětná vazba od učitele a to, jestli jsou technologie pomocníkem, nebo rušivým prvkem."
+          },
+          {
+            "block": "procJeToDulezite",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 181,
+              "end": 191
+            },
+            "matchedText": " technolog",
+            "messageCs": "Text opisuje původní název článku („ technolog“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ procJeToDulezite[181,191]:  technolog"
+          },
+          {
+            "block": "all",
+            "rule": "long-words",
+            "ruleId": "readability:R6",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "share5Syllables=0.076",
+            "messageCs": "Příliš mnoho abstraktních dlouhých slov (8 % slov má pět a více slabik). Nahraďte je konkrétními, kratšími slovy.",
+            "detail": "readability:R6 @ all[0,0]: share5Syllables=0.076"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7225006046",
+        "title": "Exposure to English Content on Social Media and Students' Reading Comprehension: A Study of 10th-Grade Students at SMKN 2 Mataram",
+        "abstract": "Exposure to English-language content on social media provides authentic input for vocational high school (SMK) students outside the classroom; however, empirical evidence regarding its relationship with reading comprehension remains limited. This study aimed to identify the level of exposure to English-language content on social media among 10th-grade students, their level of reading comprehension, and the relationship between these two variables. A quantitative correlational design was employed, involving 68 10th-grade students from SMKN 2 Mataram, selected via purposive sampling. Data were collected using a 20-item questionnaire based on a five-point Likert scale (Cronbach’s α = 0.925) and a 15-item multiple-choice reading comprehension test. The content validity of both instruments was assessed through expert judgment; questionnaire item validity coefficients ranged from 0.353 to 0.765, while the reliability of the reading comprehension test was determined using the KR-20 formula (KR-20 value: [insert value]). Details regarding item validity, difficulty levels, and discrimination indices are presented in the Methods section. Descriptive results indicate that 44.12% of students fall into the \"high\" exposure category and 8.82% into the \"very high\" category, while 66.18% of students achieved a \"very good\" level of reading comprehension. The Kolmogorov-Smirnov test revealed that the distribution of reading comprehension scores was non-normal (p < 0.001); therefore, the analysis proceeded using the Spearman Rank Correlation. The results indicate a significant, low positive correlation (ρ = 0.398; p < 0.001; α = 0.05), leading to the rejection of the null hypothesis (H₀) and the acceptance of the alternative hypothesis (H₁). Consequently, while social media can serve as an additional source of authentic English-language exposure, it is not the sole factor associated with the reading comprehension of vocational high school students. The main limitations of this study include its implementation at a single school, the use of purposive sampling, a cross-sectional design, self-reported exposure data, the reliance on a single reading comprehension test, and the lack of control for confounding variables such as vocabulary proficiency, reading habits, motivation, prior knowledge, and the quality of instruction",
+        "date": "2026-11-01",
+        "url": "https://doi.org/10.36312/jar.v5i4.7086",
+        "licence": "cc-by-sa",
+        "source": "openalex",
+        "doi": "10.36312/jar.v5i4.7086",
+        "openAlexId": "W7225006046",
+        "subfield": {
+          "id": "subfields/1710",
+          "name": "Information Systems"
+        },
+        "field": {
+          "id": "fields/17",
+          "name": "Computer Science"
+        },
+        "topic": {
+          "id": "T14516",
+          "name": "English Language Learning and Teaching"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Ahmad Zamroni Putra",
+          "Kamaluddin Yusra",
+          "Arafiq",
+          "Dewi Satria Elmiana"
+        ],
+        "venue": "Journal of Authentic Research",
+        "indexedDate": "2026-11-01",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.5612,
+          "everydayRelevance": 1,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.763,
+          "explainDetail": {
+            "v": 0.25,
+            "s": 0.75,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.4923
+          },
+          "everydayDomains": [
+            "school",
+            "screens",
+            "mind"
+          ],
+          "subfieldKey": "subfields/1710",
+          "evidence": [
+            "total 0.7630 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.56 = P 0.64 − 0.45×t 0.00 − 0.15×j 0.49",
+            "outcome verbs (v 0.25): associated with",
+            "recognisable subjects (s 0.75): students (title, ×2), schools",
+            "quantified effect (q 1): percentage, p-value",
+            "title concreteness (c 0.80): −0.2 title is 20 words",
+            "jargon density (j 0.49): 16/325 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — school, screens, mind",
+            "everyday terms (8): school, schools, student, students, classroom, social media, motivation, habit",
+            "freshness 0.86: 2 day(s) old (effective date 2026-11-01)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Journal of Authentic Research",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-sa",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "enrichment stopped earlier this run (§9)"
+      },
+      "summary": {
+        "souhrn": "Žáci jedné indonéské odborné školy, kteří na sociálních sítích častěji narážejí na angličtinu, dopadli v testu čtení s porozuměním v průměru o něco lépe než jejich spolužáci — souvislost je ale slabá. Autoři nechali studenty vyplnit dotazník o tom, jak často sledují anglický obsah na sítích, a pak jim dali test porozumění psanému textu. Zhruba čtyři žáci z deseti spadli do kategorie s vysokou mírou kontaktu s angličtinou a dva ze tří zvládli test na „velmi dobře“. Míra souběhu obou věcí ale byla nízká, takže sítě samy rozdíly ve čtení nevysvětlí; svou roli hraje slovní zásoba, čtenářské návyky, motivace i kvalita výuky. Pro rodiče a učitele z toho plyne střízlivý závěr: anglický obsah na mobilu je příjemný bonus navíc, ne náhrada učení.",
+        "podrobneVysvetleni": "Výzkumníci oslovili 68 žáků prvního ročníku odborné školy v indonéském Mataramu — tedy zhruba tři školní třídy. Každý vyplnil dotazník s dvaceti otázkami, kde na pětistupňové škále (od „nikdy“ po „velmi často“) uváděl, jak často na sociálních sítích potkává obsah v angličtině. Potom psali test čtení s porozuměním: patnáct otázek s výběrem z několika možností. Obě pomůcky předem posoudili odborníci na jazykové testování.\n\nPřibližně čtyři žáci z deseti spadli do kategorie „vysoká“ míra kontaktu s angličtinou a necelý jeden z deseti do kategorie „velmi vysoká“. V testu čtení dosáhli dva ze tří žáků hodnocení „velmi dobré“, takže školu rozhodně netvoří samí tápající začátečníci.\n\nProtože se výsledky testu nerozložily do obvyklého tvaru zvonu, sáhli autoři po Spearmanově pořadovém koeficientu — způsobu, jak změřit, nakolik dvě věci jdou ruku v ruce. Vyšla jim slabá, ale nenáhodná korelace, tedy souběh dvou jevů: kdo potkává angličtinu častěji, čte v průměru o něco lépe. Slovo „souběh“ je tu podstatné — z čísel nijak neplyne, že by sítě lepší čtení způsobovaly. Klidně to může být naopak: kdo už anglicky rozumí, raději si anglické video pustí. Sami autoři upozorňují, že neměřili slovní zásobu, čtenářské návyky, motivaci ani kvalitu výuky, a právě ty mohou za většinu rozdílů mezi žáky.",
+        "procJeToDulezite": "Angličtina z videí a příspěvků na sítích dětem zřejmě trochu pomáhá. Sama o sobě ale výuku ani čtení nenahradí — a to je dobré vědět dřív, než si od ní rodiče a učitelé začnou slibovat příliš mnoho.",
+        "poznamkaKOmezenim": "Jde o jednorázové měření na jediné škole s vybraným, nikoli náhodným vzorkem, přičemž míru kontaktu s angličtinou žáci sami odhadovali v dotazníku — výsledek je proto předběžný a nelze z něj vyvozovat, co je příčina a co následek."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "warn",
+        "hard": [],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 200
+            },
+            "matchedText": "Žáci jedné indonéské odborné školy, kteří na sociálních sítích častěji narážejí na angličtinu, dopadli v testu čtení s porozuměním v průměru o něco lépe než jejich spolužáci — souvislost je ale slabá.",
+            "messageCs": "Tato věta má 31 slov a je moc dlouhá: „Žáci jedné indonéské odborné školy, kteří na sociálních sítích častěji narážejí…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[0,200]: Žáci jedné indonéské odborné školy, kteří na sociálních sítích častěji narážejí na angličtinu, dopadli v testu čtení s porozuměním v průměru o něco lépe než jejich spolužáci — souvislost je ale slabá."
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 215,
+              "end": 223
+            },
+            "matchedText": " student",
+            "messageCs": "Text opisuje původní název článku („ student“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[215,223]:  student"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 70,
+              "end": 78
+            },
+            "matchedText": " Mataram",
+            "messageCs": "Text opisuje původní název článku („ Mataram“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[70,78]:  Mataram"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_english_original:korelace",
+            "span": {
+              "start": 888,
+              "end": 896
+            },
+            "matchedText": "korelace",
+            "messageCs": "U termínu „korelace“ chybí při prvním použití anglický originál v závorce (např. „korelace (correlation)“). Čtenář ten anglický výraz potká jinde (§2).",
+            "detail": "jargon:no_english_original:korelace @ podrobneVysvetleni[888,896]: korelace"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=19.72",
+            "messageCs": "Věty jsou v průměru moc dlouhé (19,7 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=19.72"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [
+    {
+      "source": "arxiv",
+      "message": "Server, kde vědci zveřejňují práce ještě před recenzí, dnes neodpovídal. Dnešní výběr proto obsahuje jen práce z recenzovaných časopisů.",
+      "detail": "This operation was aborted while fetching https://export.arxiv.org/api/query?search_query=%28cat%3Acs.AI+OR+cat%3Acs.LG%29+AND+submittedDate%3A%5B202610200000+TO+202611030521%5D&start=0&max_results=50&sortBy=submittedDate&sortOrder=descending"
+    },
+    {
+      "source": "semantic-scholar",
+      "message": "Automatická krátká shrnutí dnes nebyla dostupná. Vysvětlení jsou proto napsaná přímo podle abstraktů, tedy podle shrnutí od samotných autorů.",
+      "detail": "HTTP 429 from https://api.semanticscholar.org/graph/v1/paper/DOI:10.46336/ijeer.v6i4.1442?fields=paperId,title,abstract,tldr,externalIds,openAccessPdf,publicationDate,venue,isOpenAccess"
+    }
+  ],
+  "generatedAt": "2026-11-03T05:29:27.153Z",
+  "generatedOn": "2026-11-03",
+  "schemaVersion": 1
+}
