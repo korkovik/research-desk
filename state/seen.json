@@ -1336,6 +1336,46 @@
       "titleKey": "exposuretoenglishcontentonsocialmediaandstudentsreadingcomprehensionastudyof10thgradestudentsatsmkn2mataram",
       "publishedOn": "2026-11-03",
       "category": "ai-computing"
+    },
+    {
+      "openalexId": "W7225561941",
+      "doi": "10.26699/jcsh.050-057",
+      "arxivId": null,
+      "titleKey": "familybasedtuberculosispreventionthroughselfmanagementeducationsmeforcommunityhealthworkersinruraleastindonesia",
+      "publishedOn": "2026-11-10",
+      "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7225595244",
+      "doi": "10.47972/vjcts.vi.1938",
+      "arxivId": null,
+      "titleKey": "knowledgemedicationadherencequalityoflifeandtherelationshipsamongtheseoutcomesinpatientsafterpercutaneouscoronaryinterventionathanoihearthospital",
+      "publishedOn": "2026-11-10",
+      "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7225561542",
+      "doi": "10.1038/s41598-026-78988-z",
+      "arxivId": null,
+      "titleKey": "jointlatentclassmixedmodeltrajectoriesofestimatedglomerularfiltrationraterelatedtomortalityandphysicalactivityinolderadults",
+      "publishedOn": "2026-11-10",
+      "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7225571222",
+      "doi": "10.1186/s41182-026-01107-1",
+      "arxivId": null,
+      "titleKey": "preventabledriversofacuterespiratoryinfectionsamongunderfivechildreninindiashighriskzonesapplicationofpopulationattributablefractionsanalyses",
+      "publishedOn": "2026-11-10",
+      "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7225592194",
+      "doi": "10.1542/peds.2025-075313",
+      "arxivId": null,
+      "titleKey": "fatherinclusiveperinatalobesitypreventionarandomizedclinicaltrial",
+      "publishedOn": "2026-11-10",
+      "category": "health-medicine"
     }
   ]
 }

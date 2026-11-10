@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Zdraví a medicína – 10. listopadu 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Zdraví a medicína</h1>
+<p class="dateline"><time datetime="2026-11-10">10. listopadu 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 5</p>
+<div class="summary"><p><span class="lead">Tuberkulóza zůstává v Indonésii častou nemocí, zvlášť ve venkovské provincii Východní Nusa Tenggara.</span> Tým proto vyškolil pětatřicet dobrovolníků z místních zdravotních středisek a poslal je do rodin, kde někdo tuberkulózou onemocněl. Průměrná úspěšnost dobrovolníků v testu znalostí stoupla z 57 % na 94 % správných odpovědí. Potřebné dovednosti zvládali před školením dobře jen dva z pětatřiceti, po něm téměř všichni. Po čtyřech domácích návštěvách si při kašli správně zakrývalo ústa 80 % rodin, tedy čtyři rodiny z pěti.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Program běžel ve vesnici Manusak v okrese Kupang. Zapojilo se pětatřicet dobrovolnic a dobrovolníků z obecních zdravotních středisek, tedy zhruba tolik lidí, kolik se vejde do jedné školní třídy. Nejdřív prošli školením. Pak dostali výukový modul, plakáty a letáky a chodili do rodin, kde někdo onemocněl plicní tuberkulózou. Každá rodina měla během osmi týdnů čtyři návštěvy. Metoda se jmenuje self-management education, česky zhruba výuka k péči o sebe sama: dobrovolník rodinu nevede za ruku, ale učí ji, aby prevenci zvládla sama. Znalosti měřil test o patnácti otázkách, dovednosti pozorovací záznam. Před školením dobrovolníci odpověděli správně na 57 % otázek, tedy o něco víc než polovinu. Po školení to bylo 94 %, tedy skoro všechny. Dovednosti hodnotitelé označili za dobré u 6 % lidí před školením a u 94 % po něm, tedy nejdřív u dvou z pětatřiceti a potom u všech až na dva. V rodinách pozorovatelé zaznamenali tři návyky: 80 % rodin si při kašli správně zakrývalo ústa (čtyři z pěti), 72 % dostatečně větralo (skoro tři ze čtyř) a 64 % si při kontaktu s nemocným nasazovalo roušku (zhruba dvě ze tří). Autoři sami píšou, že by bylo potřeba sledovat rodiny i dobrovolníky déle. Teprve pak se ukáže, jestli nové návyky vydrží.</p>
+<h3>Proč je to důležité</h3>
+<p>Tuberkulóza se šíří vzduchem především v domácnosti, takže na větrání, rouškách a zakrývání úst při kašli hodně záleží. Práce ukazuje, že tyhle návyky v rodinách dokáže podpořit i vyškolený dobrovolník z vesnice, ne jen lékař.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Muhammad Saleh Nuwa, Emanuel Suban Bala Lewar, Brigita Dina Manek, Ramadan  Ibrahim Hamid, Magdeliano Ximenes Alves</dd>
+<dt>Časopis</dt>
+<dd>Journal of Community Service for Health</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-11-09">9. listopadu 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.26699/jcsh.050-057" rel="noreferrer">10.26699/jcsh.050-057</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7225561941" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.26699/jcsh.050-057" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o malý program v jediné vesnici, bez srovnávací skupiny a s měřením hned po školení, takže výsledky jsou předběžné a nevíme, jak dlouho zlepšení vydrží.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 5</p>
+<div class="summary"><p>Vietnamští autoři sledovali 120 pacientů nemocnice v Hanoji, kterým lékaři poprvé zprůchodnili zúženou srdeční tepnu katetrem a stentem (anglicky percutaneous coronary intervention, PCI), a ptali se jich před propuštěním a pak za jeden a za šest měsíců, co vědí o své nemoci, jak berou léky a jak se jim žije. Znalosti se mírně zlepšily (z 58,3 % na 63,3 % pacientů s dostatečnými znalostmi, tedy zhruba z šesti lidí z deseti na šest a půl) a spokojenost s kvalitou života výrazně vzrostla (ze 42,5 % na 60 %, tedy ze čtyř lidí z deseti na šest). Spolehlivé užívání léků ale naopak klesalo — ze 67,5 % po měsíci na 62,5 % po půl roce. Statistická analýza ukázala, že lidé s lepšími znalostmi o své nemoci braly léky spolehlivěji a že právě spolehlivé braní léků souviselo s lepší kvalitou života; samotné znalosti kvalitu života přímo neovlivňovaly. Pro pacienty i jejich rodiny z toho plyne jednoduché poselství: nejtěžší na léčbě po stentu není zákrok, ale vydržet s léky i několik měsíců poté, kdy už se člověk cítí dobře.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Autoři sledovali od května 2025 do ledna 2026 stejnou skupinu 120 pacientů po úspěšném prvním zákroku, při kterém lékaři zavedli do zúžené srdeční tepny stent. Skupina byla spíše starší — 60,8 % pacientů (asi šest z deseti) bylo starších 65 let — a převažovali muži (69,2 %, tedy zhruba sedm z deseti. Znalosti o nemoci zjišťovali standardním dotazníkem před propuštěním a po půl roce, užívání léků a kvalitu života pak měsíc a šest měsíců po zákroku; návyky jako pohyb sledovali při všech třech návštěvách.</p>
+<p>Výsledky jdou proti sobě. Podíl lidí, kteří o své nemoci věděli dost, mírně stoupl a podíl těch, kdo hodnotili svůj život jako dobrý, vzrostl ze 42,5 % na 60 %. Spolehlivé užívání léků ale za půl roku kleslo o pět procentních bodů, tedy zhruba o jednoho člověka z dvaceti. Po zohlednění dalších vlivů měli pacienti s dostatečnými znalostmi asi čtyřnásobně vyšší šanci, že budou léky brát podle doporučení, a ti, kdo léky brali spolehlivě, měli výrazně vyšší šanci na dobrou kvalitu života. Znalosti samy o sobě s kvalitou života nesouvisely — působí tedy spíš nepřímo, přes chování pacienta. Souvislost se našla také u bolestí na hrudi, finanční dostupnosti léčby, pohybu a psychické podpory. Autoři z toho vyvozují, že péče by neměla končit propuštěním z nemocnice.</p>
+<h3>Proč je to důležité</h3>
+<p>Po zákroku na srdci se lidé často cítí dobře a léky postupně vysazují — a právě to podle těchto dat souvisí s horší kvalitou života. Rodinám i pacientům to připomíná, že sledování a podpora v měsících po propuštění mají smysl.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Thi May Phan, Nhu Hung Pham, Huy Hoang Ngo, Sinh Hien Nguyen, Duy Chinh Nguyễn</dd>
+<dt>Časopis</dt>
+<dd>Tạp chí Phẫu thuật và Tim mạch và Lồng ngực Việt Nam</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-11-09">9. listopadu 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.47972/vjcts.vi.1938" rel="noreferrer">10.47972/vjcts.vi.1938</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7225595244" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.47972/vjcts.vi.1938" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o pozorování jediné skupiny 120 pacientů z jedné nemocnice v Hanoji, takže výsledky ukazují jen souvislosti, nikoli příčiny, a široké rozpětí spolehlivosti u klíčových čísel (například šance na dobrou kvalitu života) znamená, že skutečná síla vztahu může být podstatně menší.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 5</p>
+<div class="summary"><p><span class="lead">Ledvinám s věkem ubývá výkon, ale ne každému stejně rychle.</span> Vědci sledovali 1 506 lidí ve věku 65 let a výše, kteří bydlí doma; nábor proběhl v roce 2009 a následovaly až tři další kontroly. Z opakovaných měření funkce ledvin vyšly dvě skupiny. Jedna z nich začínala s horší funkcí ledvin, zhoršovala se rychleji a měla i vyšší úmrtnost. Lidé, kteří se podle měřiče pohybu víc hýbali, patřili do téhle horší skupiny méně často, zatímco ti, kdo hodně proseděli, častěji.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Účastníci na začátku nosili pohybové čidlo (accelerometer), tedy přístroj, který zaznamenává pohyb a spočítá kroky i čas strávený vsedě. Funkci ledvin vědci sledovali pomocí odhadované glomerulární filtrace (eGFR). To je číslo, které vyjadřuje, kolik krve ledviny za minutu pročistí. Dohromady měli k dispozici 2 812 jednotlivých měření eGFR, tedy v průměru necelá dvě na jednoho člověka. Data zpracovali modelem, který hledá skupiny lidí s podobným průběhem a zároveň bere v úvahu i úmrtí. Vyšly dvě typické dráhy. Jedna byla klidnější, druhá začínala na nižších hodnotách, klesala strměji a doprovázela ji vyšší úmrtnost. Po zohlednění dalších vlivů platilo, že každých 10 minut pohybu denně navíc znamenalo asi o 28 % nižší šanci patřit do té horší skupiny, tedy zhruba o čtvrtinu méně. Statistici to zapisují jako poměr šancí 0,72; hodnota pod jedničkou znamená nižší riziko. Podobně to bylo u kroků: každých 1 000 kroků denně navíc odpovídalo asi o 27 % nižší šanci. Naopak každých 100 minut sezení denně navíc šlo dohromady se zhruba dvaapůlkrát vyšší šancí (2,51), že člověk spadne do horší skupiny. Studie sledovala, co se spolu vyskytuje, ne co co způsobuje. Je tedy možné i obrácené vysvětlení: kdo už má zdravotní potíže, ten se méně hýbe a víc sedí.</p>
+<h3>Proč je to důležité</h3>
+<p>Zhoršování ledvin ve stáří se obvykle bere jako nevyhnutelné, ale tahle práce ukazuje, že běžná denní chůze a méně času v křesle souvisejí s lepším průběhem. Je to další důvod, proč u starších lidí v rodině podporovat pohyb, který zvládnou.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Gudrun Weinmayr, Johanna U Braisch, Jochen Klenk, Michael Denkinger, Dhayana Dallmeier, Dietrich Rothenbacher a další</dd>
+<dt>Časopis</dt>
+<dd>Scientific Reports</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-11-09">9. listopadu 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1038/s41598-026-78988-z" rel="noreferrer">10.1038/s41598-026-78988-z</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7225561542" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://doi.org/10.1038/s41598-026-78988-z" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1038/s41598-026-78988-z" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o pozorování jedné skupiny lidí bez zásahu vědců, takže nelze doložit, že pohyb ledviny chrání; je stejně dobře možné, že lidé s horším zdravím se prostě méně hýbou, a sami autoři doporučují ověřit to dalšími studiemi.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-4">
+<p class="paper-counter">Studie 4 z 5</p>
+<div class="summary"><p>Zápaly plic a jiné akutní infekce dýchacích cest se u indických dětí do pěti let nerozkládají po zemi rovnoměrně — soustředí se do konkrétních okresů, hlavně ve střední a východní Indii. Vědci prošli data celostátního šetření o zdraví rodin z let 2019–2021, které zahrnulo 221 849 dětí do pěti let ze 707 okresů, a nejprve vyznačili 167 okresů s nejvyšším výskytem. Zatímco v celém souboru mělo nedávno infekci dýchacích cest 2,74 % dětí, tedy necelé tři děti ze sta, v těchto rizikových okresech to bylo 7,23 %, tedy zhruba sedm dětí ze sta. Nejsilněji s infekcí souviselo nedávné průjmové onemocnění a kouření matky. Kdyby se podařilo odstranit průjmy, kouření matek a znevýhodnění venkova, podle výpočtu autorů by zmizelo 28,7 % případů — tedy zhruba tři případy z deseti.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Autoři pracovali ve dvou krocích. Nejdřív z celostátního šetření vybrali okresy, kde se infekce dýchacích cest u dětí do pěti let hromadí víc, než by odpovídalo náhodě; takových okresů našli 167 ze 707. Pak se zaměřili jen na děti žijící v těchto okresech — po přepočtu na celou populaci šlo o 108 470 dětí — a hledali, co s onemocněním souvisí. Nejsilnější vazbu mělo nedávné průjmové onemocnění: děti, které krátce předtím měly průjem, onemocněly dýchacími cestami zhruba 4,4krát častěji než ostatní. U dětí kuřaček byla pravděpodobnost onemocnění asi o čtvrtinu až třetinu vyšší než u dětí matek nekuřaček. Dál autoři spočítali, jaká část případů by teoreticky odpadla, kdyby daný rizikový faktor zmizel: u průjmů 19,6 % případů, tedy zhruba každý pátý, u kouření matek jen 0,7 %, tedy necelý jeden případ ze sta. Život na venkově sám o sobě vysvětloval 10,2 % případů, tedy asi každý desátý — autoři ale zdůrazňují, že venkov není nemoc, kterou by šlo léčit; je to ukazatel horší dostupnosti péče a horší infrastruktury. Dohromady všechny tři faktory vysvětlovaly 28,7 % případů, přičemž skutečná hodnota leží podle výpočtu někde mezi 20,4 a 36,1 procenta, tedy mezi zhruba pětinou a více než třetinou případů.</p>
+<h3>Proč je to důležité</h3>
+<p>Ukazuje to, že boj s průjmovými onemocněními — tedy čistá voda, hygiena a včasná léčba — může zároveň snižovat počet dětí se zápalem plic, a že má smysl soustředit pomoc do konkrétních okresů místo plošných kampaní.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>U Venkatesh, Margubur Rahaman, R. Durga, Moslem Hossain, Om Prakash Bera, Ashoo Grover</dd>
+<dt>Časopis</dt>
+<dd>Tropical Medicine and Health</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-11-09">9. listopadu 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1186/s41182-026-01107-1" rel="noreferrer">10.1186/s41182-026-01107-1</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7225571222" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>PDF zdarma</dt>
+<dd><a href="https://doi.org/10.1186/s41182-026-01107-1" rel="noreferrer">Otevřít PDF</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1186/s41182-026-01107-1" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jednorázové dotazníkové šetření, takže výsledky ukazují souvislosti, ne jistou příčinu a následek — nemoci navíc hlásily matky z paměti za poslední dva týdny a podíly „odstranitelných&quot; případů jsou modelové odhady, ne naměřený efekt skutečného zásahu.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-5">
+<p class="paper-counter">Studie 5 z 5</p>
+<div class="summary"><p><span class="lead">Tatínci ovlivňují, jak se malé dítě krmí a jak roste, ale v programech proti dětské obezitě se na ně skoro vždy zapomíná.</span> Americký tým z Massachusetts proto mezi lety 2020 a 2023 zapojil do studie 227 dvojic nastávajících rodičů — tedy zhruba dvě stě rodin, kde se účastnila matka i otec — a náhodně je rozdělil na dvě skupiny: jedna dostala program First Heroes (tři online konzultace se zdravotním koučem plus videa a materiály od těhotenství do prvních narozenin dítěte), druhá běžné poučení o bezpečnosti. U 194 dětí, které se podařilo sledovat, se v programové skupině objevoval rychlý přírůstek hmotnosti v půl roce i v roce zhruba dvakrát méně často než ve srovnávací skupině. Podíl dětí s nadváhou v roce věku se ale mezi skupinami nelišil a nelišila se ani hmotnost maminek po porodu — jedinou dospělou změnou byl o něco výraznější pokles hmotnosti u otců.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Vědci oslovili rodiče ve druhém trimestru těhotenství v jednom zdravotnickém systému v Massachusetts, anglicky i španělsky mluvící, a přihlásili 227 dvojic matka–otec, tedy zhruba dvě stě rodin. Los rozhodl, kdo projde programem First Heroes — tři konzultace se zdravotním koučem na dálku a doprovodné video a textové materiály od těhotenství do dvanácti měsíců po porodu — a kdo dostane jen vzdělávání o bezpečnosti dítěte. Hlavní sledovanou věcí byl takzvaný rychlý přírůstek hmotnosti (rapid infant weight gain), tedy když dítě přibírá nápadně rychleji, než je pro jeho věk obvyklé; to se považuje za časný signál pozdější nadváhy. Z 194 dětí, u nichž mají data, měly děti z programové skupiny v šesti měsících poměr šancí 0,42 a ve dvanácti měsících 0,49 — jinými slovy, rychlé přibírání se u nich objevovalo zhruba dvakrát méně často než u dětí z druhé skupiny. Výsledek je ale blízko hranice statistické průkaznosti, takže ho nelze brát jako definitivní. Počet ročních dětí s nadváhou se mezi skupinami nelišil. U otců v programu klesl index tělesné hmotnosti BMI (ukazatel poměru váhy a výšky) o 1,08 bodu víc než u ostatních, tedy asi o jeden bod na stupnici BMI — malá, ale měřitelná změna. U matek se hmotnost po porodu nelišila. Závěr zní spíš opatrně: zapojení otců se jeví jako smysluplná cesta, ale samo o sobě nestačí.</p>
+<h3>Proč je to důležité</h3>
+<p>Rychlé přibírání v prvním roce života patří mezi první signály pozdější nadváhy, a tahle studie naznačuje, že do prevence má smysl zvát oba rodiče, ne jen maminku.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Rachel Whooten, Anisha U. Gundewar, Milton Kotelchuck, Man Luo, Ariadne Caballero-Gonzalez, Gracia M. Kwete a další</dd>
+<dt>Časopis</dt>
+<dd>PEDIATRICS</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-11-09">9. listopadu 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1542/peds.2025-075313" rel="noreferrer">10.1542/peds.2025-075313</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7225592194" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1542/peds.2025-075313" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jedinou studii z jednoho zdravotnického systému, data má přibližně u dvou set dětí a oba hlavní výsledky o rychlém přibírání leží těsně u hranice statistické průkaznosti — sledovaný podíl dětí s nadvähou ve dvanácti měsících se navíc nezměnil.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 10. listopadu 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>

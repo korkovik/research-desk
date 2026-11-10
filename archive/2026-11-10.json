@@ -1,0 +1,824 @@
+{
+  "date": "2026-11-10",
+  "categoryKey": "health-medicine",
+  "categoryLabel": "Zdraví a medicína",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7225561941",
+        "title": "Family-Based Tuberculosis Prevention Through Self-Management Education (SME) for Community Health Workers in Rural East Indonesia",
+        "abstract": "Pulmonary Tuberculosis (TB) remains a significant public health concern in Indonesia, especially in East Nusa Tenggara Province. This community service program aimed to strengthen the knowledge and skills of community health workers (cadres) in delivering family-based TB prevention through a Self-Management Education (SME) approach. A pre–post descriptive design was implemented involving 35 active Integrated Service Post (ISP) health cadres in Manusak Village, Kupang Regency. The intervention included cadres training, developing and distributing educational materials (modules, posters, and leaflets), conducting structured home visits, and implementing monitoring tools. Cadres’ knowledge and skills were measured using a structured 15-item questionnaire and a skills observational checklist before and after the intervention. The results showed an increase in average knowledge scores from 57% before the intervention to 94% after the intervention. Cadres’ skills also improved markedly, with the proportion of cadres categorized as having good skills increasing from 6% at baseline to 94% after the intervention. This program demonstrates that SME is a feasible and effective approach to empowering community health cadres to deliver family-based TB prevention in rural settings. Each family affected by TB received four home visits over an eight-week period. Post-intervention observations indicated that 80% of families practiced proper cough etiquette, 72% maintained adequate household ventilation and 64% consistently wore masks when interacting with TB patients. These results reflect an improvement in household-level TB preventive behaviors. Longitudinal follow-up is recommended to assess whether cadres continue to apply SME principles consistently, and whether preventive behaviors among families are maintained over time.",
+        "date": "2026-11-09",
+        "url": "https://doi.org/10.26699/jcsh.050-057",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.26699/jcsh.050-057",
+        "openAlexId": "W7225561941",
+        "subfield": {
+          "id": "subfields/2725",
+          "name": "Infectious Diseases"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T10038",
+          "name": "Tuberculosis Research and Epidemiology"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Muhammad Saleh Nuwa",
+          "Emanuel Suban Bala Lewar",
+          "Brigita Dina Manek",
+          "Ramadan  Ibrahim Hamid",
+          "Magdeliano Ximenes Alves"
+        ],
+        "venue": "Journal of Community Service for Health",
+        "indexedDate": "2026-11-09",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9759,
+          "everydayRelevance": 1,
+          "freshness": 0.9286,
+          "credibility": 0.705,
+          "total": 0.9362,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.1606
+          },
+          "everydayDomains": [
+            "health",
+            "work",
+            "housing",
+            "family"
+          ],
+          "subfieldKey": "subfields/2725",
+          "evidence": [
+            "total 0.9362 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.98 = P 1.00 − 0.45×t 0.00 − 0.15×j 0.16",
+            "outcome verbs (v 1.00): increases, improved, improvement, prevention (title, ×2)",
+            "recognisable subjects (s 1.00): patients, workers (title, ×2), households, families, homes",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.16): 4/249 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 4 domain(s) — health, work, housing, family",
+            "everyday terms (8): health, patient, patients, worker, home, homes, family, families",
+            "freshness 0.93: 1 day(s) old (effective date 2026-11-09)",
+            "credibility 0.71 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.80 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Journal of Community Service for Health",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.80: open access without an open licence (repository copy)",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.26699/jcsh.050-057)"
+      },
+      "summary": {
+        "souhrn": "Tuberkulóza zůstává v Indonésii častou nemocí, zvlášť ve venkovské provincii Východní Nusa Tenggara. Tým proto vyškolil pětatřicet dobrovolníků z místních zdravotních středisek a poslal je do rodin, kde někdo tuberkulózou onemocněl. Průměrná úspěšnost dobrovolníků v testu znalostí stoupla z 57 % na 94 % správných odpovědí. Potřebné dovednosti zvládali před školením dobře jen dva z pětatřiceti, po něm téměř všichni. Po čtyřech domácích návštěvách si při kašli správně zakrývalo ústa 80 % rodin, tedy čtyři rodiny z pěti.",
+        "podrobneVysvetleni": "Program běžel ve vesnici Manusak v okrese Kupang. Zapojilo se pětatřicet dobrovolnic a dobrovolníků z obecních zdravotních středisek, tedy zhruba tolik lidí, kolik se vejde do jedné školní třídy. Nejdřív prošli školením. Pak dostali výukový modul, plakáty a letáky a chodili do rodin, kde někdo onemocněl plicní tuberkulózou. Každá rodina měla během osmi týdnů čtyři návštěvy. Metoda se jmenuje self-management education, česky zhruba výuka k péči o sebe sama: dobrovolník rodinu nevede za ruku, ale učí ji, aby prevenci zvládla sama. Znalosti měřil test o patnácti otázkách, dovednosti pozorovací záznam. Před školením dobrovolníci odpověděli správně na 57 % otázek, tedy o něco víc než polovinu. Po školení to bylo 94 %, tedy skoro všechny. Dovednosti hodnotitelé označili za dobré u 6 % lidí před školením a u 94 % po něm, tedy nejdřív u dvou z pětatřiceti a potom u všech až na dva. V rodinách pozorovatelé zaznamenali tři návyky: 80 % rodin si při kašli správně zakrývalo ústa (čtyři z pěti), 72 % dostatečně větralo (skoro tři ze čtyř) a 64 % si při kontaktu s nemocným nasazovalo roušku (zhruba dvě ze tří). Autoři sami píšou, že by bylo potřeba sledovat rodiny i dobrovolníky déle. Teprve pak se ukáže, jestli nové návyky vydrží.",
+        "procJeToDulezite": "Tuberkulóza se šíří vzduchem především v domácnosti, takže na větrání, rouškách a zakrývání úst při kašli hodně záleží. Práce ukazuje, že tyhle návyky v rodinách dokáže podpořit i vyškolený dobrovolník z vesnice, ne jen lékař.",
+        "poznamkaKOmezenim": "Jde o malý program v jediné vesnici, bez srovnávací skupiny a s měřením hned po školení, takže výsledky jsou předběžné a nevíme, jak dlouho zlepšení vydrží."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 887,
+              "end": 1114
+            },
+            "matchedText": "V rodinách pozorovatelé zaznamenali tři návyky: 80 % rodin si při kašli správně zakrývalo ústa (čtyři z pěti), 72 % dostatečně větralo (skoro tři ze čtyř) a 64 % si při kontaktu s nemocným nasazovalo roušku (zhruba dvě ze tří).",
+            "messageCs": "Tato věta má 37 slov a je moc dlouhá: „V rodinách pozorovatelé zaznamenali tři návyky: 80 % rodin si při kašli správně…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[887,1114]: V rodinách pozorovatelé zaznamenali tři návyky: 80 % rodin si při kašli správně zakrývalo ústa (čtyři z pěti), 72 % dostatečně větralo (skoro tři ze čtyř) a 64 % si při kontaktu s nemocným nasazovalo roušku (zhruba dvě ze tří)."
+          }
+        ],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 394,
+              "end": 420
+            },
+            "matchedText": " self-management education",
+            "messageCs": "Text opisuje původní název článku („ self-management education“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[394,420]:  self-management education"
+          },
+          {
+            "block": "all",
+            "rule": "long-words",
+            "ruleId": "readability:R6",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "share5Syllables=0.067",
+            "messageCs": "Příliš mnoho abstraktních dlouhých slov (7 % slov má pět a více slabik). Nahraďte je konkrétními, kratšími slovy.",
+            "detail": "readability:R6 @ all[0,0]: share5Syllables=0.067"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7225595244",
+        "title": "Knowledge, medication adherence, quality of life, and the relationships among these outcomes in patients after percutaneous coronary intervention at Hanoi Heart Hospital",
+        "abstract": "Objectives: This study aimed to assess knowledge, medication adherence, and quality of life (QoL), as well as to identify associated factors and examine the relationships among these three outcomes in patients after percutaneous coronary intervention (PCI) at Hanoi Heart Hospital. Methods: A prospective longitudinal study was conducted among 120 patients who underwent successful first-time PCI at Hanoi Heart Hospital from May 2025 to January 2026. Data were collected before discharge and at 1 and 6 months after PCI. Knowledge was assessed using the CADE-Q-SV before discharge and at 6 months; medication adherence was assessed using the 8-item Morisky Medication Adherence Scale (MMAS-8), and QoL was assessed using the EQ-5D-5L at 1 and 6 months. Lifestyle behaviors were assessed at all three time points. Univariate and multivariable logistic regression analyses were performed to identify factors associated with knowledge, medication adherence, and QoL and to examine the relationships among these outcomes. Results: Among the 120 patients, 60.8% were aged ≥65 years and 69.2% were male. The proportion of patients with adequate knowledge increased from 58.3% before discharge to 63.3% at 6 months. Medication adherence decreased from 67.5% at 1 month to 62.5% at 6 months, whereas the proportion of patients with high QoL increased from 42.5% to 60.0%. Multivariable analyses showed that chest pain, affordability, exercise, and several psychological and care-related factors were associated with knowledge, medication adherence, or QoL at different follow-up time points (p<0.05). After adjustment, adequate knowledge was associated with medication adherence (aOR=4.2, 95% CI: 1.1–15.2; p=0.02). Medication adherence was independently associated with high QoL (aOR=8.4, 95% CI: 1.8–39.3; p=0.007), whereas knowledge was not significantly associated with QoL (aOR=0.5, 95% CI: 0.1–2.5; p=0.43). Conclusion: After 6 months of follow-up, the proportions of patients with adequate knowledge and high QoL increased, whereas medication adherence declined. Knowledge was associated with medication adherence, and medication adherence was independently associated with QoL. These findings highlight the need for continuous post-discharge care, with a focus on reinforcing knowledge, sustaining medication adherence, monitoring symptoms, and supporting health-promoting behaviors to improve long-term outcomes in patients after PCI.",
+        "date": "2026-11-09",
+        "url": "https://doi.org/10.47972/vjcts.vi.1938",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.47972/vjcts.vi.1938",
+        "openAlexId": "W7225595244",
+        "subfield": {
+          "id": "subfields/2714",
+          "name": "Family Practice"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T11620",
+          "name": "Medication Adherence and Compliance"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Thi May Phan",
+          "Nhu Hung Pham",
+          "Huy Hoang Ngo",
+          "Sinh Hien Nguyen",
+          "Duy Chinh Nguyễn"
+        ],
+        "venue": "Tạp chí Phẫu thuật và Tim mạch và Lồng ngực Việt Nam",
+        "indexedDate": "2026-11-09",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9386,
+          "everydayRelevance": 1,
+          "freshness": 0.9286,
+          "credibility": 0.7349,
+          "total": 0.9255,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.1425
+          },
+          "everydayDomains": [
+            "health",
+            "body",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2714",
+          "evidence": [
+            "total 0.9255 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.94 = P 0.96 − 0.45×t 0.00 − 0.15×j 0.14",
+            "outcome verbs (v 1.00): increased, improves, decreased, associated with",
+            "recognisable subjects (s 1.00): patients (title, ×2), hospitals (title, ×2)",
+            "quantified effect (q 1): percentage, p-value, 95% CI",
+            "title concreteness (c 0.80): −0.2 title is 22 words",
+            "jargon density (j 0.14): 5/351 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — health, body, mind",
+            "everyday terms (8): health, patient, patients, pain, hospital, medication, exercise, focus",
+            "freshness 0.93: 1 day(s) old (effective date 2026-11-09)",
+            "credibility 0.73 = 0.40×c1 1.00 + 0.25×c2 0.52 + 0.20×c3 0.80 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Tạp chí Phẫu thuật và Tim mạch và Lồng ngực Việt Nam",
+            "c2 0.52: n = 120",
+            "c3 0.80: open access without an open licence (repository copy)",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.47972/vjcts.vi.1938)"
+      },
+      "summary": {
+        "souhrn": "Vietnamští autoři sledovali 120 pacientů nemocnice v Hanoji, kterým lékaři poprvé zprůchodnili zúženou srdeční tepnu katetrem a stentem (anglicky percutaneous coronary intervention, PCI), a ptali se jich před propuštěním a pak za jeden a za šest měsíců, co vědí o své nemoci, jak berou léky a jak se jim žije. Znalosti se mírně zlepšily (z 58,3 % na 63,3 % pacientů s dostatečnými znalostmi, tedy zhruba z šesti lidí z deseti na šest a půl) a spokojenost s kvalitou života výrazně vzrostla (ze 42,5 % na 60 %, tedy ze čtyř lidí z deseti na šest). Spolehlivé užívání léků ale naopak klesalo — ze 67,5 % po měsíci na 62,5 % po půl roce. Statistická analýza ukázala, že lidé s lepšími znalostmi o své nemoci braly léky spolehlivěji a že právě spolehlivé braní léků souviselo s lepší kvalitou života; samotné znalosti kvalitu života přímo neovlivňovaly. Pro pacienty i jejich rodiny z toho plyne jednoduché poselství: nejtěžší na léčbě po stentu není zákrok, ale vydržet s léky i několik měsíců poté, kdy už se člověk cítí dobře.",
+        "podrobneVysvetleni": "Autoři sledovali od května 2025 do ledna 2026 stejnou skupinu 120 pacientů po úspěšném prvním zákroku, při kterém lékaři zavedli do zúžené srdeční tepny stent. Skupina byla spíše starší — 60,8 % pacientů (asi šest z deseti) bylo starších 65 let — a převažovali muži (69,2 %, tedy zhruba sedm z deseti. Znalosti o nemoci zjišťovali standardním dotazníkem před propuštěním a po půl roce, užívání léků a kvalitu života pak měsíc a šest měsíců po zákroku; návyky jako pohyb sledovali při všech třech návštěvách.\n\nVýsledky jdou proti sobě. Podíl lidí, kteří o své nemoci věděli dost, mírně stoupl a podíl těch, kdo hodnotili svůj život jako dobrý, vzrostl ze 42,5 % na 60 %. Spolehlivé užívání léků ale za půl roku kleslo o pět procentních bodů, tedy zhruba o jednoho člověka z dvaceti. Po zohlednění dalších vlivů měli pacienti s dostatečnými znalostmi asi čtyřnásobně vyšší šanci, že budou léky brát podle doporučení, a ti, kdo léky brali spolehlivě, měli výrazně vyšší šanci na dobrou kvalitu života. Znalosti samy o sobě s kvalitou života nesouvisely — působí tedy spíš nepřímo, přes chování pacienta. Souvislost se našla také u bolestí na hrudi, finanční dostupnosti léčby, pohybu a psychické podpory. Autoři z toho vyvozují, že péče by neměla končit propuštěním z nemocnice.",
+        "procJeToDulezite": "Po zákroku na srdci se lidé často cítí dobře a léky postupně vysazují — a právě to podle těchto dat souvisí s horší kvalitou života. Rodinám i pacientům to připomíná, že sledování a podpora v měsících po propuštění mají smysl.",
+        "poznamkaKOmezenim": "Jde o pozorování jediné skupiny 120 pacientů z jedné nemocnice v Hanoji, takže výsledky ukazují jen souvislosti, nikoli příčiny, a široké rozpětí spolehlivosti u klíčových čísel (například šance na dobrou kvalitu života) znamená, že skutečná síla vztahu může být podstatně menší."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 309
+            },
+            "matchedText": "Vietnamští autoři sledovali 120 pacientů nemocnice v Hanoji, kterým lékaři poprvé zprůchodnili zúženou srdeční tepnu katetrem a stentem (anglicky percutaneous coronary intervention, PCI), a ptali se jich před propuštěním a pak za jeden a za šest měsíců, co vědí o své nemoci, jak berou léky a jak se jim žije.",
+            "messageCs": "Tato věta má 50 slov a je moc dlouhá: „Vietnamští autoři sledovali 120 pacientů nemocnice v Hanoji, kterým lékaři popr…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[0,309]: Vietnamští autoři sledovali 120 pacientů nemocnice v Hanoji, kterým lékaři poprvé zprůchodnili zúženou srdeční tepnu katetrem a stentem (anglicky percutaneous coronary intervention, PCI), a ptali se jich před propuštěním a pak za jeden a za šest měsíců, co vědí o své nemoci, jak berou léky a jak se jim žije."
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 595,
+              "end": 601
+            },
+            "matchedText": "67,5 %",
+            "messageCs": "Číslo „67,5 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „67,5 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[595,601]: 67,5 %"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 615,
+              "end": 621
+            },
+            "matchedText": "62,5 %",
+            "messageCs": "Číslo „62,5 %“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „62,5 % — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[615,621]: 62,5 %"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=24.59",
+            "messageCs": "Věty jsou v průměru moc dlouhé (24,6 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=24.59"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=6",
+            "messageCs": "Počet vět delších než 30 slov: 6. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=6"
+          }
+        ],
+        "soft": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=46.6",
+            "messageCs": "Text se celkově čte těžko (index 47 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=46.6"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7225561542",
+        "title": "Joint latent class mixed model trajectories of estimated glomerular filtration rate related to mortality and physical activity in older adults",
+        "abstract": "Abstract Deterioration of renal function occurs with age, leading in many individuals to chronic kidney disease, considerable disability and premature mortality. The trajectories of kidney function decline and potential protective factors remain poorly understood, especially in older individuals. We therefore investigated eGFR-decline trajectories related to mortality as well as the influence of physical activity patterns on trajectory membership in a population-based cohort of older individuals. 1,506 community-dwelling adults aged $$\\:\\ge\\:$$ 65 years were recruited in 2009 and followed up for up to three times. Trajectories of eGFR-decline and their relation with mortality were determined using joint latent class models. The association of physical activity (PA) and sedentary behavior (SB), determined by accelerometer measurements at baseline, with class-membership was studied with logistic regression. There were 2,812 observations on eGFR. We identified two trajectories, one starting with a lower mean baseline eGFR value and showing a stronger decline over time and higher mortality. In adjusted models, we found robust inverse associations of time spent in PA and total steps with being in this trajectory (Odds ratios with 95%-confidence intervals of 0.72 [0.60, 0.87] for 10 min and 0.73 [0.62, 0.86] for 1000 steps); SB was positively associated with this trajectory (2.51 [1.65, 3.81] for 100 min). PA was negatively and SB was positively associated with the worse trajectory. This may indicate that interventions for increasing PA may potentially be viable strategies to prevent impaired renal function and slow age-related functional decline in older individuals and should be investigated in future studies.",
+        "date": "2026-11-09",
+        "url": "https://doi.org/10.1038/s41598-026-78988-z",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1038/s41598-026-78988-z",
+        "openAlexId": "W7225561542",
+        "subfield": {
+          "id": "subfields/2727",
+          "name": "Nephrology"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T10408",
+          "name": "Chronic Kidney Disease and Diabetes"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1038/s41598-026-78988-z",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Gudrun Weinmayr",
+          "Johanna U Braisch",
+          "Jochen Klenk",
+          "Michael Denkinger",
+          "Dhayana Dallmeier",
+          "Dietrich Rothenbacher",
+          "Raphael Simon Peter"
+        ],
+        "venue": "Scientific Reports",
+        "indexedDate": "2026-11-09",
+        "referencedWorksCount": 40,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9421,
+          "everydayRelevance": 0.9667,
+          "freshness": 0.9286,
+          "credibility": 0.745,
+          "total": 0.919,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.119
+          },
+          "everydayDomains": [
+            "health",
+            "body",
+            "family"
+          ],
+          "subfieldKey": "subfields/2727",
+          "evidence": [
+            "total 0.9190 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.94 = P 0.96 − 0.45×t 0.00 − 0.15×j 0.12",
+            "outcome verbs (v 1.00): lowers, prevents, slows, associated with",
+            "recognisable subjects (s 1.00): adults (title, ×2), older adults (title, ×2)",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.80): −0.2 title is 20 words",
+            "jargon density (j 0.12): 3/252 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.97: 3 domain(s) — health, body, family",
+            "everyday terms (5): disease, mortality, physical activity, sedentary, older adults",
+            "freshness 0.93: 1 day(s) old (effective date 2026-11-09)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Scientific Reports",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no tldr; falling back to the source abstract (§4.2)"
+      },
+      "summary": {
+        "souhrn": "Ledvinám s věkem ubývá výkon, ale ne každému stejně rychle. Vědci sledovali 1 506 lidí ve věku 65 let a výše, kteří bydlí doma; nábor proběhl v roce 2009 a následovaly až tři další kontroly. Z opakovaných měření funkce ledvin vyšly dvě skupiny. Jedna z nich začínala s horší funkcí ledvin, zhoršovala se rychleji a měla i vyšší úmrtnost. Lidé, kteří se podle měřiče pohybu víc hýbali, patřili do téhle horší skupiny méně často, zatímco ti, kdo hodně proseděli, častěji.",
+        "podrobneVysvetleni": "Účastníci na začátku nosili pohybové čidlo (accelerometer), tedy přístroj, který zaznamenává pohyb a spočítá kroky i čas strávený vsedě. Funkci ledvin vědci sledovali pomocí odhadované glomerulární filtrace (eGFR). To je číslo, které vyjadřuje, kolik krve ledviny za minutu pročistí. Dohromady měli k dispozici 2 812 jednotlivých měření eGFR, tedy v průměru necelá dvě na jednoho člověka. Data zpracovali modelem, který hledá skupiny lidí s podobným průběhem a zároveň bere v úvahu i úmrtí. Vyšly dvě typické dráhy. Jedna byla klidnější, druhá začínala na nižších hodnotách, klesala strměji a doprovázela ji vyšší úmrtnost. Po zohlednění dalších vlivů platilo, že každých 10 minut pohybu denně navíc znamenalo asi o 28 % nižší šanci patřit do té horší skupiny, tedy zhruba o čtvrtinu méně. Statistici to zapisují jako poměr šancí 0,72; hodnota pod jedničkou znamená nižší riziko. Podobně to bylo u kroků: každých 1 000 kroků denně navíc odpovídalo asi o 27 % nižší šanci. Naopak každých 100 minut sezení denně navíc šlo dohromady se zhruba dvaapůlkrát vyšší šancí (2,51), že člověk spadne do horší skupiny. Studie sledovala, co se spolu vyskytuje, ne co co způsobuje. Je tedy možné i obrácené vysvětlení: kdo už má zdravotní potíže, ten se méně hýbe a víc sedí.",
+        "procJeToDulezite": "Zhoršování ledvin ve stáří se obvykle bere jako nevyhnutelné, ale tahle práce ukazuje, že běžná denní chůze a méně času v křesle souvisejí s lepším průběhem. Je to další důvod, proč u starších lidí v rodině podporovat pohyb, který zvládnou.",
+        "poznamkaKOmezenim": "Jde o pozorování jedné skupiny lidí bez zásahu vědců, takže nelze doložit, že pohyb ledviny chrání; je stejně dobře možné, že lidé s horším zdravím se prostě méně hýbou, a sami autoři doporučují ověřit to dalšími studiemi."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:pomer-sanci",
+            "span": {
+              "start": 818,
+              "end": 829
+            },
+            "matchedText": "poměr šancí",
+            "messageCs": "Termín „poměr šancí“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:pomer-sanci @ podrobneVysvetleni[818,829]: poměr šancí"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 1065,
+              "end": 1069
+            },
+            "matchedText": "2,51",
+            "messageCs": "Číslo „2,51“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „2,51 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[1065,1069]: 2,51"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 76,
+              "end": 81
+            },
+            "matchedText": "1 506",
+            "messageCs": "Číslo „1 506“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „1 506 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[76,81]: 1 506"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 184,
+              "end": 193
+            },
+            "matchedText": " glomerul",
+            "messageCs": "Text opisuje původní název článku („ glomerul“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[184,193]:  glomerul"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 624,
+              "end": 789
+            },
+            "matchedText": "Po zohlednění dalších vlivů platilo, že každých 10 minut pohybu denně navíc znamenalo asi o 28 % nižší šanci patřit do té horší skupiny, tedy zhruba o čtvrtinu méně.",
+            "messageCs": "Tato věta má 28 slov a je moc dlouhá: „Po zohlednění dalších vlivů platilo, že každých 10 minut pohybu denně navíc zna…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[624,789]: Po zohlednění dalších vlivů platilo, že každých 10 minut pohybu denně navíc znamenalo asi o 28 % nižší šanci patřit do té horší skupiny, tedy zhruba o čtvrtinu méně."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=16.05",
+            "messageCs": "Věty jsou v průměru moc dlouhé (16,1 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=16.05"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7225571222",
+        "title": "Preventable drivers of acute respiratory infections among under-five children in India’s high-risk zones: application of population attributable fractions analyses",
+        "abstract": "Abstract Background Acute respiratory infections (ARI) remain a major contributor to morbidity and mortality among under-five children in India. Although previous national studies have identified individual-level risk factors, evidence on the spatial distribution of ARI and the burden statistically attributable to selected exposures within hotspot regions remains limited. Methods We analysed data from the 2019–21 National Family Health Survey (NFHS-5) Children’s Recode file using a two-stage analytical framework. First, district-level ARI hotspots were identified among 221,849 under-five children across 707 districts. Second, analyses were restricted to children residing in hotspot districts (weighted n = 108,470). Survey-weighted prevalence, multivariable logistic regression, and population attributable fraction (PAF) analyses accounted for sampling weights, clustering, and stratification. Findings A total of 167 districts were identified as ARI hotspots, predominantly in central and eastern India. The unrestricted national weighted prevalence of ARI in the study dataset was 2.74%, compared with 7.23% (95% CI 7.08–7.39) within hotspot districts. Recent diarrhoeal illness (AOR 4.37, 95% CI 4.01–4.76) and maternal tobacco use (AOR 1.29, 95% CI 1.06–1.57) were independently associated with ARI. The PAF was 19.6% for recent diarrhoea and 0.7% for maternal tobacco use. Rural residence, interpreted as a contextual marker rather than a directly modifiable exposure, had a model-based PAF of 10.2%. The joint counterfactual scenario yielded a PAF of 28.7% (95% CI 20.4–36.1). Conclusions Under-five ARI is geographically concentrated in distinct hotspot districts. Integrated interventions addressing diarrhoeal disease and maternal tobacco exposure, together with improvements in rural child-health services and infrastructure, may reduce ARI burden in these districts. Because rural residence is not itself an intervention, its PAF should be interpreted as a priority-setting indicator of place-based disadvantage rather than as the effect of relocating rural populations.",
+        "date": "2026-11-09",
+        "url": "https://doi.org/10.1186/s41182-026-01107-1",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1186/s41182-026-01107-1",
+        "openAlexId": "W7225571222",
+        "subfield": {
+          "id": "subfields/2713",
+          "name": "Epidemiology"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T10654",
+          "name": "Pneumonia and Respiratory Infections"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": "https://doi.org/10.1186/s41182-026-01107-1",
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "U Venkatesh",
+          "Margubur Rahaman",
+          "R. Durga",
+          "Moslem Hossain",
+          "Om Prakash Bera",
+          "Ashoo Grover"
+        ],
+        "venue": "Tropical Medicine and Health",
+        "indexedDate": "2026-11-09",
+        "referencedWorksCount": 17,
+        "tldr": "Under-five ARI is geographically concentrated in distinct hotspot districts and integrated interventions addressing diarrhoeal disease and maternal tobacco exposure, together with improvements in rural child-health services and infrastructure, may reduce ARI burden in these districts.",
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8256,
+          "everydayRelevance": 1,
+          "freshness": 0.9286,
+          "credibility": 0.895,
+          "total": 0.9027,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 1,
+            "q": 1,
+            "c": 0.8,
+            "t": 0,
+            "j": 0.3125
+          },
+          "everydayDomains": [
+            "health",
+            "transport",
+            "family"
+          ],
+          "subfieldKey": "subfields/2713",
+          "evidence": [
+            "total 0.9027 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.83 = P 0.87 − 0.45×t 0.00 − 0.15×j 0.31",
+            "outcome verbs (v 0.75): reduces, improvement, associated with",
+            "recognisable subjects (s 1.00): children (title, ×2), drivers (title, ×2)",
+            "quantified effect (q 1): percentage, 95% CI, sample size",
+            "title concreteness (c 0.80): −0.2 title is 19 words",
+            "jargon density (j 0.31): 9/288 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — health, transport, family",
+            "everyday terms (9): health, disease, illness, infection, mortality, driver, child, children, family",
+            "freshness 0.93: 1 day(s) old (effective date 2026-11-09)",
+            "credibility 0.90 = 0.40×c1 1.00 + 0.25×c2 1.00 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Tropical Medicine and Health",
+            "c2 1.00: n = 108470",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        }
+      },
+      "summary": {
+        "souhrn": "Zápaly plic a jiné akutní infekce dýchacích cest se u indických dětí do pěti let nerozkládají po zemi rovnoměrně — soustředí se do konkrétních okresů, hlavně ve střední a východní Indii. Vědci prošli data celostátního šetření o zdraví rodin z let 2019–2021, které zahrnulo 221 849 dětí do pěti let ze 707 okresů, a nejprve vyznačili 167 okresů s nejvyšším výskytem. Zatímco v celém souboru mělo nedávno infekci dýchacích cest 2,74 % dětí, tedy necelé tři děti ze sta, v těchto rizikových okresech to bylo 7,23 %, tedy zhruba sedm dětí ze sta. Nejsilněji s infekcí souviselo nedávné průjmové onemocnění a kouření matky. Kdyby se podařilo odstranit průjmy, kouření matek a znevýhodnění venkova, podle výpočtu autorů by zmizelo 28,7 % případů — tedy zhruba tři případy z deseti.",
+        "podrobneVysvetleni": "Autoři pracovali ve dvou krocích. Nejdřív z celostátního šetření vybrali okresy, kde se infekce dýchacích cest u dětí do pěti let hromadí víc, než by odpovídalo náhodě; takových okresů našli 167 ze 707. Pak se zaměřili jen na děti žijící v těchto okresech — po přepočtu na celou populaci šlo o 108 470 dětí — a hledali, co s onemocněním souvisí. Nejsilnější vazbu mělo nedávné průjmové onemocnění: děti, které krátce předtím měly průjem, onemocněly dýchacími cestami zhruba 4,4krát častěji než ostatní. U dětí kuřaček byla pravděpodobnost onemocnění asi o čtvrtinu až třetinu vyšší než u dětí matek nekuřaček. Dál autoři spočítali, jaká část případů by teoreticky odpadla, kdyby daný rizikový faktor zmizel: u průjmů 19,6 % případů, tedy zhruba každý pátý, u kouření matek jen 0,7 %, tedy necelý jeden případ ze sta. Život na venkově sám o sobě vysvětloval 10,2 % případů, tedy asi každý desátý — autoři ale zdůrazňují, že venkov není nemoc, kterou by šlo léčit; je to ukazatel horší dostupnosti péče a horší infrastruktury. Dohromady všechny tři faktory vysvětlovaly 28,7 % případů, přičemž skutečná hodnota leží podle výpočtu někde mezi 20,4 a 36,1 procenta, tedy mezi zhruba pětinou a více než třetinou případů.",
+        "procJeToDulezite": "Ukazuje to, že boj s průjmovými onemocněními — tedy čistá voda, hygiena a včasná léčba — může zároveň snižovat počet dětí se zápalem plic, a že má smysl soustředit pomoc do konkrétních okresů místo plošných kampaní.",
+        "poznamkaKOmezenim": "Jde o jednorázové dotazníkové šetření, takže výsledky ukazují souvislosti, ne jistou příčinu a následek — nemoci navíc hlásily matky z paměti za poslední dva týdny a podíly „odstranitelných\" případů jsou modelové odhady, ne naměřený efekt skutečného zásahu."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 191,
+              "end": 194
+            },
+            "matchedText": "167",
+            "messageCs": "Číslo „167“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „167 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[191,194]: 167"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 198,
+              "end": 201
+            },
+            "matchedText": "707",
+            "messageCs": "Číslo „707“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „707 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[198,201]: 707"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 610,
+              "end": 816
+            },
+            "matchedText": "Dál autoři spočítali, jaká část případů by teoreticky odpadla, kdyby daný rizikový faktor zmizel: u průjmů 19,6 % případů, tedy zhruba každý pátý, u kouření matek jen 0,7 %, tedy necelý jeden případ ze sta.",
+            "messageCs": "Tato věta má 35 slov a je moc dlouhá: „Dál autoři spočítali, jaká část případů by teoreticky odpadla, kdyby daný rizik…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[610,816]: Dál autoři spočítali, jaká část případů by teoreticky odpadla, kdyby daný rizikový faktor zmizel: u průjmů 19,6 % případů, tedy zhruba každý pátý, u kouření matek jen 0,7 %, tedy necelý jeden případ ze sta."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=25.57",
+            "messageCs": "Věty jsou v průměru moc dlouhé (25,6 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=25.57"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=6",
+            "messageCs": "Počet vět delších než 30 slov: 6. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=6"
+          }
+        ],
+        "soft": [
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=43.0",
+            "messageCs": "Text se celkově čte těžko (index 43 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=43.0"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7225592194",
+        "title": "Father-Inclusive Perinatal Obesity Prevention: A Randomized Clinical Trial",
+        "abstract": "BACKGROUND AND OBJECTIVES Although fathers influence early child feeding, growth, and health behaviors, they are rarely included in early life obesity prevention interventions. We hypothesized that the father-inclusive First Heroes program would reduce rapid infant weight gain and improve parental weight-related and health behavior outcomes. METHODS We conducted a randomized controlled trial (2020-2023) in a Massachusetts health care system, enrolling 227 English- or Spanish-speaking mother-father dyads during the second trimester. Dyads were randomized to the First Heroes intervention—three virtual health coaching sessions plus multimedia content from pregnancy through 12 months postpartum—vs safety education control group. Primary outcomes were odds of rapid infant weight gain from birth to 6 and 12 months and infant overweight at 12 months. Secondary outcomes included maternal postpartum weight retention, paternal body mass index (BMI) change, and parent health care and infant-care behaviors. RESULTS Among 194 infants, intervention participants had lower odds of rapid infant weight gain vs control participants at 6 months (adjusted odds ratio [aOR], 0.42; 95% CI, 0.19–0.93) and 12 months (aOR, 0.49; 95% CI, 0.25–0.99); however, there was no difference in odds of infant overweight between groups. Fathers in the intervention vs control group had greater BMI reduction at 6 months postpartum (adjusted difference, −1.08; 95% CI, −2.06 to −0.11). Maternal weight outcomes were not significantly different by randomization group. CONCLUSIONS The First Heroes trial was associated with improvements in rapid infant weight gain, although other primary infant growth outcomes were not significantly different between groups. Future studies should examine strategies to sustain family-based obesity prevention across infancy.",
+        "date": "2026-11-09",
+        "url": "https://doi.org/10.1542/peds.2025-075313",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1542/peds.2025-075313",
+        "openAlexId": "W7225592194",
+        "subfield": {
+          "id": "subfields/2739",
+          "name": "Public Health, Environmental and Occupational Health"
+        },
+        "field": {
+          "id": "fields/27",
+          "name": "Medicine"
+        },
+        "topic": {
+          "id": "T10010",
+          "name": "Obesity, Physical Activity, Diet"
+        },
+        "citedByCount": 1,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Rachel Whooten",
+          "Anisha U. Gundewar",
+          "Milton Kotelchuck",
+          "Man Luo",
+          "Ariadne Caballero-Gonzalez",
+          "Gracia M. Kwete",
+          "Haley Farar-Muir",
+          "Meghan E. Perkins",
+          "Lauren G. Fiechtner",
+          "Nicole A. Smith",
+          "Elsie M. Taveras"
+        ],
+        "venue": "PEDIATRICS",
+        "indexedDate": "2026-11-09",
+        "referencedWorksCount": 45,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.9202,
+          "everydayRelevance": 1,
+          "freshness": 0.9286,
+          "credibility": 0.605,
+          "total": 0.8999,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.75,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.1154
+          },
+          "everydayDomains": [
+            "food",
+            "health",
+            "family"
+          ],
+          "subfieldKey": "subfields/2739",
+          "evidence": [
+            "total 0.8999 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.92 = P 0.94 − 0.45×t 0.00 − 0.15×j 0.12",
+            "outcome verbs (v 1.00): reduces, reduction, improves, improvement, lowers, prevention (title, ×2), associated with",
+            "recognisable subjects (s 0.75): participants, mothers, infants",
+            "quantified effect (q 1): percentage, 95% CI",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.12): 3/260 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — food, health, family",
+            "everyday terms (8): obesity, overweight, health, child, parent, parents, pregnancy, family",
+            "freshness 0.93: 1 day(s) old (effective date 2026-11-09)",
+            "credibility 0.61 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in PEDIATRICS",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1542/peds.2025-075313)"
+      },
+      "summary": {
+        "souhrn": "Tatínci ovlivňují, jak se malé dítě krmí a jak roste, ale v programech proti dětské obezitě se na ně skoro vždy zapomíná. Americký tým z Massachusetts proto mezi lety 2020 a 2023 zapojil do studie 227 dvojic nastávajících rodičů — tedy zhruba dvě stě rodin, kde se účastnila matka i otec — a náhodně je rozdělil na dvě skupiny: jedna dostala program First Heroes (tři online konzultace se zdravotním koučem plus videa a materiály od těhotenství do prvních narozenin dítěte), druhá běžné poučení o bezpečnosti. U 194 dětí, které se podařilo sledovat, se v programové skupině objevoval rychlý přírůstek hmotnosti v půl roce i v roce zhruba dvakrát méně často než ve srovnávací skupině. Podíl dětí s nadváhou v roce věku se ale mezi skupinami nelišil a nelišila se ani hmotnost maminek po porodu — jedinou dospělou změnou byl o něco výraznější pokles hmotnosti u otců.",
+        "podrobneVysvetleni": "Vědci oslovili rodiče ve druhém trimestru těhotenství v jednom zdravotnickém systému v Massachusetts, anglicky i španělsky mluvící, a přihlásili 227 dvojic matka–otec, tedy zhruba dvě stě rodin. Los rozhodl, kdo projde programem First Heroes — tři konzultace se zdravotním koučem na dálku a doprovodné video a textové materiály od těhotenství do dvanácti měsíců po porodu — a kdo dostane jen vzdělávání o bezpečnosti dítěte. Hlavní sledovanou věcí byl takzvaný rychlý přírůstek hmotnosti (rapid infant weight gain), tedy když dítě přibírá nápadně rychleji, než je pro jeho věk obvyklé; to se považuje za časný signál pozdější nadváhy. Z 194 dětí, u nichž mají data, měly děti z programové skupiny v šesti měsících poměr šancí 0,42 a ve dvanácti měsících 0,49 — jinými slovy, rychlé přibírání se u nich objevovalo zhruba dvakrát méně často než u dětí z druhé skupiny. Výsledek je ale blízko hranice statistické průkaznosti, takže ho nelze brát jako definitivní. Počet ročních dětí s nadváhou se mezi skupinami nelišil. U otců v programu klesl index tělesné hmotnosti BMI (ukazatel poměru váhy a výšky) o 1,08 bodu víc než u ostatních, tedy asi o jeden bod na stupnici BMI — malá, ale měřitelná změna. U matek se hmotnost po porodu nelišila. Závěr zní spíš opatrně: zapojení otců se jeví jako smysluplná cesta, ale samo o sobě nestačí.",
+        "procJeToDulezite": "Rychlé přibírání v prvním roce života patří mezi první signály pozdější nadváhy, a tahle studie naznačuje, že do prevence má smysl zvát oba rodiče, ne jen maminku.",
+        "poznamkaKOmezenim": "Jde o jedinou studii z jednoho zdravotnického systému, data má přibližně u dvou set dětí a oba hlavní výsledky o rychlém přibírání leží těsně u hranice statistické průkaznosti — sledovaný podíl dětí s nadvähou ve dvanácti měsících se navíc nezměnil."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 122,
+              "end": 509
+            },
+            "matchedText": "Americký tým z Massachusetts proto mezi lety 2020 a 2023 zapojil do studie 227 dvojic nastávajících rodičů — tedy zhruba dvě stě rodin, kde se účastnila matka i otec — a náhodně je rozdělil na dvě skupiny: jedna dostala program First Heroes (tři online konzultace se zdravotním koučem plus videa a materiály od těhotenství do prvních narozenin dítěte), druhá běžné poučení o bezpečnosti.",
+            "messageCs": "Tato věta má 61 slov a je moc dlouhá: „Americký tým z Massachusetts proto mezi lety 2020 a 2023 zapojil do studie 227 …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[122,509]: Americký tým z Massachusetts proto mezi lety 2020 a 2023 zapojil do studie 227 dvojic nastávajících rodičů — tedy zhruba dvě stě rodin, kde se účastnila matka i otec — a náhodně je rozdělil na dvě skupiny: jedna dostala program First Heroes (tři online konzultace se zdravotním koučem plus videa a materiály od těhotenství do prvních narozenin dítěte), druhá běžné poučení o bezpečnosti."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=27.64",
+            "messageCs": "Věty jsou v průměru moc dlouhé (27,6 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=27.64"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=6",
+            "messageCs": "Počet vět delších než 30 slov: 6. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=6"
+          }
+        ],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_english_original:pomer-sanci",
+            "span": {
+              "start": 714,
+              "end": 725
+            },
+            "matchedText": "poměr šancí",
+            "messageCs": "U termínu „poměr šancí“ chybí při prvním použití anglický originál v závorce (např. „poměr šancí (odds ratio)“). Čtenář ten anglický výraz potká jinde (§2).",
+            "detail": "jargon:no_english_original:pomer-sanci @ podrobneVysvetleni[714,725]: poměr šancí"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=41.1",
+            "messageCs": "Text se celkově čte těžko (index 41 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=41.1"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-11-10T05:30:41.084Z",
+  "generatedOn": "2026-11-10",
+  "schemaVersion": 1
+}
