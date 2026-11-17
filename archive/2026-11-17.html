@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Příroda a klima – 17. listopadu 2026 – Research Desk</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  /* Long DOIs and URLs must wrap instead of pushing the page sideways. */
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 38rem; margin: 0 auto; padding: 1.4rem 1.1rem 3rem; }
+a { color: #10467a; }
+a:visited { color: #5a3b85; }
+a:focus-visible { outline: 0.15rem solid #10467a; outline-offset: 0.15rem; }
+.masthead { border-bottom: 0.0625rem solid #e0dacd; padding-bottom: 1.1rem; margin-bottom: 1.5rem; }
+.site-name { margin: 0; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; color: #7a6f5b; }
+.topic-label { margin: 1rem 0 0; font-size: 0.9rem; color: #7a6f5b; }
+h1 { margin: 0.15rem 0 0.35rem; font-size: 1.55rem; line-height: 1.25; }
+.dateline { margin: 0; color: #6d6455; font-size: 0.98rem; }
+.lede { margin: 0.9rem 0 0; color: #4a4438; }
+.nav { margin: 0 0 1.2rem; font-size: 0.98rem; }
+.nav a, .day-link a { display: inline-block; padding: 0.35rem 0; }
+.paper { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem 1rem 1.2rem; margin: 0 0 1.5rem; }
+.paper-counter { margin: 0; font-size: 0.85rem; color: #8a7f6a; }
+.block-label { margin: 0.5rem 0 0.1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: #8a7f6a; }
+h2 { margin: 0 0 0.6rem; font-size: 1.28rem; line-height: 1.3; }
+h3 { margin: 1.35rem 0 0.35rem; font-size: 1.02rem; line-height: 1.35; color: #33507a; }
+p { margin: 0 0 0.75rem; }
+.notice { border-left: 0.25rem solid #b8860b; background: #fff7e3; padding: 0.7rem 0.9rem; border-radius: 0.3rem; margin: 0 0 1.5rem; }
+.notice h2, .notice h3 { margin: 0 0 0.35rem; font-size: 1.05rem; color: #6a4a06; }
+.notice p:last-child { margin-bottom: 0; }
+.preprint { border-left: 0.25rem solid #a4551f; background: #fdf1e7; padding: 0.6rem 0.8rem; border-radius: 0.3rem; margin: 0 0 1rem; font-size: 0.97rem; }
+.motivation { font-weight: 700; color: #6a4a06; background: #fff7e3; padding: 0.5rem 0.7rem; border-radius: 0.3rem; margin: 0 0 0.6rem; }
+.reference { margin: 0.4rem 0 0; }
+.reference dt { font-weight: 700; font-size: 0.92rem; color: #6d6455; margin: 0.7rem 0 0; }
+.reference dd { margin: 0.1rem 0 0; }
+.reference a { overflow-wrap: anywhere; }
+.days { list-style: none; margin: 0; padding: 0; }
+.day { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 0.9rem 1rem 1rem; margin: 0 0 1.1rem; }
+.day-date { margin: 0; font-size: 1.15rem; font-weight: 700; }
+.day-category { margin: 0.1rem 0 0.6rem; color: #6d6455; font-size: 0.95rem; }
+.day-titles { margin: 0 0 0.5rem; padding-left: 1.1rem; }
+.day-titles li { margin: 0 0 0.3rem; }
+.empty { background: #ffffff; border: 0.0625rem solid #e6e0d4; border-radius: 0.6rem; padding: 1rem; }
+footer { border-top: 0.0625rem solid #e0dacd; margin-top: 2rem; padding-top: 1.1rem; font-size: 0.95rem; color: #5c5546; }
+footer h2 { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.degradations { margin: 0 0 1rem; padding-left: 1.1rem; }
+.degradations li { margin: 0 0 0.35rem; }
+@media (prefers-color-scheme: dark) {
+  body { background: #14140f; color: #ebe6dc; }
+  a { color: #8fbdf0; }
+  a:visited { color: #c2a6e8; }
+  .paper, .day, .empty { background: #1e1e17; border-color: #34322a; }
+  .masthead, footer { border-color: #34322a; }
+  .site-name, .topic-label, .dateline, .paper-counter, .block-label, .day-category, footer { color: #a9a294; }
+  .lede { color: #c6c0b2; }
+  h3 { color: #9fc0ea; }
+  .notice { background: #2b2411; border-left-color: #d7a92e; }
+  .notice h2, .notice h3, .motivation { color: #f0d999; }
+  .motivation { background: #2b2411; }
+  .preprint { background: #2c1d13; border-left-color: #d08040; }
+}
+  .summary .lead { font-weight: 600; }
+
+  /* Category filter. No script anywhere on this page (§8), so the whole thing
+     is :checked plus a sibling selector. The radios stay in the accessibility
+     tree and remain focusable — clip them, never display:none them, or the
+     chips stop working from a keyboard. */
+  /* The usual visually-hidden recipe, minus the no-wrap declaration it normally
+     carries: this element has no text so it does not need one, and the 390px
+     guard reads any such declaration in the sheet as a block on body copy. */
+  .cat-input { position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.4rem; }
+  .chip { display: inline-block; padding: 0.32rem 0.72rem; border-radius: 1.2rem;
+    border: 0.0625rem solid #e6e0d4; background: #ffffff; color: #4a4438;
+    font-size: 0.88rem; line-height: 1.3; cursor: pointer; }
+  .chip:hover { border-color: #b9ad95; }
+  .chip-count { color: #8a7f6a; font-size: 0.8rem; }
+  .cat-empty { display: none; margin: 0 0 1.4rem; color: #6d6455; }
+
+  /* Default: everything shows. Each chip then hides the days that are not its
+     own, and reveals its own empty note when it has none. */
+  #cat-all:checked ~ .cat-empty { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+<header class="masthead">
+<p class="site-name">Research Desk</p>
+<p class="topic-label">Téma dne</p>
+<h1>Příroda a klima</h1>
+<p class="dateline"><time datetime="2026-11-17">17. listopadu 2026</time></p>
+<p class="lede">Nové vědecké studie vysvětlené běžnými slovy.</p>
+</header>
+<main>
+<article class="paper" id="paper-1">
+<p class="paper-counter">Studie 1 z 5</p>
+<div class="summary"><p><span class="lead">Olejná palma stráví ve školce zhruba rok, než ji pěstitel vysadí na plantáž, a každý měsíc něco stojí.</span> Indonéští vědci proto zkusili sazenicím růst urychlit. Každé dva týdny je ošetřovali rostlinným hormonem kyselinou giberelovou a přidávali jim biohnojivo Bioneensis, tedy hnojivo založené na živých půdních mikroorganismech. Nejlepší dopadla kombinace nejvyšší zkoušené dávky hormonu se třemi čtvrtinami nejvyšší dávky hnojiva: takové sazenice měly patnáct listů, nejsilnější kmínek i nejtěžší listy ze všech vyzkoušených variant. Autoři odhadují, že by se díky tomu dala doba ve školce zkrátit z dvanácti měsíců na devět, sami ale dodávají, že to zatím nikdo neověřil.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Pokus běžel od března do června 2025 v Deli Serdang na severu Sumatry. Vědci vzali šestiměsíční sazenice olejné palmy odrůdy DxP PPKS 540. Každá rostla v plastovém pytli s dvaceti kilogramy ornice. Sazenice dostávaly každé dva týdny dvě věci. První byla kyselina giberelová (gibberellic acid, GA3), přirozený rostlinný hormon, který rostlinu nutí prodlužovat stonek. Druhou bylo biohnojivo Bioneensis, tedy přípravek s živými půdními mikroorganismy. Hormon zkoušeli v pěti silách od nulové po nejvyšší, hnojivo také v pěti dávkách od nuly po sto gramů na sazenici. Dohromady vzniklo pětadvacet kombinací a každá se opakovala dvakrát. Obě ošetření měla prokazatelný vliv na výšku, tloušťku kmínku, počet listů i hmotnost usušených listů. Nejlépe dopadla nejvyšší dávka hormonu (250 miligramů na litr) spolu se 75 gramy hnojiva, tedy třemi čtvrtinami nejvyšší zkoušené dávky. Tyto sazenice měly patnáct listů, kmínek silný asi sedm centimetrů, výšku kolem 120 centimetrů (o něco víc než metr) a nejtěžší listy ze všech. Úplně nejvyšší rostliny, zhruba o čtvrt metru vyšší, ovšem vyrostly při poloviční dávce hnojiva. Samotná výška tedy o kvalitě sazenice nerozhoduje. V půdě ošetřené touto dávkou hnojiva naměřili vyšší obsah draslíku a dusíku. Autoři z toho usuzují, že by palmy mohly být připravené k vysazení o tři měsíce dřív.</p>
+<h3>Proč je to důležité</h3>
+<p>Palmový olej patří k nejrozšířenějším plodinám světa a čas strávený ve školce tvoří velkou část nákladů na novou plantáž; kratší školka znamená levnější a rychlejší produkci. Zároveň jde o hezkou ukázku toho, jak rostlinný hormon a půdní mikroby spolupracují na růstu rostliny.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Harzu Sajiwo, T. Sabrina, Sarifuddin Sarifuddin</dd>
+<dt>Časopis</dt>
+<dd>Advances In Social Humanities Research</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-11-16">16. listopadu 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.46799/adv.v4i11.712" rel="noreferrer">10.46799/adv.v4i11.712</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7233577011" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.46799/adv.v4i11.712" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Výsledek je předběžný: pokus proběhl na jediném místě během tří měsíců a každá kombinace se opakovala jen dvakrát, takže slibované zkrácení školky z dvanácti na devět měsíců zatím nikdo neověřil v praxi.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-2">
+<p class="paper-counter">Studie 2 z 5</p>
+<div class="summary"><p><span class="lead">Počasí nekončí u mraků.</span> Vědci prošli měření družic COSMIC-2, které mapují, kolik volných elektronů je v jednotlivých výškách nad Zemí. Vyšlo jim, že zhruba 40 % kolísání jejich počtu — tedy dvě pětiny — souvisí s takzvanými planetárními vlnami (planetary waves), pomalými vlnami s periodou několika dnů až dvou týdnů, které vznikají dole v atmosféře. Velkou část tvoří kolísání, při němž stoupá a klesá celý prstenec kolem planety naráz. Podle autorů tak část výkyvů v ionosféře, na které závisí rádiové spojení i družicová navigace, pochází zdola z atmosféry, ne jen od Slunce.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Ionosféra je vrstva vysoko nad zemí, kde sluneční záření vyráží z atomů elektrony. Právě na nich závisí šíření rádiových signálů i přesnost navigace. Vědci využili družice COSMIC-2. Ty měří, kolik elektronů je v jednotlivých výškách. Z měření vznikají globální mapy stavu ionosféry.</p>
+<p>Z nich autoři vytáhli kolísání s periodami několika dnů až dvou týdnů. Takovým vlnám se říká planetární vlny (planetary waves). Vznikají dole v atmosféře, podobně jako velké zákruty tryskového proudění. Otázka byla, jestli jejich stopa dosáhne až nahoru.</p>
+<p>Aby oddělili vliv Slunce a magnetických bouří, zaměřili se na jedinou výšku. Zvolili 300 kilometrů nad zemí, tedy asi třicetkrát výš, než létají dopravní letadla. Data pak přefiltrovali metodou, která v časové řadě hledá pravidelné kolísání (wavelet).</p>
+<p>Výsledek potvrdil to, co dřív předpovídaly jen počítačové modely. Planetární vlny jsou v ionosféře dobře patrné. Velkou část z nich tvoří kolísání rozložené symetricky kolem celé zeměkoule. Taková vlna neputuje na východ ani na západ. Celý prstenec kolem planety stoupá a klesá najednou.</p>
+<p>Zhruba 40 % kolísání hustoty elektronů, tedy dvě pětiny, souvisí s planetárními vlnami. Dosud se počítalo hlavně s denními přílivovými vlnami. Podle autorů je ale potřeba počítat i s těmito pomalejšími vlnami.</p>
+<h3>Proč je to důležité</h3>
+<p>Na stavu ionosféry závisí kvalita družicové navigace a rádiového spojení, takže lepší porozumění jejím výkyvům se promítne do přesnějších předpovědí kosmického počasí. A ukazuje se, že část těch výkyvů má původ v počasí pod námi.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Sona Baiju, Jens Oberheide, Xian Feng Lu, Deepali Aggarwal</dd>
+<dt>Časopis</dt>
+<dd>Geophysical Research Letters</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-11-15">15. listopadu 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1029/2026gl123835" rel="noreferrer">10.1029/2026gl123835</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7166031447" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1029/2026gl123835" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o jeden sledovaný parametr v jediné výšce a z jedné družicové mise, takže podíl kolem 40 % závisí i na zvoleném způsobu filtrování dat a může se při jiném postupu lišit.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-3">
+<p class="paper-counter">Studie 3 z 5</p>
+<div class="summary"><p><span class="lead">Na konci prosince 2015 zasáhla západní Norsko bouře Frank, která pár dní předtím zatopila sever Anglie.</span> Přivedla k fjordovému pobřeží takzvanou atmosférickou řeku (atmospheric river) — úzký pás vzduchu nasyceného vlhkostí, jaký dokáže nad oceánem přenést obrovské množství vody — a stanice naměřily 150 až 250 milimetrů srážek, řeky v Oddě a okolí se vylily a vodu i sesuvy přerušily silnice. Autor spočítal pro povodí Hardangeru jednoduchou bilanci: průměrně 130 milimetrů srážek, tedy asi 0,39 krychlového kilometru vody (390 miliard litrů), z nichž tři čtvrtiny odtekly do řek, což odpovídá průměrnému odtoku 2257 kubíků za sekundu. Nejdůležitější číslo ale není objem, nýbrž čas: voda od hřebene k moři doběhne zhruba za 4,4 hodiny. Právě proto se v tomto typu krajiny varování vydávají podle předpovědi deště, a ne podle toho, co ukazují vodočty na řekách — na reakci podle měření už by nezbyl čas.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Fjordová povodí jsou extrémním případem rychlé reakce na déšť: jsou malá, svahy začínají přímo u hladiny a koryta měří jen desítky kilometrů. Autor proto postavil bilanci tak, aby vedle objemu vody stál i čas. Postup je přímočarý — z naměřených srážek odvodil průměrný úhrn na celé povodí (130 milimetrů, tedy 130 litrů na každý metr čtvereční), vynásobením plochou dostal celkový objem spadlé vody 0,39 krychlového kilometru a odhadem podílu, který neodteče do podzemí ani se nevypaří, došel k objemu odtoku. Tento podíl je zde 0,75, tedy tři čtvrtiny veškerého deště skončily v řekách — ve strmé, mělce zvětralé krajině s nasáklou půdou je to vysoká hodnota. Rozpočítáno na dobu trvání epizody vychází průměrný odtok 2257 kubických metrů za sekundu, tedy přes dva miliony litrů každou vteřinu. Dobu doběhu autor odvodil z délky koryta a rychlosti, jakou se povodňová vlna šíří; vyšlo 4,419 hodiny. Praktický důsledek je jasný: mezi okamžikem, kdy začne pršet, a kulminací vody v údolí uplyne jen několik hodin. Kdyby varovný systém čekal na to, až vodočty ukážou vzestup hladiny, lidem v ohrožených obcích by zbylo příliš málo času. Proto se v tomto terénu rozhoduje podle předpovědi srážek.</p>
+<h3>Proč je to důležité</h3>
+<p>Ukazuje, proč se v horských a úzkých údolích musí varovat podle předpovědi deště a ne podle hladin v řekách — čas na reakci se tam počítá na hodiny, ne na dny. Stejná logika platí i pro česká podhorská povodí, kde přívalové povodně přicházejí rychle.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>William Alexander Aldred</dd>
+<dt>Časopis</dt>
+<dd>Zenodo (CERN European Organization for Nuclear Research)</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-11-16">16. listopadu 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.5281/zenodo.24265160" rel="noreferrer">10.5281/zenodo.24265160</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7233602159" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.5281/zenodo.24265160" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o zjednodušený výpočet zveřejněný v repozitáři Zenodo, tedy bez doloženého recenzního řízení; uvedená čísla jsou odhady založené na předpokladech o podílu odtoku a rychlosti postupu vody, nikoli přímá měření, a drobné rozdíly ve vstupech by výsledky znatelně posunuly.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-4">
+<p class="paper-counter">Studie 4 z 5</p>
+<div class="summary"><p><span class="lead">Sesuvy půdy ohrožují v indickém okrese Mandi v severozápadním Himálaji silnice i vesnice, a mapy rizika se dosud opíraly hlavně o záznamy už proběhlých sesuvů.</span> Vědci proto doplnili úřední seznam 968 sesuvů o 1 685 míst, kde satelitní radar Sentinel-1 zachytil, že se svah pomalu pohybuje právě teď — a 36 z nich ověřili přímo v terénu. Na takto rozšířených datech natrénovali čtyři různé počítačové modely; nejlépe dopadl algoritmus XGBoost, který dokázal rizikové a klidné svahy rozlišit o něco spolehlivěji než stejný model bez radarových dat. Nejsilnějšími signály rizika byly blízkost silnice a sklon svahu, tedy strmý terén nařezaný stavbou cest. Výsledná mapa dělí okres do pěti stupňů ohrožení a dá se použít při plánování zástavby a údržby komunikací.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Radarová interferometrie (InSAR) porovnává snímky stejného místa z družice pořízené v různých časech a odhalí posuny povrchu o milimetry až centimetry — tedy svahy, které se už plíživě hýbou, ale ještě se nesesunuly. Autoři zpracovali data družice Sentinel-1A z ledna 2023 až prosince 2024, celkem 102 přeletů ze dvou směrů, a nalezené deformační plochy přidali k historickému seznamu sesuvů Geologické služby Indie. Pak vybrali dvanáct vzájemně nezávislých vlivů (sklon, vzdálenost od silnic, geologie, srážky a další) a porovnali čtyři metody strojového učení. Testovali je tak, že území rozdělili na čtvercové bloky o straně 1 až 10 kilometrů a modely vždy trénovali na jedné části a zkoušeli na jiné — aby si model nemohl „zapamatovat&quot; sousední místa. Nejlépe vyšel XGBoost při blocích 2 kilometry: jeho schopnost rozlišit ohrožený svah od bezpečného dosáhla hodnoty 0,887 proti 0,878 u modelu bez radaru (1,0 je bezchybné rozlišení, 0,5 náhodné hádání) — tedy malé, ale konzistentní zlepšení. Výraznější byl posun v tom, nakolik odpovídají uváděné pravděpodobnosti skutečnosti: odchylka klesla ze 0,097 na 0,067, přibližně o třetinu. Hotová mapa rozdělená do pěti pásem ohrožení dosáhla hodnoty 0,909 a jen 1,1 % území — zhruba jeden hektar ze sta — leží mimo rozsah dat, na nichž se model učil.</p>
+<h3>Proč je to důležité</h3>
+<p>Mapy ohrožení sesuvy rozhodují o tom, kde se smí stavět a kudy vést silnice, a tenhle postup ukazuje, že družicová data dokážou odhalit nebezpečné svahy dřív, než se někde skutečně něco sesune.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>Akshay Raj Manocha, Tran Trung Hieu, Łukasz Pawlik, Paweł Kroh, Nguyen Cong Quan</dd>
+<dt>Časopis</dt>
+<dd>Scientific Reports</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-11-15">15. listopadu 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.1038/s41598-026-79663-z" rel="noreferrer">10.1038/s41598-026-79663-z</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7171765547" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.1038/s41598-026-79663-z" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Zlepšení proti běžnému modelu je spíš malé, mapa platí jen pro jeden himálajský okres a jen pro sesuvy typu „sjetí svahu&quot;, a říká, kde hrozí riziko — ne kdy k sesuvu dojde.</dd>
+</dl>
+</article>
+<article class="paper" id="paper-5">
+<p class="paper-counter">Studie 5 z 5</p>
+<div class="summary"><p><span class="lead">V červnu 2023 zasáhla střední Chile takzvaná atmosférická řeka — úzký pás velmi vlhkého vzduchu, který se nad oceánem chová jako obří přívodní potrubí vody.</span> Neobvyklé bylo to, že hranice sněžení ležela až ve 2800 metrech, takže do podhůří And v regionech Maule a Biobío padal déšť tam, kde v zimě obvykle napadne sníh. Autor studie spočítal, že v povodí Biobío spadlo v průměru 110 milimetrů srážek, tedy 110 litrů vody na každý metr čtvereční, dohromady zhruba 2,7 kubického kilometru. Z toho asi 72 procent — tedy téměř tři čtvrtiny — odteklo do řek, které se vylily z břehů, odřízly obce a poškodily silnice a mosty. Hlavní poučení je, že při teplé zimní bouři chybí sníh jako přirozený zásobník, který by vodu podržel na pár týdnů v horách, a všechno přichází do koryt najednou.</p></div>
+<h3>Podrobné vysvětlení</h3>
+<p>Autor rozebral bouři jednoduchým vodním rozpočtem: vzal průměrný úhrn srážek nad povodím řeky Biobío, vynásobil ho plochou povodí a výsledek upravil koeficientem odtoku, tedy odhadem toho, jaká část deště skutečně steče do řeky místo aby se vsákla nebo vypařila. Vyšlo mu 110 milimetrů srážek v průměru na celé povodí (asi 110 litrů na metr čtvereční), celkový objem 2,669 kubického kilometru vody — pro představu zhruba 2,7 miliardy krychlových metrů — a koeficient odtoku 0,72, což znamená, že do řek se dostalo kolem 1,9 kubického kilometru. Přepočteno na průtok to odpovídá průměrnému odtoku 7414 kubických metrů za sekundu, tedy mnohonásobku běžného stavu velké řeky. Klíčový je přitom ten vysoký koeficient: v zimě bývají půdy nasycené vodou, takže nemají kam dál přijímat, a když navíc hranice sněžení vystoupá nad podhůří, nevznikne sněhová pokrývka, která by srážky dočasně uskladnila. Andská povodí jsou navíc krátká a strmá, takže voda doteče do nížin rychle. Autor upozorňuje, že samotný objem srážek by tuhle bouři ukázal jako docela obyčejnou — teprve v kombinaci s tím, kde a jak rychle se voda soustředila, je vidět, proč napáchala takové škody.</p>
+<h3>Proč je to důležité</h3>
+<p>Ukazuje, že o povodni nerozhoduje jen to, kolik naprší, ale i teplota bouře — když se zimní srážky změní ze sněhu v déšť, přijde do řek během pár hodin voda, která by jinak ležela v horách celé týdny. To je situace, kterou s oteplováním čekají i hory ve střední Evropě.</p>
+<h3>Chci vědět víc</h3>
+<dl class="reference">
+<dt>Autoři</dt>
+<dd>William Alexander Aldred</dd>
+<dt>Časopis</dt>
+<dd>Zenodo (CERN European Organization for Nuclear Research)</dd>
+<dt>Datum zveřejnění</dt>
+<dd><time datetime="2026-11-16">16. listopadu 2026</time></dd>
+<dt>DOI (trvalý odkaz na studii)</dt>
+<dd><a href="https://doi.org/10.5281/zenodo.24265007" rel="noreferrer">10.5281/zenodo.24265007</a></dd>
+<dt>Záznam v databázi OpenAlex</dt>
+<dd><a href="https://openalex.org/W7233550806" rel="noreferrer">Otevřít záznam</a></dd>
+<dt>Stránka studie</dt>
+<dd><a href="https://doi.org/10.5281/zenodo.24265007" rel="noreferrer">Otevřít stránku studie</a></dd>
+<dt>Na co si dát pozor</dt>
+<dd>Jde o práci zveřejněnou v otevřeném repozitáři Zenodo bez recenzního řízení a výsledky stojí na zjednodušeném výpočtu (srážky krát plocha krát odhadnutý koeficient odtoku), takže uvedená čísla je třeba brát jako řádové odhady, ne jako přesně změřené hodnoty.</dd>
+</dl>
+</article>
+</main>
+<footer>
+<p>Tyto stránky připravuje počítačový program z veřejně dostupných záznamů o studiích. Když je pro vás něco důležité, otevřete si původní studii a přečtěte si ji sami.</p>
+<p>Tato stránka vznikla 17. listopadu 2026.</p>
+<p class="nav"><a href="../index.html">Zpět na přehled všech dní</a></p>
+</footer>
+</div>
+</body>
+</html>

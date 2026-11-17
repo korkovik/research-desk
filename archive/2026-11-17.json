@@ -1,0 +1,803 @@
+{
+  "date": "2026-11-17",
+  "categoryKey": "nature-climate",
+  "categoryLabel": "Příroda a klima",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7233577011",
+        "title": "Effectiveness of Giberellic Acid (GA3) Hormone and Biofertilizer (Bioneensis) on the Growth of Oil Palm Seedlings (Elaeis guineensis Jacq)",
+        "abstract": "The nursery phase of oil palm (Elaeis guineensis Jacq.) cultivation represents a substantial cost in plantation establishment, and accelerating seedling growth may improve production efficiency. This study aimed to evaluate the effectiveness of gibberellic acid (GA?) and Bioneensis biofertilizer in promoting the vegetative growth of oil palm seedlings in the main nursery. The experiment was conducted from March to June 2025 in Deli Serdang, North Sumatra, Indonesia, using six-month-old DxP PPKS 540 oil palm seedlings grown in polybags containing 20 kg of topsoil. A factorial randomized complete block design (RCBD) was employed with two factors: GA? concentrations (0, 100, 150, 200, and 250 ppm) and Bioneensis application rates (0, 25, 50, 75, and 100 g), applied at two-week intervals. The experiment consisted of 25 treatment combinations with two replications. Data were analyzed using analysis of variance (ANOVA) at a 5% significance level, followed by Duncan's multiple range test (DMRT). The results indicated that both treatments significantly affected plant height, stem diameter, leaf number, and leaf dry weight. The combination of GA? at 250 ppm and Bioneensis at 75 g (G250B75) produced the best overall vegetative growth, with 15 leaves, a stem diameter of 71.15 mm, a plant height of 120 cm, and the highest leaf dry weight of 227.5 g. However, the greatest plant height (144.5 cm) was observed under the G250B50 treatment. Bioneensis applied at 75 g was also associated with soil potassium and nitrogen concentrations of 21.52 ppm and 0.06%, respectively. These findings suggest that the combined application of GA? at 250 ppm and Bioneensis at 75 g may enhance the vegetative growth of oil palm seedlings and potentially reduce the nursery period from 12 to 9 months, although further validation is required to confirm this reduction.",
+        "date": "2026-11-16",
+        "url": "https://doi.org/10.46799/adv.v4i11.712",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.46799/adv.v4i11.712",
+        "openAlexId": "W7233577011",
+        "subfield": {
+          "id": "subfields/2303",
+          "name": "Ecology"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T12703",
+          "name": "Oil Palm Production and Sustainability"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Harzu Sajiwo",
+          "T. Sabrina",
+          "Sarifuddin Sarifuddin"
+        ],
+        "venue": "Advances In Social Humanities Research",
+        "indexedDate": "2026-11-16",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7542,
+          "everydayRelevance": 0.9333,
+          "freshness": 0.9286,
+          "credibility": 0.705,
+          "total": 0.8289,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.5,
+            "q": 1,
+            "c": 0.5,
+            "t": 0,
+            "j": 0.1384
+          },
+          "everydayDomains": [
+            "health",
+            "money",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2303",
+          "evidence": [
+            "total 0.8289 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.75 = P 0.78 − 0.45×t 0.00 − 0.15×j 0.14",
+            "outcome verbs (v 1.00): reduces, reduction, improves, associated with",
+            "recognisable subjects (s 0.50): plants, soil",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.50): −0.3 no outcome verb or recognisable subject in the title; −0.2 title is 19 words",
+            "jargon density (j 0.14): 4/289 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.93: 3 domain(s) — health, money, mind",
+            "everyday terms (4): treatment, cost, costs, concentration",
+            "freshness 0.93: 1 day(s) old (effective date 2026-11-16)",
+            "credibility 0.71 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.80 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Advances In Social Humanities Research",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.80: open access without an open licence (repository copy)",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.46799/adv.v4i11.712)"
+      },
+      "summary": {
+        "souhrn": "Olejná palma stráví ve školce zhruba rok, než ji pěstitel vysadí na plantáž, a každý měsíc něco stojí. Indonéští vědci proto zkusili sazenicím růst urychlit. Každé dva týdny je ošetřovali rostlinným hormonem kyselinou giberelovou a přidávali jim biohnojivo Bioneensis, tedy hnojivo založené na živých půdních mikroorganismech. Nejlepší dopadla kombinace nejvyšší zkoušené dávky hormonu se třemi čtvrtinami nejvyšší dávky hnojiva: takové sazenice měly patnáct listů, nejsilnější kmínek i nejtěžší listy ze všech vyzkoušených variant. Autoři odhadují, že by se díky tomu dala doba ve školce zkrátit z dvanácti měsíců na devět, sami ale dodávají, že to zatím nikdo neověřil.",
+        "podrobneVysvetleni": "Pokus běžel od března do června 2025 v Deli Serdang na severu Sumatry. Vědci vzali šestiměsíční sazenice olejné palmy odrůdy DxP PPKS 540. Každá rostla v plastovém pytli s dvaceti kilogramy ornice. Sazenice dostávaly každé dva týdny dvě věci. První byla kyselina giberelová (gibberellic acid, GA3), přirozený rostlinný hormon, který rostlinu nutí prodlužovat stonek. Druhou bylo biohnojivo Bioneensis, tedy přípravek s živými půdními mikroorganismy. Hormon zkoušeli v pěti silách od nulové po nejvyšší, hnojivo také v pěti dávkách od nuly po sto gramů na sazenici. Dohromady vzniklo pětadvacet kombinací a každá se opakovala dvakrát. Obě ošetření měla prokazatelný vliv na výšku, tloušťku kmínku, počet listů i hmotnost usušených listů. Nejlépe dopadla nejvyšší dávka hormonu (250 miligramů na litr) spolu se 75 gramy hnojiva, tedy třemi čtvrtinami nejvyšší zkoušené dávky. Tyto sazenice měly patnáct listů, kmínek silný asi sedm centimetrů, výšku kolem 120 centimetrů (o něco víc než metr) a nejtěžší listy ze všech. Úplně nejvyšší rostliny, zhruba o čtvrt metru vyšší, ovšem vyrostly při poloviční dávce hnojiva. Samotná výška tedy o kvalitě sazenice nerozhoduje. V půdě ošetřené touto dávkou hnojiva naměřili vyšší obsah draslíku a dusíku. Autoři z toho usuzují, že by palmy mohly být připravené k vysazení o tři měsíce dřív.",
+        "procJeToDulezite": "Palmový olej patří k nejrozšířenějším plodinám světa a čas strávený ve školce tvoří velkou část nákladů na novou plantáž; kratší školka znamená levnější a rychlejší produkci. Zároveň jde o hezkou ukázku toho, jak rostlinný hormon a půdní mikroby spolupracují na růstu rostliny.",
+        "poznamkaKOmezenim": "Výsledek je předběžný: pokus proběhl na jediném místě během tří měsíců a každá kombinace se opakovala jen dvakrát, takže slibované zkrácení školky z dvanácti na devět měsíců zatím nikdo neověřil v praxi."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 395,
+              "end": 405
+            },
+            "matchedText": "čtvrtinami",
+            "messageCs": "Číslo „čtvrtinami“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „čtvrtinami — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[395,405]: čtvrtinami"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 134,
+              "end": 137
+            },
+            "matchedText": "540",
+            "messageCs": "Číslo „540“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „540 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[134,137]: 540"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 257,
+              "end": 267
+            },
+            "matchedText": "Bioneensis",
+            "messageCs": "Text opisuje původní název článku („Bioneensis“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[257,267]: Bioneensis"
+          },
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 327,
+              "end": 532
+            },
+            "matchedText": "Nejlepší dopadla kombinace nejvyšší zkoušené dávky hormonu se třemi čtvrtinami nejvyšší dávky hnojiva: takové sazenice měly patnáct listů, nejsilnější kmínek i nejtěžší listy ze všech vyzkoušených variant.",
+            "messageCs": "Tato věta má 27 slov a je moc dlouhá: „Nejlepší dopadla kombinace nejvyšší zkoušené dávky hormonu se třemi čtvrtinami …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[327,532]: Nejlepší dopadla kombinace nejvyšší zkoušené dávky hormonu se třemi čtvrtinami nejvyšší dávky hnojiva: takové sazenice měly patnáct listů, nejsilnější kmínek i nejtěžší listy ze všech vyzkoušených variant."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 390,
+              "end": 400
+            },
+            "matchedText": "Bioneensis",
+            "messageCs": "Text opisuje původní název článku („Bioneensis“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[390,400]: Bioneensis"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7166031447",
+        "title": "Planetary Wave Signatures in F‐Region Electron Density From COSMIC‐2 Global Ionospheric Specification",
+        "abstract": "Abstract This paper investigates F‐region ionospheric oscillations at planetary wave (PW) periods using electron density (Ne) profiles from COSMIC‐2 Global Ionospheric Specifications (GIS). Recent model studies predicted the presence of PWs in the ionosphere and that half of the variability at PW periods is associated with zonally symmetric (S0) oscillations. The main focus of this paper is to test the model predictions about the Ne variability in PW periods in the F‐region using COSMIC‐2 GIS observations. The derived wavenumber–period spectrum validates the model hypothesis, especially the presence of large S0 oscillations. To isolate PW variability from the lower atmosphere, wavelet filtering is applied at 300 km to minimize solar and geomagnetic effects. Approximately 40% of the F‐region electron density variability in the F‐region is linked to planetary wave activity, demonstrating that, in addition to tides, PWs play an important role in global‐scale plasma variability and ionospheric space weather.",
+        "date": "2026-11-15",
+        "url": "https://doi.org/10.1029/2026gl123835",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.1029/2026gl123835",
+        "openAlexId": "W7166031447",
+        "subfield": {
+          "id": "subfields/1912",
+          "name": "Space and Planetary Science"
+        },
+        "field": {
+          "id": "fields/19",
+          "name": "Earth and Planetary Sciences"
+        },
+        "topic": {
+          "id": "T10159",
+          "name": "Ionosphere and magnetosphere dynamics"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Sona Baiju",
+          "Jens Oberheide",
+          "Xian Feng Lu",
+          "Deepali Aggarwal"
+        ],
+        "venue": "Geophysical Research Letters",
+        "indexedDate": "2026-06-27",
+        "referencedWorksCount": 57,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.6612,
+          "everydayRelevance": 0.9,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.775,
+          "explainDetail": {
+            "v": 1,
+            "s": 0,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.1923
+          },
+          "everydayDomains": [
+            "energy",
+            "weather",
+            "mind"
+          ],
+          "subfieldKey": "subfields/1912",
+          "evidence": [
+            "total 0.7750 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.66 = P 0.69 − 0.45×t 0.00 − 0.15×j 0.19",
+            "outcome verbs (v 1.00): lowers, predicted, associated with, linked to",
+            "recognisable subjects (s 0.00): none",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.19): 3/156 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.90: 3 domain(s) — energy, weather, mind",
+            "everyday terms (3): solar, weather, focus",
+            "freshness 0.86: 2 day(s) old (effective date 2026-11-15)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Geophysical Research Letters",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1029/2026gl123835)"
+      },
+      "summary": {
+        "souhrn": "Počasí nekončí u mraků. Vědci prošli měření družic COSMIC-2, které mapují, kolik volných elektronů je v jednotlivých výškách nad Zemí. Vyšlo jim, že zhruba 40 % kolísání jejich počtu — tedy dvě pětiny — souvisí s takzvanými planetárními vlnami (planetary waves), pomalými vlnami s periodou několika dnů až dvou týdnů, které vznikají dole v atmosféře. Velkou část tvoří kolísání, při němž stoupá a klesá celý prstenec kolem planety naráz. Podle autorů tak část výkyvů v ionosféře, na které závisí rádiové spojení i družicová navigace, pochází zdola z atmosféry, ne jen od Slunce.",
+        "podrobneVysvetleni": "Ionosféra je vrstva vysoko nad zemí, kde sluneční záření vyráží z atomů elektrony. Právě na nich závisí šíření rádiových signálů i přesnost navigace. Vědci využili družice COSMIC-2. Ty měří, kolik elektronů je v jednotlivých výškách. Z měření vznikají globální mapy stavu ionosféry.\n\nZ nich autoři vytáhli kolísání s periodami několika dnů až dvou týdnů. Takovým vlnám se říká planetární vlny (planetary waves). Vznikají dole v atmosféře, podobně jako velké zákruty tryskového proudění. Otázka byla, jestli jejich stopa dosáhne až nahoru.\n\nAby oddělili vliv Slunce a magnetických bouří, zaměřili se na jedinou výšku. Zvolili 300 kilometrů nad zemí, tedy asi třicetkrát výš, než létají dopravní letadla. Data pak přefiltrovali metodou, která v časové řadě hledá pravidelné kolísání (wavelet).\n\nVýsledek potvrdil to, co dřív předpovídaly jen počítačové modely. Planetární vlny jsou v ionosféře dobře patrné. Velkou část z nich tvoří kolísání rozložené symetricky kolem celé zeměkoule. Taková vlna neputuje na východ ani na západ. Celý prstenec kolem planety stoupá a klesá najednou.\n\nZhruba 40 % kolísání hustoty elektronů, tedy dvě pětiny, souvisí s planetárními vlnami. Dosud se počítalo hlavně s denními přílivovými vlnami. Podle autorů je ale potřeba počítat i s těmito pomalejšími vlnami.",
+        "procJeToDulezite": "Na stavu ionosféry závisí kvalita družicové navigace a rádiového spojení, takže lepší porozumění jejím výkyvům se promítne do přesnějších předpovědí kosmického počasí. A ukazuje se, že část těch výkyvů má původ v počasí pod námi.",
+        "poznamkaKOmezenim": "Jde o jeden sledovaný parametr v jediné výšce a z jedné družicové mise, takže podíl kolem 40 % závisí i na zvoleném způsobu filtrování dat a může se při jiném postupu lišit."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 179,
+              "end": 180
+            },
+            "matchedText": "2",
+            "messageCs": "Číslo „2“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „2 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[179,180]: 2"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 135,
+              "end": 350
+            },
+            "matchedText": "Vyšlo jim, že zhruba 40 % kolísání jejich počtu — tedy dvě pětiny — souvisí s takzvanými planetárními vlnami (planetary waves), pomalými vlnami s periodou několika dnů až dvou týdnů, které vznikají dole v atmosféře.",
+            "messageCs": "Tato věta má 32 slov a je moc dlouhá: „Vyšlo jim, že zhruba 40 % kolísání jejich počtu — tedy dvě pětiny — souvisí s t…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[135,350]: Vyšlo jim, že zhruba 40 % kolísání jejich počtu — tedy dvě pětiny — souvisí s takzvanými planetárními vlnami (planetary waves), pomalými vlnami s periodou několika dnů až dvou týdnů, které vznikají dole v atmosféře."
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7233602159",
+        "title": "Storm Frank, December 2015: Atmospheric River Landfall in Western Norway, Fjord Catchment Volumes and Flood Response Budget",
+        "abstract": "Storm Frank reached western Norway at the end of December 2015 days after flooding northern England, driving an atmospheric river against the fjord coast where stations recorded 150 to 250 millimetres of rain, rivers in Odda and surrounding districts flooded, and roads were cut by water and slides. Fjord catchments are the extreme case of short response: small areas, slopes that begin at the water's edge and channels measured in tens of kilometres, so the budget emphasises response time beside volume, computing a catchment lag from channel length and celerity to show why warnings in this terrain are issued on rainfall forecasts rather than on river observations. Headline values are frank catchment mean mm hardanger = 130; frank rain volume km3 hardanger = 0.39; frank runoff coefficient hardanger = 0.75; frank runoff volume km3 hardanger = 0.2925; frank mean outflow m3 per s hardanger = 2257; frank catchment lag hours hardanger = 4.419. Lag is elevated to a headline entry here because in fjord terrain it, rather than total volume, governs the human consequences.",
+        "date": "2026-11-16",
+        "url": "https://doi.org/10.5281/zenodo.24265160",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.5281/zenodo.24265160",
+        "openAlexId": "W7233602159",
+        "subfield": {
+          "id": "subfields/2306",
+          "name": "Global and Planetary Change"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10930",
+          "name": "Flood Risk Assessment and Management"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "William Alexander Aldred"
+        ],
+        "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+        "indexedDate": "2026-11-16",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.4482,
+          "everydayRelevance": 1,
+          "freshness": 0.9286,
+          "credibility": 0.745,
+          "total": 0.7307,
+          "explainDetail": {
+            "v": 0.25,
+            "s": 0.75,
+            "q": 0,
+            "c": 1,
+            "t": 0,
+            "j": 0.1786
+          },
+          "everydayDomains": [
+            "weather",
+            "transport",
+            "water"
+          ],
+          "subfieldKey": "subfields/2306",
+          "evidence": [
+            "total 0.7307 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.45 = P 0.48 − 0.45×t 0.00 − 0.15×j 0.18",
+            "outcome verbs (v 0.25): cut",
+            "recognisable subjects (s 0.75): rivers (title, ×2), roads",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.18): 3/168 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — weather, transport, water",
+            "everyday terms (7): flood, flooding, rainfall, storm, driving, river, rivers",
+            "freshness 0.93: 1 day(s) old (effective date 2026-11-16)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Zenodo (CERN European Organization for Nuclear Research)",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.5281/zenodo.24265160)"
+      },
+      "summary": {
+        "souhrn": "Na konci prosince 2015 zasáhla západní Norsko bouře Frank, která pár dní předtím zatopila sever Anglie. Přivedla k fjordovému pobřeží takzvanou atmosférickou řeku (atmospheric river) — úzký pás vzduchu nasyceného vlhkostí, jaký dokáže nad oceánem přenést obrovské množství vody — a stanice naměřily 150 až 250 milimetrů srážek, řeky v Oddě a okolí se vylily a vodu i sesuvy přerušily silnice. Autor spočítal pro povodí Hardangeru jednoduchou bilanci: průměrně 130 milimetrů srážek, tedy asi 0,39 krychlového kilometru vody (390 miliard litrů), z nichž tři čtvrtiny odtekly do řek, což odpovídá průměrnému odtoku 2257 kubíků za sekundu. Nejdůležitější číslo ale není objem, nýbrž čas: voda od hřebene k moři doběhne zhruba za 4,4 hodiny. Právě proto se v tomto typu krajiny varování vydávají podle předpovědi deště, a ne podle toho, co ukazují vodočty na řekách — na reakci podle měření už by nezbyl čas.",
+        "podrobneVysvetleni": "Fjordová povodí jsou extrémním případem rychlé reakce na déšť: jsou malá, svahy začínají přímo u hladiny a koryta měří jen desítky kilometrů. Autor proto postavil bilanci tak, aby vedle objemu vody stál i čas. Postup je přímočarý — z naměřených srážek odvodil průměrný úhrn na celé povodí (130 milimetrů, tedy 130 litrů na každý metr čtvereční), vynásobením plochou dostal celkový objem spadlé vody 0,39 krychlového kilometru a odhadem podílu, který neodteče do podzemí ani se nevypaří, došel k objemu odtoku. Tento podíl je zde 0,75, tedy tři čtvrtiny veškerého deště skončily v řekách — ve strmé, mělce zvětralé krajině s nasáklou půdou je to vysoká hodnota. Rozpočítáno na dobu trvání epizody vychází průměrný odtok 2257 kubických metrů za sekundu, tedy přes dva miliony litrů každou vteřinu. Dobu doběhu autor odvodil z délky koryta a rychlosti, jakou se povodňová vlna šíří; vyšlo 4,419 hodiny. Praktický důsledek je jasný: mezi okamžikem, kdy začne pršet, a kulminací vody v údolí uplyne jen několik hodin. Kdyby varovný systém čekal na to, až vodočty ukážou vzestup hladiny, lidem v ohrožených obcích by zbylo příliš málo času. Proto se v tomto terénu rozhoduje podle předpovědi srážek.",
+        "procJeToDulezite": "Ukazuje, proč se v horských a úzkých údolích musí varovat podle předpovědi deště a ne podle hladin v řekách — čas na reakci se tam počítá na hodiny, ne na dny. Stejná logika platí i pro česká podhorská povodí, kde přívalové povodně přicházejí rychle.",
+        "poznamkaKOmezenim": "Jde o zjednodušený výpočet zveřejněný v repozitáři Zenodo, tedy bez doloženého recenzního řízení; uvedená čísla jsou odhady založené na předpokladech o podílu odtoku a rychlosti postupu vody, nikoli přímá měření, a drobné rozdíly ve vstupech by výsledky znatelně posunuly."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 210,
+              "end": 509
+            },
+            "matchedText": "Postup je přímočarý — z naměřených srážek odvodil průměrný úhrn na celé povodí (130 milimetrů, tedy 130 litrů na každý metr čtvereční), vynásobením plochou dostal celkový objem spadlé vody 0,39 krychlového kilometru a odhadem podílu, který neodteče do podzemí ani se nevypaří, došel k objemu odtoku.",
+            "messageCs": "Tato věta má 46 slov a je moc dlouhá: „Postup je přímočarý — z naměřených srážek odvodil průměrný úhrn na celé povodí …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[210,509]: Postup je přímočarý — z naměřených srážek odvodil průměrný úhrn na celé povodí (130 milimetrů, tedy 130 litrů na každý metr čtvereční), vynásobením plochou dostal celkový objem spadlé vody 0,39 krychlového kilometru a odhadem podílu, který neodteče do podzemí ani se nevypaří, došel k objemu odtoku."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=23.50",
+            "messageCs": "Věty jsou v průměru moc dlouhé (23,5 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=23.50"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 51,
+              "end": 59
+            },
+            "matchedText": " Frank, ",
+            "messageCs": "Text opisuje původní název článku („ Frank, “). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[51,59]:  Frank, "
+          },
+          {
+            "block": "souhrn",
+            "rule": "hype",
+            "ruleId": "hype:obrovsk",
+            "span": {
+              "start": 255,
+              "end": 263
+            },
+            "matchedText": "obrovské",
+            "messageCs": "Slovo „obrovské“ zbytečně přehání (pravidlo §2). Zvažte střízlivější formulaci, nebo doplňte konkrétní číslo či příklad.",
+            "detail": "hype:obrovsk @ souhrn[255,263]: obrovské"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=3",
+            "messageCs": "Počet vět delších než 30 slov: 3. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=3"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=47.0",
+            "messageCs": "Text se celkově čte těžko (index 47 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=47.0"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7171765547",
+        "title": "Machine-learning-based landslide susceptibility mapping using an InSAR-Refined Inventory in the Mandi district, Northwestern Himalaya, India",
+        "abstract": "Landslides triggered by intense monsoon rainfall and active tectonics pose a persistent threat to transportation corridors and settlements in the Mandi district of the Northwestern Himalaya. Most existing susceptibility assessments for this region rely on historical inventories that do not include currently moving. This study tests whether refining a historical landslide inventory with Interferometric Synthetic Aperture Radar (InSAR) improves machine-learning susceptibility mapping in Mandi district. Sentinel-1A data from January 2023 to December 2024 (59 ascending and 43 descending acquisitions) were processed with Persistent Scatterer (StaMPS) and Small Baseline Subset (MintPy) interferometry. Active deformation areas were used to refine the Geological Survey of India’s Bhukosh inventory of 968 landslides, which consists mainly of slides, by adding 1,685 InSAR-derived landslide points, including 36 field-verified new landslides. Twelve uncorrelated topographic, hydrological, geological, climatic, and anthropogenic conditioning factors were selected using Pearson correlation and variance inflation factor analysis. Four machine learning algorithms, Extreme Gradient Boosting (XGB), Random Forest, Logistic Regression, and Multilayer Perceptron, were trained and compared using a nested spatial block cross-validation framework across block sizes of 1,000–10,000 m. XGB achieved the best performance at an optimal block size of 2000 m, and the InSAR-based XGB model generally showed higher ROC-AUC and PR-AUC, along with lower ECE and Brier scores, indicating improved discrimination, calibration, and probabilistic accuracy across spatial validation scales (at 2 km: ROC-AUC 0.887 vs 0.878; expected calibration error 0.067 vs 0.097). SHAP and Mean Decrease Accuracy (MDA) plots identified distance to roads and slope as the dominant predisposing factors. . The map was categorized into five susceptibility zones using a curvature-based break-point detection approach, with a success rate of AUC of 0.909, indicating very good discrimination of areas with different susceptibility levels. The map represents susceptibility to slide-type landslides. Areas outside the AOA accounted for only 1.1% of the study region, indicating that the model can be reliably applied across most of the study area. These results demonstrate that coupling InSAR-derived deformation with machine learning substantially improves the completeness and calibration of the model of landslide susceptibility mapping, offering a scalable approach for hazard mitigation and land-use planning in tectonically active Himalayan terrain.",
+        "date": "2026-11-15",
+        "url": "https://doi.org/10.1038/s41598-026-79663-z",
+        "licence": "cc-by-nc-nd",
+        "source": "openalex",
+        "doi": "10.1038/s41598-026-79663-z",
+        "openAlexId": "W7171765547",
+        "subfield": {
+          "id": "subfields/2308",
+          "name": "Management, Monitoring, Policy and Law"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10535",
+          "name": "Landslides and related hazards"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Akshay Raj Manocha",
+          "Tran Trung Hieu",
+          "Łukasz Pawlik",
+          "Paweł Kroh",
+          "Nguyen Cong Quan"
+        ],
+        "venue": "Scientific Reports",
+        "indexedDate": "2026-07-31",
+        "referencedWorksCount": 69,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7476,
+          "everydayRelevance": 0.6,
+          "freshness": 0.8571,
+          "credibility": 0.745,
+          "total": 0.7256,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.5,
+            "q": 1,
+            "c": 0.7,
+            "t": 0,
+            "j": 0.4494
+          },
+          "everydayDomains": [
+            "money",
+            "weather"
+          ],
+          "subfieldKey": "subfields/2308",
+          "evidence": [
+            "total 0.7256 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.75 = P 0.82 − 0.45×t 0.00 − 0.15×j 0.45",
+            "outcome verbs (v 1.00): improved, improves, lowers, detection, decreases, triggered",
+            "recognisable subjects (s 0.50): forests, roads",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 0.70): −0.3 no outcome verb or recognisable subject in the title",
+            "jargon density (j 0.45): 16/356 abstract tokens are long or alphanumeric",
+            "everyday relevance 0.60: 2 domain(s) — money, weather",
+            "everyday terms (2): inflation, rainfall",
+            "freshness 0.86: 2 day(s) old (effective date 2026-11-15)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Scientific Reports",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by-nc-nd",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1038/s41598-026-79663-z)"
+      },
+      "summary": {
+        "souhrn": "Sesuvy půdy ohrožují v indickém okrese Mandi v severozápadním Himálaji silnice i vesnice, a mapy rizika se dosud opíraly hlavně o záznamy už proběhlých sesuvů. Vědci proto doplnili úřední seznam 968 sesuvů o 1 685 míst, kde satelitní radar Sentinel-1 zachytil, že se svah pomalu pohybuje právě teď — a 36 z nich ověřili přímo v terénu. Na takto rozšířených datech natrénovali čtyři různé počítačové modely; nejlépe dopadl algoritmus XGBoost, který dokázal rizikové a klidné svahy rozlišit o něco spolehlivěji než stejný model bez radarových dat. Nejsilnějšími signály rizika byly blízkost silnice a sklon svahu, tedy strmý terén nařezaný stavbou cest. Výsledná mapa dělí okres do pěti stupňů ohrožení a dá se použít při plánování zástavby a údržby komunikací.",
+        "podrobneVysvetleni": "Radarová interferometrie (InSAR) porovnává snímky stejného místa z družice pořízené v různých časech a odhalí posuny povrchu o milimetry až centimetry — tedy svahy, které se už plíživě hýbou, ale ještě se nesesunuly. Autoři zpracovali data družice Sentinel-1A z ledna 2023 až prosince 2024, celkem 102 přeletů ze dvou směrů, a nalezené deformační plochy přidali k historickému seznamu sesuvů Geologické služby Indie. Pak vybrali dvanáct vzájemně nezávislých vlivů (sklon, vzdálenost od silnic, geologie, srážky a další) a porovnali čtyři metody strojového učení. Testovali je tak, že území rozdělili na čtvercové bloky o straně 1 až 10 kilometrů a modely vždy trénovali na jedné části a zkoušeli na jiné — aby si model nemohl „zapamatovat\" sousední místa. Nejlépe vyšel XGBoost při blocích 2 kilometry: jeho schopnost rozlišit ohrožený svah od bezpečného dosáhla hodnoty 0,887 proti 0,878 u modelu bez radaru (1,0 je bezchybné rozlišení, 0,5 náhodné hádání) — tedy malé, ale konzistentní zlepšení. Výraznější byl posun v tom, nakolik odpovídají uváděné pravděpodobnosti skutečnosti: odchylka klesla ze 0,097 na 0,067, přibližně o třetinu. Hotová mapa rozdělená do pěti pásem ohrožení dosáhla hodnoty 0,909 a jen 1,1 % území — zhruba jeden hektar ze sta — leží mimo rozsah dat, na nichž se model učil.",
+        "procJeToDulezite": "Mapy ohrožení sesuvy rozhodují o tom, kde se smí stavět a kudy vést silnice, a tenhle postup ukazuje, že družicová data dokážou odhalit nebezpečné svahy dřív, než se někde skutečně něco sesune.",
+        "poznamkaKOmezenim": "Zlepšení proti běžnému modelu je spíš malé, mapa platí jen pro jeden himálajský okres a jen pro sesuvy typu „sjetí svahu\", a říká, kde hrozí riziko — ne kdy k sesuvu dojde."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unexplained-jargon",
+            "ruleId": "jargon:no_gloss:algoritmus",
+            "span": {
+              "start": 422,
+              "end": 432
+            },
+            "matchedText": "algoritmus",
+            "messageCs": "Termín „algoritmus“ není v téže větě vysvětlen běžnými slovy. Doplňte vysvětlení (např. „…, tedy …“) nebo termín nepoužívejte.",
+            "detail": "jargon:no_gloss:algoritmus @ souhrn[422,432]: algoritmus"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 298,
+              "end": 301
+            },
+            "matchedText": "102",
+            "messageCs": "Číslo „102“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „102 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[298,301]: 102"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 756,
+              "end": 997
+            },
+            "matchedText": "Nejlépe vyšel XGBoost při blocích 2 kilometry: jeho schopnost rozlišit ohrožený svah od bezpečného dosáhla hodnoty 0,887 proti 0,878 u modelu bez radaru (1,0 je bezchybné rozlišení, 0,5 náhodné hádání) — tedy malé, ale konzistentní zlepšení.",
+            "messageCs": "Tato věta má 39 slov a je moc dlouhá: „Nejlépe vyšel XGBoost při blocích 2 kilometry: jeho schopnost rozlišit ohrožený…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[756,997]: Nejlépe vyšel XGBoost při blocích 2 kilometry: jeho schopnost rozlišit ohrožený svah od bezpečného dosáhla hodnoty 0,887 proti 0,878 u modelu bez radaru (1,0 je bezchybné rozlišení, 0,5 náhodné hádání) — tedy malé, ale konzistentní zlepšení."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=27.23",
+            "messageCs": "Věty jsou v průměru moc dlouhé (27,2 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=27.23"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=5",
+            "messageCs": "Počet vět delších než 30 slov: 5. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=5"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=36.8",
+            "messageCs": "Text se celkově čte těžko (index 37 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=36.8"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 37,
+              "end": 45
+            },
+            "matchedText": "e Mandi ",
+            "messageCs": "Text opisuje původní název článku („e Mandi “). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[37,45]: e Mandi "
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7233550806",
+        "title": "The June 2023 Central Chile Atmospheric River: Foothill Rainfall Volume, Snow-Level Exposure and Biobío Flood Budget",
+        "abstract": "In the austral winter of June 2023 an atmospheric river made landfall in central Chile with an unusually high snow level, dropping heavy rain into the Andean foothills of the Maule and Biobío regions, swelling rivers that burst their banks, isolating towns and damaging roads and bridges across several provinces. The Chilean case repeats a pattern seen in both northern-hemisphere examples but with Andean geometry: a compact, steep basin converts rain to flood quickly, a snow level above the foothill zone removes the storage that winter storms usually enjoy, so the inundation volume is depth multiplied by area with a high runoff coefficient applied over saturated winter soils. Headline values are chile2023 basin mean rainfall mm biobio = 110; chile2023 rain volume km3 biobio = 2.669; chile2023 runoff coefficient biobio = 0.72; chile2023 runoff volume km3 biobio = 1.922; chile2023 mean outflow m3 per s biobio = 7414; chile2023 snow level m biobio = 2800. Concentration ratio and rain fraction are the diagnostic pair here; volume alone would make this storm look ordinary, which it was not.",
+        "date": "2026-11-16",
+        "url": "https://doi.org/10.5281/zenodo.24265007",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.5281/zenodo.24265007",
+        "openAlexId": "W7233550806",
+        "subfield": {
+          "id": "subfields/2306",
+          "name": "Global and Planetary Change"
+        },
+        "field": {
+          "id": "fields/23",
+          "name": "Environmental Science"
+        },
+        "topic": {
+          "id": "T10930",
+          "name": "Flood Risk Assessment and Management"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "William Alexander Aldred"
+        ],
+        "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+        "indexedDate": "2026-11-16",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.3623,
+          "everydayRelevance": 1,
+          "freshness": 0.9286,
+          "credibility": 0.745,
+          "total": 0.6964,
+          "explainDetail": {
+            "v": 0,
+            "s": 1,
+            "q": 0,
+            "c": 1,
+            "t": 0,
+            "j": 0.5848
+          },
+          "everydayDomains": [
+            "weather",
+            "water",
+            "mind"
+          ],
+          "subfieldKey": "subfields/2306",
+          "evidence": [
+            "total 0.6964 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.36 = P 0.45 − 0.45×t 0.00 − 0.15×j 0.58",
+            "outcome verbs (v 0.00): none",
+            "recognisable subjects (s 1.00): soil, rivers (title, ×2), towns, roads",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.58): 10/171 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — weather, water, mind",
+            "everyday terms (7): flood, rainfall, snow, storm, river, rivers, concentration",
+            "freshness 0.93: 1 day(s) old (effective date 2026-11-16)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Zenodo (CERN European Organization for Nuclear Research)",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.5281/zenodo.24265007)"
+      },
+      "summary": {
+        "souhrn": "V červnu 2023 zasáhla střední Chile takzvaná atmosférická řeka — úzký pás velmi vlhkého vzduchu, který se nad oceánem chová jako obří přívodní potrubí vody. Neobvyklé bylo to, že hranice sněžení ležela až ve 2800 metrech, takže do podhůří And v regionech Maule a Biobío padal déšť tam, kde v zimě obvykle napadne sníh. Autor studie spočítal, že v povodí Biobío spadlo v průměru 110 milimetrů srážek, tedy 110 litrů vody na každý metr čtvereční, dohromady zhruba 2,7 kubického kilometru. Z toho asi 72 procent — tedy téměř tři čtvrtiny — odteklo do řek, které se vylily z břehů, odřízly obce a poškodily silnice a mosty. Hlavní poučení je, že při teplé zimní bouři chybí sníh jako přirozený zásobník, který by vodu podržel na pár týdnů v horách, a všechno přichází do koryt najednou.",
+        "podrobneVysvetleni": "Autor rozebral bouři jednoduchým vodním rozpočtem: vzal průměrný úhrn srážek nad povodím řeky Biobío, vynásobil ho plochou povodí a výsledek upravil koeficientem odtoku, tedy odhadem toho, jaká část deště skutečně steče do řeky místo aby se vsákla nebo vypařila. Vyšlo mu 110 milimetrů srážek v průměru na celé povodí (asi 110 litrů na metr čtvereční), celkový objem 2,669 kubického kilometru vody — pro představu zhruba 2,7 miliardy krychlových metrů — a koeficient odtoku 0,72, což znamená, že do řek se dostalo kolem 1,9 kubického kilometru. Přepočteno na průtok to odpovídá průměrnému odtoku 7414 kubických metrů za sekundu, tedy mnohonásobku běžného stavu velké řeky. Klíčový je přitom ten vysoký koeficient: v zimě bývají půdy nasycené vodou, takže nemají kam dál přijímat, a když navíc hranice sněžení vystoupá nad podhůří, nevznikne sněhová pokrývka, která by srážky dočasně uskladnila. Andská povodí jsou navíc krátká a strmá, takže voda doteče do nížin rychle. Autor upozorňuje, že samotný objem srážek by tuhle bouři ukázal jako docela obyčejnou — teprve v kombinaci s tím, kde a jak rychle se voda soustředila, je vidět, proč napáchala takové škody.",
+        "procJeToDulezite": "Ukazuje, že o povodni nerozhoduje jen to, kolik naprší, ale i teplota bouře — když se zimní srážky změní ze sněhu v déšť, přijde do řek během pár hodin voda, která by jinak ležela v horách celé týdny. To je situace, kterou s oteplováním čekají i hory ve střední Evropě.",
+        "poznamkaKOmezenim": "Jde o práci zveřejněnou v otevřeném repozitáři Zenodo bez recenzního řízení a výsledky stojí na zjednodušeném výpočtu (srážky krát plocha krát odhadnutý koeficient odtoku), takže uvedená čísla je třeba brát jako řádové odhady, ne jako přesně změřené hodnoty."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 263,
+              "end": 544
+            },
+            "matchedText": "Vyšlo mu 110 milimetrů srážek v průměru na celé povodí (asi 110 litrů na metr čtvereční), celkový objem 2,669 kubického kilometru vody — pro představu zhruba 2,7 miliardy krychlových metrů — a koeficient odtoku 0,72, což znamená, že do řek se dostalo kolem 1,9 kubického kilometru.",
+            "messageCs": "Tato věta má 48 slov a je moc dlouhá: „Vyšlo mu 110 milimetrů srážek v průměru na celé povodí (asi 110 litrů na metr č…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[263,544]: Vyšlo mu 110 milimetrů srážek v průměru na celé povodí (asi 110 litrů na metr čtvereční), celkový objem 2,669 kubického kilometru vody — pro představu zhruba 2,7 miliardy krychlových metrů — a koeficient odtoku 0,72, což znamená, že do řek se dostalo kolem 1,9 kubického kilometru."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=27.92",
+            "messageCs": "Věty jsou v průměru moc dlouhé (27,9 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=27.92"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R3",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "longSentenceCount=5",
+            "messageCs": "Počet vět delších než 30 slov: 5. Zkraťte je na dvě kratší věty.",
+            "detail": "readability:R3 @ all[0,0]: longSentenceCount=5"
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R9",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "compositeIndex=39.7",
+            "messageCs": "Text se celkově čte těžko (index 40 ze 100). Zkraťte věty a nahraďte odborná slova běžnými.",
+            "detail": "readability:R9 @ all[0,0]: compositeIndex=39.7"
+          }
+        ],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 262,
+              "end": 270
+            },
+            "matchedText": " Biobío ",
+            "messageCs": "Text opisuje původní název článku („ Biobío “). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[262,270]:  Biobío "
+          },
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 353,
+              "end": 361
+            },
+            "matchedText": " Biobío ",
+            "messageCs": "Text opisuje původní název článku („ Biobío “). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[353,361]:  Biobío "
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-11-17T05:29:52.848Z",
+  "generatedOn": "2026-11-17",
+  "schemaVersion": 1
+}

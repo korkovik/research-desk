@@ -1376,6 +1376,46 @@
       "titleKey": "fatherinclusiveperinatalobesitypreventionarandomizedclinicaltrial",
       "publishedOn": "2026-11-10",
       "category": "health-medicine"
+    },
+    {
+      "openalexId": "W7233577011",
+      "doi": "10.46799/adv.v4i11.712",
+      "arxivId": null,
+      "titleKey": "effectivenessofgiberellicacidga3hormoneandbiofertilizerbioneensisonthegrowthofoilpalmseedlingselaeisguineensisjacq",
+      "publishedOn": "2026-11-17",
+      "category": "nature-climate"
+    },
+    {
+      "openalexId": "W7166031447",
+      "doi": "10.1029/2026gl123835",
+      "arxivId": null,
+      "titleKey": "planetarywavesignaturesinfregionelectrondensityfromcosmic2globalionosphericspecification",
+      "publishedOn": "2026-11-17",
+      "category": "nature-climate"
+    },
+    {
+      "openalexId": "W7233602159",
+      "doi": "10.5281/zenodo.24265160",
+      "arxivId": null,
+      "titleKey": "stormfrankdecember2015atmosphericriverlandfallinwesternnorwayfjordcatchmentvolumesandfloodresponsebudget",
+      "publishedOn": "2026-11-17",
+      "category": "nature-climate"
+    },
+    {
+      "openalexId": "W7171765547",
+      "doi": "10.1038/s41598-026-79663-z",
+      "arxivId": null,
+      "titleKey": "machinelearningbasedlandslidesusceptibilitymappingusinganinsarrefinedinventoryinthemandidistrictnorthwesternhimalayaindia",
+      "publishedOn": "2026-11-17",
+      "category": "nature-climate"
+    },
+    {
+      "openalexId": "W7233550806",
+      "doi": "10.5281/zenodo.24265007",
+      "arxivId": null,
+      "titleKey": "thejune2023centralchileatmosphericriverfoothillrainfallvolumesnowlevelexposureandbiobiofloodbudget",
+      "publishedOn": "2026-11-17",
+      "category": "nature-climate"
     }
   ]
 }
