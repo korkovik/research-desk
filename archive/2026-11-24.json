@@ -1,0 +1,701 @@
+{
+  "date": "2026-11-24",
+  "categoryKey": "psychology-behaviour",
+  "categoryLabel": "Psychologie a chování",
+  "language": "cs",
+  "entries": [
+    {
+      "candidate": {
+        "id": "openalex:W7238141618",
+        "title": "THE CAUSES AND PREVENTION OF SUICIDE AMONG PRE-SERVICE TEACHERS IN NORTH-CENTRAL COLLEGES OF EDUCATION, NIGERIA",
+        "abstract": "The study aimed to find out the causes and prevention of suicide among pre-service teachers in North Central Nigeria Colleges of Education. The research was conducted using four Colleges of Education in North-central, Nigeria. The researchers adopted a cross-sectional research design paradigm method. The population of sampled Colleges of Education was 22,600 pre-service teachers for 2025/2026 academic session. A sample of 465 comprised of 212 (45.6%) and 253(54.4%) male and female pre-service teachers respectively. A purposive sampling technique was used for the selection of these four Colleges of Education, in North-central Nigeria, while multi-stage sampling procedure was used for selection of sample pre-service teachers in the study. The researchers used questionnaire which has a reliability index value of 0.842. descriptive, t-test and one way ANOVA were employed. the findings of the study revealed that negative self-esteem, depression, self-administration of psychoactive substances, interpersonal conflict between parents and siblings, family history of mental disorders, low academic achievement, betrayal, access to firearms, trauma resulting from physical and sexual abuse, and family history of suicide are major factors contributing to suicide among pre-service teachers in North-central, Colleges of Education. Based on the results the researchers recommended that Colleges of Education management, in collaboration with counselling centres, should organise regular suicide awareness programmes, mental health campaigns, and psychological support services to reduce suicide behaviours among pre-service teachers.",
+        "date": "2026-11-22",
+        "url": "https://doi.org/10.70382/sjestp.v14i8.0123",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.70382/sjestp.v14i8.0123",
+        "openAlexId": "W7238141618",
+        "subfield": {
+          "id": "subfields/3203",
+          "name": "Clinical Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T10376",
+          "name": "Suicide and Self-Harm Studies"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "MARIS ZAKKA ZINYAHS",
+          "SABA IBRAHIM KABIR",
+          "HAMZA AHMED  MUSA"
+        ],
+        "venue": "Journal of Educational Studies Trends and Practice",
+        "indexedDate": "2026-11-23",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8617,
+          "everydayRelevance": 1,
+          "freshness": 0.9286,
+          "credibility": 0.745,
+          "total": 0.8961,
+          "explainDetail": {
+            "v": 1,
+            "s": 0.5,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.0889
+          },
+          "everydayDomains": [
+            "school",
+            "health",
+            "family"
+          ],
+          "subfieldKey": "subfields/3203",
+          "evidence": [
+            "total 0.8961 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.86 = P 0.88 − 0.45×t 0.00 − 0.15×j 0.09",
+            "outcome verbs (v 1.00): reduces, prevention (title, ×2), causes (title, ×2)",
+            "recognisable subjects (s 0.50): teachers (title, ×2)",
+            "quantified effect (q 1): percentage",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.09): 2/225 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — school, health, family",
+            "everyday terms (7): teacher, teachers, health, depression, parent, parents, family",
+            "freshness 0.93: 1 day(s) old (effective date 2026-11-23)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Journal of Educational Studies Trends and Practice",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.70382/sjestp.v14i8.0123)"
+      },
+      "summary": {
+        "souhrn": "Vědci se ptali 465 studentů učitelství ze čtyř pedagogických škol ve středním Nigérii, co podle nich vede jejich spolužáky k sebevraždě. Odpovídali muži i ženy, žen bylo o něco víc — 253 z 465, tedy zhruba polovina a kousek. Jako nejčastější okolnosti se objevily deprese, nízké sebevědomí, užívání návykových látek bez lékařského dohledu a konflikty v rodině. Studenti dále uváděli neúspěch ve studiu, zradu blízkého člověka, zkušenost s násilím a snadný přístup ke střelné zbrani. Autoři doporučují, aby školy společně s poradenskými centry nabízely pravidelnou osvětu a dostupnou psychologickou podporu.",
+        "podrobneVysvetleni": "Výzkumníci pracovali ve čtyřech pedagogických školách ve středním Nigérii. Školy nevybírali náhodně, zvolili je záměrně. Studenty pak vybírali v několika krocích. Dotazník vyplnilo 465 budoucích učitelů: 212 mužů (45,6 %, tedy necelá polovina) a 253 žen (54,4 %). Šlo o průřezové šetření (cross-sectional), tedy snímek jednoho okamžiku, ne sledování lidí v čase. Spolehlivost dotazníku měla hodnotu 0,842; jednotlivé otázky spolu tedy dobře souvisely. Odpovědi autoři popsali souhrnně a porovnali skupiny pomocí t-testu a analýzy rozptylu. To jsou postupy, které ukážou, zda se odpovědi různých skupin liší víc, než by způsobila náhoda. Jako hlavní okolnosti vyšly jednak věci uvnitř člověka. Patří mezi ně nízké sebehodnocení, deprese a užívání návykových látek bez lékařského dohledu. Druhou skupinou jsou věci kolem něj. Studenti sem řadili napjaté vztahy s rodiči a sourozenci, duševní nemoci nebo sebevraždy v rodině, slabé studijní výsledky a zklamání od blízkých. Zmiňovali také zkušenost s fyzickým nebo sexuálním násilím a snadný přístup ke střelné zbrani. Z toho autoři vyvozují doporučení pro vedení škol: spolupracovat s poradenskými centry, pořádat osvětu o sebevražednosti a nabízet psychologickou pomoc. Studie nepočítá, kolik sebevražd se skutečně stalo. Ukazuje, které okolnosti považují oslovení studenti za nejdůležitější.",
+        "procJeToDulezite": "Mladí lidé na začátku učitelské dráhy patří mezi skupiny, u nichž se duševní potíže často přehlédnou, a studie připomíná, že za sebevražedným jednáním stojí souběh osobních i rodinných okolností. Pro školy z toho plyne jasný úkol: dostupné poradenství a otevřené mluvení o duševním zdraví nejsou nadstandard.",
+        "poznamkaKOmezenim": "Jde o jednorázové dotazníkové šetření na 465 studentech ze čtyř záměrně vybraných škol, takže zachycuje názory respondentů na příčiny, nikoli prokázané příčiny samotné, a výsledky nelze bez dalšího přenášet jinam."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 399,
+              "end": 404
+            },
+            "matchedText": "0,842",
+            "messageCs": "Číslo „0,842“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „0,842 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[399,404]: 0,842"
+          }
+        ],
+        "soft": [
+          {
+            "block": "procJeToDulezite",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 195
+            },
+            "matchedText": "Mladí lidé na začátku učitelské dráhy patří mezi skupiny, u nichž se duševní potíže často přehlédnou, a studie připomíná, že za sebevražedným jednáním stojí souběh osobních i rodinných okolností.",
+            "messageCs": "Tato věta má 29 slov a je moc dlouhá: „Mladí lidé na začátku učitelské dráhy patří mezi skupiny, u nichž se duševní po…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ procJeToDulezite[0,195]: Mladí lidé na začátku učitelské dráhy patří mezi skupiny, u nichž se duševní potíže často přehlédnou, a studie připomíná, že za sebevražedným jednáním stojí souběh osobních i rodinných okolností."
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7237513660",
+        "title": "Multicomponent predictors of motor competence in university students: Physical fitness outweighs cognitive and dual-task contributions",
+        "abstract": "This study examined multicomponent predictors of Motor Competence in young adults and determined whether physical fitness outweighs cognitive and dual-task contributions, while exploring sex differences. A total of 311 healthy young adults (164 women) completed a motor competence test (HOLMOT) together with assessments of anthropometry, physical fitness, cognitive performance, visuomotor coordination, and dual-task cost. Men demonstrated higher performance in physical fitness, coordination accuracy, and HOLMOT completion time (p < 0.001), whereas cognitive performance did not differ by sex. In hierarchical models, physical fitness produced the largest increase in explained variance (ΔR2 ≈ 0.21, p < 0.001). In the final multicomponent model (R2 = 0.49), lower-limb power assessed by standing long jump emerged as the strongest independent predictor of MC (β = -0.47, p < 0.001), with additional contribution from eye-foot coordination under visual interference (β = -0.22, p = 0.016). Cognitive performance and dual-task cost did not explain unique variance once physical and coordination variables were considered.bMotor competence performance in healthy young adults was mainly associated with neuromuscular capacity, particularly lower-limb power, with a secondary contribution from visuomotor coordination under interference. These findings highlight the relevance of physical fitness, particularly lower-limb power, in complex motor performance and suggest that cognitive and dual-task variables play a limited independent predictive role in this population.",
+        "date": "2026-11-22",
+        "url": "https://doi.org/10.1080/02640414.2026.2765996",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1080/02640414.2026.2765996",
+        "openAlexId": "W7237513660",
+        "subfield": {
+          "id": "subfields/3204",
+          "name": "Developmental and Educational Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T12241",
+          "name": "Children's Physical and Motor Development"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "José Carlos Cabrera Linares",
+          "Cristian Martínez‐Salazar",
+          "JUAN ANTONIO PÁRRAGA MONTILLA",
+          "Pedro Ángel Latorre Román"
+        ],
+        "venue": "Journal of Sports Sciences",
+        "indexedDate": "2026-11-23",
+        "referencedWorksCount": 37,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8757,
+          "everydayRelevance": 1,
+          "freshness": 0.9286,
+          "credibility": 0.605,
+          "total": 0.8821,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 1,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.2451
+          },
+          "everydayDomains": [
+            "school",
+            "money",
+            "body"
+          ],
+          "subfieldKey": "subfields/3204",
+          "evidence": [
+            "total 0.8821 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.88 = P 0.91 − 0.45×t 0.00 − 0.15×j 0.25",
+            "outcome verbs (v 0.75): increases, lowers, associated with",
+            "recognisable subjects (s 1.00): students (title, ×2), adults, women, men",
+            "quantified effect (q 1): p-value",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.25): 5/204 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — school, money, body",
+            "everyday terms (6): student, students, university, cost, costs, fitness",
+            "freshness 0.93: 1 day(s) old (effective date 2026-11-23)",
+            "credibility 0.61 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Journal of Sports Sciences",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "no tldr; falling back to the source abstract (§4.2)"
+      },
+      "summary": {
+        "souhrn": "Kdo dobře zvládne složitý pohybový test, bývá hlavně dobře fyzicky připravený — ne nutně bystřejší. Vědci nechali 311 zdravých mladých dospělých (z toho 164 žen) projít testem pohybové způsobilosti HOLMOT. K tomu jim změřili tělesné rozměry, tělesnou zdatnost, rozumové schopnosti a souhru oka s končetinami. Sledovali také takzvanou cenu dvojího úkolu, tedy o kolik se výkon zhorší, když člověk dělá dvě věci naráz. Nejsilnější souvislost s výsledkem měla výbušná síla nohou měřená skokem dalekým z místa, zatímco rozumové testy a zvládání dvou úkolů naráz už nic navíc nevysvětlily. Muži byli lepší v zdatnosti i přesnosti koordinace, v rozumových testech se ale pohlaví nelišila.",
+        "podrobneVysvetleni": "Pohybová způsobilost (motor competence) znamená, jak dobře člověk zvládne složitější pohybové úkoly — tedy obratnost a koordinaci dohromady. Autoři ji měřili testem HOLMOT, kde se hodnotí čas potřebný k jeho zvládnutí: čím kratší čas, tím lepší výkon. Ke každému účastníkovi pak přidali měření postavy, tělesné zdatnosti, rozumového výkonu, souhry oka s nohou a ceny dvojího úkolu.\n\nPotom postupně přidávali skupiny proměnných do statistického modelu a sledovali, kolik rozdílů mezi lidmi každá skupina vysvětlí. Tělesná zdatnost přidala nejvíc: zvedla vysvětlený podíl rozdílů zhruba o pětinu. Celý model nakonec vysvětlil přibližně polovinu rozdílů mezi lidmi (R² = 0,49) — druhá polovina zůstává na vrub věcem, které se neměřily, nebo náhodě.\n\nNejsilnějším jednotlivým ukazatelem byl skok daleký z místa, tedy výbušná síla nohou. Jeho vliv byl přibližně dvakrát silnější než vliv druhého v pořadí, kterým byla souhra oka s nohou při rušivém zrakovém podnětu. V obou případech platilo, že lepší výsledek v daném měření znamenal kratší čas v testu HOLMOT.\n\nRozumový výkon ani cena dvojího úkolu už nepřidaly nic, co by nebylo vysvětleno tělesnými a koordinačními ukazateli. U zdravých mladých dospělých tedy o výsledku rozhoduje spíš to, co dokážou svaly a nervosvalové řízení, než rychlost myšlení.",
+        "procJeToDulezite": "Pokud chce někdo zlepšit obratnost a zvládání složitějších pohybů, podle těchto dat se vyplatí trénovat sílu a výbušnost nohou spíš než doufat, že pomůže samotné cvičení pozornosti. Pro učitele tělesné výchovy to znamená konkrétní vodítko, co v hodinách rozvíjet.",
+        "poznamkaKOmezenim": "Jde o jednorázové měření zdravých mladých dospělých, takže ukazuje jen souvislosti, ne příčinu a následek — a u dětí, starších lidí nebo pacientů mohou vyjít výsledky jinak."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 114,
+              "end": 117
+            },
+            "matchedText": "311",
+            "messageCs": "Číslo „311“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „311 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[114,117]: 311"
+          },
+          {
+            "block": "souhrn",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 153,
+              "end": 156
+            },
+            "matchedText": "164",
+            "messageCs": "Číslo „164“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „164 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ souhrn[153,156]: 164"
+          }
+        ],
+        "soft": [
+          {
+            "block": "procJeToDulezite",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 181
+            },
+            "matchedText": "Pokud chce někdo zlepšit obratnost a zvládání složitějších pohybů, podle těchto dat se vyplatí trénovat sílu a výbušnost nohou spíš než doufat, že pomůže samotné cvičení pozornosti.",
+            "messageCs": "Tato věta má 27 slov a je moc dlouhá: „Pokud chce někdo zlepšit obratnost a zvládání složitějších pohybů, podle těchto…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ procJeToDulezite[0,181]: Pokud chce někdo zlepšit obratnost a zvládání složitějších pohybů, podle těchto dat se vyplatí trénovat sílu a výbušnost nohou spíš než doufat, že pomůže samotné cvičení pozornosti."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=17.47",
+            "messageCs": "Věty jsou v průměru moc dlouhé (17,5 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=17.47"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7237189373",
+        "title": "EMPATHY mindfulness intervention on mental and relational well-being among spouses of patients receiving hemodialysis: a randomized controlled trial",
+        "abstract": "Purpose This study aims to evaluate the effectiveness of the EMPATHY mindfulness intervention in improving stress, mindfulness, dyadic coping and marital satisfaction among spouses of patients undergoing hemodialysis (HD). Design/methodology/approach This study was conducted at a regional hospital in Karawang, involving 200 couples of HD patients: 100 in the EMPATHY mindfulness group and 100 controls. The study design used a randomized controlled trial measuring psychosocial outcomes before and after the intervention, analyzed using analysis of covariance and adjusting for baseline scores. Findings EMPATHY significantly reduced perceived stress (adjusted β = −1.40, 95% CI −2.36 to −0.43; p = 0.005) and increased mindfulness (β = 1.38, 95% CI 0.26–2.50; p = 0.016), dyadic coping (β = 2.19, 95% CI 0.06–4.31; p = 0.043) and marital satisfaction (β = 1.87, 95% CI 0.09–3.64; p = 0.039) compared to control group. Subscale analyses showed significant effects on observing, supportive dyadic coping, dyadic coping quality and marital satisfaction in the context of HD. Practical implications EMPATHY mindfulness as a spouse-centred psychosocial intervention could be integrated into routine HD to support spouses’ psychological well-being, stress management and dyadic coping in response to the demands of long-term care. Originality/value This study extends existing psychosocial interventions for HD by integrating mindfulness-based psychological regulation and dyadic coping within a single family-based, couple-centred intervention. EMPATHY is among the first dyadic mindfulness-based interventions developed for HD couples in Indonesia and uniquely integrates digital delivery to support scalability in community-based chronic care.",
+        "date": "2026-11-23",
+        "url": "https://doi.org/10.1108/jpmh-08-2026-0239",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.1108/jpmh-08-2026-0239",
+        "openAlexId": "W7237189373",
+        "subfield": {
+          "id": "subfields/3203",
+          "name": "Clinical Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T10708",
+          "name": "Mindfulness and Compassion Interventions"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": false,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Nita Syamsiah",
+          "Uun Nurjannah",
+          "Rosliana Dewi",
+          "Arif Budimansyah Purba",
+          "Erlena Erlena erlena",
+          "Sri Mulyati",
+          "Ilham Suryana",
+          "Lalu Rodi Sanjaya",
+          "M. Faiq Mubarok"
+        ],
+        "venue": "Journal of Public Mental Health",
+        "indexedDate": "2026-11-21",
+        "referencedWorksCount": 28,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.8186,
+          "everydayRelevance": 1,
+          "freshness": 0.9286,
+          "credibility": 0.605,
+          "total": 0.8593,
+          "explainDetail": {
+            "v": 0.75,
+            "s": 0.75,
+            "q": 1,
+            "c": 1,
+            "t": 0,
+            "j": 0.2092
+          },
+          "everydayDomains": [
+            "health",
+            "family",
+            "mind"
+          ],
+          "subfieldKey": "subfields/3203",
+          "evidence": [
+            "total 0.8593 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.82 = P 0.85 − 0.45×t 0.00 − 0.15×j 0.21",
+            "outcome verbs (v 0.75): reduced, increased, extends",
+            "recognisable subjects (s 0.75): patients (title, ×2), hospitals",
+            "quantified effect (q 1): percentage, p-value, 95% CI",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.21): 5/239 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — health, family, mind",
+            "everyday terms (6): patient, patients, hospital, family, stress, well-being",
+            "freshness 0.93: 1 day(s) old (effective date 2026-11-23)",
+            "credibility 0.61 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.30 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Journal of Public Mental Health",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.30: closed or bronze — the reader cannot follow the link and read it",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.1108/jpmh-08-2026-0239)"
+      },
+      "summary": {
+        "souhrn": "Manželé a manželky lidí docházejících na dialýzu nesou kus nemoci s sebou, i když sami nejsou pacienty. Indonéští výzkumníci v nemocnici v Karawangu proto vyzkoušeli program EMPATHY: trénink všímavosti (mindfulness) spojený s nácvikem toho, jak nemoc zvládat společně jako pár. Do studie zařadili 200 manželských párů, tedy čtyři stovky lidí, a losem je rozdělili na dvě stejné části. Sto párů programem prošlo, druhá stovka dostala jen obvyklou péči. Partneři z programu pak uváděli nižší pociťovaný stres a o něco lepší vzájemnou oporu i spokojenost v manželství, rozdíly ale byly malé: řádově jeden až dva body na dotazníkových stupnicích.",
+        "podrobneVysvetleni": "Program propojil dvě věci. První je všímavost (mindfulness), tedy cvičení pozornosti k tomu, co se právě děje, bez hodnocení a bez snahy to hned měnit. Druhou je společné zvládání zátěže ve dvojici (dyadic coping) — nácvik toho, jak si partneři sdělují starosti a jak si pomáhají. Část programu probíhala digitálně, aby šel použít i mimo nemocnici. Výzkumníci zařadili do studie 200 párů, tedy zhruba tolik lidí, kolik se vejde do velké školní auly, a losem je rozdělili: 100 párů, tedy přesná polovina, prošlo programem, zbylých 100 párů tvořilo srovnávací skupinu. Před začátkem a po skončení všichni vyplnili dotazníky o stresu, všímavosti, vzájemné opoře a spokojenosti v manželství. Při vyhodnocení se počítalo s tím, jak kdo odpovídal už na začátku.\n\nVe skupině s programem klesl pociťovaný stres v průměru o 1,4 bodu dotazníku — představte si posun o jeden stupeň u jedné jediné otázky. Všímavost stoupla zhruba stejně. Vzájemná opora v páru se zlepšila o 2,2 bodu, tedy asi o dva dílky na stupnici, a spokojenost v manželství o 1,9 bodu, tedy necelé dva dílky. U vzájemné opory se přitom rozpětí možných hodnot těsně dotýkalo nuly, takže skutečný přínos může být i velmi malý. Autoři navrhují nabízet podobný program partnerům pacientů rutinně, jako součást péče o celou rodinu.",
+        "procJeToDulezite": "Dlouhodobá nemoc v rodině zasahuje i toho, kdo pečuje, a jeho psychická pohoda se obvykle neřeší. Studie ukazuje, že i poměrně jednoduchý program nabídnutý manželům a manželkám může mírně ulevit od stresu a zlepšit vztah.",
+        "poznamkaKOmezenim": "Jde o výsledky z jediné nemocnice v Indonésii, založené na vlastních odpovědích v dotaznících, s malými rozdíly mezi skupinami a bez údajů o tom, zda zlepšení vydrží i po delší době."
+      },
+      "verification": null,
+      "checks": {
+        "ok": false,
+        "status": "fail",
+        "hard": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "unanchored-number",
+            "ruleId": "number_anchor:unanchored",
+            "span": {
+              "start": 530,
+              "end": 533
+            },
+            "matchedText": "100",
+            "messageCs": "Číslo „100“ nemá vysvětlení běžnými slovy (§7.3). Doplňte přirovnání, například „100 — tedy zhruba jeden člověk z osmi“.",
+            "detail": "number_anchor:unanchored @ podrobneVysvetleni[530,533]: 100"
+          }
+        ],
+        "soft": [
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 349,
+              "end": 566
+            },
+            "matchedText": "Výzkumníci zařadili do studie 200 párů, tedy zhruba tolik lidí, kolik se vejde do velké školní auly, a losem je rozdělili: 100 párů, tedy přesná polovina, prošlo programem, zbylých 100 párů tvořilo srovnávací skupinu.",
+            "messageCs": "Tato věta má 34 slov a je moc dlouhá: „Výzkumníci zařadili do studie 200 párů, tedy zhruba tolik lidí, kolik se vejde …“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ podrobneVysvetleni[349,566]: Výzkumníci zařadili do studie 200 párů, tedy zhruba tolik lidí, kolik se vejde do velké školní auly, a losem je rozdělili: 100 párů, tedy přesná polovina, prošlo programem, zbylých 100 párů tvořilo srovnávací skupinu."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=17.95",
+            "messageCs": "Věty jsou v průměru moc dlouhé (17,9 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=17.95"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7237469200",
+        "title": "Bullying Prevention Strategies in Middle Schools: Qualitative Analysis Based on Literature Study of Inclusive Education Practices",
+        "abstract": "Bullying is still a serious problem in junior high schools (SMP) which has a negative impact on the psychological, social and academic development of students. This condition encourages the need for prevention strategies that not only handle cases, but also build a safe and inclusive learning environment. This research aims to analyze the factors that cause bullying as well as examine prevention strategies based on inclusive education practices at the junior high school level. The method used is qualitative with a literature study approach, where data from various relevant scientific sources is analyzed through reduction, classification, data presentation and drawing conclusions. The results of the study identified several factors that cause bullying, including the influence of peer environment, family conditions, gaps in social status, and misuse of digital technology which gives rise to cyberbullying. In the context of prevention, inclusive education is proven to have a strategic role through establishing a school culture that respects diversity, strengthening social-emotional learning, increasing teacher competency, optimizing guidance and counseling services, as well as collaboration between schools, families and communities. This approach not only supports equal access to education, but also creates a school climate that is friendly and free of discrimination. Thus, inclusive education can be an effective preventive approach in suppressing bullying behavior and strengthening a positive school climate at the junior high school level.",
+        "date": "2026-11-22",
+        "url": "https://doi.org/10.56393/paidea.v6i1.4439",
+        "licence": null,
+        "source": "openalex",
+        "doi": "10.56393/paidea.v6i1.4439",
+        "openAlexId": "W7237469200",
+        "subfield": {
+          "id": "subfields/3207",
+          "name": "Social Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T10485",
+          "name": "Bullying, Victimization, and Aggression"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Kun Muzayyin Hadiputra",
+          "Brian Ardiansyah",
+          "Muhammad Irfan Nur Aziz Siswoko"
+        ],
+        "venue": "Paidea Jurnal Pendidikan dan Pembelajaran Indonesia",
+        "indexedDate": "2026-11-23",
+        "referencedWorksCount": 23,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.7798,
+          "everydayRelevance": 1,
+          "freshness": 0.9286,
+          "credibility": 0.705,
+          "total": 0.8578,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 0,
+            "c": 1,
+            "t": 0,
+            "j": 0.1345
+          },
+          "everydayDomains": [
+            "school",
+            "weather",
+            "family"
+          ],
+          "subfieldKey": "subfields/3207",
+          "evidence": [
+            "total 0.8578 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.78 = P 0.80 − 0.45×t 0.00 − 0.15×j 0.13",
+            "outcome verbs (v 1.00): reduction, prevention (title, ×2), causes",
+            "recognisable subjects (s 1.00): students, families, teachers, schools (title, ×2)",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 1.00): no penalty",
+            "jargon density (j 0.13): 3/223 abstract tokens are long or alphanumeric",
+            "everyday relevance 1.00: 3 domain(s) — school, weather, family",
+            "everyday terms (9): school, schools, student, students, teacher, teachers, climate, family, families",
+            "freshness 0.93: 1 day(s) old (effective date 2026-11-23)",
+            "credibility 0.71 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 0.80 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Paidea Jurnal Pendidikan dan Pembelajaran Indonesia",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 0.80: open access without an open licence (repository copy)",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.56393/paidea.v6i1.4439)"
+      },
+      "summary": {
+        "souhrn": "Indonéští autoři prošli odbornou literaturu o šikaně na druhém stupni základních škol a hledali v ní dvě věci: proč k šikaně dochází a co proti ní funguje. Jako hlavní příčiny uvádějí vliv party vrstevníků, poměry v rodině, rozdíly v postavení mezi dětmi a zneužívání digitálních technologií, tedy šikanu přes internet (cyberbullying). Jako prevenci doporučují takzvané inkluzivní vzdělávání, tedy školu, která počítá s tím, že děti jsou různé, a nikoho kvůli odlišnosti neodsouvá stranou. Konkrétně jde o kulturu školy, kde se odlišnost respektuje, o výuku zvládání emocí a vztahů, o lepší přípravu učitelů, o fungující školní poradenství a o spolupráci s rodinami. Práce nepřináší vlastní měření ve třídách, jde o přehled a utřídění toho, co už napsali jiní.",
+        "podrobneVysvetleni": "Autoři použili takzvanou literární rešerši. Nechodili do škol a nic neměřili. Místo toho posbírali odborné texty k tématu, vyřadili nepodstatné, zbytek roztřídili do skupin a z nich vyvodili závěry. Takový postup umí dobře ukázat, na čem se odborné texty shodují. Neumí ale prokázat, že některé opatření opravdu sníží počet případů šikany.\n\nZ příčin autoři vypíchli čtyři okruhy. Prvním je tlak vrstevnické skupiny. Druhým jsou poměry doma, tedy to, co si dítě přináší z rodiny. Třetím jsou rozdíly v sociálním postavení mezi žáky. Čtvrtým je používání mobilů a sociálních sítí k ubližování, tedy šikana přes internet.\n\nNa straně prevence stojí pět doporučení. Škola má mít atmosféru, kde se odlišnost bere jako samozřejmost. Děti se mají učit rozumět emocím a vycházet s druhými. Učitelé potřebují lepší přípravu na to, jak šikanu poznat a jak zasáhnout. Školní poradenství má být dostupné a funkční. A škola má táhnout za jeden provaz s rodinami i s okolní komunitou.\n\nPodstatné je, že autoři nestaví na jediném opatření. Podle nich se příčiny šikany prolínají, a proto musí být propojená i prevence. Samotná přednáška o šikaně tedy nestačí. Pro české školy to zní povědomě, protože podobné prvky obsahují i zdejší preventivní programy.",
+        "procJeToDulezite": "Se šikanou se v nějaké podobě setká velká část rodin i učitelů. Tenhle přehled připomíná, že prevence nestojí na jednom opatření, ale na souhře několika věcí najednou.",
+        "poznamkaKOmezenim": "Jde o přehled odborné literatury z indonéského prostředí, nikoli o měření ve třídách, takže práce neříká, o kolik případů šikany doporučená opatření skutečně ubyde."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "warn",
+        "hard": [],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 32,
+              "end": 42
+            },
+            "matchedText": " literatur",
+            "messageCs": "Text opisuje původní název článku („ literatur“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[32,42]:  literatur"
+          },
+          {
+            "block": "souhrn",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 490,
+              "end": 666
+            },
+            "matchedText": "Konkrétně jde o kulturu školy, kde se odlišnost respektuje, o výuku zvládání emocí a vztahů, o lepší přípravu učitelů, o fungující školní poradenství a o spolupráci s rodinami.",
+            "messageCs": "Tato věta má 28 slov a je moc dlouhá: „Konkrétně jde o kulturu školy, kde se odlišnost respektuje, o výuku zvládání em…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ souhrn[490,666]: Konkrétně jde o kulturu školy, kde se odlišnost respektuje, o výuku zvládání emocí a vztahů, o lepší přípravu učitelů, o fungující školní poradenství a o spolupráci s rodinami."
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 1216,
+              "end": 1225
+            },
+            "matchedText": " preventi",
+            "messageCs": "Text opisuje původní název článku („ preventi“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[1216,1225]:  preventi"
+          },
+          {
+            "block": "poznamkaKOmezenim",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 21,
+              "end": 31
+            },
+            "matchedText": " literatur",
+            "messageCs": "Text opisuje původní název článku („ literatur“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ poznamkaKOmezenim[21,31]:  literatur"
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "id": "openalex:W7237750301",
+        "title": "Effectiveness of School Nurse-Led Anti-Bullying Education on Students' Mental Health: a Narrative Literature Review",
+        "abstract": "Bullying is common among Indonesian students and is linked to depression, anxiety, and suicidal ideation. School nurses are well placed to deliver preventive education, but it is unclear how far such education improves students' mental health. This review aimed to synthesize published evidence on the effectiveness of anti-bullying education delivered by school nurses on students' mental health. A narrative literature review was conducted. Articles published from 2016 to 2026 in English or Indonesian were located through PubMed Central and publisher websites using the keywords bullying, school nurse, nursing intervention, education, and mental health. Thirteen sources were synthesized narratively: four meta-analyses or systematic reviews of school programs, two scoping reviews of nursing interventions, two nurse-led studies from Indonesia, and five supporting studies. School anti-bullying programs produced small reductions in bullying and small improvements in mental health problems, while their effect on anxiety and depressive symptoms was very small. Nurse-led interventions took the form of games, physical activity, training, and peer-group programs. The two Indonesian nurse-led studies reported better awareness of bullying dangers and better emotion regulation, but neither measured bullying behavior or mental health symptoms directly. Anti-bullying education by school nurses is promising, particularly when it includes peer components and collaboration with teachers, yet direct evidence for its effect on students' mental health remains limited. Controlled studies that measure mental health outcomes, including in vocational high schools, are needed.",
+        "date": "2026-11-23",
+        "url": "https://doi.org/10.55080/mjn.v5i2.2339",
+        "licence": "cc-by",
+        "source": "openalex",
+        "doi": "10.55080/mjn.v5i2.2339",
+        "openAlexId": "W7237750301",
+        "subfield": {
+          "id": "subfields/3207",
+          "name": "Social Psychology"
+        },
+        "field": {
+          "id": "fields/32",
+          "name": "Psychology"
+        },
+        "topic": {
+          "id": "T10485",
+          "name": "Bullying, Victimization, and Aggression"
+        },
+        "citedByCount": 0,
+        "isOpenAccess": true,
+        "oaPdfUrl": null,
+        "isPreprint": false,
+        "sourceType": "article",
+        "isRetracted": false,
+        "authors": [
+          "Zaenal Abidin",
+          "Erma Kurniasari"
+        ],
+        "venue": "Medical Journal of Nusantara",
+        "indexedDate": "2026-11-23",
+        "referencedWorksCount": 0,
+        "tldr": null,
+        "abstractSource": "source",
+        "score": {
+          "explainability": 0.65,
+          "everydayRelevance": 1,
+          "freshness": 0.9286,
+          "credibility": 0.745,
+          "total": 0.8114,
+          "explainDetail": {
+            "v": 1,
+            "s": 1,
+            "q": 0,
+            "c": 1,
+            "t": 0.3333,
+            "j": 0
+          },
+          "everydayDomains": [
+            "school",
+            "health",
+            "body"
+          ],
+          "subfieldKey": "subfields/3207",
+          "evidence": [
+            "total 0.8114 = 0.40×explainability + 0.28×everyday + 0.18×freshness + 0.14×credibility",
+            "passes the 0.35 explainability gate (B.2)",
+            "explainability 0.65 = P 0.80 − 0.45×t 0.33 − 0.15×j 0.00",
+            "outcome verbs (v 1.00): reduction, improves, improvement, linked to",
+            "recognisable subjects (s 1.00): students (title, ×2), nurses (title, ×2), teachers, schools (title, ×2)",
+            "quantified effect (q 0): the abstract states no number",
+            "title concreteness (c 1.00): no penalty",
+            "theoretical markers (t 0.33): scoping review",
+            "everyday relevance 1.00: 3 domain(s) — school, health, body",
+            "everyday terms (10): school, schools, student, students, teacher, teachers, health, depression, anxiety, physical activity",
+            "freshness 0.93: 1 day(s) old (effective date 2026-11-23)",
+            "credibility 0.74 = 0.40×c1 1.00 + 0.25×c2 0.40 + 0.20×c3 1.00 + 0.15×c4 0.30",
+            "c1 1.00: peer-reviewed article in Medical Journal of Nusantara",
+            "c2 0.40: no sample size stated in the abstract",
+            "c3 1.00: open access under cc-by",
+            "c4 0.30: venue citedness is not part of the §10 candidate contract"
+          ]
+        },
+        "enrichmentNote": "not known to Semantic Scholar (DOI:10.55080/mjn.v5i2.2339)"
+      },
+      "summary": {
+        "souhrn": "Šikana je mezi indonéskými studenty běžná a pojí se s depresí, úzkostí i myšlenkami na sebevraždu. Autoři proto prošli odbornou literaturu z let 2016 až 2026 a hledali odpověď na otázku, zda preventivní výuka vedená školní sestrou dokáže psychickému zdraví žáků skutečně pomoci. Ze třinácti vybraných prací vyplynulo, že školní protišikanovací programy šikanu zmenšují jen mírně a na úzkost či depresivní příznaky mají účinek velmi malý. Dvě indonéské studie, kde vzdělávání vedly sestry, sice popsaly lepší povědomí o nebezpečí šikany a lepší zvládání emocí, ale samotné chování ani psychické obtíže vůbec neměřily. Nejslibněji vycházejí programy, do nichž se zapojí spolužáci a spolupracují na nich učitelé — přímý důkaz o dopadu na duševní zdraví ale zatím chybí.",
+        "podrobneVysvetleni": "Autoři zvolili takzvaný narativní přehled literatury (narrative literature review), tedy shrnutí už publikovaných studií slovy, nikoli přepočet všech dat do jednoho čísla. Hledali v databázi PubMed Central a na stránkách vydavatelů. Zajímaly je články v angličtině a indonéštině z let 2016 až 2026. Nakonec jich použili třináct: čtyři souhrnné analýzy školních programů, dva přehledy sesterských zásahů, dvě indonéské studie vedené školními sestrami a pět doplňujících prací. Klíčová slova byla šikana, školní sestra, ošetřovatelský zásah, vzdělávání a duševní zdraví.\n\nVýsledek je střízlivý. Školní protišikanovací programy snižují šikanu jen málo a stejně mírně zlepšují psychické obtíže obecně. U úzkosti a depresivních příznaků byl účinek popsán jako velmi malý, tedy sotva znatelný. Zásahy vedené sestrami měly různou podobu: hry, pohybové aktivity, nácvik dovedností a programy pracující se skupinou vrstevníků. Obě indonéské studie uvádějí, že žáci po nich lépe rozpoznávali nebezpečí šikany a lépe pracovali se svými emocemi. Ani jedna však nesledovala, zda šikany ubylo nebo zda se žákům ulevilo psychicky.\n\nPro školy z toho plyne hlavně to, že samotná přednáška o šikaně moc nezmůže. Autoři vidí větší naději tam, kde se zapojí spolužáci a kde sestra spolupracuje s učiteli. Zároveň volají po pečlivěji uspořádaných studiích se srovnávací skupinou, které by měřily přímo duševní zdraví, a to i na odborných středních školách.",
+        "procJeToDulezite": "Rodiče i učitelé od protišikanovacích programů čekají hodně, ale dostupné důkazy ukazují na mírné účinky — a to je dobré vědět dřív, než škola vsadí všechno na jednu besedu.",
+        "poznamkaKOmezenim": "Jde o slovní shrnutí třinácti prací, nikoli o nový výzkum, a obě indonéské studie se školními sestrami duševní zdraví ani chování žáků vůbec neměřily, takže závěry jsou zatím předběžné."
+      },
+      "verification": null,
+      "checks": {
+        "ok": true,
+        "status": "warn",
+        "hard": [],
+        "soft": [
+          {
+            "block": "souhrn",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 127,
+              "end": 137
+            },
+            "matchedText": " literatur",
+            "messageCs": "Text opisuje původní název článku („ literatur“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ souhrn[127,137]:  literatur"
+          },
+          {
+            "block": "podrobneVysvetleni",
+            "rule": "untranslated-english",
+            "ruleId": "english_sentence:title_echo",
+            "span": {
+              "start": 41,
+              "end": 51
+            },
+            "matchedText": " literatur",
+            "messageCs": "Text opisuje původní název článku („ literatur“). Nadpis i vysvětlení mají být napsané vlastními, běžnými slovy.",
+            "detail": "english_sentence:title_echo @ podrobneVysvetleni[41,51]:  literatur"
+          },
+          {
+            "block": "procJeToDulezite",
+            "rule": "sentence-length",
+            "ruleId": "readability:R2",
+            "span": {
+              "start": 0,
+              "end": 173
+            },
+            "matchedText": "Rodiče i učitelé od protišikanovacích programů čekají hodně, ale dostupné důkazy ukazují na mírné účinky — a to je dobré vědět dřív, než škola vsadí všechno na jednu besedu.",
+            "messageCs": "Tato věta má 28 slov a je moc dlouhá: „Rodiče i učitelé od protišikanovacích programů čekají hodně, ale dostupné důkaz…“. Rozdělte ji na dvě až tři kratší věty.",
+            "detail": "readability:R2 @ procJeToDulezite[0,173]: Rodiče i učitelé od protišikanovacích programů čekají hodně, ale dostupné důkazy ukazují na mírné účinky — a to je dobré vědět dřív, než škola vsadí všechno na jednu besedu."
+          },
+          {
+            "block": "all",
+            "rule": "sentence-length",
+            "ruleId": "readability:R1",
+            "span": {
+              "start": 0,
+              "end": 0
+            },
+            "matchedText": "meanSentenceWords=17.55",
+            "messageCs": "Věty jsou v průměru moc dlouhé (17,6 slova). Rozdělte je: jedna věta, jedna myšlenka.",
+            "detail": "readability:R1 @ all[0,0]: meanSentenceWords=17.55"
+          }
+        ]
+      }
+    }
+  ],
+  "shortfall": null,
+  "degradations": [],
+  "generatedAt": "2026-11-24T05:28:09.597Z",
+  "generatedOn": "2026-11-24",
+  "schemaVersion": 1
+}
